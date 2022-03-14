@@ -1,0 +1,33 @@
+{
+	"FileVersion": 3,
+	"Version": 22,
+	"VersionName": "1.22",
+	"FriendlyName": "WebCommunication",
+	"Description": "Communicate with Webservers in Blueprints",
+	"Category": "WebCommunication",
+	"CreatedBy": "Socke",
+	"CreatedByURL": "",
+	"DocsURL": "http://virtualbird.de/ue4Doku/WebCommunication/",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/3b04f3c4af5445959cee4448846b55a0",
+	"SupportURL": "mailto:unrealmarketplace@virtualbird.de",
+	"EngineVersion": "4.27.0",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "WebCommunication",
+			"Type": "Runtime",
+			"LoadingPhase": "PreLoadingScreen",
+			"WhitelistPlatforms": [
+				"Win64",
+				"Win32",
+				"Mac",
+				"IOS",
+				"Android",
+				"Linux"
+			]
+		}
+	]
+}

@@ -1,0 +1,25 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
+#include "GetBadgesDelegateDelegate.h"
+#include "UWorksSteamID.h"
+#include "GetBadgesNode.generated.h"
+
+class UGetBadgesNode;
+
+UCLASS()
+class UWORKSWEB_API UGetBadgesNode : public UBlueprintAsyncActionBase {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    FGetBadgesDelegate Completed;
+    
+    UGetBadgesNode();
+    UFUNCTION(BlueprintCallable)
+    void OnRequestCompleted(bool bSuccessful, const FString& Content);
+    
+    UFUNCTION(BlueprintCallable)
+    static UGetBadgesNode* GetBadgesNode(const FString& Key, FUWorksSteamID SteamID);
+    
+};
+

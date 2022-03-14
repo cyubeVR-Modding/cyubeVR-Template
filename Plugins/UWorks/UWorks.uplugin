@@ -1,0 +1,75 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "16",
+	"FriendlyName": "UWorks",
+	"Description": "Provides multiple ways to interact with the Steamworks services.",
+	"Category": "Marketplace",
+	"CreatedBy": "Vlad Serbanescu / Mihai Miu",
+	"CreatedByURL": "https://forums.unrealengine.com/member.php?35726",
+	"DocsURL": "https://www.dropbox.com/s/tl82lngujvm9kk4/UWorksDocumentation.pdf?dl=1",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/382ff2e7db2f483c82bf7246530d100a",
+	"SupportURL": "https://forums.unrealengine.com/unreal-engine/marketplace/113863",
+	"EngineVersion": "4.27.0",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "UWorks",
+			"Type": "Runtime",
+			"LoadingPhase": "PostConfigInit",
+			"WhitelistPlatforms": [
+				"Win64",
+				"Linux"
+			]
+		},
+		{
+			"Name": "UWorksCore",
+			"Type": "Runtime",
+			"LoadingPhase": "PostConfigInit",
+			"WhitelistPlatforms": [
+				"Win64",
+				"Linux"
+			]
+		},
+		{
+			"Name": "UWorksWeb",
+			"Type": "Runtime",
+			"LoadingPhase": "PostConfigInit",
+			"WhitelistPlatforms": [
+				"Win64",
+				"Linux"
+			]
+		},
+		{
+			"Name": "UWorksUtilities",
+			"Type": "Runtime",
+			"LoadingPhase": "PostConfigInit",
+			"WhitelistPlatforms": [
+				"Win64",
+				"Linux"
+			]
+		},
+		{
+			"Name": "OnlineSubsystemUWorks",
+			"Type": "Runtime",
+			"LoadingPhase": "PostConfigInit",
+			"WhitelistPlatforms": [
+				"Win64",
+				"Linux"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "OnlineSubsystem",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineSubsystemUtils",
+			"Enabled": true
+		}
+	]
+}

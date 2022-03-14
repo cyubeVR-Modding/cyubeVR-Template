@@ -1,0 +1,52 @@
+{
+	"FileVersion": 3,
+	"Version": 2,
+	"VersionName": "1.1",
+	"FriendlyName": "SteamWorkshop Accessor",
+	"Description": "Plugin that allows you to upload/download/query/... to/from steam from native code and Blueprint.",
+	"Category": "Other",
+	"CreatedBy": "Schwarzlichtfabrik",
+	"CreatedByURL": "www.Schwarzlichtfabrik.de",
+	"DocsURL": "",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/e11032c890874bd186b255d7e6794ca6",
+	"SupportURL": "https://forums.unrealengine.com/unreal-engine/marketplace/1526653-wip-plugin-steam-workshop-blueprint-wrapper-with-full-access",
+	"EngineVersion": "4.27.0",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "SteamWorkshop",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"WhitelistPlatforms": [
+				"Win64",
+				"Win32"
+			]
+		},
+		{
+			"Name": "SteamGeneral",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"WhitelistPlatforms": [
+				"Win64",
+				"Win32"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "OnlineSubsystem",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineSubsystemUtils",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineSubsystemSteam",
+			"Enabled": true
+		}
+	]
+}
