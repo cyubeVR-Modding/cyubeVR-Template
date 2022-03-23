@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
 #include "GameFramework/Actor.h"
 #include "LightReceiveInterface.h"
+#include "UObject/NoExportTypes.h"
 #include "ReceiveLightActor.generated.h"
 
 class UMaterialInstanceDynamic;
@@ -36,7 +36,7 @@ public:
     
     
     // Fix for true pure virtual functions not being implemented
-    // UFUNCTION(BlueprintCallable)
+    //UFUNCTION(BlueprintCallable)
     bool UseActorCustomLocation() override PURE_VIRTUAL(UseActorCustomLocation, return false;);
     
     UFUNCTION(BlueprintCallable)
@@ -48,7 +48,7 @@ public:
     UFUNCTION(BlueprintCallable)
     void LightInterfaceBeginDestroy(AActor* ThisActor) override PURE_VIRTUAL(LightInterfaceBeginDestroy,);
     
-    // UFUNCTION(BlueprintCallable)
+    //UFUNCTION(BlueprintCallable)
     FVector GetActorCustomLocation() override PURE_VIRTUAL(GetActorCustomLocation, return FVector{};);
     
 };

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EUWorksResult.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "SetPersonaNameDelegateDelegate.h"
-#include "EUWorksResult.h"
 #include "CoreSetPersonaNameNode.generated.h"
 
 class UCoreSetPersonaNameNode;

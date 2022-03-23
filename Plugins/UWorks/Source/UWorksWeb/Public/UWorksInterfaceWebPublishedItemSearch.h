@@ -2,14 +2,14 @@
 #include "CoreMinimal.h"
 #include "UWorksInterfaceWeb.h"
 #include "UWorksSteamID.h"
-#include "RankedByTrendMinimalDelegateDelegate.h"
-#include "ResultSetSummaryMinimalDelegateDelegate.h"
 #include "RankedByVoteMinimalDelegateDelegate.h"
+#include "ResultSetSummaryMinimalDelegateDelegate.h"
+#include "RankedByTrendMinimalDelegateDelegate.h"
 #include "RankedByPublicationOrderMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebPublishedItemSearch.generated.h"
 
-class UUWorksRequestWebRankedByVote;
 class UUWorksRequestWebResultSetSummary;
+class UUWorksRequestWebRankedByVote;
 class UUWorksRequestWebRankedByTrend;
 class UUWorksRequestWebRankedByPublicationOrder;
 

@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksSteamID.h"
 #include "UWorksRequestWeb.h"
-#include "SetBanStatusMinimalDelegateDelegate.h"
 #include "SetBanStatusDelegateDelegate.h"
+#include "SetBanStatusMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestWebSetBanStatus.generated.h"
 
 UCLASS()

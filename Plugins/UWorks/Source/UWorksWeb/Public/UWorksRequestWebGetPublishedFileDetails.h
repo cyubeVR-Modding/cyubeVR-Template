@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "GetPublishedFileDetailsDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "GetPublishedFileDetailsMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetPublishedFileDetails.generated.h"
 

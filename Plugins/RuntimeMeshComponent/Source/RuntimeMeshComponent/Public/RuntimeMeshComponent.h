@@ -7,9 +7,9 @@
 #include "RuntimeMeshMaterialSlot.h"
 #include "RuntimeMeshComponent.generated.h"
 
-class URuntimeMeshProvider;
-class UMaterialInterface;
 class URuntimeMesh;
+class UMaterialInterface;
+class URuntimeMeshProvider;
 
 UCLASS(meta=(BlueprintSpawnableComponent))
 class RUNTIMEMESHCOMPONENT_API URuntimeMeshComponent : public UMeshComponent, public IInterface_CollisionDataProvider {

@@ -2,24 +2,24 @@
 #include "CoreMinimal.h"
 #include "UWorksInterfaceWeb.h"
 #include "GetTradeOffersSummaryMinimalDelegateDelegate.h"
+#include "GetTradeHistoryMinimalDelegateDelegate.h"
 #include "GetTradeOffersMinimalDelegateDelegate.h"
 #include "GetTradeOfferMinimalDelegateDelegate.h"
-#include "GetTradeHistoryMinimalDelegateDelegate.h"
-#include "FlushAssetAppearanceCacheMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "FlushInventoryCacheMinimalDelegateDelegate.h"
 #include "FlushContextCacheMinimalDelegateDelegate.h"
+#include "FlushAssetAppearanceCacheMinimalDelegateDelegate.h"
 #include "DeclineTradeOfferMinimalDelegateDelegate.h"
 #include "CancelTradeOfferMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebEcon.generated.h"
 
 class UUWorksRequestWebGetTradeOffersSummary;
 class UUWorksRequestWebGetTradeOffers;
+class UUWorksRequestWebFlushAssetAppearanceCache;
 class UUWorksRequestWebGetTradeOffer;
 class UUWorksRequestWebGetTradeHistory;
 class UUWorksRequestWebFlushInventoryCache;
 class UUWorksRequestWebFlushContextCache;
-class UUWorksRequestWebFlushAssetAppearanceCache;
 class UUWorksRequestWebDeclineTradeOffer;
 class UUWorksRequestWebCancelTradeOffer;
 

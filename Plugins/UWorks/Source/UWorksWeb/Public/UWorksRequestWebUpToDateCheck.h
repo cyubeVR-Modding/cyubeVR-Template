@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UpToDateCheckMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "UpToDateCheckDelegateDelegate.h"
+#include "UpToDateCheckMinimalDelegateDelegate.h"
 #include "UWorksRequestWebUpToDateCheck.generated.h"
 
 UCLASS()

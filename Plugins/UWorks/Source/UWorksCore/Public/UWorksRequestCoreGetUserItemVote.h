@@ -3,8 +3,8 @@
 #include "UWorksRequestCore.h"
 #include "GetUserItemVoteDelegateDelegate.h"
 #include "GetUserItemVoteMinimalDelegateDelegate.h"
-#include "UWorksPublishedFileID.h"
 #include "EUWorksResult.h"
+#include "UWorksPublishedFileID.h"
 #include "UWorksRequestCoreGetUserItemVote.generated.h"
 
 UCLASS(BlueprintType)

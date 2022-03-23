@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "EUWorksResult.h"
-#include "SubmitItemUpdateDelegateDelegate.h"
 #include "UWorksUGCUpdateHandle.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
+#include "SubmitItemUpdateDelegateDelegate.h"
 #include "CoreSubmitItemUpdateNode.generated.h"
 
 class UCoreSubmitItemUpdateNode;

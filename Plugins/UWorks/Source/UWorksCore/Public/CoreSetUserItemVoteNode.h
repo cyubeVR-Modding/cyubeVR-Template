@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksPublishedFileID.h"
-#include "SetUserItemVoteDelegateDelegate.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "EUWorksResult.h"
+#include "UWorksPublishedFileID.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
+#include "SetUserItemVoteDelegateDelegate.h"
 #include "CoreSetUserItemVoteNode.generated.h"
 
 class UCoreSetUserItemVoteNode;

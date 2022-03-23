@@ -1,29 +1,29 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RequestEncryptedAppTicketMinimalDelegateDelegate.h"
+#include "IPCFailureDelegateDelegate.h"
 #include "UWorksInterfaceCore.h"
 #include "SteamServersConnectedDelegateDelegate.h"
 #include "SteamServerConnectFailureDelegateDelegate.h"
 #include "SteamServersDisconnectedDelegateDelegate.h"
-#include "IPCFailureDelegateDelegate.h"
 #include "ClientGameServerDenyDelegateDelegate.h"
 #include "LicensesUpdatedDelegateDelegate.h"
 #include "ValidateAuthTicketResponseDelegateDelegate.h"
 #include "MicroTxnAuthorizationResponseDelegateDelegate.h"
 #include "GetAuthSessionTicketResponseDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "GameWebCallbackDelegateDelegate.h"
 #include "EUWorksUserHasLicenseForAppResult.h"
+#include "UWorksSteamID.h"
 #include "RequestStoreAuthURLMinimalDelegateDelegate.h"
+#include "RequestEncryptedAppTicketMinimalDelegateDelegate.h"
 #include "EUWorksVoiceResult.h"
-#include "UWorksTicketHandle.h"
 #include "UWorksSteamUser.h"
+#include "UWorksTicketHandle.h"
 #include "EUWorksBeginAuthSessionResult.h"
 #include "UWorksInterfaceCoreUser.generated.h"
 
-class UAudioComponent;
-class UUWorksRequestCoreRequestStoreAuthURL;
 class UUWorksRequestCoreRequestEncryptedAppTicket;
+class UUWorksRequestCoreRequestStoreAuthURL;
+class UAudioComponent;
 class UUWorksInterfaceCoreUser;
 
 UCLASS(BlueprintType)

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestCore.h"
-#include "UWorksSteamID.h"
 #include "IsFollowingDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "IsFollowingMinimalDelegateDelegate.h"
 #include "EUWorksResult.h"
 #include "UWorksRequestCoreIsFollowing.generated.h"

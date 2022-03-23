@@ -1,11 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EBlockTypeBP.h"
 #include "UObject/Object.h"
+#include "EBlockTypeBP.h"
 #include "CustomBlockData.h"
+#include "UObject/NoExportTypes.h"
 #include "CustomBlockManager.generated.h"
 
 class UTexture2D;
+class UTexture2DArray;
 
 UCLASS(BlueprintType)
 class CYUBEVR_API UCustomBlockManager : public UObject {
@@ -25,6 +27,9 @@ public:
     
     UCustomBlockManager();
     UFUNCTION(BlueprintCallable)
+    static UTexture2D* LoadDDS(const FString& Filename, TEnumAsByte<EPixelFormat> PixelFormat, bool ConvertDXT5toDXT1);
+    
+    UFUNCTION(BlueprintCallable)
     int32 GetTextureIndexForCustomBlock(int32 UniqueId, uint8 Side);
     
     UFUNCTION(BlueprintCallable)
@@ -35,6 +40,9 @@ public:
     
     UFUNCTION(BlueprintCallable)
     FString GetNameOfCustomBlock(int32 UniqueId);
+    
+    UFUNCTION(BlueprintCallable)
+    static void CopyTextureToArraySlice(UTexture2DArray* DestArray, int32 DestSlice, UTexture2D* SourceTexture);
     
 };
 

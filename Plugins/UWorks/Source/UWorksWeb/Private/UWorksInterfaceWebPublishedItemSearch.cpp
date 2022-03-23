@@ -1,7 +1,7 @@
 #include "UWorksInterfaceWebPublishedItemSearch.h"
 
-class UUWorksRequestWebRankedByVote;
 class UUWorksRequestWebResultSetSummary;
+class UUWorksRequestWebRankedByVote;
 class UUWorksRequestWebRankedByTrend;
 class UUWorksRequestWebRankedByPublicationOrder;
 

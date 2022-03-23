@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksPublishedFileID.h"
 #include "EUWorksResult.h"
+#include "UWorksPublishedFileID.h"
 #include "EUWorksWorkshopFileType.h"
 #include "UWorksSteamID.h"
 #include "EUWorksRemoteStoragePublishedFileVisibility.h"

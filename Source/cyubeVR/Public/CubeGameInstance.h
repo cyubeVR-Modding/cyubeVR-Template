@@ -4,13 +4,13 @@
 #include "BenchmarkResults.h"
 #include "CubeGameInstance.generated.h"
 
-class UMaterialParameterCollection;
+class UTextureRenderTarget2D;
 class USoundBase;
-class UTexture2DArray;
+class UTexture2D;
 class UAudioComponent;
 class UCustomBlockManager;
-class UTexture2D;
-class UTextureRenderTarget2D;
+class UMaterialParameterCollection;
+class UTexture2DArray;
 
 UCLASS(NonTransient)
 class CYUBEVR_API UCubeGameInstance : public UGameInstance {

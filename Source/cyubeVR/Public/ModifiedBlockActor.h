@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EBlockTypeBP.h"
 #include "GameFramework/Actor.h"
+#include "EBlockTypeBP.h"
 #include "BlockInfoBP.h"
 #include "ModifiedBlockActor.generated.h"
 
-class UStaticMeshComponent;
 class UMaterialInstanceDynamic;
 class UMaterialInstance;
+class UStaticMeshComponent;
 class AChunkManager;
 
 UCLASS()

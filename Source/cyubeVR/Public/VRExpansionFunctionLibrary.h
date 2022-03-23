@@ -1,30 +1,30 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "BPEuroLowPassFilter.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
-#include "UObject/NoExportTypes.h"
 #include "BPLowPassPeakFilter.h"
+#include "BPEuroLowPassFilter.h"
 #include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "EBPHMDWornState.h"
 #include "Engine/NetSerialization.h"
 #include "Engine/NetSerialization.h"
 #include "Engine/NetSerialization.h"
 #include "Transform_NetQuantize.h"
-#include "EBPHMDWornState.h"
 #include "EBPHMDDeviceType.h"
-#include "BPGripPair.h"
 #include "InputCoreTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "BPActorGripInformation.h"
+#include "BPGripPair.h"
 #include "VRExpansionFunctionLibrary.generated.h"
 
-class USplineMeshComponent;
 class UPrimitiveComponent;
 class USplineComponent;
+class USplineMeshComponent;
 class UObject;
 class AActor;
-class USceneComponent;
 class UGripMotionControllerComponent;
+class USceneComponent;
 
 UCLASS(BlueprintType)
 class UVRExpansionFunctionLibrary : public UBlueprintFunctionLibrary {

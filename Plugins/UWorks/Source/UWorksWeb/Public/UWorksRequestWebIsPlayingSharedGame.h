@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksSteamID.h"
-#include "UWorksRequestWeb.h"
 #include "IsPlayingSharedGameDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "IsPlayingSharedGameMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestWebIsPlayingSharedGame.generated.h"
 
 UCLASS()

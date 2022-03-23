@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestCore.h"
-#include "RemoveItemFromFavoritesMinimalDelegateDelegate.h"
 #include "RemoveItemFromFavoritesDelegateDelegate.h"
-#include "UWorksPublishedFileID.h"
 #include "EUWorksResult.h"
+#include "UWorksPublishedFileID.h"
+#include "RemoveItemFromFavoritesMinimalDelegateDelegate.h"
 #include "UWorksRequestCoreRemoveItemFromFavorites.generated.h"
 
 UCLASS(BlueprintType)

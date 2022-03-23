@@ -18,6 +18,10 @@ bool UDLSSLibrary::IsDLSSModeSupported(UDLSSMode DLSSMode) {
     return false;
 }
 
+bool UDLSSLibrary::IsDLAAEnabled() {
+    return false;
+}
+
 TArray<UDLSSMode> UDLSSLibrary::GetSupportedDLSSModes() {
     return TArray<UDLSSMode>();
 }
@@ -41,6 +45,9 @@ void UDLSSLibrary::GetDLSSMinimumDriverVersion(int32& MinDriverVersionMajor, int
 
 UDLSSMode UDLSSLibrary::GetDefaultDLSSMode() {
     return UDLSSMode::Off;
+}
+
+void UDLSSLibrary::EnableDLAA(bool bEnabled) {
 }
 
 UDLSSLibrary::UDLSSLibrary() {

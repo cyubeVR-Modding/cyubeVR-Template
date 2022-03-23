@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksInterfaceWeb.h"
-#include "UWorksRequiredKVTags.h"
-#include "SetDeveloperMetadataMinimalDelegateDelegate.h"
 #include "UWorksPublishedFileID.h"
+#include "SetDeveloperMetadataMinimalDelegateDelegate.h"
 #include "UpdateTagsMinimalDelegateDelegate.h"
+#include "UWorksRequiredKVTags.h"
 #include "QueryFilesMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebPublishedFile.generated.h"
 

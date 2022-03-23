@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "ReceiveLightActor.h"
-#include "EBlockTypeBP.h"
 #include "UObject/NoExportTypes.h"
+#include "EBlockTypeBP.h"
 #include "BlockItem.generated.h"
 
+class UMaterialInstanceDynamic;
 class UTextRenderComponent;
 class UParticleSystemComponent;
 class ABlockItem;
 class UBoxComponent;
-class UMaterialInstanceDynamic;
 class AChunkManager;
 
 UCLASS()

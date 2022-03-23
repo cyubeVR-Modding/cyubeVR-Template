@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetSessionDetailsForAppMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "GetSessionDetailsForAppDelegateDelegate.h"
+#include "GetSessionDetailsForAppMinimalDelegateDelegate.h"
 #include "UWorksSessions.h"
 #include "UWorksRequestWebGetSessionDetailsForApp.generated.h"
 

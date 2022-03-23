@@ -4,8 +4,8 @@
 #include "CreateItemDelegateDelegate.h"
 #include "CreateItemMinimalDelegateDelegate.h"
 #include "EUWorksWorkshopFileType.h"
-#include "EUWorksResult.h"
 #include "UWorksPublishedFileID.h"
+#include "EUWorksResult.h"
 #include "UWorksRequestCoreCreateItem.generated.h"
 
 UCLASS(BlueprintType)

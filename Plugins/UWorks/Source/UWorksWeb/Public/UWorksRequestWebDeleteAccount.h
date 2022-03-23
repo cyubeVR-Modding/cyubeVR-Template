@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksSteamID.h"
+#include "DeleteAccountMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "DeleteAccountDelegateDelegate.h"
-#include "DeleteAccountMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestWebDeleteAccount.generated.h"
 
 UCLASS()

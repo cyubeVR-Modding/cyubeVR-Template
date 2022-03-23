@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "SupportGetAssetHistoryMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "SupportGetAssetHistoryDelegateDelegate.h"
-#include "SupportGetAssetHistoryMinimalDelegateDelegate.h"
 #include "UWorksRequestWebSupportGetAssetHistory.generated.h"
 
 UCLASS()

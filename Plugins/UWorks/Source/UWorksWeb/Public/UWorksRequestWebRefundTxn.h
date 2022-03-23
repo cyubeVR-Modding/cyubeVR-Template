@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "RefundTxnMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "RefundTxnDelegateDelegate.h"
-#include "RefundTxnMinimalDelegateDelegate.h"
 #include "UWorksRequestWebRefundTxn.generated.h"
 
 UCLASS()

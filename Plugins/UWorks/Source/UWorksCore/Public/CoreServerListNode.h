@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "ServerListUpdateDelegateDelegate.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
 #include "EUWorksServerQueryType.h"
 #include "UWorksServerInfo.h"
 #include "CoreServerListNode.generated.h"

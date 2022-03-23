@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EBlockTypeBP.h"
-#include "GameFramework/Actor.h"
-#include "UObject/NoExportTypes.h"
 #include "ERotation.h"
+#include "UObject/NoExportTypes.h"
+#include "GameFramework/Actor.h"
+#include "EBlockTypeBP.h"
 #include "torch.generated.h"
 
 class UParticleSystemComponent;

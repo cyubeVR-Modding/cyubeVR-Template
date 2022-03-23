@@ -2,13 +2,13 @@
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
 #include "Blueprint/UserWidget.h"
-#include "UWorksSteamLeaderboardEntries.h"
 #include "EntryData.h"
+#include "UWorksSteamLeaderboardEntries.h"
 #include "BenchmarkLeaderboardsCPP.generated.h"
 
 class UGameInstance;
-class UScrollBox;
 class ULeaderboardEntryCPP;
+class UScrollBox;
 
 UCLASS(EditInlineNew)
 class CYUBEVR_API UBenchmarkLeaderboardsCPP : public UUserWidget {

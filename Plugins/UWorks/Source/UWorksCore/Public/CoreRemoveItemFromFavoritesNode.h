@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EUWorksResult.h"
 #include "UWorksPublishedFileID.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "RemoveItemFromFavoritesDelegateDelegate.h"
-#include "EUWorksResult.h"
 #include "CoreRemoveItemFromFavoritesNode.generated.h"
 
 class UCoreRemoveItemFromFavoritesNode;

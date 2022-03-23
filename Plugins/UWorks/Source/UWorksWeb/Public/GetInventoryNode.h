@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetInventoryDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "GetInventoryDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "GetInventoryNode.generated.h"
 

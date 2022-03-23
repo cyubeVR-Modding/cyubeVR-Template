@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
-#include "UWorksSteamID.h"
-#include "IsFollowingDelegateDelegate.h"
 #include "EUWorksResult.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
+#include "IsFollowingDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "CoreIsFollowingNode.generated.h"
 
 class UCoreIsFollowingNode;

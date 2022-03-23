@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksSteamID.h"
-#include "UWorksInterfaceWeb.h"
-#include "SupportGetAssetHistoryMinimalDelegateDelegate.h"
 #include "HistoryExecuteCommandsMinimalDelegateDelegate.h"
+#include "SupportGetAssetHistoryMinimalDelegateDelegate.h"
+#include "UWorksInterfaceWeb.h"
+#include "UWorksSteamID.h"
 #include "GetUserHistoryMinimalDelegateDelegate.h"
 #include "GetHistoryCommandDetailsMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebGameInventory.generated.h"
 
 class UUWorksRequestWebHistoryExecuteCommands;
 class UUWorksRequestWebSupportGetAssetHistory;
-class UUWorksRequestWebGetHistoryCommandDetails;
 class UUWorksRequestWebGetUserHistory;
+class UUWorksRequestWebGetHistoryCommandDetails;
 
 UCLASS(BlueprintType)
 class UWORKSWEB_API UUWorksInterfaceWebGameInventory : public UUWorksInterfaceWeb {

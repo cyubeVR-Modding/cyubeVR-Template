@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Blueprint/UserWidget.h"
 #include "CustomBlockInfoForModsBP.h"
+#include "Blueprint/UserWidget.h"
 #include "ManageModsWidgetParent.generated.h"
 
 UCLASS(EditInlineNew)

@@ -3,8 +3,8 @@
 #include "UWorksRequestCore.h"
 #include "DownloadLeaderboardEntriesDelegateDelegate.h"
 #include "DownloadLeaderboardEntriesMinimalDelegateDelegate.h"
-#include "UWorksSteamLeaderboard.h"
 #include "EUWorksLeaderboardDataRequest.h"
+#include "UWorksSteamLeaderboard.h"
 #include "UWorksSteamLeaderboardEntries.h"
 #include "UWorksRequestCoreDownloadLeaderboardEntries.generated.h"
 

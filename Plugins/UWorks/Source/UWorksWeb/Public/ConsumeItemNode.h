@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "ConsumeItemDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "UWorksSteamItemInstanceID.h"
+#include "UWorksSteamID.h"
 #include "ConsumeItemNode.generated.h"
 
 class UConsumeItemNode;

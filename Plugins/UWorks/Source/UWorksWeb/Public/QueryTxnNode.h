@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "QueryTxnDelegateDelegate.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
 #include "QueryTxnNode.generated.h"
 
 class UQueryTxnNode;

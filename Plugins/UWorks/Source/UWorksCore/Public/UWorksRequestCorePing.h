@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UWorksServerInfo.h"
 #include "UWorksRequestCore.h"
 #include "PingDelegateDelegate.h"
 #include "PingMinimalDelegateDelegate.h"
-#include "UWorksServerInfo.h"
 #include "UWorksRequestCorePing.generated.h"
 
 UCLASS(BlueprintType)

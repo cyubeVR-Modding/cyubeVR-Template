@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksSteamID.h"
 #include "UWorksRequestWeb.h"
 #include "GetUserStatsForGameDelegateDelegate.h"
 #include "GetUserStatsForGameMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestWebGetUserStatsForGame.generated.h"
 
 UCLASS()

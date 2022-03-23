@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksSteamID.h"
 #include "UWorksInterfaceWeb.h"
+#include "UWorksSteamID.h"
 #include "GetSteamLevelMinimalDelegateDelegate.h"
 #include "UWorksPlaySessions.h"
 #include "RecordOfflinePlaytimeMinimalDelegateDelegate.h"
@@ -12,12 +12,12 @@
 #include "GetBadgesMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebPlayer.generated.h"
 
-class UUWorksRequestWebGetCommunityBadgeProgress;
 class UUWorksRequestWebRecordOfflinePlaytime;
 class UUWorksRequestWebIsPlayingSharedGame;
 class UUWorksRequestWebGetSteamLevel;
 class UUWorksRequestWebGetRecentlyPlayedGames;
 class UUWorksRequestWebGetOwnedGames;
+class UUWorksRequestWebGetCommunityBadgeProgress;
 class UUWorksRequestWebGetBadges;
 
 UCLASS(BlueprintType)

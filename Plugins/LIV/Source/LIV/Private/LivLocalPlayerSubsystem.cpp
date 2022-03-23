@@ -2,9 +2,9 @@
 #include "Templates/SubclassOf.h"
 
 class ULivWorldSubsystem;
-class AActor;
 class UPrimitiveComponent;
 class ULocalPlayer;
+class AActor;
 class ULivCaptureBase;
 
 void ULivLocalPlayerSubsystem::ShowComponent(UPrimitiveComponent* InComponent) {

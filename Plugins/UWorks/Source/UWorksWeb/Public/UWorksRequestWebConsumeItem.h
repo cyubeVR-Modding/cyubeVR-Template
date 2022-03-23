@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksSteamID.h"
 #include "UWorksRequestWeb.h"
 #include "ConsumeItemMinimalDelegateDelegate.h"
 #include "ConsumeItemDelegateDelegate.h"
 #include "UWorksSteamItemInstanceID.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestWebConsumeItem.generated.h"
 
 UCLASS()

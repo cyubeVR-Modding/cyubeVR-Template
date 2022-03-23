@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "GetNumberOfCurrentPlayersDelegateDelegate2.h"
+#include "UWorksRequestWeb.h"
 #include "GetNumberOfCurrentPlayersMinimalDelegateDelegate2.h"
 #include "UWorksRequestWebGetNumberOfCurrentPlayers.generated.h"
 

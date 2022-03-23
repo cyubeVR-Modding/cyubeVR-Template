@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUGCMatchingUGCTypeBP.h"
 #include "SteamUGCQueryParameterAllUser.h"
-#include "EUserUGCListSortOrderBP.h"
 #include "EUserUGCListBP.h"
+#include "EUserUGCListSortOrderBP.h"
+#include "EUGCMatchingUGCTypeBP.h"
 #include "SteamUGCQueryParameterUser.generated.h"
 
 USTRUCT(BlueprintType)

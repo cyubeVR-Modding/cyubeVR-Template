@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "SteamUGCUpdateHandle.h"
+#include "SteamDepotId.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
+#include "SteamAppId.h"
+#include "UInt32.h"
 #include "UInt64.h"
 #include "SteamUGCHandle.h"
-#include "UInt32.h"
-#include "ESteamSupportedLanguages.h"
 #include "SteamUGCItemId.h"
-#include "SteamDepotId.h"
-#include "SteamUGCUpdateHandle.h"
 #include "SteamUGCQueryHandle.h"
-#include "SteamAppId.h"
 #include "EPersonaStateBP.h"
 #include "SteamDelegateOnGameOverlayActivatedDynDelegate.h"
+#include "ESteamSupportedLanguages.h"
 #include "SteamGeneralLibrary.generated.h"
 
 UCLASS(BlueprintType)

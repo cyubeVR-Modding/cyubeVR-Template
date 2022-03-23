@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "EUWorksResult.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
 #include "RequestGlobalStatsDelegateDelegate.h"
 #include "UWorksGameID.h"
 #include "CoreRequestGlobalStatsNode.generated.h"

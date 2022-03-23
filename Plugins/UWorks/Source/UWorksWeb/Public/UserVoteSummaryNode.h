@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UserVoteSummaryDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "UserVoteSummaryDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UserVoteSummaryNode.generated.h"
 

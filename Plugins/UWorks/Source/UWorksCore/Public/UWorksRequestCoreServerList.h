@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksServerQueryType.h"
-#include "ServerListUpdateMinimalDelegateDelegate.h"
-#include "ServerListDelegateDelegate.h"
+#include "UWorksServerInfo.h"
 #include "UWorksRequestCore.h"
+#include "ServerListDelegateDelegate.h"
 #include "ServerListUpdateDelegateDelegate.h"
 #include "ServerListMinimalDelegateDelegate.h"
-#include "UWorksServerInfo.h"
+#include "ServerListUpdateMinimalDelegateDelegate.h"
+#include "EUWorksServerQueryType.h"
 #include "UWorksRequestCoreServerList.generated.h"
 
 UCLASS(BlueprintType)

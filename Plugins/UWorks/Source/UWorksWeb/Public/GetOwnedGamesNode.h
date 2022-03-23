@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "UWorksSteamID.h"
 #include "GetOwnedGamesDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "GetOwnedGamesNode.generated.h"
 
 class UGetOwnedGamesNode;

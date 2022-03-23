@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestCore.h"
-#include "SubscribeItemMinimalDelegateDelegate.h"
 #include "SubscribeItemDelegateDelegate.h"
-#include "UWorksPublishedFileID.h"
 #include "EUWorksResult.h"
+#include "UWorksPublishedFileID.h"
+#include "SubscribeItemMinimalDelegateDelegate.h"
 #include "UWorksRequestCoreSubscribeItem.generated.h"
 
 UCLASS(BlueprintType)

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EBlockTypeBP.h"
 #include "GameFramework/Actor.h"
+#include "EBlockTypeBP.h"
 #include "CraftDraftVisualizer.generated.h"
 
 UCLASS()

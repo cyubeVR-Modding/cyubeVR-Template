@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
-#include "UWorksGameID.h"
 #include "GetGameServerPlayerStatsForGameDelegateDelegate.h"
 #include "GetGameServerPlayerStatsForGameMinimalDelegateDelegate.h"
+#include "UWorksGameID.h"
 #include "UWorksRequestWebGetGameServerPlayerStatsForGame.generated.h"
 
 UCLASS()

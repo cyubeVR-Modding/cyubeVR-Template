@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EndSecureMultiplayerSessionDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksSteamID.h"
-#include "EndSecureMultiplayerSessionDelegateDelegate.h"
 #include "EndSecureMultiplayerSessionNode.generated.h"
 
 class UEndSecureMultiplayerSessionNode;

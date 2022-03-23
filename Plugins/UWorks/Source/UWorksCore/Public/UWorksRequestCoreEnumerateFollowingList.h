@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EnumerateFollowingListDelegateDelegate.h"
 #include "UWorksRequestCore.h"
 #include "EUWorksResult.h"
-#include "EnumerateFollowingListDelegateDelegate.h"
 #include "EnumerateFollowingListMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestCoreEnumerateFollowingList.generated.h"

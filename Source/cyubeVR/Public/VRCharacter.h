@@ -5,9 +5,9 @@
 #include "UObject/NoExportTypes.h"
 #include "VRCharacter.generated.h"
 
-class UMeshComponent;
-class UCameraComponent;
 class AActor;
+class UCameraComponent;
+class UMeshComponent;
 
 UCLASS()
 class CYUBEVR_API AVRCharacter : public APawn, public ILightReceiveInterface {
@@ -31,6 +31,9 @@ public:
     
     UFUNCTION(BlueprintCallable)
     bool UseLightAroundValue();
+    
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+    void ReduceHealthCPP(float Amount);
     
     UFUNCTION(BlueprintCallable)
     TArray<UMeshComponent*> GetMeshComponents();

@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UpdateSessionMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
+#include "UpdateSessionDelegateDelegate.h"
+#include "UWorksTitle.h"
 #include "UWorksSteamID.h"
 #include "UWorksUsers.h"
-#include "UpdateSessionDelegateDelegate.h"
-#include "UWorksRequestWeb.h"
-#include "UpdateSessionMinimalDelegateDelegate.h"
-#include "UWorksTitle.h"
 #include "UWorksRequestWebUpdateSession.generated.h"
 
 UCLASS()

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EBlockTypeBP.h"
 #include "MeshObject.h"
+#include "EBlockTypeBP.h"
 #include "Tool.generated.h"
 
 class AChunkManager;

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Fonts/SlateFontInfo.h"
 #include "Engine/DeveloperSettings.h"
 #include "LoadingScreenDescription.h"
+#include "Fonts/SlateFontInfo.h"
 #include "LoadingScreenSettings.generated.h"
 
 UCLASS(BlueprintType, DefaultConfig, Config=Game)

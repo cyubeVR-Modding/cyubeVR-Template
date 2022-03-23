@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AuthenticateUserMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "UWorksInterfaceWeb.h"
+#include "AuthenticateUserMinimalDelegateDelegate.h"
 #include "AuthenticateUserTicketMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksInterfaceWebUserAuth.generated.h"
 
-class UUWorksRequestWebAuthenticateUser;
 class UUWorksRequestWebAuthenticateUserTicket;
+class UUWorksRequestWebAuthenticateUser;
 
 UCLASS(BlueprintType)
 class UWORKSWEB_API UUWorksInterfaceWebUserAuth : public UUWorksInterfaceWeb {

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "GetPopularMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "GetPopularDelegateDelegate.h"
-#include "GetPopularMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetPopular.generated.h"
 
 UCLASS()

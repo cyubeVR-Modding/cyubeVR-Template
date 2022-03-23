@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "LivCaptureContext.generated.h"
 
-class AActor;
 class UPrimitiveComponent;
+class AActor;
 
 USTRUCT(BlueprintType)
 struct FLivCaptureContext {

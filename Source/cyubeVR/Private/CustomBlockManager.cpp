@@ -1,5 +1,12 @@
 #include "CustomBlockManager.h"
 
+class UTexture2D;
+class UTexture2DArray;
+
+UTexture2D* UCustomBlockManager::LoadDDS(const FString& Filename, TEnumAsByte<EPixelFormat> PixelFormat, bool ConvertDXT5toDXT1) {
+    return NULL;
+}
+
 int32 UCustomBlockManager::GetTextureIndexForCustomBlock(int32 UniqueId, uint8 Side) {
     return 0;
 }
@@ -13,6 +20,9 @@ EBlockTypeBP UCustomBlockManager::GetPropertyBlockForCustomBlock(int32 UniqueId)
 
 FString UCustomBlockManager::GetNameOfCustomBlock(int32 UniqueId) {
     return TEXT("");
+}
+
+void UCustomBlockManager::CopyTextureToArraySlice(UTexture2DArray* DestArray, int32 DestSlice, UTexture2D* SourceTexture) {
 }
 
 UCustomBlockManager::UCustomBlockManager() {

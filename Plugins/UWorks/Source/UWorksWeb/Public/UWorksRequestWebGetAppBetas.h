@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetAppBetasDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
+#include "GetAppBetasDelegateDelegate.h"
 #include "GetAppBetasMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetAppBetas.generated.h"
 

@@ -2,9 +2,9 @@
 #include "Net/UnrealNetwork.h"
 #include "GS_Default.h"
 
+class UPrimitiveComponent;
 class UObject;
 class AActor;
-class UPrimitiveComponent;
 class USceneComponent;
 
 void UGripMotionControllerComponent::UpdatePhysicsHandleTransform_BP(const FBPActorGripInformation& GrippedActor, const FTransform& NewTransform) {

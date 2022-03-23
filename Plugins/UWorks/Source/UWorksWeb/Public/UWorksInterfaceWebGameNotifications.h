@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksSteamID.h"
-#include "UWorksUsers.h"
-#include "UWorksInterfaceWeb.h"
-#include "RequestNotificationsMinimalDelegateDelegate.h"
-#include "UWorksTitle.h"
 #include "UpdateSessionMinimalDelegateDelegate.h"
+#include "UWorksInterfaceWeb.h"
+#include "UWorksTitle.h"
+#include "RequestNotificationsMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "DeleteSessionMinimalDelegateDelegate.h"
+#include "UWorksUsers.h"
 #include "UWorksSessions.h"
 #include "GetSessionDetailsForAppMinimalDelegateDelegate.h"
 #include "EnumerateSessionsForAppMinimalDelegateDelegate.h"
@@ -14,13 +14,13 @@
 #include "CreateSessionMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebGameNotifications.generated.h"
 
+class UUWorksRequestWebCreateSession;
 class UUWorksRequestWebUpdateSession;
 class UUWorksRequestWebRequestNotifications;
-class UUWorksRequestWebDeleteSession;
 class UUWorksRequestWebGetSessionDetailsForApp;
 class UUWorksRequestWebEnumerateSessionsForApp;
 class UUWorksRequestWebDeleteSessionBatch;
-class UUWorksRequestWebCreateSession;
+class UUWorksRequestWebDeleteSession;
 
 UCLASS(BlueprintType)
 class UWORKSWEB_API UUWorksInterfaceWebGameNotifications : public UUWorksInterfaceWeb {

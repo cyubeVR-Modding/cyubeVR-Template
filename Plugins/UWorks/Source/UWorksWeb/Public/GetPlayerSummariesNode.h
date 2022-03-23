@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "GetPlayerSummariesDelegateDelegate.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
 #include "GetPlayerSummariesNode.generated.h"
 
 class UGetPlayerSummariesNode;

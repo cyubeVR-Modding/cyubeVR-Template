@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksSteamID.h"
+#include "GetUserGroupListMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWeb.h"
 #include "ResolveVanityURLMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "GrantPackageMinimalDelegateDelegate.h"
-#include "GetUserGroupListMinimalDelegateDelegate.h"
 #include "GetPublisherAppOwnershipMinimalDelegateDelegate.h"
 #include "GetPublisherAppOwnershipChangesMinimalDelegateDelegate.h"
 #include "GetPlayerSummariesMinimalDelegateDelegate.h"
@@ -15,9 +15,9 @@
 #include "UWorksInterfaceWebUser.generated.h"
 
 class UUWorksRequestWebGrantPackage;
-class UUWorksRequestWebGetUserGroupList;
 class UUWorksRequestWebCheckAppOwnership;
 class UUWorksRequestWebResolveVanityURL;
+class UUWorksRequestWebGetUserGroupList;
 class UUWorksRequestWebGetPublisherAppOwnershipChanges;
 class UUWorksRequestWebGetPublisherAppOwnership;
 class UUWorksRequestWebGetPlayerSummaries;

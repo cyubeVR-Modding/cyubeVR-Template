@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "LivActivationDelegateDelegate.h"
 #include "Components/SceneCaptureComponent2D.h"
+#include "LivActivationDelegateDelegate.h"
+#include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "LivCaptureBase.generated.h"

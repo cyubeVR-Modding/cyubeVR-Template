@@ -11,12 +11,12 @@
 #include "UObject/NoExportTypes.h"
 #include "MyBlueprintFunctionLibrary.generated.h"
 
-class UObject;
 class UTextureRenderTarget2D;
 class ADynamicResolutionScalingActor;
+class UObject;
+class UWidget;
 class UActorComponent;
 class UTexture;
-class UWidget;
 class UTexture2D;
 class UStaticMesh;
 class UProceduralMeshComponent;

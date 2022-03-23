@@ -3,8 +3,8 @@
 #include "ERuntimeMeshCollisionFaceSourceType.h"
 #include "RuntimeMeshCollisionHitInfo.generated.h"
 
-class UMaterialInterface;
 class URuntimeMeshProvider;
+class UMaterialInterface;
 
 USTRUCT(BlueprintType)
 struct RUNTIMEMESHCOMPONENT_API FRuntimeMeshCollisionHitInfo {

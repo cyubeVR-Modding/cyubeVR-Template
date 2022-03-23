@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EUWorksResult.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "RequestEncryptedAppTicketDelegateDelegate.h"
-#include "EUWorksResult.h"
 #include "CoreRequestEncryptedAppTicketNode.generated.h"
 
 class UCoreRequestEncryptedAppTicketNode;

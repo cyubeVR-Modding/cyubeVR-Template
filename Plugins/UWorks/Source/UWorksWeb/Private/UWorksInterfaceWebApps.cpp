@@ -5,9 +5,9 @@ class UUWorksRequestWebSetAppBuildLive;
 class UUWorksRequestWebGetServersAtAddress;
 class UUWorksRequestWebGetServerList;
 class UUWorksRequestWebGetPlayersBanned;
-class UUWorksRequestWebGetAppDepotVersions;
 class UUWorksRequestWebGetCheatingReportsList;
 class UUWorksRequestWebGetAppList;
+class UUWorksRequestWebGetAppDepotVersions;
 class UUWorksRequestWebGetAppBuilds;
 class UUWorksRequestWebGetAppBetas;
 

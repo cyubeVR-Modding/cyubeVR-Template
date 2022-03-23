@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UWorksInterfaceWeb.h"
 #include "UserVoteSummaryMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
-#include "UWorksInterfaceWeb.h"
 #include "ItemVoteSummaryMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebPublishedItemVoting.generated.h"
 
-class UUWorksRequestWebUserVoteSummary;
 class UUWorksRequestWebItemVoteSummary;
+class UUWorksRequestWebUserVoteSummary;
 
 UCLASS(BlueprintType)
 class UWORKSWEB_API UUWorksInterfaceWebPublishedItemVoting : public UUWorksInterfaceWeb {

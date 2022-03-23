@@ -3,8 +3,8 @@
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "LivBlueprintFunctionLibrary.generated.h"
 
-class UObject;
 class UTextureRenderTarget2D;
+class UObject;
 class UTexture2D;
 
 UCLASS(BlueprintType)

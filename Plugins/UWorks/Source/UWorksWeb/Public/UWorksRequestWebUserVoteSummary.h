@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksSteamID.h"
-#include "UserVoteSummaryMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "UserVoteSummaryDelegateDelegate.h"
+#include "UWorksSteamID.h"
+#include "UserVoteSummaryMinimalDelegateDelegate.h"
 #include "UWorksRequestWebUserVoteSummary.generated.h"
 
 UCLASS()

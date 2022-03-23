@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceCore.h"
-#include "DlcInstalledDelegateDelegate.h"
-#include "NewUrlLaunchParametersDelegateDelegate.h"
 #include "GetFileDetailsMinimalDelegateDelegate.h"
+#include "DlcInstalledDelegateDelegate.h"
+#include "UWorksInterfaceCore.h"
+#include "NewUrlLaunchParametersDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksInterfaceCoreApps.generated.h"
 
-class UUWorksInterfaceCoreApps;
 class UUWorksRequestCoreGetFileDetails;
+class UUWorksInterfaceCoreApps;
 
 UCLASS(BlueprintType)
 class UWORKSCORE_API UUWorksInterfaceCoreApps : public UUWorksInterfaceCore {

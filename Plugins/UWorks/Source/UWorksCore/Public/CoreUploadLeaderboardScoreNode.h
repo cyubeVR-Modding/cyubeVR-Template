@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EUWorksLeaderboardUploadScoreMethod.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "UploadLeaderboardScoreDelegateDelegate.h"
 #include "UWorksSteamLeaderboard.h"
-#include "EUWorksLeaderboardUploadScoreMethod.h"
 #include "CoreUploadLeaderboardScoreNode.generated.h"
 
 class UCoreUploadLeaderboardScoreNode;

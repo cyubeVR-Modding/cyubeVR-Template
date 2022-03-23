@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RuntimeMeshCollisionSettings.h"
 #include "RuntimeMeshProviderPassthrough.h"
 #include "RuntimeMeshRenderableCollisionData.h"
+#include "RuntimeMeshCollisionSettings.h"
 #include "RuntimeMeshCollisionData.h"
 #include "RuntimeMeshProviderCollision.generated.h"
 

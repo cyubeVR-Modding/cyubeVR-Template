@@ -10,5 +10,6 @@ enum class UDLSSSupport : uint8 {
     NotSupportedDriverOutOfDate,
     NotSupportedOperatingSystemOutOfDate,
     NotSupportedByPlatformAtBuildTime,
+    NotSupportedIncompatibleAPICaptureToolActive,
 };
 

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "GetNewsForAppDelegateDelegate.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
 #include "GetNewsForAppNode.generated.h"
 
 class UGetNewsForAppNode;

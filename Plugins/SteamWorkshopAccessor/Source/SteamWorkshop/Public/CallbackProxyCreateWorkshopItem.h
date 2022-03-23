@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Net/OnlineBlueprintCallProxyBase.h"
-#include "SteamWorkshopUpdateDetails.h"
 #include "SteamDelegateOnCreateWorkshopItemDelegate.h"
+#include "SteamWorkshopUpdateDetails.h"
 #include "CallbackProxyCreateWorkshopItem.generated.h"
 
 class UCallbackProxyCreateWorkshopItem;

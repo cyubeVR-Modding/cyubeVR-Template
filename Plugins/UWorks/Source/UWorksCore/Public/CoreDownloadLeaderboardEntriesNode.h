@@ -2,9 +2,9 @@
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "DownloadLeaderboardEntriesDelegateDelegate.h"
+#include "EUWorksLeaderboardDataRequest.h"
 #include "UWorksSteamLeaderboard.h"
 #include "UWorksSteamLeaderboardEntries.h"
-#include "EUWorksLeaderboardDataRequest.h"
 #include "CoreDownloadLeaderboardEntriesNode.generated.h"
 
 class UCoreDownloadLeaderboardEntriesNode;

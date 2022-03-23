@@ -5,8 +5,8 @@ class ADraftUnlockingPaper;
 class ADeathBeacon;
 class AModifiedBlockActor;
 class AMeshObject;
-class USoundBase;
 class ABlockItem;
+class USoundBase;
 class UParticleSystem;
 
 void AChunkManager::UpdateSkyEvent_Implementation(float NewTimeOfDay) {

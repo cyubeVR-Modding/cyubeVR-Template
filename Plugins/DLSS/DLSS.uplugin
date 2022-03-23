@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
-	"Version": 8,
-	"VersionName": "2.3.1",
+	"Version": 10,
+	"VersionName": "2.3.3",
 	"FriendlyName": "NVIDIA DLSS",
 	"Description": "NVIDIA Deep Learning Super Sampling",
 	"Category": "Rendering",
@@ -27,7 +27,7 @@
 		{
 			"Name": "DLSSBlueprint",
 			"Type": "Runtime",
-			"LoadingPhase": "PostEngineInit"
+			"LoadingPhase": "PostConfigInit"
 		}
 	]
 }

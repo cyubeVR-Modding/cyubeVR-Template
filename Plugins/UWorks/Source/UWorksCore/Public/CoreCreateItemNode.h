@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksPublishedFileID.h"
+#include "EUWorksResult.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "CreateItemDelegateDelegate.h"
-#include "EUWorksResult.h"
 #include "EUWorksWorkshopFileType.h"
 #include "CoreCreateItemNode.generated.h"
 

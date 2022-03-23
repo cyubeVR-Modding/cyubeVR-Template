@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RequestEncryptedAppTicketDelegateDelegate.h"
 #include "UWorksRequestCore.h"
+#include "RequestEncryptedAppTicketDelegateDelegate.h"
 #include "RequestEncryptedAppTicketMinimalDelegateDelegate.h"
 #include "EUWorksResult.h"
 #include "UWorksRequestCoreRequestEncryptedAppTicket.generated.h"

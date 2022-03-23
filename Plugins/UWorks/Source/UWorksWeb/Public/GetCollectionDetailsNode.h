@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "GetCollectionDetailsDelegateDelegate.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
 #include "GetCollectionDetailsNode.generated.h"
 
 class UGetCollectionDetailsNode;

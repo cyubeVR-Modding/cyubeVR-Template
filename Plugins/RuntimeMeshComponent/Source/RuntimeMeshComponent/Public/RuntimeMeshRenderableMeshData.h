@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RuntimeMeshVertexTexCoordStream.h"
 #include "RuntimeMeshVertexPositionStream.h"
 #include "RuntimeMeshVertexTangentStream.h"
-#include "RuntimeMeshVertexColorStream.h"
+#include "RuntimeMeshVertexTexCoordStream.h"
 #include "RuntimeMeshTriangleStream.h"
+#include "RuntimeMeshVertexColorStream.h"
 #include "RuntimeMeshRenderableMeshData.generated.h"
 
 USTRUCT(BlueprintType)

@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "EVRRotationQuantization.h"
 #include "EVRVectorQuantization.h"
-#include "UObject/NoExportTypes.h"
 #include "BPVRComponentPosRep.generated.h"
 
 USTRUCT(BlueprintType)

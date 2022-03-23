@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksSteamID.h"
 #include "UWorksRequestWeb.h"
-#include "GetUserAgreementInfoMinimalDelegateDelegate.h"
 #include "GetUserAgreementInfoDelegateDelegate.h"
+#include "UWorksSteamID.h"
+#include "GetUserAgreementInfoMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetUserAgreementInfo.generated.h"
 
 UCLASS()

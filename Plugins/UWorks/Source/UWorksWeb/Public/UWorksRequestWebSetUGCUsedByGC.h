@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksSteamID.h"
+#include "SetUGCUsedByGCMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "SetUGCUsedByGCDelegateDelegate.h"
-#include "SetUGCUsedByGCMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestWebSetUGCUsedByGC.generated.h"
 
 UCLASS()

@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RulesUpdateMinimalDelegateDelegate.h"
+#include "ServerListUpdateMinimalDelegateDelegate.h"
 #include "UWorksInterfaceCore.h"
 #include "ServerListMinimalDelegateDelegate.h"
+#include "RulesUpdateMinimalDelegateDelegate.h"
 #include "EUWorksServerQueryType.h"
-#include "ServerListUpdateMinimalDelegateDelegate.h"
 #include "RulesMinimalDelegateDelegate.h"
 #include "PlayersMinimalDelegateDelegate.h"
 #include "PlayersUpdateMinimalDelegateDelegate.h"

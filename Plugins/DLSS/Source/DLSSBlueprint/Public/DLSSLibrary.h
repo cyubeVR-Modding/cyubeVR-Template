@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
 #include "UObject/NoExportTypes.h"
+#include "Kismet/BlueprintFunctionLibrary.h"
 #include "UDLSSMode.h"
 #include "UDLSSSupport.h"
 #include "DLSSLibrary.generated.h"
@@ -27,6 +27,9 @@ public:
     static bool IsDLSSModeSupported(UDLSSMode DLSSMode);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
+    static bool IsDLAAEnabled();
+    
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     static TArray<UDLSSMode> GetSupportedDLSSModes();
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
@@ -46,6 +49,9 @@ public:
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static UDLSSMode GetDefaultDLSSMode();
+    
+    UFUNCTION(BlueprintCallable)
+    static void EnableDLAA(bool bEnabled);
     
 };
 

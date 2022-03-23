@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestCore.h"
+#include "EUWorksResult.h"
 #include "RequestGlobalAchievementPercentagesDelegateDelegate.h"
 #include "RequestGlobalAchievementPercentagesMinimalDelegateDelegate.h"
 #include "UWorksGameID.h"
-#include "EUWorksResult.h"
 #include "UWorksRequestCoreRequestGlobalAchievementPercentages.generated.h"
 
 UCLASS(BlueprintType)

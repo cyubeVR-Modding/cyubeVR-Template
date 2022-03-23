@@ -2,15 +2,15 @@
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
 #include "Subsystems/LocalPlayerSubsystem.h"
-#include "LivLocalPlayerActivationDelegateDelegate.h"
 #include "LivCaptureContext.h"
+#include "LivLocalPlayerActivationDelegateDelegate.h"
 #include "UObject/NoExportTypes.h"
 #include "LivLocalPlayerSubsystem.generated.h"
 
-class AActor;
 class ULivWorldSubsystem;
 class UPrimitiveComponent;
 class ULocalPlayer;
+class AActor;
 class ULivCaptureBase;
 
 UCLASS(BlueprintType)

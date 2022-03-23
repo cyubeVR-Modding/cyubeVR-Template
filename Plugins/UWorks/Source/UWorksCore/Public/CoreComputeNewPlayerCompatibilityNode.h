@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EUWorksResult.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "ComputeNewPlayerCompatibilityDelegateDelegate.h"
-#include "EUWorksResult.h"
 #include "UWorksSteamID.h"
 #include "CoreComputeNewPlayerCompatibilityNode.generated.h"
 

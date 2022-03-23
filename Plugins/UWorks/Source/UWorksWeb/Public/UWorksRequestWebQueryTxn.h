@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
-#include "QueryTxnDelegateDelegate.h"
 #include "QueryTxnMinimalDelegateDelegate.h"
+#include "QueryTxnDelegateDelegate.h"
 #include "UWorksRequestWebQueryTxn.generated.h"
 
 UCLASS()

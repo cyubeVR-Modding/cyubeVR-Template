@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
-#include "EUWorksLeaderboardDisplayType.h"
 #include "FindOrCreateLeaderboardDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "FindOrCreateLeaderboardMinimalDelegateDelegate.h"
 #include "UWorksSteamLeaderboard.h"
 #include "EUWorksLeaderboardSortMethod.h"
+#include "EUWorksLeaderboardDisplayType.h"
 #include "UWorksRequestCoreFindOrCreateLeaderboard.generated.h"
 
 UCLASS(BlueprintType)

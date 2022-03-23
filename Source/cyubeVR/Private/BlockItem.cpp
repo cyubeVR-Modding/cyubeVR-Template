@@ -1,7 +1,7 @@
 #include "BlockItem.h"
 
-class AChunkManager;
 class ABlockItem;
+class AChunkManager;
 
 void ABlockItem::WriteLastRecipeToDisk() {
 }

@@ -1,12 +1,12 @@
 #include "UWorksInterfaceWebGameNotifications.h"
 
+class UUWorksRequestWebCreateSession;
 class UUWorksRequestWebUpdateSession;
 class UUWorksRequestWebRequestNotifications;
-class UUWorksRequestWebDeleteSession;
 class UUWorksRequestWebGetSessionDetailsForApp;
 class UUWorksRequestWebEnumerateSessionsForApp;
 class UUWorksRequestWebDeleteSessionBatch;
-class UUWorksRequestWebCreateSession;
+class UUWorksRequestWebDeleteSession;
 
 void UUWorksInterfaceWebGameNotifications::UpdateSessionMinimal(const FString& Key, const FString& SessionId, int32 AppID, FUWorksTitle Title, FUWorksUsers Users, FUWorksSteamID SteamID, const FUpdateSessionMinimalDelegate& Delegate) {
 }

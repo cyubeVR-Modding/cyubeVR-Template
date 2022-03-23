@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "RequestVacStatusForUserDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "RequestVacStatusForUserDelegateDelegate.h"
 #include "RequestVacStatusForUserNode.generated.h"
 
 class URequestVacStatusForUserNode;

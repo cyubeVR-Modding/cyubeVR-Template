@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksSteamID.h"
 #include "UWorksRequestWeb.h"
-#include "StartTradeDelegateDelegate.h"
 #include "StartTradeMinimalDelegateDelegate.h"
+#include "StartTradeDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestWebStartTrade.generated.h"
 
 UCLASS()

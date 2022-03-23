@@ -9,6 +9,9 @@ bool AVRCharacter::UseLightAroundValue() {
     return false;
 }
 
+void AVRCharacter::ReduceHealthCPP_Implementation(float Amount) {
+}
+
 TArray<UMeshComponent*> AVRCharacter::GetMeshComponents() {
     return TArray<UMeshComponent*>();
 }

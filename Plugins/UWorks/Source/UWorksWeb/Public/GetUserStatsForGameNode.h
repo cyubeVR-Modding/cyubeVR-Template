@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetUserStatsForGameDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "GetUserStatsForGameDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "GetUserStatsForGameNode.generated.h"
 

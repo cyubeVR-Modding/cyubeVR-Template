@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EUWorksResult.h"
+#include "ServerRequestUserStatsDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksSteamID.h"
-#include "ServerRequestUserStatsDelegateDelegate.h"
-#include "EUWorksResult.h"
 #include "CoreRequestUserStatsGSNode.generated.h"
 
 class UCoreRequestUserStatsGSNode;

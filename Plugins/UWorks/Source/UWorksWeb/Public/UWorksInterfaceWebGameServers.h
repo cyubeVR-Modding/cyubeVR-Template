@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksSteamID.h"
 #include "UWorksInterfaceWeb.h"
+#include "UWorksSteamID.h"
 #include "SetMemoMinimalDelegateDelegate.h"
 #include "SetBanStatusMinimalDelegateDelegate.h"
 #include "ResetLoginTokenMinimalDelegateDelegate.h"
 #include "QueryLoginTokenMinimalDelegateDelegate.h"
 #include "GetServerSteamIDsByIPMinimalDelegateDelegate.h"
 #include "GetServerIPsBySteamIDMinimalDelegateDelegate.h"
+#include "DeleteAccountMinimalDelegateDelegate.h"
 #include "GetAccountPublicInfoMinimalDelegateDelegate.h"
 #include "GetAccountListMinimalDelegateDelegate.h"
-#include "DeleteAccountMinimalDelegateDelegate.h"
 #include "CreateAccountMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebGameServers.generated.h"
 
@@ -20,9 +20,9 @@ class UUWorksRequestWebResetLoginToken;
 class UUWorksRequestWebQueryLoginToken;
 class UUWorksRequestWebGetServerSteamIDsByIP;
 class UUWorksRequestWebGetServerIPsBySteamID;
+class UUWorksRequestWebDeleteAccount;
 class UUWorksRequestWebGetAccountPublicInfo;
 class UUWorksRequestWebGetAccountList;
-class UUWorksRequestWebDeleteAccount;
 class UUWorksRequestWebCreateAccount;
 
 UCLASS(BlueprintType)

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetGlobalAchievementPercentagesForAppMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "GetGlobalAchievementPercentagesForAppDelegateDelegate.h"
+#include "GetGlobalAchievementPercentagesForAppMinimalDelegateDelegate.h"
 #include "UWorksGameID.h"
 #include "UWorksRequestWebGetGlobalAchievementPercentagesForApp.generated.h"
 

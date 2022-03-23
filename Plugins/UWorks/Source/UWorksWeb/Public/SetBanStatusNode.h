@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SetBanStatusDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "SetBanStatusDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "SetBanStatusNode.generated.h"
 

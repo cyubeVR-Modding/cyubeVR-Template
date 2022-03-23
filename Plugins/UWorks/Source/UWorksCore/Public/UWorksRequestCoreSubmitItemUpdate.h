@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SubmitItemUpdateMinimalDelegateDelegate.h"
-#include "UWorksRequestCore.h"
-#include "EUWorksResult.h"
 #include "SubmitItemUpdateDelegateDelegate.h"
+#include "UWorksRequestCore.h"
+#include "SubmitItemUpdateMinimalDelegateDelegate.h"
+#include "EUWorksResult.h"
 #include "UWorksUGCUpdateHandle.h"
 #include "UWorksRequestCoreSubmitItemUpdate.generated.h"
 

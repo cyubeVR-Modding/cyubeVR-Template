@@ -5,14 +5,14 @@
 class URuntimeMeshComponent;
 class URuntimeMeshProviderChunks;
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FMeshComponentInfo {
     GENERATED_BODY()
 public:
-    UPROPERTY(Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, Export, meta=(AllowPrivateAccess=true))
     URuntimeMeshComponent* RMC;
     
-    UPROPERTY(meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     URuntimeMeshProviderChunks* RuntimeMeshProvider;
     
     CYUBEVR_API FMeshComponentInfo();

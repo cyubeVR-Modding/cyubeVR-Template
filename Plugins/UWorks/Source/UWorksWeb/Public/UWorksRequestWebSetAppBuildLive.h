@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SetAppBuildLiveDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
+#include "SetAppBuildLiveDelegateDelegate.h"
 #include "SetAppBuildLiveMinimalDelegateDelegate.h"
 #include "UWorksRequestWebSetAppBuildLive.generated.h"
 

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SetPersonaNameDelegateDelegate.h"
 #include "UWorksRequestCore.h"
+#include "SetPersonaNameDelegateDelegate.h"
 #include "SetPersonaNameMinimalDelegateDelegate.h"
 #include "EUWorksResult.h"
 #include "UWorksRequestCoreSetPersonaName.generated.h"

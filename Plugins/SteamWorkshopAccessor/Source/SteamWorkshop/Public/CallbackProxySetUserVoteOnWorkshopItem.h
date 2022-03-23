@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamUGCItemId.h"
-#include "Net/OnlineBlueprintCallProxyBase.h"
 #include "SteamDelegateOnSetUserVoteOnWorkshopItemDelegate.h"
+#include "Net/OnlineBlueprintCallProxyBase.h"
+#include "SteamUGCItemId.h"
 #include "CallbackProxySetUserVoteOnWorkshopItem.generated.h"
 
 class UCallbackProxySetUserVoteOnWorkshopItem;

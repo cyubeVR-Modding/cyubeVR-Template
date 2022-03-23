@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "RequestLobbyListMinimalDelegateDelegate.h"
 #include "UWorksRequestCore.h"
 #include "RequestLobbyListDelegateDelegate.h"
-#include "RequestLobbyListMinimalDelegateDelegate.h"
 #include "UWorksRequestCoreRequestLobbyList.generated.h"
 
 UCLASS(BlueprintType)

@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "GameFramework/GameStateBase.h"
-#include "MC_GameState.generated.h"
+#include "CubeGameState.generated.h"
 
-class UTexture2D;
 class AChunkManager;
+class UTexture2D;
 
 UCLASS()
-class CYUBEVR_API AMC_GameState : public AGameStateBase {
+class CYUBEVR_API ACubeGameState : public AGameStateBase {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
@@ -16,6 +16,6 @@ public:
     UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     TMap<FString, UTexture2D*> AlreadyLoadedTextures;
     
-    AMC_GameState();
+    ACubeGameState();
 };
 

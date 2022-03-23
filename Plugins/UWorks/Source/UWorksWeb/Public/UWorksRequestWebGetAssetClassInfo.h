@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetAssetClassInfoMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "GetAssetClassInfoDelegateDelegate.h"
+#include "GetAssetClassInfoMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetAssetClassInfo.generated.h"
 
 UCLASS()

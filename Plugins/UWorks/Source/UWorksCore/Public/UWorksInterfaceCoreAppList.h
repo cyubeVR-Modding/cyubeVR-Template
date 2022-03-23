@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksInterfaceCore.h"
-#include "SteamAppUninstalledDelegateDelegate.h"
 #include "SteamAppInstalledDelegateDelegate.h"
+#include "SteamAppUninstalledDelegateDelegate.h"
 #include "UWorksInterfaceCoreAppList.generated.h"
 
 class UUWorksInterfaceCoreAppList;

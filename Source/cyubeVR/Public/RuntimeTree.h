@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "GameFramework/Actor.h"
 #include "ETreeType.h"
+#include "GameFramework/Actor.h"
+#include "UObject/NoExportTypes.h"
 #include "RuntimeTree.generated.h"
 
-class UStaticMesh;
-class AChunkManager;
 class UProceduralMeshComponent;
+class AChunkManager;
+class UStaticMesh;
 
 UCLASS()
 class CYUBEVR_API ARuntimeTree : public AActor {
