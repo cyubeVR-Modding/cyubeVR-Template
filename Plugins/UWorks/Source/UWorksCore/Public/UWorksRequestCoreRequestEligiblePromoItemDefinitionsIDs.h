@@ -1,20 +1,20 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EUWorksResult.h"
 #include "UWorksRequestCore.h"
 #include "RequestEligiblePromoItemDefinitionsIDsDelegateDelegate.h"
 #include "RequestEligiblePromoItemDefinitionsIDsMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
-#include "EUWorksResult.h"
 #include "UWorksRequestCoreRequestEligiblePromoItemDefinitionsIDs.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreRequestEligiblePromoItemDefinitionsIDs : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRequestEligiblePromoItemDefinitionsIDsDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRequestEligiblePromoItemDefinitionsIDsMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreRequestEligiblePromoItemDefinitionsIDs();

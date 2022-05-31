@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "ERuntimeMeshMobility.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class ERuntimeMeshMobility : uint8 {
     Movable,
     Stationary,

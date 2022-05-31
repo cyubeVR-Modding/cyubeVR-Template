@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksSteamControllerLEDFlag.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksSteamControllerLEDFlag : uint8 {
     SetColor,
     RestoreUserDefault,

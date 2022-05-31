@@ -2,13 +2,13 @@
 #include "CoreMinimal.h"
 #include "UObject/Object.h"
 #include "RuntimeMeshSectionProperties.h"
-#include "RuntimeMeshMaterialSlot.h"
 #include "RuntimeMeshLODProperties.h"
+#include "RuntimeMeshMaterialSlot.h"
 #include "RuntimeMeshProviderTargetInterface.generated.h"
 
 class UMaterialInterface;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class RUNTIMEMESHCOMPONENT_API URuntimeMeshProviderTargetInterface : public UObject {
     GENERATED_BODY()
 public:

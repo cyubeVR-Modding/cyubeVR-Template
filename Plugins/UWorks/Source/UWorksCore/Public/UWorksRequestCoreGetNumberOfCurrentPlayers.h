@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "GetNumberOfCurrentPlayersMinimalDelegateDelegate.h"
 #include "UWorksRequestCore.h"
 #include "GetNumberOfCurrentPlayersDelegateDelegate.h"
-#include "GetNumberOfCurrentPlayersMinimalDelegateDelegate.h"
 #include "UWorksRequestCoreGetNumberOfCurrentPlayers.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreGetNumberOfCurrentPlayers : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetNumberOfCurrentPlayersDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetNumberOfCurrentPlayersMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreGetNumberOfCurrentPlayers();

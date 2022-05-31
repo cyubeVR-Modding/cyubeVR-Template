@@ -1,20 +1,20 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
 #include "EUWorksResult.h"
 #include "UWorksPublishedFileID.h"
-#include "StartPlaytimeTrackingMinimalDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "StartPlaytimeTrackingDelegateDelegate.h"
+#include "StartPlaytimeTrackingMinimalDelegateDelegate.h"
 #include "UWorksRequestCoreStartPlaytimeTracking.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreStartPlaytimeTracking : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FStartPlaytimeTrackingDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FStartPlaytimeTrackingMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreStartPlaytimeTracking();

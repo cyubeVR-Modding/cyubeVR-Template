@@ -3,7 +3,7 @@
 #include "UObject/Object.h"
 #include "WebCommunicationRequestCompleteObject.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWebCommunicationRequestCompleteObject : public UObject {
     GENERATED_BODY()
 public:

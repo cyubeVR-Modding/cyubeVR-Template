@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "UWorksAnnexCoreInventory.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FUWorksAnnexCoreInventory {
     GENERATED_BODY()
 public:

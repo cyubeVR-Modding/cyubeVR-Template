@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SupportGetAssetHistoryMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "SupportGetAssetHistoryDelegateDelegate.h"
+#include "SupportGetAssetHistoryMinimalDelegateDelegate.h"
 #include "UWorksRequestWebSupportGetAssetHistory.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebSupportGetAssetHistory : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSupportGetAssetHistoryDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSupportGetAssetHistoryMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebSupportGetAssetHistory();

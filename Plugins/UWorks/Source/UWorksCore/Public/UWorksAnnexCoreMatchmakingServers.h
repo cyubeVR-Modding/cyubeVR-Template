@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "UWorksAnnexCoreMatchmakingServers.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FUWorksAnnexCoreMatchmakingServers {
     GENERATED_BODY()
 public:

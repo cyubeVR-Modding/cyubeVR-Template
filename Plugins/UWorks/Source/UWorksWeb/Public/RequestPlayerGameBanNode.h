@@ -7,11 +7,11 @@
 
 class URequestPlayerGameBanNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API URequestPlayerGameBanNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRequestPlayerGameBanDelegate Completed;
     
     URequestPlayerGameBanNode();

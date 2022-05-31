@@ -1,7 +1,7 @@
 #include "CubeGameInstance.h"
 
-class UTexture2DArray;
 class UTexture2D;
+class UTexture2DArray;
 
 void UCubeGameInstance::UpdateTextureArrays() {
 }

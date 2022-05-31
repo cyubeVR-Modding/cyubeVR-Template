@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksServerInfo.h"
-#include "UWorksRequestCore.h"
 #include "PingDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "PingMinimalDelegateDelegate.h"
+#include "UWorksServerInfo.h"
 #include "UWorksRequestCorePing.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCorePing : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FPingDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FPingMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCorePing();

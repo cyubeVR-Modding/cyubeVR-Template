@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksFavoriteFlags.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksFavoriteFlags : uint8 {
     Unknown,
     Favorite,

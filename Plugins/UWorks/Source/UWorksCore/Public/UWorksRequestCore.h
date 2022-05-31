@@ -3,7 +3,7 @@
 #include "UWorksRequest.h"
 #include "UWorksRequestCore.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCore : public UUWorksRequest {
     GENERATED_BODY()
 public:

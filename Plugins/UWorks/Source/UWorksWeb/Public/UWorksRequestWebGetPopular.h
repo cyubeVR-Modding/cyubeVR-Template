@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetPopularMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "GetPopularDelegateDelegate.h"
+#include "GetPopularMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetPopular.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebGetPopular : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetPopularDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetPopularMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetPopular();

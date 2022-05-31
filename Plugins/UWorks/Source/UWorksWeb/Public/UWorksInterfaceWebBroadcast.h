@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceWeb.h"
 #include "UWorksSteamID.h"
+#include "UWorksInterfaceWeb.h"
 #include "PostGameDataFrameMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebBroadcast.generated.h"
 
 class UUWorksRequestWebPostGameDataFrame;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebBroadcast : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:

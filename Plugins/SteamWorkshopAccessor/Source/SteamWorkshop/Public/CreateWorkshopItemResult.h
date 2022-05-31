@@ -8,7 +8,7 @@ USTRUCT(BlueprintType)
 struct FCreateWorkshopItemResult : public FUpdateWorkshopItemResult {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, VisibleAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSteamWorkshopUpdateDetails itemDetails;
     
     STEAMWORKSHOP_API FCreateWorkshopItemResult();

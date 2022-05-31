@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "ProcessAgreementMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "ProcessAgreementDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebProcessAgreement.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebProcessAgreement : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FProcessAgreementDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FProcessAgreementMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebProcessAgreement();

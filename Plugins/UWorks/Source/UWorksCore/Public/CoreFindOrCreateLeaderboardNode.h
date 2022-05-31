@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksLeaderboardDisplayType.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "FindOrCreateLeaderboardDelegateDelegate.h"
-#include "EUWorksLeaderboardSortMethod.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksSteamLeaderboard.h"
+#include "EUWorksLeaderboardDisplayType.h"
+#include "EUWorksLeaderboardSortMethod.h"
 #include "CoreFindOrCreateLeaderboardNode.generated.h"
 
 class UCoreFindOrCreateLeaderboardNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSCORE_API UCoreFindOrCreateLeaderboardNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FFindOrCreateLeaderboardDelegate Completed;
     
     UCoreFindOrCreateLeaderboardNode();

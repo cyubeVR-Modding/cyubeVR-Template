@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksVRScreenshotType.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksVRScreenshotType : uint8 {
     None,
     Mono,

@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetItemDailyRevenueMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "GetItemDailyRevenueDelegateDelegate.h"
+#include "GetItemDailyRevenueMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetItemDailyRevenue.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebGetItemDailyRevenue : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetItemDailyRevenueDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetItemDailyRevenueMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetItemDailyRevenue();

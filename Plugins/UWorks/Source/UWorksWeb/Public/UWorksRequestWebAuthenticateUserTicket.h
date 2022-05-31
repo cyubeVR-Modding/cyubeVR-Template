@@ -5,14 +5,14 @@
 #include "AuthenticateUserTicketMinimalDelegateDelegate.h"
 #include "UWorksRequestWebAuthenticateUserTicket.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebAuthenticateUserTicket : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FAuthenticateUserTicketDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FAuthenticateUserTicketMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebAuthenticateUserTicket();

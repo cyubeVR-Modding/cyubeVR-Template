@@ -1,21 +1,21 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
+#include "EUWorksUserSession.h"
 #include "InitTxnDelegateDelegate.h"
 #include "InitTxnMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksSteamItemDef.h"
-#include "EUWorksUserSession.h"
 #include "UWorksRequestWebInitTxn.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebInitTxn : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FInitTxnDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FInitTxnMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebInitTxn();

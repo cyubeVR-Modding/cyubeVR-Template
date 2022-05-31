@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EHTTPWebComFileUploadType.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EHTTPWebComFileUploadType : uint8 {
     E_fut_put,
     E_fut_post,

@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksResult.h"
-#include "GetFollowerCountDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksSteamID.h"
+#include "GetFollowerCountDelegateDelegate.h"
+#include "EUWorksResult.h"
 #include "CoreGetFollowerCountNode.generated.h"
 
 class UCoreGetFollowerCountNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSCORE_API UCoreGetFollowerCountNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetFollowerCountDelegate Completed;
     
     UCoreGetFollowerCountNode();

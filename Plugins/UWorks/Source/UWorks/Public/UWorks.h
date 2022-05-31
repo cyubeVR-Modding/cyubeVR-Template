@@ -3,7 +3,7 @@
 #include "UObject/Object.h"
 #include "UWorks.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKS_API UUWorks : public UObject {
     GENERATED_BODY()
 public:

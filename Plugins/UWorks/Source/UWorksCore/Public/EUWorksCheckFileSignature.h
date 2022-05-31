@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "EUWorksCheckFileSignature.generated.h"
 
-UENUM()
-enum class EUWorksCheckFileSignature {
+UENUM(BlueprintType)
+enum class EUWorksCheckFileSignature : uint8 {
     InvalidSignature,
     ValidSignature,
     FileNotFound,

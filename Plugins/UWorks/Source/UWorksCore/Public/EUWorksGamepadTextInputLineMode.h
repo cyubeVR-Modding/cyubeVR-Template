@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksGamepadTextInputLineMode.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksGamepadTextInputLineMode : uint8 {
     SingleLine,
     MultipleLines,

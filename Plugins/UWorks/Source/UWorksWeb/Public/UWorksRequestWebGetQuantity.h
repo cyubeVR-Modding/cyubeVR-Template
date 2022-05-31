@@ -1,20 +1,20 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
+#include "GetQuantityMinimalDelegateDelegate.h"
 #include "GetQuantityDelegateDelegate.h"
 #include "UWorksSteamID.h"
-#include "GetQuantityMinimalDelegateDelegate.h"
 #include "UWorksSteamItemDef.h"
 #include "UWorksRequestWebGetQuantity.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebGetQuantity : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetQuantityDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetQuantityMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetQuantity();

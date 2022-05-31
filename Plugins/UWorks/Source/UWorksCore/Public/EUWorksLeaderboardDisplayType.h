@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksLeaderboardDisplayType.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksLeaderboardDisplayType : uint8 {
     None,
     Numeric,

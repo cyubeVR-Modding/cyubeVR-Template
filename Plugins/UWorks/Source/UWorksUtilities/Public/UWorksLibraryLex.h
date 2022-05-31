@@ -1,25 +1,25 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksLibrary.h"
-#include "UWorksScreenshotHandle.h"
 #include "UWorksUGCUpdateHandle.h"
-#include "UWorksUGCHandle.h"
-#include "UWorksUGCQueryHandle.h"
-#include "UWorksSteamPipe.h"
-#include "UWorksSteamInventoryResult.h"
-#include "UWorksUGCFileWriteStreamHandle.h"
-#include "UWorksSteamLeaderboard.h"
-#include "UWorksTicketHandle.h"
-#include "UWorksSteamUser.h"
-#include "UWorksSteamLeaderboardEntries.h"
-#include "UWorksFriendsGroupID.h"
 #include "UWorksControllerDigitalActionHandle.h"
 #include "UWorksControllerHandle.h"
+#include "UWorksLibrary.h"
+#include "UWorksUGCQueryHandle.h"
+#include "UWorksUGCHandle.h"
+#include "UWorksUGCFileWriteStreamHandle.h"
+#include "UWorksTicketHandle.h"
+#include "UWorksSteamUser.h"
+#include "UWorksSteamPipe.h"
+#include "UWorksSteamLeaderboardEntries.h"
+#include "UWorksSteamLeaderboard.h"
+#include "UWorksSteamInventoryResult.h"
+#include "UWorksScreenshotHandle.h"
+#include "UWorksFriendsGroupID.h"
 #include "UWorksControllerAnalogActionHandle.h"
 #include "UWorksControllerActionSetHandle.h"
 #include "UWorksLibraryLex.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSUTILITIES_API UUWorksLibraryLex : public UUWorksLibrary {
     GENERATED_BODY()
 public:

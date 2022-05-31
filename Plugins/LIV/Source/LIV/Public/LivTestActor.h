@@ -3,7 +3,7 @@
 #include "GameFramework/Actor.h"
 #include "LivTestActor.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class LIV_API ALivTestActor : public AActor {
     GENERATED_BODY()
 public:

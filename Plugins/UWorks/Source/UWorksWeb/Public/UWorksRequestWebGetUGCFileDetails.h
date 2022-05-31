@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetUGCFileDetailsMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "GetUGCFileDetailsDelegateDelegate.h"
+#include "GetUGCFileDetailsMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebGetUGCFileDetails.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebGetUGCFileDetails : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetUGCFileDetailsDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetUGCFileDetailsMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetUGCFileDetails();

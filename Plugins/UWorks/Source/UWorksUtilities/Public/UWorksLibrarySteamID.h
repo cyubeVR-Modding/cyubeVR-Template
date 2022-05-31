@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksAccountType.h"
 #include "UWorksLibrary.h"
 #include "UWorksSteamID.h"
 #include "EUWorksUniverse.h"
+#include "EUWorksAccountType.h"
 #include "UWorksLibrarySteamID.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSUTILITIES_API UUWorksLibrarySteamID : public UUWorksLibrary {
     GENERATED_BODY()
 public:

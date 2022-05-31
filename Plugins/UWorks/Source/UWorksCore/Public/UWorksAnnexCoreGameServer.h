@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "UWorksAnnexCoreGameServer.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FUWorksAnnexCoreGameServer {
     GENERATED_BODY()
 public:

@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksResult.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "AssociateWithClanDelegateDelegate.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
+#include "EUWorksResult.h"
 #include "UWorksSteamID.h"
 #include "CoreAssociateWithClanNode.generated.h"
 
 class UCoreAssociateWithClanNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSCORE_API UCoreAssociateWithClanNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FAssociateWithClanDelegate Completed;
     
     UCoreAssociateWithClanNode();

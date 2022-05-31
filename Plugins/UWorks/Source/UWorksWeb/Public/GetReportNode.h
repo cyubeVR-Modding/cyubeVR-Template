@@ -7,11 +7,11 @@
 
 class UGetReportNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetReportNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetReportDelegate Completed;
     
     UGetReportNode();

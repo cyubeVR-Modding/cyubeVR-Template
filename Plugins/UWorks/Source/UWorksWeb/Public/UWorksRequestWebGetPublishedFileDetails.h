@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetPublishedFileDetailsDelegateDelegate.h"
-#include "UWorksRequestWeb.h"
 #include "GetPublishedFileDetailsMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
+#include "GetPublishedFileDetailsDelegateDelegate.h"
 #include "UWorksRequestWebGetPublishedFileDetails.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebGetPublishedFileDetails : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetPublishedFileDetailsDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetPublishedFileDetailsMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetPublishedFileDetails();

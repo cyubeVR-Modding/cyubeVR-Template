@@ -6,11 +6,11 @@
 
 class UGetFinalizedContributorsNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetFinalizedContributorsNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetFinalizedContributorsDelegate Completed;
     
     UGetFinalizedContributorsNode();

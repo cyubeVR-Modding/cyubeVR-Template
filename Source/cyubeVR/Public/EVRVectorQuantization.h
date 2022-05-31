@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EVRVectorQuantization.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EVRVectorQuantization : uint8 {
     RoundOneDecimal,
     RoundTwoDecimals,

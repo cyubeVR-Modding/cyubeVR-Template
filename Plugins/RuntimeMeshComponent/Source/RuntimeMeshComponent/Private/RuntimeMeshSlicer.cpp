@@ -1,7 +1,7 @@
 #include "RuntimeMeshSlicer.h"
 
-class URuntimeMeshComponent;
 class UMaterialInterface;
+class URuntimeMeshComponent;
 
 bool URuntimeMeshSlicer::SliceRuntimeMeshData(FRuntimeMeshRenderableMeshData& SourceSection, const FPlane& SlicePlane, ERuntimeMeshSliceCapOption CapOption, FRuntimeMeshRenderableMeshData& NewSourceSection, FRuntimeMeshRenderableMeshData& NewSourceSectionCap, bool bCreateDestination, FRuntimeMeshRenderableMeshData& DestinationSection, FRuntimeMeshRenderableMeshData& NewDestinationSectionCap) {
     return false;

@@ -3,19 +3,19 @@
 #include "UWorksRequestCore.h"
 #include "DownloadLeaderboardEntriesForUsersDelegateDelegate.h"
 #include "DownloadLeaderboardEntriesForUsersMinimalDelegateDelegate.h"
-#include "UWorksSteamLeaderboard.h"
 #include "UWorksSteamID.h"
+#include "UWorksSteamLeaderboard.h"
 #include "UWorksSteamLeaderboardEntries.h"
 #include "UWorksRequestCoreDownloadLeaderboardEntriesForUsers.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreDownloadLeaderboardEntriesForUsers : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDownloadLeaderboardEntriesForUsersDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDownloadLeaderboardEntriesForUsersMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreDownloadLeaderboardEntriesForUsers();

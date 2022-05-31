@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EVRRotationQuantization.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EVRRotationQuantization : uint8 {
     RoundTo10Bits,
     RoundToShort,

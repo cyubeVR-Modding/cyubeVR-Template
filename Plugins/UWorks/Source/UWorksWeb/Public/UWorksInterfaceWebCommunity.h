@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceWeb.h"
 #include "UWorksSteamID.h"
+#include "UWorksInterfaceWeb.h"
 #include "ReportAbuseMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebCommunity.generated.h"
 
 class UUWorksRequestWebReportAbuse;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebCommunity : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:

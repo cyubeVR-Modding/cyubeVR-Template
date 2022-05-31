@@ -1,23 +1,23 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamDelegateOnSetUserVoteOnWorkshopItemDelegate.h"
 #include "Net/OnlineBlueprintCallProxyBase.h"
+#include "SteamDelegateOnSetUserVoteOnWorkshopItemDelegate.h"
 #include "SteamUGCItemId.h"
 #include "CallbackProxySetUserVoteOnWorkshopItem.generated.h"
 
 class UCallbackProxySetUserVoteOnWorkshopItem;
 
-UCLASS(MinimalAPI)
+UCLASS(Blueprintable, MinimalAPI)
 class UCallbackProxySetUserVoteOnWorkshopItem : public UOnlineBlueprintCallProxyBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSteamDelegateOnSetUserVoteOnWorkshopItem OnSuccess;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSteamDelegateOnSetUserVoteOnWorkshopItem OnFailure;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSteamDelegateOnSetUserVoteOnWorkshopItem OnSteamInitFailure;
     
     UCallbackProxySetUserVoteOnWorkshopItem();

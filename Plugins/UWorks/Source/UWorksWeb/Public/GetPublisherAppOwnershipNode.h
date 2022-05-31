@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetPublisherAppOwnershipDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "GetPublisherAppOwnershipDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "GetPublisherAppOwnershipNode.generated.h"
 
 class UGetPublisherAppOwnershipNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetPublisherAppOwnershipNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetPublisherAppOwnershipDelegate Completed;
     
     UGetPublisherAppOwnershipNode();

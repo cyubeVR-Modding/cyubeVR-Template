@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EUWorksResult.h"
 #include "UWorksRequestCore.h"
 #include "RequestEncryptedAppTicketDelegateDelegate.h"
 #include "RequestEncryptedAppTicketMinimalDelegateDelegate.h"
-#include "EUWorksResult.h"
 #include "UWorksRequestCoreRequestEncryptedAppTicket.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreRequestEncryptedAppTicket : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRequestEncryptedAppTicketDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRequestEncryptedAppTicketMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreRequestEncryptedAppTicket();

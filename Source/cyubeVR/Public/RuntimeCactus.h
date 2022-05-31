@@ -6,12 +6,12 @@
 
 class UStaticMeshComponent;
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API ARuntimeCactus : public AReceiveLightActor {
     GENERATED_BODY()
 public:
 private:
-    UPROPERTY(BlueprintReadWrite, Export, VisibleAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
     UStaticMeshComponent* SMC;
     
 public:

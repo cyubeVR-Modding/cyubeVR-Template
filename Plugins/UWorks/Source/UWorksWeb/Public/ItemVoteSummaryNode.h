@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "ItemVoteSummaryDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "ItemVoteSummaryDelegateDelegate.h"
 #include "ItemVoteSummaryNode.generated.h"
 
 class UItemVoteSummaryNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UItemVoteSummaryNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FItemVoteSummaryDelegate Completed;
     
     UItemVoteSummaryNode();

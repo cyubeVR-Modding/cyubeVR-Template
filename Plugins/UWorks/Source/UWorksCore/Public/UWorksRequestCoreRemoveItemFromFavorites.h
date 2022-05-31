@@ -1,20 +1,20 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
-#include "RemoveItemFromFavoritesDelegateDelegate.h"
 #include "EUWorksResult.h"
 #include "UWorksPublishedFileID.h"
+#include "UWorksRequestCore.h"
+#include "RemoveItemFromFavoritesDelegateDelegate.h"
 #include "RemoveItemFromFavoritesMinimalDelegateDelegate.h"
 #include "UWorksRequestCoreRemoveItemFromFavorites.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreRemoveItemFromFavorites : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRemoveItemFromFavoritesDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRemoveItemFromFavoritesMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreRemoveItemFromFavorites();

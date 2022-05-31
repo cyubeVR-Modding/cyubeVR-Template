@@ -1,27 +1,27 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RulesUpdateDelegateDelegate.h"
+#include "RulesUpdateMinimalDelegateDelegate.h"
 #include "UWorksRequestCore.h"
 #include "RulesDelegateDelegate.h"
+#include "RulesUpdateDelegateDelegate.h"
 #include "RulesMinimalDelegateDelegate.h"
-#include "RulesUpdateMinimalDelegateDelegate.h"
 #include "UWorksRuleInfo.h"
 #include "UWorksRequestCoreRules.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreRules : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRulesDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRulesUpdateDelegate OnRequestUpdated;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRulesMinimalDelegate OnRequestCompletedMinimal;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRulesUpdateMinimalDelegate OnRequestUpdatedMinimal;
     
     UUWorksRequestCoreRules();

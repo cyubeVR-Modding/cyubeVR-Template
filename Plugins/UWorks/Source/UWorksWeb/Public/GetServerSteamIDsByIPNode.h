@@ -6,11 +6,11 @@
 
 class UGetServerSteamIDsByIPNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetServerSteamIDsByIPNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetServerSteamIDsByIPDelegate Completed;
     
     UGetServerSteamIDsByIPNode();

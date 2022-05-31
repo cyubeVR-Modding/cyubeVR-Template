@@ -6,11 +6,11 @@
 
 class UUWorksManagerNetwork;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSUTILITIES_API UUWorksManagerNetwork : public UUWorksManager {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRefreshCompleteDelegate RefreshComplete;
     
     UUWorksManagerNetwork();

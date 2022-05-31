@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
 #include "MeshObject.h"
+#include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "Furnace.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API AFurnace : public AMeshObject {
     GENERATED_BODY()
 public:

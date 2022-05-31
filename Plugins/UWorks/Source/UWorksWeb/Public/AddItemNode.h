@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AddItemDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "AddItemDelegateDelegate.h"
 #include "UWorksSteamItemDef.h"
 #include "UWorksSteamID.h"
 #include "AddItemNode.generated.h"
 
 class UAddItemNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UAddItemNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FAddItemDelegate Completed;
     
     UAddItemNode();

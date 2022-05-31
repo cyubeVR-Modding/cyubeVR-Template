@@ -1,21 +1,21 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
 #include "EUWorksResult.h"
+#include "UWorksRequestCore.h"
+#include "UWorksSteamID.h"
 #include "CreateLobbyDelegateDelegate.h"
 #include "CreateLobbyMinimalDelegateDelegate.h"
 #include "EUWorksLobbyType.h"
-#include "UWorksSteamID.h"
 #include "UWorksRequestCoreCreateLobby.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreCreateLobby : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FCreateLobbyDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FCreateLobbyMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreCreateLobby();

@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceWeb.h"
-#include "UWorksSteamID.h"
-#include "RankedByVoteMinimalDelegateDelegate.h"
 #include "ResultSetSummaryMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
+#include "UWorksInterfaceWeb.h"
+#include "RankedByVoteMinimalDelegateDelegate.h"
 #include "RankedByTrendMinimalDelegateDelegate.h"
 #include "RankedByPublicationOrderMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebPublishedItemSearch.generated.h"
 
+class UUWorksRequestWebRankedByTrend;
 class UUWorksRequestWebResultSetSummary;
 class UUWorksRequestWebRankedByVote;
-class UUWorksRequestWebRankedByTrend;
 class UUWorksRequestWebRankedByPublicationOrder;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebPublishedItemSearch : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:

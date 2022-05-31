@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "IsPlayingSharedGameDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
+#include "IsPlayingSharedGameDelegateDelegate.h"
 #include "IsPlayingSharedGameMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebIsPlayingSharedGame.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebIsPlayingSharedGame : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FIsPlayingSharedGameDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FIsPlayingSharedGameMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebIsPlayingSharedGame();

@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetCollectionDetailsDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "GetCollectionDetailsDelegateDelegate.h"
 #include "GetCollectionDetailsNode.generated.h"
 
 class UGetCollectionDetailsNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetCollectionDetailsNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetCollectionDetailsDelegate Completed;
     
     UGetCollectionDetailsNode();

@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "CancelTradeOfferMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "CancelTradeOfferDelegateDelegate.h"
-#include "CancelTradeOfferMinimalDelegateDelegate.h"
 #include "UWorksRequestWebCancelTradeOffer.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebCancelTradeOffer : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FCancelTradeOfferDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FCancelTradeOfferMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebCancelTradeOffer();

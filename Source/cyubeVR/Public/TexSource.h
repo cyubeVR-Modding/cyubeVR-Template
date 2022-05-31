@@ -4,30 +4,30 @@
 #include "Engine/Texture.h"
 #include "TexSource.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FTexSource {
     GENERATED_BODY()
 public:
 protected:
-    UPROPERTY(VisibleAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGuid ID;
     
-    UPROPERTY(VisibleAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 SizeX;
     
-    UPROPERTY(VisibleAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 SizeY;
     
-    UPROPERTY(VisibleAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 NumSlices;
     
-    UPROPERTY(VisibleAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 NumMips;
     
-    UPROPERTY(VisibleAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bGuidIsHash;
     
-    UPROPERTY(VisibleAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(EditAnywhere)
     TEnumAsByte<ETextureSourceFormat> Format;
     
 public:

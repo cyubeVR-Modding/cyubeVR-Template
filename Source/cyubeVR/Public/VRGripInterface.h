@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Interface.h"
-#include "BPGripPair.h"
-#include "EGripInterfaceTeleportBehavior.h"
-#include "InputCoreTypes.h"
-#include "ESecondaryGripType.h"
+#include "EGripCollisionType.h"
 #include "BPActorGripInformation.h"
+#include "UObject/Interface.h"
+#include "UObject/NoExportTypes.h"
+#include "ESecondaryGripType.h"
+#include "InputCoreTypes.h"
+#include "EGripInterfaceTeleportBehavior.h"
+#include "BPGripPair.h"
 #include "Transform_NetQuantize.h"
 #include "Engine/EngineBaseTypes.h"
 #include "EGripMovementReplicationSettings.h"
 #include "EGripLateUpdateSettings.h"
-#include "EGripCollisionType.h"
-#include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "BPAdvGripSettings.h"
 #include "VRGripInterface.generated.h"
@@ -37,7 +37,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     bool SimulateOnDrop();
     
-    UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+    UFUNCTION(BlueprintNativeEvent)
     void SetHeld(UGripMotionControllerComponent* HoldingController, uint8 GripID, bool bIsHeld);
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)

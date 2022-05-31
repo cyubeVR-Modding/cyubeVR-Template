@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksAuthSessionResponse.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksAuthSessionResponse : uint8 {
     OK,
     UserNotConnectedToSteam,

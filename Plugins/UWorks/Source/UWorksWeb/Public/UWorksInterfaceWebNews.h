@@ -5,10 +5,10 @@
 #include "GetNewsForAppAuthedMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebNews.generated.h"
 
-class UUWorksRequestWebGetNewsForApp;
 class UUWorksRequestWebGetNewsForAppAuthed;
+class UUWorksRequestWebGetNewsForApp;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebNews : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:

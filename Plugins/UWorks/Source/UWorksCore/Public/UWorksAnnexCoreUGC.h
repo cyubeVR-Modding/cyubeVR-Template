@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "UWorksAnnexCoreUGC.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FUWorksAnnexCoreUGC {
     GENERATED_BODY()
 public:

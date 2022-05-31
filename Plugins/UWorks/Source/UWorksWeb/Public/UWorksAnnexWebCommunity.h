@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "UWorksAnnexWebCommunity.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FUWorksAnnexWebCommunity {
     GENERATED_BODY()
 public:

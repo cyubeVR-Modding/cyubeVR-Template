@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksControllerActionOrigin.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksControllerActionOrigin : uint8 {
     None,
     A,

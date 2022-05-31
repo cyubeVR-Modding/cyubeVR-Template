@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RuntimeMeshCollisionData.h"
 #include "RuntimeMeshComponent.h"
 #include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
+#include "RuntimeMeshRenderableMeshData.h"
 #include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "RuntimeMeshTangent.h"
-#include "RuntimeMeshRenderableMeshData.h"
 #include "RuntimeMeshCollisionSettings.h"
+#include "RuntimeMeshCollisionData.h"
 #include "RuntimeMeshSectionProperties.h"
+#include "UObject/NoExportTypes.h"
 #include "ERuntimeMeshUpdateFrequency.h"
 #include "RuntimeMeshComponentStatic.generated.h"
 
@@ -18,7 +18,7 @@ class URuntimeMesh;
 class URuntimeMeshProviderStatic;
 class URuntimeMeshModifierNormals;
 
-UCLASS(meta=(BlueprintSpawnableComponent))
+UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class RUNTIMEMESHCOMPONENT_API URuntimeMeshComponentStatic : public URuntimeMeshComponent {
     GENERATED_BODY()
 public:
@@ -26,13 +26,13 @@ private:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     URuntimeMesh* RuntimeMesh;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     URuntimeMeshProviderStatic* StaticProvider;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     URuntimeMeshModifierNormals* NormalsModifier;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     URuntimeMeshModifierAdjacency* AdjacencyModifier;
     
 public:

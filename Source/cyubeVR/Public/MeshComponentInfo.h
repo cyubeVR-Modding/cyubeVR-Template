@@ -9,10 +9,10 @@ USTRUCT(BlueprintType)
 struct FMeshComponentInfo {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
     URuntimeMeshComponent* RMC;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     URuntimeMeshProviderChunks* RuntimeMeshProvider;
     
     CYUBEVR_API FMeshComponentInfo();

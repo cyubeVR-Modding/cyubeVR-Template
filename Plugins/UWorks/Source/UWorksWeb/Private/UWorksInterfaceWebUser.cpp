@@ -1,15 +1,15 @@
 #include "UWorksInterfaceWebUser.h"
 
-class UUWorksRequestWebCheckAppOwnership;
 class UUWorksRequestWebResolveVanityURL;
 class UUWorksRequestWebGetUserGroupList;
-class UUWorksRequestWebGrantPackage;
 class UUWorksRequestWebGetPublisherAppOwnershipChanges;
+class UUWorksRequestWebGrantPackage;
 class UUWorksRequestWebGetPublisherAppOwnership;
 class UUWorksRequestWebGetPlayerSummaries;
 class UUWorksRequestWebGetPlayerBans;
 class UUWorksRequestWebGetFriendList;
 class UUWorksRequestWebGetAppPriceInfo;
+class UUWorksRequestWebCheckAppOwnership;
 
 void UUWorksInterfaceWebUser::ResolveVanityURLMinimal(const FString& Key, const FString& VanityURL, uint8 URLType, const FResolveVanityURLMinimalDelegate& Delegate) {
 }

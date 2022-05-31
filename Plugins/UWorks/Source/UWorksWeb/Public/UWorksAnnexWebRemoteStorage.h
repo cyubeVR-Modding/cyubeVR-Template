@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "UWorksAnnexWebRemoteStorage.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FUWorksAnnexWebRemoteStorage {
     GENERATED_BODY()
 public:

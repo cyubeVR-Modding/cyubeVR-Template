@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "DeleteSessionBatchDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "DeleteSessionBatchMinimalDelegateDelegate.h"
 #include "UWorksRequestWebDeleteSessionBatch.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebDeleteSessionBatch : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDeleteSessionBatchDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDeleteSessionBatchMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebDeleteSessionBatch();

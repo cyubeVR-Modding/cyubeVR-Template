@@ -1,20 +1,20 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EnumerateFollowingListDelegateDelegate.h"
-#include "UWorksRequestCore.h"
 #include "EUWorksResult.h"
-#include "EnumerateFollowingListMinimalDelegateDelegate.h"
+#include "UWorksRequestCore.h"
+#include "EnumerateFollowingListDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "EnumerateFollowingListMinimalDelegateDelegate.h"
 #include "UWorksRequestCoreEnumerateFollowingList.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreEnumerateFollowingList : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FEnumerateFollowingListDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FEnumerateFollowingListMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreEnumerateFollowingList();

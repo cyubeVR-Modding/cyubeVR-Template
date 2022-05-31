@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "InitTxnDelegateDelegate.h"
 #include "EUWorksUserSession.h"
+#include "InitTxnDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksSteamItemDef.h"
 #include "InitTxnNode.generated.h"
 
 class UInitTxnNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UInitTxnNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FInitTxnDelegate Completed;
     
     UInitTxnNode();

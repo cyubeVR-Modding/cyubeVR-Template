@@ -5,7 +5,7 @@
 
 class UStereoLayerShape;
 
-UCLASS(EditInlineNew, meta=(BlueprintSpawnableComponent))
+UCLASS(Blueprintable, EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UVRStereoWidgetComponent : public UWidgetComponent {
     GENERATED_BODY()
 public:

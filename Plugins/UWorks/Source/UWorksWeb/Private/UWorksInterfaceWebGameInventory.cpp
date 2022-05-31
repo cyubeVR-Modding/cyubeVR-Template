@@ -1,7 +1,7 @@
 #include "UWorksInterfaceWebGameInventory.h"
 
-class UUWorksRequestWebHistoryExecuteCommands;
 class UUWorksRequestWebSupportGetAssetHistory;
+class UUWorksRequestWebHistoryExecuteCommands;
 class UUWorksRequestWebGetUserHistory;
 class UUWorksRequestWebGetHistoryCommandDetails;
 

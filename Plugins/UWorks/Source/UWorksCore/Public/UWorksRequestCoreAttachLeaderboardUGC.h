@@ -1,21 +1,21 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
+#include "EUWorksResult.h"
 #include "AttachLeaderboardUGCDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "AttachLeaderboardUGCMinimalDelegateDelegate.h"
 #include "UWorksSteamLeaderboard.h"
 #include "UWorksUGCHandle.h"
-#include "EUWorksResult.h"
 #include "UWorksRequestCoreAttachLeaderboardUGC.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreAttachLeaderboardUGC : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FAttachLeaderboardUGCDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FAttachLeaderboardUGCMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreAttachLeaderboardUGC();

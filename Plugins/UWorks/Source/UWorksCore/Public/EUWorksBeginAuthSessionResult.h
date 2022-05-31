@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksBeginAuthSessionResult.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksBeginAuthSessionResult : uint8 {
     OK,
     InvalidTicket,

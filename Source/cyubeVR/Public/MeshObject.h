@@ -4,10 +4,10 @@
 #include "EBlockTypeBP.h"
 #include "MeshObject.generated.h"
 
-class UStaticMeshComponent;
 class UBoxComponent;
+class UStaticMeshComponent;
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API AMeshObject : public AReceiveLightActor {
     GENERATED_BODY()
 public:

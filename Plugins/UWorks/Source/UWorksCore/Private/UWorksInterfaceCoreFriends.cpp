@@ -1,10 +1,10 @@
 #include "UWorksInterfaceCoreFriends.h"
 
-class UUWorksRequestCoreSetPersonaName;
 class UUWorksRequestCoreRequestClanOfficerList;
+class UUWorksRequestCoreSetPersonaName;
+class UTexture2D;
 class UUWorksRequestCoreJoinClanChatRoom;
 class UUWorksRequestCoreIsFollowing;
-class UTexture2D;
 class UUWorksInterfaceCoreFriends;
 class UUWorksRequestCoreGetFollowerCount;
 class UUWorksRequestCoreEnumerateFollowingList;

@@ -4,7 +4,7 @@
 #include "EBlockTypeBP.h"
 #include "DraftUnlockingPaper.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API ADraftUnlockingPaper : public AActor {
     GENERATED_BODY()
 public:

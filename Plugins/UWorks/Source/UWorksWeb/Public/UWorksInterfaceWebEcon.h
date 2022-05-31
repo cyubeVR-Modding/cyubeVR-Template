@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceWeb.h"
-#include "GetTradeOffersSummaryMinimalDelegateDelegate.h"
-#include "GetTradeHistoryMinimalDelegateDelegate.h"
-#include "GetTradeOffersMinimalDelegateDelegate.h"
-#include "GetTradeOfferMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "UWorksInterfaceWeb.h"
+#include "GetTradeHistoryMinimalDelegateDelegate.h"
+#include "GetTradeOffersSummaryMinimalDelegateDelegate.h"
+#include "GetTradeOfferMinimalDelegateDelegate.h"
+#include "GetTradeOffersMinimalDelegateDelegate.h"
 #include "FlushInventoryCacheMinimalDelegateDelegate.h"
 #include "FlushContextCacheMinimalDelegateDelegate.h"
 #include "FlushAssetAppearanceCacheMinimalDelegateDelegate.h"
@@ -13,17 +13,17 @@
 #include "CancelTradeOfferMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebEcon.generated.h"
 
-class UUWorksRequestWebGetTradeOffersSummary;
-class UUWorksRequestWebGetTradeOffers;
-class UUWorksRequestWebFlushAssetAppearanceCache;
 class UUWorksRequestWebGetTradeOffer;
+class UUWorksRequestWebGetTradeOffersSummary;
 class UUWorksRequestWebGetTradeHistory;
+class UUWorksRequestWebGetTradeOffers;
 class UUWorksRequestWebFlushInventoryCache;
 class UUWorksRequestWebFlushContextCache;
+class UUWorksRequestWebFlushAssetAppearanceCache;
 class UUWorksRequestWebDeclineTradeOffer;
 class UUWorksRequestWebCancelTradeOffer;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebEcon : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:

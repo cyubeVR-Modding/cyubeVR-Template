@@ -4,7 +4,7 @@
 #include "EBlockTypeBP.h"
 #include "CraftDraftVisualizer.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API ACraftDraftVisualizer : public AActor {
     GENERATED_BODY()
 public:

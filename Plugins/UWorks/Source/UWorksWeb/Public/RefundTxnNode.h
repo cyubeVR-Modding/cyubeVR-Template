@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RefundTxnDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "RefundTxnDelegateDelegate.h"
 #include "RefundTxnNode.generated.h"
 
 class URefundTxnNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API URefundTxnNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRefundTxnDelegate Completed;
     
     URefundTxnNode();

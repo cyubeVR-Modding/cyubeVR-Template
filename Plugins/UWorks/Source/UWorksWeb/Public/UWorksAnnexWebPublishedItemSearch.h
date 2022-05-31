@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "UWorksAnnexWebPublishedItemSearch.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FUWorksAnnexWebPublishedItemSearch {
     GENERATED_BODY()
 public:

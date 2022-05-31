@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "RecordOfflinePlaytimeDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "RecordOfflinePlaytimeDelegateDelegate.h"
 #include "UWorksPlaySessions.h"
 #include "RecordOfflinePlaytimeNode.generated.h"
 
 class URecordOfflinePlaytimeNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API URecordOfflinePlaytimeNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRecordOfflinePlaytimeDelegate Completed;
     
     URecordOfflinePlaytimeNode();

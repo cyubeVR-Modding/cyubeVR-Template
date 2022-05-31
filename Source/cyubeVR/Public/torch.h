@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ERotation.h"
-#include "UObject/NoExportTypes.h"
 #include "GameFramework/Actor.h"
+#include "UObject/NoExportTypes.h"
 #include "EBlockTypeBP.h"
+#include "ERotation.h"
 #include "torch.generated.h"
 
 class UParticleSystemComponent;
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API Atorch : public AActor {
     GENERATED_BODY()
 public:

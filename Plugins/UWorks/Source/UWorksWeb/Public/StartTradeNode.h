@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "StartTradeDelegateDelegate.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksSteamID.h"
 #include "StartTradeNode.generated.h"
 
 class UStartTradeNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UStartTradeNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FStartTradeDelegate Completed;
     
     UStartTradeNode();

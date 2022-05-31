@@ -5,12 +5,12 @@
 
 class URuntimeMeshModifier;
 
-UCLASS()
+UCLASS(Blueprintable)
 class RUNTIMEMESHCOMPONENT_API URuntimeMeshProviderModifiers : public URuntimeMeshProviderPassthrough {
     GENERATED_BODY()
 public:
 private:
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<URuntimeMeshModifier*> Modifiers;
     
 public:

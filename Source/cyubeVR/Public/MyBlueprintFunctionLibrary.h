@@ -5,23 +5,23 @@
 #include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
-#include "PerEyeRaw.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "EBlockTypeBP.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
+#include "PerEyeRaw.h"
 #include "MyBlueprintFunctionLibrary.generated.h"
 
 class UTextureRenderTarget2D;
-class ADynamicResolutionScalingActor;
-class UObject;
-class UWidget;
-class UActorComponent;
 class UTexture;
+class UObject;
+class UActorComponent;
+class ADynamicResolutionScalingActor;
+class UWidget;
 class UTexture2D;
 class UStaticMesh;
 class UProceduralMeshComponent;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class CYUBEVR_API UMyBlueprintFunctionLibrary : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
@@ -77,7 +77,7 @@ public:
     UFUNCTION(BlueprintCallable)
     static void LookAtWidgetDebug(TArray<UWidget*> Widgets);
     
-    UFUNCTION(BlueprintCallable, BlueprintPure)
+    UFUNCTION(BlueprintPure)
     static UTexture2D* LoadTexture2D_FromFile(const FString& FullFilePath, bool& IsValid, int32& Width, int32& Height, TEnumAsByte<EPixelFormat> PixelFormat, bool bGenerateMips);
     
     UFUNCTION(BlueprintCallable)

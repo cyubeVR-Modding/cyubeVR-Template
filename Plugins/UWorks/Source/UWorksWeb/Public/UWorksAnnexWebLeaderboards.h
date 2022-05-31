@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "UWorksAnnexWebLeaderboards.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FUWorksAnnexWebLeaderboards {
     GENERATED_BODY()
 public:

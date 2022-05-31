@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
-#include "UWorksSteamItemDef.h"
-#include "GetItemDefsMinimalDelegateDelegate.h"
 #include "GetItemDefsDelegateDelegate.h"
+#include "GetItemDefsMinimalDelegateDelegate.h"
+#include "UWorksSteamItemDef.h"
 #include "UWorksRequestWebGetItemDefs.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebGetItemDefs : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetItemDefsDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetItemDefsMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetItemDefs();

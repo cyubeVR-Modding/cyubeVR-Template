@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "GetInventoryDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetInventoryDelegateDelegate.h"
 #include "GetInventoryNode.generated.h"
 
 class UGetInventoryNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetInventoryNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetInventoryDelegate Completed;
     
     UGetInventoryNode();

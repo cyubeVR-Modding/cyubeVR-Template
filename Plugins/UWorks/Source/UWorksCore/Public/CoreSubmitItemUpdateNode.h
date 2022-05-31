@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksResult.h"
 #include "UWorksUGCUpdateHandle.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "SubmitItemUpdateDelegateDelegate.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
+#include "EUWorksResult.h"
 #include "CoreSubmitItemUpdateNode.generated.h"
 
 class UCoreSubmitItemUpdateNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSCORE_API UCoreSubmitItemUpdateNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSubmitItemUpdateDelegate Completed;
     
     UCoreSubmitItemUpdateNode();

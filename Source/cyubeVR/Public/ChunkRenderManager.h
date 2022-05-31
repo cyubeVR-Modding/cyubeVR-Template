@@ -3,7 +3,7 @@
 #include "GameFramework/Actor.h"
 #include "ChunkRenderManager.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API AChunkRenderManager : public AActor {
     GENERATED_BODY()
 public:

@@ -11,6 +11,9 @@ FString UModdingFunctionLibrary::ReadStringFromFileInModFolder(const FString& Mo
     return TEXT("");
 }
 
+void UModdingFunctionLibrary::GetModTutorials(TArray<FModTutorialEntry>& ModTutorials) {
+}
+
 AInventory* UModdingFunctionLibrary::GetInventoryReference(const UObject* WorldContextObject) {
     return NULL;
 }

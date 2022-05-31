@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksAccountType.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksAccountType : uint8 {
     Invalid,
     Individual,

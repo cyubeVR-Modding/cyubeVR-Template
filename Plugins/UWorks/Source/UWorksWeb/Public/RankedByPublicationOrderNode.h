@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "UWorksSteamID.h"
 #include "RankedByPublicationOrderDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "RankedByPublicationOrderNode.generated.h"
 
 class URankedByPublicationOrderNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API URankedByPublicationOrderNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRankedByPublicationOrderDelegate Completed;
     
     URankedByPublicationOrderNode();

@@ -8,7 +8,7 @@ USTRUCT(BlueprintType)
 struct FQueryWorkshopForItemDetailsResult : public FQueryWorkshopForItemsResult {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, VisibleAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSteamUGCQueryParameterDetails queryParams;
     
     STEAMWORKSHOP_API FQueryWorkshopForItemDetailsResult();

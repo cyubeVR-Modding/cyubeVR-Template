@@ -6,11 +6,11 @@
 
 class UGetLeaderboardsForGameNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetLeaderboardsForGameNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetLeaderboardsForGameDelegate Completed;
     
     UGetLeaderboardsForGameNode();

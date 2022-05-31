@@ -7,11 +7,11 @@
 
 class UResetLoginTokenNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UResetLoginTokenNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FResetLoginTokenDelegate Completed;
     
     UResetLoginTokenNode();

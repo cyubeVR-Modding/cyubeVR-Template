@@ -7,11 +7,11 @@
 
 class UGetOwnedGamesNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetOwnedGamesNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetOwnedGamesDelegate Completed;
     
     UGetOwnedGamesNode();

@@ -10,5 +10,6 @@ enum class ERotation : uint8 {
     Back,
     Up,
     Down,
+    None,
 };
 

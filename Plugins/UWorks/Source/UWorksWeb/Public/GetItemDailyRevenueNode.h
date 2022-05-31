@@ -6,11 +6,11 @@
 
 class UGetItemDailyRevenueNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetItemDailyRevenueNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetItemDailyRevenueDelegate Completed;
     
     UGetItemDailyRevenueNode();

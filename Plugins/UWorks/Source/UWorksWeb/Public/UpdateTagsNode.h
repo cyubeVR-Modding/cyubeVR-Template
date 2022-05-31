@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksPublishedFileID.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "UpdateTagsDelegateDelegate.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
+#include "UWorksPublishedFileID.h"
 #include "UpdateTagsNode.generated.h"
 
 class UUpdateTagsNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUpdateTagsNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FUpdateTagsDelegate Completed;
     
     UUpdateTagsNode();

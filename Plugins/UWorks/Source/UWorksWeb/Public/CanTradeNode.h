@@ -7,11 +7,11 @@
 
 class UCanTradeNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UCanTradeNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FCanTradeDelegate Completed;
     
     UCanTradeNode();

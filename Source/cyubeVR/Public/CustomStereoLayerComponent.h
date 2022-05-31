@@ -3,7 +3,7 @@
 #include "Components/StereoLayerComponent.h"
 #include "CustomStereoLayerComponent.generated.h"
 
-UCLASS(EditInlineNew, meta=(BlueprintSpawnableComponent))
+UCLASS(Blueprintable, EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class CYUBEVR_API UCustomStereoLayerComponent : public UStereoLayerComponent {
     GENERATED_BODY()
 public:

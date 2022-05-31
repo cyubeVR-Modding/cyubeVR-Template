@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RuntimeMeshCollisionSettings.h"
 #include "RuntimeMeshProviderTargetInterface.h"
-#include "RuntimeMeshCollisionData.h"
 #include "RuntimeMeshRenderableMeshData.h"
 #include "UObject/NoExportTypes.h"
+#include "RuntimeMeshCollisionSettings.h"
+#include "RuntimeMeshCollisionData.h"
 #include "RuntimeMeshSectionData.h"
 #include "RuntimeMeshProvider.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class RUNTIMEMESHCOMPONENT_API URuntimeMeshProvider : public URuntimeMeshProviderTargetInterface {
     GENERATED_BODY()
 public:

@@ -5,7 +5,7 @@
 #include "EBlockTypeBP.h"
 #include "CraftingListParent.generated.h"
 
-UCLASS(EditInlineNew)
+UCLASS(Blueprintable, EditInlineNew)
 class CYUBEVR_API UCraftingListParent : public UUserWidget {
     GENERATED_BODY()
 public:

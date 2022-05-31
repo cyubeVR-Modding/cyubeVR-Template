@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksUGCQuery.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksUGCQuery : uint8 {
     RankedByVote,
     RankedByPublicationDate,

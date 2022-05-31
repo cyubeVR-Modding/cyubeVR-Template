@@ -1,20 +1,20 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
 #include "EUWorksResult.h"
-#include "GetFollowerCountDelegateDelegate.h"
 #include "GetFollowerCountMinimalDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "UWorksSteamID.h"
+#include "GetFollowerCountDelegateDelegate.h"
 #include "UWorksRequestCoreGetFollowerCount.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreGetFollowerCount : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetFollowerCountDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetFollowerCountMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreGetFollowerCount();

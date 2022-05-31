@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "EWeatherForceSetting.generated.h"
 
-UENUM()
-enum class EWeatherForceSetting {
+UENUM(BlueprintType)
+enum class EWeatherForceSetting : uint8 {
     Never,
     Natural,
     Always,

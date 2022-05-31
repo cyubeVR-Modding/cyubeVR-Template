@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "GetUGCFileDetailsDelegateDelegate.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksSteamID.h"
 #include "GetUGCFileDetailsNode.generated.h"
 
 class UGetUGCFileDetailsNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetUGCFileDetailsNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetUGCFileDetailsDelegate Completed;
     
     UGetUGCFileDetailsNode();

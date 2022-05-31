@@ -1,11 +1,11 @@
 #include "ChunkManager.h"
 
 class AActor;
-class ADraftUnlockingPaper;
-class ADeathBeacon;
 class AModifiedBlockActor;
-class AMeshObject;
+class ADraftUnlockingPaper;
 class ABlockItem;
+class ADeathBeacon;
+class AMeshObject;
 class USoundBase;
 class UParticleSystem;
 
@@ -15,14 +15,23 @@ void AChunkManager::UpdateSkyEvent_Implementation(float NewTimeOfDay) {
 void AChunkManager::UpdateLightValueForActorImmediateGT(AActor* Actor) {
 }
 
+void AChunkManager::UpdateHandLocationVariables(FVector HandLocationLeft_, FVector HandLocationRight_, FVector IndexFingerTipLocationLeft_, FVector IndexFingerTipLocationRight_) {
+}
+
 void AChunkManager::UnlockedDraftNew(ADraftUnlockingPaper* UnlockedActor) {
 }
 
 void AChunkManager::TestFunction() {
 }
 
+void AChunkManager::SpawnNewBlockItem_Implementation(EBlockTypeBP Type, int32 UniqueId, FTransform Transform, int32 Amount, bool bDoFadeScale, FColor CrystalColor, float CrystalChargeState, bool bActivatePhysics) {
+}
+
 TArray<AModifiedBlockActor*> AChunkManager::SpawnModifiedBlockActorsAndInit(const TArray<FModifiedBlockActorToSpawn>& SpawnInfos, EBlockTypeBP ToolType) {
     return TArray<AModifiedBlockActor*>();
+}
+
+void AChunkManager::SpawnHintText_Implementation(const FVector& LocalLocation, const FString& Text, const float& Duration, const FVector& SizeMultiplier, const float& SizeMultiplierVertical) {
 }
 
 ADraftUnlockingPaper* AChunkManager::SpawnDraftUnlocker_Implementation(FVector Location, EBlockTypeBP Type) {
@@ -31,6 +40,9 @@ ADraftUnlockingPaper* AChunkManager::SpawnDraftUnlocker_Implementation(FVector L
 
 ADeathBeacon* AChunkManager::SpawnDeathBeacon(FVector WorldLocation, bool FirstSpawn) {
     return NULL;
+}
+
+void AChunkManager::SpawnBPModActor_Implementation(const FTransform& Transform, const FString& ModName, const FString& ActorName) {
 }
 
 void AChunkManager::SpawnBlockItem(EBlockTypeBP Type, int32 UniqueId, FVector WorldLocation, FRotator WorldRotation) {
@@ -108,6 +120,9 @@ bool AChunkManager::IsDyeType(EBlockTypeBP Type) {
     return false;
 }
 
+void AChunkManager::InitializeVoxelAPI() {
+}
+
 void AChunkManager::HitBlockWithArrow(const FVector Location, EBlockTypeBP& HitType, bool& Valid) {
 }
 
@@ -132,6 +147,10 @@ void AChunkManager::GetTextureIndexStatic(const EBlockTypeBP Type, int32 UniqueI
 }
 
 void AChunkManager::GetTextureIndex(const EBlockTypeBP Type, int32 UniqueId, SideBP Side, float& Index) {
+}
+
+FVector AChunkManager::GetPlayerCameraDirection() {
+    return FVector{};
 }
 
 void AChunkManager::GetNewBlockItem(FTransform NewTransform, ABlockItem*& NewBlockItem, bool ActivatePhysics) {
@@ -216,7 +235,7 @@ bool AChunkManager::DeleteWorld(const FString& WorldName) {
 void AChunkManager::DeleteAllFreeCrystals() {
 }
 
-void AChunkManager::DamageBlockAtLocation(const FVector Location, const float Damage, EBlockTypeBP& Type, int32& UniqueId, bool& Valid, bool& NeedSpawnBlockActor, AModifiedBlockActor*& ExistingModifiedBlockActor, FBlockInfoBP& BlockInfo) {
+void AChunkManager::DamageBlockAtLocation(const FVector Location, const float Damage, const EBlockTypeBP ToolType, EBlockTypeBP& Type, int32& UniqueId, bool& Valid, bool& NeedSpawnBlockActor, AModifiedBlockActor*& ExistingModifiedBlockActor, FBlockInfoBP& BlockInfo) {
 }
 
 void AChunkManager::CollectEasterEggAtLocation(FVector Location) {
@@ -248,7 +267,13 @@ bool AChunkManager::CanModifyChunkAt(FVector Location) {
 void AChunkManager::CanBuildAtLocation(FVector Location, bool NoSolidIsFine, bool& CanBuild) {
 }
 
+void AChunkManager::BlockMoveStarted(FVector Location, EBlockTypeBP Type, int32 UniqueId) {
+}
+
 void AChunkManager::BlockHealthyAgain(FBlockInfoBP BlockInfo) {
+}
+
+void AChunkManager::BlockAtLocationHitByTool(const FVector Location, const EBlockTypeBP ToolType, const EBlockTypeBP BlockType, const int32 UniqueId, const FVector ExactHitLocation, bool LeftHand) {
 }
 
 void AChunkManager::AreaDamageAtLocation(const FVector Location, const float Damage, EBlockTypeBP ToolType, TArray<FModifiedBlockActorToSpawn>& ModifiedBlockActorsToSpawn) {
@@ -261,7 +286,7 @@ AMeshObject* AChunkManager::AddMeshObjectAtLocation(EBlockTypeBP Type, UClass* C
     return NULL;
 }
 
-void AChunkManager::AddBlockAtLocation(EBlockTypeBP Type, int32 UniqueId, FVector Location, ERotation Rotation, float DuplicationAmount, bool& success, EBlockTypeBP& PlacedOn) {
+void AChunkManager::AddBlockAtLocation(EBlockTypeBP Type, int32 UniqueId, FVector Location, ERotation Rotation, float DuplicationAmount, bool& success, EBlockTypeBP& PlacedOn, bool AfterMove) {
 }
 
 void AChunkManager::ActivateRespawnTorch(FVector WorldLocation) {

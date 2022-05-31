@@ -7,7 +7,7 @@
 
 class UProceduralMeshComponent;
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API APreGenTestActor : public AActor {
     GENERATED_BODY()
 public:

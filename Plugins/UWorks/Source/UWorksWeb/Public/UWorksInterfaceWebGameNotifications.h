@@ -1,28 +1,28 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UpdateSessionMinimalDelegateDelegate.h"
-#include "UWorksInterfaceWeb.h"
 #include "UWorksTitle.h"
-#include "RequestNotificationsMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
-#include "DeleteSessionMinimalDelegateDelegate.h"
+#include "RequestNotificationsMinimalDelegateDelegate.h"
+#include "UWorksInterfaceWeb.h"
+#include "UpdateSessionMinimalDelegateDelegate.h"
 #include "UWorksUsers.h"
+#include "DeleteSessionMinimalDelegateDelegate.h"
 #include "UWorksSessions.h"
 #include "GetSessionDetailsForAppMinimalDelegateDelegate.h"
+#include "CreateSessionMinimalDelegateDelegate.h"
 #include "EnumerateSessionsForAppMinimalDelegateDelegate.h"
 #include "DeleteSessionBatchMinimalDelegateDelegate.h"
-#include "CreateSessionMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebGameNotifications.generated.h"
 
-class UUWorksRequestWebCreateSession;
+class UUWorksRequestWebDeleteSession;
 class UUWorksRequestWebUpdateSession;
 class UUWorksRequestWebRequestNotifications;
 class UUWorksRequestWebGetSessionDetailsForApp;
 class UUWorksRequestWebEnumerateSessionsForApp;
 class UUWorksRequestWebDeleteSessionBatch;
-class UUWorksRequestWebDeleteSession;
+class UUWorksRequestWebCreateSession;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebGameNotifications : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:

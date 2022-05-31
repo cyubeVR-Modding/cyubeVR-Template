@@ -6,7 +6,7 @@
 class USceneCaptureComponent;
 class UAudioComponent;
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API AAttachedRain : public AActor {
     GENERATED_BODY()
 public:

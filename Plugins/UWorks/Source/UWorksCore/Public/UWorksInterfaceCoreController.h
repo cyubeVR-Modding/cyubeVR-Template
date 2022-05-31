@@ -1,21 +1,21 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UWorksControllerDigitalActionData.h"
 #include "UWorksInterfaceCore.h"
-#include "EUWorksControllerActionOrigin.h"
+#include "UWorksControllerMotionData.h"
+#include "EUWorksSteamControllerPad.h"
 #include "UWorksControllerDigitalActionHandle.h"
 #include "UWorksControllerHandle.h"
-#include "EUWorksSteamControllerLEDFlag.h"
-#include "EUWorksSteamControllerPad.h"
 #include "UWorksControllerAnalogActionHandle.h"
-#include "UWorksControllerDigitalActionData.h"
-#include "UWorksControllerMotionData.h"
 #include "UWorksControllerActionSetHandle.h"
+#include "EUWorksSteamControllerLEDFlag.h"
+#include "EUWorksControllerActionOrigin.h"
 #include "UWorksControllerAnalogActionData.h"
 #include "UWorksInterfaceCoreController.generated.h"
 
 class UUWorksInterfaceCoreController;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreController : public UUWorksInterfaceCore {
     GENERATED_BODY()
 public:

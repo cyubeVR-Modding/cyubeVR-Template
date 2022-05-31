@@ -1,20 +1,20 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UWorksPartnerAccounts.h"
 #include "UWorksRequestWeb.h"
 #include "SetItemPaymentRulesDelegateDelegate.h"
 #include "SetItemPaymentRulesMinimalDelegateDelegate.h"
 #include "UWorksAssociatedWorkshopFiles.h"
-#include "UWorksPartnerAccounts.h"
 #include "UWorksRequestWebSetItemPaymentRules.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebSetItemPaymentRules : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSetItemPaymentRulesDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSetItemPaymentRulesMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebSetItemPaymentRules();

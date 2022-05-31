@@ -8,10 +8,10 @@ USTRUCT(BlueprintType)
 struct FAddRemoveItemDependencyResult : public FGeneralWorkshopItemResult {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, VisibleAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSteamUGCItemId dependendItemId;
     
-    UPROPERTY(BlueprintReadWrite, VisibleAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bAddDependency;
     
     STEAMWORKSHOP_API FAddRemoveItemDependencyResult();

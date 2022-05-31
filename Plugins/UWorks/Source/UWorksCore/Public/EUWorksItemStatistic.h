@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksItemStatistic.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksItemStatistic : uint8 {
     NumSubscriptions,
     NumFavorites,

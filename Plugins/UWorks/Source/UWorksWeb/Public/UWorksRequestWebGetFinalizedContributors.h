@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "GetFinalizedContributorsMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "GetFinalizedContributorsDelegateDelegate.h"
-#include "GetFinalizedContributorsMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetFinalizedContributors.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebGetFinalizedContributors : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetFinalizedContributorsDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetFinalizedContributorsMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetFinalizedContributors();

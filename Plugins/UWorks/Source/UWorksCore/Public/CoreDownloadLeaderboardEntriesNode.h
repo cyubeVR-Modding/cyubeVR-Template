@@ -2,18 +2,18 @@
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "DownloadLeaderboardEntriesDelegateDelegate.h"
-#include "EUWorksLeaderboardDataRequest.h"
 #include "UWorksSteamLeaderboard.h"
+#include "EUWorksLeaderboardDataRequest.h"
 #include "UWorksSteamLeaderboardEntries.h"
 #include "CoreDownloadLeaderboardEntriesNode.generated.h"
 
 class UCoreDownloadLeaderboardEntriesNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSCORE_API UCoreDownloadLeaderboardEntriesNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDownloadLeaderboardEntriesDelegate Completed;
     
     UCoreDownloadLeaderboardEntriesNode();

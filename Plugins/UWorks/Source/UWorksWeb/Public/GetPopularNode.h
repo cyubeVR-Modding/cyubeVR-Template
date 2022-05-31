@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetPopularDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "GetPopularDelegateDelegate.h"
 #include "GetPopularNode.generated.h"
 
 class UGetPopularNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetPopularNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetPopularDelegate Completed;
     
     UGetPopularNode();

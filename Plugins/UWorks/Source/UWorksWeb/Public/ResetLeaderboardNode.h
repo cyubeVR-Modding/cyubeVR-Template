@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "ResetLeaderboardDelegateDelegate.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
 #include "ResetLeaderboardNode.generated.h"
 
 class UResetLeaderboardNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UResetLeaderboardNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FResetLeaderboardDelegate Completed;
     
     UResetLeaderboardNode();

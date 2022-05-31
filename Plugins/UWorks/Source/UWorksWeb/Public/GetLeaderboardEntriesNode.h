@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetLeaderboardEntriesDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "GetLeaderboardEntriesDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "GetLeaderboardEntriesNode.generated.h"
 
 class UGetLeaderboardEntriesNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetLeaderboardEntriesNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetLeaderboardEntriesDelegate Completed;
     
     UGetLeaderboardEntriesNode();

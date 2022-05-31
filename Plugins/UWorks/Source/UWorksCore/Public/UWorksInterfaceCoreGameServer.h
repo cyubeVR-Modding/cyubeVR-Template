@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksUserHasLicenseForAppResult.h"
+#include "UWorksTicketHandle.h"
 #include "UWorksInterfaceCore.h"
 #include "GSPolicyResponseDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "GSClientGroupStatusDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "GSValidateAuthTicketResponseDelegateDelegate.h"
+#include "EUWorksUserHasLicenseForAppResult.h"
 #include "ComputeNewPlayerCompatibilityMinimalDelegateDelegate.h"
-#include "UWorksTicketHandle.h"
 #include "EUWorksBeginAuthSessionResult.h"
 #include "AssociateWithClanMinimalDelegateDelegate.h"
 #include "UWorksInterfaceCoreGameServer.generated.h"
@@ -16,17 +16,17 @@ class UUWorksInterfaceCoreGameServer;
 class UUWorksRequestCoreComputeNewPlayerCompatibility;
 class UUWorksRequestCoreAssociateWithClan;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreGameServer : public UUWorksInterfaceCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGSPolicyResponseDelegate GSPolicyResponse;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGSClientGroupStatusDelegate GSClientGroupStatus;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGSValidateAuthTicketResponseDelegate GSValidateAuthTicketResponse;
     
     UUWorksInterfaceCoreGameServer();

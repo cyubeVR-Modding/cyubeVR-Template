@@ -1,11 +1,11 @@
 #include "UWorksInterfaceWebPlayer.h"
 
+class UUWorksRequestWebGetCommunityBadgeProgress;
 class UUWorksRequestWebRecordOfflinePlaytime;
 class UUWorksRequestWebIsPlayingSharedGame;
 class UUWorksRequestWebGetSteamLevel;
 class UUWorksRequestWebGetRecentlyPlayedGames;
 class UUWorksRequestWebGetOwnedGames;
-class UUWorksRequestWebGetCommunityBadgeProgress;
 class UUWorksRequestWebGetBadges;
 
 void UUWorksInterfaceWebPlayer::RecordOfflinePlaytimeMinimal(FUWorksSteamID SteamID, const FString& Ticket, FUWorksPlaySessions PlaySessions, const FRecordOfflinePlaytimeMinimalDelegate& Delegate) {

@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "CancelAgreementDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "CancelAgreementMinimalDelegateDelegate.h"
+#include "CancelAgreementDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebCancelAgreement.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebCancelAgreement : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FCancelAgreementDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FCancelAgreementMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebCancelAgreement();

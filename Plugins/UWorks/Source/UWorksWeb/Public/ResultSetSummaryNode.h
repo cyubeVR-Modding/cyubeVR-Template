@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ResultSetSummaryDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "ResultSetSummaryDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "ResultSetSummaryNode.generated.h"
 
 class UResultSetSummaryNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UResultSetSummaryNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FResultSetSummaryDelegate Completed;
     
     UResultSetSummaryNode();

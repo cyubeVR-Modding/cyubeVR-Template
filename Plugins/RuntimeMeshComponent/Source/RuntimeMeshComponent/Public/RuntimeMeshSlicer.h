@@ -10,7 +10,7 @@
 class UMaterialInterface;
 class URuntimeMeshComponent;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class RUNTIMEMESHCOMPONENT_API URuntimeMeshSlicer : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:

@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "EUWorksControllerSource.generated.h"
 
-UENUM()
-enum class EUWorksControllerSource {
+UENUM(BlueprintType)
+enum class EUWorksControllerSource : uint8 {
     None,
     LeftTrackpad,
     RightTrackpad,

@@ -1,12 +1,12 @@
 #include "UWorksInterfaceWebRemoteStorage.h"
 
-class UUWorksRequestWebEnumerateUserSubscribedFiles;
 class UUWorksRequestWebUnsubscribePublishedFile;
 class UUWorksRequestWebSubscribePublishedFile;
 class UUWorksRequestWebSetUGCUsedByGC;
 class UUWorksRequestWebGetUGCFileDetails;
 class UUWorksRequestWebGetPublishedFileDetails;
 class UUWorksRequestWebGetCollectionDetails;
+class UUWorksRequestWebEnumerateUserSubscribedFiles;
 class UUWorksRequestWebEnumerateUserPublishedFiles;
 
 void UUWorksInterfaceWebRemoteStorage::UnsubscribePublishedFileMinimal(const FString& Key, FUWorksSteamID SteamID, int32 AppID, int32 PublishedFileID, const FUnsubscribePublishedFileMinimalDelegate& Delegate) {

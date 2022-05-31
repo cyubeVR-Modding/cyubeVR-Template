@@ -16,6 +16,10 @@ TArray<UMeshComponent*> AVRCharacter::GetMeshComponents() {
     return TArray<UMeshComponent*>();
 }
 
+FVector AVRCharacter::GetActorLocationForCameraLocationCPP_Implementation(FVector NewCameraLocation) {
+    return FVector{};
+}
+
 AVRCharacter::AVRCharacter() {
     this->CameraRef = NULL;
     this->LocationLoaded = false;

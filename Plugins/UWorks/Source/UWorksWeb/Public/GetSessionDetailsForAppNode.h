@@ -7,11 +7,11 @@
 
 class UGetSessionDetailsForAppNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetSessionDetailsForAppNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetSessionDetailsForAppDelegate Completed;
     
     UGetSessionDetailsForAppNode();

@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetTradeOffersSummaryDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "GetTradeOffersSummaryDelegateDelegate.h"
 #include "GetTradeOffersSummaryNode.generated.h"
 
 class UGetTradeOffersSummaryNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetTradeOffersSummaryNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetTradeOffersSummaryDelegate Completed;
     
     UGetTradeOffersSummaryNode();

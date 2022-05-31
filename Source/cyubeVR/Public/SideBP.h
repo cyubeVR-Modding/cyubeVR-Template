@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "SideBP.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class SideBP : uint8 {
     Left,
     Right,

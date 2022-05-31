@@ -7,7 +7,7 @@
 
 class UMeshComponent;
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API ALogItem : public AReceiveLightActor {
     GENERATED_BODY()
 public:

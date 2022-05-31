@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksChatRoomEnterResponse.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksChatRoomEnterResponse : uint8 {
     Unknown,
     Success,

@@ -7,7 +7,7 @@ USTRUCT(BlueprintType)
 struct FSteamUGCUpdateHandle {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, VisibleAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FUInt64 Handle;
     
     STEAMGENERAL_API FSteamUGCUpdateHandle();

@@ -3,7 +3,7 @@
 #include "UWorksLibrary.h"
 #include "UWorksLibraryTickets.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSUTILITIES_API UUWorksLibraryTickets : public UUWorksLibrary {
     GENERATED_BODY()
 public:

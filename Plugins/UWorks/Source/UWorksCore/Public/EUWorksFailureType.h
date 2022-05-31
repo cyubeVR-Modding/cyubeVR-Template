@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksFailureType.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksFailureType : uint8 {
     FlushedCallbackQueue,
     PipeFail,

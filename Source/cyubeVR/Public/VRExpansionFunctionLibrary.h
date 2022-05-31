@@ -5,28 +5,28 @@
 #include "BPLowPassPeakFilter.h"
 #include "BPEuroLowPassFilter.h"
 #include "UObject/NoExportTypes.h"
+#include "Engine/NetSerialization.h"
 #include "UObject/NoExportTypes.h"
-#include "EBPHMDWornState.h"
 #include "Engine/NetSerialization.h"
-#include "Engine/NetSerialization.h"
+#include "BPActorGripInformation.h"
 #include "Engine/NetSerialization.h"
 #include "Transform_NetQuantize.h"
+#include "EBPHMDWornState.h"
 #include "EBPHMDDeviceType.h"
 #include "InputCoreTypes.h"
 #include "UObject/NoExportTypes.h"
-#include "BPActorGripInformation.h"
 #include "BPGripPair.h"
 #include "VRExpansionFunctionLibrary.generated.h"
 
-class UPrimitiveComponent;
 class USplineComponent;
 class USplineMeshComponent;
+class UPrimitiveComponent;
 class UObject;
 class AActor;
 class UGripMotionControllerComponent;
 class USceneComponent;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UVRExpansionFunctionLibrary : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
@@ -115,7 +115,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static UGripMotionControllerComponent* Conv_GripPairToMotionController(const FBPGripPair& GripPair);
     
-    UFUNCTION(BlueprintCallable, BlueprintPure)
+    UFUNCTION(BlueprintPure)
     static uint8 Conv_GripPairToGripID(const FBPGripPair& GripPair);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)

@@ -7,11 +7,11 @@
 
 class UGetSteamLevelNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetSteamLevelNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetSteamLevelDelegate Completed;
     
     UGetSteamLevelNode();

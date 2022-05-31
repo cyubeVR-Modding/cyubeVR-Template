@@ -3,7 +3,7 @@
 #include "GameFramework/Actor.h"
 #include "BenchmarkActor.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API ABenchmarkActor : public AActor {
     GENERATED_BODY()
 public:

@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksLeaderboardUploadScoreMethod.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksLeaderboardUploadScoreMethod : uint8 {
     None,
     KeepBest,

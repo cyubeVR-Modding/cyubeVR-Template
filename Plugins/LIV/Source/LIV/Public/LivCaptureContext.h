@@ -9,10 +9,10 @@ USTRUCT(BlueprintType)
 struct FLivCaptureContext {
     GENERATED_BODY()
 public:
-    UPROPERTY(Export, Transient, meta=(AllowPrivateAccess=true))
+    UPROPERTY(EditAnywhere, Export, Transient)
     TArray<TWeakObjectPtr<UPrimitiveComponent>> HiddenComponents;
     
-    UPROPERTY(Transient, meta=(AllowPrivateAccess=true))
+    UPROPERTY(EditAnywhere, Transient)
     TArray<TWeakObjectPtr<AActor>> HiddenActors;
     
     LIV_API FLivCaptureContext();

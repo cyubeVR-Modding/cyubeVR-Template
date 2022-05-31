@@ -1,34 +1,34 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RefundTxnMinimalDelegateDelegate.h"
-#include "UWorksInterfaceWeb.h"
-#include "QueryTxnMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetReportMinimalDelegateDelegate.h"
+#include "UWorksInterfaceWeb.h"
+#include "RefundTxnMinimalDelegateDelegate.h"
 #include "ProcessAgreementMinimalDelegateDelegate.h"
+#include "QueryTxnMinimalDelegateDelegate.h"
 #include "UWorksSteamItemDef.h"
+#include "GetUserInfoMinimalDelegateDelegate.h"
 #include "EUWorksUserSession.h"
 #include "InitTxnMinimalDelegateDelegate.h"
-#include "GetUserInfoMinimalDelegateDelegate.h"
 #include "GetUserAgreementInfoMinimalDelegateDelegate.h"
-#include "EUWorksReportType.h"
-#include "GetReportMinimalDelegateDelegate.h"
 #include "FinalizeTxnMinimalDelegateDelegate.h"
+#include "EUWorksReportType.h"
 #include "CancelAgreementMinimalDelegateDelegate.h"
 #include "AdjustAgreementMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebMicroTxn.generated.h"
 
-class UUWorksRequestWebGetUserInfo;
 class UUWorksRequestWebRefundTxn;
-class UUWorksRequestWebQueryTxn;
-class UUWorksRequestWebCancelAgreement;
 class UUWorksRequestWebProcessAgreement;
+class UUWorksRequestWebQueryTxn;
 class UUWorksRequestWebInitTxn;
+class UUWorksRequestWebGetUserInfo;
 class UUWorksRequestWebGetUserAgreementInfo;
 class UUWorksRequestWebGetReport;
 class UUWorksRequestWebFinalizeTxn;
+class UUWorksRequestWebCancelAgreement;
 class UUWorksRequestWebAdjustAgreement;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebMicroTxn : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:

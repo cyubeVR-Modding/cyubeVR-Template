@@ -7,7 +7,7 @@
 class AChunkManager;
 class ACharacter;
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API ATool : public AMeshObject {
     GENERATED_BODY()
 public:

@@ -1,9 +1,9 @@
 #include "UWorksInterfaceWebApps.h"
 
+class UUWorksRequestWebGetServerList;
 class UUWorksRequestWebUpToDateCheck;
 class UUWorksRequestWebSetAppBuildLive;
 class UUWorksRequestWebGetServersAtAddress;
-class UUWorksRequestWebGetServerList;
 class UUWorksRequestWebGetPlayersBanned;
 class UUWorksRequestWebGetCheatingReportsList;
 class UUWorksRequestWebGetAppList;

@@ -1,28 +1,28 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksServerInfo.h"
+#include "ServerListUpdateMinimalDelegateDelegate.h"
 #include "UWorksRequestCore.h"
+#include "UWorksServerInfo.h"
 #include "ServerListDelegateDelegate.h"
 #include "ServerListUpdateDelegateDelegate.h"
-#include "ServerListMinimalDelegateDelegate.h"
-#include "ServerListUpdateMinimalDelegateDelegate.h"
 #include "EUWorksServerQueryType.h"
+#include "ServerListMinimalDelegateDelegate.h"
 #include "UWorksRequestCoreServerList.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreServerList : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FServerListDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FServerListUpdateDelegate OnRequestUpdated;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FServerListMinimalDelegate OnRequestCompletedMinimal;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FServerListUpdateMinimalDelegate OnRequestUpdatedMinimal;
     
     UUWorksRequestCoreServerList();

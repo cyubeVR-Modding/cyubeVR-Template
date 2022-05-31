@@ -7,7 +7,7 @@ USTRUCT(BlueprintType)
 struct FSteamAppId {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, VisibleAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FUInt32 ID;
     
     STEAMGENERAL_API FSteamAppId();

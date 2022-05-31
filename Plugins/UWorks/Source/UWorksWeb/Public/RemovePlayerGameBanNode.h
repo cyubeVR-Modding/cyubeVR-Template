@@ -7,11 +7,11 @@
 
 class URemovePlayerGameBanNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API URemovePlayerGameBanNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRemovePlayerGameBanDelegate Completed;
     
     URemovePlayerGameBanNode();

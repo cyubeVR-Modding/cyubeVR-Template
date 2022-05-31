@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "ETreeClass.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class ETreeClass : uint8 {
     Tree,
     Cactus,

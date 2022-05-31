@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksRemoteStoragePlatform.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksRemoteStoragePlatform : uint8 {
     Windows,
     OSX,

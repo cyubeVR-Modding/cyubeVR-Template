@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksVoiceResult.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksVoiceResult : uint8 {
     OK,
     NotInitialized,

@@ -1,20 +1,20 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
-#include "SubscribeItemDelegateDelegate.h"
 #include "EUWorksResult.h"
 #include "UWorksPublishedFileID.h"
+#include "SubscribeItemDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "SubscribeItemMinimalDelegateDelegate.h"
 #include "UWorksRequestCoreSubscribeItem.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreSubscribeItem : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSubscribeItemDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSubscribeItemMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreSubscribeItem();

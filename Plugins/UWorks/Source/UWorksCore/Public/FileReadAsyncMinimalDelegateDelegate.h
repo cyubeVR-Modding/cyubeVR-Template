@@ -3,5 +3,5 @@
 #include "EUWorksResult.h"
 #include "FileReadAsyncMinimalDelegateDelegate.generated.h"
 
-UDELEGATE(BlueprintCallable) DECLARE_DYNAMIC_DELEGATE_FourParams(FFileReadAsyncMinimalDelegate, bool, bSuccessful, EUWorksResult, Result, int32, Offset, const TArray<uint8>&, Buffer);
+UDELEGATE() DECLARE_DYNAMIC_DELEGATE_FourParams(FFileReadAsyncMinimalDelegate, bool, bSuccessful, EUWorksResult, Result, int32, Offset, const TArray<uint8>&, Buffer);
 

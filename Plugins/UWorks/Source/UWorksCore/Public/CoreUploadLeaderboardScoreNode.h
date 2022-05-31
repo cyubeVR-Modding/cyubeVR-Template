@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksLeaderboardUploadScoreMethod.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "UploadLeaderboardScoreDelegateDelegate.h"
 #include "UWorksSteamLeaderboard.h"
+#include "EUWorksLeaderboardUploadScoreMethod.h"
 #include "CoreUploadLeaderboardScoreNode.generated.h"
 
 class UCoreUploadLeaderboardScoreNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSCORE_API UCoreUploadLeaderboardScoreNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FUploadLeaderboardScoreDelegate Completed;
     
     UCoreUploadLeaderboardScoreNode();

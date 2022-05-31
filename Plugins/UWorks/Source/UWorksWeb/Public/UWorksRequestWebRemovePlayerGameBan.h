@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "RemovePlayerGameBanMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "RemovePlayerGameBanDelegateDelegate.h"
-#include "RemovePlayerGameBanMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebRemovePlayerGameBan.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebRemovePlayerGameBan : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRemovePlayerGameBanDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRemovePlayerGameBanMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebRemovePlayerGameBan();

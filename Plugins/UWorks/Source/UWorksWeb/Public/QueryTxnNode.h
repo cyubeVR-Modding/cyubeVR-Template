@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "QueryTxnDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "QueryTxnDelegateDelegate.h"
 #include "QueryTxnNode.generated.h"
 
 class UQueryTxnNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UQueryTxnNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FQueryTxnDelegate Completed;
     
     UQueryTxnNode();

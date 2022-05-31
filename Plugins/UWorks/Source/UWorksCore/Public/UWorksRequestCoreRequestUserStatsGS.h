@@ -1,20 +1,20 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ServerRequestUserStatsMinimalDelegateDelegate.h"
-#include "UWorksRequestCore.h"
 #include "EUWorksResult.h"
+#include "UWorksRequestCore.h"
 #include "ServerRequestUserStatsDelegateDelegate.h"
+#include "ServerRequestUserStatsMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestCoreRequestUserStatsGS.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreRequestUserStatsGS : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FServerRequestUserStatsDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FServerRequestUserStatsMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreRequestUserStatsGS();

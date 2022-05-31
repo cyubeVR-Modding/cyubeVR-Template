@@ -3,16 +3,16 @@
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "PakLoaderLibrary.generated.h"
 
+class USoundBase;
 class UTexture2D;
 class UStaticMesh;
 class UMaterialInstanceConstant;
-class USoundBase;
-class UMaterial;
 class USkeletalMesh;
 class UObject;
+class UMaterial;
 class UAnimSequence;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class PAKLOADER_API UPakLoaderLibrary : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:

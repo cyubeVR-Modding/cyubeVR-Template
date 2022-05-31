@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Engine/EngineTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "GameFramework/Character.h"
+#include "UObject/NoExportTypes.h"
 #include "LightReceiveInterface.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
+#include "Engine/EngineTypes.h"
 #include "DeerCPP.generated.h"
 
-class AChunkManager;
 class UMeshComponent;
+class AChunkManager;
 class AActor;
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API ADeerCPP : public ACharacter, public ILightReceiveInterface {
     GENERATED_BODY()
 public:
@@ -49,7 +49,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void StartMoving();
     
-    UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+    UFUNCTION(BlueprintNativeEvent)
     void SetMobilityAllEvent(EComponentMobility::Type NewMobility);
     
     UFUNCTION(BlueprintCallable)
@@ -75,22 +75,22 @@ public:
     
     
     // Fix for true pure virtual functions not being implemented
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION()
     bool UseLightAroundValue() override PURE_VIRTUAL(UseLightAroundValue, return false;);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION()
     bool UseActorCustomLocation() override PURE_VIRTUAL(UseActorCustomLocation, return false;);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION()
     bool TickReceiveLight() override PURE_VIRTUAL(TickReceiveLight, return false;);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION()
     void LightInterfaceBeginPlay(AActor* ThisActor) override PURE_VIRTUAL(LightInterfaceBeginPlay,);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION()
     void LightInterfaceBeginDestroy(AActor* ThisActor) override PURE_VIRTUAL(LightInterfaceBeginDestroy,);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION()
     FVector GetActorCustomLocation() override PURE_VIRTUAL(GetActorCustomLocation, return FVector{};);
     
 };

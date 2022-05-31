@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetUserGroupListMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "GetUserGroupListDelegateDelegate.h"
+#include "GetUserGroupListMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebGetUserGroupList.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebGetUserGroupList : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetUserGroupListDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetUserGroupListMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetUserGroupList();

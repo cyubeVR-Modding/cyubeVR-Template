@@ -1,10 +1,10 @@
 #include "LivLocalPlayerSubsystem.h"
 #include "Templates/SubclassOf.h"
 
-class ULivWorldSubsystem;
 class UPrimitiveComponent;
-class ULocalPlayer;
 class AActor;
+class ULocalPlayer;
+class ULivWorldSubsystem;
 class ULivCaptureBase;
 
 void ULivLocalPlayerSubsystem::ShowComponent(UPrimitiveComponent* InComponent) {
@@ -26,16 +26,16 @@ void ULivLocalPlayerSubsystem::HideComponent(UPrimitiveComponent* InComponent) {
 void ULivLocalPlayerSubsystem::HideActor(AActor* InActor) {
 }
 
-FTransform ULivLocalPlayerSubsystem::GetTrackingOriginTransform() const {
-    return FTransform{};
-}
-
 ULocalPlayer* ULivLocalPlayerSubsystem::GetLocalPlayerBP() const {
     return NULL;
 }
 
 ULivWorldSubsystem* ULivLocalPlayerSubsystem::GetLivWorldSubsystem() const {
     return NULL;
+}
+
+FLivCaptureContext ULivLocalPlayerSubsystem::GetCaptureContext() const {
+    return FLivCaptureContext{};
 }
 
 TSubclassOf<ULivCaptureBase> ULivLocalPlayerSubsystem::GetCaptureComponentClass() const {

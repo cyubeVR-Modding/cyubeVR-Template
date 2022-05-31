@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "UWorksSteamID.h"
 #include "GetRecentlyPlayedGamesDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "GetRecentlyPlayedGamesNode.generated.h"
 
 class UGetRecentlyPlayedGamesNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetRecentlyPlayedGamesNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetRecentlyPlayedGamesDelegate Completed;
     
     UGetRecentlyPlayedGamesNode();

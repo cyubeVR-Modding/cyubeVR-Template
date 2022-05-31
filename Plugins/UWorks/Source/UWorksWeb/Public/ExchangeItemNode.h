@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "UWorksSteamItemInstanceID.h"
 #include "ExchangeItemDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksSteamItemDef.h"
+#include "UWorksSteamItemInstanceID.h"
 #include "ExchangeItemNode.generated.h"
 
 class UExchangeItemNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UExchangeItemNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FExchangeItemDelegate Completed;
     
     UExchangeItemNode();

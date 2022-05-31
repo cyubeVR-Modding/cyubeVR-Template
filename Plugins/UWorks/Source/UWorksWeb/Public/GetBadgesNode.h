@@ -7,11 +7,11 @@
 
 class UGetBadgesNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetBadgesNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetBadgesDelegate Completed;
     
     UGetBadgesNode();

@@ -1,20 +1,20 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "Blueprint/UserWidget.h"
 #include "EntryData.h"
+#include "Blueprint/UserWidget.h"
 #include "UWorksSteamLeaderboardEntries.h"
 #include "BenchmarkLeaderboardsCPP.generated.h"
 
 class UGameInstance;
-class ULeaderboardEntryCPP;
 class UScrollBox;
+class ULeaderboardEntryCPP;
 
-UCLASS(EditInlineNew)
+UCLASS(Blueprintable, EditInlineNew)
 class CYUBEVR_API UBenchmarkLeaderboardsCPP : public UUserWidget {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
     UScrollBox* ScrollBox_Entries;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

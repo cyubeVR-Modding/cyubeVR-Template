@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "DeleteAccountMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "DeleteAccountDelegateDelegate.h"
+#include "DeleteAccountMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebDeleteAccount.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebDeleteAccount : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDeleteAccountDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDeleteAccountMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebDeleteAccount();

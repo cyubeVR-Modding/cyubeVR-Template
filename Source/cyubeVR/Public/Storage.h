@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
 #include "GameFramework/Actor.h"
 #include "StorageItem.h"
-#include "EItemClass.h"
 #include "EBlockTypeBP.h"
+#include "EItemClass.h"
+#include "UObject/NoExportTypes.h"
 #include "Storage.generated.h"
 
 class AChestInternals;
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API AStorage : public AActor {
     GENERATED_BODY()
 public:

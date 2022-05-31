@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ResetLoginTokenDelegateDelegate.h"
-#include "UWorksRequestWeb.h"
 #include "ResetLoginTokenMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
+#include "ResetLoginTokenDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebResetLoginToken.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebResetLoginToken : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FResetLoginTokenDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FResetLoginTokenMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebResetLoginToken();

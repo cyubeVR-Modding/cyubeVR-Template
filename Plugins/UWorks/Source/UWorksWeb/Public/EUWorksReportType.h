@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksReportType.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksReportType : uint8 {
     None,
     GameSales,

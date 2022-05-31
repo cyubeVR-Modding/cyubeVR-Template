@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetNewsForAppAuthedDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
+#include "GetNewsForAppAuthedDelegateDelegate.h"
 #include "GetNewsForAppAuthedMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetNewsForAppAuthed.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebGetNewsForAppAuthed : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetNewsForAppAuthedDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetNewsForAppAuthedMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetNewsForAppAuthed();

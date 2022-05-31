@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
-#include "SetPersonaNameDelegateDelegate.h"
-#include "SetPersonaNameMinimalDelegateDelegate.h"
 #include "EUWorksResult.h"
+#include "SetPersonaNameDelegateDelegate.h"
+#include "UWorksRequestCore.h"
+#include "SetPersonaNameMinimalDelegateDelegate.h"
 #include "UWorksRequestCoreSetPersonaName.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreSetPersonaName : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSetPersonaNameDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSetPersonaNameMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreSetPersonaName();

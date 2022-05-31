@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksLobbyType.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksLobbyType : uint8 {
     Private,
     FriendsOnly,

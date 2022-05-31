@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/MeshComponent.h"
-#include "Interfaces/Interface_CollisionDataProvider.h"
-#include "RuntimeMeshCollisionHitInfo.h"
 #include "ERuntimeMeshMobility.h"
+#include "Components/MeshComponent.h"
+#include "RuntimeMeshCollisionHitInfo.h"
+#include "Interfaces/Interface_CollisionDataProvider.h"
 #include "RuntimeMeshMaterialSlot.h"
 #include "RuntimeMeshComponent.generated.h"
 
@@ -11,7 +11,7 @@ class URuntimeMesh;
 class UMaterialInterface;
 class URuntimeMeshProvider;
 
-UCLASS(meta=(BlueprintSpawnableComponent))
+UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class RUNTIMEMESHCOMPONENT_API URuntimeMeshComponent : public UMeshComponent, public IInterface_CollisionDataProvider {
     GENERATED_BODY()
 public:

@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetServersAtAddressDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "GetServersAtAddressDelegateDelegate.h"
 #include "GetServersAtAddressNode.generated.h"
 
 class UGetServersAtAddressNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetServersAtAddressNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetServersAtAddressDelegate Completed;
     
     UGetServersAtAddressNode();

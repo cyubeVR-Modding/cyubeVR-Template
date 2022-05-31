@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksResult.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "EnumerateFollowingListDelegateDelegate.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
+#include "EUWorksResult.h"
 #include "UWorksSteamID.h"
 #include "CoreEnumerateFollowingListNode.generated.h"
 
 class UCoreEnumerateFollowingListNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSCORE_API UCoreEnumerateFollowingListNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FEnumerateFollowingListDelegate Completed;
     
     UCoreEnumerateFollowingListNode();

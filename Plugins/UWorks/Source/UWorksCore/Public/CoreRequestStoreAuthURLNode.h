@@ -6,11 +6,11 @@
 
 class UCoreRequestStoreAuthURLNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSCORE_API UCoreRequestStoreAuthURLNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRequestStoreAuthURLDelegate Completed;
     
     UCoreRequestStoreAuthURLNode();

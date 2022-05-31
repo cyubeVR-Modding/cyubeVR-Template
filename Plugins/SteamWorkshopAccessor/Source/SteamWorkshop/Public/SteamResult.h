@@ -7,7 +7,7 @@ USTRUCT(BlueprintType)
 struct FSteamResult {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, VisibleAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     EResultBP Result;
     
     STEAMWORKSHOP_API FSteamResult();

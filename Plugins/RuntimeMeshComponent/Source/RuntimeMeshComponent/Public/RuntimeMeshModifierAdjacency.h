@@ -4,7 +4,7 @@
 #include "RuntimeMeshRenderableMeshData.h"
 #include "RuntimeMeshModifierAdjacency.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class RUNTIMEMESHCOMPONENT_API URuntimeMeshModifierAdjacency : public URuntimeMeshModifier {
     GENERATED_BODY()
 public:

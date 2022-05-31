@@ -1,27 +1,27 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksPlayerInfo.h"
-#include "UWorksRequestCore.h"
 #include "PlayersDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "PlayersUpdateDelegateDelegate.h"
-#include "PlayersMinimalDelegateDelegate.h"
+#include "UWorksPlayerInfo.h"
 #include "PlayersUpdateMinimalDelegateDelegate.h"
+#include "PlayersMinimalDelegateDelegate.h"
 #include "UWorksRequestCorePlayers.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCorePlayers : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FPlayersDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FPlayersUpdateDelegate OnRequestUpdated;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FPlayersMinimalDelegate OnRequestCompletedMinimal;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FPlayersUpdateMinimalDelegate OnRequestUpdatedMinimal;
     
     UUWorksRequestCorePlayers();

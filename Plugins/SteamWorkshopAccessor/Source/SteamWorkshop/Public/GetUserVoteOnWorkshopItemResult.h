@@ -8,7 +8,7 @@ USTRUCT(BlueprintType)
 struct FGetUserVoteOnWorkshopItemResult : public FGeneralWorkshopItemResult {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, VisibleAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     EVoteType userVoteType;
     
     STEAMWORKSHOP_API FGetUserVoteOnWorkshopItemResult();

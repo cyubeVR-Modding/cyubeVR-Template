@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksResult.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "RequestEligiblePromoItemDefinitionsIDsDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "EUWorksResult.h"
 #include "CoreRequestEligiblePromoItemDefinitionsIDsNode.generated.h"
 
 class UCoreRequestEligiblePromoItemDefinitionsIDsNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSCORE_API UCoreRequestEligiblePromoItemDefinitionsIDsNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRequestEligiblePromoItemDefinitionsIDsDelegate Completed;
     
     UCoreRequestEligiblePromoItemDefinitionsIDsNode();

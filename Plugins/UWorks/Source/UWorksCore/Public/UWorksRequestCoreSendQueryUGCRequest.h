@@ -1,20 +1,20 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SendQueryUGCRequestMinimalDelegateDelegate.h"
-#include "UWorksRequestCore.h"
 #include "EUWorksResult.h"
-#include "SendQueryUGCRequestDelegateDelegate.h"
 #include "UWorksUGCQueryHandle.h"
+#include "UWorksRequestCore.h"
+#include "SendQueryUGCRequestDelegateDelegate.h"
+#include "SendQueryUGCRequestMinimalDelegateDelegate.h"
 #include "UWorksRequestCoreSendQueryUGCRequest.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreSendQueryUGCRequest : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSendQueryUGCRequestDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSendQueryUGCRequestMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreSendQueryUGCRequest();

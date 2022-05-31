@@ -3,12 +3,12 @@
 #include "RuntimeMeshProvider.h"
 #include "RuntimeMeshProviderPassthrough.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class RUNTIMEMESHCOMPONENT_API URuntimeMeshProviderPassthrough : public URuntimeMeshProvider {
     GENERATED_BODY()
 public:
 private:
-    UPROPERTY(BlueprintReadWrite, VisibleAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     URuntimeMeshProvider* ChildProvider;
     
 public:

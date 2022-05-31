@@ -7,11 +7,11 @@
 
 class URankedByVoteNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API URankedByVoteNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRankedByVoteDelegate Completed;
     
     URankedByVoteNode();

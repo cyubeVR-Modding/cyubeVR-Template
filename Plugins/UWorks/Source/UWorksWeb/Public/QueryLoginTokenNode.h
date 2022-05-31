@@ -6,11 +6,11 @@
 
 class UQueryLoginTokenNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UQueryLoginTokenNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FQueryLoginTokenDelegate Completed;
     
     UQueryLoginTokenNode();

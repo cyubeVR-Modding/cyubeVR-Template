@@ -1,20 +1,20 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AssociateWithClanDelegateDelegate.h"
+#include "EUWorksResult.h"
 #include "UWorksRequestCore.h"
+#include "AssociateWithClanDelegateDelegate.h"
 #include "AssociateWithClanMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
-#include "EUWorksResult.h"
 #include "UWorksRequestCoreAssociateWithClan.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreAssociateWithClan : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FAssociateWithClanDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FAssociateWithClanMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreAssociateWithClan();

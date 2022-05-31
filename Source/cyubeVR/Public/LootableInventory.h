@@ -6,7 +6,7 @@
 
 class AInventory;
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API ALootableInventory : public AMeshObject {
     GENERATED_BODY()
 public:

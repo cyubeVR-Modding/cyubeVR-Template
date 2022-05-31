@@ -3,7 +3,7 @@
 #include "RuntimeMeshProviderPassthrough.h"
 #include "RuntimeMeshProviderMemoryCache.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class RUNTIMEMESHCOMPONENT_API URuntimeMeshProviderMemoryCache : public URuntimeMeshProviderPassthrough {
     GENERATED_BODY()
 public:

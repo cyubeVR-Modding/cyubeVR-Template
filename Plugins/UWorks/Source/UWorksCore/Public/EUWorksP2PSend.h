@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksP2PSend.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksP2PSend : uint8 {
     Unreliable,
     UnreliableNoDelay,

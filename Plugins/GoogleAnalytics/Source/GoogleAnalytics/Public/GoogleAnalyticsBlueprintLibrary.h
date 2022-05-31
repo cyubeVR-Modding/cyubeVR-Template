@@ -5,7 +5,7 @@
 #include "CustomDimension.h"
 #include "GoogleAnalyticsBlueprintLibrary.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class GOOGLEANALYTICS_API UGoogleAnalyticsBlueprintLibrary : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:

@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "WeatherStateData.h"
 #include "GameFramework/Actor.h"
 #include "EWeather.h"
+#include "WeatherStateData.h"
 #include "WeatherManager.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API AWeatherManager : public AActor {
     GENERATED_BODY()
 public:

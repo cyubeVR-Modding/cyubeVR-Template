@@ -7,11 +7,11 @@
 
 class UDeleteSessionNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UDeleteSessionNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDeleteSessionDelegate Completed;
     
     UDeleteSessionNode();

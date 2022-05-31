@@ -1,20 +1,20 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestCore.h"
-#include "EUWorksChatRoomEnterResponse.h"
 #include "JoinLobbyDelegateDelegate.h"
 #include "JoinLobbyMinimalDelegateDelegate.h"
+#include "EUWorksChatRoomEnterResponse.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestCoreJoinLobby.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreJoinLobby : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FJoinLobbyDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FJoinLobbyMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreJoinLobby();
@@ -24,7 +24,7 @@ public:
     UFUNCTION(BlueprintCallable)
     bool IsActive();
     
-    UFUNCTION(BlueprintCallable, BlueprintPure)
+    UFUNCTION(BlueprintPure)
     void GetOutput(FUWorksSteamID& SteamIDLobby, TArray<uint8>& ChatPermissions, bool& bLocked, EUWorksChatRoomEnterResponse& ChatRoomEnterResponse);
     
     UFUNCTION(BlueprintCallable)

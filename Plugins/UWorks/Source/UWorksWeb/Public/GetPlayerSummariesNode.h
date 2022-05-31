@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetPlayerSummariesDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "GetPlayerSummariesDelegateDelegate.h"
 #include "GetPlayerSummariesNode.generated.h"
 
 class UGetPlayerSummariesNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetPlayerSummariesNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetPlayerSummariesDelegate Completed;
     
     UGetPlayerSummariesNode();

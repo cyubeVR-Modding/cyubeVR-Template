@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetLeaderboardsForGameDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
+#include "GetLeaderboardsForGameDelegateDelegate.h"
 #include "GetLeaderboardsForGameMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetLeaderboardsForGame.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebGetLeaderboardsForGame : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetLeaderboardsForGameDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetLeaderboardsForGameMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetLeaderboardsForGame();

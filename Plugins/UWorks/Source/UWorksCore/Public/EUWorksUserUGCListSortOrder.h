@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksUserUGCListSortOrder.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksUserUGCListSortOrder : uint8 {
     CreationOrderDesc,
     CreationOrderAsc,

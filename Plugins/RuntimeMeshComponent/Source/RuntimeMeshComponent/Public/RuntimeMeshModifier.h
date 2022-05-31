@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "RuntimeMeshRenderableMeshData.h"
 #include "UObject/Object.h"
 #include "RuntimeMeshCollisionData.h"
-#include "RuntimeMeshRenderableMeshData.h"
 #include "RuntimeMeshModifier.generated.h"
 
 UCLASS(Blueprintable)

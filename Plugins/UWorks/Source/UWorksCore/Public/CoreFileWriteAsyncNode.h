@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksResult.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "FileWriteAsyncDelegateDelegate.h"
+#include "EUWorksResult.h"
 #include "CoreFileWriteAsyncNode.generated.h"
 
 class UCoreFileWriteAsyncNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSCORE_API UCoreFileWriteAsyncNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FFileWriteAsyncDelegate Completed;
     
     UCoreFileWriteAsyncNode();

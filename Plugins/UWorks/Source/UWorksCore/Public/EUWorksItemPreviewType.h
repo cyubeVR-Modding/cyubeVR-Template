@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksItemPreviewType.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksItemPreviewType : uint8 {
     Image,
     YouTubeVideo,

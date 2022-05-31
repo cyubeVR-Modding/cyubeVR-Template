@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "ReceiveLightActor.h"
-#include "UObject/NoExportTypes.h"
 #include "EBlockTypeBP.h"
+#include "UObject/NoExportTypes.h"
 #include "BlockItem.generated.h"
 
-class UMaterialInstanceDynamic;
-class UTextRenderComponent;
 class UParticleSystemComponent;
-class ABlockItem;
 class UBoxComponent;
+class ABlockItem;
+class UTextRenderComponent;
+class UMaterialInstanceDynamic;
 class AChunkManager;
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API ABlockItem : public AReceiveLightActor {
     GENERATED_BODY()
 public:

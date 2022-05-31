@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksResult.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "RequestEncryptedAppTicketDelegateDelegate.h"
+#include "EUWorksResult.h"
 #include "CoreRequestEncryptedAppTicketNode.generated.h"
 
 class UCoreRequestEncryptedAppTicketNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSCORE_API UCoreRequestEncryptedAppTicketNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRequestEncryptedAppTicketDelegate Completed;
     
     UCoreRequestEncryptedAppTicketNode();

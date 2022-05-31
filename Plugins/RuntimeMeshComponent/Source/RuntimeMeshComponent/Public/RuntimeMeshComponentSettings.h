@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
 #include "Engine/DeveloperSettings.h"
 #include "ERuntimeMeshUpdateFrequency.h"
 #include "ERuntimeMeshThreadingPriority.h"
 #include "ERuntimeMeshCollisionCookingMode.h"
+#include "UObject/NoExportTypes.h"
 #include "RuntimeMeshComponentSettings.generated.h"
 
-UCLASS(DefaultConfig, Config=RuntimeMeshComponent)
+UCLASS(Blueprintable, DefaultConfig, Config=RuntimeMeshComponent)
 class RUNTIMEMESHCOMPONENT_API URuntimeMeshComponentSettings : public UDeveloperSettings {
     GENERATED_BODY()
 public:

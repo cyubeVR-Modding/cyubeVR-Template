@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RequestLobbyListMinimalDelegateDelegate.h"
 #include "UWorksRequestCore.h"
 #include "RequestLobbyListDelegateDelegate.h"
+#include "RequestLobbyListMinimalDelegateDelegate.h"
 #include "UWorksRequestCoreRequestLobbyList.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreRequestLobbyList : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRequestLobbyListDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRequestLobbyListMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreRequestLobbyList();

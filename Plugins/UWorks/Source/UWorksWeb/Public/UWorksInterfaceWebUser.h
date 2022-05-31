@@ -1,31 +1,31 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetUserGroupListMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksInterfaceWeb.h"
 #include "ResolveVanityURLMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
+#include "GetPlayerSummariesMinimalDelegateDelegate.h"
 #include "GrantPackageMinimalDelegateDelegate.h"
+#include "GetUserGroupListMinimalDelegateDelegate.h"
 #include "GetPublisherAppOwnershipMinimalDelegateDelegate.h"
 #include "GetPublisherAppOwnershipChangesMinimalDelegateDelegate.h"
-#include "GetPlayerSummariesMinimalDelegateDelegate.h"
 #include "GetPlayerBansMinimalDelegateDelegate.h"
 #include "GetFriendListMinimalDelegateDelegate.h"
 #include "GetAppPriceInfoMinimalDelegateDelegate.h"
 #include "CheckAppOwnershipMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebUser.generated.h"
 
-class UUWorksRequestWebGrantPackage;
-class UUWorksRequestWebCheckAppOwnership;
-class UUWorksRequestWebResolveVanityURL;
 class UUWorksRequestWebGetUserGroupList;
+class UUWorksRequestWebResolveVanityURL;
 class UUWorksRequestWebGetPublisherAppOwnershipChanges;
+class UUWorksRequestWebGrantPackage;
 class UUWorksRequestWebGetPublisherAppOwnership;
 class UUWorksRequestWebGetPlayerSummaries;
 class UUWorksRequestWebGetPlayerBans;
 class UUWorksRequestWebGetFriendList;
 class UUWorksRequestWebGetAppPriceInfo;
+class UUWorksRequestWebCheckAppOwnership;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebUser : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:

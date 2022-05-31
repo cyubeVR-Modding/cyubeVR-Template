@@ -5,14 +5,14 @@
 #include "GetAssetClassInfoMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetAssetClassInfo.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebGetAssetClassInfo : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetAssetClassInfoDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetAssetClassInfoMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetAssetClassInfo();

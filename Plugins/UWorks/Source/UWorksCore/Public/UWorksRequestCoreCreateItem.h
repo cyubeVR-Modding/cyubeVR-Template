@@ -1,21 +1,21 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UWorksPublishedFileID.h"
+#include "EUWorksResult.h"
 #include "UWorksRequestCore.h"
 #include "CreateItemDelegateDelegate.h"
 #include "CreateItemMinimalDelegateDelegate.h"
 #include "EUWorksWorkshopFileType.h"
-#include "UWorksPublishedFileID.h"
-#include "EUWorksResult.h"
 #include "UWorksRequestCoreCreateItem.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreCreateItem : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FCreateItemDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FCreateItemMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreCreateItem();

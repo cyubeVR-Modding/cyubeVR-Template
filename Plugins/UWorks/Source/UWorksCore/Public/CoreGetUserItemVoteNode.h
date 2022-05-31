@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksResult.h"
-#include "UWorksPublishedFileID.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "GetUserItemVoteDelegateDelegate.h"
+#include "EUWorksResult.h"
+#include "UWorksPublishedFileID.h"
 #include "CoreGetUserItemVoteNode.generated.h"
 
 class UCoreGetUserItemVoteNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSCORE_API UCoreGetUserItemVoteNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetUserItemVoteDelegate Completed;
     
     UCoreGetUserItemVoteNode();

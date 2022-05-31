@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksResult.h"
-#include "UWorksPublishedFileID.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "AddItemToFavoritesDelegateDelegate.h"
+#include "EUWorksResult.h"
+#include "UWorksPublishedFileID.h"
 #include "CoreAddItemToFavoritesNode.generated.h"
 
 class UCoreAddItemToFavoritesNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSCORE_API UCoreAddItemToFavoritesNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FAddItemToFavoritesDelegate Completed;
     
     UCoreAddItemToFavoritesNode();

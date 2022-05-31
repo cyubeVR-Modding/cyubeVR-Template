@@ -4,11 +4,11 @@
 #include "RuntimeMeshRenderableMeshData.h"
 #include "RuntimeMeshModifierNormals.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class RUNTIMEMESHCOMPONENT_API URuntimeMeshModifierNormals : public URuntimeMeshModifier {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, VisibleAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bComputeSmoothNormals;
     
     URuntimeMeshModifierNormals();

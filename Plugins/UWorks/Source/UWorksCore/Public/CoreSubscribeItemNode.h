@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
 #include "EUWorksResult.h"
 #include "UWorksPublishedFileID.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "SubscribeItemDelegateDelegate.h"
 #include "CoreSubscribeItemNode.generated.h"
 
 class UCoreSubscribeItemNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSCORE_API UCoreSubscribeItemNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSubscribeItemDelegate Completed;
     
     UCoreSubscribeItemNode();

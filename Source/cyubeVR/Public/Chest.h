@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
 #include "MeshObject.h"
+#include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "Chest.generated.h"
 
 class AChestInternals;
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API AChest : public AMeshObject {
     GENERATED_BODY()
 public:

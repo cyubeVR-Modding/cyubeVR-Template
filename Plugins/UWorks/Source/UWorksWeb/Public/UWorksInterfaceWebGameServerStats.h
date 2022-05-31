@@ -7,7 +7,7 @@
 
 class UUWorksRequestWebGetGameServerPlayerStatsForGame;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebGameServerStats : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:

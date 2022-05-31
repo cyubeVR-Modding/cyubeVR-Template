@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "UWorksSteamID.h"
 #include "HistoryExecuteCommandsDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "HistoryExecuteCommandsNode.generated.h"
 
 class UHistoryExecuteCommandsNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UHistoryExecuteCommandsNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FHistoryExecuteCommandsDelegate Completed;
     
     UHistoryExecuteCommandsNode();

@@ -1,7 +1,7 @@
 #include "CustomBlockManager.h"
 
-class UTexture2D;
 class UTexture2DArray;
+class UTexture2D;
 
 UTexture2D* UCustomBlockManager::LoadDDS(const FString& Filename, TEnumAsByte<EPixelFormat> PixelFormat, bool ConvertDXT5toDXT1) {
     return NULL;
@@ -20,6 +20,18 @@ EBlockTypeBP UCustomBlockManager::GetPropertyBlockForCustomBlock(int32 UniqueId)
 
 FString UCustomBlockManager::GetNameOfCustomBlock(int32 UniqueId) {
     return TEXT("");
+}
+
+int32 UCustomBlockManager::GetCustomBlockUniqueIDToDrop(int32 UniqueId) {
+    return 0;
+}
+
+bool UCustomBlockManager::GetCustomBlockAllowMove(int32 UniqueId) {
+    return false;
+}
+
+bool UCustomBlockManager::GetCustomBlockAllowCrystalPlacement(int32 UniqueId) {
+    return false;
 }
 
 void UCustomBlockManager::CopyTextureToArraySlice(UTexture2DArray* DestArray, int32 DestSlice, UTexture2D* SourceTexture) {

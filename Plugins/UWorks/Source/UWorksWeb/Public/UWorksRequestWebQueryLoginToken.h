@@ -5,14 +5,14 @@
 #include "QueryLoginTokenMinimalDelegateDelegate.h"
 #include "UWorksRequestWebQueryLoginToken.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebQueryLoginToken : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FQueryLoginTokenDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FQueryLoginTokenMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebQueryLoginToken();

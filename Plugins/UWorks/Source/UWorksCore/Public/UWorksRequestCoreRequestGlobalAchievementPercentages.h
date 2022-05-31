@@ -1,20 +1,20 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
 #include "EUWorksResult.h"
+#include "UWorksRequestCore.h"
 #include "RequestGlobalAchievementPercentagesDelegateDelegate.h"
 #include "RequestGlobalAchievementPercentagesMinimalDelegateDelegate.h"
 #include "UWorksGameID.h"
 #include "UWorksRequestCoreRequestGlobalAchievementPercentages.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreRequestGlobalAchievementPercentages : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRequestGlobalAchievementPercentagesDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRequestGlobalAchievementPercentagesMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreRequestGlobalAchievementPercentages();

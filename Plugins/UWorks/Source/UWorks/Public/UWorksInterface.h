@@ -3,7 +3,7 @@
 #include "UWorks.h"
 #include "UWorksInterface.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKS_API UUWorksInterface : public UUWorks {
     GENERATED_BODY()
 public:

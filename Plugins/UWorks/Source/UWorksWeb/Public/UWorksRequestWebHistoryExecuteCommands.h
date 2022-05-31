@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "HistoryExecuteCommandsMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
-#include "UWorksSteamID.h"
 #include "HistoryExecuteCommandsDelegateDelegate.h"
+#include "HistoryExecuteCommandsMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestWebHistoryExecuteCommands.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebHistoryExecuteCommands : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FHistoryExecuteCommandsDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FHistoryExecuteCommandsMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebHistoryExecuteCommands();

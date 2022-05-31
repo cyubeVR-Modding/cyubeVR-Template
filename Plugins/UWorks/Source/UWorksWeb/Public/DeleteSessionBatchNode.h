@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "DeleteSessionBatchDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "DeleteSessionBatchDelegateDelegate.h"
 #include "DeleteSessionBatchNode.generated.h"
 
 class UDeleteSessionBatchNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UDeleteSessionBatchNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDeleteSessionBatchDelegate Completed;
     
     UDeleteSessionBatchNode();

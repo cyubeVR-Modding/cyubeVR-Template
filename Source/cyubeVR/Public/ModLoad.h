@@ -3,7 +3,7 @@
 #include "GameFramework/Actor.h"
 #include "ModLoad.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API AModLoad : public AActor {
     GENERATED_BODY()
 public:

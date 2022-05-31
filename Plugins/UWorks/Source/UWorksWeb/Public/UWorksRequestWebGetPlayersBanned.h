@@ -5,14 +5,14 @@
 #include "GetPlayersBannedMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetPlayersBanned.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebGetPlayersBanned : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetPlayersBannedDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetPlayersBannedMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetPlayersBanned();

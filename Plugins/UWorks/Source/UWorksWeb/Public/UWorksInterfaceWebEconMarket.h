@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetPopularMinimalDelegateDelegate.h"
-#include "UWorksInterfaceWeb.h"
 #include "UWorksSteamID.h"
-#include "GetMarketEligibilityMinimalDelegateDelegate.h"
+#include "UWorksInterfaceWeb.h"
 #include "GetAssetIDMinimalDelegateDelegate.h"
+#include "GetPopularMinimalDelegateDelegate.h"
+#include "GetMarketEligibilityMinimalDelegateDelegate.h"
 #include "CancelAppListingsForUserMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebEconMarket.generated.h"
 
@@ -13,7 +13,7 @@ class UUWorksRequestWebGetMarketEligibility;
 class UUWorksRequestWebGetAssetID;
 class UUWorksRequestWebCancelAppListingsForUser;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebEconMarket : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:

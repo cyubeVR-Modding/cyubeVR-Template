@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetMarketPricesMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "GetMarketPricesDelegateDelegate.h"
+#include "GetMarketPricesMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetMarketPrices.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebGetMarketPrices : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetMarketPricesDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetMarketPricesMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetMarketPrices();

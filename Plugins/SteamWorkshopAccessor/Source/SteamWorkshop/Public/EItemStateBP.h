@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EItemStateBP.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EItemStateBP : uint8 {
     IS_None,
     IS_Subscribed,

@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksPersonaState.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksPersonaState : uint8 {
     Offline,
     Online,

@@ -4,7 +4,7 @@
 #include "EBlockTypeBP.h"
 #include "EasterEgg.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API AEasterEgg : public AReceiveLightActor {
     GENERATED_BODY()
 public:

@@ -1,20 +1,20 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
-#include "ServerStoreUserStatsMinimalDelegateDelegate.h"
-#include "ServerStoreUserStatsDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "EUWorksResult.h"
+#include "UWorksRequestCore.h"
+#include "ServerStoreUserStatsDelegateDelegate.h"
+#include "ServerStoreUserStatsMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestCoreStoreUserStats.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreStoreUserStats : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FServerStoreUserStatsDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FServerStoreUserStatsMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreStoreUserStats();

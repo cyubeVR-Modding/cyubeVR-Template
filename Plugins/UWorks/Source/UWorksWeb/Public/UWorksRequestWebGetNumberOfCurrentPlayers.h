@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetNumberOfCurrentPlayersDelegateDelegate2.h"
 #include "UWorksRequestWeb.h"
+#include "GetNumberOfCurrentPlayersDelegateDelegate2.h"
 #include "GetNumberOfCurrentPlayersMinimalDelegateDelegate2.h"
 #include "UWorksRequestWebGetNumberOfCurrentPlayers.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebGetNumberOfCurrentPlayers : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetNumberOfCurrentPlayersDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetNumberOfCurrentPlayersMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetNumberOfCurrentPlayers();

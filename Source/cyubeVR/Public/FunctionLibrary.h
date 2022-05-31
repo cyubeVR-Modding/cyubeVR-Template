@@ -4,7 +4,7 @@
 #include "UObject/NoExportTypes.h"
 #include "FunctionLibrary.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class CYUBEVR_API UFunctionLibrary : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:

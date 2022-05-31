@@ -1,62 +1,62 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UploadLeaderboardScoreMinimalDelegateDelegate.h"
-#include "UserAchievementIconFetchedDelegateDelegate.h"
-#include "FindLeaderboardMinimalDelegateDelegate.h"
-#include "UWorksInterfaceCore.h"
-#include "UWorksSteamLeaderboard.h"
 #include "UserStatsReceivedDelegateDelegate.h"
+#include "UWorksInterfaceCore.h"
 #include "UserStatsStoredDelegateDelegate.h"
-#include "UWorksUGCHandle.h"
-#include "UserStatsUnloadedDelegateDelegate.h"
+#include "EUWorksLeaderboardDataRequest.h"
 #include "UserAchievementStoredDelegateDelegate.h"
-#include "RequestGlobalStatsMinimalDelegateDelegate.h"
+#include "UserAchievementIconFetchedDelegateDelegate.h"
+#include "UserStatsUnloadedDelegateDelegate.h"
+#include "UploadLeaderboardScoreMinimalDelegateDelegate.h"
+#include "UWorksSteamLeaderboard.h"
+#include "EUWorksLeaderboardSortMethod.h"
 #include "EUWorksLeaderboardUploadScoreMethod.h"
+#include "UWorksUGCHandle.h"
 #include "RequestUserStatsMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
-#include "DownloadLeaderboardEntriesMinimalDelegateDelegate.h"
+#include "RequestGlobalStatsMinimalDelegateDelegate.h"
 #include "RequestGlobalAchievementPercentagesMinimalDelegateDelegate.h"
-#include "GetNumberOfCurrentPlayersMinimalDelegateDelegate.h"
-#include "EUWorksLeaderboardDataRequest.h"
-#include "EUWorksLeaderboardSortMethod.h"
-#include "EUWorksLeaderboardDisplayType.h"
 #include "UWorksSteamLeaderboardEntries.h"
+#include "GetNumberOfCurrentPlayersMinimalDelegateDelegate.h"
+#include "EUWorksLeaderboardDisplayType.h"
 #include "UWorksLeaderboardEntry.h"
+#include "DownloadLeaderboardEntriesMinimalDelegateDelegate.h"
 #include "FindOrCreateLeaderboardMinimalDelegateDelegate.h"
+#include "FindLeaderboardMinimalDelegateDelegate.h"
 #include "DownloadLeaderboardEntriesForUsersMinimalDelegateDelegate.h"
 #include "AttachLeaderboardUGCMinimalDelegateDelegate.h"
 #include "UWorksInterfaceCoreUserStats.generated.h"
 
-class UUWorksRequestCoreDownloadLeaderboardEntriesForUsers;
-class UUWorksRequestCoreFindOrCreateLeaderboard;
+class UUWorksRequestCoreFindLeaderboard;
+class UUWorksRequestCoreDownloadLeaderboardEntries;
+class UUWorksRequestCoreAttachLeaderboardUGC;
 class UUWorksRequestCoreUploadLeaderboardScore;
-class UUWorksRequestCoreRequestGlobalStats;
-class UUWorksRequestCoreRequestUserStats;
 class UUWorksRequestCoreRequestGlobalAchievementPercentages;
-class UTexture2D;
+class UUWorksRequestCoreRequestUserStats;
+class UUWorksRequestCoreRequestGlobalStats;
 class UUWorksInterfaceCoreUserStats;
 class UUWorksRequestCoreGetNumberOfCurrentPlayers;
-class UUWorksRequestCoreDownloadLeaderboardEntries;
-class UUWorksRequestCoreFindLeaderboard;
-class UUWorksRequestCoreAttachLeaderboardUGC;
+class UTexture2D;
+class UUWorksRequestCoreFindOrCreateLeaderboard;
+class UUWorksRequestCoreDownloadLeaderboardEntriesForUsers;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreUserStats : public UUWorksInterfaceCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FUserStatsReceivedDelegate UserStatsReceived;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FUserStatsStoredDelegate UserStatsStored;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FUserAchievementStoredDelegate UserAchievementStored;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FUserStatsUnloadedDelegate UserStatsUnloaded;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FUserAchievementIconFetchedDelegate UserAchievementIconFetched;
     
     UUWorksInterfaceCoreUserStats();

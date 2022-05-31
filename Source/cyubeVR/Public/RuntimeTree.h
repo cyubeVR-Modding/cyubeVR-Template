@@ -5,11 +5,11 @@
 #include "UObject/NoExportTypes.h"
 #include "RuntimeTree.generated.h"
 
-class UProceduralMeshComponent;
 class AChunkManager;
+class UProceduralMeshComponent;
 class UStaticMesh;
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API ARuntimeTree : public AActor {
     GENERATED_BODY()
 public:

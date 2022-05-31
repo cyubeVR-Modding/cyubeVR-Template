@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "BPGripPair.h"
 #include "ESecondaryGripType.h"
 #include "EGripInterfaceTeleportBehavior.h"
-#include "BPAdvGripSettings.h"
 #include "EGripLateUpdateSettings.h"
 #include "EGripCollisionType.h"
 #include "EGripMovementReplicationSettings.h"
+#include "BPAdvGripSettings.h"
+#include "BPGripPair.h"
 #include "BPInterfaceProperties.generated.h"
 
 USTRUCT(BlueprintType)
@@ -58,10 +58,10 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FBPAdvGripSettings AdvancedGripSettings;
     
-    UPROPERTY(BlueprintReadWrite, NotReplicated, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, NotReplicated, meta=(AllowPrivateAccess=true))
     bool bIsHeld;
     
-    UPROPERTY(BlueprintReadWrite, NotReplicated, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, NotReplicated, meta=(AllowPrivateAccess=true))
     TArray<FBPGripPair> HoldingControllers;
     
     CYUBEVR_API FBPInterfaceProperties();

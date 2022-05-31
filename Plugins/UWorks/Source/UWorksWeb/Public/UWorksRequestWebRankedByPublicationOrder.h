@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RankedByPublicationOrderMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
-#include "UWorksSteamID.h"
 #include "RankedByPublicationOrderDelegateDelegate.h"
+#include "RankedByPublicationOrderMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestWebRankedByPublicationOrder.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebRankedByPublicationOrder : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRankedByPublicationOrderDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRankedByPublicationOrderMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebRankedByPublicationOrder();

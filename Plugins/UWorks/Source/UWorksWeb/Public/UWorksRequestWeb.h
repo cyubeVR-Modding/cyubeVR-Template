@@ -3,7 +3,7 @@
 #include "UWorksRequest.h"
 #include "UWorksRequestWeb.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWeb : public UUWorksRequest {
     GENERATED_BODY()
 public:

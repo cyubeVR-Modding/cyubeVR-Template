@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "UWorksSteamID.h"
 #include "RequestVacStatusForUserDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "RequestVacStatusForUserNode.generated.h"
 
 class URequestVacStatusForUserNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API URequestVacStatusForUserNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRequestVacStatusForUserDelegate Completed;
     
     URequestVacStatusForUserNode();

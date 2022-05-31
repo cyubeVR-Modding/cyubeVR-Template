@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetCommunityBadgeProgressDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "GetCommunityBadgeProgressDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "GetCommunityBadgeProgressNode.generated.h"
 
 class UGetCommunityBadgeProgressNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetCommunityBadgeProgressNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetCommunityBadgeProgressDelegate Completed;
     
     UGetCommunityBadgeProgressNode();

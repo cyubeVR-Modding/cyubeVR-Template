@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksResult.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "EUWorksResult.h"
 #include "SetPersonaNameDelegateDelegate.h"
 #include "CoreSetPersonaNameNode.generated.h"
 
 class UCoreSetPersonaNameNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSCORE_API UCoreSetPersonaNameNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSetPersonaNameDelegate Completed;
     
     UCoreSetPersonaNameNode();

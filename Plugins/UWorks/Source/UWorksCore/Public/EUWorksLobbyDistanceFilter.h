@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksLobbyDistanceFilter.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksLobbyDistanceFilter : uint8 {
     Close,
     Default,

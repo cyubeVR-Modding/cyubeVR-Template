@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EndSecureMultiplayerSessionDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksSteamID.h"
+#include "EndSecureMultiplayerSessionDelegateDelegate.h"
 #include "EndSecureMultiplayerSessionNode.generated.h"
 
 class UEndSecureMultiplayerSessionNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UEndSecureMultiplayerSessionNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FEndSecureMultiplayerSessionDelegate Completed;
     
     UEndSecureMultiplayerSessionNode();

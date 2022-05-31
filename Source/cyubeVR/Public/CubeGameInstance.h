@@ -5,21 +5,21 @@
 #include "CubeGameInstance.generated.h"
 
 class UTextureRenderTarget2D;
-class USoundBase;
 class UTexture2D;
+class UTexture2DArray;
+class USoundBase;
 class UAudioComponent;
 class UCustomBlockManager;
 class UMaterialParameterCollection;
-class UTexture2DArray;
 
-UCLASS(NonTransient)
+UCLASS(Blueprintable, NonTransient)
 class CYUBEVR_API UCubeGameInstance : public UGameInstance {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool LoadExistingWorld;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FString WorldName;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "UObject/Object.h"
 #include "EFileFunctionsWebComDirectoryType.h"
+#include "UObject/Object.h"
 #include "FileFunctionsWebCom.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UFileFunctionsWebCom : public UObject {
     GENERATED_BODY()
 public:

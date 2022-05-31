@@ -6,11 +6,11 @@
 
 class UGetNewsForAppAuthedNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetNewsForAppAuthedNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetNewsForAppAuthedDelegate Completed;
     
     UGetNewsForAppAuthedNode();

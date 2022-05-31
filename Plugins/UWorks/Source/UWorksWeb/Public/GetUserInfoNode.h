@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "UWorksSteamID.h"
 #include "GetUserInfoDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "GetUserInfoNode.generated.h"
 
 class UGetUserInfoNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetUserInfoNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetUserInfoDelegate Completed;
     
     UGetUserInfoNode();

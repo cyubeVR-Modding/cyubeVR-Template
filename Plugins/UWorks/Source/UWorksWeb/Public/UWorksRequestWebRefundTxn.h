@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RefundTxnMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
+#include "RefundTxnMinimalDelegateDelegate.h"
 #include "RefundTxnDelegateDelegate.h"
 #include "UWorksRequestWebRefundTxn.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebRefundTxn : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRefundTxnDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRefundTxnMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebRefundTxn();

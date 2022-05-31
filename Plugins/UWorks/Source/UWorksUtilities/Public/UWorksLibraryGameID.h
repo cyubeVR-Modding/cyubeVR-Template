@@ -4,7 +4,7 @@
 #include "UWorksLibrary.h"
 #include "UWorksLibraryGameID.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSUTILITIES_API UUWorksLibraryGameID : public UUWorksLibrary {
     GENERATED_BODY()
 public:

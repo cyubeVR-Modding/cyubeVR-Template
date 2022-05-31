@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksChatMemberStateChange.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksChatMemberStateChange : uint8 {
     Entered,
     Left,

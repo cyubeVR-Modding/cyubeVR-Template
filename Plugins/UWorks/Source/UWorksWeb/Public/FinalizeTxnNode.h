@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "FinalizeTxnDelegateDelegate.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
 #include "FinalizeTxnNode.generated.h"
 
 class UFinalizeTxnNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UFinalizeTxnNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FFinalizeTxnDelegate Completed;
     
     UFinalizeTxnNode();

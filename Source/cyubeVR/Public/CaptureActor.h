@@ -5,7 +5,7 @@
 
 class USceneCaptureComponent2D;
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API ACaptureActor : public AActor {
     GENERATED_BODY()
 public:

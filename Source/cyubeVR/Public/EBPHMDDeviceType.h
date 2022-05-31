@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EBPHMDDeviceType.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EBPHMDDeviceType : uint8 {
     DT_OculusHMD,
     DT_PSVR,

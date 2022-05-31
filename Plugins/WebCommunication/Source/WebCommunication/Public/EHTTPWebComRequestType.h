@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "EHTTPWebComRequestType.generated.h"
 
-UENUM()
-enum class EHTTPWebComRequestType {
+UENUM(BlueprintType)
+enum class EHTTPWebComRequestType : uint8 {
     GET,
     GETLowRamDownload,
     PUT,

@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestCore.h"
+#include "UWorksSteamID.h"
 #include "RequestClanOfficerListDelegateDelegate.h"
 #include "RequestClanOfficerListMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "UWorksRequestCoreRequestClanOfficerList.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreRequestClanOfficerList : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRequestClanOfficerListDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRequestClanOfficerListMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreRequestClanOfficerList();

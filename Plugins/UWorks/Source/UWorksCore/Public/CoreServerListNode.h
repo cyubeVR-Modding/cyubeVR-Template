@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ServerListUpdateDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "EUWorksServerQueryType.h"
+#include "ServerListUpdateDelegateDelegate.h"
 #include "UWorksServerInfo.h"
+#include "EUWorksServerQueryType.h"
 #include "CoreServerListNode.generated.h"
 
 class UCoreServerListNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSCORE_API UCoreServerListNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FServerListUpdateDelegate Updated;
     
     UCoreServerListNode();

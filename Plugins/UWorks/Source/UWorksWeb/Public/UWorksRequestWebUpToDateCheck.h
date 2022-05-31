@@ -5,14 +5,14 @@
 #include "UpToDateCheckMinimalDelegateDelegate.h"
 #include "UWorksRequestWebUpToDateCheck.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebUpToDateCheck : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FUpToDateCheckDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FUpToDateCheckMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebUpToDateCheck();

@@ -1,20 +1,20 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AddPromoItemMinimalDelegateDelegate.h"
-#include "AddPromoItemDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "UWorksSteamItemDef.h"
+#include "AddPromoItemMinimalDelegateDelegate.h"
+#include "AddPromoItemDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebAddPromoItem.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebAddPromoItem : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FAddPromoItemDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FAddPromoItemMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebAddPromoItem();

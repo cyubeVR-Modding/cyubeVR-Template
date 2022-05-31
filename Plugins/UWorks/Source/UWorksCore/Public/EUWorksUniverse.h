@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksUniverse.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksUniverse : uint8 {
     Invalid,
     Public,

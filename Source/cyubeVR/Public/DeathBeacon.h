@@ -3,7 +3,7 @@
 #include "GameFramework/Actor.h"
 #include "DeathBeacon.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API ADeathBeacon : public AActor {
     GENERATED_BODY()
 public:

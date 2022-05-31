@@ -7,11 +7,11 @@
 
 class URankedByTrendNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API URankedByTrendNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRankedByTrendDelegate Completed;
     
     URankedByTrendNode();

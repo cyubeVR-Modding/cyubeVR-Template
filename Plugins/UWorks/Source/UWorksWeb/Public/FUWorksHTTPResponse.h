@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "FUWorksHTTPResponse.generated.h"
 
-UENUM()
-enum class FUWorksHTTPResponse {
+UENUM(BlueprintType)
+enum class FUWorksHTTPResponse : uint8 {
     Unknown,
     Continue,
     SwitchProtocol,

@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "CustomBlockInfoForModsBP.h"
 #include "Blueprint/UserWidget.h"
+#include "CustomBlockInfoForModsBP.h"
 #include "ManageModsWidgetParent.generated.h"
 
-UCLASS(EditInlineNew)
+UCLASS(Blueprintable, EditInlineNew)
 class CYUBEVR_API UManageModsWidgetParent : public UUserWidget {
     GENERATED_BODY()
 public:

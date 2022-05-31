@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksPublishedFileID.h"
-#include "QueryFilesDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "QueryFilesDelegateDelegate.h"
 #include "UWorksRequiredKVTags.h"
+#include "UWorksPublishedFileID.h"
 #include "QueryFilesNode.generated.h"
 
 class UQueryFilesNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UQueryFilesNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FQueryFilesDelegate Completed;
     
     UQueryFilesNode();

@@ -1,23 +1,23 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetFileDetailsMinimalDelegateDelegate.h"
-#include "DlcInstalledDelegateDelegate.h"
 #include "UWorksInterfaceCore.h"
 #include "NewUrlLaunchParametersDelegateDelegate.h"
+#include "DlcInstalledDelegateDelegate.h"
+#include "GetFileDetailsMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksInterfaceCoreApps.generated.h"
 
-class UUWorksRequestCoreGetFileDetails;
 class UUWorksInterfaceCoreApps;
+class UUWorksRequestCoreGetFileDetails;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreApps : public UUWorksInterfaceCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDlcInstalledDelegate DlcInstalled;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FNewUrlLaunchParametersDelegate NewUrlLaunchParameters;
     
     UUWorksInterfaceCoreApps();

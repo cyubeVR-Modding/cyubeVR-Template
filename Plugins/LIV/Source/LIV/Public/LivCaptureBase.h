@@ -2,39 +2,31 @@
 #include "CoreMinimal.h"
 #include "Components/SceneCaptureComponent2D.h"
 #include "LivActivationDelegateDelegate.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
+#include "LivInputFrame.h"
 #include "LivCaptureBase.generated.h"
 
-UCLASS(Abstract, EditInlineNew, meta=(BlueprintSpawnableComponent))
+UCLASS(Abstract, Blueprintable, EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class LIV_API ULivCaptureBase : public USceneCaptureComponent2D {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FLivActivationDelegate OnLivCaptureActivated;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FLivActivationDelegate OnLivCaptureDeactivated;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    uint8 bOverrideCameraPose: 1;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    uint8 bOverrideCameraFOV: 1;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FLivInputFrame InputFrame;
     
     ULivCaptureBase();
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool IsLivCapturing() const;
-    
-    UFUNCTION(BlueprintCallable, BlueprintPure)
-    FMatrix GetClipPlaneTransform() const;
-    
-    UFUNCTION(BlueprintCallable, BlueprintPure)
-    FVector GetClipPlaneLocation() const;
-    
-    UFUNCTION(BlueprintCallable, BlueprintPure)
-    FVector GetClipPlaneForward() const;
-    
-    UFUNCTION(BlueprintCallable, BlueprintPure)
-    FRotator GetCameraRotation() const;
-    
-    UFUNCTION(BlueprintCallable, BlueprintPure)
-    FVector GetCameraLocation() const;
     
 };
 

@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "EVRConjoinedMovementModes.generated.h"
 
-UENUM()
-enum class EVRConjoinedMovementModes {
+UENUM(BlueprintType)
+enum class EVRConjoinedMovementModes : uint8 {
     C_MOVE_None,
     C_MOVE_Walking,
     C_MOVE_NavWalking,

@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksResult.h"
-#include "UWorksPublishedFileID.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "RemoveItemFromFavoritesDelegateDelegate.h"
+#include "EUWorksResult.h"
+#include "UWorksPublishedFileID.h"
 #include "CoreRemoveItemFromFavoritesNode.generated.h"
 
 class UCoreRemoveItemFromFavoritesNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSCORE_API UCoreRemoveItemFromFavoritesNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRemoveItemFromFavoritesDelegate Completed;
     
     UCoreRemoveItemFromFavoritesNode();

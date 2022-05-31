@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "EGripLerpState.generated.h"
 
-UENUM()
-enum class EGripLerpState {
+UENUM(BlueprintType)
+enum class EGripLerpState : uint8 {
     StartLerp,
     EndLerp,
     NotLerping,

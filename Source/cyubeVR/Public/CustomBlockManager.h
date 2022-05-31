@@ -1,28 +1,28 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/Object.h"
-#include "EBlockTypeBP.h"
 #include "CustomBlockData.h"
+#include "EBlockTypeBP.h"
 #include "UObject/NoExportTypes.h"
 #include "CustomBlockManager.generated.h"
 
-class UTexture2D;
 class UTexture2DArray;
+class UTexture2D;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class CYUBEVR_API UCustomBlockManager : public UObject {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<FCustomBlockData> AllCustomBlocks;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UTexture2D* EmptyNormalTexture;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UTexture2D* EmptyEmissiveTexture;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSet<int32> ExistingIDs;
     
     UCustomBlockManager();
@@ -40,6 +40,15 @@ public:
     
     UFUNCTION(BlueprintCallable)
     FString GetNameOfCustomBlock(int32 UniqueId);
+    
+    UFUNCTION(BlueprintCallable, BlueprintPure)
+    int32 GetCustomBlockUniqueIDToDrop(int32 UniqueId);
+    
+    UFUNCTION(BlueprintCallable, BlueprintPure)
+    bool GetCustomBlockAllowMove(int32 UniqueId);
+    
+    UFUNCTION(BlueprintCallable, BlueprintPure)
+    bool GetCustomBlockAllowCrystalPlacement(int32 UniqueId);
     
     UFUNCTION(BlueprintCallable)
     static void CopyTextureToArraySlice(UTexture2DArray* DestArray, int32 DestSlice, UTexture2D* SourceTexture);

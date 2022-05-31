@@ -6,11 +6,11 @@
 
 class UGetAppBetasNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetAppBetasNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetAppBetasDelegate Completed;
     
     UGetAppBetasNode();

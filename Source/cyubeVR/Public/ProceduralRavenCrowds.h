@@ -6,14 +6,14 @@
 class URuntimeMeshComponent;
 class URuntimeMeshProviderStatic;
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API AProceduralRavenCrowds : public AActor {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
     URuntimeMeshComponent* RMC;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     URuntimeMeshProviderStatic* RuntimeMeshProvider;
     
     AProceduralRavenCrowds();

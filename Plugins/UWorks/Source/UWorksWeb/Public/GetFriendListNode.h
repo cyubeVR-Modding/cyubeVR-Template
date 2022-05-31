@@ -7,11 +7,11 @@
 
 class UGetFriendListNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetFriendListNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetFriendListDelegate Completed;
     
     UGetFriendListNode();

@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksUserRestriction.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksUserRestriction : uint8 {
     Unknown,
     AnyChat,

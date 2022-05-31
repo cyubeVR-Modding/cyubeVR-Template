@@ -1,20 +1,20 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SubmitItemUpdateDelegateDelegate.h"
-#include "UWorksRequestCore.h"
-#include "SubmitItemUpdateMinimalDelegateDelegate.h"
 #include "EUWorksResult.h"
+#include "UWorksRequestCore.h"
 #include "UWorksUGCUpdateHandle.h"
+#include "SubmitItemUpdateDelegateDelegate.h"
+#include "SubmitItemUpdateMinimalDelegateDelegate.h"
 #include "UWorksRequestCoreSubmitItemUpdate.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreSubmitItemUpdate : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSubmitItemUpdateDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSubmitItemUpdateMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreSubmitItemUpdate();

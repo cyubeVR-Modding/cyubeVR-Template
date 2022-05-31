@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ReportPlayerCheatingDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
+#include "ReportPlayerCheatingDelegateDelegate.h"
 #include "ReportPlayerCheatingMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebReportPlayerCheating.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebReportPlayerCheating : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FReportPlayerCheatingDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FReportPlayerCheatingMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebReportPlayerCheating();

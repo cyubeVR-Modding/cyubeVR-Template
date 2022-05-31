@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "HistoryExecuteCommandsMinimalDelegateDelegate.h"
-#include "SupportGetAssetHistoryMinimalDelegateDelegate.h"
-#include "UWorksInterfaceWeb.h"
 #include "UWorksSteamID.h"
+#include "UWorksInterfaceWeb.h"
+#include "SupportGetAssetHistoryMinimalDelegateDelegate.h"
+#include "HistoryExecuteCommandsMinimalDelegateDelegate.h"
 #include "GetUserHistoryMinimalDelegateDelegate.h"
 #include "GetHistoryCommandDetailsMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebGameInventory.generated.h"
@@ -13,7 +13,7 @@ class UUWorksRequestWebSupportGetAssetHistory;
 class UUWorksRequestWebGetUserHistory;
 class UUWorksRequestWebGetHistoryCommandDetails;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebGameInventory : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:

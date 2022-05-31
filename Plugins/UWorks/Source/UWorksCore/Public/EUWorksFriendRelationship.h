@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksFriendRelationship.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksFriendRelationship : uint8 {
     None,
     Blocked,

@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksSteamControllerPad.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksSteamControllerPad : uint8 {
     Left,
     Right,

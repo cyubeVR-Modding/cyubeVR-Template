@@ -2,20 +2,20 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
 #include "CreateSessionDelegateDelegate.h"
-#include "CreateSessionMinimalDelegateDelegate.h"
-#include "UWorksTitle.h"
-#include "UWorksSteamID.h"
 #include "UWorksUsers.h"
+#include "CreateSessionMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
+#include "UWorksTitle.h"
 #include "UWorksRequestWebCreateSession.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebCreateSession : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FCreateSessionDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FCreateSessionMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebCreateSession();

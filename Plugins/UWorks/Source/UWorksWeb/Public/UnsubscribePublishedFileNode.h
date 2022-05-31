@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "UnsubscribePublishedFileDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "UnsubscribePublishedFileDelegateDelegate.h"
 #include "UnsubscribePublishedFileNode.generated.h"
 
 class UUnsubscribePublishedFileNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUnsubscribePublishedFileNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FUnsubscribePublishedFileDelegate Completed;
     
     UUnsubscribePublishedFileNode();

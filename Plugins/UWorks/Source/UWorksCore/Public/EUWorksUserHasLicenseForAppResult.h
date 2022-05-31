@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksUserHasLicenseForAppResult.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksUserHasLicenseForAppResult : uint8 {
     HasLicense,
     DoesNotHaveLicense,

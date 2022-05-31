@@ -1,25 +1,25 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksInterfaceCore.h"
-#include "ScreenshotReadyDelegateDelegate.h"
-#include "UWorksSteamID.h"
-#include "ScreenshotRequestedDelegateDelegate.h"
 #include "UWorksPublishedFileID.h"
+#include "ScreenshotReadyDelegateDelegate.h"
 #include "UWorksScreenshotHandle.h"
+#include "ScreenshotRequestedDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "EUWorksVRScreenshotType.h"
 #include "UWorksInterfaceCoreScreenshots.generated.h"
 
-class UTexture2D;
 class UUWorksInterfaceCoreScreenshots;
+class UTexture2D;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreScreenshots : public UUWorksInterfaceCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FScreenshotReadyDelegate ScreenshotReady;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FScreenshotRequestedDelegate ScreenshotRequested;
     
     UUWorksInterfaceCoreScreenshots();

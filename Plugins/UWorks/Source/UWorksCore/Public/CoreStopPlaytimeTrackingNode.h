@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksResult.h"
-#include "UWorksPublishedFileID.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "StopPlaytimeTrackingDelegateDelegate.h"
+#include "EUWorksResult.h"
+#include "UWorksPublishedFileID.h"
 #include "CoreStopPlaytimeTrackingNode.generated.h"
 
 class UCoreStopPlaytimeTrackingNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSCORE_API UCoreStopPlaytimeTrackingNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FStopPlaytimeTrackingDelegate Completed;
     
     UCoreStopPlaytimeTrackingNode();

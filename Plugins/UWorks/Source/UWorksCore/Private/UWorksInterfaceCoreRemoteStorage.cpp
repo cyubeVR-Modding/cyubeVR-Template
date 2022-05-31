@@ -1,8 +1,8 @@
 #include "UWorksInterfaceCoreRemoteStorage.h"
 
-class UUWorksRequestCoreFileWriteAsync;
 class UUWorksRequestCoreFileReadAsync;
 class UUWorksInterfaceCoreRemoteStorage;
+class UUWorksRequestCoreFileWriteAsync;
 
 bool UUWorksInterfaceCoreRemoteStorage::SetSyncPlatforms(const FString& File, EUWorksRemoteStoragePlatform RemoteStoragePlatform) {
     return false;

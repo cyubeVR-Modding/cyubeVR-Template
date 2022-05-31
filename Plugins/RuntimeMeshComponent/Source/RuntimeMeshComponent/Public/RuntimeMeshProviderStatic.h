@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "RuntimeMeshProvider.h"
-#include "UObject/NoExportTypes.h"
 #include "RuntimeMeshTangent.h"
 #include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
 #include "RuntimeMeshRenderableMeshData.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "RuntimeMeshCollisionSettings.h"
 #include "RuntimeMeshCollisionData.h"
 #include "RuntimeMeshSectionProperties.h"
@@ -15,7 +15,7 @@
 
 class URuntimeMeshModifier;
 
-UCLASS()
+UCLASS(Blueprintable)
 class RUNTIMEMESHCOMPONENT_API URuntimeMeshProviderStatic : public URuntimeMeshProvider {
     GENERATED_BODY()
 public:
@@ -24,7 +24,7 @@ protected:
     bool StoreEditorGeneratedDataForGame;
     
 private:
-    UPROPERTY(BlueprintReadWrite, VisibleAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<URuntimeMeshModifier*> CurrentMeshModifiers;
     
 public:

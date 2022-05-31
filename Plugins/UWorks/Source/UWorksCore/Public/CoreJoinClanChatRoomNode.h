@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "UWorksSteamID.h"
 #include "JoinClanChatRoomDelegateDelegate.h"
 #include "EUWorksChatRoomEnterResponse.h"
+#include "UWorksSteamID.h"
 #include "CoreJoinClanChatRoomNode.generated.h"
 
 class UCoreJoinClanChatRoomNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSCORE_API UCoreJoinClanChatRoomNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FJoinClanChatRoomDelegate Completed;
     
     UCoreJoinClanChatRoomNode();

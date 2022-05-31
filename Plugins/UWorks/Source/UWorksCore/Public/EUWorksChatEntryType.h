@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksChatEntryType.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksChatEntryType : uint8 {
     Invalid,
     ChatMessage,

@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "GetCollectionDetailsDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "GetCollectionDetailsMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetCollectionDetails.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebGetCollectionDetails : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetCollectionDetailsDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetCollectionDetailsMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetCollectionDetails();

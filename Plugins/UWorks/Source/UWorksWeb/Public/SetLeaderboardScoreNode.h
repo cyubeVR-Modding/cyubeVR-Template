@@ -7,11 +7,11 @@
 
 class USetLeaderboardScoreNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API USetLeaderboardScoreNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSetLeaderboardScoreDelegate Completed;
     
     USetLeaderboardScoreNode();

@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
 #include "MoviePlayer.h"
-#include "Widgets/Layout/SScaleBox.h"
 #include "Fonts/SlateFontInfo.h"
+#include "UObject/NoExportTypes.h"
+#include "Widgets/Layout/SScaleBox.h"
 #include "LoadingScreenDescription.generated.h"
 
 USTRUCT(BlueprintType)
@@ -22,7 +22,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bWaitForManualStop;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(EditAnywhere)
     TEnumAsByte<EMoviePlaybackType> PlaybackType;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
@@ -40,7 +40,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<FSoftObjectPath> Images;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(EditAnywhere)
     TEnumAsByte<EStretch::Type> ImageStretch;
     
     FLoadingScreenDescription();

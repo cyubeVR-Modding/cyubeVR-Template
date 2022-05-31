@@ -3,7 +3,7 @@
 #include "GameFramework/GameModeBase.h"
 #include "CubeGameMode.generated.h"
 
-UCLASS(NonTransient)
+UCLASS(Blueprintable, NonTransient)
 class CYUBEVR_API ACubeGameMode : public AGameModeBase {
     GENERATED_BODY()
 public:

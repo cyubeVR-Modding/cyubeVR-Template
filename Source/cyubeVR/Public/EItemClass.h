@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EItemClass.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EItemClass : uint8 {
     Block,
     Tool,

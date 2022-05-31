@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SetMemoDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "SetMemoDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "SetMemoNode.generated.h"
 
 class USetMemoNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API USetMemoNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSetMemoDelegate Completed;
     
     USetMemoNode();

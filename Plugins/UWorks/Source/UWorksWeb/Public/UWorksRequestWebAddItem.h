@@ -1,20 +1,20 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "AddItemMinimalDelegateDelegate.h"
 #include "AddItemDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksSteamItemDef.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebAddItem.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebAddItem : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FAddItemDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FAddItemMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebAddItem();

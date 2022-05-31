@@ -5,14 +5,14 @@
 #include "FlushAssetAppearanceCacheMinimalDelegateDelegate.h"
 #include "UWorksRequestWebFlushAssetAppearanceCache.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebFlushAssetAppearanceCache : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FFlushAssetAppearanceCacheDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FFlushAssetAppearanceCacheMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebFlushAssetAppearanceCache();

@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
+#include "UWorksSteamID.h"
 #include "EnumerateSessionsForAppDelegateDelegate.h"
 #include "EnumerateSessionsForAppMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "UWorksRequestWebEnumerateSessionsForApp.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebEnumerateSessionsForApp : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FEnumerateSessionsForAppDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FEnumerateSessionsForAppMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebEnumerateSessionsForApp();

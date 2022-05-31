@@ -6,11 +6,11 @@
 
 class UGetTradeOfferNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetTradeOfferNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetTradeOfferDelegate Completed;
     
     UGetTradeOfferNode();

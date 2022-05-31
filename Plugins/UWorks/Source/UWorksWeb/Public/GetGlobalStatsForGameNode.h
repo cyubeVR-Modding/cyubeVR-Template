@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetGlobalStatsForGameDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "GetGlobalStatsForGameDelegateDelegate.h"
 #include "GetGlobalStatsForGameNode.generated.h"
 
 class UGetGlobalStatsForGameNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetGlobalStatsForGameNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetGlobalStatsForGameDelegate Completed;
     
     UGetGlobalStatsForGameNode();

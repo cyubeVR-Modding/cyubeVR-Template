@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EItemStatisticBP.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum EItemStatisticBP {
     IStat_NumSubscriptions,
     IStat_NumFavorites,

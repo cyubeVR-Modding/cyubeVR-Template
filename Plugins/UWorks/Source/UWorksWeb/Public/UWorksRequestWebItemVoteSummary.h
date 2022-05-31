@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
+#include "UWorksSteamID.h"
 #include "ItemVoteSummaryMinimalDelegateDelegate.h"
 #include "ItemVoteSummaryDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "UWorksRequestWebItemVoteSummary.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebItemVoteSummary : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FItemVoteSummaryDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FItemVoteSummaryMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebItemVoteSummary();

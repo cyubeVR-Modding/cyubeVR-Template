@@ -2,18 +2,18 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
 #include "EnumerateUserPublishedFilesDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "EnumerateUserPublishedFilesMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestWebEnumerateUserPublishedFiles.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebEnumerateUserPublishedFiles : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FEnumerateUserPublishedFilesDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FEnumerateUserPublishedFilesMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebEnumerateUserPublishedFiles();

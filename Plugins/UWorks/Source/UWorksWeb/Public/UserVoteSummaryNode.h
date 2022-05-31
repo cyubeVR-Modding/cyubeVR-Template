@@ -7,11 +7,11 @@
 
 class UUserVoteSummaryNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUserVoteSummaryNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FUserVoteSummaryDelegate Completed;
     
     UUserVoteSummaryNode();

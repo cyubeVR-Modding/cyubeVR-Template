@@ -1,23 +1,23 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceCore.h"
 #include "P2PSessionRequestDelegateDelegate.h"
+#include "UWorksInterfaceCore.h"
 #include "P2PSessionConnectFailDelegateDelegate.h"
-#include "EUWorksP2PSend.h"
 #include "UWorksSteamID.h"
+#include "EUWorksP2PSend.h"
 #include "UWorksP2PSessionState.h"
 #include "UWorksInterfaceCoreNetworking.generated.h"
 
 class UUWorksInterfaceCoreNetworking;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreNetworking : public UUWorksInterfaceCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FP2PSessionRequestDelegate P2PSessionRequest;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FP2PSessionConnectFailDelegate P2PSessionConnectFail;
     
     UUWorksInterfaceCoreNetworking();

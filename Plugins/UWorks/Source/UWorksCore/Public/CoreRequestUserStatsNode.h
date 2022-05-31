@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksResult.h"
+#include "UWorksGameID.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "RequestUserStatsDelegateDelegate.h"
 #include "UWorksSteamID.h"
-#include "UWorksGameID.h"
+#include "EUWorksResult.h"
 #include "CoreRequestUserStatsNode.generated.h"
 
 class UCoreRequestUserStatsNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSCORE_API UCoreRequestUserStatsNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRequestUserStatsDelegate Completed;
     
     UCoreRequestUserStatsNode();

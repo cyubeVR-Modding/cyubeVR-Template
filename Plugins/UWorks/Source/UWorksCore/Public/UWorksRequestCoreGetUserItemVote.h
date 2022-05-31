@@ -1,20 +1,20 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
-#include "GetUserItemVoteDelegateDelegate.h"
-#include "GetUserItemVoteMinimalDelegateDelegate.h"
 #include "EUWorksResult.h"
 #include "UWorksPublishedFileID.h"
+#include "GetUserItemVoteMinimalDelegateDelegate.h"
+#include "UWorksRequestCore.h"
+#include "GetUserItemVoteDelegateDelegate.h"
 #include "UWorksRequestCoreGetUserItemVote.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreGetUserItemVote : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetUserItemVoteDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetUserItemVoteMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreGetUserItemVote();

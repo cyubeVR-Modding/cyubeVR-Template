@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksUserUGCList.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksUserUGCList : uint8 {
     Published,
     VotedOn,

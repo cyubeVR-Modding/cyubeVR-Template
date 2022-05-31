@@ -1,60 +1,60 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "LobbyChatMsgDelegateDelegate.h"
 #include "UWorksInterfaceCore.h"
 #include "FavoritesListChangedDelegateDelegate.h"
-#include "LobbyDataUpdateDelegateDelegate.h"
 #include "LobbyInviteDelegateDelegate.h"
 #include "LobbyEnterDelegateDelegate.h"
+#include "LobbyDataUpdateDelegateDelegate.h"
 #include "LobbyChatUpdateDelegateDelegate.h"
-#include "LobbyChatMsgDelegateDelegate.h"
 #include "LobbyGameCreatedDelegateDelegate.h"
+#include "EUWorksFavoriteFlags.h"
 #include "LobbyKickedDelegateDelegate.h"
 #include "FavoritesListAccountsUpdatedDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "EUWorksLobbyType.h"
-#include "RequestLobbyListMinimalDelegateDelegate.h"
-#include "EUWorksFavoriteFlags.h"
-#include "JoinLobbyMinimalDelegateDelegate.h"
 #include "EUWorksChatEntryType.h"
+#include "RequestLobbyListMinimalDelegateDelegate.h"
+#include "JoinLobbyMinimalDelegateDelegate.h"
 #include "CreateLobbyMinimalDelegateDelegate.h"
 #include "EUWorksLobbyComparison.h"
 #include "EUWorksLobbyDistanceFilter.h"
 #include "UWorksInterfaceCoreMatchmaking.generated.h"
 
-class UUWorksRequestCoreCreateLobby;
-class UUWorksRequestCoreRequestLobbyList;
 class UUWorksRequestCoreJoinLobby;
+class UUWorksRequestCoreRequestLobbyList;
 class UUWorksInterfaceCoreMatchmaking;
+class UUWorksRequestCoreCreateLobby;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreMatchmaking : public UUWorksInterfaceCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FFavoritesListChangedDelegate FavoritesListChanged;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FLobbyInviteDelegate LobbyInvite;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FLobbyDataUpdateDelegate LobbyDataUpdate;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FLobbyEnterDelegate LobbyEnter;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FLobbyChatUpdateDelegate LobbyChatUpdate;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FLobbyChatMsgDelegate LobbyChatMsg;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FLobbyGameCreatedDelegate LobbyGameCreated;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FLobbyKickedDelegate LobbyKicked;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FFavoritesListAccountsUpdatedDelegate FavoritesListAccountsUpdated;
     
     UUWorksInterfaceCoreMatchmaking();

@@ -1,7 +1,7 @@
 #include "UWorksInterfaceCoreApps.h"
 
-class UUWorksRequestCoreGetFileDetails;
 class UUWorksInterfaceCoreApps;
+class UUWorksRequestCoreGetFileDetails;
 
 void UUWorksInterfaceCoreApps::UninstallDLC(int32 AppID) {
 }

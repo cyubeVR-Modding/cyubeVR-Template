@@ -1,20 +1,20 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
-#include "UWorksPublishedFileID.h"
 #include "QueryFilesDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "QueryFilesMinimalDelegateDelegate.h"
+#include "UWorksPublishedFileID.h"
 #include "UWorksRequiredKVTags.h"
 #include "UWorksRequestWebQueryFiles.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebQueryFiles : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FQueryFilesDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FQueryFilesMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebQueryFiles();

@@ -4,7 +4,7 @@
 #include "UObject/NoExportTypes.h"
 #include "MathBPLibrary.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class CYUBEVR_API UMathBPLibrary : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:

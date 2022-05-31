@@ -5,7 +5,7 @@
 
 class UStaticMesh;
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API ATreeManager : public AActor {
     GENERATED_BODY()
 public:

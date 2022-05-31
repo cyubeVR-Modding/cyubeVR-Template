@@ -3,7 +3,7 @@
 #include "GameFramework/Actor.h"
 #include "DynamicResolutionScalingActor.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API ADynamicResolutionScalingActor : public AActor {
     GENERATED_BODY()
 public:

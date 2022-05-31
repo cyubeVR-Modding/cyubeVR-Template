@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ServerListUpdateMinimalDelegateDelegate.h"
 #include "UWorksInterfaceCore.h"
+#include "EUWorksServerQueryType.h"
 #include "ServerListMinimalDelegateDelegate.h"
 #include "RulesUpdateMinimalDelegateDelegate.h"
-#include "EUWorksServerQueryType.h"
+#include "ServerListUpdateMinimalDelegateDelegate.h"
 #include "RulesMinimalDelegateDelegate.h"
 #include "PlayersMinimalDelegateDelegate.h"
 #include "PlayersUpdateMinimalDelegateDelegate.h"
@@ -17,7 +17,7 @@ class UUWorksRequestCorePlayers;
 class UUWorksRequestCorePing;
 class UUWorksInterfaceCoreMatchmakingServers;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreMatchmakingServers : public UUWorksInterfaceCore {
     GENERATED_BODY()
 public:

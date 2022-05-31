@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksOverlayGeneric.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksOverlayGeneric : uint8 {
     Friends,
     Community,

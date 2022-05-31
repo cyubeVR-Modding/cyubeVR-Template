@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "CanTradeMinimalDelegateDelegate.h"
-#include "UWorksRequestWeb.h"
 #include "CanTradeDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
+#include "CanTradeMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebCanTrade.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebCanTrade : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FCanTradeDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FCanTradeMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebCanTrade();

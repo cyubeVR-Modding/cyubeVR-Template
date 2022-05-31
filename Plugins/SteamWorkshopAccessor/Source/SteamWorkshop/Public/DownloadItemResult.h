@@ -8,7 +8,7 @@ USTRUCT(BlueprintType)
 struct FDownloadItemResult : public FGeneralWorkshopItemResult {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, VisibleAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FUInt32 AppID;
     
     STEAMWORKSHOP_API FDownloadItemResult();

@@ -6,11 +6,11 @@
 
 class UFlushAssetAppearanceCacheNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UFlushAssetAppearanceCacheNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FFlushAssetAppearanceCacheDelegate Completed;
     
     UFlushAssetAppearanceCacheNode();

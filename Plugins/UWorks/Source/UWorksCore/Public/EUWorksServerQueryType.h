@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksServerQueryType.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksServerQueryType : uint8 {
     Internet,
     LAN,

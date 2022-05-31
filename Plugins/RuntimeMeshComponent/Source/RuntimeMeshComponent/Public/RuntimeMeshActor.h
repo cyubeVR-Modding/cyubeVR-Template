@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ERuntimeMeshMobility.h"
 #include "GameFramework/Actor.h"
+#include "ERuntimeMeshMobility.h"
 #include "RuntimeMeshActor.generated.h"
 
 class URuntimeMeshComponent;
 
-UCLASS()
+UCLASS(Blueprintable)
 class RUNTIMEMESHCOMPONENT_API ARuntimeMeshActor : public AActor {
     GENERATED_BODY()
 public:
 private:
-    UPROPERTY(BlueprintReadWrite, Export, VisibleAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
     URuntimeMeshComponent* RuntimeMeshComponent;
     
 public:

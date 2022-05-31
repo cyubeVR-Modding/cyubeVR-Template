@@ -6,7 +6,7 @@ USTRUCT(BlueprintType)
 struct UWORKS_API FUWorksSteamItemDef {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 Value;
     
     FUWorksSteamItemDef();

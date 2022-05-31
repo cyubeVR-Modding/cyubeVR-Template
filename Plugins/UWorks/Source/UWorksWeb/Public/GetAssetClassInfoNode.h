@@ -6,11 +6,11 @@
 
 class UGetAssetClassInfoNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetAssetClassInfoNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetAssetClassInfoDelegate Completed;
     
     UGetAssetClassInfoNode();

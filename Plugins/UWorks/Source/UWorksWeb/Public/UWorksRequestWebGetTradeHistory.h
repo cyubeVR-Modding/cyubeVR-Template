@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetTradeHistoryDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "GetTradeHistoryMinimalDelegateDelegate.h"
+#include "GetTradeHistoryDelegateDelegate.h"
 #include "UWorksRequestWebGetTradeHistory.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebGetTradeHistory : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetTradeHistoryDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetTradeHistoryMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetTradeHistory();

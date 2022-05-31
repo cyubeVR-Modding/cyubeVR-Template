@@ -7,11 +7,11 @@
 
 class UCorePlayersNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSCORE_API UCorePlayersNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FPlayersUpdateDelegate Updated;
     
     UCorePlayersNode();

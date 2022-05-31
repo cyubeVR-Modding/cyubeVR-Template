@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
-#include "LightReceiveInterface.h"
 #include "UObject/NoExportTypes.h"
+#include "LightReceiveInterface.h"
 #include "VRCharacter.generated.h"
 
-class AActor;
-class UCameraComponent;
 class UMeshComponent;
+class UCameraComponent;
+class AActor;
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API AVRCharacter : public APawn, public ILightReceiveInterface {
     GENERATED_BODY()
 public:
@@ -38,21 +38,24 @@ public:
     UFUNCTION(BlueprintCallable)
     TArray<UMeshComponent*> GetMeshComponents();
     
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+    FVector GetActorLocationForCameraLocationCPP(FVector NewCameraLocation);
+    
     
     // Fix for true pure virtual functions not being implemented
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION()
     bool UseActorCustomLocation() override PURE_VIRTUAL(UseActorCustomLocation, return false;);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION()
     bool TickReceiveLight() override PURE_VIRTUAL(TickReceiveLight, return false;);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION()
     void LightInterfaceBeginPlay(AActor* ThisActor) override PURE_VIRTUAL(LightInterfaceBeginPlay,);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION()
     void LightInterfaceBeginDestroy(AActor* ThisActor) override PURE_VIRTUAL(LightInterfaceBeginDestroy,);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION()
     FVector GetActorCustomLocation() override PURE_VIRTUAL(GetActorCustomLocation, return FVector{};);
     
 };

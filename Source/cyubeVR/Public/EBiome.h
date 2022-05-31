@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EBiome.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EBiome : uint8 {
     Regular,
     Desert,

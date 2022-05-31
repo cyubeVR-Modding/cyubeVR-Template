@@ -2,18 +2,18 @@
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "UpdateSessionDelegateDelegate.h"
-#include "UWorksTitle.h"
 #include "UWorksSteamID.h"
+#include "UWorksTitle.h"
 #include "UWorksUsers.h"
 #include "UpdateSessionNode.generated.h"
 
 class UUpdateSessionNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUpdateSessionNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FUpdateSessionDelegate Completed;
     
     UUpdateSessionNode();

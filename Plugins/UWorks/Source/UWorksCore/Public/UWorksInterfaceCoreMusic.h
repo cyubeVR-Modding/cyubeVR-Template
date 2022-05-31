@@ -1,21 +1,21 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksInterfaceCore.h"
-#include "EUWorksAudioPlaybackStatus.h"
 #include "PlaybackStatusHasChangedDelegateDelegate.h"
 #include "VolumeHasChangedDelegateDelegate.h"
+#include "EUWorksAudioPlaybackStatus.h"
 #include "UWorksInterfaceCoreMusic.generated.h"
 
 class UUWorksInterfaceCoreMusic;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreMusic : public UUWorksInterfaceCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FPlaybackStatusHasChangedDelegate PlaybackStatusHasChanged;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FVolumeHasChangedDelegate VolumeHasChanged;
     
     UUWorksInterfaceCoreMusic();

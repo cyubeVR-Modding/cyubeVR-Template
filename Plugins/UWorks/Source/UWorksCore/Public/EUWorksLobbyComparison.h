@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksLobbyComparison.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksLobbyComparison : uint8 {
     EqualToOrLessThan,
     LessThan,

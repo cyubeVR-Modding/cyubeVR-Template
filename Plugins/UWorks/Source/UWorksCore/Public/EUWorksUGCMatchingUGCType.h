@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksUGCMatchingUGCType.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksUGCMatchingUGCType : uint8 {
     Items,
     Items_Mtx,

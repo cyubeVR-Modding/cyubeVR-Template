@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetExportedAssetsForUserDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksSteamID.h"
+#include "GetExportedAssetsForUserDelegateDelegate.h"
 #include "GetExportedAssetsForUserNode.generated.h"
 
 class UGetExportedAssetsForUserNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetExportedAssetsForUserNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetExportedAssetsForUserDelegate Completed;
     
     UGetExportedAssetsForUserNode();

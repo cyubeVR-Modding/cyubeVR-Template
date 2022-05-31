@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksPublishedFileID.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "SetDeveloperMetadataDelegateDelegate.h"
+#include "UWorksPublishedFileID.h"
 #include "SetDeveloperMetadataNode.generated.h"
 
 class USetDeveloperMetadataNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API USetDeveloperMetadataNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSetDeveloperMetadataDelegate Completed;
     
     USetDeveloperMetadataNode();

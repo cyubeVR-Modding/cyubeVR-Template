@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "LightReceiveInterface.h"
 #include "UObject/NoExportTypes.h"
+#include "LightReceiveInterface.h"
 #include "ReceiveLightActor.generated.h"
 
-class UMaterialInstanceDynamic;
 class UMeshComponent;
+class UMaterialInstanceDynamic;
 
-UCLASS(Abstract)
+UCLASS(Abstract, Blueprintable)
 class CYUBEVR_API AReceiveLightActor : public AActor, public ILightReceiveInterface {
     GENERATED_BODY()
 public:
@@ -36,19 +36,19 @@ public:
     
     
     // Fix for true pure virtual functions not being implemented
-    //UFUNCTION(BlueprintCallable)
+    //UFUNCTION()
     bool UseActorCustomLocation() override PURE_VIRTUAL(UseActorCustomLocation, return false;);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION()
     bool TickReceiveLight() override PURE_VIRTUAL(TickReceiveLight, return false;);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION()
     void LightInterfaceBeginPlay(AActor* ThisActor) override PURE_VIRTUAL(LightInterfaceBeginPlay,);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION()
     void LightInterfaceBeginDestroy(AActor* ThisActor) override PURE_VIRTUAL(LightInterfaceBeginDestroy,);
     
-    //UFUNCTION(BlueprintCallable)
+    //UFUNCTION()
     FVector GetActorCustomLocation() override PURE_VIRTUAL(GetActorCustomLocation, return FVector{};);
     
 };

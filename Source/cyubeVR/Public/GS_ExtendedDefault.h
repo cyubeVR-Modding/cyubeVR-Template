@@ -4,7 +4,7 @@
 #include "Engine/NetSerialization.h"
 #include "GS_ExtendedDefault.generated.h"
 
-UCLASS(EditInlineNew)
+UCLASS(Blueprintable, EditInlineNew)
 class UGS_ExtendedDefault : public UGS_Default {
     GENERATED_BODY()
 public:

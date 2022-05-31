@@ -3,7 +3,7 @@
 #include "IpConnection.h"
 #include "IpConnectionUWorks.generated.h"
 
-UCLASS(NonTransient)
+UCLASS(Blueprintable, NonTransient)
 class ONLINESUBSYSTEMUWORKS_API UIpConnectionUWorks : public UIpConnection {
     GENERATED_BODY()
 public:

@@ -7,11 +7,11 @@
 
 class UGetMarketEligibilityNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetMarketEligibilityNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetMarketEligibilityDelegate Completed;
     
     UGetMarketEligibilityNode();

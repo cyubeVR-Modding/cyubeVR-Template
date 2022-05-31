@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksResult.h"
-#include "SendQueryUGCRequestDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "SendQueryUGCRequestDelegateDelegate.h"
+#include "EUWorksResult.h"
 #include "UWorksUGCQueryHandle.h"
 #include "CoreSendQueryUGCRequestNode.generated.h"
 
 class UCoreSendQueryUGCRequestNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSCORE_API UCoreSendQueryUGCRequestNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSendQueryUGCRequestDelegate Completed;
     
     UCoreSendQueryUGCRequestNode();

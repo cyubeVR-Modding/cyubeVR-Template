@@ -1,49 +1,49 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "EMeshObjectType.h"
+#include "ChunkAboutBP.h"
+#include "UObject/NoExportTypes.h"
 #include "EBlockTypeBP.h"
+#include "EItemClass.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "ModifiedBlockActorToSpawn.h"
-#include "SideBP.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "ERotation.h"
-#include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "ETreeType.h"
 #include "BlockInfoBP.h"
-#include "ETreeClass.h"
 #include "UObject/NoExportTypes.h"
-#include "EItemClass.h"
-#include "ChunkAboutBP.h"
+#include "ETreeClass.h"
+#include "SideBP.h"
+#include "EMeshObjectType.h"
 #include "EBiome.h"
+#include "ERotation.h"
 #include "ChunkManager.generated.h"
 
-class ATreeManager;
-class UParticleSystem;
-class AModifiedBlockActor;
+class UMaterialInterface;
 class UMaterialParameterCollection;
 class ABlockItem;
+class UParticleSystem;
+class UStaticMesh;
+class ATreeManager;
 class USoundBase;
 class AInventory;
-class ADeathBeacon;
 class ADirectionalLight;
-class AMeshObject;
 class AAudioManager;
 class AWeatherManager;
 class UDataTable;
-class UStaticMesh;
-class UMaterialInterface;
 class ADraftUnlockingPaper;
+class AModifiedBlockActor;
+class ADeathBeacon;
+class AMeshObject;
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API AChunkManager : public AActor {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool ForceKnucklesControls;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<ABlockItem*> BlockItemPool;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
@@ -273,19 +273,31 @@ public:
     void UpdateLightValueForActorImmediateGT(AActor* Actor);
     
     UFUNCTION(BlueprintCallable)
+    void UpdateHandLocationVariables(FVector HandLocationLeft_, FVector HandLocationRight_, FVector IndexFingerTipLocationLeft_, FVector IndexFingerTipLocationRight_);
+    
+    UFUNCTION(BlueprintCallable)
     void UnlockedDraftNew(ADraftUnlockingPaper* UnlockedActor);
     
     UFUNCTION(BlueprintCallable)
     void TestFunction();
     
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+    void SpawnNewBlockItem(EBlockTypeBP Type, int32 UniqueId, FTransform Transform, int32 Amount, bool bDoFadeScale, FColor CrystalColor, float CrystalChargeState, bool bActivatePhysics);
+    
     UFUNCTION(BlueprintCallable)
     TArray<AModifiedBlockActor*> SpawnModifiedBlockActorsAndInit(const TArray<FModifiedBlockActorToSpawn>& SpawnInfos, EBlockTypeBP ToolType);
+    
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+    void SpawnHintText(const FVector& LocalLocation, const FString& Text, const float& Duration, const FVector& SizeMultiplier, const float& SizeMultiplierVertical);
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     ADraftUnlockingPaper* SpawnDraftUnlocker(FVector Location, EBlockTypeBP Type);
     
     UFUNCTION(BlueprintCallable)
     ADeathBeacon* SpawnDeathBeacon(FVector WorldLocation, bool FirstSpawn);
+    
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+    void SpawnBPModActor(const FTransform& Transform, const FString& ModName, const FString& ActorName);
     
     UFUNCTION(BlueprintCallable)
     void SpawnBlockItem(EBlockTypeBP Type, int32 UniqueId, FVector WorldLocation, FRotator WorldRotation);
@@ -354,6 +366,9 @@ public:
     static bool IsDyeType(EBlockTypeBP Type);
     
     UFUNCTION(BlueprintCallable)
+    void InitializeVoxelAPI();
+    
+    UFUNCTION(BlueprintCallable)
     void HitBlockWithArrow(const FVector Location, EBlockTypeBP& HitType, bool& Valid);
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
@@ -376,6 +391,9 @@ public:
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
     void GetTextureIndex(const EBlockTypeBP Type, int32 UniqueId, SideBP Side, float& Index);
+    
+    UFUNCTION(BlueprintCallable)
+    FVector GetPlayerCameraDirection();
     
     UFUNCTION(BlueprintCallable)
     void GetNewBlockItem(FTransform NewTransform, ABlockItem*& NewBlockItem, bool ActivatePhysics);
@@ -450,7 +468,7 @@ public:
     void DeleteAllFreeCrystals();
     
     UFUNCTION(BlueprintCallable)
-    void DamageBlockAtLocation(const FVector Location, const float Damage, EBlockTypeBP& Type, int32& UniqueId, bool& Valid, bool& NeedSpawnBlockActor, AModifiedBlockActor*& ExistingModifiedBlockActor, FBlockInfoBP& BlockInfo);
+    void DamageBlockAtLocation(const FVector Location, const float Damage, const EBlockTypeBP ToolType, EBlockTypeBP& Type, int32& UniqueId, bool& Valid, bool& NeedSpawnBlockActor, AModifiedBlockActor*& ExistingModifiedBlockActor, FBlockInfoBP& BlockInfo);
     
     UFUNCTION(BlueprintCallable)
     void CollectEasterEggAtLocation(FVector Location);
@@ -480,7 +498,13 @@ public:
     void CanBuildAtLocation(FVector Location, bool NoSolidIsFine, bool& CanBuild);
     
     UFUNCTION(BlueprintCallable)
+    void BlockMoveStarted(FVector Location, EBlockTypeBP Type, int32 UniqueId);
+    
+    UFUNCTION(BlueprintCallable)
     void BlockHealthyAgain(FBlockInfoBP BlockInfo);
+    
+    UFUNCTION(BlueprintCallable)
+    void BlockAtLocationHitByTool(const FVector Location, const EBlockTypeBP ToolType, const EBlockTypeBP BlockType, const int32 UniqueId, const FVector ExactHitLocation, bool LeftHand);
     
     UFUNCTION(BlueprintCallable)
     void AreaDamageAtLocation(const FVector Location, const float Damage, EBlockTypeBP ToolType, TArray<FModifiedBlockActorToSpawn>& ModifiedBlockActorsToSpawn);
@@ -492,7 +516,7 @@ public:
     AMeshObject* AddMeshObjectAtLocation(EBlockTypeBP Type, UClass* Class, FTransform WorldTransform, bool& success);
     
     UFUNCTION(BlueprintCallable)
-    void AddBlockAtLocation(EBlockTypeBP Type, int32 UniqueId, FVector Location, ERotation Rotation, float DuplicationAmount, bool& success, EBlockTypeBP& PlacedOn);
+    void AddBlockAtLocation(EBlockTypeBP Type, int32 UniqueId, FVector Location, ERotation Rotation, float DuplicationAmount, bool& success, EBlockTypeBP& PlacedOn, bool AfterMove);
     
     UFUNCTION(BlueprintCallable)
     void ActivateRespawnTorch(FVector WorldLocation);

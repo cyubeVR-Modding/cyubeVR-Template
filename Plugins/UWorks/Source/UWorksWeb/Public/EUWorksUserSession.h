@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksUserSession.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksUserSession : uint8 {
     None,
     Client,

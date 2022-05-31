@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
 #include "RuntimeMeshCollisionSettings.h"
+#include "Kismet/BlueprintFunctionLibrary.h"
 #include "RuntimeMeshCollisionData.h"
 #include "RuntimeMeshRenderableMeshData.h"
 #include "RuntimeMeshStaticMeshConverter.generated.h"
@@ -10,7 +10,7 @@ class UStaticMeshComponent;
 class UStaticMesh;
 class URuntimeMeshComponent;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class RUNTIMEMESHCOMPONENT_API URuntimeMeshStaticMeshConverter : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:

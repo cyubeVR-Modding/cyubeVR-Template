@@ -7,11 +7,11 @@
 
 class UCancelAppListingsForUserNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UCancelAppListingsForUserNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FCancelAppListingsForUserDelegate Completed;
     
     UCancelAppListingsForUserNode();

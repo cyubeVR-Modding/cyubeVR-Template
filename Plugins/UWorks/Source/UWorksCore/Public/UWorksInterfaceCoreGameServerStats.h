@@ -11,11 +11,11 @@ class UUWorksInterfaceCoreGameServerStats;
 class UUWorksRequestCoreStoreUserStats;
 class UUWorksRequestCoreRequestUserStatsGS;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreGameServerStats : public UUWorksInterfaceCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGSStatsUnloadedDelegate GSStatsUnloaded;
     
     UUWorksInterfaceCoreGameServerStats();

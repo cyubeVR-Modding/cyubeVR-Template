@@ -2,15 +2,15 @@
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "EHTTPWebComFileUpload.h"
+#include "EHTTPWebComFileBytesToFileActionType.h"
 #include "EHTTPWebComFileUploadType.h"
 #include "httpRequest.h"
 #include "EHTTPWebComFileDownloadResumeType.h"
-#include "EHTTPWebComFileBytesToFileActionType.h"
 #include "WebCommunicationBPLibrary.generated.h"
 
 class UWebCommunicationBPLibrary;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class WEBCOMMUNICATION_API UWebCommunicationBPLibrary : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
@@ -20,19 +20,19 @@ public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_FiveParams(FhttpFileProgressDelegate, const float, Size, const int32, bytesSent, const float, percentUpload, const int32, bytesReceived, const float, percentDownload);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_FiveParams(FhttpFileDownloadDelegate, const float, Size, const float, megaBytesReceived, const float, percentDownload, const float, megaBit, const FString&, requestID);
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FhttpRequestCompleteDelegate onhttpRequestCompleteDelegate;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FhttpRequestCompleteGoogleInfoDelegate onhttpRequestCompleteGoogleInfoDelegate;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FhttpFileProgressDelegate onhttpFileProgressDelegate;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FhttpFileDownloadDelegate onhttpFileDownloadDelegate;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FhttpFileUploadDelegate onhttpFileUploadDelegate;
     
     UWebCommunicationBPLibrary();
@@ -57,10 +57,10 @@ public:
     UFUNCTION(BlueprintCallable)
     static void httpRequestFileUpload(const FString& URL, EHTTPWebComFileUpload DirectoryType, const FString& ID, const FString& FilePath, EHTTPWebComFileUploadType uploadType, const FString& optionalRequestID, FString& requestID);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION()
     void httpRequestCompleteGoogleInfoDelegate(const FString& Filename, const int64 fileSizeInBytes, const int32 statusCode, const FString& downloadID, const FString& requestID);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION()
     void httpRequestCompleteDelegate(const TArray<FString>& Data, const int32 statusCode, const TArray<uint8>& byteData, const FString& requestID);
     
     UFUNCTION(BlueprintCallable)

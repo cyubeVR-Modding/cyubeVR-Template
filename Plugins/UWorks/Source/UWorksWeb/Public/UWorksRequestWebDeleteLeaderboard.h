@@ -5,14 +5,14 @@
 #include "DeleteLeaderboardMinimalDelegateDelegate.h"
 #include "UWorksRequestWebDeleteLeaderboard.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebDeleteLeaderboard : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDeleteLeaderboardDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDeleteLeaderboardMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebDeleteLeaderboard();

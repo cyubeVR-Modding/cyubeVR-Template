@@ -3,7 +3,7 @@
 #include "Engine/EngineTypes.h"
 #include "RepMovementVR.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FRepMovementVR : public FRepMovement {
     GENERATED_BODY()
 public:

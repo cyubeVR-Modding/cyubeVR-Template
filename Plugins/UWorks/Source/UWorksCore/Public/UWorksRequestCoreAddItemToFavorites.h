@@ -1,20 +1,20 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EUWorksResult.h"
+#include "UWorksPublishedFileID.h"
 #include "UWorksRequestCore.h"
 #include "AddItemToFavoritesDelegateDelegate.h"
 #include "AddItemToFavoritesMinimalDelegateDelegate.h"
-#include "EUWorksResult.h"
-#include "UWorksPublishedFileID.h"
 #include "UWorksRequestCoreAddItemToFavorites.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreAddItemToFavorites : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FAddItemToFavoritesDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FAddItemToFavoritesMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreAddItemToFavorites();

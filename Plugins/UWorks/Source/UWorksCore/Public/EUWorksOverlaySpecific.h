@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksOverlaySpecific.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksOverlaySpecific : uint8 {
     SteamID,
     Chat,

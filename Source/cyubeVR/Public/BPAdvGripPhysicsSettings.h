@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EPhysicsGripCOMType.h"
 #include "EPhysicsGripConstraintType.h"
+#include "EPhysicsGripCOMType.h"
 #include "BPAdvGripPhysicsSettings.generated.h"
 
 USTRUCT(BlueprintType)

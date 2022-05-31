@@ -3,7 +3,7 @@
 #include "VRGripScriptBase.h"
 #include "GS_Default.generated.h"
 
-UCLASS(EditInlineNew)
+UCLASS(Blueprintable, EditInlineNew)
 class UGS_Default : public UVRGripScriptBase {
     GENERATED_BODY()
 public:

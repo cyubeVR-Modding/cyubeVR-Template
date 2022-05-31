@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "ERuntimeMeshSliceCapOption.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class ERuntimeMeshSliceCapOption : uint8 {
     NoCap,
     CreateNewSectionForCap,

@@ -3,7 +3,7 @@
 #include "UWorksLibrary.h"
 #include "UWorksLibraryConversions.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSUTILITIES_API UUWorksLibraryConversions : public UUWorksLibrary {
     GENERATED_BODY()
 public:
@@ -11,10 +11,10 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static FString GetCurrentProcessId();
     
-    UFUNCTION(BlueprintCallable, BlueprintPure)
+    UFUNCTION(BlueprintPure)
     static TArray<uint8> ConvertStringToBytes(const FString& Data);
     
-    UFUNCTION(BlueprintCallable, BlueprintPure)
+    UFUNCTION(BlueprintPure)
     static FString ConvertBytesToString(TArray<uint8> Data);
     
 };

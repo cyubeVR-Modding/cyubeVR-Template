@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceWeb.h"
-#include "GetPriceSheetMinimalDelegateDelegate.h"
-#include "GetQuantityMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "GetItemDefsMinimalDelegateDelegate.h"
-#include "UWorksSteamItemDef.h"
-#include "GetInventoryMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
+#include "UWorksInterfaceWeb.h"
 #include "UWorksSteamItemInstanceID.h"
+#include "UWorksSteamItemDef.h"
+#include "GetQuantityMinimalDelegateDelegate.h"
+#include "GetPriceSheetMinimalDelegateDelegate.h"
+#include "GetInventoryMinimalDelegateDelegate.h"
 #include "ExchangeItemMinimalDelegateDelegate.h"
 #include "ConsumeItemMinimalDelegateDelegate.h"
 #include "ConsolidateMinimalDelegateDelegate.h"
@@ -15,17 +15,17 @@
 #include "AddItemMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebInventory.generated.h"
 
-class UUWorksRequestWebExchangeItem;
 class UUWorksRequestWebGetQuantity;
-class UUWorksRequestWebGetPriceSheet;
 class UUWorksRequestWebGetItemDefs;
+class UUWorksRequestWebGetPriceSheet;
 class UUWorksRequestWebGetInventory;
+class UUWorksRequestWebExchangeItem;
 class UUWorksRequestWebConsumeItem;
-class UUWorksRequestWebConsolidate;
 class UUWorksRequestWebAddPromoItem;
+class UUWorksRequestWebConsolidate;
 class UUWorksRequestWebAddItem;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebInventory : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:

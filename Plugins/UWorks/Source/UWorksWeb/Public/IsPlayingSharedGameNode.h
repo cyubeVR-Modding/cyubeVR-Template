@@ -7,11 +7,11 @@
 
 class UIsPlayingSharedGameNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UIsPlayingSharedGameNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FIsPlayingSharedGameDelegate Completed;
     
     UIsPlayingSharedGameNode();

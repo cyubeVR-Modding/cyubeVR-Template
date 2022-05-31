@@ -5,7 +5,7 @@
 #include "Fonts/SlateFontInfo.h"
 #include "LoadingScreenSettings.generated.h"
 
-UCLASS(BlueprintType, DefaultConfig, Config=Game)
+UCLASS(Blueprintable, DefaultConfig, Config=Game)
 class LOADINGSCREEN_API ULoadingScreenSettings : public UDeveloperSettings {
     GENERATED_BODY()
 public:

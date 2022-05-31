@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EUWorksResult.h"
 #include "UWorksRequestCore.h"
 #include "GetFileDetailsDelegateDelegate.h"
 #include "GetFileDetailsMinimalDelegateDelegate.h"
-#include "EUWorksResult.h"
 #include "UWorksRequestCoreGetFileDetails.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreGetFileDetails : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetFileDetailsDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetFileDetailsMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreGetFileDetails();

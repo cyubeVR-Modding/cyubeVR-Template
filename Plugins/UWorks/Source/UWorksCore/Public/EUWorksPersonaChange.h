@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "EUWorksPersonaChange.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum class EUWorksPersonaChange : uint8 {
     Name,
     Status,

@@ -1,20 +1,20 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
 #include "UploadLeaderboardScoreDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "UploadLeaderboardScoreMinimalDelegateDelegate.h"
 #include "UWorksSteamLeaderboard.h"
 #include "EUWorksLeaderboardUploadScoreMethod.h"
 #include "UWorksRequestCoreUploadLeaderboardScore.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreUploadLeaderboardScore : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FUploadLeaderboardScoreDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FUploadLeaderboardScoreMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreUploadLeaderboardScore();

@@ -1,12 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "IPCFailureDelegateDelegate.h"
+#include "SteamServerConnectFailureDelegateDelegate.h"
 #include "UWorksInterfaceCore.h"
 #include "SteamServersConnectedDelegateDelegate.h"
-#include "SteamServerConnectFailureDelegateDelegate.h"
+#include "EUWorksBeginAuthSessionResult.h"
 #include "SteamServersDisconnectedDelegateDelegate.h"
+#include "UWorksSteamUser.h"
 #include "ClientGameServerDenyDelegateDelegate.h"
+#include "IPCFailureDelegateDelegate.h"
 #include "LicensesUpdatedDelegateDelegate.h"
+#include "EUWorksVoiceResult.h"
 #include "ValidateAuthTicketResponseDelegateDelegate.h"
 #include "MicroTxnAuthorizationResponseDelegateDelegate.h"
 #include "GetAuthSessionTicketResponseDelegateDelegate.h"
@@ -15,10 +18,7 @@
 #include "UWorksSteamID.h"
 #include "RequestStoreAuthURLMinimalDelegateDelegate.h"
 #include "RequestEncryptedAppTicketMinimalDelegateDelegate.h"
-#include "EUWorksVoiceResult.h"
-#include "UWorksSteamUser.h"
 #include "UWorksTicketHandle.h"
-#include "EUWorksBeginAuthSessionResult.h"
 #include "UWorksInterfaceCoreUser.generated.h"
 
 class UUWorksRequestCoreRequestEncryptedAppTicket;
@@ -26,38 +26,38 @@ class UUWorksRequestCoreRequestStoreAuthURL;
 class UAudioComponent;
 class UUWorksInterfaceCoreUser;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreUser : public UUWorksInterfaceCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSteamServersConnectedDelegate SteamServersConnected;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSteamServerConnectFailureDelegate SteamServerConnectFailure;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSteamServersDisconnectedDelegate SteamServersDisconnected;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FClientGameServerDenyDelegate ClientGameServerDeny;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FIPCFailureDelegate IPCFailure;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FLicensesUpdatedDelegate LicensesUpdated;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FValidateAuthTicketResponseDelegate ValidateAuthTicketResponse;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FMicroTxnAuthorizationResponseDelegate MicroTxnAuthorizationResponse;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetAuthSessionTicketResponseDelegate GetAuthSessionTicketResponse;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGameWebCallbackDelegate GameWebCallback;
     
     UUWorksInterfaceCoreUser();

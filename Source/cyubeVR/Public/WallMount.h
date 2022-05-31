@@ -3,7 +3,7 @@
 #include "MeshObject.h"
 #include "WallMount.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API AWallMount : public AMeshObject {
     GENERATED_BODY()
 public:

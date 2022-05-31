@@ -7,7 +7,7 @@ USTRUCT(BlueprintType)
 struct FSteamUGCQueryParameterTagsAllUserDetails {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, VisibleAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<FSteamKeyValuePair> requiredKeyValueTags;
     
     STEAMWORKSHOP_API FSteamUGCQueryParameterTagsAllUserDetails();

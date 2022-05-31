@@ -8,11 +8,11 @@
 
 class USetItemPaymentRulesNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API USetItemPaymentRulesNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSetItemPaymentRulesDelegate Completed;
     
     USetItemPaymentRulesNode();

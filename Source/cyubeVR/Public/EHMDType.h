@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "EHMDType.generated.h"
 
-UENUM()
-enum class EHMDType {
+UENUM(BlueprintType)
+enum class EHMDType : uint8 {
     Vive,
     Rift,
     WMR,

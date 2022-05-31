@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksSteamItemDef.h"
-#include "UWorksSteamInventoryResult.h"
-#include "RequestEligiblePromoItemDefinitionsIDsMinimalDelegateDelegate.h"
 #include "UWorksInterfaceCore.h"
 #include "SteamInventoryResultReadyDelegateDelegate.h"
-#include "UWorksSteamItemInstanceID.h"
 #include "SteamInventoryFullUpdateDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "SteamInventoryDefinitionUpdateDelegateDelegate.h"
+#include "UWorksSteamItemDef.h"
+#include "UWorksSteamItemInstanceID.h"
+#include "UWorksSteamInventoryResult.h"
+#include "UWorksSteamID.h"
+#include "RequestEligiblePromoItemDefinitionsIDsMinimalDelegateDelegate.h"
 #include "EUWorksResult.h"
 #include "UWorksSteamItemDetails.h"
 #include "UWorksInterfaceCoreInventory.generated.h"
@@ -16,17 +16,17 @@
 class UUWorksRequestCoreRequestEligiblePromoItemDefinitionsIDs;
 class UUWorksInterfaceCoreInventory;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreInventory : public UUWorksInterfaceCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSteamInventoryResultReadyDelegate SteamInventoryResultReady;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSteamInventoryFullUpdateDelegate SteamInventoryFullUpdate;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSteamInventoryDefinitionUpdateDelegate SteamInventoryDefinitionUpdate;
     
     UUWorksInterfaceCoreInventory();
