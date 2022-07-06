@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ProcessAgreementMinimalDelegateDelegate.h"
-#include "UWorksRequestWeb.h"
 #include "ProcessAgreementDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
+#include "ProcessAgreementMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebProcessAgreement.generated.h"
 

@@ -25,5 +25,8 @@ private:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static AInventory* GetInventoryReference(const UObject* WorldContextObject);
     
+    UFUNCTION(BlueprintCallable)
+    static void GetAllMods(bool OnlyLocal, bool OnlyWorkshop, TArray<FString>& Paths, TArray<bool>& ValidProperties, TArray<FString>& DisplayNames, TArray<FString>& InternalNames, TArray<FString>& PreviewImages);
+    
 };
 

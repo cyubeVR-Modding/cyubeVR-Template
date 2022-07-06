@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetPublishedFileDetailsMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "GetPublishedFileDetailsDelegateDelegate.h"
+#include "GetPublishedFileDetailsMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetPublishedFileDetails.generated.h"
 
 UCLASS(Blueprintable)

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "GetHistoryCommandDetailsMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "GetHistoryCommandDetailsDelegateDelegate.h"
-#include "GetHistoryCommandDetailsMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebGetHistoryCommandDetails.generated.h"
 

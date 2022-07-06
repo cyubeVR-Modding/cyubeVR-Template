@@ -3,8 +3,8 @@
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "DownloadLeaderboardEntriesDelegateDelegate.h"
 #include "UWorksSteamLeaderboard.h"
-#include "EUWorksLeaderboardDataRequest.h"
 #include "UWorksSteamLeaderboardEntries.h"
+#include "EUWorksLeaderboardDataRequest.h"
 #include "CoreDownloadLeaderboardEntriesNode.generated.h"
 
 class UCoreDownloadLeaderboardEntriesNode;

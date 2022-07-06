@@ -1,6 +1,6 @@
 #include "ManageModsWidgetParent.h"
 
-void UManageModsWidgetParent::GetDraftsMod(bool bFromWorkshop, TArray<FCustomBlockInfoForModsBP>& DraftsInfoArray) {
+void UManageModsWidgetParent::GetDraftsMod(bool bFromWorkshop, bool OnlyPureCustomBlocks, TArray<FCustomBlockInfoForModsBP>& DraftsInfoArray) {
 }
 
 UManageModsWidgetParent::UManageModsWidgetParent() : UUserWidget(FObjectInitializer::Get()) {

@@ -1,24 +1,24 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksSteamID.h"
 #include "UWorksInterfaceWeb.h"
-#include "UWorksPlaySessions.h"
+#include "UWorksSteamID.h"
 #include "RecordOfflinePlaytimeMinimalDelegateDelegate.h"
-#include "GetSteamLevelMinimalDelegateDelegate.h"
+#include "UWorksPlaySessions.h"
 #include "IsPlayingSharedGameMinimalDelegateDelegate.h"
+#include "GetSteamLevelMinimalDelegateDelegate.h"
 #include "GetRecentlyPlayedGamesMinimalDelegateDelegate.h"
 #include "GetOwnedGamesMinimalDelegateDelegate.h"
 #include "GetCommunityBadgeProgressMinimalDelegateDelegate.h"
 #include "GetBadgesMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebPlayer.generated.h"
 
-class UUWorksRequestWebGetBadges;
-class UUWorksRequestWebGetCommunityBadgeProgress;
 class UUWorksRequestWebRecordOfflinePlaytime;
 class UUWorksRequestWebIsPlayingSharedGame;
+class UUWorksRequestWebGetCommunityBadgeProgress;
 class UUWorksRequestWebGetSteamLevel;
 class UUWorksRequestWebGetRecentlyPlayedGames;
 class UUWorksRequestWebGetOwnedGames;
+class UUWorksRequestWebGetBadges;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebPlayer : public UUWorksInterfaceWeb {

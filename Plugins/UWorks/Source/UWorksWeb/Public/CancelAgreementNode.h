@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "CancelAgreementDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksSteamID.h"
+#include "CancelAgreementDelegateDelegate.h"
 #include "CancelAgreementNode.generated.h"
 
 class UCancelAgreementNode;

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceWeb.h"
-#include "GetNewsForAppMinimalDelegateDelegate.h"
 #include "GetNewsForAppAuthedMinimalDelegateDelegate.h"
+#include "GetNewsForAppMinimalDelegateDelegate.h"
+#include "UWorksInterfaceWeb.h"
 #include "UWorksInterfaceWebNews.generated.h"
 
 class UUWorksRequestWebGetNewsForAppAuthed;

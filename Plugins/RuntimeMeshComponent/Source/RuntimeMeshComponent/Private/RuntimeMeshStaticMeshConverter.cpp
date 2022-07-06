@@ -1,8 +1,8 @@
 #include "RuntimeMeshStaticMeshConverter.h"
 
-class UStaticMeshComponent;
 class UStaticMesh;
 class URuntimeMeshComponent;
+class UStaticMeshComponent;
 
 bool URuntimeMeshStaticMeshConverter::CopyStaticMeshToRuntimeMesh(UStaticMesh* StaticMesh, URuntimeMeshComponent* RuntimeMeshComponent, int32 CollisionLODIndex, int32 MaxLODToCopy) {
     return false;

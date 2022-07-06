@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
-#include "GetTradeOfferDelegateDelegate.h"
 #include "GetTradeOfferMinimalDelegateDelegate.h"
+#include "GetTradeOfferDelegateDelegate.h"
 #include "UWorksRequestWebGetTradeOffer.generated.h"
 
 UCLASS(Blueprintable)

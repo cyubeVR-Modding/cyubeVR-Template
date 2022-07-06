@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
-#include "GetNewsForAppMinimalDelegateDelegate.h"
 #include "GetNewsForAppDelegateDelegate.h"
+#include "GetNewsForAppMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetNewsForApp.generated.h"
 
 UCLASS(Blueprintable)

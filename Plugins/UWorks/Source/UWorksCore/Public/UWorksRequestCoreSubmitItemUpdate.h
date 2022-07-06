@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksResult.h"
-#include "UWorksRequestCore.h"
-#include "UWorksUGCUpdateHandle.h"
-#include "SubmitItemUpdateDelegateDelegate.h"
 #include "SubmitItemUpdateMinimalDelegateDelegate.h"
+#include "UWorksRequestCore.h"
+#include "SubmitItemUpdateDelegateDelegate.h"
+#include "UWorksUGCUpdateHandle.h"
+#include "EUWorksResult.h"
 #include "UWorksRequestCoreSubmitItemUpdate.generated.h"
 
 UCLASS(Blueprintable)

@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Components/SceneComponent.h"
-#include "LivShotCutDelegateDelegate.h"
 #include "LivShotTickDelegateDelegate.h"
+#include "LivShotCutDelegateDelegate.h"
 #include "LivShotComponent.generated.h"
 
-class ALivCameraController;
 class ULivCaptureBase;
+class ALivCameraController;
 
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class LIV_API ULivShotComponent : public USceneComponent {

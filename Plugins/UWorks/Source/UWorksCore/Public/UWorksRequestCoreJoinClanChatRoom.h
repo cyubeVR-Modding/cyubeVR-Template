@@ -3,8 +3,8 @@
 #include "UWorksRequestCore.h"
 #include "JoinClanChatRoomDelegateDelegate.h"
 #include "JoinClanChatRoomMinimalDelegateDelegate.h"
-#include "EUWorksChatRoomEnterResponse.h"
 #include "UWorksSteamID.h"
+#include "EUWorksChatRoomEnterResponse.h"
 #include "UWorksRequestCoreJoinClanChatRoom.generated.h"
 
 UCLASS(Blueprintable)

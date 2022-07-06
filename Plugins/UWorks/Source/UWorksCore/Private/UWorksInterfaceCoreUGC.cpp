@@ -1,15 +1,15 @@
 #include "UWorksInterfaceCoreUGC.h"
 
+class UUWorksRequestCoreUnsubscribeItem;
+class UUWorksRequestCoreSubscribeItem;
+class UUWorksRequestCoreStopPlaytimeTrackingForAllItems;
+class UUWorksRequestCoreSubmitItemUpdate;
+class UUWorksRequestCoreStopPlaytimeTracking;
 class UUWorksRequestCoreSendQueryUGCRequest;
 class UUWorksRequestCoreStartPlaytimeTracking;
-class UUWorksRequestCoreSubscribeItem;
-class UUWorksRequestCoreUnsubscribeItem;
-class UUWorksRequestCoreSubmitItemUpdate;
-class UUWorksRequestCoreStopPlaytimeTrackingForAllItems;
-class UUWorksRequestCoreCreateItem;
-class UUWorksRequestCoreStopPlaytimeTracking;
 class UUWorksRequestCoreSetUserItemVote;
 class UUWorksRequestCoreRemoveItemFromFavorites;
+class UUWorksRequestCoreCreateItem;
 class UUWorksRequestCoreGetUserItemVote;
 class UUWorksInterfaceCoreUGC;
 class UUWorksRequestCoreAddItemToFavorites;

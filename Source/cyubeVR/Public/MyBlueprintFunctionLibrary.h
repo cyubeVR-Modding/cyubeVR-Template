@@ -1,21 +1,21 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "EBlockTypeBP.h"
 #include "PerEyeRaw.h"
+#include "EBlockTypeBP.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "MyBlueprintFunctionLibrary.generated.h"
 
 class UTextureRenderTarget2D;
 class UTexture;
 class UObject;
-class UActorComponent;
 class ADynamicResolutionScalingActor;
+class UActorComponent;
 class UWidget;
 class UTexture2D;
 class UStaticMesh;

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ResetLoginTokenMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "ResetLoginTokenDelegateDelegate.h"
+#include "ResetLoginTokenMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebResetLoginToken.generated.h"
 

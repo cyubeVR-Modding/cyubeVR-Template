@@ -1,9 +1,9 @@
 #include "UWorksInterfaceWebEcon.h"
 
 class UUWorksRequestWebGetTradeOffersSummary;
-class UUWorksRequestWebGetTradeHistory;
-class UUWorksRequestWebGetTradeOffers;
 class UUWorksRequestWebGetTradeOffer;
+class UUWorksRequestWebGetTradeOffers;
+class UUWorksRequestWebGetTradeHistory;
 class UUWorksRequestWebFlushInventoryCache;
 class UUWorksRequestWebFlushContextCache;
 class UUWorksRequestWebFlushAssetAppearanceCache;

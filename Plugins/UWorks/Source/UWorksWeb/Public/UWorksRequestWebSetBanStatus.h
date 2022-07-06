@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
 #include "SetBanStatusDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "SetBanStatusMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestWebSetBanStatus.generated.h"
 
 UCLASS(Blueprintable)

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
-#include "GetAppBuildsMinimalDelegateDelegate.h"
 #include "GetAppBuildsDelegateDelegate.h"
+#include "GetAppBuildsMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetAppBuilds.generated.h"
 
 UCLASS(Blueprintable)

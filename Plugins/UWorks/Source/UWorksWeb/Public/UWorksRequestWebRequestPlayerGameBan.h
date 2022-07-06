@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RequestPlayerGameBanDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
+#include "RequestPlayerGameBanDelegateDelegate.h"
 #include "RequestPlayerGameBanMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebRequestPlayerGameBan.generated.h"

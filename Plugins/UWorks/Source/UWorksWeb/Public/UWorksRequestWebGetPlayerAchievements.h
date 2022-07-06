@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetPlayerAchievementsMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
-#include "GetPlayerAchievementsDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetPlayerAchievementsDelegateDelegate.h"
+#include "GetPlayerAchievementsMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetPlayerAchievements.generated.h"
 
 UCLASS(Blueprintable)

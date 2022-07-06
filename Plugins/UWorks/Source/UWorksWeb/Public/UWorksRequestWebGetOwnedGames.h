@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
 #include "GetOwnedGamesDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "GetOwnedGamesMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestWebGetOwnedGames.generated.h"
 
 UCLASS(Blueprintable)

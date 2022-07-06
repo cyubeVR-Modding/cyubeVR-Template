@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "GetCheatingReportsMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "GetCheatingReportsDelegateDelegate.h"
-#include "GetCheatingReportsMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebGetCheatingReports.generated.h"
 

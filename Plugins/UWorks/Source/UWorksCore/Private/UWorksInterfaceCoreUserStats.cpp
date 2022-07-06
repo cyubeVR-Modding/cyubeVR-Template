@@ -1,16 +1,16 @@
 #include "UWorksInterfaceCoreUserStats.h"
 
-class UUWorksRequestCoreRequestGlobalAchievementPercentages;
-class UUWorksRequestCoreUploadLeaderboardScore;
 class UUWorksRequestCoreRequestUserStats;
-class UUWorksRequestCoreRequestGlobalStats;
-class UUWorksInterfaceCoreUserStats;
 class UUWorksRequestCoreGetNumberOfCurrentPlayers;
+class UUWorksRequestCoreUploadLeaderboardScore;
+class UUWorksRequestCoreRequestGlobalStats;
+class UUWorksRequestCoreRequestGlobalAchievementPercentages;
+class UUWorksInterfaceCoreUserStats;
 class UTexture2D;
 class UUWorksRequestCoreFindOrCreateLeaderboard;
 class UUWorksRequestCoreFindLeaderboard;
-class UUWorksRequestCoreDownloadLeaderboardEntries;
 class UUWorksRequestCoreDownloadLeaderboardEntriesForUsers;
+class UUWorksRequestCoreDownloadLeaderboardEntries;
 class UUWorksRequestCoreAttachLeaderboardUGC;
 
 void UUWorksInterfaceCoreUserStats::UploadLeaderboardScoreMinimal(const FUploadLeaderboardScoreMinimalDelegate& Completed, FUWorksSteamLeaderboard SteamLeaderboard, EUWorksLeaderboardUploadScoreMethod LeaderboardUploadScoreMethod, int32 score, TArray<int32> ScoreDetails) {

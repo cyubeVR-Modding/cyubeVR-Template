@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksSteamID.h"
+#include "GetTradeOffersMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWeb.h"
-#include "GetTradeHistoryMinimalDelegateDelegate.h"
 #include "GetTradeOffersSummaryMinimalDelegateDelegate.h"
 #include "GetTradeOfferMinimalDelegateDelegate.h"
-#include "GetTradeOffersMinimalDelegateDelegate.h"
+#include "GetTradeHistoryMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "FlushInventoryCacheMinimalDelegateDelegate.h"
 #include "FlushContextCacheMinimalDelegateDelegate.h"
 #include "FlushAssetAppearanceCacheMinimalDelegateDelegate.h"
@@ -15,8 +15,8 @@
 
 class UUWorksRequestWebGetTradeOffer;
 class UUWorksRequestWebGetTradeOffersSummary;
-class UUWorksRequestWebGetTradeHistory;
 class UUWorksRequestWebGetTradeOffers;
+class UUWorksRequestWebGetTradeHistory;
 class UUWorksRequestWebFlushInventoryCache;
 class UUWorksRequestWebFlushContextCache;
 class UUWorksRequestWebFlushAssetAppearanceCache;

@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksResult.h"
 #include "UWorksRequestCore.h"
-#include "RequestEligiblePromoItemDefinitionsIDsDelegateDelegate.h"
+#include "EUWorksResult.h"
 #include "RequestEligiblePromoItemDefinitionsIDsMinimalDelegateDelegate.h"
+#include "RequestEligiblePromoItemDefinitionsIDsDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestCoreRequestEligiblePromoItemDefinitionsIDs.generated.h"
 

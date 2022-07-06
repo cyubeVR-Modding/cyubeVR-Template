@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "StartTradeDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "StartTradeDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "StartTradeNode.generated.h"
 

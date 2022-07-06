@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
-#include "CustomBlockInfoForBP.h"
 #include "EBlockTypeBP.h"
+#include "CustomBlockInfoForBP.h"
 #include "CraftingListParent.generated.h"
 
 UCLASS(Blueprintable, EditInlineNew)

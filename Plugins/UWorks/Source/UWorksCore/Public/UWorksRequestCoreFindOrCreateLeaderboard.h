@@ -2,10 +2,10 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestCore.h"
 #include "FindOrCreateLeaderboardDelegateDelegate.h"
-#include "FindOrCreateLeaderboardMinimalDelegateDelegate.h"
-#include "EUWorksLeaderboardDisplayType.h"
-#include "EUWorksLeaderboardSortMethod.h"
 #include "UWorksSteamLeaderboard.h"
+#include "FindOrCreateLeaderboardMinimalDelegateDelegate.h"
+#include "EUWorksLeaderboardSortMethod.h"
+#include "EUWorksLeaderboardDisplayType.h"
 #include "UWorksRequestCoreFindOrCreateLeaderboard.generated.h"
 
 UCLASS(Blueprintable)

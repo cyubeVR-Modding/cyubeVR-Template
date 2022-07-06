@@ -1,7 +1,7 @@
 #include "CustomBlockManager.h"
 
-class UTexture2DArray;
 class UTexture2D;
+class UTexture2DArray;
 
 UTexture2D* UCustomBlockManager::LoadDDS(const FString& Filename, TEnumAsByte<EPixelFormat> PixelFormat, bool ConvertDXT5toDXT1) {
     return NULL;

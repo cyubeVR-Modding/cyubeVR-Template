@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
 #include "Storage.h"
+#include "UObject/NoExportTypes.h"
 #include "EBlockTypeBP.h"
 #include "ChestInternals.generated.h"
 
-class AInventory;
 class AChest;
+class AInventory;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API AChestInternals : public AStorage {

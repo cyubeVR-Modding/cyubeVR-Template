@@ -1,7 +1,7 @@
 #include "UWorksInterfaceWebEconMarket.h"
 
-class UUWorksRequestWebGetPopular;
 class UUWorksRequestWebGetMarketEligibility;
+class UUWorksRequestWebGetPopular;
 class UUWorksRequestWebGetAssetID;
 class UUWorksRequestWebCancelAppListingsForUser;
 

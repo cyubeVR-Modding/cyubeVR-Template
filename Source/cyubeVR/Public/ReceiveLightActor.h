@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "UObject/NoExportTypes.h"
 #include "LightReceiveInterface.h"
+#include "UObject/NoExportTypes.h"
 #include "ReceiveLightActor.generated.h"
 
 class UMeshComponent;
@@ -36,7 +36,7 @@ public:
     
     
     // Fix for true pure virtual functions not being implemented
-    //UFUNCTION()
+    /*UFUNCTION()*/
     bool UseActorCustomLocation() override PURE_VIRTUAL(UseActorCustomLocation, return false;);
     
     UFUNCTION()
@@ -48,7 +48,7 @@ public:
     UFUNCTION()
     void LightInterfaceBeginDestroy(AActor* ThisActor) override PURE_VIRTUAL(LightInterfaceBeginDestroy,);
     
-    //UFUNCTION()
+    /*UFUNCTION()*/
     FVector GetActorCustomLocation() override PURE_VIRTUAL(GetActorCustomLocation, return FVector{};);
     
 };

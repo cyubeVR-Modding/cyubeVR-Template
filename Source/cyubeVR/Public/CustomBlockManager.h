@@ -2,12 +2,12 @@
 #include "CoreMinimal.h"
 #include "UObject/Object.h"
 #include "CustomBlockData.h"
-#include "EBlockTypeBP.h"
 #include "UObject/NoExportTypes.h"
+#include "EBlockTypeBP.h"
 #include "CustomBlockManager.generated.h"
 
-class UTexture2DArray;
 class UTexture2D;
+class UTexture2DArray;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API UCustomBlockManager : public UObject {

@@ -4,13 +4,13 @@
 #include "BenchmarkResults.h"
 #include "CubeGameInstance.generated.h"
 
-class UTextureRenderTarget2D;
 class UTexture2D;
-class UTexture2DArray;
 class USoundBase;
+class UMaterialParameterCollection;
+class UTextureRenderTarget2D;
 class UAudioComponent;
 class UCustomBlockManager;
-class UMaterialParameterCollection;
+class UTexture2DArray;
 
 UCLASS(Blueprintable, NonTransient)
 class CYUBEVR_API UCubeGameInstance : public UGameInstance {
@@ -63,6 +63,9 @@ public:
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UMaterialParameterCollection* MPC;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    TArray<FString> DefaultRecommendedWorkshopItems;
     
     UCubeGameInstance();
     UFUNCTION(BlueprintCallable)

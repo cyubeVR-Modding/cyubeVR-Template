@@ -1,7 +1,7 @@
 #include "UWorksInterfaceCoreUser.h"
 
-class UUWorksRequestCoreRequestEncryptedAppTicket;
 class UUWorksRequestCoreRequestStoreAuthURL;
+class UUWorksRequestCoreRequestEncryptedAppTicket;
 class UAudioComponent;
 class UUWorksInterfaceCoreUser;
 

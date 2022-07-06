@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
-#include "UWorksSteamID.h"
 #include "GetUserStatsForGameDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "GetUserStatsForGameMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetUserStatsForGame.generated.h"
 

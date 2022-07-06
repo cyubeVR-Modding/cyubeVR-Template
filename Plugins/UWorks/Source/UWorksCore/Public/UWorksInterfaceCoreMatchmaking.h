@@ -1,28 +1,28 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "LobbyChatMsgDelegateDelegate.h"
+#include "LobbyDataUpdateDelegateDelegate.h"
 #include "UWorksInterfaceCore.h"
 #include "FavoritesListChangedDelegateDelegate.h"
 #include "LobbyInviteDelegateDelegate.h"
 #include "LobbyEnterDelegateDelegate.h"
-#include "LobbyDataUpdateDelegateDelegate.h"
 #include "LobbyChatUpdateDelegateDelegate.h"
 #include "LobbyGameCreatedDelegateDelegate.h"
-#include "EUWorksFavoriteFlags.h"
+#include "LobbyChatMsgDelegateDelegate.h"
 #include "LobbyKickedDelegateDelegate.h"
 #include "FavoritesListAccountsUpdatedDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "EUWorksLobbyType.h"
-#include "EUWorksChatEntryType.h"
 #include "RequestLobbyListMinimalDelegateDelegate.h"
+#include "EUWorksFavoriteFlags.h"
 #include "JoinLobbyMinimalDelegateDelegate.h"
+#include "EUWorksChatEntryType.h"
 #include "CreateLobbyMinimalDelegateDelegate.h"
 #include "EUWorksLobbyComparison.h"
 #include "EUWorksLobbyDistanceFilter.h"
 #include "UWorksInterfaceCoreMatchmaking.generated.h"
 
-class UUWorksRequestCoreJoinLobby;
 class UUWorksRequestCoreRequestLobbyList;
+class UUWorksRequestCoreJoinLobby;
 class UUWorksInterfaceCoreMatchmaking;
 class UUWorksRequestCoreCreateLobby;
 

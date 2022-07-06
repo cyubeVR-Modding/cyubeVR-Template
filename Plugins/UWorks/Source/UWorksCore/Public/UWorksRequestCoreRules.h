@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RulesUpdateMinimalDelegateDelegate.h"
 #include "UWorksRequestCore.h"
 #include "RulesDelegateDelegate.h"
 #include "RulesUpdateDelegateDelegate.h"
 #include "RulesMinimalDelegateDelegate.h"
+#include "RulesUpdateMinimalDelegateDelegate.h"
 #include "UWorksRuleInfo.h"
 #include "UWorksRequestCoreRules.generated.h"
 

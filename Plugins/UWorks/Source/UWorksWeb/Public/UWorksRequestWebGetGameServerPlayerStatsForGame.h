@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "GetGameServerPlayerStatsForGameDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "GetGameServerPlayerStatsForGameMinimalDelegateDelegate.h"
 #include "UWorksGameID.h"
 #include "UWorksRequestWebGetGameServerPlayerStatsForGame.generated.h"

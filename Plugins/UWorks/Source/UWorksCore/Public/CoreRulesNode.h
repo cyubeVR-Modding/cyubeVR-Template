@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RulesUpdateDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "RulesUpdateDelegateDelegate.h"
 #include "UWorksRuleInfo.h"
 #include "CoreRulesNode.generated.h"
 

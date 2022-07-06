@@ -3,8 +3,8 @@
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "ExchangeItemDelegateDelegate.h"
 #include "UWorksSteamID.h"
-#include "UWorksSteamItemDef.h"
 #include "UWorksSteamItemInstanceID.h"
+#include "UWorksSteamItemDef.h"
 #include "ExchangeItemNode.generated.h"
 
 class UExchangeItemNode;

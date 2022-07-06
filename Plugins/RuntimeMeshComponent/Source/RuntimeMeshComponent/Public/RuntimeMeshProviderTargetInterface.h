@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/Object.h"
-#include "RuntimeMeshSectionProperties.h"
-#include "RuntimeMeshLODProperties.h"
 #include "RuntimeMeshMaterialSlot.h"
+#include "RuntimeMeshLODProperties.h"
+#include "RuntimeMeshSectionProperties.h"
 #include "RuntimeMeshProviderTargetInterface.generated.h"
 
 class UMaterialInterface;

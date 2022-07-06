@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "UObject/Object.h"
-#include "Engine/EngineTypes.h"
-#include "EGSTransformOverrideType.h"
-#include "BPActorGripInformation.h"
-#include "UObject/NoExportTypes.h"
 #include "EBPVRResultSwitch.h"
+#include "UObject/Object.h"
+#include "UObject/NoExportTypes.h"
+#include "EGSTransformOverrideType.h"
+#include "Engine/EngineTypes.h"
+#include "BPActorGripInformation.h"
 #include "VRGripScriptBase.generated.h"
 
-class AActor;
-class UGripMotionControllerComponent;
 class USceneComponent;
+class UGripMotionControllerComponent;
+class AActor;
 class UPrimitiveComponent;
 class UVRGripScriptBase;
 

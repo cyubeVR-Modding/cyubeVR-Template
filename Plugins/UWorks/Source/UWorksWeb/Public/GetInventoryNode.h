@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "UWorksSteamID.h"
 #include "GetInventoryDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "GetInventoryNode.generated.h"
 
 class UGetInventoryNode;

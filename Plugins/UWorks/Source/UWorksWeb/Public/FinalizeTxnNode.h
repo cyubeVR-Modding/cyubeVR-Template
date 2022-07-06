@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "FinalizeTxnDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "FinalizeTxnDelegateDelegate.h"
 #include "FinalizeTxnNode.generated.h"
 
 class UFinalizeTxnNode;

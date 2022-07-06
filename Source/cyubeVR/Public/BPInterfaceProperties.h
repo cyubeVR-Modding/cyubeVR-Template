@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "BPAdvGripSettings.h"
 #include "ESecondaryGripType.h"
 #include "EGripInterfaceTeleportBehavior.h"
-#include "EGripLateUpdateSettings.h"
 #include "EGripCollisionType.h"
+#include "EGripLateUpdateSettings.h"
 #include "EGripMovementReplicationSettings.h"
-#include "BPAdvGripSettings.h"
 #include "BPGripPair.h"
 #include "BPInterfaceProperties.generated.h"
 

@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ETreeType.h"
 #include "GameFramework/Actor.h"
+#include "ETreeType.h"
 #include "UObject/NoExportTypes.h"
 #include "RuntimeTree.generated.h"
 
-class AChunkManager;
 class UProceduralMeshComponent;
+class AChunkManager;
 class UStaticMesh;
 
 UCLASS(Blueprintable)

@@ -99,6 +99,7 @@ enum class EBlockTypeBP : uint8 {
     LootableInventory,
     RespawnTorch,
     T_Bow,
+    StatueSmoothbrain,
     MAX_BLOCKTYPE,
 };
 

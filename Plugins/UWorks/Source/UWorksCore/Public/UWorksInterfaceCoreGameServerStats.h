@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksInterfaceCore.h"
-#include "ServerRequestUserStatsMinimalDelegateDelegate.h"
 #include "GSStatsUnloadedDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "ServerStoreUserStatsMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
+#include "ServerRequestUserStatsMinimalDelegateDelegate.h"
 #include "UWorksInterfaceCoreGameServerStats.generated.h"
 
+class UUWorksRequestCoreRequestUserStatsGS;
 class UUWorksInterfaceCoreGameServerStats;
 class UUWorksRequestCoreStoreUserStats;
-class UUWorksRequestCoreRequestUserStatsGS;
 
 UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreGameServerStats : public UUWorksInterfaceCore {

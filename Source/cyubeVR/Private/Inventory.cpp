@@ -1,7 +1,7 @@
 #include "Inventory.h"
 
-class AChestInternals;
 class AInventory;
+class AChestInternals;
 
 void AInventory::UpdateUIEvent_Implementation() {
 }

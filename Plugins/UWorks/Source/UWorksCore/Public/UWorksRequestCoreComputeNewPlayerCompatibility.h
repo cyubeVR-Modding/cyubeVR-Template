@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksResult.h"
-#include "UWorksRequestCore.h"
-#include "ComputeNewPlayerCompatibilityDelegateDelegate.h"
 #include "ComputeNewPlayerCompatibilityMinimalDelegateDelegate.h"
+#include "UWorksRequestCore.h"
+#include "EUWorksResult.h"
+#include "ComputeNewPlayerCompatibilityDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestCoreComputeNewPlayerCompatibility.generated.h"
 

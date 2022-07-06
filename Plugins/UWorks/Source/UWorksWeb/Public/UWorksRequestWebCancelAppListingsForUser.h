@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
 #include "CancelAppListingsForUserDelegateDelegate.h"
-#include "CancelAppListingsForUserMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "CancelAppListingsForUserMinimalDelegateDelegate.h"
 #include "UWorksRequestWebCancelAppListingsForUser.generated.h"
 
 UCLASS(Blueprintable)

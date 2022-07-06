@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "QueryFilesDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
+#include "QueryFilesDelegateDelegate.h"
 #include "QueryFilesMinimalDelegateDelegate.h"
 #include "UWorksPublishedFileID.h"
 #include "UWorksRequiredKVTags.h"

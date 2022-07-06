@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
-#include "QueryLoginTokenDelegateDelegate.h"
 #include "QueryLoginTokenMinimalDelegateDelegate.h"
+#include "QueryLoginTokenDelegateDelegate.h"
 #include "UWorksRequestWebQueryLoginToken.generated.h"
 
 UCLASS(Blueprintable)

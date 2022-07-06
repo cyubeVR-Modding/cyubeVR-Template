@@ -1,8 +1,8 @@
 #include "UWorksInterfaceCoreMatchmaking.h"
 
+class UUWorksRequestCoreRequestLobbyList;
 class UUWorksInterfaceCoreMatchmaking;
 class UUWorksRequestCoreJoinLobby;
-class UUWorksRequestCoreRequestLobbyList;
 class UUWorksRequestCoreCreateLobby;
 
 bool UUWorksInterfaceCoreMatchmaking::SetLobbyType(FUWorksSteamID SteamIDLobby, EUWorksLobbyType LobbyType) {

@@ -4,8 +4,8 @@
 #include "LivCaptureMulti.generated.h"
 
 class USceneCaptureComponent2D;
-class ULivCustomClipPlane;
 class UTextureRenderTarget2D;
+class ULivCustomClipPlane;
 
 UCLASS(Blueprintable, EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class LIV_API ULivCaptureMulti : public ULivCaptureBase {

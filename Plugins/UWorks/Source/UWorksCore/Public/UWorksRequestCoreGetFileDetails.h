@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksResult.h"
 #include "UWorksRequestCore.h"
 #include "GetFileDetailsDelegateDelegate.h"
+#include "EUWorksResult.h"
 #include "GetFileDetailsMinimalDelegateDelegate.h"
 #include "UWorksRequestCoreGetFileDetails.generated.h"
 

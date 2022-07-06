@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksSteamItemDef.h"
 #include "UWorksSteamItemInstanceID.h"
 #include "EUWorksSteamItemFlags.h"
+#include "UWorksSteamItemDef.h"
 #include "UWorksSteamItemDetails.generated.h"
 
 USTRUCT(BlueprintType)

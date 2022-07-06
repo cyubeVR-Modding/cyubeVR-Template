@@ -1,10 +1,10 @@
 #include "UWorksInterfaceWebUserStats.h"
 
-class UUWorksRequestWebGetNumberOfCurrentPlayers;
-class UUWorksRequestWebSetUserStatsForGame;
 class UUWorksRequestWebGetUserStatsForGame;
+class UUWorksRequestWebSetUserStatsForGame;
 class UUWorksRequestWebGetSchemaForGame;
 class UUWorksRequestWebGetPlayerAchievements;
+class UUWorksRequestWebGetNumberOfCurrentPlayers;
 class UUWorksRequestWebGetGlobalStatsForGame;
 class UUWorksRequestWebGetGlobalAchievementPercentagesForApp;
 

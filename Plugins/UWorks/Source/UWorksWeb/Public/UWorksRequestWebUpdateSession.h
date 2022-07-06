@@ -2,9 +2,9 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
 #include "UpdateSessionDelegateDelegate.h"
-#include "UWorksUsers.h"
-#include "UpdateSessionMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "UpdateSessionMinimalDelegateDelegate.h"
+#include "UWorksUsers.h"
 #include "UWorksTitle.h"
 #include "UWorksRequestWebUpdateSession.generated.h"
 

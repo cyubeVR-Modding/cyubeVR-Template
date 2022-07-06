@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "FinalizeAssetTransactionMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
+#include "FinalizeAssetTransactionMinimalDelegateDelegate.h"
 #include "FinalizeAssetTransactionDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebFinalizeAssetTransaction.generated.h"

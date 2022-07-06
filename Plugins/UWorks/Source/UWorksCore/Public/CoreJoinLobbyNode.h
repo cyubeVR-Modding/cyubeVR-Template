@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "UWorksSteamID.h"
 #include "JoinLobbyDelegateDelegate.h"
 #include "EUWorksChatRoomEnterResponse.h"
-#include "UWorksSteamID.h"
 #include "CoreJoinLobbyNode.generated.h"
 
 class UCoreJoinLobbyNode;

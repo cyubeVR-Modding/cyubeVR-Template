@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "GetPlayerSummariesMinimalDelegateDelegate.h"
-#include "GetPlayerSummariesDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
+#include "GetPlayerSummariesDelegateDelegate.h"
 #include "UWorksRequestWebGetPlayerSummaries.generated.h"
 
 UCLASS(Blueprintable)

@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksResult.h"
-#include "UWorksPublishedFileID.h"
+#include "SetUserItemVoteMinimalDelegateDelegate.h"
 #include "UWorksRequestCore.h"
 #include "SetUserItemVoteDelegateDelegate.h"
-#include "SetUserItemVoteMinimalDelegateDelegate.h"
+#include "UWorksPublishedFileID.h"
+#include "EUWorksResult.h"
 #include "UWorksRequestCoreSetUserItemVote.generated.h"
 
 UCLASS(Blueprintable)

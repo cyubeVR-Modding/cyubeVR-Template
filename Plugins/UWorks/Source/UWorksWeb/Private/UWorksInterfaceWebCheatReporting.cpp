@@ -1,13 +1,13 @@
 #include "UWorksInterfaceWebCheatReporting.h"
 
-class UUWorksRequestWebStartSecureMultiplayerSession;
 class UUWorksRequestWebRequestPlayerGameBan;
 class UUWorksRequestWebRequestVacStatusForUser;
+class UUWorksRequestWebStartSecureMultiplayerSession;
+class UUWorksRequestWebEndSecureMultiplayerSession;
 class UUWorksRequestWebReportPlayerCheating;
 class UUWorksRequestWebReportCheatData;
 class UUWorksRequestWebRemovePlayerGameBan;
 class UUWorksRequestWebGetCheatingReports;
-class UUWorksRequestWebEndSecureMultiplayerSession;
 
 void UUWorksInterfaceWebCheatReporting::StartSecureMultiplayerSessionMinimal(const FString& Key, FUWorksSteamID SteamID, int32 AppID, const FStartSecureMultiplayerSessionMinimalDelegate& Delegate) {
 }

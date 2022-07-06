@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UWorksInterfaceWeb.h"
 #include "ResultSetSummaryMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
-#include "UWorksInterfaceWeb.h"
 #include "RankedByVoteMinimalDelegateDelegate.h"
 #include "RankedByTrendMinimalDelegateDelegate.h"
 #include "RankedByPublicationOrderMinimalDelegateDelegate.h"

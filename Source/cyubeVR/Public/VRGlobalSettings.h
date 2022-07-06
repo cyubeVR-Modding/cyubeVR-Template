@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "BPVRControllerProfile.h"
 #include "UObject/Object.h"
+#include "BPVRControllerProfile.h"
 #include "UObject/NoExportTypes.h"
 #include "VRGlobalSettings.generated.h"
 

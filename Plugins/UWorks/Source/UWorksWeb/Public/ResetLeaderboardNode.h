@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ResetLeaderboardDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "ResetLeaderboardDelegateDelegate.h"
 #include "ResetLeaderboardNode.generated.h"
 
 class UResetLeaderboardNode;

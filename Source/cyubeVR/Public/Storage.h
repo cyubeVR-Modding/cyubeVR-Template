@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "StorageItem.h"
-#include "EBlockTypeBP.h"
-#include "EItemClass.h"
 #include "UObject/NoExportTypes.h"
+#include "EItemClass.h"
+#include "EBlockTypeBP.h"
+#include "StorageItem.h"
 #include "Storage.generated.h"
 
 class AChestInternals;

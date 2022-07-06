@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "ReportAbuseDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "ReportAbuseDelegateDelegate.h"
 #include "ReportAbuseNode.generated.h"
 
 class UReportAbuseNode;

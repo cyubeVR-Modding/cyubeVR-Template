@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetPublisherAppOwnershipChangesMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "GetPublisherAppOwnershipChangesDelegateDelegate.h"
+#include "GetPublisherAppOwnershipChangesMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetPublisherAppOwnershipChanges.generated.h"
 
 UCLASS(Blueprintable)

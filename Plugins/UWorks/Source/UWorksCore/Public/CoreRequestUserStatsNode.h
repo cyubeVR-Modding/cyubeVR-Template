@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "UWorksGameID.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "RequestUserStatsDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "RequestUserStatsDelegateDelegate.h"
 #include "EUWorksResult.h"
 #include "CoreRequestUserStatsNode.generated.h"
 

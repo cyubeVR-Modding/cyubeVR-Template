@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
-#include "GetQuantityMinimalDelegateDelegate.h"
 #include "GetQuantityDelegateDelegate.h"
+#include "GetQuantityMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksSteamItemDef.h"
 #include "UWorksRequestWebGetQuantity.generated.h"

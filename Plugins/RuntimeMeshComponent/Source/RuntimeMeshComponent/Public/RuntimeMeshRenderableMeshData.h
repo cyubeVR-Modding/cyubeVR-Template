@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "RuntimeMeshVertexPositionStream.h"
+#include "RuntimeMeshVertexTexCoordStream.h"
 #include "RuntimeMeshVertexTangentStream.h"
 #include "RuntimeMeshVertexColorStream.h"
-#include "RuntimeMeshVertexTexCoordStream.h"
 #include "RuntimeMeshTriangleStream.h"
 #include "RuntimeMeshRenderableMeshData.generated.h"
 

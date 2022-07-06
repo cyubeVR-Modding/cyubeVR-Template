@@ -1,11 +1,11 @@
 #include "MyBlueprintFunctionLibrary.h"
 
 class UObject;
-class UActorComponent;
 class ADynamicResolutionScalingActor;
 class UTextureRenderTarget2D;
 class UTexture;
 class UWidget;
+class UActorComponent;
 class UTexture2D;
 class UStaticMesh;
 class UProceduralMeshComponent;

@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
+#include "UWorksSteamID.h"
 #include "PostGameDataFrameDelegateDelegate.h"
 #include "PostGameDataFrameMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "UWorksRequestWebPostGameDataFrame.generated.h"
 
 UCLASS(Blueprintable)

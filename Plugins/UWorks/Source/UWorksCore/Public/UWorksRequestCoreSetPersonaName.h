@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksResult.h"
 #include "SetPersonaNameDelegateDelegate.h"
 #include "UWorksRequestCore.h"
 #include "SetPersonaNameMinimalDelegateDelegate.h"
+#include "EUWorksResult.h"
 #include "UWorksRequestCoreSetPersonaName.generated.h"
 
 UCLASS(Blueprintable)

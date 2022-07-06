@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
-#include "UWorksSteamID.h"
 #include "EnumerateSessionsForAppDelegateDelegate.h"
 #include "EnumerateSessionsForAppMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestWebEnumerateSessionsForApp.generated.h"
 
 UCLASS(Blueprintable)

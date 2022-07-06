@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "DeleteSessionBatchDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
+#include "DeleteSessionBatchDelegateDelegate.h"
 #include "DeleteSessionBatchMinimalDelegateDelegate.h"
 #include "UWorksRequestWebDeleteSessionBatch.generated.h"
 

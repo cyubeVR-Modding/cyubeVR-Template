@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
 #include "GameFramework/Character.h"
 #include "UObject/NoExportTypes.h"
 #include "LightReceiveInterface.h"
 #include "Engine/EngineTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "DeerCPP.generated.h"
 
 class UMeshComponent;

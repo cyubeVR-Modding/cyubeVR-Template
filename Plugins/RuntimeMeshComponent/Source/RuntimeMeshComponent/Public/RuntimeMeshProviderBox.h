@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
 #include "RuntimeMeshProvider.h"
+#include "UObject/NoExportTypes.h"
 #include "RuntimeMeshProviderBox.generated.h"
 
 class UMaterialInterface;

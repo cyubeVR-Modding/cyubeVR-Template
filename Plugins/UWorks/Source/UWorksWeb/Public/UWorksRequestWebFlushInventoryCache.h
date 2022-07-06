@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "FlushInventoryCacheDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
+#include "FlushInventoryCacheDelegateDelegate.h"
 #include "FlushInventoryCacheMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebFlushInventoryCache.generated.h"

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetLeaderboardEntriesDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
+#include "GetLeaderboardEntriesDelegateDelegate.h"
 #include "GetLeaderboardEntriesMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebGetLeaderboardEntries.generated.h"

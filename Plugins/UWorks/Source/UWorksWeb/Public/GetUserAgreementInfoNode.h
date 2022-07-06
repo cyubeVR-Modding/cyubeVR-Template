@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "UWorksSteamID.h"
 #include "GetUserAgreementInfoDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "GetUserAgreementInfoNode.generated.h"
 
 class UGetUserAgreementInfoNode;

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ResultSetSummaryDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
+#include "ResultSetSummaryDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "ResultSetSummaryMinimalDelegateDelegate.h"
 #include "UWorksRequestWebResultSetSummary.generated.h"

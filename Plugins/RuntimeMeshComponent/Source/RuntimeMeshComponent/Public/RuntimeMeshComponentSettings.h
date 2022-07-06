@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Engine/DeveloperSettings.h"
-#include "ERuntimeMeshUpdateFrequency.h"
 #include "ERuntimeMeshThreadingPriority.h"
 #include "ERuntimeMeshCollisionCookingMode.h"
+#include "Engine/DeveloperSettings.h"
+#include "ERuntimeMeshUpdateFrequency.h"
 #include "UObject/NoExportTypes.h"
 #include "RuntimeMeshComponentSettings.generated.h"
 

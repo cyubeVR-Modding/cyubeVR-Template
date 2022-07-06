@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
 #include "SetDeveloperMetadataDelegateDelegate.h"
-#include "SetDeveloperMetadataMinimalDelegateDelegate.h"
 #include "UWorksPublishedFileID.h"
+#include "SetDeveloperMetadataMinimalDelegateDelegate.h"
 #include "UWorksRequestWebSetDeveloperMetadata.generated.h"
 
 UCLASS(Blueprintable)

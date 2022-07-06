@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "FindOrCreateLeaderboardDelegateDelegate2.h"
+#include "UWorksRequestWeb.h"
 #include "FindOrCreateLeaderboardMinimalDelegateDelegate2.h"
 #include "UWorksRequestWebFindOrCreateLeaderboard.generated.h"
 

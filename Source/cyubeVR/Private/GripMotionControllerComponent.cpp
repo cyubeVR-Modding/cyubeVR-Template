@@ -3,8 +3,8 @@
 #include "GS_Default.h"
 
 class UPrimitiveComponent;
-class UObject;
 class AActor;
+class UObject;
 class USceneComponent;
 
 void UGripMotionControllerComponent::UpdatePhysicsHandleTransform_BP(const FBPActorGripInformation& GrippedActor, const FTransform& NewTransform) {

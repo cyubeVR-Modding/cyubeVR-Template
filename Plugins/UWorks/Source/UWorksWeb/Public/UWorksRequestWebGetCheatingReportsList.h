@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "GetCheatingReportsListMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "GetCheatingReportsListDelegateDelegate.h"
-#include "GetCheatingReportsListMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetCheatingReportsList.generated.h"
 
 UCLASS(Blueprintable)

@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SetDeveloperMetadataMinimalDelegateDelegate.h"
+#include "QueryFilesMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWeb.h"
+#include "SetDeveloperMetadataMinimalDelegateDelegate.h"
 #include "UWorksPublishedFileID.h"
 #include "UpdateTagsMinimalDelegateDelegate.h"
 #include "UWorksRequiredKVTags.h"
-#include "QueryFilesMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebPublishedFile.generated.h"
 
-class UUWorksRequestWebUpdateTags;
 class UUWorksRequestWebSetDeveloperMetadata;
+class UUWorksRequestWebUpdateTags;
 class UUWorksRequestWebQueryFiles;
 
 UCLASS(Blueprintable)

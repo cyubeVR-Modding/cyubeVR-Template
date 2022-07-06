@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "MeshComponentInfo.generated.h"
 
-class URuntimeMeshComponent;
 class URuntimeMeshProviderChunks;
+class URuntimeMeshComponent;
 
 USTRUCT(BlueprintType)
 struct FMeshComponentInfo {

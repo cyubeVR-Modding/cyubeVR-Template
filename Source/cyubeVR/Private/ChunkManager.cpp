@@ -1,11 +1,11 @@
 #include "ChunkManager.h"
 
 class AActor;
-class AModifiedBlockActor;
 class ADraftUnlockingPaper;
-class ABlockItem;
+class AModifiedBlockActor;
 class ADeathBeacon;
 class AMeshObject;
+class ABlockItem;
 class USoundBase;
 class UParticleSystem;
 

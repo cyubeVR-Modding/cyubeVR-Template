@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
-#include "UWorksSteamID.h"
 #include "CheckAppOwnershipDelegateDelegate.h"
 #include "CheckAppOwnershipMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestWebCheckAppOwnership.generated.h"
 
 UCLASS(Blueprintable)

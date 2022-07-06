@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
+#include "Engine/EngineTypes.h"
 #include "UObject/Object.h"
+#include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "Engine/Scene.h"
 #include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "Engine/EngineTypes.h"
 #include "ELivSceneViewExtensionCaptureStage.h"
 #include "LivPluginSettings.generated.h"
 

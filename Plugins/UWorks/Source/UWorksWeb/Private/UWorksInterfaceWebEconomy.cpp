@@ -1,7 +1,7 @@
 #include "UWorksInterfaceWebEconomy.h"
 
-class UUWorksRequestWebStartTrade;
 class UUWorksRequestWebStartAssetTransaction;
+class UUWorksRequestWebStartTrade;
 class UUWorksRequestWebGetMarketPrices;
 class UUWorksRequestWebGetExportedAssetsForUser;
 class UUWorksRequestWebGetAssetPrices;

@@ -2,13 +2,13 @@
 #include "CoreMinimal.h"
 #include "ERuntimeMeshMobility.h"
 #include "Components/MeshComponent.h"
-#include "RuntimeMeshCollisionHitInfo.h"
-#include "Interfaces/Interface_CollisionDataProvider.h"
 #include "RuntimeMeshMaterialSlot.h"
+#include "Interfaces/Interface_CollisionDataProvider.h"
+#include "RuntimeMeshCollisionHitInfo.h"
 #include "RuntimeMeshComponent.generated.h"
 
-class URuntimeMesh;
 class UMaterialInterface;
+class URuntimeMesh;
 class URuntimeMeshProvider;
 
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))

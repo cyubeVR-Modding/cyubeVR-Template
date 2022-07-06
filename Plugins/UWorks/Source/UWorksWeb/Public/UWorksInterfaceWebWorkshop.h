@@ -2,12 +2,12 @@
 #include "CoreMinimal.h"
 #include "UWorksInterfaceWeb.h"
 #include "UWorksAssociatedWorkshopFiles.h"
-#include "GetFinalizedContributorsMinimalDelegateDelegate.h"
 #include "UWorksPartnerAccounts.h"
-#include "UWorksLanguages.h"
-#include "SetItemPaymentRulesMinimalDelegateDelegate.h"
 #include "PopulateItemDescriptionsMinimalDelegateDelegate.h"
+#include "SetItemPaymentRulesMinimalDelegateDelegate.h"
+#include "UWorksLanguages.h"
 #include "GetItemDailyRevenueMinimalDelegateDelegate.h"
+#include "GetFinalizedContributorsMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebWorkshop.generated.h"
 
 class UUWorksRequestWebPopulateItemDescriptions;

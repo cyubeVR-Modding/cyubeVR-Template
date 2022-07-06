@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksResult.h"
 #include "UWorksPublishedFileID.h"
+#include "EUWorksRemoteStoragePublishedFileVisibility.h"
+#include "EUWorksResult.h"
 #include "EUWorksWorkshopFileType.h"
 #include "UWorksSteamID.h"
-#include "EUWorksRemoteStoragePublishedFileVisibility.h"
 #include "UWorksUGCHandle.h"
 #include "UWorksSteamUGCDetails.generated.h"
 

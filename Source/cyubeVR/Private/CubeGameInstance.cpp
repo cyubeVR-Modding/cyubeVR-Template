@@ -1,7 +1,7 @@
 #include "CubeGameInstance.h"
 
-class UTexture2D;
 class UTexture2DArray;
+class UTexture2D;
 
 void UCubeGameInstance::UpdateTextureArrays() {
 }
@@ -65,5 +65,6 @@ UCubeGameInstance::UCubeGameInstance() {
     this->TestTexture = NULL;
     this->LUT = NULL;
     this->MPC = NULL;
+    this->DefaultRecommendedWorkshopItems.AddDefaulted(23);
 }
 

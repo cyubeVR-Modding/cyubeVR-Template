@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ReceiveLightActor.h"
 #include "EBlockTypeBP.h"
+#include "ReceiveLightActor.h"
 #include "MeshObject.generated.h"
 
 class UBoxComponent;

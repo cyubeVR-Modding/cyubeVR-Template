@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UpToDateCheckDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "UpToDateCheckDelegateDelegate.h"
 #include "UpToDateCheckNode.generated.h"
 
 class UUpToDateCheckNode;

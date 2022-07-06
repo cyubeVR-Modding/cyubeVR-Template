@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "BlockInfoBP.h"
 #include "EBlockTypeBP.h"
+#include "BlockInfoBP.h"
 #include "ModifiedBlockActor.generated.h"
 
 class UMaterialInstance;
+class AChunkManager;
 class UMaterialInstanceDynamic;
 class UStaticMeshComponent;
-class AChunkManager;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API AModifiedBlockActor : public AActor {

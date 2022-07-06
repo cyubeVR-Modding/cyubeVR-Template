@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "UWorksSteamID.h"
 #include "ItemVoteSummaryDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "ItemVoteSummaryNode.generated.h"
 
 class UItemVoteSummaryNode;

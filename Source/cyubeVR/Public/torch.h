@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "UObject/NoExportTypes.h"
 #include "EBlockTypeBP.h"
+#include "UObject/NoExportTypes.h"
 #include "ERotation.h"
 #include "torch.generated.h"
 

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ESteamSupportedLanguages.h"
 #include "ESteamItemVisibility.h"
+#include "ESteamSupportedLanguages.h"
 #include "SteamKeyValuePair.h"
 #include "SteamWorkshopUpdateDetails.generated.h"
 

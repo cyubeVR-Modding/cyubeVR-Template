@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksResult.h"
 #include "UWorksRequestCore.h"
-#include "RequestGlobalStatsDelegateDelegate.h"
 #include "RequestGlobalStatsMinimalDelegateDelegate.h"
+#include "RequestGlobalStatsDelegateDelegate.h"
 #include "UWorksGameID.h"
+#include "EUWorksResult.h"
 #include "UWorksRequestCoreRequestGlobalStats.generated.h"
 
 UCLASS(Blueprintable)
