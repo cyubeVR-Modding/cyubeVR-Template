@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Engine/DeveloperSettings.h"
 #include "LoadingScreenDescription.h"
+#include "Engine/DeveloperSettings.h"
 #include "Fonts/SlateFontInfo.h"
 #include "LoadingScreenSettings.generated.h"
 

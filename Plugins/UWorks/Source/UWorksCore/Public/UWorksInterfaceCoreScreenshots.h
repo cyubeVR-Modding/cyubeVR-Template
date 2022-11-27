@@ -9,8 +9,8 @@
 #include "EUWorksVRScreenshotType.h"
 #include "UWorksInterfaceCoreScreenshots.generated.h"
 
-class UUWorksInterfaceCoreScreenshots;
 class UTexture2D;
+class UUWorksInterfaceCoreScreenshots;
 
 UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreScreenshots : public UUWorksInterfaceCore {

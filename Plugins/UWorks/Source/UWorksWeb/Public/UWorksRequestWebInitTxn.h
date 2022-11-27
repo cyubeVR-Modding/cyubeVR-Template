@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "InitTxnDelegateDelegate.h"
-#include "UWorksSteamItemDef.h"
+#include "UWorksRequestWeb.h"
 #include "InitTxnMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "EUWorksUserSession.h"
+#include "UWorksSteamItemDef.h"
 #include "UWorksRequestWebInitTxn.generated.h"
 
 UCLASS(Blueprintable)

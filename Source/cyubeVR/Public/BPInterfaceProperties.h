@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "BPAdvGripSettings.h"
-#include "ESecondaryGripType.h"
 #include "EGripInterfaceTeleportBehavior.h"
+#include "BPAdvGripSettings.h"
 #include "EGripCollisionType.h"
+#include "ESecondaryGripType.h"
 #include "EGripLateUpdateSettings.h"
 #include "EGripMovementReplicationSettings.h"
 #include "BPGripPair.h"

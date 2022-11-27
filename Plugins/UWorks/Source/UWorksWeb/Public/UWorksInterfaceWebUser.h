@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UWorksInterfaceWeb.h"
 #include "GrantPackageMinimalDelegateDelegate.h"
 #include "ResolveVanityURLMinimalDelegateDelegate.h"
-#include "UWorksInterfaceWeb.h"
+#include "GetPublisherAppOwnershipMinimalDelegateDelegate.h"
+#include "GetPlayerSummariesMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "GetUserGroupListMinimalDelegateDelegate.h"
-#include "GetPublisherAppOwnershipMinimalDelegateDelegate.h"
 #include "GetPublisherAppOwnershipChangesMinimalDelegateDelegate.h"
-#include "GetPlayerSummariesMinimalDelegateDelegate.h"
 #include "GetPlayerBansMinimalDelegateDelegate.h"
 #include "GetFriendListMinimalDelegateDelegate.h"
 #include "GetAppPriceInfoMinimalDelegateDelegate.h"
@@ -20,9 +20,9 @@ class UUWorksRequestWebGrantPackage;
 class UUWorksRequestWebGetPublisherAppOwnershipChanges;
 class UUWorksRequestWebGetPublisherAppOwnership;
 class UUWorksRequestWebGetPlayerSummaries;
-class UUWorksRequestWebGetAppPriceInfo;
 class UUWorksRequestWebGetPlayerBans;
 class UUWorksRequestWebGetFriendList;
+class UUWorksRequestWebGetAppPriceInfo;
 class UUWorksRequestWebCheckAppOwnership;
 
 UCLASS(Blueprintable)

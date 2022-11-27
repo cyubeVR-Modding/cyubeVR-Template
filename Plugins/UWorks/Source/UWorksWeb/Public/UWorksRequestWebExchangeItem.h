@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
+#include "UWorksSteamItemInstanceID.h"
 #include "ExchangeItemMinimalDelegateDelegate.h"
 #include "ExchangeItemDelegateDelegate.h"
 #include "UWorksSteamID.h"
-#include "UWorksSteamItemInstanceID.h"
 #include "UWorksSteamItemDef.h"
 #include "UWorksRequestWebExchangeItem.generated.h"
 

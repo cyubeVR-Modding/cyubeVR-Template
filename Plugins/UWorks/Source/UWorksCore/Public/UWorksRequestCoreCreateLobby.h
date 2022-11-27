@@ -2,9 +2,9 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestCore.h"
 #include "CreateLobbyDelegateDelegate.h"
+#include "EUWorksResult.h"
 #include "CreateLobbyMinimalDelegateDelegate.h"
 #include "EUWorksLobbyType.h"
-#include "EUWorksResult.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestCoreCreateLobby.generated.h"
 

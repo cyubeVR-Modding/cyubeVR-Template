@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
 #include "GetInventoryDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "GetInventoryMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestWebGetInventory.generated.h"
 
 UCLASS(Blueprintable)

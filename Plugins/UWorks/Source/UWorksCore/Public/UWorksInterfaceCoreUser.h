@@ -1,10 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RequestEncryptedAppTicketMinimalDelegateDelegate.h"
 #include "UWorksInterfaceCore.h"
-#include "EUWorksVoiceResult.h"
 #include "SteamServersConnectedDelegateDelegate.h"
-#include "EUWorksUserHasLicenseForAppResult.h"
 #include "SteamServerConnectFailureDelegateDelegate.h"
 #include "ClientGameServerDenyDelegateDelegate.h"
 #include "SteamServersDisconnectedDelegateDelegate.h"
@@ -14,11 +11,14 @@
 #include "MicroTxnAuthorizationResponseDelegateDelegate.h"
 #include "GetAuthSessionTicketResponseDelegateDelegate.h"
 #include "GameWebCallbackDelegateDelegate.h"
+#include "EUWorksUserHasLicenseForAppResult.h"
 #include "UWorksSteamID.h"
+#include "EUWorksBeginAuthSessionResult.h"
 #include "RequestStoreAuthURLMinimalDelegateDelegate.h"
+#include "RequestEncryptedAppTicketMinimalDelegateDelegate.h"
+#include "EUWorksVoiceResult.h"
 #include "UWorksSteamUser.h"
 #include "UWorksTicketHandle.h"
-#include "EUWorksBeginAuthSessionResult.h"
 #include "UWorksInterfaceCoreUser.generated.h"
 
 class UUWorksRequestCoreRequestStoreAuthURL;

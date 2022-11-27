@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ETreeType.h"
-#include "ReceiveLightActor.h"
 #include "UObject/NoExportTypes.h"
+#include "ReceiveLightActor.h"
+#include "ETreeType.h"
 #include "LogItem.generated.h"
 
 class UMeshComponent;
@@ -17,7 +17,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FVector RelativeCenterLocation;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UMeshComponent* Mesh;
     
     ALogItem();

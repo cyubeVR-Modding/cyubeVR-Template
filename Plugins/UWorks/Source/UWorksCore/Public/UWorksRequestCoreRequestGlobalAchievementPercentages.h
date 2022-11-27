@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestCore.h"
 #include "RequestGlobalAchievementPercentagesDelegateDelegate.h"
-#include "RequestGlobalAchievementPercentagesMinimalDelegateDelegate.h"
 #include "UWorksGameID.h"
+#include "RequestGlobalAchievementPercentagesMinimalDelegateDelegate.h"
 #include "EUWorksResult.h"
 #include "UWorksRequestCoreRequestGlobalAchievementPercentages.generated.h"
 

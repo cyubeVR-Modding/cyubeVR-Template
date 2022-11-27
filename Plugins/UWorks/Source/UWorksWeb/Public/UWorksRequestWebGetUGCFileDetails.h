@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
-#include "UWorksSteamID.h"
 #include "GetUGCFileDetailsDelegateDelegate.h"
 #include "GetUGCFileDetailsMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestWebGetUGCFileDetails.generated.h"
 
 UCLASS(Blueprintable)

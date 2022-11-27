@@ -2,11 +2,11 @@
 #include "CoreMinimal.h"
 #include "UWorksInterfaceWeb.h"
 #include "RefundTxnMinimalDelegateDelegate.h"
-#include "QueryTxnMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "QueryTxnMinimalDelegateDelegate.h"
 #include "ProcessAgreementMinimalDelegateDelegate.h"
-#include "UWorksSteamItemDef.h"
 #include "EUWorksUserSession.h"
+#include "UWorksSteamItemDef.h"
 #include "InitTxnMinimalDelegateDelegate.h"
 #include "GetUserInfoMinimalDelegateDelegate.h"
 #include "GetUserAgreementInfoMinimalDelegateDelegate.h"
@@ -19,14 +19,14 @@
 
 class UUWorksRequestWebRefundTxn;
 class UUWorksRequestWebProcessAgreement;
+class UUWorksRequestWebAdjustAgreement;
 class UUWorksRequestWebQueryTxn;
+class UUWorksRequestWebGetReport;
 class UUWorksRequestWebInitTxn;
 class UUWorksRequestWebGetUserInfo;
 class UUWorksRequestWebGetUserAgreementInfo;
-class UUWorksRequestWebGetReport;
 class UUWorksRequestWebFinalizeTxn;
 class UUWorksRequestWebCancelAgreement;
-class UUWorksRequestWebAdjustAgreement;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebMicroTxn : public UUWorksInterfaceWeb {

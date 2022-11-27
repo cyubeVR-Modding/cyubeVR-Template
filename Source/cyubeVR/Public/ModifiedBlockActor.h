@@ -6,9 +6,9 @@
 #include "ModifiedBlockActor.generated.h"
 
 class UMaterialInstance;
-class AChunkManager;
 class UMaterialInstanceDynamic;
 class UStaticMeshComponent;
+class AChunkManager;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API AModifiedBlockActor : public AActor {
@@ -32,7 +32,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UMaterialInstanceDynamic* MaterialInstanceForDamage;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UStaticMeshComponent* BlockMesh;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

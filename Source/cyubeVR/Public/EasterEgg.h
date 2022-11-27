@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EBlockTypeBP.h"
 #include "ReceiveLightActor.h"
+#include "EBlockTypeBP.h"
 #include "EasterEgg.generated.h"
 
 UCLASS(Blueprintable)

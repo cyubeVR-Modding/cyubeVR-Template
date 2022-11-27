@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "GetCheatingReportsMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
-#include "GetCheatingReportsDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetCheatingReportsDelegateDelegate.h"
 #include "UWorksRequestWebGetCheatingReports.generated.h"
 
 UCLASS(Blueprintable)

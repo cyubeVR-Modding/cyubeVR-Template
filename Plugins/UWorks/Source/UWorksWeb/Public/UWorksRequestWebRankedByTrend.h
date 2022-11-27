@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RankedByTrendDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
-#include "RankedByTrendMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "RankedByTrendDelegateDelegate.h"
+#include "RankedByTrendMinimalDelegateDelegate.h"
 #include "UWorksRequestWebRankedByTrend.generated.h"
 
 UCLASS(Blueprintable)

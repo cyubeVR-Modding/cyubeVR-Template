@@ -1,12 +1,12 @@
 #include "VRExpansionFunctionLibrary.h"
 #include "Templates/SubclassOf.h"
 
-class USplineMeshComponent;
-class USplineComponent;
 class UPrimitiveComponent;
 class UObject;
-class UGripMotionControllerComponent;
+class USplineComponent;
+class USplineMeshComponent;
 class AActor;
+class UGripMotionControllerComponent;
 class USceneComponent;
 
 void UVRExpansionFunctionLibrary::UpdatePeakLowPassFilter(FBPLowPassPeakFilter& TargetPeakFilter, FVector newSample) {

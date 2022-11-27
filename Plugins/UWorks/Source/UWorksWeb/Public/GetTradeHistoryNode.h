@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetTradeHistoryDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "GetTradeHistoryDelegateDelegate.h"
 #include "GetTradeHistoryNode.generated.h"
 
 class UGetTradeHistoryNode;

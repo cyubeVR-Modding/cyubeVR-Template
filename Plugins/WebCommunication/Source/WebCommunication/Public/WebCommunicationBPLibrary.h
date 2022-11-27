@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
+#include "httpRequest.h"
 #include "EHTTPWebComFileUpload.h"
 #include "EHTTPWebComFileUploadType.h"
-#include "httpRequest.h"
 #include "EHTTPWebComFileDownloadResumeType.h"
 #include "EHTTPWebComFileBytesToFileActionType.h"
 #include "WebCommunicationBPLibrary.generated.h"

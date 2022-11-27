@@ -13,7 +13,7 @@ UCLASS(Blueprintable)
 class CYUBEVR_API AVRCharacter : public APawn, public ILightReceiveInterface {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UCameraComponent* CameraRef;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
@@ -22,7 +22,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float Health;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     TArray<UMeshComponent*> Meshes;
     
     AVRCharacter();
@@ -31,6 +31,9 @@ public:
     
     UFUNCTION(BlueprintCallable)
     bool UseLightAroundValue();
+    
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+    void SetViewDirection(FVector Direction);
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void ReduceHealthCPP(float Amount);

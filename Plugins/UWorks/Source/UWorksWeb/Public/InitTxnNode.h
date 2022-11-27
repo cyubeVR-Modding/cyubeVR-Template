@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksUserSession.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "InitTxnDelegateDelegate.h"
-#include "UWorksSteamItemDef.h"
 #include "UWorksSteamID.h"
+#include "EUWorksUserSession.h"
+#include "UWorksSteamItemDef.h"
 #include "InitTxnNode.generated.h"
 
 class UInitTxnNode;

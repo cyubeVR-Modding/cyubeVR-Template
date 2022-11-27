@@ -1,22 +1,22 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetItemDefsMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWeb.h"
 #include "UWorksSteamID.h"
-#include "ConsolidateMinimalDelegateDelegate.h"
 #include "UWorksSteamItemDef.h"
 #include "GetQuantityMinimalDelegateDelegate.h"
 #include "GetPriceSheetMinimalDelegateDelegate.h"
-#include "GetInventoryMinimalDelegateDelegate.h"
 #include "UWorksSteamItemInstanceID.h"
+#include "GetItemDefsMinimalDelegateDelegate.h"
+#include "GetInventoryMinimalDelegateDelegate.h"
 #include "ExchangeItemMinimalDelegateDelegate.h"
 #include "ConsumeItemMinimalDelegateDelegate.h"
+#include "ConsolidateMinimalDelegateDelegate.h"
 #include "AddPromoItemMinimalDelegateDelegate.h"
 #include "AddItemMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebInventory.generated.h"
 
-class UUWorksRequestWebGetPriceSheet;
 class UUWorksRequestWebGetQuantity;
+class UUWorksRequestWebGetPriceSheet;
 class UUWorksRequestWebGetItemDefs;
 class UUWorksRequestWebGetInventory;
 class UUWorksRequestWebExchangeItem;

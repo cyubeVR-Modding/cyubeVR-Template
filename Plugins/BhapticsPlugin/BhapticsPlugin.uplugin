@@ -1,0 +1,29 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.03",
+	"FriendlyName": "BhapticsPlugin",
+	"Description": "Bhaptics Haptic Plugin",
+	"Category": "Haptic",
+	"CreatedBy": "bHaptics Inc.",
+	"CreatedByURL": "http://bhaptics.com",
+	"DocsURL": "",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/c61885cc9ce54aacbb0230a1a79581cd",
+	"SupportURL": "https://www.bhaptics.com/support/developers",
+	"EngineVersion": "4.27.0",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "BhapticsPlugin",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"WhitelistPlatforms": [
+				"Win64",
+				"Android"
+			]
+		}
+	]
+}

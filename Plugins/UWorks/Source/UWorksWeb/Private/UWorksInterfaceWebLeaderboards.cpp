@@ -1,8 +1,8 @@
 #include "UWorksInterfaceWebLeaderboards.h"
 
-class UUWorksRequestWebResetLeaderboard;
 class UUWorksRequestWebGetLeaderboardsForGame;
 class UUWorksRequestWebSetLeaderboardScore;
+class UUWorksRequestWebResetLeaderboard;
 class UUWorksRequestWebGetLeaderboardEntries;
 class UUWorksRequestWebFindOrCreateLeaderboard;
 class UUWorksRequestWebDeleteLeaderboard;

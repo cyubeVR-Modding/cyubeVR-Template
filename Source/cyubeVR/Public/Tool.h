@@ -4,8 +4,8 @@
 #include "EBlockTypeBP.h"
 #include "Tool.generated.h"
 
-class AChunkManager;
 class ACharacter;
+class AChunkManager;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API ATool : public AMeshObject {

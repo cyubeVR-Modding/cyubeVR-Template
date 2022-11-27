@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetFinalizedContributorsMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "GetFinalizedContributorsDelegateDelegate.h"
+#include "GetFinalizedContributorsMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetFinalizedContributors.generated.h"
 
 UCLASS(Blueprintable)

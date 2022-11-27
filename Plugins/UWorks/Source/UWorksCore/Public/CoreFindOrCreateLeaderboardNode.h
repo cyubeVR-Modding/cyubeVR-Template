@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "EUWorksLeaderboardDisplayType.h"
 #include "FindOrCreateLeaderboardDelegateDelegate.h"
 #include "UWorksSteamLeaderboard.h"
 #include "EUWorksLeaderboardSortMethod.h"
-#include "EUWorksLeaderboardDisplayType.h"
 #include "CoreFindOrCreateLeaderboardNode.generated.h"
 
 class UCoreFindOrCreateLeaderboardNode;

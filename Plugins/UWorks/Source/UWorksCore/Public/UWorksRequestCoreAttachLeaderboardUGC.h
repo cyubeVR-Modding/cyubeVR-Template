@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
 #include "AttachLeaderboardUGCDelegateDelegate.h"
-#include "UWorksUGCHandle.h"
-#include "AttachLeaderboardUGCMinimalDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "UWorksSteamLeaderboard.h"
+#include "AttachLeaderboardUGCMinimalDelegateDelegate.h"
+#include "UWorksUGCHandle.h"
 #include "EUWorksResult.h"
 #include "UWorksRequestCoreAttachLeaderboardUGC.generated.h"
 

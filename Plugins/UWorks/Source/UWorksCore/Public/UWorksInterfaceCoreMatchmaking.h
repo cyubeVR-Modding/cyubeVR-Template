@@ -1,11 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "LobbyDataUpdateDelegateDelegate.h"
+#include "LobbyChatUpdateDelegateDelegate.h"
 #include "UWorksInterfaceCore.h"
 #include "FavoritesListChangedDelegateDelegate.h"
 #include "LobbyInviteDelegateDelegate.h"
+#include "EUWorksLobbyDistanceFilter.h"
+#include "LobbyDataUpdateDelegateDelegate.h"
 #include "LobbyEnterDelegateDelegate.h"
-#include "LobbyChatUpdateDelegateDelegate.h"
 #include "LobbyGameCreatedDelegateDelegate.h"
 #include "LobbyChatMsgDelegateDelegate.h"
 #include "LobbyKickedDelegateDelegate.h"
@@ -18,13 +19,12 @@
 #include "EUWorksChatEntryType.h"
 #include "CreateLobbyMinimalDelegateDelegate.h"
 #include "EUWorksLobbyComparison.h"
-#include "EUWorksLobbyDistanceFilter.h"
 #include "UWorksInterfaceCoreMatchmaking.generated.h"
 
 class UUWorksRequestCoreRequestLobbyList;
+class UUWorksRequestCoreCreateLobby;
 class UUWorksRequestCoreJoinLobby;
 class UUWorksInterfaceCoreMatchmaking;
-class UUWorksRequestCoreCreateLobby;
 
 UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreMatchmaking : public UUWorksInterfaceCore {

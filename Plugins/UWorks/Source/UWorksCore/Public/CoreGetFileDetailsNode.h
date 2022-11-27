@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetFileDetailsDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "EUWorksResult.h"
+#include "GetFileDetailsDelegateDelegate.h"
 #include "CoreGetFileDetailsNode.generated.h"
 
 class UCoreGetFileDetailsNode;

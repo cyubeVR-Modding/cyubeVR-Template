@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetAssetClassInfoMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
+#include "GetAssetClassInfoMinimalDelegateDelegate.h"
 #include "GetAssetClassInfoDelegateDelegate.h"
 #include "UWorksRequestWebGetAssetClassInfo.generated.h"
 

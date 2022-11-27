@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "GetFollowerCountMinimalDelegateDelegate.h"
 #include "UWorksRequestCore.h"
 #include "GetFollowerCountDelegateDelegate.h"
-#include "GetFollowerCountMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "EUWorksResult.h"
 #include "UWorksRequestCoreGetFollowerCount.generated.h"

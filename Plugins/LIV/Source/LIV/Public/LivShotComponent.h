@@ -5,8 +5,8 @@
 #include "LivShotCutDelegateDelegate.h"
 #include "LivShotComponent.generated.h"
 
-class ULivCaptureBase;
 class ALivCameraController;
+class ULivCaptureBase;
 
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class LIV_API ULivShotComponent : public USceneComponent {

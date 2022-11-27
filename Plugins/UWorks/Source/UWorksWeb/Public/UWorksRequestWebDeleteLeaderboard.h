@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "DeleteLeaderboardDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
+#include "DeleteLeaderboardDelegateDelegate.h"
 #include "DeleteLeaderboardMinimalDelegateDelegate.h"
 #include "UWorksRequestWebDeleteLeaderboard.generated.h"
 

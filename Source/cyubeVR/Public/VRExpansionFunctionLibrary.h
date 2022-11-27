@@ -1,11 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "BPLowPassPeakFilter.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
+#include "BPLowPassPeakFilter.h"
+#include "UObject/NoExportTypes.h"
+#include "BPGripPair.h"
+#include "UObject/NoExportTypes.h"
 #include "BPEuroLowPassFilter.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
 #include "Engine/NetSerialization.h"
 #include "Engine/NetSerialization.h"
 #include "Engine/NetSerialization.h"
@@ -15,15 +16,14 @@
 #include "InputCoreTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "BPActorGripInformation.h"
-#include "BPGripPair.h"
 #include "VRExpansionFunctionLibrary.generated.h"
 
-class USplineMeshComponent;
-class USplineComponent;
 class UPrimitiveComponent;
+class USplineComponent;
+class USplineMeshComponent;
 class UObject;
-class UGripMotionControllerComponent;
 class AActor;
+class UGripMotionControllerComponent;
 class USceneComponent;
 
 UCLASS(Blueprintable)
@@ -52,7 +52,7 @@ public:
     UFUNCTION(BlueprintCallable)
     static void ResetEuroSmoothingFilter(UPARAM(Ref) FBPEuroLowPassFilter& TargetEuroFilter);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static void NonAuthorityMinimumAreaRectangle(UObject* WorldContextObject, const TArray<FVector>& InVerts, const FVector& SampleSurfaceNormal, FVector& OutRectCenter, FRotator& OutRectRotation, float& OutSideLengthX, float& OutSideLengthY, bool bDebugDraw);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)

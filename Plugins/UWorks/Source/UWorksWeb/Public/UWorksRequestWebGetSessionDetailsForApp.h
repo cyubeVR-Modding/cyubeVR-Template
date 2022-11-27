@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksSessions.h"
 #include "UWorksRequestWeb.h"
 #include "GetSessionDetailsForAppDelegateDelegate.h"
 #include "GetSessionDetailsForAppMinimalDelegateDelegate.h"
+#include "UWorksSessions.h"
 #include "UWorksRequestWebGetSessionDetailsForApp.generated.h"
 
 UCLASS(Blueprintable)

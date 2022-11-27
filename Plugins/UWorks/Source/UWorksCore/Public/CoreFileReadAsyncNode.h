@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "EUWorksResult.h"
 #include "FileReadAsyncDelegateDelegate.h"
+#include "EUWorksResult.h"
 #include "CoreFileReadAsyncNode.generated.h"
 
 class UCoreFileReadAsyncNode;

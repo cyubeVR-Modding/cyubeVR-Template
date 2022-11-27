@@ -1,13 +1,13 @@
 #include "UWorksInterfaceCoreFriends.h"
 
-class UUWorksRequestCoreJoinClanChatRoom;
-class UUWorksRequestCoreSetPersonaName;
-class UTexture2D;
 class UUWorksRequestCoreRequestClanOfficerList;
+class UUWorksRequestCoreEnumerateFollowingList;
+class UUWorksRequestCoreSetPersonaName;
+class UUWorksRequestCoreJoinClanChatRoom;
 class UUWorksRequestCoreIsFollowing;
+class UTexture2D;
 class UUWorksInterfaceCoreFriends;
 class UUWorksRequestCoreGetFollowerCount;
-class UUWorksRequestCoreEnumerateFollowingList;
 class UUWorksRequestCoreDownloadClanActivityCounts;
 
 bool UUWorksInterfaceCoreFriends::SetRichPresence(const FString& Key, const FString& Value) {

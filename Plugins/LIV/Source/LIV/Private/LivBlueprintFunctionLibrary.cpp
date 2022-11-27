@@ -1,7 +1,7 @@
 #include "LivBlueprintFunctionLibrary.h"
 
-class UObject;
 class UTextureRenderTarget2D;
+class UObject;
 
 void ULivBlueprintFunctionLibrary::OffsetCameraPoseForEye(ELivEye Eye, const FVector& CameraLocation, const FRotator& CameraRotation, FVector& EyeLocation, FRotator& EyeRotation) {
 }

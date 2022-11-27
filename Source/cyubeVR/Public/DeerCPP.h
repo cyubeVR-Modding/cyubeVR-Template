@@ -1,21 +1,21 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
-#include "UObject/NoExportTypes.h"
 #include "LightReceiveInterface.h"
+#include "UObject/NoExportTypes.h"
 #include "Engine/EngineTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "DeerCPP.generated.h"
 
-class UMeshComponent;
 class AChunkManager;
+class UMeshComponent;
 class AActor;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API ADeerCPP : public ACharacter, public ILightReceiveInterface {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     TArray<UMeshComponent*> Meshes;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

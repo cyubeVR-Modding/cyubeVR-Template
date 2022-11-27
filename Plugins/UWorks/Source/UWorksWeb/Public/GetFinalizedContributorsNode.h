@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "GetFinalizedContributorsDelegateDelegate.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
 #include "GetFinalizedContributorsNode.generated.h"
 
 class UGetFinalizedContributorsNode;

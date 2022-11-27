@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
 #include "ServerRequestUserStatsDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "ServerRequestUserStatsMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "EUWorksResult.h"

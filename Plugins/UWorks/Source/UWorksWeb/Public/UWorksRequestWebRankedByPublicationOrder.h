@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "RankedByPublicationOrderDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "RankedByPublicationOrderMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebRankedByPublicationOrder.generated.h"

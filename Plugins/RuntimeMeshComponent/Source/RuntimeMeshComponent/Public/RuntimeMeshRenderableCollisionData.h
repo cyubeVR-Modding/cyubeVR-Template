@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RuntimeMeshCollisionVertexStream.h"
 #include "RuntimeMeshCollisionTriangleStream.h"
+#include "RuntimeMeshCollisionVertexStream.h"
 #include "RuntimeMeshCollisionTexCoordStream.h"
 #include "RuntimeMeshRenderableCollisionData.generated.h"
 

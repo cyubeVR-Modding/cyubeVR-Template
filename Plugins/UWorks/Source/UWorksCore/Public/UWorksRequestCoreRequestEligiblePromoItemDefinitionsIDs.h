@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestCore.h"
-#include "EUWorksResult.h"
 #include "RequestEligiblePromoItemDefinitionsIDsMinimalDelegateDelegate.h"
 #include "RequestEligiblePromoItemDefinitionsIDsDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "EUWorksResult.h"
 #include "UWorksRequestCoreRequestEligiblePromoItemDefinitionsIDs.generated.h"
 
 UCLASS(Blueprintable)

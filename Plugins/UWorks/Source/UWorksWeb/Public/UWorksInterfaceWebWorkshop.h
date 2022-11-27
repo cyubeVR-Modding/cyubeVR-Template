@@ -10,9 +10,9 @@
 #include "GetFinalizedContributorsMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebWorkshop.generated.h"
 
-class UUWorksRequestWebPopulateItemDescriptions;
 class UUWorksRequestWebSetItemPaymentRules;
 class UUWorksRequestWebGetItemDailyRevenue;
+class UUWorksRequestWebPopulateItemDescriptions;
 class UUWorksRequestWebGetFinalizedContributors;
 
 UCLASS(Blueprintable)

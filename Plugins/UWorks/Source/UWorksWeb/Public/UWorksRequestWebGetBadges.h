@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "GetBadgesMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "GetBadgesDelegateDelegate.h"
-#include "GetBadgesMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebGetBadges.generated.h"
 

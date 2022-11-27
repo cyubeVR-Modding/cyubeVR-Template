@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UpToDateCheckMinimalDelegateDelegate.h"
-#include "UWorksInterfaceWeb.h"
 #include "SetAppBuildLiveMinimalDelegateDelegate.h"
+#include "UWorksInterfaceWeb.h"
+#include "UpToDateCheckMinimalDelegateDelegate.h"
 #include "GetServersAtAddressMinimalDelegateDelegate.h"
 #include "GetServerListMinimalDelegateDelegate.h"
 #include "GetPlayersBannedMinimalDelegateDelegate.h"
@@ -14,7 +14,6 @@
 #include "UWorksInterfaceWebApps.generated.h"
 
 class UUWorksRequestWebUpToDateCheck;
-class UUWorksRequestWebGetAppBuilds;
 class UUWorksRequestWebSetAppBuildLive;
 class UUWorksRequestWebGetServersAtAddress;
 class UUWorksRequestWebGetServerList;
@@ -22,6 +21,7 @@ class UUWorksRequestWebGetPlayersBanned;
 class UUWorksRequestWebGetCheatingReportsList;
 class UUWorksRequestWebGetAppList;
 class UUWorksRequestWebGetAppDepotVersions;
+class UUWorksRequestWebGetAppBuilds;
 class UUWorksRequestWebGetAppBetas;
 
 UCLASS(Blueprintable)

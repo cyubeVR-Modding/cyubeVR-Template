@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "EBPVRResultSwitch.h"
-#include "UObject/Object.h"
-#include "UObject/NoExportTypes.h"
 #include "EGSTransformOverrideType.h"
+#include "UObject/Object.h"
 #include "Engine/EngineTypes.h"
 #include "BPActorGripInformation.h"
+#include "UObject/NoExportTypes.h"
+#include "EBPVRResultSwitch.h"
 #include "VRGripScriptBase.generated.h"
 
-class USceneComponent;
 class UGripMotionControllerComponent;
+class USceneComponent;
 class AActor;
 class UPrimitiveComponent;
 class UVRGripScriptBase;
@@ -95,7 +95,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     FTransform GetGripTransform(const FBPActorGripInformation& Grip, const FTransform& ParentTransform);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static UVRGripScriptBase* GetGripScriptByClass(UObject* WorldContextObject, TSubclassOf<UVRGripScriptBase> GripScriptClass, EBPVRResultSwitch& Result);
     
     UFUNCTION(BlueprintCallable)

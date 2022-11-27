@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "RequestLobbyListDelegateDelegate.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
 #include "CoreRequestLobbyListNode.generated.h"
 
 class UCoreRequestLobbyListNode;

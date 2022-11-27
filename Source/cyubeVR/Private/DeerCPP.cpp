@@ -1,7 +1,7 @@
 #include "DeerCPP.h"
 
-class AChunkManager;
 class UMeshComponent;
+class AChunkManager;
 
 void ADeerCPP::UpdateColorsFromLoaded_Implementation() {
 }

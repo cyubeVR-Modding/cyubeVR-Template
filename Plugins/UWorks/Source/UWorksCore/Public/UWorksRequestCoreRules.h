@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "RulesUpdateMinimalDelegateDelegate.h"
 #include "UWorksRequestCore.h"
 #include "RulesDelegateDelegate.h"
+#include "UWorksRuleInfo.h"
 #include "RulesUpdateDelegateDelegate.h"
 #include "RulesMinimalDelegateDelegate.h"
-#include "RulesUpdateMinimalDelegateDelegate.h"
-#include "UWorksRuleInfo.h"
 #include "UWorksRequestCoreRules.generated.h"
 
 UCLASS(Blueprintable)

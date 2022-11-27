@@ -1,7 +1,7 @@
 #include "ChestInternals.h"
 
-class AChest;
 class AInventory;
+class AChest;
 
 void AChestInternals::UpdateVisualsEvent_Implementation(bool MarkForSave) {
 }

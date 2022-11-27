@@ -5,8 +5,8 @@
 #include "EBlockTypeBP.h"
 #include "ChestInternals.generated.h"
 
-class AChest;
 class AInventory;
+class AChest;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API AChestInternals : public AStorage {

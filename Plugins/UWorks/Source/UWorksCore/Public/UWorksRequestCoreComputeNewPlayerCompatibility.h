@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ComputeNewPlayerCompatibilityMinimalDelegateDelegate.h"
 #include "UWorksRequestCore.h"
-#include "EUWorksResult.h"
 #include "ComputeNewPlayerCompatibilityDelegateDelegate.h"
+#include "ComputeNewPlayerCompatibilityMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "EUWorksResult.h"
 #include "UWorksRequestCoreComputeNewPlayerCompatibility.generated.h"
 
 UCLASS(Blueprintable)

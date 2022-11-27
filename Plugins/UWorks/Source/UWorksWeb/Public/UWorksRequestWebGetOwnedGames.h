@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "GetOwnedGamesDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "GetOwnedGamesMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebGetOwnedGames.generated.h"

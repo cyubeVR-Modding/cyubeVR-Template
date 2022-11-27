@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetGlobalStatsForGameMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "GetGlobalStatsForGameDelegateDelegate.h"
+#include "GetGlobalStatsForGameMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetGlobalStatsForGame.generated.h"
 
 UCLASS(Blueprintable)

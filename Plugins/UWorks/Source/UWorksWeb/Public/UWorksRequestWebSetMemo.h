@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SetMemoDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
-#include "SetMemoMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "SetMemoDelegateDelegate.h"
+#include "SetMemoMinimalDelegateDelegate.h"
 #include "UWorksRequestWebSetMemo.generated.h"
 
 UCLASS(Blueprintable)

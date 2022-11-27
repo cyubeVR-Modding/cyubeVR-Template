@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "GetFriendListDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "GetFriendListMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebGetFriendList.generated.h"

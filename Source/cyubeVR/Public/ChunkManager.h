@@ -1,37 +1,40 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "EBlockTypeBP.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "ChunkAboutBP.h"
-#include "UObject/NoExportTypes.h"
-#include "ETreeClass.h"
-#include "UObject/NoExportTypes.h"
-#include "ModifiedBlockActorToSpawn.h"
-#include "UObject/NoExportTypes.h"
-#include "EItemClass.h"
-#include "ETreeType.h"
-#include "BlockInfoBP.h"
-#include "SideBP.h"
-#include "EMeshObjectType.h"
-#include "EBiome.h"
 #include "ERotation.h"
+#include "ETreeType.h"
+#include "EBlockTypeBP.h"
+#include "ModifiedBlockActorToSpawn.h"
+#include "ChunkAboutBP.h"
+#include "BlockInfoBP.h"
+#include "EItemClass.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "UID.h"
+#include "SideBP.h"
+#include "ETreeClass.h"
+#include "EMeshObjectType.h"
+#include "EFootstepType.h"
+#include "EBiome.h"
 #include "ChunkManager.generated.h"
 
-class UMaterialParameterCollection;
-class USoundBase;
-class UMaterialInterface;
 class UParticleSystem;
 class ABlockItem;
+class ADraftUnlockingPaper;
+class UMaterialParameterCollection;
+class AWeatherManager;
 class ATreeManager;
+class USoundBase;
 class AInventory;
 class ADirectionalLight;
 class AAudioManager;
-class AWeatherManager;
+class UTexture2D;
 class UDataTable;
 class UStaticMesh;
-class ADraftUnlockingPaper;
+class UMaterialInterface;
 class AModifiedBlockActor;
 class ADeathBeacon;
 class AMeshObject;
@@ -90,6 +93,9 @@ public:
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 N_Seed;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FString N_Seed_String;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UClass* DeerClass;
@@ -203,6 +209,9 @@ public:
     AWeatherManager* WeatherManager;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    UTexture2D* ViewDistanceLUT;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UDataTable* TableMiningDamage;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
@@ -281,6 +290,9 @@ public:
     UFUNCTION(BlueprintCallable)
     void TestFunction();
     
+    UFUNCTION(BlueprintCallable)
+    void TeleportedPlayer();
+    
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void SpawnNewBlockItem(EBlockTypeBP Type, int32 UniqueId, FTransform Transform, int32 Amount, bool bDoFadeScale, FColor CrystalColor, float CrystalChargeState, bool bActivatePhysics);
     
@@ -288,7 +300,10 @@ public:
     TArray<AModifiedBlockActor*> SpawnModifiedBlockActorsAndInit(const TArray<FModifiedBlockActorToSpawn>& SpawnInfos, EBlockTypeBP ToolType);
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
-    void SpawnHintText(const FVector& LocalLocation, const FString& Text, const float& Duration, const FVector& SizeMultiplier, const float& SizeMultiplierVertical);
+    void SpawnHintText(const FVector& LocalLocation, const FString& Text, const float& Duration, const FVector& SizeMultiplier, const float& SizeMultiplierVertical, const float& FontSizeMultiplier, const FUID& UID);
+    
+    UFUNCTION(BlueprintCallable)
+    void SpawnedHintText(AActor* NewHintText, const FUID& UID);
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     ADraftUnlockingPaper* SpawnDraftUnlocker(FVector Location, EBlockTypeBP Type);
@@ -313,6 +328,9 @@ public:
     
     UFUNCTION(BlueprintCallable)
     void RemoveTreeAtLocation(const FVector WorldLocation, ETreeType Type, AActor* Tree, bool& Valid);
+    
+    UFUNCTION(BlueprintCallable)
+    void RemoveLoadingScreenSoon();
     
     UFUNCTION(BlueprintCallable)
     void RemoveDeathBeaconAtLocation(FVector WorldLocation);
@@ -365,11 +383,17 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static bool IsDyeType(EBlockTypeBP Type);
     
+    UFUNCTION(BlueprintCallable, BlueprintPure)
+    static bool IsCloakedTorchType(EBlockTypeBP Type);
+    
     UFUNCTION(BlueprintCallable)
     void InitializeVoxelAPI();
     
     UFUNCTION(BlueprintCallable)
     void HitBlockWithArrow(const FVector Location, EBlockTypeBP& HitType, bool& Valid);
+    
+    UFUNCTION(BlueprintCallable)
+    void HintTextDespawning(const FUID& HintText);
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void HaveUnlockedAllRecipes();
@@ -381,7 +405,7 @@ public:
     static void GetTreeClass(ETreeType Type, ETreeClass& ItemClass);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
-    static EBlockTypeBP GetTorchForDye(EBlockTypeBP Type);
+    static EBlockTypeBP GetTorchForDye(EBlockTypeBP OldTorchType, EBlockTypeBP DyeType);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static FColor GetTorchColor(EBlockTypeBP Type);
@@ -419,8 +443,14 @@ public:
     UFUNCTION(BlueprintCallable)
     static void GetItemClass(EBlockTypeBP Type, EItemClass& ItemClass, bool& CanExistAsItem);
     
+    UFUNCTION(BlueprintCallable, BlueprintPure)
+    bool GetIsPlayerInCave();
+    
     UFUNCTION(BlueprintCallable)
     USoundBase* GetHitSoundForBlockAndTool(EBlockTypeBP Type, EBlockTypeBP Tool, bool HardHit, bool& Result);
+    
+    UFUNCTION(BlueprintCallable)
+    EFootstepType GetFootstepSoundType(EBlockTypeBP BlockType, int32 UniqueId);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static EBlockTypeBP GetDyeForFlower(EBlockTypeBP Type);
@@ -432,7 +462,7 @@ public:
     void GetChunkWorldFormatAtLocation(const FVector& Location, int32& ChunkWorldFormat, int32& ChunkID);
     
     UFUNCTION(BlueprintCallable)
-    void GetBlockBelowPlayer(FVector CameraLocation, EBlockTypeBP& BlockType);
+    void GetBlockBelowPlayer(FVector CameraLocation, EBlockTypeBP& BlockType, int32& UniqueId);
     
     UFUNCTION(BlueprintCallable)
     void GetBlockAtLocation(FVector Location, EBlockTypeBP& Type, int32& UniqueId, FChunkAboutBP& Chunk);

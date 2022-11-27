@@ -1,8 +1,8 @@
 #include "UWorksInterfaceWebInventory.h"
 
-class UUWorksRequestWebGetItemDefs;
 class UUWorksRequestWebGetQuantity;
 class UUWorksRequestWebGetPriceSheet;
+class UUWorksRequestWebGetItemDefs;
 class UUWorksRequestWebGetInventory;
 class UUWorksRequestWebExchangeItem;
 class UUWorksRequestWebConsumeItem;

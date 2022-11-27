@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "MeshObject.h"
 #include "UObject/NoExportTypes.h"
+#include "MeshObject.h"
 #include "LootableInventory.generated.h"
 
 class AInventory;

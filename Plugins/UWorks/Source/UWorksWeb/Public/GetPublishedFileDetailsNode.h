@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetPublishedFileDetailsDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "GetPublishedFileDetailsDelegateDelegate.h"
 #include "GetPublishedFileDetailsNode.generated.h"
 
 class UGetPublishedFileDetailsNode;

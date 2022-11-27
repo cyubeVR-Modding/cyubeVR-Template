@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
+#include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
@@ -11,10 +11,10 @@
 #include "UObject/NoExportTypes.h"
 #include "MyBlueprintFunctionLibrary.generated.h"
 
-class UTextureRenderTarget2D;
-class UTexture;
-class UObject;
 class ADynamicResolutionScalingActor;
+class UObject;
+class UTexture;
+class UTextureRenderTarget2D;
 class UActorComponent;
 class UWidget;
 class UTexture2D;
@@ -31,6 +31,9 @@ public:
     
     UFUNCTION(BlueprintCallable)
     static void TakeSpecialScreenshot(UObject* Context, ADynamicResolutionScalingActor* DynResActor, float mul);
+    
+    UFUNCTION(BlueprintCallable)
+    static void StopVRAMUsageCounting();
     
     UFUNCTION(BlueprintCallable)
     static void SetSpectatorTexture(UTexture* Texture);
@@ -63,6 +66,12 @@ public:
     static void RecreatePhysicsStateForComponent(UActorComponent* Component);
     
     UFUNCTION(BlueprintCallable)
+    static void RecordPlausibleEvent2(const FString& EventName, const FString& ValueName1, const FString& Value1, const FString& ValueName2, const FString& Value2);
+    
+    UFUNCTION(BlueprintCallable)
+    static void RecordPlausibleEvent(const FString& EventName, const FString& Value);
+    
+    UFUNCTION(BlueprintCallable)
     static void PlayControllerMotorMusic();
     
     UFUNCTION(BlueprintCallable)
@@ -80,6 +89,9 @@ public:
     UFUNCTION(BlueprintPure)
     static UTexture2D* LoadTexture2D_FromFile(const FString& FullFilePath, bool& IsValid, int32& Width, int32& Height, TEnumAsByte<EPixelFormat> PixelFormat, bool bGenerateMips);
     
+    UFUNCTION(BlueprintCallable, BlueprintPure)
+    static bool IsPiS();
+    
     UFUNCTION(BlueprintCallable)
     static bool IsGameWindowInFocus(UObject* Context);
     
@@ -95,20 +107,32 @@ public:
     UFUNCTION(BlueprintCallable)
     static bool IsCDriveAlmostFull();
     
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
+    static void InitVRAMUsageCounting(const UObject* WorldContextObject);
+    
     UFUNCTION(BlueprintCallable)
     static void InitScreenshots();
     
     UFUNCTION(BlueprintCallable)
     static void InitO();
     
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
+    static void InitGameInstancePointer(const UObject* WorldContextObject);
+    
     UFUNCTION(BlueprintCallable)
     static void HookUpCustomSteamVRScreenshot();
+    
+    UFUNCTION(BlueprintCallable)
+    static void GetVRAMUsage(int32& TotalRelevantUsage, TArray<FString>& ProcessNames);
     
     UFUNCTION(BlueprintCallable)
     static void GetVideoCaptureMirrorSettings(bool& UseVideoMirror, float& FOV, bool& UseSmoothing, float& SmoothingSpeed, bool& HideControllers);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static void GetVersionName(FString& VersionName);
+    
+    UFUNCTION(BlueprintCallable)
+    static float GetSteamStatFloat(const FString& StatName);
     
     UFUNCTION(BlueprintCallable)
     static int32 GetSteamStat(const FString& StatName);
@@ -131,8 +155,20 @@ public:
     UFUNCTION(BlueprintCallable)
     static bool GetRAMInfo();
     
+    UFUNCTION(BlueprintCallable, BlueprintPure)
+    static int32 GetNumVRAM();
+    
+    UFUNCTION(BlueprintCallable, BlueprintPure)
+    static int32 GetNumRAM();
+    
+    UFUNCTION(BlueprintCallable, BlueprintPure)
+    static int32 GetNumCPUThreads();
+    
     UFUNCTION(BlueprintCallable)
     static void GetLeftHandedMode(bool& Enabled);
+    
+    UFUNCTION(BlueprintCallable)
+    static int32 GetHMDRefreshRate();
     
     UFUNCTION(BlueprintCallable)
     static void GetHMDName(FString& ModelName);
@@ -163,6 +199,9 @@ public:
     
     UFUNCTION(BlueprintCallable)
     static void FadeSteamVRColor(float Seconds, FLinearColor Color, bool Background);
+    
+    UFUNCTION(BlueprintCallable)
+    static bool DetectRazerCortex();
     
     UFUNCTION(BlueprintCallable)
     static void DeleteInputIniFile();

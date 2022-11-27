@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "GetServerIPsBySteamIDMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "GetServerIPsBySteamIDDelegateDelegate.h"
-#include "GetServerIPsBySteamIDMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebGetServerIPsBySteamID.generated.h"
 

@@ -3,8 +3,8 @@
 #include "GameFramework/GameStateBase.h"
 #include "CubeGameState.generated.h"
 
-class UTexture2D;
 class AChunkManager;
+class UTexture2D;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API ACubeGameState : public AGameStateBase {

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "UWorksSteamID.h"
 #include "GetAccountPublicInfoDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "GetAccountPublicInfoNode.generated.h"
 
 class UGetAccountPublicInfoNode;

@@ -1,7 +1,7 @@
 #include "UWorksInterfaceWebPublishedFile.h"
 
-class UUWorksRequestWebSetDeveloperMetadata;
 class UUWorksRequestWebUpdateTags;
+class UUWorksRequestWebSetDeveloperMetadata;
 class UUWorksRequestWebQueryFiles;
 
 void UUWorksInterfaceWebPublishedFile::UpdateTagsMinimal(const FString& Key, FUWorksPublishedFileID PublishedFileID, int32 AppID, TArray<FString> AddTags, TArray<FString> RemoveTags, const FUpdateTagsMinimalDelegate& Delegate) {

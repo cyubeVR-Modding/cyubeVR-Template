@@ -39,7 +39,7 @@
 		},
 		{
 			"Name": "SteamVR",
-			"Enabled": true,
+			"Enabled": false,
 			"SupportedTargetPlatforms": [
 				"Win32",
 				"Win64",
@@ -135,6 +135,11 @@
 		{
 			"Name": "OodleNetwork",
 			"Enabled": false
+		},
+		{
+			"Name": "BhapticsPlugin",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/c61885cc9ce54aacbb0230a1a79581cd"
 		},
 		{
 			"Name": "ChaosEditor",

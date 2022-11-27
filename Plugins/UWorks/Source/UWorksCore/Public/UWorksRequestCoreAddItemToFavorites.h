@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UWorksRequestCore.h"
 #include "AddItemToFavoritesMinimalDelegateDelegate.h"
 #include "AddItemToFavoritesDelegateDelegate.h"
-#include "UWorksRequestCore.h"
 #include "UWorksPublishedFileID.h"
 #include "EUWorksResult.h"
 #include "UWorksRequestCoreAddItemToFavorites.generated.h"

@@ -10,6 +10,7 @@ void Atorch::DetachFromChunk_Implementation() {
 }
 
 Atorch::Atorch() {
+    this->TypeCPP = EBlockTypeBP::Stone;
     this->P_LOD0 = NULL;
     this->P_2_LOD0 = NULL;
     this->P_LOD1 = NULL;

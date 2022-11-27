@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
 #include "RequestVacStatusForUserDelegateDelegate.h"
-#include "RequestVacStatusForUserMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "RequestVacStatusForUserMinimalDelegateDelegate.h"
 #include "UWorksRequestWebRequestVacStatusForUser.generated.h"
 
 UCLASS(Blueprintable)

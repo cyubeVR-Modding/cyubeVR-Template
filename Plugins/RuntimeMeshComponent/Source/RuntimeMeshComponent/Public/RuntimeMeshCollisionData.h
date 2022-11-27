@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RuntimeMeshCollisionVertexStream.h"
+#include "RuntimeMeshCollisionSourceSectionInfo.h"
 #include "RuntimeMeshCollisionTriangleStream.h"
+#include "RuntimeMeshCollisionVertexStream.h"
 #include "RuntimeMeshCollisionTexCoordStream.h"
 #include "RuntimeMeshCollisionMaterialIndexStream.h"
-#include "RuntimeMeshCollisionSourceSectionInfo.h"
 #include "RuntimeMeshCollisionData.generated.h"
 
 USTRUCT(BlueprintType)

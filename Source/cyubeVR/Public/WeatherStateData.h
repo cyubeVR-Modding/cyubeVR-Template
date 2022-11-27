@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EWeather.h"
 #include "UObject/NoExportTypes.h"
+#include "EWeather.h"
 #include "WeatherStateData.generated.h"
 
 USTRUCT(BlueprintType)

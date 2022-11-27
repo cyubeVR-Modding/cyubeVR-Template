@@ -1,9 +1,9 @@
 #include "LivWorldSubsystem.h"
 #include "Templates/SubclassOf.h"
 
-class ULivCaptureBase;
 class USceneComponent;
 class UCameraComponent;
+class ULivCaptureBase;
 
 FTransform ULivWorldSubsystem::GetTrackingOriginTransform() const {
     return FTransform{};

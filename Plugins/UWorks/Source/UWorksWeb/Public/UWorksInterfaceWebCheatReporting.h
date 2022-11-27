@@ -1,25 +1,25 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EndSecureMultiplayerSessionMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWeb.h"
+#include "RequestVacStatusForUserMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "StartSecureMultiplayerSessionMinimalDelegateDelegate.h"
-#include "RequestVacStatusForUserMinimalDelegateDelegate.h"
 #include "RequestPlayerGameBanMinimalDelegateDelegate.h"
 #include "ReportPlayerCheatingMinimalDelegateDelegate.h"
 #include "ReportCheatDataMinimalDelegateDelegate.h"
 #include "RemovePlayerGameBanMinimalDelegateDelegate.h"
 #include "GetCheatingReportsMinimalDelegateDelegate.h"
-#include "EndSecureMultiplayerSessionMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebCheatReporting.generated.h"
 
 class UUWorksRequestWebStartSecureMultiplayerSession;
-class UUWorksRequestWebRequestPlayerGameBan;
 class UUWorksRequestWebRequestVacStatusForUser;
-class UUWorksRequestWebEndSecureMultiplayerSession;
+class UUWorksRequestWebRequestPlayerGameBan;
 class UUWorksRequestWebReportPlayerCheating;
 class UUWorksRequestWebReportCheatData;
 class UUWorksRequestWebRemovePlayerGameBan;
 class UUWorksRequestWebGetCheatingReports;
+class UUWorksRequestWebEndSecureMultiplayerSession;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebCheatReporting : public UUWorksInterfaceWeb {

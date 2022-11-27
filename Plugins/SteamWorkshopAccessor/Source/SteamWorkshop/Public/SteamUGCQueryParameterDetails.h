@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "SteamUGCQueryParameterAllUserDetails.h"
-#include "SteamUGCItemId.h"
 #include "SteamUGCQueryParameterTagsAllUserDetails.h"
+#include "SteamUGCItemId.h"
 #include "SteamUGCQueryParameterDetails.generated.h"
 
 USTRUCT(BlueprintType)

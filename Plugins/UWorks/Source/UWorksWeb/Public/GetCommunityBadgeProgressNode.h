@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetCommunityBadgeProgressDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "GetCommunityBadgeProgressDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "GetCommunityBadgeProgressNode.generated.h"
 

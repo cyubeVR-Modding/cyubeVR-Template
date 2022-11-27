@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "MoviePlayer.h"
 #include "Widgets/Layout/SScaleBox.h"
+#include "MoviePlayer.h"
 #include "Fonts/SlateFontInfo.h"
 #include "UObject/NoExportTypes.h"
 #include "LoadingScreenDescription.generated.h"

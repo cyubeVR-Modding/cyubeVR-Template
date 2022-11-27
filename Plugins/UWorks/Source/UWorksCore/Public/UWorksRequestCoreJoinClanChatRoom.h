@@ -2,9 +2,9 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestCore.h"
 #include "JoinClanChatRoomDelegateDelegate.h"
-#include "JoinClanChatRoomMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "EUWorksChatRoomEnterResponse.h"
+#include "UWorksSteamID.h"
+#include "JoinClanChatRoomMinimalDelegateDelegate.h"
 #include "UWorksRequestCoreJoinClanChatRoom.generated.h"
 
 UCLASS(Blueprintable)

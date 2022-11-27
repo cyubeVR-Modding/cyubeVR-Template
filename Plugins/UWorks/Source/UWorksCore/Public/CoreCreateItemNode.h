@@ -3,8 +3,8 @@
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "CreateItemDelegateDelegate.h"
 #include "EUWorksResult.h"
-#include "UWorksPublishedFileID.h"
 #include "EUWorksWorkshopFileType.h"
+#include "UWorksPublishedFileID.h"
 #include "CoreCreateItemNode.generated.h"
 
 class UCoreCreateItemNode;

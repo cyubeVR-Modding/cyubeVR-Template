@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceCore.h"
 #include "PersonaStateChangeDelegateDelegate.h"
+#include "UWorksInterfaceCore.h"
 #include "GameOverlayActivatedDelegateDelegate.h"
 #include "GameServerChangeRequestedDelegateDelegate.h"
 #include "GameLobbyJoinRequestedDelegateDelegate.h"
@@ -11,35 +11,35 @@
 #include "GameConnectedClanChatMsgDelegateDelegate.h"
 #include "GameConnectedChatJoinDelegateDelegate.h"
 #include "GameConnectedChatLeaveDelegateDelegate.h"
+#include "EUWorksFriendRelationship.h"
 #include "GameConnectedFriendChatMsgDelegateDelegate.h"
+#include "JoinClanChatRoomMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
-#include "UWorksGameID.h"
 #include "SetPersonaNameMinimalDelegateDelegate.h"
 #include "RequestClanOfficerListMinimalDelegateDelegate.h"
-#include "EUWorksOverlayToStoreFlag.h"
-#include "JoinClanChatRoomMinimalDelegateDelegate.h"
 #include "IsFollowingMinimalDelegateDelegate.h"
-#include "EUWorksFriendFlags.h"
-#include "EUWorksUserRestriction.h"
 #include "EUWorksPersonaState.h"
-#include "UWorksFriendsGroupID.h"
-#include "EUWorksFriendRelationship.h"
-#include "EUWorksChatEntryType.h"
+#include "EUWorksFriendFlags.h"
 #include "GetFollowerCountMinimalDelegateDelegate.h"
-#include "EUWorksOverlayGeneric.h"
+#include "EUWorksUserRestriction.h"
+#include "UWorksFriendsGroupID.h"
+#include "UWorksGameID.h"
+#include "EUWorksChatEntryType.h"
+#include "EUWorksOverlayToStoreFlag.h"
 #include "EnumerateFollowingListMinimalDelegateDelegate.h"
 #include "DownloadClanActivityCountsMinimalDelegateDelegate.h"
 #include "EUWorksOverlaySpecific.h"
+#include "EUWorksOverlayGeneric.h"
 #include "UWorksInterfaceCoreFriends.generated.h"
 
-class UUWorksInterfaceCoreFriends;
 class UUWorksRequestCoreSetPersonaName;
-class UTexture2D;
 class UUWorksRequestCoreRequestClanOfficerList;
+class UUWorksRequestCoreEnumerateFollowingList;
 class UUWorksRequestCoreJoinClanChatRoom;
 class UUWorksRequestCoreIsFollowing;
+class UTexture2D;
+class UUWorksInterfaceCoreFriends;
 class UUWorksRequestCoreGetFollowerCount;
-class UUWorksRequestCoreEnumerateFollowingList;
 class UUWorksRequestCoreDownloadClanActivityCounts;
 
 UCLASS(Blueprintable)

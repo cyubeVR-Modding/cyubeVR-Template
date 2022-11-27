@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "GetNumberOfCurrentPlayersMinimalDelegateDelegate.h"
 #include "UWorksRequestCore.h"
 #include "GetNumberOfCurrentPlayersDelegateDelegate.h"
-#include "GetNumberOfCurrentPlayersMinimalDelegateDelegate.h"
 #include "UWorksRequestCoreGetNumberOfCurrentPlayers.generated.h"
 
 UCLASS(Blueprintable)

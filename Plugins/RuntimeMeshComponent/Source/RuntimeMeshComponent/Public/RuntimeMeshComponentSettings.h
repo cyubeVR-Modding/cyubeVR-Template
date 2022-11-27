@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ERuntimeMeshThreadingPriority.h"
-#include "ERuntimeMeshCollisionCookingMode.h"
 #include "Engine/DeveloperSettings.h"
 #include "ERuntimeMeshUpdateFrequency.h"
+#include "ERuntimeMeshThreadingPriority.h"
 #include "UObject/NoExportTypes.h"
+#include "ERuntimeMeshCollisionCookingMode.h"
 #include "RuntimeMeshComponentSettings.generated.h"
 
 UCLASS(Blueprintable, DefaultConfig, Config=RuntimeMeshComponent)

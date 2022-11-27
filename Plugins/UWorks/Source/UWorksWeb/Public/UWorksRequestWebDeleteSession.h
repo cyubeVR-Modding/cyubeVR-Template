@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "DeleteSessionDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
-#include "DeleteSessionMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "DeleteSessionDelegateDelegate.h"
+#include "DeleteSessionMinimalDelegateDelegate.h"
 #include "UWorksRequestWebDeleteSession.generated.h"
 
 UCLASS(Blueprintable)

@@ -2,13 +2,13 @@
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "RuntimeMeshRenderableMeshData.h"
-#include "ERuntimeMeshSliceCapOption.h"
 #include "UObject/NoExportTypes.h"
+#include "ERuntimeMeshSliceCapOption.h"
 #include "UObject/NoExportTypes.h"
 #include "RuntimeMeshSlicer.generated.h"
 
-class URuntimeMeshComponent;
 class UMaterialInterface;
+class URuntimeMeshComponent;
 
 UCLASS(Blueprintable)
 class RUNTIMEMESHCOMPONENT_API URuntimeMeshSlicer : public UBlueprintFunctionLibrary {

@@ -4,8 +4,8 @@
 #include "ModTutorialEntry.h"
 #include "ModdingFunctionLibrary.generated.h"
 
-class AInventory;
 class UObject;
+class AInventory;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API UModdingFunctionLibrary : public UBlueprintFunctionLibrary {
@@ -22,7 +22,7 @@ private:
     UFUNCTION(BlueprintCallable)
     static void GetModTutorials(TArray<FModTutorialEntry>& ModTutorials);
     
-    UFUNCTION(BlueprintCallable, BlueprintPure)
+    UFUNCTION(BlueprintCallable, BlueprintPure, meta=(WorldContext="WorldContextObject"))
     static AInventory* GetInventoryReference(const UObject* WorldContextObject);
     
     UFUNCTION(BlueprintCallable)

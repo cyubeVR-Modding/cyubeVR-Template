@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EnumerateUserPublishedFilesDelegateDelegate.h"
-#include "UWorksRequestWeb.h"
 #include "EnumerateUserPublishedFilesMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksSteamID.h"
+#include "EnumerateUserPublishedFilesDelegateDelegate.h"
 #include "UWorksRequestWebEnumerateUserPublishedFiles.generated.h"
 
 UCLASS(Blueprintable)

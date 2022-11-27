@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestCore.h"
 #include "ServerStoreUserStatsDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "ServerStoreUserStatsMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "EUWorksResult.h"
 #include "UWorksRequestCoreStoreUserStats.generated.h"
 

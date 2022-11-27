@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
 #include "ResultSetSummaryDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "ResultSetSummaryMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestWebResultSetSummary.generated.h"
 
 UCLASS(Blueprintable)

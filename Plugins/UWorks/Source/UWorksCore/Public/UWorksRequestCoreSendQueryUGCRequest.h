@@ -2,9 +2,9 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestCore.h"
 #include "SendQueryUGCRequestDelegateDelegate.h"
+#include "EUWorksResult.h"
 #include "SendQueryUGCRequestMinimalDelegateDelegate.h"
 #include "UWorksUGCQueryHandle.h"
-#include "EUWorksResult.h"
 #include "UWorksRequestCoreSendQueryUGCRequest.generated.h"
 
 UCLASS(Blueprintable)

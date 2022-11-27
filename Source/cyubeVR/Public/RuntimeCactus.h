@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ETreeType.h"
 #include "ReceiveLightActor.h"
+#include "ETreeType.h"
 #include "RuntimeCactus.generated.h"
 
 class UStaticMeshComponent;
@@ -11,7 +11,7 @@ class CYUBEVR_API ARuntimeCactus : public AReceiveLightActor {
     GENERATED_BODY()
 public:
 private:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UStaticMeshComponent* SMC;
     
 public:

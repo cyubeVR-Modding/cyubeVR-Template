@@ -1,15 +1,15 @@
 #include "UWorksInterfaceWebGameServers.h"
 
-class UUWorksRequestWebCreateAccount;
-class UUWorksRequestWebSetMemo;
-class UUWorksRequestWebGetServerSteamIDsByIP;
 class UUWorksRequestWebSetBanStatus;
+class UUWorksRequestWebSetMemo;
 class UUWorksRequestWebResetLoginToken;
+class UUWorksRequestWebGetServerSteamIDsByIP;
 class UUWorksRequestWebQueryLoginToken;
 class UUWorksRequestWebGetServerIPsBySteamID;
 class UUWorksRequestWebGetAccountPublicInfo;
 class UUWorksRequestWebGetAccountList;
 class UUWorksRequestWebDeleteAccount;
+class UUWorksRequestWebCreateAccount;
 
 void UUWorksInterfaceWebGameServers::SetMemoMinimal(const FString& Key, FUWorksSteamID SteamID, const FString& Memo, const FSetMemoMinimalDelegate& Delegate) {
 }

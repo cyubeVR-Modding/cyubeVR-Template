@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AuthenticateUserTicketMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "AuthenticateUserTicketDelegateDelegate.h"
+#include "AuthenticateUserTicketMinimalDelegateDelegate.h"
 #include "UWorksRequestWebAuthenticateUserTicket.generated.h"
 
 UCLASS(Blueprintable)

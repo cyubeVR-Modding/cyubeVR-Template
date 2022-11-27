@@ -18,7 +18,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bUseLightAroundValue;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     TArray<UMeshComponent*> LightReceiveMeshes;
     
     AReceiveLightActor();
@@ -36,7 +36,7 @@ public:
     
     
     // Fix for true pure virtual functions not being implemented
-    /*UFUNCTION()*/
+    //UFUNCTION()
     bool UseActorCustomLocation() override PURE_VIRTUAL(UseActorCustomLocation, return false;);
     
     UFUNCTION()
@@ -48,7 +48,7 @@ public:
     UFUNCTION()
     void LightInterfaceBeginDestroy(AActor* ThisActor) override PURE_VIRTUAL(LightInterfaceBeginDestroy,);
     
-    /*UFUNCTION()*/
+    //UFUNCTION()
     FVector GetActorCustomLocation() override PURE_VIRTUAL(GetActorCustomLocation, return FVector{};);
     
 };

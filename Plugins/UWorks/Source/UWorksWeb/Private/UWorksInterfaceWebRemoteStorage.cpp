@@ -1,7 +1,7 @@
 #include "UWorksInterfaceWebRemoteStorage.h"
 
-class UUWorksRequestWebUnsubscribePublishedFile;
 class UUWorksRequestWebSubscribePublishedFile;
+class UUWorksRequestWebUnsubscribePublishedFile;
 class UUWorksRequestWebSetUGCUsedByGC;
 class UUWorksRequestWebGetUGCFileDetails;
 class UUWorksRequestWebGetPublishedFileDetails;

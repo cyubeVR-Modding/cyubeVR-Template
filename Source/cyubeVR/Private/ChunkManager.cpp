@@ -24,6 +24,9 @@ void AChunkManager::UnlockedDraftNew(ADraftUnlockingPaper* UnlockedActor) {
 void AChunkManager::TestFunction() {
 }
 
+void AChunkManager::TeleportedPlayer() {
+}
+
 void AChunkManager::SpawnNewBlockItem_Implementation(EBlockTypeBP Type, int32 UniqueId, FTransform Transform, int32 Amount, bool bDoFadeScale, FColor CrystalColor, float CrystalChargeState, bool bActivatePhysics) {
 }
 
@@ -31,7 +34,10 @@ TArray<AModifiedBlockActor*> AChunkManager::SpawnModifiedBlockActorsAndInit(cons
     return TArray<AModifiedBlockActor*>();
 }
 
-void AChunkManager::SpawnHintText_Implementation(const FVector& LocalLocation, const FString& Text, const float& Duration, const FVector& SizeMultiplier, const float& SizeMultiplierVertical) {
+void AChunkManager::SpawnHintText_Implementation(const FVector& LocalLocation, const FString& Text, const float& Duration, const FVector& SizeMultiplier, const float& SizeMultiplierVertical, const float& FontSizeMultiplier, const FUID& UID) {
+}
+
+void AChunkManager::SpawnedHintText(AActor* NewHintText, const FUID& UID) {
 }
 
 ADraftUnlockingPaper* AChunkManager::SpawnDraftUnlocker_Implementation(FVector Location, EBlockTypeBP Type) {
@@ -59,6 +65,9 @@ void AChunkManager::SetBlockItemsNeedToOverlapHand(bool bNeedToOverlap) {
 }
 
 void AChunkManager::RemoveTreeAtLocation(const FVector WorldLocation, ETreeType Type, AActor* Tree, bool& Valid) {
+}
+
+void AChunkManager::RemoveLoadingScreenSoon() {
 }
 
 void AChunkManager::RemoveDeathBeaconAtLocation(FVector WorldLocation) {
@@ -120,10 +129,17 @@ bool AChunkManager::IsDyeType(EBlockTypeBP Type) {
     return false;
 }
 
+bool AChunkManager::IsCloakedTorchType(EBlockTypeBP Type) {
+    return false;
+}
+
 void AChunkManager::InitializeVoxelAPI() {
 }
 
 void AChunkManager::HitBlockWithArrow(const FVector Location, EBlockTypeBP& HitType, bool& Valid) {
+}
+
+void AChunkManager::HintTextDespawning(const FUID& HintText) {
 }
 
 void AChunkManager::HaveUnlockedAllRecipes_Implementation() {
@@ -135,7 +151,7 @@ void AChunkManager::GetWorldSomething() {
 void AChunkManager::GetTreeClass(ETreeType Type, ETreeClass& ItemClass) {
 }
 
-EBlockTypeBP AChunkManager::GetTorchForDye(EBlockTypeBP Type) {
+EBlockTypeBP AChunkManager::GetTorchForDye(EBlockTypeBP OldTorchType, EBlockTypeBP DyeType) {
     return EBlockTypeBP::Stone;
 }
 
@@ -180,8 +196,16 @@ void AChunkManager::GetMeshObjectType(EBlockTypeBP Type, EMeshObjectType& MeshOb
 void AChunkManager::GetItemClass(EBlockTypeBP Type, EItemClass& ItemClass, bool& CanExistAsItem) {
 }
 
+bool AChunkManager::GetIsPlayerInCave() {
+    return false;
+}
+
 USoundBase* AChunkManager::GetHitSoundForBlockAndTool(EBlockTypeBP Type, EBlockTypeBP Tool, bool HardHit, bool& Result) {
     return NULL;
+}
+
+EFootstepType AChunkManager::GetFootstepSoundType(EBlockTypeBP BlockType, int32 UniqueId) {
+    return EFootstepType::Stone;
 }
 
 EBlockTypeBP AChunkManager::GetDyeForFlower(EBlockTypeBP Type) {
@@ -194,7 +218,7 @@ void AChunkManager::GetDevModeBP(bool& _DevMode, bool& _DevModeLoadWorld) {
 void AChunkManager::GetChunkWorldFormatAtLocation(const FVector& Location, int32& ChunkWorldFormat, int32& ChunkID) {
 }
 
-void AChunkManager::GetBlockBelowPlayer(FVector CameraLocation, EBlockTypeBP& BlockType) {
+void AChunkManager::GetBlockBelowPlayer(FVector CameraLocation, EBlockTypeBP& BlockType, int32& UniqueId) {
 }
 
 void AChunkManager::GetBlockAtLocation(FVector Location, EBlockTypeBP& Type, int32& UniqueId, FChunkAboutBP& Chunk) {
@@ -344,6 +368,7 @@ AChunkManager::AChunkManager() {
     this->Sun = NULL;
     this->AudioManager = NULL;
     this->WeatherManager = NULL;
+    this->ViewDistanceLUT = NULL;
     this->TableMiningDamage = NULL;
     this->TableMiningAmount = NULL;
     this->TableMiningParticle = NULL;

@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetMarketEligibilityMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWeb.h"
 #include "GetPopularMinimalDelegateDelegate.h"
+#include "GetMarketEligibilityMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "GetAssetIDMinimalDelegateDelegate.h"
 #include "CancelAppListingsForUserMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebEconMarket.generated.h"
 
-class UUWorksRequestWebGetPopular;
 class UUWorksRequestWebGetMarketEligibility;
+class UUWorksRequestWebGetPopular;
 class UUWorksRequestWebGetAssetID;
 class UUWorksRequestWebCancelAppListingsForUser;
 

@@ -6,11 +6,11 @@
 #include "LivCaptureContext.h"
 #include "LivLocalPlayerSubsystem.generated.h"
 
-class ULocalPlayer;
-class ULivCaptureBase;
 class UPrimitiveComponent;
 class AActor;
 class ULivWorldSubsystem;
+class ULocalPlayer;
+class ULivCaptureBase;
 
 UCLASS(Blueprintable)
 class LIV_API ULivLocalPlayerSubsystem : public ULocalPlayerSubsystem {

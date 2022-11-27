@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestCore.h"
-#include "UWorksSteamID.h"
 #include "RequestUserStatsDelegateDelegate.h"
 #include "RequestUserStatsMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksGameID.h"
 #include "EUWorksResult.h"
 #include "UWorksRequestCoreRequestUserStats.generated.h"

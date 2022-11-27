@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "AuthenticateUserTicketDelegateDelegate.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
 #include "AuthenticateUserTicketNode.generated.h"
 
 class UAuthenticateUserTicketNode;

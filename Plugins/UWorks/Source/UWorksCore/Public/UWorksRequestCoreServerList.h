@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UWorksRequestCore.h"
+#include "EUWorksServerQueryType.h"
 #include "ServerListUpdateMinimalDelegateDelegate.h"
 #include "ServerListDelegateDelegate.h"
-#include "UWorksRequestCore.h"
 #include "ServerListMinimalDelegateDelegate.h"
 #include "ServerListUpdateDelegateDelegate.h"
-#include "EUWorksServerQueryType.h"
 #include "UWorksServerInfo.h"
 #include "UWorksRequestCoreServerList.generated.h"
 

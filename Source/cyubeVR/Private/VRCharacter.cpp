@@ -9,6 +9,9 @@ bool AVRCharacter::UseLightAroundValue() {
     return false;
 }
 
+void AVRCharacter::SetViewDirection_Implementation(FVector Direction) {
+}
+
 void AVRCharacter::ReduceHealthCPP_Implementation(float Amount) {
 }
 

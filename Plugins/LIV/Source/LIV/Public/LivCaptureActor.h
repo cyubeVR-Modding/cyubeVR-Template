@@ -9,7 +9,7 @@ UCLASS(Abstract, Blueprintable)
 class LIV_API ALivCaptureActor : public AActor {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneCaptureComponent2D* PrimaryCaptureComponent;
     
     ALivCaptureActor();

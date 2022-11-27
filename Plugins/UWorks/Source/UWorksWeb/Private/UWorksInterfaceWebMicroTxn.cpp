@@ -2,14 +2,14 @@
 
 class UUWorksRequestWebRefundTxn;
 class UUWorksRequestWebProcessAgreement;
+class UUWorksRequestWebAdjustAgreement;
 class UUWorksRequestWebQueryTxn;
+class UUWorksRequestWebGetReport;
 class UUWorksRequestWebInitTxn;
 class UUWorksRequestWebGetUserInfo;
 class UUWorksRequestWebGetUserAgreementInfo;
-class UUWorksRequestWebGetReport;
 class UUWorksRequestWebFinalizeTxn;
 class UUWorksRequestWebCancelAgreement;
-class UUWorksRequestWebAdjustAgreement;
 
 void UUWorksInterfaceWebMicroTxn::RefundTxnMinimal(const FString& Key, const FString& OrderID, int32 AppID, const FRefundTxnMinimalDelegate& Delegate) {
 }

@@ -1,0 +1,11 @@
+{
+	"BuildId": "17155196",
+	"Modules": 
+	{
+		"OnlineSubsystemUWorks": "UE4Editor-OnlineSubsystemUWorks.dll",
+		"UWorks": "UE4Editor-UWorks.dll",
+		"UWorksCore": "UE4Editor-UWorksCore.dll",
+		"UWorksUtilities": "UE4Editor-UWorksUtilities.dll",
+		"UWorksWeb": "UE4Editor-UWorksWeb.dll"
+	}
+}

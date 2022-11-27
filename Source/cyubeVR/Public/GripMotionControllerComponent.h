@@ -4,24 +4,24 @@
 #include "VRGripControllerOnGripOutOfRangeDelegate.h"
 #include "MotionControllerComponent.h"
 #include "VRGripControllerOnProfileTransformChangedDelegate.h"
-#include "Transform_NetQuantize.h"
-#include "VRGripControllerOnTrackingEventSignatureDelegate.h"
 #include "EVRVelocityType.h"
+#include "VRGripControllerOnTrackingEventSignatureDelegate.h"
 #include "VROnControllerGripSignatureDelegate.h"
-#include "IIdentifiableXRDevice.h"
 #include "VROnControllerDropSignatureDelegate.h"
-#include "EGripLateUpdateSettings.h"
 #include "BPActorGripInformation.h"
+#include "UObject/NoExportTypes.h"
 #include "BPVRComponentPosRep.h"
-#include "EBPVRResultSwitch.h"
 #include "UObject/NoExportTypes.h"
-#include "BPAdvancedPhysicsHandleSettings.h"
-#include "EGripCollisionType.h"
+#include "Transform_NetQuantize.h"
 #include "BPSecondaryGripInfo.h"
-#include "Engine/NetSerialization.h"
+#include "BPAdvancedPhysicsHandleSettings.h"
+#include "EBPVRResultSwitch.h"
+#include "EGripLateUpdateSettings.h"
+#include "EGripCollisionType.h"
 #include "EGripMovementReplicationSettings.h"
-#include "UObject/NoExportTypes.h"
+#include "Engine/NetSerialization.h"
 #include "InputCoreTypes.h"
+#include "IIdentifiableXRDevice.h"
 #include "GripMotionControllerComponent.generated.h"
 
 class UVRGripScriptBase;
@@ -38,7 +38,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<UVRGripScriptBase> DefaultGripScriptClass;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, Transient, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UVRGripScriptBase* DefaultGripScript;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
@@ -95,7 +95,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bAlwaysSendTickGrip;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     TArray<UPrimitiveComponent*> AdditionalLateUpdateComponents;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_ReplicatedControllerTransform, meta=(AllowPrivateAccess=true))

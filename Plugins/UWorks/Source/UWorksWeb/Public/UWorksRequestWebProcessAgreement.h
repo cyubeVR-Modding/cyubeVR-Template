@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ProcessAgreementDelegateDelegate.h"
-#include "UWorksRequestWeb.h"
 #include "ProcessAgreementMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksSteamID.h"
+#include "ProcessAgreementDelegateDelegate.h"
 #include "UWorksRequestWebProcessAgreement.generated.h"
 
 UCLASS(Blueprintable)

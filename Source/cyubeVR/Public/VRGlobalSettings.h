@@ -5,7 +5,7 @@
 #include "UObject/NoExportTypes.h"
 #include "VRGlobalSettings.generated.h"
 
-UCLASS(Blueprintable, config = Engine, DefaultConfig)
+UCLASS(Blueprintable, DefaultConfig, config = Engine)
 class UVRGlobalSettings : public UObject {
     GENERATED_BODY()
 public:

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "ConsolidateDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "ConsolidateDelegateDelegate.h"
 #include "UWorksSteamItemDef.h"
 #include "ConsolidateNode.generated.h"
 

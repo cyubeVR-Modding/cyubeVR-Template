@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
+#include "UWorksRequiredKVTags.h"
+#include "UWorksPublishedFileID.h"
 #include "QueryFilesDelegateDelegate.h"
 #include "QueryFilesMinimalDelegateDelegate.h"
-#include "UWorksPublishedFileID.h"
-#include "UWorksRequiredKVTags.h"
 #include "UWorksRequestWebQueryFiles.generated.h"
 
 UCLASS(Blueprintable)

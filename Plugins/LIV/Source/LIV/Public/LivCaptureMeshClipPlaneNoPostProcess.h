@@ -3,17 +3,17 @@
 #include "LivCaptureBase.h"
 #include "LivCaptureMeshClipPlaneNoPostProcess.generated.h"
 
-class ULivClipPlane;
 class UTextureRenderTarget2D;
+class ULivClipPlane;
 
 UCLASS(Blueprintable, EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class LIV_API ULivCaptureMeshClipPlaneNoPostProcess : public ULivCaptureBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     ULivClipPlane* CameraClipPlane;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     ULivClipPlane* FloorClipPlane;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

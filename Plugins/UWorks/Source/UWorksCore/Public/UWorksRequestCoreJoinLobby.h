@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestCore.h"
-#include "UWorksSteamID.h"
 #include "JoinLobbyDelegateDelegate.h"
-#include "EUWorksChatRoomEnterResponse.h"
 #include "JoinLobbyMinimalDelegateDelegate.h"
+#include "EUWorksChatRoomEnterResponse.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestCoreJoinLobby.generated.h"
 
 UCLASS(Blueprintable)

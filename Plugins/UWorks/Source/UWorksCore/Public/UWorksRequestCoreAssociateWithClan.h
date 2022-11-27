@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AssociateWithClanMinimalDelegateDelegate.h"
 #include "UWorksRequestCore.h"
-#include "AssociateWithClanDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "EUWorksResult.h"
+#include "AssociateWithClanDelegateDelegate.h"
+#include "AssociateWithClanMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestCoreAssociateWithClan.generated.h"
 
 UCLASS(Blueprintable)

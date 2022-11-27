@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ResetLeaderboardMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "ResetLeaderboardDelegateDelegate.h"
+#include "ResetLeaderboardMinimalDelegateDelegate.h"
 #include "UWorksRequestWebResetLeaderboard.generated.h"
 
 UCLASS(Blueprintable)
