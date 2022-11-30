@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
 #include "RequestLobbyListDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "RequestLobbyListMinimalDelegateDelegate.h"
 #include "UWorksRequestCoreRequestLobbyList.generated.h"
 

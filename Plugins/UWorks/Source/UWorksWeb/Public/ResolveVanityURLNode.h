@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "ResolveVanityURLDelegateDelegate.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
 #include "ResolveVanityURLNode.generated.h"
 
 class UResolveVanityURLNode;

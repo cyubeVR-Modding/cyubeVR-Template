@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "UWorksSteamID.h"
 #include "SetMemoDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "SetMemoNode.generated.h"
 
 class USetMemoNode;

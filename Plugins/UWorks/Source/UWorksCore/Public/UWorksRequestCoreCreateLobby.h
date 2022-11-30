@@ -2,10 +2,10 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestCore.h"
 #include "CreateLobbyDelegateDelegate.h"
-#include "EUWorksResult.h"
 #include "CreateLobbyMinimalDelegateDelegate.h"
 #include "EUWorksLobbyType.h"
 #include "UWorksSteamID.h"
+#include "EUWorksResult.h"
 #include "UWorksRequestCoreCreateLobby.generated.h"
 
 UCLASS(Blueprintable)

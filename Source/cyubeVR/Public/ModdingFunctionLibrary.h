@@ -4,8 +4,8 @@
 #include "ModTutorialEntry.h"
 #include "ModdingFunctionLibrary.generated.h"
 
-class UObject;
 class AInventory;
+class UObject;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API UModdingFunctionLibrary : public UBlueprintFunctionLibrary {

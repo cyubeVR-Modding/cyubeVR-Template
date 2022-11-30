@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "Engine/EngineTypes.h"
 #include "LightReceiveInterface.h"
 #include "UObject/NoExportTypes.h"
-#include "Engine/EngineTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "DeerCPP.generated.h"
 
-class AChunkManager;
 class UMeshComponent;
+class AChunkManager;
 class AActor;
 
 UCLASS(Blueprintable)
@@ -49,7 +49,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void StartMoving();
     
-    UFUNCTION(BlueprintNativeEvent)
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void SetMobilityAllEvent(EComponentMobility::Type NewMobility);
     
     UFUNCTION(BlueprintCallable)

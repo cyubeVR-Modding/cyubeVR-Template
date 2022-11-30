@@ -6,9 +6,9 @@
 #include "BlockItem.generated.h"
 
 class UMaterialInstanceDynamic;
-class UBoxComponent;
 class ABlockItem;
 class UTextRenderComponent;
+class UBoxComponent;
 class UParticleSystemComponent;
 class AChunkManager;
 

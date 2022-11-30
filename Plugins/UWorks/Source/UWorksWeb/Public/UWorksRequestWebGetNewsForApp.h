@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "GetNewsForAppDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "GetNewsForAppMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetNewsForApp.generated.h"
 

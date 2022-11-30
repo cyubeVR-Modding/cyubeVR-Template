@@ -1,8 +1,8 @@
 #include "RuntimeMeshComponent.h"
 
 class UMaterialInterface;
-class URuntimeMesh;
 class URuntimeMeshProvider;
+class URuntimeMesh;
 
 void URuntimeMeshComponent::SetupMaterialSlot(int32 MaterialSlot, FName SlotName, UMaterialInterface* InMaterial) {
 }

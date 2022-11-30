@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "GetUGCFileDetailsMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "GetUGCFileDetailsDelegateDelegate.h"
-#include "GetUGCFileDetailsMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebGetUGCFileDetails.generated.h"
 

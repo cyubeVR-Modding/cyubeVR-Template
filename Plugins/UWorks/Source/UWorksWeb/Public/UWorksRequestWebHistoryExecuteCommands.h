@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "HistoryExecuteCommandsDelegateDelegate.h"
-#include "UWorksRequestWeb.h"
 #include "HistoryExecuteCommandsMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksSteamID.h"
+#include "HistoryExecuteCommandsDelegateDelegate.h"
 #include "UWorksRequestWebHistoryExecuteCommands.generated.h"
 
 UCLASS(Blueprintable)

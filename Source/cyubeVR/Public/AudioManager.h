@@ -3,8 +3,8 @@
 #include "GameFramework/Actor.h"
 #include "AudioManager.generated.h"
 
-class USoundClass;
 class USoundBase;
+class USoundClass;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API AAudioManager : public AActor {

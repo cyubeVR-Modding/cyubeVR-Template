@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetLeaderboardsForGameMinimalDelegateDelegate.h"
-#include "UWorksRequestWeb.h"
 #include "GetLeaderboardsForGameDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
+#include "GetLeaderboardsForGameMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetLeaderboardsForGame.generated.h"
 
 UCLASS(Blueprintable)

@@ -1,5 +1,9 @@
 #include "DynamicResolutionScalingActor.h"
 
+bool ADynamicResolutionScalingActor::IsVeryHighEndGPU() {
+    return false;
+}
+
 bool ADynamicResolutionScalingActor::IsHighEndGPU() {
     return false;
 }

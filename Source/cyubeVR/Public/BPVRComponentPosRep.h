@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
-#include "EVRVectorQuantization.h"
 #include "EVRRotationQuantization.h"
+#include "EVRVectorQuantization.h"
 #include "BPVRComponentPosRep.generated.h"
 
 USTRUCT(BlueprintType)

@@ -3,8 +3,8 @@
 class UUWorksRequestWebSetBanStatus;
 class UUWorksRequestWebSetMemo;
 class UUWorksRequestWebResetLoginToken;
-class UUWorksRequestWebGetServerSteamIDsByIP;
 class UUWorksRequestWebQueryLoginToken;
+class UUWorksRequestWebGetServerSteamIDsByIP;
 class UUWorksRequestWebGetServerIPsBySteamID;
 class UUWorksRequestWebGetAccountPublicInfo;
 class UUWorksRequestWebGetAccountList;

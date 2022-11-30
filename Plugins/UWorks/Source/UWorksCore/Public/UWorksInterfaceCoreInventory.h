@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksSteamInventoryResult.h"
 #include "UWorksInterfaceCore.h"
-#include "SteamInventoryResultReadyDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "SteamInventoryFullUpdateDelegateDelegate.h"
+#include "SteamInventoryResultReadyDelegateDelegate.h"
+#include "UWorksSteamInventoryResult.h"
+#include "UWorksSteamID.h"
 #include "SteamInventoryDefinitionUpdateDelegateDelegate.h"
 #include "UWorksSteamItemDef.h"
 #include "UWorksSteamItemInstanceID.h"

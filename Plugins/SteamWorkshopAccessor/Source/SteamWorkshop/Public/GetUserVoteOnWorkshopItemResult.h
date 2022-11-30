@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EVoteType.h"
 #include "GeneralWorkshopItemResult.h"
+#include "EVoteType.h"
 #include "GetUserVoteOnWorkshopItemResult.generated.h"
 
 USTRUCT(BlueprintType)

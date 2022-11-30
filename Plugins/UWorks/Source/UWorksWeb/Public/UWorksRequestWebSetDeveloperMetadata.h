@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
-#include "UWorksPublishedFileID.h"
 #include "SetDeveloperMetadataDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "SetDeveloperMetadataMinimalDelegateDelegate.h"
+#include "UWorksPublishedFileID.h"
 #include "UWorksRequestWebSetDeveloperMetadata.generated.h"
 
 UCLASS(Blueprintable)

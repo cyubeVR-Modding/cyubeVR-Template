@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "GetPublisherAppOwnershipDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "GetPublisherAppOwnershipMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebGetPublisherAppOwnership.generated.h"

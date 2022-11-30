@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetFollowerCountDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "EUWorksResult.h"
+#include "GetFollowerCountDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "EUWorksResult.h"
 #include "CoreGetFollowerCountNode.generated.h"
 
 class UCoreGetFollowerCountNode;

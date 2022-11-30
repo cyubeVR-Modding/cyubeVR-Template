@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetQuantityMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
-#include "UWorksSteamItemDef.h"
 #include "GetQuantityDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetQuantityMinimalDelegateDelegate.h"
+#include "UWorksSteamItemDef.h"
 #include "UWorksRequestWebGetQuantity.generated.h"
 
 UCLASS(Blueprintable)

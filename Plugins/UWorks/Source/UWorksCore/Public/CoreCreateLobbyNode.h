@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksLobbyType.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "CreateLobbyDelegateDelegate.h"
-#include "EUWorksResult.h"
 #include "UWorksSteamID.h"
+#include "EUWorksResult.h"
+#include "EUWorksLobbyType.h"
 #include "CoreCreateLobbyNode.generated.h"
 
 class UCoreCreateLobbyNode;

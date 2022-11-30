@@ -3,8 +3,8 @@
 #include "GameFramework/Actor.h"
 #include "AttachedRain.generated.h"
 
-class UAudioComponent;
 class USceneCaptureComponent;
+class UAudioComponent;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API AAttachedRain : public AActor {

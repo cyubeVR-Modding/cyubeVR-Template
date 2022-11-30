@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UWorksPartnerAccounts.h"
 #include "UWorksInterfaceWeb.h"
 #include "UWorksAssociatedWorkshopFiles.h"
-#include "UWorksPartnerAccounts.h"
 #include "PopulateItemDescriptionsMinimalDelegateDelegate.h"
 #include "SetItemPaymentRulesMinimalDelegateDelegate.h"
+#include "GetFinalizedContributorsMinimalDelegateDelegate.h"
 #include "UWorksLanguages.h"
 #include "GetItemDailyRevenueMinimalDelegateDelegate.h"
-#include "GetFinalizedContributorsMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebWorkshop.generated.h"
 
+class UUWorksRequestWebPopulateItemDescriptions;
 class UUWorksRequestWebSetItemPaymentRules;
 class UUWorksRequestWebGetItemDailyRevenue;
-class UUWorksRequestWebPopulateItemDescriptions;
 class UUWorksRequestWebGetFinalizedContributors;
 
 UCLASS(Blueprintable)

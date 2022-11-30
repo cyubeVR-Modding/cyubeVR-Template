@@ -146,6 +146,178 @@
 			"name": "/actions/main/in/open_console",
 			"type": "boolean",
 			"requirement": "optional"
+		},
+		{
+			"name": "/actions/main/in/8KScreenshot",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/AdjustBlockPlacementDistance",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/Bucket_Hold",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/DrawReleaseArrowRightHand",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/GrabLeft",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/GrabRight",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/Inventory",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/InventoryClick",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/PictureFrameCenterClickLeft",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/PictureFrameCenterClickRight",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/PlaceBlockRight",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/SelectDownRight",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/SelectUpRight",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/SnapTurnLeft",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/SnapTurnRight",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/Teleport_Left_Hold",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/Teleport_Right_Hold",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/RadialMenuRight",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/RadialMenuLeft",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/PlaceBlockLeft",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/DrawReleaseArrowLeftHand",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/SelectUpLeft",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/SelectDownLeft",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/WalkActive",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/SmoothTurningActive",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/SmoothLocoNotAllowed",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/SmoothTurnNotAllowed",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/GripCapSenseLeft axis",
+			"type": "vector1"
+		},
+		{
+			"name": "/actions/main/in/GripCapSenseRight axis",
+			"type": "vector1"
+		},
+		{
+			"name": "/actions/main/in/IndexFingerCurlAxis axis",
+			"type": "vector1"
+		},
+		{
+			"name": "/actions/main/in/LeftTouchpadTouch axis",
+			"type": "vector1"
+		},
+		{
+			"name": "/actions/main/in/RightTouchpadTouch axis",
+			"type": "vector1"
+		},
+		{
+			"name": "/actions/main/in/SmoothLoco_X,SmoothLoco_Y X Y_axis2d",
+			"type": "vector2"
+		},
+		{
+			"name": "/actions/main/in/SmoothTurn_X,SmoothTurn_Y X Y_axis2d",
+			"type": "vector2"
+		},
+		{
+			"name": "/actions/main/in/SqueezeLeft axis",
+			"type": "vector1"
+		},
+		{
+			"name": "/actions/main/in/SqueezeRight axis",
+			"type": "vector1"
+		},
+		{
+			"name": "/actions/main/in/TeleportDirectionLeft_X axis",
+			"type": "vector1"
+		},
+		{
+			"name": "/actions/main/in/TeleportDirectionLeft_Y axis",
+			"type": "vector1"
+		},
+		{
+			"name": "/actions/main/in/TeleportDirectionRight_X,TeleportDirectionRight_Y X Y_axis2d",
+			"type": "vector2"
+		},
+		{
+			"name": "/actions/main/in/TouchpadForceRight axis",
+			"type": "vector1"
+		},
+		{
+			"name": "/actions/main/in/TouchpadScrollRight_X,TouchpadScrollRight_Y X Y_axis2d",
+			"type": "vector2"
+		},
+		{
+			"name": "/actions/main/in/AdjustBlockPlaceDistanceRight_X,AdjustBlockPlaceDistanceRight_Y X Y_axis2d",
+			"type": "vector2"
+		},
+		{
+			"name": "/actions/main/in/AdjustBlockPlaceDistanceLeft_X,AdjustBlockPlaceDistanceLeft_Y X Y_axis2d",
+			"type": "vector2"
 		}
 	],
 	"action_sets": [
@@ -288,6 +460,49 @@
 			"/actions/main/out/vibrateleft": "Haptic (Left)",
 			"/actions/main/out/vibrateright": "Haptic (Right)",
 			"/actions/main/in/open_console": "Open Console",
+			"/actions/main/in/8KScreenshot": "8KScreenshot",
+			"/actions/main/in/AdjustBlockPlacementDistance": "AdjustBlockPlacementDistance",
+			"/actions/main/in/Bucket_Hold": "Bucket_Hold",
+			"/actions/main/in/DrawReleaseArrowRightHand": "DrawReleaseArrowRightHand",
+			"/actions/main/in/GrabLeft": "GrabLeft",
+			"/actions/main/in/GrabRight": "GrabRight",
+			"/actions/main/in/Inventory": "Inventory",
+			"/actions/main/in/InventoryClick": "InventoryClick",
+			"/actions/main/in/PictureFrameCenterClickLeft": "PictureFrameCenterClickLeft",
+			"/actions/main/in/PictureFrameCenterClickRight": "PictureFrameCenterClickRight",
+			"/actions/main/in/PlaceBlockRight": "PlaceBlockRight",
+			"/actions/main/in/SelectDownRight": "SelectDownRight",
+			"/actions/main/in/SelectUpRight": "SelectUpRight",
+			"/actions/main/in/SnapTurnLeft": "SnapTurnLeft",
+			"/actions/main/in/SnapTurnRight": "SnapTurnRight",
+			"/actions/main/in/Teleport_Left_Hold": "Teleport_Left_Hold",
+			"/actions/main/in/Teleport_Right_Hold": "Teleport_Right_Hold",
+			"/actions/main/in/RadialMenuRight": "RadialMenuRight",
+			"/actions/main/in/RadialMenuLeft": "RadialMenuLeft",
+			"/actions/main/in/PlaceBlockLeft": "PlaceBlockLeft",
+			"/actions/main/in/DrawReleaseArrowLeftHand": "DrawReleaseArrowLeftHand",
+			"/actions/main/in/SelectUpLeft": "SelectUpLeft",
+			"/actions/main/in/SelectDownLeft": "SelectDownLeft",
+			"/actions/main/in/WalkActive": "WalkActive",
+			"/actions/main/in/SmoothTurningActive": "SmoothTurningActive",
+			"/actions/main/in/SmoothLocoNotAllowed": "SmoothLocoNotAllowed",
+			"/actions/main/in/SmoothTurnNotAllowed": "SmoothTurnNotAllowed",
+			"/actions/main/in/GripCapSenseLeft axis": "GripCapSenseLeft",
+			"/actions/main/in/GripCapSenseRight axis": "GripCapSenseRight",
+			"/actions/main/in/IndexFingerCurlAxis axis": "IndexFingerCurlAxis",
+			"/actions/main/in/LeftTouchpadTouch axis": "LeftTouchpadTouch",
+			"/actions/main/in/RightTouchpadTouch axis": "RightTouchpadTouch",
+			"/actions/main/in/SmoothLoco_X,SmoothLoco_Y X Y_axis2d": "SmoothLoco",
+			"/actions/main/in/SmoothTurn_X,SmoothTurn_Y X Y_axis2d": "SmoothTurn",
+			"/actions/main/in/SqueezeLeft axis": "SqueezeLeft",
+			"/actions/main/in/SqueezeRight axis": "SqueezeRight",
+			"/actions/main/in/TeleportDirectionLeft_X axis": "TeleportDirectionLeft_X",
+			"/actions/main/in/TeleportDirectionLeft_Y axis": "TeleportDirectionLeft_Y",
+			"/actions/main/in/TeleportDirectionRight_X,TeleportDirectionRight_Y X Y_axis2d": "TeleportDirectionRight",
+			"/actions/main/in/TouchpadForceRight axis": "TouchpadForceRight",
+			"/actions/main/in/TouchpadScrollRight_X,TouchpadScrollRight_Y X Y_axis2d": "TouchpadScrollRight",
+			"/actions/main/in/AdjustBlockPlaceDistanceRight_X,AdjustBlockPlaceDistanceRight_Y X Y_axis2d": "AdjustBlockPlaceDistanceRight",
+			"/actions/main/in/AdjustBlockPlaceDistanceLeft_X,AdjustBlockPlaceDistanceLeft_Y X Y_axis2d": "AdjustBlockPlaceDistanceLeft",
 			"/actions/main": "Main Game Actions"
 		}
 	]

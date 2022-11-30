@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "GetAppListDelegateDelegate.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
 #include "GetAppListNode.generated.h"
 
 class UGetAppListNode;

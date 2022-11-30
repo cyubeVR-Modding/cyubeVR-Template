@@ -5,7 +5,7 @@
 			"app_key": "application.generated.ue.cyubevr-18319896.ue4editor.exe",
 			"launch_type": "url",
 			"url": "steam://launch/",
-			"action_manifest_path": "F:/CyubeVR Modding/UE4 Project Generator/cyubeVRTemplateU51.54/Config/SteamVRBindings/steamvr_manifest.json",
+			"action_manifest_path": "F:/CyubeVR Modding/UE4 Project Generator/cyubeVRTemplateU54.1/Config/SteamVRBindings/steamvr_manifest.json",
 			"strings":
 			{
 				"en_us":

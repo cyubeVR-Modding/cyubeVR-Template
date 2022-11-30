@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RequestEncryptedAppTicketMinimalDelegateDelegate.h"
 #include "UWorksRequestCore.h"
 #include "RequestEncryptedAppTicketDelegateDelegate.h"
 #include "EUWorksResult.h"
+#include "RequestEncryptedAppTicketMinimalDelegateDelegate.h"
 #include "UWorksRequestCoreRequestEncryptedAppTicket.generated.h"
 
 UCLASS(Blueprintable)

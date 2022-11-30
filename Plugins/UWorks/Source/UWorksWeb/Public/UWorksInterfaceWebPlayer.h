@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceWeb.h"
 #include "GetSteamLevelMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "UWorksPlaySessions.h"
+#include "UWorksInterfaceWeb.h"
+#include "UWorksSteamID.h"
 #include "RecordOfflinePlaytimeMinimalDelegateDelegate.h"
 #include "IsPlayingSharedGameMinimalDelegateDelegate.h"
 #include "GetRecentlyPlayedGamesMinimalDelegateDelegate.h"
@@ -12,8 +12,8 @@
 #include "GetBadgesMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebPlayer.generated.h"
 
-class UUWorksRequestWebRecordOfflinePlaytime;
 class UUWorksRequestWebIsPlayingSharedGame;
+class UUWorksRequestWebRecordOfflinePlaytime;
 class UUWorksRequestWebGetSteamLevel;
 class UUWorksRequestWebGetRecentlyPlayedGames;
 class UUWorksRequestWebGetOwnedGames;

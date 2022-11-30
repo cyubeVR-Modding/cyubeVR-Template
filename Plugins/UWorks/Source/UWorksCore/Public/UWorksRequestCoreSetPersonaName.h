@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestCore.h"
 #include "SetPersonaNameDelegateDelegate.h"
-#include "EUWorksResult.h"
 #include "SetPersonaNameMinimalDelegateDelegate.h"
+#include "EUWorksResult.h"
 #include "UWorksRequestCoreSetPersonaName.generated.h"
 
 UCLASS(Blueprintable)

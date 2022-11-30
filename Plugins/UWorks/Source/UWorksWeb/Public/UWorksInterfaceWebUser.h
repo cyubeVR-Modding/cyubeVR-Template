@@ -3,19 +3,19 @@
 #include "UWorksInterfaceWeb.h"
 #include "GrantPackageMinimalDelegateDelegate.h"
 #include "ResolveVanityURLMinimalDelegateDelegate.h"
-#include "GetPublisherAppOwnershipMinimalDelegateDelegate.h"
-#include "GetPlayerSummariesMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "GetUserGroupListMinimalDelegateDelegate.h"
+#include "GetPublisherAppOwnershipMinimalDelegateDelegate.h"
 #include "GetPublisherAppOwnershipChangesMinimalDelegateDelegate.h"
+#include "GetPlayerSummariesMinimalDelegateDelegate.h"
 #include "GetPlayerBansMinimalDelegateDelegate.h"
 #include "GetFriendListMinimalDelegateDelegate.h"
 #include "GetAppPriceInfoMinimalDelegateDelegate.h"
 #include "CheckAppOwnershipMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebUser.generated.h"
 
-class UUWorksRequestWebGetUserGroupList;
 class UUWorksRequestWebResolveVanityURL;
+class UUWorksRequestWebGetUserGroupList;
 class UUWorksRequestWebGrantPackage;
 class UUWorksRequestWebGetPublisherAppOwnershipChanges;
 class UUWorksRequestWebGetPublisherAppOwnership;

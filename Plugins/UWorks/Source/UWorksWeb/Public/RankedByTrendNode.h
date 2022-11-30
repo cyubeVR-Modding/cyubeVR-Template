@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "UWorksSteamID.h"
 #include "RankedByTrendDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "RankedByTrendNode.generated.h"
 
 class URankedByTrendNode;

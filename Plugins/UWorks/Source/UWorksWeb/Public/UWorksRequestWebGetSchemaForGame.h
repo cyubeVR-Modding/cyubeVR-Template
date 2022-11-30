@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "GetSchemaForGameMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "GetSchemaForGameDelegateDelegate.h"
-#include "GetSchemaForGameMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetSchemaForGame.generated.h"
 
 UCLASS(Blueprintable)

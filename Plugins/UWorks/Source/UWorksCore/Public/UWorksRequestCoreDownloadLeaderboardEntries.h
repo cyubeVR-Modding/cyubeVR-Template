@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksLeaderboardDataRequest.h"
 #include "UWorksRequestCore.h"
+#include "UWorksSteamLeaderboard.h"
 #include "DownloadLeaderboardEntriesDelegateDelegate.h"
 #include "DownloadLeaderboardEntriesMinimalDelegateDelegate.h"
+#include "EUWorksLeaderboardDataRequest.h"
 #include "UWorksSteamLeaderboardEntries.h"
-#include "UWorksSteamLeaderboard.h"
 #include "UWorksRequestCoreDownloadLeaderboardEntries.generated.h"
 
 UCLASS(Blueprintable)

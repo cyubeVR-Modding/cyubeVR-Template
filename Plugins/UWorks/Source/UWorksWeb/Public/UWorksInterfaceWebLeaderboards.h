@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksInterfaceWeb.h"
-#include "ResetLeaderboardMinimalDelegateDelegate.h"
+#include "GetLeaderboardsForGameMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "SetLeaderboardScoreMinimalDelegateDelegate.h"
-#include "GetLeaderboardsForGameMinimalDelegateDelegate.h"
+#include "DeleteLeaderboardMinimalDelegateDelegate.h"
+#include "ResetLeaderboardMinimalDelegateDelegate.h"
 #include "GetLeaderboardEntriesMinimalDelegateDelegate.h"
 #include "FindOrCreateLeaderboardMinimalDelegateDelegate2.h"
-#include "DeleteLeaderboardMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebLeaderboards.generated.h"
 
-class UUWorksRequestWebSetLeaderboardScore;
 class UUWorksRequestWebGetLeaderboardsForGame;
+class UUWorksRequestWebSetLeaderboardScore;
 class UUWorksRequestWebResetLeaderboard;
 class UUWorksRequestWebGetLeaderboardEntries;
 class UUWorksRequestWebFindOrCreateLeaderboard;

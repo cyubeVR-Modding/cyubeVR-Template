@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Storage.h"
-#include "UObject/NoExportTypes.h"
 #include "EBlockTypeBP.h"
+#include "UObject/NoExportTypes.h"
 #include "ChestInternals.generated.h"
 
 class AInventory;

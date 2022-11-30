@@ -3,8 +3,8 @@
 #include "GameFramework/Actor.h"
 #include "StorageItem.h"
 #include "EBlockTypeBP.h"
-#include "UObject/NoExportTypes.h"
 #include "EItemClass.h"
+#include "UObject/NoExportTypes.h"
 #include "Storage.generated.h"
 
 class AChestInternals;

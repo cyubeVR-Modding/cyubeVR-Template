@@ -2,9 +2,9 @@
 #include "CoreMinimal.h"
 #include "UpdateTagsMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWeb.h"
-#include "UWorksRequiredKVTags.h"
 #include "UWorksPublishedFileID.h"
 #include "SetDeveloperMetadataMinimalDelegateDelegate.h"
+#include "UWorksRequiredKVTags.h"
 #include "QueryFilesMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebPublishedFile.generated.h"
 

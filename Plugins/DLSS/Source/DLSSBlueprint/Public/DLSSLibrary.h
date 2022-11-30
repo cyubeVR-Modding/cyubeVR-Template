@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UDLSSSupport.h"
+#include "UObject/NoExportTypes.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "UDLSSMode.h"
-#include "UObject/NoExportTypes.h"
+#include "UDLSSSupport.h"
 #include "DLSSLibrary.generated.h"
 
 UCLASS(Blueprintable, MinimalAPI)

@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksInterfaceCore.h"
-#include "ScreenshotRequestedDelegateDelegate.h"
 #include "ScreenshotReadyDelegateDelegate.h"
-#include "UWorksScreenshotHandle.h"
 #include "UWorksSteamID.h"
+#include "ScreenshotRequestedDelegateDelegate.h"
+#include "UWorksScreenshotHandle.h"
 #include "UWorksPublishedFileID.h"
 #include "EUWorksVRScreenshotType.h"
 #include "UWorksInterfaceCoreScreenshots.generated.h"

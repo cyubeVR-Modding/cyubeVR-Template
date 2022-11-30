@@ -13,13 +13,13 @@
 #include "UWorksInterfaceWebRemoteStorage.generated.h"
 
 class UUWorksRequestWebSetUGCUsedByGC;
-class UUWorksRequestWebSubscribePublishedFile;
 class UUWorksRequestWebUnsubscribePublishedFile;
+class UUWorksRequestWebSubscribePublishedFile;
 class UUWorksRequestWebGetUGCFileDetails;
+class UUWorksRequestWebEnumerateUserPublishedFiles;
 class UUWorksRequestWebGetPublishedFileDetails;
 class UUWorksRequestWebGetCollectionDetails;
 class UUWorksRequestWebEnumerateUserSubscribedFiles;
-class UUWorksRequestWebEnumerateUserPublishedFiles;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebRemoteStorage : public UUWorksInterfaceWeb {

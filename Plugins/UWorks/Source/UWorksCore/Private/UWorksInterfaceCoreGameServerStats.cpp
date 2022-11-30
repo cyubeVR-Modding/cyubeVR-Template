@@ -1,7 +1,7 @@
 #include "UWorksInterfaceCoreGameServerStats.h"
 
-class UUWorksRequestCoreRequestUserStatsGS;
 class UUWorksRequestCoreStoreUserStats;
+class UUWorksRequestCoreRequestUserStatsGS;
 class UUWorksInterfaceCoreGameServerStats;
 
 bool UUWorksInterfaceCoreGameServerStats::UpdateUserAvgRateStat(FUWorksSteamID SteamIDUser, const FString& Name, float CountThisSession, float SessionLength) {

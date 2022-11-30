@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetFriendListDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
-#include "GetFriendListMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetFriendListDelegateDelegate.h"
+#include "GetFriendListMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetFriendList.generated.h"
 
 UCLASS(Blueprintable)

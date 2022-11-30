@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetAppListDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
+#include "GetAppListDelegateDelegate.h"
 #include "GetAppListMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetAppList.generated.h"
 

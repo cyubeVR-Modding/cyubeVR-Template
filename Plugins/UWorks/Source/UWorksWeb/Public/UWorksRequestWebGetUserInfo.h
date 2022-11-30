@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetUserInfoMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "GetUserInfoDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetUserInfoMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetUserInfo.generated.h"
 
 UCLASS(Blueprintable)

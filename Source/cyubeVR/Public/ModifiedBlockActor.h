@@ -6,8 +6,8 @@
 #include "ModifiedBlockActor.generated.h"
 
 class UMaterialInstance;
-class UMaterialInstanceDynamic;
 class UStaticMeshComponent;
+class UMaterialInstanceDynamic;
 class AChunkManager;
 
 UCLASS(Blueprintable)

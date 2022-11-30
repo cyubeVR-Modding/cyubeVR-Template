@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "PlayersDelegateDelegate.h"
-#include "UWorksRequestCore.h"
-#include "PlayersUpdateDelegateDelegate.h"
 #include "UWorksPlayerInfo.h"
+#include "UWorksRequestCore.h"
+#include "PlayersDelegateDelegate.h"
+#include "PlayersUpdateDelegateDelegate.h"
 #include "PlayersMinimalDelegateDelegate.h"
 #include "PlayersUpdateMinimalDelegateDelegate.h"
 #include "UWorksRequestCorePlayers.generated.h"

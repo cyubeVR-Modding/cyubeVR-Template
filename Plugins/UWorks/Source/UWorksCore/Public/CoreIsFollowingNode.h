@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "IsFollowingDelegateDelegate.h"
-#include "EUWorksResult.h"
 #include "UWorksSteamID.h"
+#include "EUWorksResult.h"
 #include "CoreIsFollowingNode.generated.h"
 
 class UCoreIsFollowingNode;

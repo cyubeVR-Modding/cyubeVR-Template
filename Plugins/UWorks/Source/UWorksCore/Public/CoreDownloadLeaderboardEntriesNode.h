@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "UWorksSteamLeaderboard.h"
 #include "DownloadLeaderboardEntriesDelegateDelegate.h"
 #include "UWorksSteamLeaderboardEntries.h"
-#include "UWorksSteamLeaderboard.h"
 #include "EUWorksLeaderboardDataRequest.h"
 #include "CoreDownloadLeaderboardEntriesNode.generated.h"
 

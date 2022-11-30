@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
 #include "GameFramework/Pawn.h"
 #include "LightReceiveInterface.h"
-#include "UObject/NoExportTypes.h"
 #include "VRCharacter.generated.h"
 
 class UMeshComponent;

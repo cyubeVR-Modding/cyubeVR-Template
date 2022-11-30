@@ -4,8 +4,8 @@
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "BPLowPassPeakFilter.h"
 #include "UObject/NoExportTypes.h"
-#include "BPGripPair.h"
 #include "UObject/NoExportTypes.h"
+#include "BPGripPair.h"
 #include "BPEuroLowPassFilter.h"
 #include "Engine/NetSerialization.h"
 #include "Engine/NetSerialization.h"
@@ -14,12 +14,12 @@
 #include "EBPHMDWornState.h"
 #include "EBPHMDDeviceType.h"
 #include "InputCoreTypes.h"
-#include "UObject/NoExportTypes.h"
 #include "BPActorGripInformation.h"
+#include "UObject/NoExportTypes.h"
 #include "VRExpansionFunctionLibrary.generated.h"
 
-class UPrimitiveComponent;
 class USplineComponent;
+class UPrimitiveComponent;
 class USplineMeshComponent;
 class UObject;
 class AActor;
@@ -115,7 +115,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static UGripMotionControllerComponent* Conv_GripPairToMotionController(const FBPGripPair& GripPair);
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     static uint8 Conv_GripPairToGripID(const FBPGripPair& GripPair);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)

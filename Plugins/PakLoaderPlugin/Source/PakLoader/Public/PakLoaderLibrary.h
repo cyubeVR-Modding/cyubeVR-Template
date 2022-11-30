@@ -3,13 +3,13 @@
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "PakLoaderLibrary.generated.h"
 
-class UMaterialInstanceConstant;
+class UMaterial;
+class UTexture2D;
 class USkeletalMesh;
 class UStaticMesh;
-class UTexture2D;
 class USoundBase;
-class UMaterial;
 class UObject;
+class UMaterialInstanceConstant;
 class UAnimSequence;
 
 UCLASS(Blueprintable)

@@ -1,13 +1,13 @@
 #include "ChunkManager.h"
 
-class AActor;
 class ADraftUnlockingPaper;
+class AActor;
+class UParticleSystem;
 class AModifiedBlockActor;
 class ADeathBeacon;
 class AMeshObject;
 class ABlockItem;
 class USoundBase;
-class UParticleSystem;
 
 void AChunkManager::UpdateSkyEvent_Implementation(float NewTimeOfDay) {
 }
@@ -322,6 +322,7 @@ FVector AChunkManager::AbsoluteWorldToRealWorld(FIntVector AbsoluteWorld) {
 
 AChunkManager::AChunkManager() {
     this->ForceKnucklesControls = false;
+    this->WalkingSpeedOverdrive = false;
     this->InitialLoadFinished = false;
     this->ViewDistanceByINI = 20;
     this->DoAnything = true;

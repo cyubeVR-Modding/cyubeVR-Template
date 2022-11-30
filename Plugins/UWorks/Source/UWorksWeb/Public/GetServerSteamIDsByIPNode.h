@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "GetServerSteamIDsByIPDelegateDelegate.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
 #include "GetServerSteamIDsByIPNode.generated.h"
 
 class UGetServerSteamIDsByIPNode;

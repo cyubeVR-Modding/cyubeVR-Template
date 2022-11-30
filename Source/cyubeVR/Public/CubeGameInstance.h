@@ -4,12 +4,12 @@
 #include "BenchmarkResults.h"
 #include "CubeGameInstance.generated.h"
 
+class UTexture2DArray;
 class USoundBase;
+class UCustomBlockManager;
+class UTexture2D;
 class UAudioComponent;
 class UTextureRenderTarget2D;
-class UCustomBlockManager;
-class UTexture2DArray;
-class UTexture2D;
 class UMaterialParameterCollection;
 
 UCLASS(Blueprintable, NonTransient)

@@ -3,8 +3,8 @@
 #include "Engine/DeveloperSettings.h"
 #include "ERuntimeMeshUpdateFrequency.h"
 #include "ERuntimeMeshThreadingPriority.h"
-#include "UObject/NoExportTypes.h"
 #include "ERuntimeMeshCollisionCookingMode.h"
+#include "UObject/NoExportTypes.h"
 #include "RuntimeMeshComponentSettings.generated.h"
 
 UCLASS(Blueprintable, DefaultConfig, Config=RuntimeMeshComponent)

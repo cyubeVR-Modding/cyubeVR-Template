@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "EGSTransformOverrideType.h"
 #include "UObject/Object.h"
-#include "Engine/EngineTypes.h"
+#include "EBPVRResultSwitch.h"
+#include "EGSTransformOverrideType.h"
 #include "BPActorGripInformation.h"
 #include "UObject/NoExportTypes.h"
-#include "EBPVRResultSwitch.h"
+#include "Engine/EngineTypes.h"
 #include "VRGripScriptBase.generated.h"
 
 class UGripMotionControllerComponent;
@@ -65,7 +65,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void OnGrip(UGripMotionControllerComponent* GrippingController, const FBPActorGripInformation& GripInformation);
     
-    UFUNCTION(BlueprintNativeEvent)
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void OnEndPlay(const EEndPlayReason::Type EndPlayReason);
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)

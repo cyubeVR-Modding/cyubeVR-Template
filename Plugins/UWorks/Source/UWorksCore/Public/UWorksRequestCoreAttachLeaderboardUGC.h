@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AttachLeaderboardUGCDelegateDelegate.h"
 #include "UWorksRequestCore.h"
-#include "UWorksSteamLeaderboard.h"
-#include "AttachLeaderboardUGCMinimalDelegateDelegate.h"
-#include "UWorksUGCHandle.h"
 #include "EUWorksResult.h"
+#include "AttachLeaderboardUGCDelegateDelegate.h"
+#include "AttachLeaderboardUGCMinimalDelegateDelegate.h"
+#include "UWorksSteamLeaderboard.h"
+#include "UWorksUGCHandle.h"
 #include "UWorksRequestCoreAttachLeaderboardUGC.generated.h"
 
 UCLASS(Blueprintable)

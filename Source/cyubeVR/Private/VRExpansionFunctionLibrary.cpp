@@ -1,10 +1,10 @@
 #include "VRExpansionFunctionLibrary.h"
 #include "Templates/SubclassOf.h"
 
-class UPrimitiveComponent;
-class UObject;
 class USplineComponent;
+class UPrimitiveComponent;
 class USplineMeshComponent;
+class UObject;
 class AActor;
 class UGripMotionControllerComponent;
 class USceneComponent;

@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "FinalizeAssetTransactionMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
-#include "UWorksSteamID.h"
 #include "FinalizeAssetTransactionDelegateDelegate.h"
+#include "UWorksSteamID.h"
+#include "FinalizeAssetTransactionMinimalDelegateDelegate.h"
 #include "UWorksRequestWebFinalizeAssetTransaction.generated.h"
 
 UCLASS(Blueprintable)

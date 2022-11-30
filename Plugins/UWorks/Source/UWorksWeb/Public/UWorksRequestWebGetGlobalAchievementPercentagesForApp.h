@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetGlobalAchievementPercentagesForAppMinimalDelegateDelegate.h"
+#include "UWorksGameID.h"
 #include "UWorksRequestWeb.h"
 #include "GetGlobalAchievementPercentagesForAppDelegateDelegate.h"
-#include "UWorksGameID.h"
+#include "GetGlobalAchievementPercentagesForAppMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetGlobalAchievementPercentagesForApp.generated.h"
 
 UCLASS(Blueprintable)

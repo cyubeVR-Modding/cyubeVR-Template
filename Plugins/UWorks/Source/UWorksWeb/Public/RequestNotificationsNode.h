@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "RequestNotificationsDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "RequestNotificationsDelegateDelegate.h"
 #include "RequestNotificationsNode.generated.h"
 
 class URequestNotificationsNode;

@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetOwnedGamesDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
-#include "GetOwnedGamesMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetOwnedGamesDelegateDelegate.h"
+#include "GetOwnedGamesMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetOwnedGames.generated.h"
 
 UCLASS(Blueprintable)

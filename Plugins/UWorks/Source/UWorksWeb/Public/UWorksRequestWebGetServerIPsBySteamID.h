@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetServerIPsBySteamIDMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "GetServerIPsBySteamIDDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetServerIPsBySteamIDMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetServerIPsBySteamID.generated.h"
 
 UCLASS(Blueprintable)

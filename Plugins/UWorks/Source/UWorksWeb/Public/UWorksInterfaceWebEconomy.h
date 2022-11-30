@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksInterfaceWeb.h"
+#include "FinalizeAssetTransactionMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "StartTradeMinimalDelegateDelegate.h"
 #include "StartAssetTransactionMinimalDelegateDelegate.h"
@@ -8,16 +9,15 @@
 #include "GetExportedAssetsForUserMinimalDelegateDelegate.h"
 #include "GetAssetPricesMinimalDelegateDelegate.h"
 #include "GetAssetClassInfoMinimalDelegateDelegate.h"
-#include "FinalizeAssetTransactionMinimalDelegateDelegate.h"
 #include "CanTradeMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebEconomy.generated.h"
 
+class UUWorksRequestWebGetAssetClassInfo;
 class UUWorksRequestWebStartTrade;
 class UUWorksRequestWebStartAssetTransaction;
 class UUWorksRequestWebGetMarketPrices;
 class UUWorksRequestWebGetExportedAssetsForUser;
 class UUWorksRequestWebGetAssetPrices;
-class UUWorksRequestWebGetAssetClassInfo;
 class UUWorksRequestWebFinalizeAssetTransaction;
 class UUWorksRequestWebCanTrade;
 

@@ -1,7 +1,7 @@
 #include "Tool.h"
 
-class ACharacter;
 class AChunkManager;
+class ACharacter;
 
 void ATool::InitTool_Implementation(EBlockTypeBP Type_, AChunkManager* ChunkManager_, ACharacter* Player_) {
 }

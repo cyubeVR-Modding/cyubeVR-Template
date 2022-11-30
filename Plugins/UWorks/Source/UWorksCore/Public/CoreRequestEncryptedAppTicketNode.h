@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "RequestEncryptedAppTicketDelegateDelegate.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
 #include "EUWorksResult.h"
 #include "CoreRequestEncryptedAppTicketNode.generated.h"
 

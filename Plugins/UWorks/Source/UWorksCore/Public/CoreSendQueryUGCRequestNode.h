@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SendQueryUGCRequestDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "SendQueryUGCRequestDelegateDelegate.h"
 #include "UWorksUGCQueryHandle.h"
 #include "EUWorksResult.h"
 #include "CoreSendQueryUGCRequestNode.generated.h"

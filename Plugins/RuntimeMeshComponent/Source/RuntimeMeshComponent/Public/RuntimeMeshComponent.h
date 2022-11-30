@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RuntimeMeshCollisionHitInfo.h"
 #include "Components/MeshComponent.h"
-#include "ERuntimeMeshMobility.h"
 #include "Interfaces/Interface_CollisionDataProvider.h"
+#include "RuntimeMeshCollisionHitInfo.h"
+#include "ERuntimeMeshMobility.h"
 #include "RuntimeMeshMaterialSlot.h"
 #include "RuntimeMeshComponent.generated.h"
 
-class URuntimeMeshProvider;
 class URuntimeMesh;
 class UMaterialInterface;
+class URuntimeMeshProvider;
 
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class RUNTIMEMESHCOMPONENT_API URuntimeMeshComponent : public UMeshComponent, public IInterface_CollisionDataProvider {

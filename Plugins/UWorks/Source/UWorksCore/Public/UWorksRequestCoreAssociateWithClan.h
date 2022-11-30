@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestCore.h"
-#include "EUWorksResult.h"
 #include "AssociateWithClanDelegateDelegate.h"
 #include "AssociateWithClanMinimalDelegateDelegate.h"
+#include "EUWorksResult.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestCoreAssociateWithClan.generated.h"
 

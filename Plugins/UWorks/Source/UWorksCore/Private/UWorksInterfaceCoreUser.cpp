@@ -1,8 +1,8 @@
 #include "UWorksInterfaceCoreUser.h"
 
-class UAudioComponent;
 class UUWorksRequestCoreRequestEncryptedAppTicket;
 class UUWorksRequestCoreRequestStoreAuthURL;
+class UAudioComponent;
 class UUWorksInterfaceCoreUser;
 
 EUWorksUserHasLicenseForAppResult UUWorksInterfaceCoreUser::UserHasLicenseForApp(FUWorksSteamID SteamID, int32 AppID) {

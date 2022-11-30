@@ -3,8 +3,8 @@
 #include "LivCaptureBase.h"
 #include "LivCaptureSingle.generated.h"
 
-class ULivCustomClipPlane;
 class UTextureRenderTarget2D;
+class ULivCustomClipPlane;
 
 UCLASS(Blueprintable, EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class LIV_API ULivCaptureSingle : public ULivCaptureBase {

@@ -6,8 +6,8 @@
 #include "EBlockTypeBP.h"
 #include "CustomBlockManager.generated.h"
 
-class UTexture2DArray;
 class UTexture2D;
+class UTexture2DArray;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API UCustomBlockManager : public UObject {

@@ -2,12 +2,12 @@
 #include "CoreMinimal.h"
 #include "ItemVoteSummaryMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWeb.h"
-#include "UWorksSteamID.h"
 #include "UserVoteSummaryMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksInterfaceWebPublishedItemVoting.generated.h"
 
-class UUWorksRequestWebItemVoteSummary;
 class UUWorksRequestWebUserVoteSummary;
+class UUWorksRequestWebItemVoteSummary;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebPublishedItemVoting : public UUWorksInterfaceWeb {

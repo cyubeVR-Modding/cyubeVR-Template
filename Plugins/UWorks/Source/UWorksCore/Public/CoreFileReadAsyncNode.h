@@ -15,7 +15,7 @@ public:
     FFileReadAsyncDelegate Completed;
     
     UCoreFileReadAsyncNode();
-    UFUNCTION()
+    UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, EUWorksResult Result, int32 Offset, const TArray<uint8>& Buffer);
     
     UFUNCTION(BlueprintCallable)

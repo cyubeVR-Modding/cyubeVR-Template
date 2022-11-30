@@ -8,8 +8,8 @@
 #include "GetHistoryCommandDetailsMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebGameInventory.generated.h"
 
-class UUWorksRequestWebHistoryExecuteCommands;
 class UUWorksRequestWebSupportGetAssetHistory;
+class UUWorksRequestWebHistoryExecuteCommands;
 class UUWorksRequestWebGetUserHistory;
 class UUWorksRequestWebGetHistoryCommandDetails;
 

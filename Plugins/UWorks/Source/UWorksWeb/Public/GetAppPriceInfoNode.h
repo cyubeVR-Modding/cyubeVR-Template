@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetAppPriceInfoDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "GetAppPriceInfoDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "GetAppPriceInfoNode.generated.h"
 

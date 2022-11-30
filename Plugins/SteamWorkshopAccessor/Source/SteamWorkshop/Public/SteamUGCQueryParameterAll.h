@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "SteamUGCQueryParameterAllUser.h"
-#include "EUGCQueryBP.h"
 #include "EUGCMatchingUGCTypeBP.h"
+#include "EUGCQueryBP.h"
 #include "SteamUGCQueryParameterAll.generated.h"
 
 USTRUCT(BlueprintType)

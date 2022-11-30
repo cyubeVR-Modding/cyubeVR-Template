@@ -420,6 +420,22 @@
 			"Type": "SymbolFile"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/AssetDumper/Binaries/Win64/UE4Editor-AssetDumper.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/AssetDumper/Binaries/Win64/UE4Editor-AssetDumper.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/AssetGenerator/Binaries/Win64/UE4Editor-AssetGenerator.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/AssetGenerator/Binaries/Win64/UE4Editor-AssetGenerator.pdb",
+			"Type": "SymbolFile"
+		},
+		{
 			"Path": "$(ProjectDir)/Plugins/RuntimeMeshComponent/Binaries/Win64/UE4Editor-RuntimeMeshComponent.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -4840,6 +4856,14 @@
 			"Type": "RequiredResource"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/AssetDumper/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/AssetGenerator/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
 			"Path": "$(ProjectDir)/Plugins/RuntimeMeshComponent/Binaries/Win64/UE4Editor.modules",
 			"Type": "RequiredResource"
 		},
@@ -5362,6 +5386,14 @@
 			"Type": "UFS"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/AssetDumper/AssetDumper.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/AssetGenerator/AssetGenerator.uplugin",
+			"Type": "UFS"
+		},
+		{
 			"Path": "$(ProjectDir)/Plugins/EnginePlugins/Runtime/PropertyAccess/PropertyAccessEditor.uplugin",
 			"Type": "UFS"
 		},
@@ -5768,6 +5800,110 @@
 		{
 			"Path": "$(EngineDir)/Plugins/XGEController/XGEController.uplugin",
 			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Config/SteamVRBindings/gamepad.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Config/SteamVRBindings/holographic_controller.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Config/SteamVRBindings/hpmotioncontroller.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Config/SteamVRBindings/indexhmd.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Config/SteamVRBindings/knuckles.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Config/SteamVRBindings/oculus_touch.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Config/SteamVRBindings/rift.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Config/SteamVRBindings/steamvr_manifest.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Config/SteamVRBindings/vive.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Config/SteamVRBindings/vive_controller.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Config/SteamVRBindings/vive_cosmos_controller.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Config/SteamVRBindings/vive_pro.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Config/SteamVRBindings/vive_tracker.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Config/SteamVRBindings/vive_tracker_camera.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Config/SteamVRBindings/vive_tracker_chest.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Config/SteamVRBindings/vive_tracker_handed.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Config/SteamVRBindings/vive_tracker_keyboard.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Config/SteamVRBindings/vive_tracker_left_elbow.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Config/SteamVRBindings/vive_tracker_left_foot.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Config/SteamVRBindings/vive_tracker_left_knee.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Config/SteamVRBindings/vive_tracker_left_shoulder.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Config/SteamVRBindings/vive_tracker_right_elbow.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Config/SteamVRBindings/vive_tracker_right_foot.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Config/SteamVRBindings/vive_tracker_right_knee.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Config/SteamVRBindings/vive_tracker_right_shoulder.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Config/SteamVRBindings/vive_tracker_waist.json",
+			"Type": "NonUFS"
 		},
 		{
 			"Path": "$(EngineDir)/Binaries/ThirdParty/OpenVR/OpenVRv1_5_17/Win64/openvr_api.dll",

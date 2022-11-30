@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestCore.h"
-#include "EUWorksResult.h"
 #include "GetFileDetailsDelegateDelegate.h"
 #include "GetFileDetailsMinimalDelegateDelegate.h"
+#include "EUWorksResult.h"
 #include "UWorksRequestCoreGetFileDetails.generated.h"
 
 UCLASS(Blueprintable)

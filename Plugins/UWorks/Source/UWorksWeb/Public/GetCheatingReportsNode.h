@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "UWorksSteamID.h"
 #include "GetCheatingReportsDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "GetCheatingReportsNode.generated.h"
 
 class UGetCheatingReportsNode;

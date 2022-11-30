@@ -3,9 +3,9 @@
 
 class UPrimitiveComponent;
 class AActor;
-class ULivWorldSubsystem;
 class ULocalPlayer;
 class ULivCaptureBase;
+class ULivWorldSubsystem;
 
 void ULivLocalPlayerSubsystem::ShowComponent(UPrimitiveComponent* InComponent) {
 }

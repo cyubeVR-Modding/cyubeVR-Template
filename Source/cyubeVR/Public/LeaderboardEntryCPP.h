@@ -3,8 +3,8 @@
 #include "Blueprint/UserWidget.h"
 #include "LeaderboardEntryCPP.generated.h"
 
-class UTextBlock;
 class UBorder;
+class UTextBlock;
 
 UCLASS(Blueprintable, EditInlineNew)
 class CYUBEVR_API ULeaderboardEntryCPP : public UUserWidget {

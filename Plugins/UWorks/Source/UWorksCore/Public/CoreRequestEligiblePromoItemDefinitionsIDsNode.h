@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "RequestEligiblePromoItemDefinitionsIDsDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "EUWorksResult.h"
+#include "UWorksSteamID.h"
 #include "CoreRequestEligiblePromoItemDefinitionsIDsNode.generated.h"
 
 class UCoreRequestEligiblePromoItemDefinitionsIDsNode;

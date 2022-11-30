@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "RequestClanOfficerListDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "RequestClanOfficerListDelegateDelegate.h"
 #include "CoreRequestClanOfficerListNode.generated.h"
 
 class UCoreRequestClanOfficerListNode;

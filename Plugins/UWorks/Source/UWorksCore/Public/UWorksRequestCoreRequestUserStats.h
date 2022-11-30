@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestCore.h"
+#include "UWorksGameID.h"
 #include "RequestUserStatsDelegateDelegate.h"
 #include "RequestUserStatsMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
-#include "UWorksGameID.h"
 #include "EUWorksResult.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestCoreRequestUserStats.generated.h"
 
 UCLASS(Blueprintable)

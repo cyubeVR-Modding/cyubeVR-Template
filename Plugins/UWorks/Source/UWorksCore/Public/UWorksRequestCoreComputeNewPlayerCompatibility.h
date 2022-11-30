@@ -3,8 +3,8 @@
 #include "UWorksRequestCore.h"
 #include "ComputeNewPlayerCompatibilityDelegateDelegate.h"
 #include "ComputeNewPlayerCompatibilityMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "EUWorksResult.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestCoreComputeNewPlayerCompatibility.generated.h"
 
 UCLASS(Blueprintable)

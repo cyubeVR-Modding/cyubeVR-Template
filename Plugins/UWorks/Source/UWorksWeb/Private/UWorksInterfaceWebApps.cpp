@@ -2,8 +2,8 @@
 
 class UUWorksRequestWebUpToDateCheck;
 class UUWorksRequestWebSetAppBuildLive;
-class UUWorksRequestWebGetServerList;
 class UUWorksRequestWebGetServersAtAddress;
+class UUWorksRequestWebGetServerList;
 class UUWorksRequestWebGetPlayersBanned;
 class UUWorksRequestWebGetCheatingReportsList;
 class UUWorksRequestWebGetAppList;

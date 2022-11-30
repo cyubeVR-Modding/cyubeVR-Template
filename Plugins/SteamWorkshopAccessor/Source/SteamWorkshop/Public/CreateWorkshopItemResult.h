@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UpdateWorkshopItemResult.h"
 #include "SteamWorkshopUpdateDetails.h"
+#include "UpdateWorkshopItemResult.h"
 #include "CreateWorkshopItemResult.generated.h"
 
 USTRUCT(BlueprintType)

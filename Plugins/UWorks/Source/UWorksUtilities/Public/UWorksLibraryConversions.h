@@ -11,10 +11,10 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static FString GetCurrentProcessId();
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     static TArray<uint8> ConvertStringToBytes(const FString& Data);
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     static FString ConvertBytesToString(TArray<uint8> Data);
     
 };

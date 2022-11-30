@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "UWorksSteamItemInstanceID.h"
 #include "ExchangeItemDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "UWorksSteamItemInstanceID.h"
 #include "UWorksSteamItemDef.h"
 #include "ExchangeItemNode.generated.h"
 

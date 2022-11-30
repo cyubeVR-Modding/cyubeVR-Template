@@ -3,8 +3,8 @@
 #include "UWorksRequestCore.h"
 #include "JoinLobbyDelegateDelegate.h"
 #include "JoinLobbyMinimalDelegateDelegate.h"
-#include "EUWorksChatRoomEnterResponse.h"
 #include "UWorksSteamID.h"
+#include "EUWorksChatRoomEnterResponse.h"
 #include "UWorksRequestCoreJoinLobby.generated.h"
 
 UCLASS(Blueprintable)
@@ -24,7 +24,7 @@ public:
     UFUNCTION(BlueprintCallable)
     bool IsActive();
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     void GetOutput(FUWorksSteamID& SteamIDLobby, TArray<uint8>& ChatPermissions, bool& bLocked, EUWorksChatRoomEnterResponse& ChatRoomEnterResponse);
     
     UFUNCTION(BlueprintCallable)

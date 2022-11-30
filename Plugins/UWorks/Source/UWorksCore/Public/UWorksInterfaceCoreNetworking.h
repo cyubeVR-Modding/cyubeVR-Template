@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksP2PSend.h"
-#include "P2PSessionRequestDelegateDelegate.h"
 #include "UWorksInterfaceCore.h"
+#include "P2PSessionRequestDelegateDelegate.h"
+#include "EUWorksP2PSend.h"
 #include "P2PSessionConnectFailDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "UWorksP2PSessionState.h"
+#include "UWorksSteamID.h"
 #include "UWorksInterfaceCoreNetworking.generated.h"
 
 class UUWorksInterfaceCoreNetworking;

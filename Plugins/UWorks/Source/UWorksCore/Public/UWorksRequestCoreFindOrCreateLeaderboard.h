@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksLeaderboardSortMethod.h"
 #include "UWorksRequestCore.h"
-#include "EUWorksLeaderboardDisplayType.h"
+#include "EUWorksLeaderboardSortMethod.h"
 #include "FindOrCreateLeaderboardDelegateDelegate.h"
 #include "FindOrCreateLeaderboardMinimalDelegateDelegate.h"
+#include "EUWorksLeaderboardDisplayType.h"
 #include "UWorksSteamLeaderboard.h"
 #include "UWorksRequestCoreFindOrCreateLeaderboard.generated.h"
 

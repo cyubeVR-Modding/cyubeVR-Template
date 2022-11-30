@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetItemDailyRevenueDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
+#include "GetItemDailyRevenueDelegateDelegate.h"
 #include "GetItemDailyRevenueMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetItemDailyRevenue.generated.h"
 

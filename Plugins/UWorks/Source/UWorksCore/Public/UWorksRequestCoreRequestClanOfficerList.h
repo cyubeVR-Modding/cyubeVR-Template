@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RequestClanOfficerListDelegateDelegate.h"
 #include "UWorksRequestCore.h"
-#include "RequestClanOfficerListMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "RequestClanOfficerListDelegateDelegate.h"
+#include "RequestClanOfficerListMinimalDelegateDelegate.h"
 #include "UWorksRequestCoreRequestClanOfficerList.generated.h"
 
 UCLASS(Blueprintable)

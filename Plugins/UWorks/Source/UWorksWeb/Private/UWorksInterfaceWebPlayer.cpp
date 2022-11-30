@@ -1,8 +1,8 @@
 #include "UWorksInterfaceWebPlayer.h"
 
-class UUWorksRequestWebGetSteamLevel;
-class UUWorksRequestWebRecordOfflinePlaytime;
 class UUWorksRequestWebIsPlayingSharedGame;
+class UUWorksRequestWebRecordOfflinePlaytime;
+class UUWorksRequestWebGetSteamLevel;
 class UUWorksRequestWebGetRecentlyPlayedGames;
 class UUWorksRequestWebGetOwnedGames;
 class UUWorksRequestWebGetCommunityBadgeProgress;

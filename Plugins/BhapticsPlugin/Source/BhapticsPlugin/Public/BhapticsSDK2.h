@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
-#include "BhapticsDevice.h"
-#include "BhapticsRotationOption.h"
 #include "UObject/NoExportTypes.h"
+#include "BhapticsRotationOption.h"
+#include "BhapticsDevice.h"
 #include "UObject/NoExportTypes.h"
 #include "BhapticsSDK2.generated.h"
 

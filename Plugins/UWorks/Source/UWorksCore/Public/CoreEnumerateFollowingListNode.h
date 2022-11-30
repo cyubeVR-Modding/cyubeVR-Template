@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "EnumerateFollowingListDelegateDelegate.h"
-#include "EUWorksResult.h"
 #include "UWorksSteamID.h"
+#include "EUWorksResult.h"
 #include "CoreEnumerateFollowingListNode.generated.h"
 
 class UCoreEnumerateFollowingListNode;

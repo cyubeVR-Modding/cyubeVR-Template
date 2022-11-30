@@ -8,8 +8,8 @@
 #include "RankedByPublicationOrderMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebPublishedItemSearch.generated.h"
 
-class UUWorksRequestWebResultSetSummary;
 class UUWorksRequestWebRankedByVote;
+class UUWorksRequestWebResultSetSummary;
 class UUWorksRequestWebRankedByTrend;
 class UUWorksRequestWebRankedByPublicationOrder;
 

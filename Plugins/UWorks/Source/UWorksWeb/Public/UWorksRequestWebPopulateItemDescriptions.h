@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
-#include "UWorksLanguages.h"
 #include "PopulateItemDescriptionsDelegateDelegate.h"
 #include "PopulateItemDescriptionsMinimalDelegateDelegate.h"
+#include "UWorksLanguages.h"
 #include "UWorksRequestWebPopulateItemDescriptions.generated.h"
 
 UCLASS(Blueprintable)

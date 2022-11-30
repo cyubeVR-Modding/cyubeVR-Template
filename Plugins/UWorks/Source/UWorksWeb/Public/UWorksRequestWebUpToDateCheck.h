@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "UpToDateCheckDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UpToDateCheckMinimalDelegateDelegate.h"
 #include "UWorksRequestWebUpToDateCheck.generated.h"
 

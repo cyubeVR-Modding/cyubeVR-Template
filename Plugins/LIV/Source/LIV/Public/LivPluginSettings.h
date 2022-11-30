@@ -3,9 +3,9 @@
 #include "Templates/SubclassOf.h"
 #include "UObject/Object.h"
 #include "Engine/Scene.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "Engine/EngineTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "ELivSceneViewExtensionCaptureStage.h"
 #include "LivPluginSettings.generated.h"
@@ -59,7 +59,7 @@ public:
     UPROPERTY(BlueprintReadWrite, Config, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSoftClassPtr<ALivCameraController> CameraControllerClass;
     
-    UPROPERTY(AdvancedDisplay, Config, EditAnywhere)
+    UPROPERTY(AdvancedDisplay, BlueprintReadWrite, Config, EditAnywhere, meta=(AllowPrivateAccess=true))
     TEnumAsByte<ESceneCaptureSource> CaptureSource;
     
     UPROPERTY(AdvancedDisplay, BlueprintReadWrite, Config, EditAnywhere, meta=(AllowPrivateAccess=true))

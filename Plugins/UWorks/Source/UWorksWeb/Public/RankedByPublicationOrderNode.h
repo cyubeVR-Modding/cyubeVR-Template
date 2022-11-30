@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "RankedByPublicationOrderDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "RankedByPublicationOrderDelegateDelegate.h"
 #include "RankedByPublicationOrderNode.generated.h"
 
 class URankedByPublicationOrderNode;

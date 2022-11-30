@@ -23,7 +23,7 @@ public:
     UFUNCTION(BlueprintCallable)
     bool IsActive();
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     void GetOutput(EUWorksResult& Result, int32& Offset, TArray<uint8>& Buffer);
     
     UFUNCTION(BlueprintCallable)

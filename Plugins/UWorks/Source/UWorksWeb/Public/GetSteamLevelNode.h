@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "UWorksSteamID.h"
 #include "GetSteamLevelDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "GetSteamLevelNode.generated.h"
 
 class UGetSteamLevelNode;

@@ -3,8 +3,8 @@
 #include "LivCaptureBase.h"
 #include "LivCaptureMulti.generated.h"
 
-class USceneCaptureComponent2D;
 class UTextureRenderTarget2D;
+class USceneCaptureComponent2D;
 class ULivCustomClipPlane;
 
 UCLASS(Blueprintable, EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))

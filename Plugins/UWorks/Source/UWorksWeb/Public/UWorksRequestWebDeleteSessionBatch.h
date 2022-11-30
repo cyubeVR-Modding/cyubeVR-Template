@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "DeleteSessionBatchMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "DeleteSessionBatchDelegateDelegate.h"
+#include "DeleteSessionBatchMinimalDelegateDelegate.h"
 #include "UWorksRequestWebDeleteSessionBatch.generated.h"
 
 UCLASS(Blueprintable)

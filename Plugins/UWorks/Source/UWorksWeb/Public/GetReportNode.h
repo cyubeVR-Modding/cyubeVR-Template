@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "GetReportDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "EUWorksReportType.h"
-#include "GetReportDelegateDelegate.h"
 #include "GetReportNode.generated.h"
 
 class UGetReportNode;

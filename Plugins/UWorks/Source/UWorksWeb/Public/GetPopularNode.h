@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetPopularDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "GetPopularDelegateDelegate.h"
 #include "GetPopularNode.generated.h"
 
 class UGetPopularNode;

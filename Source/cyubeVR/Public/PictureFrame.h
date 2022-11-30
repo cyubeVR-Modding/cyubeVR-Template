@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "LoadedPicture.h"
 #include "MeshObject.h"
 #include "PictureFrameProperties.h"
-#include "LoadedPicture.h"
 #include "UObject/NoExportTypes.h"
 #include "PictureFrame.generated.h"
 

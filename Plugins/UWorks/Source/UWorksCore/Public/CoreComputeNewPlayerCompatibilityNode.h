@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "ComputeNewPlayerCompatibilityDelegateDelegate.h"
-#include "EUWorksResult.h"
 #include "UWorksSteamID.h"
+#include "EUWorksResult.h"
 #include "CoreComputeNewPlayerCompatibilityNode.generated.h"
 
 class UCoreComputeNewPlayerCompatibilityNode;

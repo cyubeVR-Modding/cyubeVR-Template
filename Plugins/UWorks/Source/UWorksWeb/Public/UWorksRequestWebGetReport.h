@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
-#include "EUWorksReportType.h"
 #include "GetReportMinimalDelegateDelegate.h"
 #include "GetReportDelegateDelegate.h"
+#include "EUWorksReportType.h"
 #include "UWorksRequestWebGetReport.generated.h"
 
 UCLASS(Blueprintable)

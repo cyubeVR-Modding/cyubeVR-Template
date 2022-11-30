@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "ReportAbuseMinimalDelegateDelegate.h"
 #include "ReportAbuseDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebReportAbuse.generated.h"
 

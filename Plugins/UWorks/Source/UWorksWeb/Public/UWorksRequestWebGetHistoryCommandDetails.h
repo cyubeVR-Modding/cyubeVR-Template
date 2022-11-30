@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
 #include "GetHistoryCommandDetailsDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "GetHistoryCommandDetailsMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestWebGetHistoryCommandDetails.generated.h"
 
 UCLASS(Blueprintable)

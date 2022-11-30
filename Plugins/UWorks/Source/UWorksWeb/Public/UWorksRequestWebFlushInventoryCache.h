@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
 #include "FlushInventoryCacheDelegateDelegate.h"
-#include "FlushInventoryCacheMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "FlushInventoryCacheMinimalDelegateDelegate.h"
 #include "UWorksRequestWebFlushInventoryCache.generated.h"
 
 UCLASS(Blueprintable)

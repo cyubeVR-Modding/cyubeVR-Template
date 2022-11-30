@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RefreshCompleteDelegateDelegate.h"
 #include "UWorksManager.h"
+#include "RefreshCompleteDelegateDelegate.h"
 #include "UWorksManagerNetwork.generated.h"
 
 class UUWorksManagerNetwork;

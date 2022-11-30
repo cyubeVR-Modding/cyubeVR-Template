@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksGameID.h"
 #include "UWorksLibrary.h"
+#include "UWorksGameID.h"
 #include "UWorksLibraryGameID.generated.h"
 
 UCLASS(Blueprintable)

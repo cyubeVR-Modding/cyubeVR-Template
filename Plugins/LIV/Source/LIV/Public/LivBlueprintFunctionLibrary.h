@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "Engine/TextureRenderTarget2D.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "ELivEye.h"
 #include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
-#include "Engine/TextureRenderTarget2D.h"
 #include "UObject/NoExportTypes.h"
 #include "LivBlueprintFunctionLibrary.generated.h"
 
-class UTextureRenderTarget2D;
 class UObject;
+class UTextureRenderTarget2D;
 
 UCLASS(Blueprintable)
 class LIV_API ULivBlueprintFunctionLibrary : public UBlueprintFunctionLibrary {

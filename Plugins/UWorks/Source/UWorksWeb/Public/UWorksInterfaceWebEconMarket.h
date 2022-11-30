@@ -2,15 +2,15 @@
 #include "CoreMinimal.h"
 #include "UWorksInterfaceWeb.h"
 #include "GetPopularMinimalDelegateDelegate.h"
-#include "GetMarketEligibilityMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
-#include "GetAssetIDMinimalDelegateDelegate.h"
+#include "GetMarketEligibilityMinimalDelegateDelegate.h"
 #include "CancelAppListingsForUserMinimalDelegateDelegate.h"
+#include "GetAssetIDMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebEconMarket.generated.h"
 
-class UUWorksRequestWebGetMarketEligibility;
-class UUWorksRequestWebGetPopular;
 class UUWorksRequestWebGetAssetID;
+class UUWorksRequestWebGetPopular;
+class UUWorksRequestWebGetMarketEligibility;
 class UUWorksRequestWebCancelAppListingsForUser;
 
 UCLASS(Blueprintable)

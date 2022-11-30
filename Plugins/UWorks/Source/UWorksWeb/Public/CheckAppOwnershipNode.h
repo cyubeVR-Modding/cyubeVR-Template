@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "CheckAppOwnershipDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "CheckAppOwnershipDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "CheckAppOwnershipNode.generated.h"
 

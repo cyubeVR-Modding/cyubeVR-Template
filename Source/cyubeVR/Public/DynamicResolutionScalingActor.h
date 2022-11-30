@@ -18,6 +18,9 @@ public:
     
     ADynamicResolutionScalingActor();
     UFUNCTION(BlueprintCallable)
+    static bool IsVeryHighEndGPU();
+    
+    UFUNCTION(BlueprintCallable)
     static bool IsHighEndGPU();
     
 };

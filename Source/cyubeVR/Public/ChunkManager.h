@@ -1,41 +1,41 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "ERotation.h"
-#include "ETreeType.h"
+#include "UObject/NoExportTypes.h"
 #include "EBlockTypeBP.h"
+#include "UObject/NoExportTypes.h"
 #include "ModifiedBlockActorToSpawn.h"
-#include "ChunkAboutBP.h"
-#include "BlockInfoBP.h"
 #include "EItemClass.h"
 #include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
 #include "UID.h"
-#include "SideBP.h"
+#include "UObject/NoExportTypes.h"
+#include "ETreeType.h"
+#include "BlockInfoBP.h"
 #include "ETreeClass.h"
+#include "SideBP.h"
 #include "EMeshObjectType.h"
+#include "ChunkAboutBP.h"
 #include "EFootstepType.h"
 #include "EBiome.h"
+#include "ERotation.h"
 #include "ChunkManager.generated.h"
 
-class UParticleSystem;
-class ABlockItem;
-class ADraftUnlockingPaper;
 class UMaterialParameterCollection;
+class AInventory;
+class UStaticMesh;
+class UParticleSystem;
+class UMaterialInterface;
+class ABlockItem;
 class AWeatherManager;
 class ATreeManager;
 class USoundBase;
-class AInventory;
+class AModifiedBlockActor;
 class ADirectionalLight;
 class AAudioManager;
 class UTexture2D;
 class UDataTable;
-class UStaticMesh;
-class UMaterialInterface;
-class AModifiedBlockActor;
+class ADraftUnlockingPaper;
 class ADeathBeacon;
 class AMeshObject;
 
@@ -45,6 +45,9 @@ class CYUBEVR_API AChunkManager : public AActor {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool ForceKnucklesControls;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    bool WalkingSpeedOverdrive;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<ABlockItem*> BlockItemPool;

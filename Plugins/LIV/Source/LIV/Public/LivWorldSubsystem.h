@@ -5,10 +5,10 @@
 #include "UObject/NoExportTypes.h"
 #include "LivWorldSubsystem.generated.h"
 
+class UCameraComponent;
 class ALivCameraController;
 class USceneComponent;
 class ULivCaptureBase;
-class UCameraComponent;
 
 UCLASS(Blueprintable)
 class LIV_API ULivWorldSubsystem : public UWorldSubsystem {

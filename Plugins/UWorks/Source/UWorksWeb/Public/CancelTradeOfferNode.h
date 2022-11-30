@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "CancelTradeOfferDelegateDelegate.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
 #include "CancelTradeOfferNode.generated.h"
 
 class UCancelTradeOfferNode;

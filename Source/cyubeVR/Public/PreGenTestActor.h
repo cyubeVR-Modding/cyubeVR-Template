@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "EBlockTypeBP.h"
 #include "UObject/NoExportTypes.h"
+#include "EBlockTypeBP.h"
 #include "PreGenTestActor.generated.h"
 
 class UProceduralMeshComponent;
