@@ -4,55 +4,34 @@ Add the following 4 lines in the "Plugins" section in the generated "cyubeVR.upr
     "Enabled": false
 }
 
-Copy and paste the cyubeVREditor.Target.cs file (inside Source folder) and name it cyubeVRGame.Target.cs. Then replace any mentions of "editor" and replace with "game" inside of this new file (or just put this code into the file):
-using UnrealBuildTool;
-
-public class cyubeVRGameTarget : TargetRules {
-	public cyubeVRGameTarget(TargetInfo Target) : base(Target) {
-		Type = TargetType.Game;
-		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.AddRange(new string[] {
-			"cyubeVR",
-		});
-	}
-}
-
-Right click generated project and open with IDE (e.g. Rider)
-
-Replace UCLASS(DefaultConfig) with UCLASS(config = Engine, DefaultConfig) in:
-    - GoogleAnalyticsSettings.h
-    - LivPluginSettings.h
-    - DLSSSetings.h
-    - VRGlobalSettings.h (don't remove BlueprintType flag)
-
-Replace UCLASS(ProjectUserConfig) with UCLASS(config = Engine, ProjectUserConfig) in:
-    - DLSSOverrideSettings.h
+{
+    "Name": "SteamVR",
+    "Enabled": true,
+    "SupportedTargetPlatforms": [
+        "Win32",
+        "Win64",
+        "Linux",
+        "PS5", // REMOVE THIS
+    ]
+},
 
 Comment out UFUNCTION() in ReceiveLightActor.h
-    - UseActorCustomLocation
-    - GetActorCustomLocation
-
-Set the "_MAX UMETA(Hidden)," to "_MAX = 0xFF UMETA(Hidden)," in:
-    - EUGCMatchingUGCTypeBP.h
-    - EItemPreviewTypeBP.h
-
-Remove the constructor from IpNetDriverUWorks.h and cpp files.
+    - UseActorCustomLocation line 40
+    - GetActorCustomLocation line 52
 
 Remove TEnumAsByte<> (but not the type inside of it) in:
-    - OnInput inside VRGripInterface.h
-    - OnEndPlay inside VRGripScriptBase.h and its _Implementation version in the .cpp file
-    - SetMobilityAllEvent inside DeerCPP.h and its _Implementation version in the .cpp file
+    - OnInput inside VRGripInterface.h line 62
+    - OnEndPlay inside VRGripScriptBase.h and its _Implementation version in the .cpp file line 70/35
+    - SetMobilityAllEvent inside DeerCPP.h and its _Implementation version in the .cpp file line 54/16
 
-Add this code underneath the struct in GripComponentEndPhysicsTickFunction.h:
-template<>
-struct TStructOpsTypeTraits<FGripComponentEndPhysicsTickFunction> : public TStructOpsTypeTraitsBase2<FGripComponentEndPhysicsTickFunction>
-{
-    enum
-    {
-        WithCopy = false
-    };
-};
+Comment out UPROPERTY() in:
+    - DragonData_StickySocketStruct.h line 10
+    - AITask_SurfaceNavMoveTo.h line 26
+    - EnvQueryGenerator_DSN_Sphere.h line 26
 
-Then right click the .uproject and hit "regenerate solution files".
+Add DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnNeedsPathMoveRotationSignature);\n to SurfaceNavMovementComponent.h line 14
+
+Replace line 6 on OnNeedsPathMoveRotationSignatureDelegate.h with:
+UDELEGATE(BlueprintCallable) DECLARE_DYNAMIC_MULTICAST_SPARSE_DELEGATE_ThreeParams(FOnNeedsPathMoveRotationSignatureUObject, FName, EnterPropertyName, FVector, TargetLocation, FVector, TargetUpVector, FVector, TargetForwardVector);
 
 If you get the "failed to create version memory for PCH" errors when trying to build or pack, do it again.
