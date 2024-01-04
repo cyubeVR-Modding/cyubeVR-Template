@@ -7,10 +7,9 @@ enum class EItemStateBP : uint8 {
     IS_None,
     IS_Subscribed,
     IS_LegacyItem,
-    IS_Installed = 0x4,
-    IS_NeedsUpdate = 0x8,
-    IS_Downloading = 0x10,
-    IS_DownloadPending = 0x20,
-    IS_MAX UMETA(Hidden),
+    IS_Installed = 4,
+    IS_NeedsUpdate = 8,
+    IS_Downloading = 16,
+    IS_DownloadPending = 32,
 };
 

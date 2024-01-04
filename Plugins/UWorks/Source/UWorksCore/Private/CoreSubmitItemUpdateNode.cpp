@@ -1,6 +1,7 @@
 #include "CoreSubmitItemUpdateNode.h"
 
-class UCoreSubmitItemUpdateNode;
+UCoreSubmitItemUpdateNode::UCoreSubmitItemUpdateNode() {
+}
 
 UCoreSubmitItemUpdateNode* UCoreSubmitItemUpdateNode::SubmitItemUpdateNode(FUWorksUGCUpdateHandle UGCUpdateHandle, const FString& ChangeNote) {
     return NULL;
@@ -9,6 +10,4 @@ UCoreSubmitItemUpdateNode* UCoreSubmitItemUpdateNode::SubmitItemUpdateNode(FUWor
 void UCoreSubmitItemUpdateNode::OnRequestCompleted(bool bSuccessful, EUWorksResult Result, bool bUserNeedsToAcceptWorkshopLegalAgreement) {
 }
 
-UCoreSubmitItemUpdateNode::UCoreSubmitItemUpdateNode() {
-}
 

@@ -1,49 +1,49 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceCore.h"
-#include "UWorksUGCUpdateHandle.h"
-#include "DownloadItemResultDelegateDelegate.h"
-#include "ItemInstalledDelegateDelegate.h"
-#include "UnsubscribeItemMinimalDelegateDelegate.h"
 #include "UWorksPublishedFileID.h"
-#include "SubscribeItemMinimalDelegateDelegate.h"
-#include "SubmitItemUpdateMinimalDelegateDelegate.h"
-#include "StopPlaytimeTrackingMinimalDelegateDelegate.h"
-#include "StopPlaytimeTrackingForAllItemsMinimalDelegateDelegate.h"
-#include "StartPlaytimeTrackingMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
+#include "AddItemToFavoritesMinimalDelegateDelegate.h"
+#include "CreateItemMinimalDelegateDelegate.h"
+#include "DownloadItemResultDelegateDelegate.h"
+#include "EUWorksItemPreviewType.h"
+#include "EUWorksItemStatistic.h"
+#include "EUWorksItemUpdateStatus.h"
+#include "EUWorksRemoteStoragePublishedFileVisibility.h"
+#include "EUWorksUGCMatchingUGCType.h"
 #include "EUWorksUGCQuery.h"
+#include "EUWorksUserUGCList.h"
+#include "EUWorksUserUGCListSortOrder.h"
+#include "EUWorksWorkshopFileType.h"
+#include "GetUserItemVoteMinimalDelegateDelegate.h"
+#include "ItemInstalledDelegateDelegate.h"
+#include "RemoveItemFromFavoritesMinimalDelegateDelegate.h"
+#include "SendQueryUGCRequestMinimalDelegateDelegate.h"
 #include "SetUserItemVoteMinimalDelegateDelegate.h"
+#include "StartPlaytimeTrackingMinimalDelegateDelegate.h"
+#include "StopPlaytimeTrackingForAllItemsMinimalDelegateDelegate.h"
+#include "StopPlaytimeTrackingMinimalDelegateDelegate.h"
+#include "SubmitItemUpdateMinimalDelegateDelegate.h"
+#include "SubscribeItemMinimalDelegateDelegate.h"
+#include "UWorksInterfaceCore.h"
 #include "UWorksSteamUGCDetails.h"
 #include "UWorksUGCQueryHandle.h"
-#include "EUWorksRemoteStoragePublishedFileVisibility.h"
-#include "SendQueryUGCRequestMinimalDelegateDelegate.h"
-#include "RemoveItemFromFavoritesMinimalDelegateDelegate.h"
-#include "GetUserItemVoteMinimalDelegateDelegate.h"
-#include "EUWorksItemStatistic.h"
-#include "EUWorksItemPreviewType.h"
-#include "EUWorksItemUpdateStatus.h"
-#include "UWorksSteamID.h"
-#include "EUWorksUserUGCList.h"
-#include "EUWorksUGCMatchingUGCType.h"
-#include "EUWorksUserUGCListSortOrder.h"
-#include "CreateItemMinimalDelegateDelegate.h"
-#include "EUWorksWorkshopFileType.h"
-#include "AddItemToFavoritesMinimalDelegateDelegate.h"
+#include "UWorksUGCUpdateHandle.h"
+#include "UnsubscribeItemMinimalDelegateDelegate.h"
 #include "UWorksInterfaceCoreUGC.generated.h"
 
-class UUWorksRequestCoreCreateItem;
-class UUWorksRequestCoreUnsubscribeItem;
-class UUWorksRequestCoreSubscribeItem;
-class UUWorksRequestCoreGetUserItemVote;
-class UUWorksRequestCoreSubmitItemUpdate;
-class UUWorksRequestCoreStopPlaytimeTrackingForAllItems;
-class UUWorksRequestCoreStopPlaytimeTracking;
-class UUWorksRequestCoreStartPlaytimeTracking;
-class UUWorksRequestCoreSendQueryUGCRequest;
-class UUWorksRequestCoreSetUserItemVote;
-class UUWorksRequestCoreRemoveItemFromFavorites;
 class UUWorksInterfaceCoreUGC;
 class UUWorksRequestCoreAddItemToFavorites;
+class UUWorksRequestCoreCreateItem;
+class UUWorksRequestCoreGetUserItemVote;
+class UUWorksRequestCoreRemoveItemFromFavorites;
+class UUWorksRequestCoreSendQueryUGCRequest;
+class UUWorksRequestCoreSetUserItemVote;
+class UUWorksRequestCoreStartPlaytimeTracking;
+class UUWorksRequestCoreStopPlaytimeTracking;
+class UUWorksRequestCoreStopPlaytimeTrackingForAllItems;
+class UUWorksRequestCoreSubmitItemUpdate;
+class UUWorksRequestCoreSubscribeItem;
+class UUWorksRequestCoreUnsubscribeItem;
 
 UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreUGC : public UUWorksInterfaceCore {
@@ -56,6 +56,7 @@ public:
     FDownloadItemResultDelegate DownloadItemResult;
     
     UUWorksInterfaceCoreUGC();
+
     UFUNCTION(BlueprintCallable)
     bool UpdateItemPreviewVideo(FUWorksUGCUpdateHandle Handle, int32 Index, const FString& PreviewVideo);
     

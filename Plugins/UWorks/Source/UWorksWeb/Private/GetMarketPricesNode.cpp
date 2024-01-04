@@ -1,6 +1,7 @@
 #include "GetMarketPricesNode.h"
 
-class UGetMarketPricesNode;
+UGetMarketPricesNode::UGetMarketPricesNode() {
+}
 
 void UGetMarketPricesNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetMarketPricesNode* UGetMarketPricesNode::GetMarketPricesNode(const FString& K
     return NULL;
 }
 
-UGetMarketPricesNode::UGetMarketPricesNode() {
-}
 

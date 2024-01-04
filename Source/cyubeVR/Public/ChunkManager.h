@@ -1,43 +1,43 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "GameFramework/Actor.h"
-#include "UObject/NoExportTypes.h"
-#include "EBlockTypeBP.h"
-#include "UObject/NoExportTypes.h"
-#include "ModifiedBlockActorToSpawn.h"
-#include "EItemClass.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "UID.h"
-#include "UObject/NoExportTypes.h"
-#include "ETreeType.h"
 #include "BlockInfoBP.h"
-#include "ETreeClass.h"
-#include "SideBP.h"
-#include "EMeshObjectType.h"
 #include "ChunkAboutBP.h"
-#include "EFootstepType.h"
 #include "EBiome.h"
+#include "EBlockTypeBP.h"
+#include "EFootstepType.h"
+#include "EItemClass.h"
+#include "EMeshObjectType.h"
 #include "ERotation.h"
+#include "ETreeClass.h"
+#include "ETreeType.h"
+#include "ModifiedBlockActorToSpawn.h"
+#include "SideBP.h"
+#include "UID.h"
 #include "ChunkManager.generated.h"
 
-class UMaterialParameterCollection;
-class AInventory;
-class UStaticMesh;
-class UParticleSystem;
-class UMaterialInterface;
-class ABlockItem;
-class AWeatherManager;
-class ATreeManager;
-class USoundBase;
-class AModifiedBlockActor;
-class ADirectionalLight;
 class AAudioManager;
-class UTexture2D;
-class UDataTable;
-class ADraftUnlockingPaper;
+class ABlockItem;
 class ADeathBeacon;
+class ADirectionalLight;
+class ADraftUnlockingPaper;
+class AInventory;
 class AMeshObject;
+class AModifiedBlockActor;
+class ATreeManager;
+class AWeatherManager;
+class UDataTable;
+class UMaterialInterface;
+class UMaterialParameterCollection;
+class UParticleSystem;
+class USoundBase;
+class UStaticMesh;
+class UTexture2D;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API AChunkManager : public AActor {
@@ -53,6 +53,12 @@ public:
     TArray<ABlockItem*> BlockItemPool;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    bool SucceededAllObjectives;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    bool SucceededAllEasyObjectives;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool InitialLoadFinished;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
@@ -66,6 +72,9 @@ public:
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool DevModeLoadWorld;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    bool DevModePregenerate;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool BenchmarkDevMode;
@@ -191,6 +200,9 @@ public:
     bool SkyIsDay;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    int32 DayCounter;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool RecordingDevMode;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
@@ -251,10 +263,16 @@ public:
     UMaterialInterface* ChunkMatRegular;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    UMaterialInterface* ChunkMatRegularPS5;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UMaterialInterface* ChunkMatGlass;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UMaterialInterface* ChunkMatWaterRegular;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    TArray<UMaterialInterface*> ChunkMaterialQualityLevels;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UMaterialInterface* GrassMaterial;
@@ -277,7 +295,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UMaterialInterface* ChunkMatLODWFade;
     
-    AChunkManager();
+    AChunkManager(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void UpdateSkyEvent(float NewTimeOfDay);
     
@@ -327,7 +346,7 @@ public:
     void SetDevRecordingMode();
     
     UFUNCTION(BlueprintCallable)
-    void SetBlockItemsNeedToOverlapHand(bool bNeedToOverlap);
+    void SetBlockItemsNeedToOverlapHand(bool bNeedToOverlap, bool bBucketActive);
     
     UFUNCTION(BlueprintCallable)
     void RemoveTreeAtLocation(const FVector WorldLocation, ETreeType Type, AActor* Tree, bool& Valid);
@@ -357,6 +376,12 @@ public:
     void PrintToLogBP(const FString& Text);
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+    bool ObjectiveSucceededEvent(const FString& ObjectiveUniqueName);
+    
+    UFUNCTION(BlueprintCallable)
+    void ObjectiveSucceeded(const FString& ObjectiveUniqueName);
+    
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     bool MovePlayerToStartLocation(FVector Location);
     
     UFUNCTION(BlueprintCallable)
@@ -378,6 +403,9 @@ public:
     bool IsRecipeUnlocked(EBlockTypeBP Type);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
+    bool IsObjectiveSucceeded(const FString& ObjectiveUniqueName);
+    
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     static bool IsFoliageType(EBlockTypeBP Type);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
@@ -390,7 +418,13 @@ public:
     static bool IsCloakedTorchType(EBlockTypeBP Type);
     
     UFUNCTION(BlueprintCallable)
+    bool IsAreaFullyLoaded(FVector Location);
+    
+    UFUNCTION(BlueprintCallable)
     void InitializeVoxelAPI();
+    
+    UFUNCTION(BlueprintCallable)
+    void IncrementDay();
     
     UFUNCTION(BlueprintCallable)
     void HitBlockWithArrow(const FVector Location, EBlockTypeBP& HitType, bool& Valid);
@@ -421,6 +455,9 @@ public:
     
     UFUNCTION(BlueprintCallable)
     FVector GetPlayerCameraDirection();
+    
+    UFUNCTION(BlueprintCallable, BlueprintPure)
+    int32 GetNumTotalLoadedChunks(int32& Regular, int32& LOD);
     
     UFUNCTION(BlueprintCallable)
     void GetNewBlockItem(FTransform NewTransform, ABlockItem*& NewBlockItem, bool ActivatePhysics);
@@ -477,10 +514,10 @@ public:
     FIntVector GetAbsolutePlayerCameraLocation();
     
     UFUNCTION(BlueprintCallable)
-    static void FindExistingWorldData(TArray<FString>& Names, TArray<int32>& Seeds, bool& success);
+    static void FindExistingWorldData(TArray<FString>& Names, TArray<int32>& Seeds, TArray<int32>& PregeneratedOut, bool& success);
     
     UFUNCTION(BlueprintCallable)
-    float FindDistanceToClosestBlock(FVector Location);
+    float FindDistanceToClosestBlock(FVector Location, bool& IsValid);
     
     UFUNCTION(BlueprintCallable)
     void EndWorld();
@@ -495,7 +532,7 @@ public:
     void DestroyBlockItem(ABlockItem* BlockItem, const FString& FunctionName);
     
     UFUNCTION(BlueprintCallable)
-    static bool DeleteWorld(const FString& WorldName);
+    static bool DeleteWorld(const FString& WorldName, int32 PregeneratedID);
     
     UFUNCTION(BlueprintCallable)
     void DeleteAllFreeCrystals();
@@ -525,9 +562,6 @@ public:
     void CanMoveBlockAtLocation(FVector Location, bool& CanMove);
     
     UFUNCTION(BlueprintCallable)
-    bool CanModifyChunkAt(FVector Location);
-    
-    UFUNCTION(BlueprintCallable)
     void CanBuildAtLocation(FVector Location, bool NoSolidIsFine, bool& CanBuild);
     
     UFUNCTION(BlueprintCallable)
@@ -544,6 +578,9 @@ public:
     
     UFUNCTION(BlueprintCallable)
     void AddWorldOrigin(FIntVector Location);
+    
+    UFUNCTION(BlueprintCallable)
+    void AddWaitForTransferBackMBA(AModifiedBlockActor* MBA, FBlockInfoBP BlockInfo);
     
     UFUNCTION(BlueprintCallable)
     AMeshObject* AddMeshObjectAtLocation(EBlockTypeBP Type, UClass* Class, FTransform WorldTransform, bool& success);

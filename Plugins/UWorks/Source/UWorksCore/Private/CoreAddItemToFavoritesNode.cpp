@@ -1,6 +1,7 @@
 #include "CoreAddItemToFavoritesNode.h"
 
-class UCoreAddItemToFavoritesNode;
+UCoreAddItemToFavoritesNode::UCoreAddItemToFavoritesNode() {
+}
 
 void UCoreAddItemToFavoritesNode::OnRequestCompleted(bool bSuccessful, FUWorksPublishedFileID PublishedFileID, EUWorksResult Result, bool bWasAddRequest) {
 }
@@ -9,6 +10,4 @@ UCoreAddItemToFavoritesNode* UCoreAddItemToFavoritesNode::AddItemToFavoritesNode
     return NULL;
 }
 
-UCoreAddItemToFavoritesNode::UCoreAddItemToFavoritesNode() {
-}
 

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "GetNumberOfCurrentPlayersDelegateDelegate.h"
-#include "UWorksRequestCore.h"
 #include "GetNumberOfCurrentPlayersMinimalDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "UWorksRequestCoreGetNumberOfCurrentPlayers.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FGetNumberOfCurrentPlayersMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreGetNumberOfCurrentPlayers();
+
     UFUNCTION(BlueprintCallable)
     bool IsActive();
     

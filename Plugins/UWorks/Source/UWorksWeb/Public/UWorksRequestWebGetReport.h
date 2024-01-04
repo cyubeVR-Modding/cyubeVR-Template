@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
-#include "GetReportMinimalDelegateDelegate.h"
-#include "GetReportDelegateDelegate.h"
 #include "EUWorksReportType.h"
+#include "GetReportDelegateDelegate.h"
+#include "GetReportMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetReport.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FGetReportMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetReport();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, int32 AppID, const FString& Time, EUWorksReportType Type, int32 MaxResults);
     

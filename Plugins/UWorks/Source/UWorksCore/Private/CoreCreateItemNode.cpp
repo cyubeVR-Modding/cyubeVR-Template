@@ -1,6 +1,7 @@
 #include "CoreCreateItemNode.h"
 
-class UCoreCreateItemNode;
+UCoreCreateItemNode::UCoreCreateItemNode() {
+}
 
 void UCoreCreateItemNode::OnRequestCompleted(bool bSuccessful, EUWorksResult Result, FUWorksPublishedFileID PublishedFileID, bool bUserNeedsToAcceptWorkshopLegalAgreement) {
 }
@@ -9,6 +10,4 @@ UCoreCreateItemNode* UCoreCreateItemNode::CreateItemNode(int32 ConsumerAppID, EU
     return NULL;
 }
 
-UCoreCreateItemNode::UCoreCreateItemNode() {
-}
 

@@ -13,6 +13,7 @@ class RUNTIMEMESHCOMPONENT_API URuntimeMeshProviderTargetInterface : public UObj
     GENERATED_BODY()
 public:
     URuntimeMeshProviderTargetInterface();
+
     UFUNCTION(BlueprintCallable)
     void SetupMaterialSlot(int32 MaterialSlot, FName SlotName, UMaterialInterface* InMaterial);
     

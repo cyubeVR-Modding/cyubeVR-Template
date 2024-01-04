@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "GetAppPriceInfoDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetAppPriceInfoDelegateDelegate.h"
 #include "GetAppPriceInfoNode.generated.h"
 
 class UGetAppPriceInfoNode;
@@ -15,6 +15,7 @@ public:
     FGetAppPriceInfoDelegate Completed;
     
     UGetAppPriceInfoNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

@@ -1,6 +1,7 @@
 #include "GetNewsForAppNode.h"
 
-class UGetNewsForAppNode;
+UGetNewsForAppNode::UGetNewsForAppNode() {
+}
 
 void UGetNewsForAppNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetNewsForAppNode* UGetNewsForAppNode::GetNewsForAppNode(int32 AppID, int32 Max
     return NULL;
 }
 
-UGetNewsForAppNode::UGetNewsForAppNode() {
-}
 

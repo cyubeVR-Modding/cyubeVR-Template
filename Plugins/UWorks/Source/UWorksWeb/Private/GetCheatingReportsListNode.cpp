@@ -1,6 +1,7 @@
 #include "GetCheatingReportsListNode.h"
 
-class UGetCheatingReportsListNode;
+UGetCheatingReportsListNode::UGetCheatingReportsListNode() {
+}
 
 void UGetCheatingReportsListNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetCheatingReportsListNode* UGetCheatingReportsListNode::GetCheatingReportsList
     return NULL;
 }
 
-UGetCheatingReportsListNode::UGetCheatingReportsListNode() {
-}
 

@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreStopPlaytimeTracking.h"
 
+UUWorksRequestCoreStopPlaytimeTracking::UUWorksRequestCoreStopPlaytimeTracking() {
+}
+
 void UUWorksRequestCoreStopPlaytimeTracking::SetInput(TArray<FUWorksPublishedFileID> PublishedFileIDs) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreStopPlaytimeTracking::Deactivate() {
 void UUWorksRequestCoreStopPlaytimeTracking::Activate() {
 }
 
-UUWorksRequestCoreStopPlaytimeTracking::UUWorksRequestCoreStopPlaytimeTracking() {
-}
 

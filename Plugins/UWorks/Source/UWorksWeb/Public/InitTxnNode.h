@@ -2,9 +2,9 @@
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksSteamID.h"
-#include "InitTxnDelegateDelegate.h"
 #include "UWorksSteamItemDef.h"
 #include "EUWorksUserSession.h"
+#include "InitTxnDelegateDelegate.h"
 #include "InitTxnNode.generated.h"
 
 class UInitTxnNode;
@@ -17,6 +17,7 @@ public:
     FInitTxnDelegate Completed;
     
     UInitTxnNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

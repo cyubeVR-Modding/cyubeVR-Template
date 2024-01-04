@@ -1,6 +1,7 @@
 #include "CoreAttachLeaderboardUGCNode.h"
 
-class UCoreAttachLeaderboardUGCNode;
+UCoreAttachLeaderboardUGCNode::UCoreAttachLeaderboardUGCNode() {
+}
 
 void UCoreAttachLeaderboardUGCNode::OnRequestCompleted(bool bSuccessful, EUWorksResult Result, FUWorksSteamLeaderboard SteamLeaderboard) {
 }
@@ -9,6 +10,4 @@ UCoreAttachLeaderboardUGCNode* UCoreAttachLeaderboardUGCNode::AttachLeaderboardU
     return NULL;
 }
 
-UCoreAttachLeaderboardUGCNode::UCoreAttachLeaderboardUGCNode() {
-}
 

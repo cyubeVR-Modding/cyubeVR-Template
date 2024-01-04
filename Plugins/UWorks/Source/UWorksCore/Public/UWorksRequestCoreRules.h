@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRuleInfo.h"
 #include "RulesDelegateDelegate.h"
-#include "UWorksRequestCore.h"
-#include "RulesUpdateDelegateDelegate.h"
 #include "RulesMinimalDelegateDelegate.h"
+#include "RulesUpdateDelegateDelegate.h"
 #include "RulesUpdateMinimalDelegateDelegate.h"
+#include "UWorksRequestCore.h"
+#include "UWorksRuleInfo.h"
 #include "UWorksRequestCoreRules.generated.h"
 
 UCLASS(Blueprintable)
@@ -25,6 +25,7 @@ public:
     FRulesUpdateMinimalDelegate OnRequestUpdatedMinimal;
     
     UUWorksRequestCoreRules();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& IP, int32 Port);
     

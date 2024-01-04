@@ -22,7 +22,8 @@
 			"LoadingPhase": "Default",
 			"WhitelistPlatforms": [
 				"Win64",
-				"Android"
+				"Android",
+				"PS5"
 			]
 		}
 	]

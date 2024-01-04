@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AuthenticateUserDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksSteamID.h"
+#include "AuthenticateUserDelegateDelegate.h"
 #include "AuthenticateUserNode.generated.h"
 
 class UAuthenticateUserNode;
@@ -15,6 +15,7 @@ public:
     FAuthenticateUserDelegate Completed;
     
     UAuthenticateUserNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

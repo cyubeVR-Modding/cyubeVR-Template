@@ -9,20 +9,13 @@ public class cyubeVR : ModuleRules {
         PublicDependencyModuleNames.AddRange(new string[] {
             "Core",
             "CoreUObject",
-            "DeveloperSettings",
             "Engine",
             "HeadMountedDisplay",
             "InputCore",
-            "MovieScene",
-            "MovieSceneTracks",
+            "Niagara",
             "ProceduralMeshComponent",
-            "PropertyPath",
             "RuntimeMeshComponent",
-            "Slate",
-            "SlateCore",
             "UMG",
-            "UWorks",
-            "UWorksCore",
         });
     }
 }

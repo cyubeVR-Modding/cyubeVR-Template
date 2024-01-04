@@ -17,7 +17,6 @@ enum class EUGCMatchingUGCTypeBP : uint8 {
     T_UsableInGame,
     T_ControllerBindings,
     T_GameManagedItems,
-    T_All = 0xFF,
-    T_MAX = 0xFF UMETA(Hidden),
+    T_All = 255,
 };
 

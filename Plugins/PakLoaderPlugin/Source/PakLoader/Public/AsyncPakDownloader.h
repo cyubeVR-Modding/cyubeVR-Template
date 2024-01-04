@@ -20,6 +20,7 @@ public:
     FDownloadPakDelegate OnProgress;
     
     UAsyncPakDownloader();
+
     UFUNCTION(BlueprintCallable)
     static UAsyncPakDownloader* DownloadPak(const FString& URL, const FString& SavePath);
     

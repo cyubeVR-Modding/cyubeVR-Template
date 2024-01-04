@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "SetUserItemVoteDelegateDelegate.h"
 #include "UWorksPublishedFileID.h"
 #include "EUWorksResult.h"
+#include "SetUserItemVoteDelegateDelegate.h"
 #include "CoreSetUserItemVoteNode.generated.h"
 
 class UCoreSetUserItemVoteNode;
@@ -16,6 +16,7 @@ public:
     FSetUserItemVoteDelegate Completed;
     
     UCoreSetUserItemVoteNode();
+
     UFUNCTION(BlueprintCallable)
     static UCoreSetUserItemVoteNode* SetUserItemVoteNode(FUWorksPublishedFileID PublishedFileID, bool bVoteUp);
     

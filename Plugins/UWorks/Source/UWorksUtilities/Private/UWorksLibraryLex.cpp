@@ -1,5 +1,8 @@
 #include "UWorksLibraryLex.h"
 
+UUWorksLibraryLex::UUWorksLibraryLex() {
+}
+
 FUWorksUGCUpdateHandle UUWorksLibraryLex::WriteUGCUpdateHandle(const FString& Value) {
     return FUWorksUGCUpdateHandle{};
 }
@@ -128,6 +131,4 @@ FString UUWorksLibraryLex::ReadControllerActionSetHandle(FUWorksControllerAction
     return TEXT("");
 }
 
-UUWorksLibraryLex::UUWorksLibraryLex() {
-}
 

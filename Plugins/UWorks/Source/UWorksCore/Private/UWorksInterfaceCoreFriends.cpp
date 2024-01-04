@@ -1,14 +1,7 @@
 #include "UWorksInterfaceCoreFriends.h"
 
-class UUWorksRequestCoreRequestClanOfficerList;
-class UUWorksRequestCoreSetPersonaName;
-class UUWorksRequestCoreJoinClanChatRoom;
-class UUWorksRequestCoreIsFollowing;
-class UTexture2D;
-class UUWorksInterfaceCoreFriends;
-class UUWorksRequestCoreGetFollowerCount;
-class UUWorksRequestCoreEnumerateFollowingList;
-class UUWorksRequestCoreDownloadClanActivityCounts;
+UUWorksInterfaceCoreFriends::UUWorksInterfaceCoreFriends() {
+}
 
 bool UUWorksInterfaceCoreFriends::SetRichPresence(const FString& Key, const FString& Value) {
     return false;
@@ -305,6 +298,4 @@ void UUWorksInterfaceCoreFriends::ActivateGameOverlayInviteDialog(FUWorksSteamID
 void UUWorksInterfaceCoreFriends::ActivateGameOverlay(EUWorksOverlayGeneric Dialog) {
 }
 
-UUWorksInterfaceCoreFriends::UUWorksInterfaceCoreFriends() {
-}
 

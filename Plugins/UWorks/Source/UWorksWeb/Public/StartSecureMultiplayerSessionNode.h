@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "StartSecureMultiplayerSessionDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "StartSecureMultiplayerSessionDelegateDelegate.h"
 #include "StartSecureMultiplayerSessionNode.generated.h"
 
 class UStartSecureMultiplayerSessionNode;
@@ -15,6 +15,7 @@ public:
     FStartSecureMultiplayerSessionDelegate Completed;
     
     UStartSecureMultiplayerSessionNode();
+
     UFUNCTION(BlueprintCallable)
     static UStartSecureMultiplayerSessionNode* StartSecureMultiplayerSessionNode(const FString& Key, FUWorksSteamID SteamID, int32 AppID);
     

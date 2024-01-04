@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamAppId.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
-#include "SteamUGCItemId.h"
-#include "UInt64.h"
+#include "EPersonaStateBP.h"
+#include "ESteamSupportedLanguages.h"
+#include "SteamAppId.h"
+#include "SteamDelegateOnGameOverlayActivatedDynDelegate.h"
 #include "SteamDepotId.h"
 #include "SteamUGCHandle.h"
-#include "UInt32.h"
-#include "SteamUGCUpdateHandle.h"
+#include "SteamUGCItemId.h"
 #include "SteamUGCQueryHandle.h"
-#include "EPersonaStateBP.h"
-#include "SteamDelegateOnGameOverlayActivatedDynDelegate.h"
-#include "ESteamSupportedLanguages.h"
+#include "SteamUGCUpdateHandle.h"
+#include "UInt32.h"
+#include "UInt64.h"
 #include "SteamGeneralLibrary.generated.h"
 
 UCLASS(Blueprintable)
@@ -19,6 +19,7 @@ class STEAMGENERAL_API USteamGeneralLibrary : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     USteamGeneralLibrary();
+
     UFUNCTION(BlueprintCallable)
     static int32 Uint64Array_Remove(UPARAM(Ref) TArray<FUInt64>& Values, FUInt64 Value);
     

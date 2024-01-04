@@ -14,6 +14,7 @@ public:
     FUpToDateCheckDelegate Completed;
     
     UUpToDateCheckNode();
+
     UFUNCTION(BlueprintCallable)
     static UUpToDateCheckNode* UpToDateCheckNode(int32 AppID, int32 Version);
     

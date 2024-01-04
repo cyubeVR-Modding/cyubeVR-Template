@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
+#include "UWorksSteamID.h"
 #include "DeleteSessionDelegateDelegate.h"
 #include "DeleteSessionMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebDeleteSession.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FDeleteSessionMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebDeleteSession();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, const FString& SessionId, int32 AppID, FUWorksSteamID SteamID);
     

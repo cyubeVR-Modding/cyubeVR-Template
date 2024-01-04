@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetPublisherAppOwnershipDelegateDelegate.h"
-#include "UWorksRequestWeb.h"
-#include "GetPublisherAppOwnershipMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetPublisherAppOwnershipDelegateDelegate.h"
+#include "GetPublisherAppOwnershipMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetPublisherAppOwnership.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FGetPublisherAppOwnershipMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetPublisherAppOwnership();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, FUWorksSteamID SteamID);
     

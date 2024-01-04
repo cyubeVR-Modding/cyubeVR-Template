@@ -1,6 +1,7 @@
 #include "GetCollectionDetailsNode.h"
 
-class UGetCollectionDetailsNode;
+UGetCollectionDetailsNode::UGetCollectionDetailsNode() {
+}
 
 void UGetCollectionDetailsNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetCollectionDetailsNode* UGetCollectionDetailsNode::GetCollectionDetailsNode(i
     return NULL;
 }
 
-UGetCollectionDetailsNode::UGetCollectionDetailsNode() {
-}
 

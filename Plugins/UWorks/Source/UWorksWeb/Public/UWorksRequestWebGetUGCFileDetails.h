@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UWorksSteamID.h"
+#include "GetUGCFileDetailsDelegateDelegate.h"
 #include "GetUGCFileDetailsMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
-#include "GetUGCFileDetailsDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "UWorksRequestWebGetUGCFileDetails.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FGetUGCFileDetailsMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetUGCFileDetails();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, FUWorksSteamID SteamID, int32 UGCID, int32 AppID);
     

@@ -1,5 +1,8 @@
 #include "RuntimeMeshBlueprintFunctions.h"
 
+URuntimeMeshBlueprintFunctions::URuntimeMeshBlueprintFunctions() {
+}
+
 void URuntimeMeshBlueprintFunctions::SetVertexIndex(FRuntimeMeshTriangleStream& Stream, FRuntimeMeshTriangleStream& OutStream, int32 Index, int32 NewIndex) {
 }
 
@@ -260,6 +263,4 @@ void URuntimeMeshBlueprintFunctions::AddCollisionCapsule(FRuntimeMeshCollisionSe
 void URuntimeMeshBlueprintFunctions::AddCollisionBox(FRuntimeMeshCollisionSettings& Settings, FRuntimeMeshCollisionSettings& OutSettings, FRuntimeMeshCollisionBox NewBox) {
 }
 
-URuntimeMeshBlueprintFunctions::URuntimeMeshBlueprintFunctions() {
-}
 

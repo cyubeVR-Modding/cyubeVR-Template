@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "GetAppListDelegateDelegate.h"
 #include "GetAppListMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetAppList.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FGetAppListMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetAppList();
+
     UFUNCTION(BlueprintCallable)
     void GetOutput(FString& Content);
     

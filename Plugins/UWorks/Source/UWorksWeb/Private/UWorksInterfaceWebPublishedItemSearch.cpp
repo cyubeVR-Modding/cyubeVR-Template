@@ -1,9 +1,7 @@
 #include "UWorksInterfaceWebPublishedItemSearch.h"
 
-class UUWorksRequestWebResultSetSummary;
-class UUWorksRequestWebRankedByVote;
-class UUWorksRequestWebRankedByTrend;
-class UUWorksRequestWebRankedByPublicationOrder;
+UUWorksInterfaceWebPublishedItemSearch::UUWorksInterfaceWebPublishedItemSearch() {
+}
 
 void UUWorksInterfaceWebPublishedItemSearch::ResultSetSummaryMinimal(const FString& Key, FUWorksSteamID SteamID, int32 AppID, int32 TagCount, int32 UserTagCount, bool bHasAppAdminAccess, int32 fileType, TArray<FString> tags, TArray<FString> UserTags, const FResultSetSummaryMinimalDelegate& Delegate) {
 }
@@ -33,6 +31,4 @@ UUWorksRequestWebRankedByPublicationOrder* UUWorksInterfaceWebPublishedItemSearc
     return NULL;
 }
 
-UUWorksInterfaceWebPublishedItemSearch::UUWorksInterfaceWebPublishedItemSearch() {
-}
 

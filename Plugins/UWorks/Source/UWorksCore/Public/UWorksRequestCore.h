@@ -8,5 +8,6 @@ class UWORKSCORE_API UUWorksRequestCore : public UUWorksRequest {
     GENERATED_BODY()
 public:
     UUWorksRequestCore();
+
 };
 

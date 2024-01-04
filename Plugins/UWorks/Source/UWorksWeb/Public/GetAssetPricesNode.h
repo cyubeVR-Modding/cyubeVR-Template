@@ -14,6 +14,7 @@ public:
     FGetAssetPricesDelegate Completed;
     
     UGetAssetPricesNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

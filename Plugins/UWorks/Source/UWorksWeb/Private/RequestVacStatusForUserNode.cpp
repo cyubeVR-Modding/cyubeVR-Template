@@ -1,6 +1,7 @@
 #include "RequestVacStatusForUserNode.h"
 
-class URequestVacStatusForUserNode;
+URequestVacStatusForUserNode::URequestVacStatusForUserNode() {
+}
 
 URequestVacStatusForUserNode* URequestVacStatusForUserNode::RequestVacStatusForUserNode(const FString& Key, FUWorksSteamID SteamID, int32 AppID, const FString& SessionId) {
     return NULL;
@@ -9,6 +10,4 @@ URequestVacStatusForUserNode* URequestVacStatusForUserNode::RequestVacStatusForU
 void URequestVacStatusForUserNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
 
-URequestVacStatusForUserNode::URequestVacStatusForUserNode() {
-}
 

@@ -3,8 +3,8 @@
 #include "LivCaptureBase.h"
 #include "LivCaptureGlobalClipPlanePostProcess.generated.h"
 
-class UTextureRenderTarget2D;
 class USceneCaptureComponent2D;
+class UTextureRenderTarget2D;
 
 UCLASS(Blueprintable, EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class LIV_API ULivCaptureGlobalClipPlanePostProcess : public ULivCaptureBase {
@@ -25,6 +25,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     UTextureRenderTarget2D* ForegroundOutputRenderTarget;
     
-    ULivCaptureGlobalClipPlanePostProcess();
+    ULivCaptureGlobalClipPlanePostProcess(const FObjectInitializer& ObjectInitializer);
+
 };
 

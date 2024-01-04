@@ -1,6 +1,11 @@
 #include "RuntimeMeshActor.h"
 #include "RuntimeMeshComponent.h"
 
+ARuntimeMeshActor::ARuntimeMeshActor(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->RootComponent = CreateDefaultSubobject<URuntimeMeshComponent>(TEXT("RuntimeMeshComponent0"));
+    this->RuntimeMeshComponent = (URuntimeMeshComponent*)RootComponent;
+}
+
 void ARuntimeMeshActor::SetRuntimeMeshMobility(ERuntimeMeshMobility NewMobility) {
 }
 
@@ -12,7 +17,4 @@ URuntimeMeshComponent* ARuntimeMeshActor::GetRuntimeMeshComponent() const {
     return NULL;
 }
 
-ARuntimeMeshActor::ARuntimeMeshActor() {
-    this->RuntimeMeshComponent = CreateDefaultSubobject<URuntimeMeshComponent>(TEXT("RuntimeMeshComponent0"));
-}
 

@@ -15,6 +15,7 @@ public:
     FFindLeaderboardDelegate Completed;
     
     UCoreFindLeaderboardNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, FUWorksSteamLeaderboard SteamLeaderboard, bool bLeaderboardFound);
     

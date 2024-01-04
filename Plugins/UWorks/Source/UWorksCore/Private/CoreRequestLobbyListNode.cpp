@@ -1,6 +1,7 @@
 #include "CoreRequestLobbyListNode.h"
 
-class UCoreRequestLobbyListNode;
+UCoreRequestLobbyListNode::UCoreRequestLobbyListNode() {
+}
 
 UCoreRequestLobbyListNode* UCoreRequestLobbyListNode::RequestLobbyListNode() {
     return NULL;
@@ -9,6 +10,4 @@ UCoreRequestLobbyListNode* UCoreRequestLobbyListNode::RequestLobbyListNode() {
 void UCoreRequestLobbyListNode::OnRequestCompleted(bool bSuccessful, int32 LobbiesMatching) {
 }
 
-UCoreRequestLobbyListNode::UCoreRequestLobbyListNode() {
-}
 

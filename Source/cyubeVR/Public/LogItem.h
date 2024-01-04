@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ReceiveLightActor.h"
-#include "ETreeType.h"
 #include "UObject/NoExportTypes.h"
+#include "ETreeType.h"
+#include "ReceiveLightActor.h"
 #include "LogItem.generated.h"
 
 class UMeshComponent;
@@ -20,7 +20,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UMeshComponent* Mesh;
     
-    ALogItem();
+    ALogItem(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     bool UseActorCustomLocation();
     

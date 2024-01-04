@@ -1,9 +1,7 @@
 #include "UWorksInterfaceCoreMatchmaking.h"
 
-class UUWorksRequestCoreRequestLobbyList;
-class UUWorksRequestCoreJoinLobby;
-class UUWorksInterfaceCoreMatchmaking;
-class UUWorksRequestCoreCreateLobby;
+UUWorksInterfaceCoreMatchmaking::UUWorksInterfaceCoreMatchmaking() {
+}
 
 bool UUWorksInterfaceCoreMatchmaking::SetLobbyType(FUWorksSteamID SteamIDLobby, EUWorksLobbyType LobbyType) {
     return false;
@@ -160,6 +158,4 @@ int32 UUWorksInterfaceCoreMatchmaking::AddFavoriteGame(int32 AppID, const FStrin
     return 0;
 }
 
-UUWorksInterfaceCoreMatchmaking::UUWorksInterfaceCoreMatchmaking() {
-}
 

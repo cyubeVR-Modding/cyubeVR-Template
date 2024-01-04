@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "IsFollowingDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "EUWorksResult.h"
+#include "IsFollowingDelegateDelegate.h"
 #include "CoreIsFollowingNode.generated.h"
 
 class UCoreIsFollowingNode;
@@ -16,6 +16,7 @@ public:
     FIsFollowingDelegate Completed;
     
     UCoreIsFollowingNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, EUWorksResult Result, FUWorksSteamID SteamID, bool bIsFollowing);
     

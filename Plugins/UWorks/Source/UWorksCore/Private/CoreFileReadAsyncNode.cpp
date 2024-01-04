@@ -1,6 +1,7 @@
 #include "CoreFileReadAsyncNode.h"
 
-class UCoreFileReadAsyncNode;
+UCoreFileReadAsyncNode::UCoreFileReadAsyncNode() {
+}
 
 void UCoreFileReadAsyncNode::OnRequestCompleted(bool bSuccessful, EUWorksResult Result, int32 Offset, const TArray<uint8>& Buffer) {
 }
@@ -9,6 +10,4 @@ UCoreFileReadAsyncNode* UCoreFileReadAsyncNode::FileReadAsyncNode(const FString&
     return NULL;
 }
 
-UCoreFileReadAsyncNode::UCoreFileReadAsyncNode() {
-}
 

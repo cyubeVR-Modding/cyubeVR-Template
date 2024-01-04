@@ -24,7 +24,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FLivInputFrame InputFrame;
     
-    ULivCaptureBase();
+    ULivCaptureBase(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool IsLivCapturing() const;
     

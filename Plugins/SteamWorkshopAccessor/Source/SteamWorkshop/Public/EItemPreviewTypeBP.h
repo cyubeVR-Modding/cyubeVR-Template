@@ -9,7 +9,6 @@ enum class EItemPreviewTypeBP : uint8 {
     PT_Sketchfab,
     PT_EnvironmentMap_HorizontalCross,
     PT_EnvironmentMap_LatLong,
-    PT_ReservedMax = 0xFF,
-    PT_MAX = 0xFF UMETA(Hidden),
+    PT_ReservedMax = 255,
 };
 

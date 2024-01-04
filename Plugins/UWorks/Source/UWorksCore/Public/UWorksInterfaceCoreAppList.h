@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceCore.h"
 #include "SteamAppInstalledDelegateDelegate.h"
 #include "SteamAppUninstalledDelegateDelegate.h"
+#include "UWorksInterfaceCore.h"
 #include "UWorksInterfaceCoreAppList.generated.h"
 
 class UUWorksInterfaceCoreAppList;
@@ -18,6 +18,7 @@ public:
     FSteamAppUninstalledDelegate SteamAppUninstalled;
     
     UUWorksInterfaceCoreAppList();
+
     UFUNCTION(BlueprintCallable)
     int32 GetNumInstalledApps();
     

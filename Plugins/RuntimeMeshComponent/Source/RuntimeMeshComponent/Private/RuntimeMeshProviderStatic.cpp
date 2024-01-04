@@ -1,6 +1,8 @@
 #include "RuntimeMeshProviderStatic.h"
 
-class URuntimeMeshModifier;
+URuntimeMeshProviderStatic::URuntimeMeshProviderStatic() {
+    this->StoreEditorGeneratedDataForGame = true;
+}
 
 void URuntimeMeshProviderStatic::UpdateSectionFromComponents(int32 LODIndex, int32 SectionIndex, const TArray<FVector>& Vertices, const TArray<int32>& Triangles, const TArray<FVector>& Normals, const TArray<FVector2D>& UV0, const TArray<FVector2D>& UV1, const TArray<FVector2D>& UV2, const TArray<FVector2D>& UV3, const TArray<FLinearColor>& VertexColors, const TArray<FRuntimeMeshTangent>& Tangents) {
 }
@@ -82,7 +84,4 @@ void URuntimeMeshProviderStatic::CreateSectionFromComponents(int32 LODIndex, int
 void URuntimeMeshProviderStatic::CreateSection_Blueprint(int32 LODIndex, int32 SectionId, const FRuntimeMeshSectionProperties& SectionProperties, const FRuntimeMeshRenderableMeshData& SectionData) {
 }
 
-URuntimeMeshProviderStatic::URuntimeMeshProviderStatic() {
-    this->StoreEditorGeneratedDataForGame = true;
-}
 

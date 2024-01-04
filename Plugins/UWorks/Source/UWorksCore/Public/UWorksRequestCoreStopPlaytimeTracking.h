@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
 #include "UWorksPublishedFileID.h"
+#include "EUWorksResult.h"
 #include "StopPlaytimeTrackingDelegateDelegate.h"
 #include "StopPlaytimeTrackingMinimalDelegateDelegate.h"
-#include "EUWorksResult.h"
+#include "UWorksRequestCore.h"
 #include "UWorksRequestCoreStopPlaytimeTracking.generated.h"
 
 UCLASS(Blueprintable)
@@ -18,6 +18,7 @@ public:
     FStopPlaytimeTrackingMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreStopPlaytimeTracking();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(TArray<FUWorksPublishedFileID> PublishedFileIDs);
     

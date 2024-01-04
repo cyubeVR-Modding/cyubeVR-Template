@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Storage.h"
-#include "EBlockTypeBP.h"
 #include "UObject/NoExportTypes.h"
+#include "EBlockTypeBP.h"
+#include "Storage.h"
 #include "ChestInternals.generated.h"
 
-class AInventory;
 class AChest;
+class AInventory;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API AChestInternals : public AStorage {
@@ -15,7 +15,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool Initialized;
     
-    AChestInternals();
+    AChestInternals(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void UpdateVisualsEvent(bool MarkForSave);
     

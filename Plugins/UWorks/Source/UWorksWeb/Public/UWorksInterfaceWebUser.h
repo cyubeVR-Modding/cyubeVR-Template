@@ -1,35 +1,36 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceWeb.h"
+#include "UWorksSteamID.h"
+#include "CheckAppOwnershipMinimalDelegateDelegate.h"
+#include "GetAppPriceInfoMinimalDelegateDelegate.h"
+#include "GetFriendListMinimalDelegateDelegate.h"
+#include "GetPlayerBansMinimalDelegateDelegate.h"
+#include "GetPlayerSummariesMinimalDelegateDelegate.h"
+#include "GetPublisherAppOwnershipChangesMinimalDelegateDelegate.h"
+#include "GetPublisherAppOwnershipMinimalDelegateDelegate.h"
+#include "GetUserGroupListMinimalDelegateDelegate.h"
 #include "GrantPackageMinimalDelegateDelegate.h"
 #include "ResolveVanityURLMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
-#include "GetUserGroupListMinimalDelegateDelegate.h"
-#include "GetPublisherAppOwnershipMinimalDelegateDelegate.h"
-#include "GetPublisherAppOwnershipChangesMinimalDelegateDelegate.h"
-#include "GetPlayerSummariesMinimalDelegateDelegate.h"
-#include "GetPlayerBansMinimalDelegateDelegate.h"
-#include "GetFriendListMinimalDelegateDelegate.h"
-#include "GetAppPriceInfoMinimalDelegateDelegate.h"
-#include "CheckAppOwnershipMinimalDelegateDelegate.h"
+#include "UWorksInterfaceWeb.h"
 #include "UWorksInterfaceWebUser.generated.h"
 
-class UUWorksRequestWebResolveVanityURL;
+class UUWorksRequestWebCheckAppOwnership;
+class UUWorksRequestWebGetAppPriceInfo;
+class UUWorksRequestWebGetFriendList;
+class UUWorksRequestWebGetPlayerBans;
+class UUWorksRequestWebGetPlayerSummaries;
+class UUWorksRequestWebGetPublisherAppOwnership;
+class UUWorksRequestWebGetPublisherAppOwnershipChanges;
 class UUWorksRequestWebGetUserGroupList;
 class UUWorksRequestWebGrantPackage;
-class UUWorksRequestWebGetPublisherAppOwnershipChanges;
-class UUWorksRequestWebGetPublisherAppOwnership;
-class UUWorksRequestWebGetPlayerSummaries;
-class UUWorksRequestWebGetPlayerBans;
-class UUWorksRequestWebGetFriendList;
-class UUWorksRequestWebGetAppPriceInfo;
-class UUWorksRequestWebCheckAppOwnership;
+class UUWorksRequestWebResolveVanityURL;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebUser : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:
     UUWorksInterfaceWebUser();
+
     UFUNCTION(BlueprintCallable)
     static void ResolveVanityURLMinimal(const FString& Key, const FString& VanityURL, uint8 URLType, const FResolveVanityURLMinimalDelegate& Delegate);
     

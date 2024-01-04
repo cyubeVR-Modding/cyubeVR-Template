@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetInventoryDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksSteamID.h"
+#include "GetInventoryDelegateDelegate.h"
 #include "GetInventoryNode.generated.h"
 
 class UGetInventoryNode;
@@ -15,6 +15,7 @@ public:
     FGetInventoryDelegate Completed;
     
     UGetInventoryNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

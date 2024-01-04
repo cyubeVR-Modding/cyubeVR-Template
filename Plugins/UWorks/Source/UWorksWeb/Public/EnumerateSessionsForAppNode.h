@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "EnumerateSessionsForAppDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "EnumerateSessionsForAppDelegateDelegate.h"
 #include "EnumerateSessionsForAppNode.generated.h"
 
 class UEnumerateSessionsForAppNode;
@@ -15,6 +15,7 @@ public:
     FEnumerateSessionsForAppDelegate Completed;
     
     UEnumerateSessionsForAppNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/MeshComponent.h"
 #include "Interfaces/Interface_CollisionDataProvider.h"
-#include "RuntimeMeshCollisionHitInfo.h"
+#include "Components/MeshComponent.h"
 #include "ERuntimeMeshMobility.h"
+#include "RuntimeMeshCollisionHitInfo.h"
 #include "RuntimeMeshMaterialSlot.h"
 #include "RuntimeMeshComponent.generated.h"
 
-class URuntimeMesh;
 class UMaterialInterface;
+class URuntimeMesh;
 class URuntimeMeshProvider;
 
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
@@ -20,7 +20,8 @@ private:
     URuntimeMesh* RuntimeMeshReference;
     
 public:
-    URuntimeMeshComponent();
+    URuntimeMeshComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void SetupMaterialSlot(int32 MaterialSlot, FName SlotName, UMaterialInterface* InMaterial);
     
@@ -51,7 +52,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     FRuntimeMeshCollisionHitInfo GetHitSource(int32 FaceIndex) const;
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 

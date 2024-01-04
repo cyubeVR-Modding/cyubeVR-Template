@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "PostGameDataFrameDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "PostGameDataFrameDelegateDelegate.h"
 #include "PostGameDataFrameNode.generated.h"
 
 class UPostGameDataFrameNode;
@@ -15,6 +15,7 @@ public:
     FPostGameDataFrameDelegate Completed;
     
     UPostGameDataFrameNode();
+
     UFUNCTION(BlueprintCallable)
     static UPostGameDataFrameNode* PostGameDataFrameNode(const FString& Key, int32 AppID, FUWorksSteamID SteamID, const FString& BroadcastID, const FString& FrameData);
     

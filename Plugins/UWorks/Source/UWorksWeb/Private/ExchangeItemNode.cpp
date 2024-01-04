@@ -1,6 +1,7 @@
 #include "ExchangeItemNode.h"
 
-class UExchangeItemNode;
+UExchangeItemNode::UExchangeItemNode() {
+}
 
 void UExchangeItemNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UExchangeItemNode* UExchangeItemNode::ExchangeItemNode(const FString& Key, int32
     return NULL;
 }
 
-UExchangeItemNode::UExchangeItemNode() {
-}
 

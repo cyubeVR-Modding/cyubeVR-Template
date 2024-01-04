@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SubscribePublishedFileDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksSteamID.h"
+#include "SubscribePublishedFileDelegateDelegate.h"
 #include "SubscribePublishedFileNode.generated.h"
 
 class USubscribePublishedFileNode;
@@ -15,6 +15,7 @@ public:
     FSubscribePublishedFileDelegate Completed;
     
     USubscribePublishedFileNode();
+
     UFUNCTION(BlueprintCallable)
     static USubscribePublishedFileNode* SubscribePublishedFileNode(const FString& Key, FUWorksSteamID SteamID, int32 AppID, int32 PublishedFileID);
     

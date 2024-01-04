@@ -1,6 +1,7 @@
 #include "CoreStopPlaytimeTrackingForAllItemsNode.h"
 
-class UCoreStopPlaytimeTrackingForAllItemsNode;
+UCoreStopPlaytimeTrackingForAllItemsNode::UCoreStopPlaytimeTrackingForAllItemsNode() {
+}
 
 UCoreStopPlaytimeTrackingForAllItemsNode* UCoreStopPlaytimeTrackingForAllItemsNode::StopPlaytimeTrackingForAllItemsNode() {
     return NULL;
@@ -9,6 +10,4 @@ UCoreStopPlaytimeTrackingForAllItemsNode* UCoreStopPlaytimeTrackingForAllItemsNo
 void UCoreStopPlaytimeTrackingForAllItemsNode::OnRequestCompleted(bool bSuccessful, EUWorksResult Result) {
 }
 
-UCoreStopPlaytimeTrackingForAllItemsNode::UCoreStopPlaytimeTrackingForAllItemsNode() {
-}
 

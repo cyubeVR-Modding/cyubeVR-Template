@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RequestEncryptedAppTicketDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "EUWorksResult.h"
+#include "RequestEncryptedAppTicketDelegateDelegate.h"
 #include "CoreRequestEncryptedAppTicketNode.generated.h"
 
 class UCoreRequestEncryptedAppTicketNode;
@@ -15,6 +15,7 @@ public:
     FRequestEncryptedAppTicketDelegate Completed;
     
     UCoreRequestEncryptedAppTicketNode();
+
     UFUNCTION(BlueprintCallable)
     static UCoreRequestEncryptedAppTicketNode* RequestEncryptedAppTicketNode(TArray<uint8> Buffer);
     

@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UpdateSessionDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "UWorksUsers.h"
-#include "UWorksTitle.h"
 #include "UWorksSteamID.h"
+#include "UWorksTitle.h"
+#include "UWorksUsers.h"
+#include "UpdateSessionDelegateDelegate.h"
 #include "UpdateSessionNode.generated.h"
 
 class UUpdateSessionNode;
@@ -17,6 +17,7 @@ public:
     FUpdateSessionDelegate Completed;
     
     UUpdateSessionNode();
+
     UFUNCTION(BlueprintCallable)
     static UUpdateSessionNode* UpdateSessionNode(const FString& Key, const FString& SessionId, int32 AppID, FUWorksTitle Title, FUWorksUsers Users, FUWorksSteamID SteamID);
     

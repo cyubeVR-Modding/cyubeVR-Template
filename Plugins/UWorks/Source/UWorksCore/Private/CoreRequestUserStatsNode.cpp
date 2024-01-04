@@ -1,6 +1,7 @@
 #include "CoreRequestUserStatsNode.h"
 
-class UCoreRequestUserStatsNode;
+UCoreRequestUserStatsNode::UCoreRequestUserStatsNode() {
+}
 
 UCoreRequestUserStatsNode* UCoreRequestUserStatsNode::RequestUserStatsNode(FUWorksSteamID SteamID) {
     return NULL;
@@ -9,6 +10,4 @@ UCoreRequestUserStatsNode* UCoreRequestUserStatsNode::RequestUserStatsNode(FUWor
 void UCoreRequestUserStatsNode::OnRequestCompleted(bool bSuccessful, FUWorksGameID GameID, EUWorksResult Result, FUWorksSteamID SteamID) {
 }
 
-UCoreRequestUserStatsNode::UCoreRequestUserStatsNode() {
-}
 

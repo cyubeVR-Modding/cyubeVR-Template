@@ -14,6 +14,7 @@ public:
     FGetTradeOffersDelegate Completed;
     
     UGetTradeOffersNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

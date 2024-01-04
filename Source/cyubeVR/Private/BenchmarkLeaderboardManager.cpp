@@ -1,5 +1,6 @@
 #include "BenchmarkLeaderboardManager.h"
 
-ABenchmarkLeaderboardManager::ABenchmarkLeaderboardManager() {
+ABenchmarkLeaderboardManager::ABenchmarkLeaderboardManager(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 }
+
 

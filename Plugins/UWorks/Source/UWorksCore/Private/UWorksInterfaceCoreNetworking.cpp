@@ -1,6 +1,7 @@
 #include "UWorksInterfaceCoreNetworking.h"
 
-class UUWorksInterfaceCoreNetworking;
+UUWorksInterfaceCoreNetworking::UUWorksInterfaceCoreNetworking() {
+}
 
 bool UUWorksInterfaceCoreNetworking::SendP2PPacket(FUWorksSteamID SteamIDRemote, TArray<uint8> Data, EUWorksP2PSend P2PSendType, int32 Channel) {
     return false;
@@ -46,6 +47,4 @@ bool UUWorksInterfaceCoreNetworking::AcceptP2PSessionWithUser(FUWorksSteamID Ste
     return false;
 }
 
-UUWorksInterfaceCoreNetworking::UUWorksInterfaceCoreNetworking() {
-}
 

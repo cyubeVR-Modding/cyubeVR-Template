@@ -1,7 +1,7 @@
 #include "UWorksInterfaceCoreScreenshots.h"
 
-class UTexture2D;
-class UUWorksInterfaceCoreScreenshots;
+UUWorksInterfaceCoreScreenshots::UUWorksInterfaceCoreScreenshots() {
+}
 
 FUWorksScreenshotHandle UUWorksInterfaceCoreScreenshots::WriteScreenshot(UTexture2D* Image) {
     return FUWorksScreenshotHandle{};
@@ -41,6 +41,4 @@ FUWorksScreenshotHandle UUWorksInterfaceCoreScreenshots::AddScreenshotToLibrary(
     return FUWorksScreenshotHandle{};
 }
 
-UUWorksInterfaceCoreScreenshots::UUWorksInterfaceCoreScreenshots() {
-}
 

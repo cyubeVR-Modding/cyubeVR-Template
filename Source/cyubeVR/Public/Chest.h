@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "MeshObject.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
 #include "Chest.generated.h"
 
 class AChestInternals;
@@ -14,12 +14,13 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     AChestInternals* ChestInternals;
     
-    AChest();
+    AChest(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     bool UseActorCustomLocation();
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
-    void SetChestRotation(FRotator rot);
+    void SetChestRotation(FRotator Rot);
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     FRotator GetChestRotation();

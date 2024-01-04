@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Net/OnlineBlueprintCallProxyBase.h"
-#include "SteamDelegateOnAddRemoveWorkshopItemFavoriteDelegate.h"
 #include "SteamUGCItemId.h"
+#include "SteamDelegateOnAddRemoveWorkshopItemFavoriteDelegate.h"
 #include "CallbackProxyAddRemoveWorkshopItemFavorite.generated.h"
 
 class UCallbackProxyAddRemoveWorkshopItemFavorite;
@@ -21,6 +21,7 @@ public:
     FSteamDelegateOnAddRemoveWorkshopItemFavorite OnSteamInitFailure;
     
     UCallbackProxyAddRemoveWorkshopItemFavorite();
+
     UFUNCTION(BlueprintCallable)
     static UCallbackProxyAddRemoveWorkshopItemFavorite* SteamWorkshop_AddRemoveItemFavorite(const FSteamUGCItemId& ItemId, bool bAddToFavourites);
     

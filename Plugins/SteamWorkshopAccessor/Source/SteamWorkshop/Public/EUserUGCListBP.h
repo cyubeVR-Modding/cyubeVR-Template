@@ -13,6 +13,5 @@ enum class EUserUGCListBP : uint8 {
     L_Subscribed,
     L_UsedOrPlayed,
     L_Followed,
-    L_MAX UMETA(Hidden),
 };
 

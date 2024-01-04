@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "HistoryExecuteCommandsMinimalDelegateDelegate.h"
-#include "UWorksRequestWeb.h"
 #include "UWorksSteamID.h"
 #include "HistoryExecuteCommandsDelegateDelegate.h"
+#include "HistoryExecuteCommandsMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebHistoryExecuteCommands.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FHistoryExecuteCommandsMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebHistoryExecuteCommands();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, int32 AppID, FUWorksSteamID SteamID, const FString& ContextID, const FString& ActorId);
     

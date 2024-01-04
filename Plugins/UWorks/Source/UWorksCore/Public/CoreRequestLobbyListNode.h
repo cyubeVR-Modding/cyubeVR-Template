@@ -14,6 +14,7 @@ public:
     FRequestLobbyListDelegate Completed;
     
     UCoreRequestLobbyListNode();
+
     UFUNCTION(BlueprintCallable)
     static UCoreRequestLobbyListNode* RequestLobbyListNode();
     

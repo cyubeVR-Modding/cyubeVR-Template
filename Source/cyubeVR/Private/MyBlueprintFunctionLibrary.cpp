@@ -1,14 +1,7 @@
 #include "MyBlueprintFunctionLibrary.h"
 
-class UTextureRenderTarget2D;
-class UObject;
-class ADynamicResolutionScalingActor;
-class UActorComponent;
-class UTexture;
-class UWidget;
-class UTexture2D;
-class UStaticMesh;
-class UProceduralMeshComponent;
+UMyBlueprintFunctionLibrary::UMyBlueprintFunctionLibrary() {
+}
 
 bool UMyBlueprintFunctionLibrary::WasMirrorResSet() {
     return false;
@@ -35,6 +28,9 @@ void UMyBlueprintFunctionLibrary::SetLeftHandedMode(bool Enabled) {
 void UMyBlueprintFunctionLibrary::SetDynamicRes(UObject* Context, float Value) {
 }
 
+void UMyBlueprintFunctionLibrary::SendEventPS5(const FString& EventName, int32 Count) {
+}
+
 bool UMyBlueprintFunctionLibrary::SavePixels(const FString& FullFilePath, int32 Width, int32 Height, const TArray<FLinearColor>& ImagePixels, FString& ErrorString) {
     return false;
 }
@@ -46,17 +42,32 @@ int32 UMyBlueprintFunctionLibrary::RunTest() {
     return 0;
 }
 
+bool UMyBlueprintFunctionLibrary::RunSC8() {
+    return false;
+}
+
+bool UMyBlueprintFunctionLibrary::RunSC7() {
+    return false;
+}
+
 bool UMyBlueprintFunctionLibrary::RunSC3() {
+    return false;
+}
+
+bool UMyBlueprintFunctionLibrary::RunSC0() {
     return false;
 }
 
 void UMyBlueprintFunctionLibrary::RecreatePhysicsStateForComponent(UActorComponent* Component) {
 }
 
-void UMyBlueprintFunctionLibrary::RecordPlausibleEvent2(const FString& EventName, const FString& ValueName1, const FString& Value1, const FString& ValueName2, const FString& Value2) {
+void UMyBlueprintFunctionLibrary::RecordPlausibleEvent2(const FString& EventName, const FString& ValueName1, const FString& Value1, const FString& ValueName2, const FString& Value2, bool OncePerDay) {
 }
 
-void UMyBlueprintFunctionLibrary::RecordPlausibleEvent(const FString& EventName, const FString& Value) {
+void UMyBlueprintFunctionLibrary::RecordPlausibleEvent(const FString& EventName, const FString& Value, bool OncePerDay, bool ValueOncePerSession) {
+}
+
+void UMyBlueprintFunctionLibrary::PlayWavSound(const FString& FilePath) {
 }
 
 void UMyBlueprintFunctionLibrary::PlayControllerMotorMusic() {
@@ -78,6 +89,10 @@ UTexture2D* UMyBlueprintFunctionLibrary::LoadTexture2D_FromFile(const FString& F
     return NULL;
 }
 
+bool UMyBlueprintFunctionLibrary::IsSteamUserValid() {
+    return false;
+}
+
 bool UMyBlueprintFunctionLibrary::IsPiS() {
     return false;
 }
@@ -97,7 +112,7 @@ bool UMyBlueprintFunctionLibrary::IsDateChristmas() {
     return false;
 }
 
-bool UMyBlueprintFunctionLibrary::IsCDriveAlmostFull() {
+bool UMyBlueprintFunctionLibrary::IsCDriveAlmostFull(int32& FreeSpaceMBs) {
     return false;
 }
 
@@ -116,6 +131,9 @@ void UMyBlueprintFunctionLibrary::InitGameInstancePointer(const UObject* WorldCo
 void UMyBlueprintFunctionLibrary::HookUpCustomSteamVRScreenshot() {
 }
 
+void UMyBlueprintFunctionLibrary::HideActorInLIV(AActor* Actor) {
+}
+
 void UMyBlueprintFunctionLibrary::GetVRAMUsage(int32& TotalRelevantUsage, TArray<FString>& ProcessNames) {
 }
 
@@ -125,12 +143,20 @@ void UMyBlueprintFunctionLibrary::GetVideoCaptureMirrorSettings(bool& UseVideoMi
 void UMyBlueprintFunctionLibrary::GetVersionName(FString& VersionName) {
 }
 
+FString UMyBlueprintFunctionLibrary::GetTextEnglish(FText TextIn) {
+    return TEXT("");
+}
+
 float UMyBlueprintFunctionLibrary::GetSteamStatFloat(const FString& StatName) {
     return 0.0f;
 }
 
 int32 UMyBlueprintFunctionLibrary::GetSteamStat(const FString& StatName) {
     return 0;
+}
+
+FString UMyBlueprintFunctionLibrary::GetSteamID64() {
+    return TEXT("");
 }
 
 FString UMyBlueprintFunctionLibrary::GetSHA256_BP(const TArray<uint8>& ByteArray) {
@@ -154,6 +180,9 @@ EBlockTypeBP UMyBlueprintFunctionLibrary::GetRandomEasterEggType() {
 
 bool UMyBlueprintFunctionLibrary::GetRAMInfo() {
     return false;
+}
+
+void UMyBlueprintFunctionLibrary::GetPhysicalMemoryUsage(int32& CurrentlyUsed, int32& PeakUsed) {
 }
 
 int32 UMyBlueprintFunctionLibrary::GetNumVRAM() {
@@ -205,7 +234,7 @@ void UMyBlueprintFunctionLibrary::GetArgs(FString& Args) {
 void UMyBlueprintFunctionLibrary::ForceExitGame() {
 }
 
-void UMyBlueprintFunctionLibrary::FadeSteamVRColor(float Seconds, FLinearColor Color, bool Background) {
+void UMyBlueprintFunctionLibrary::FadeSteamVRColor(const UObject* WorldContextObject, float Seconds, FLinearColor Color, bool Background) {
 }
 
 bool UMyBlueprintFunctionLibrary::DetectRazerCortex() {
@@ -220,6 +249,12 @@ void UMyBlueprintFunctionLibrary::CopyCollisionToPMC(UStaticMesh* SMC, int32 LOD
 
 FVector2D UMyBlueprintFunctionLibrary::ClosestPointOnLine(float lx1, float ly1, float lx2, float ly2, float x0, float y0) {
     return FVector2D{};
+}
+
+void UMyBlueprintFunctionLibrary::CalculateSpiralCoordinate(float lengthIn, float constantDistanceBetweenWindingsIn, float& X, float& Y) {
+}
+
+void UMyBlueprintFunctionLibrary::CalculateCircleCoordinate(float Radius, float DistanceTravelled, float& X, float& Y, float& percentage) {
 }
 
 void UMyBlueprintFunctionLibrary::BlueprintVerify(bool Result, const FString& FailMessage) {
@@ -238,6 +273,4 @@ void UMyBlueprintFunctionLibrary::AddToRootBP(UObject* Object) {
 void UMyBlueprintFunctionLibrary::ActivateSteamOverlay(const FString& URL) {
 }
 
-UMyBlueprintFunctionLibrary::UMyBlueprintFunctionLibrary() {
-}
 

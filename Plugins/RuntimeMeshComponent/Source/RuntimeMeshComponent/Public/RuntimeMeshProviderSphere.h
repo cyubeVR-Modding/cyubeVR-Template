@@ -36,6 +36,7 @@ private:
     
 public:
     URuntimeMeshProviderSphere();
+
     UFUNCTION(BlueprintCallable)
     void SetSphereRadius(float InSphereRadius);
     

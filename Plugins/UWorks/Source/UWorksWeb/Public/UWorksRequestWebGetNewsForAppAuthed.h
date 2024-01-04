@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "GetNewsForAppAuthedDelegateDelegate.h"
 #include "GetNewsForAppAuthedMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetNewsForAppAuthed.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FGetNewsForAppAuthedMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetNewsForAppAuthed();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, int32 AppID, int32 MaxLength, int32 EndDate, int32 Count, const FString& Feeds);
     

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "GetServerIPsBySteamIDDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetServerIPsBySteamIDDelegateDelegate.h"
 #include "GetServerIPsBySteamIDNode.generated.h"
 
 class UGetServerIPsBySteamIDNode;
@@ -15,6 +15,7 @@ public:
     FGetServerIPsBySteamIDDelegate Completed;
     
     UGetServerIPsBySteamIDNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

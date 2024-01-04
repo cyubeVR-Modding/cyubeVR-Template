@@ -1,6 +1,7 @@
 #include "GetAppPriceInfoNode.h"
 
-class UGetAppPriceInfoNode;
+UGetAppPriceInfoNode::UGetAppPriceInfoNode() {
+}
 
 void UGetAppPriceInfoNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetAppPriceInfoNode* UGetAppPriceInfoNode::GetAppPriceInfoNode(const FString& K
     return NULL;
 }
 
-UGetAppPriceInfoNode::UGetAppPriceInfoNode() {
-}
 

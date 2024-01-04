@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EGripInterfaceTeleportBehavior.h"
-#include "EGripCollisionType.h"
-#include "EGripLateUpdateSettings.h"
-#include "ESecondaryGripType.h"
-#include "EGripMovementReplicationSettings.h"
 #include "BPAdvGripSettings.h"
 #include "BPGripPair.h"
+#include "EGripCollisionType.h"
+#include "EGripInterfaceTeleportBehavior.h"
+#include "EGripLateUpdateSettings.h"
+#include "EGripMovementReplicationSettings.h"
+#include "ESecondaryGripType.h"
 #include "BPInterfaceProperties.generated.h"
 
 USTRUCT(BlueprintType)

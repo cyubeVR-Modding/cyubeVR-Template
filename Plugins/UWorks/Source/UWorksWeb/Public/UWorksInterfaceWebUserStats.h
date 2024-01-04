@@ -1,30 +1,31 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceWeb.h"
-#include "GetGlobalAchievementPercentagesForAppMinimalDelegateDelegate.h"
+#include "UWorksGameID.h"
 #include "UWorksSteamID.h"
-#include "SetUserStatsForGameMinimalDelegateDelegate.h"
+#include "GetGlobalAchievementPercentagesForAppMinimalDelegateDelegate.h"
+#include "GetGlobalStatsForGameMinimalDelegateDelegate.h"
+#include "GetNumberOfCurrentPlayersMinimalDelegateDelegate2.h"
+#include "GetPlayerAchievementsMinimalDelegateDelegate.h"
 #include "GetSchemaForGameMinimalDelegateDelegate.h"
 #include "GetUserStatsForGameMinimalDelegateDelegate.h"
-#include "GetPlayerAchievementsMinimalDelegateDelegate.h"
-#include "GetNumberOfCurrentPlayersMinimalDelegateDelegate2.h"
-#include "GetGlobalStatsForGameMinimalDelegateDelegate.h"
-#include "UWorksGameID.h"
+#include "SetUserStatsForGameMinimalDelegateDelegate.h"
+#include "UWorksInterfaceWeb.h"
 #include "UWorksInterfaceWebUserStats.generated.h"
 
-class UUWorksRequestWebGetUserStatsForGame;
-class UUWorksRequestWebSetUserStatsForGame;
-class UUWorksRequestWebGetSchemaForGame;
-class UUWorksRequestWebGetPlayerAchievements;
-class UUWorksRequestWebGetNumberOfCurrentPlayers;
 class UUWorksRequestWebGetGlobalAchievementPercentagesForApp;
 class UUWorksRequestWebGetGlobalStatsForGame;
+class UUWorksRequestWebGetNumberOfCurrentPlayers;
+class UUWorksRequestWebGetPlayerAchievements;
+class UUWorksRequestWebGetSchemaForGame;
+class UUWorksRequestWebGetUserStatsForGame;
+class UUWorksRequestWebSetUserStatsForGame;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebUserStats : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:
     UUWorksInterfaceWebUserStats();
+
     UFUNCTION(BlueprintCallable)
     static void SetUserStatsForGameMinimal(const FString& Key, FUWorksSteamID SteamID, int32 AppID, int32 Count, TArray<FString> Name, TArray<int32> Value, const FSetUserStatsForGameMinimalDelegate& Delegate);
     

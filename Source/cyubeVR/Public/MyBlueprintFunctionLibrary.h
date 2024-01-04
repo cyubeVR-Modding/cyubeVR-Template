@@ -1,31 +1,33 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "EBlockTypeBP.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
 #include "PerEyeRaw.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
 #include "MyBlueprintFunctionLibrary.generated.h"
 
-class UTextureRenderTarget2D;
-class UObject;
+class AActor;
 class ADynamicResolutionScalingActor;
 class UActorComponent;
-class UTexture;
-class UWidget;
-class UTexture2D;
-class UStaticMesh;
+class UObject;
 class UProceduralMeshComponent;
+class UStaticMesh;
+class UTexture;
+class UTexture2D;
+class UTextureRenderTarget2D;
+class UWidget;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API UMyBlueprintFunctionLibrary : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UMyBlueprintFunctionLibrary();
+
     UFUNCTION(BlueprintCallable)
     static bool WasMirrorResSet();
     
@@ -51,6 +53,9 @@ public:
     static void SetDynamicRes(UObject* Context, float Value);
     
     UFUNCTION(BlueprintCallable)
+    static void SendEventPS5(const FString& EventName, int32 Count);
+    
+    UFUNCTION(BlueprintCallable)
     static bool SavePixels(const FString& FullFilePath, int32 Width, int32 Height, const TArray<FLinearColor>& ImagePixels, FString& ErrorString);
     
     UFUNCTION(BlueprintCallable)
@@ -60,16 +65,28 @@ public:
     static int32 RunTest();
     
     UFUNCTION(BlueprintCallable)
+    static bool RunSC8();
+    
+    UFUNCTION(BlueprintCallable)
+    static bool RunSC7();
+    
+    UFUNCTION(BlueprintCallable)
     static bool RunSC3();
+    
+    UFUNCTION(BlueprintCallable)
+    static bool RunSC0();
     
     UFUNCTION(BlueprintCallable)
     static void RecreatePhysicsStateForComponent(UActorComponent* Component);
     
     UFUNCTION(BlueprintCallable)
-    static void RecordPlausibleEvent2(const FString& EventName, const FString& ValueName1, const FString& Value1, const FString& ValueName2, const FString& Value2);
+    static void RecordPlausibleEvent2(const FString& EventName, const FString& ValueName1, const FString& Value1, const FString& ValueName2, const FString& Value2, bool OncePerDay);
     
     UFUNCTION(BlueprintCallable)
-    static void RecordPlausibleEvent(const FString& EventName, const FString& Value);
+    static void RecordPlausibleEvent(const FString& EventName, const FString& Value, bool OncePerDay, bool ValueOncePerSession);
+    
+    UFUNCTION(BlueprintCallable)
+    static void PlayWavSound(const FString& FilePath);
     
     UFUNCTION(BlueprintCallable)
     static void PlayControllerMotorMusic();
@@ -90,6 +107,9 @@ public:
     static UTexture2D* LoadTexture2D_FromFile(const FString& FullFilePath, bool& IsValid, int32& Width, int32& Height, TEnumAsByte<EPixelFormat> PixelFormat, bool bGenerateMips);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
+    static bool IsSteamUserValid();
+    
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     static bool IsPiS();
     
     UFUNCTION(BlueprintCallable)
@@ -105,7 +125,7 @@ public:
     static bool IsDateChristmas();
     
     UFUNCTION(BlueprintCallable)
-    static bool IsCDriveAlmostFull();
+    static bool IsCDriveAlmostFull(int32& FreeSpaceMBs);
     
     UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static void InitVRAMUsageCounting(const UObject* WorldContextObject);
@@ -123,6 +143,9 @@ public:
     static void HookUpCustomSteamVRScreenshot();
     
     UFUNCTION(BlueprintCallable)
+    static void HideActorInLIV(AActor* Actor);
+    
+    UFUNCTION(BlueprintCallable)
     static void GetVRAMUsage(int32& TotalRelevantUsage, TArray<FString>& ProcessNames);
     
     UFUNCTION(BlueprintCallable)
@@ -131,11 +154,17 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static void GetVersionName(FString& VersionName);
     
+    UFUNCTION(BlueprintCallable, BlueprintPure)
+    static FString GetTextEnglish(FText TextIn);
+    
     UFUNCTION(BlueprintCallable)
     static float GetSteamStatFloat(const FString& StatName);
     
     UFUNCTION(BlueprintCallable)
     static int32 GetSteamStat(const FString& StatName);
+    
+    UFUNCTION(BlueprintCallable, BlueprintPure)
+    static FString GetSteamID64();
     
     UFUNCTION(BlueprintCallable)
     static FString GetSHA256_BP(const TArray<uint8>& ByteArray);
@@ -154,6 +183,9 @@ public:
     
     UFUNCTION(BlueprintCallable)
     static bool GetRAMInfo();
+    
+    UFUNCTION(BlueprintCallable)
+    static void GetPhysicalMemoryUsage(int32& CurrentlyUsed, int32& PeakUsed);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static int32 GetNumVRAM();
@@ -197,8 +229,8 @@ public:
     UFUNCTION(BlueprintCallable)
     static void ForceExitGame();
     
-    UFUNCTION(BlueprintCallable)
-    static void FadeSteamVRColor(float Seconds, FLinearColor Color, bool Background);
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
+    static void FadeSteamVRColor(const UObject* WorldContextObject, float Seconds, FLinearColor Color, bool Background);
     
     UFUNCTION(BlueprintCallable)
     static bool DetectRazerCortex();
@@ -211,6 +243,12 @@ public:
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static FVector2D ClosestPointOnLine(float lx1, float ly1, float lx2, float ly2, float x0, float y0);
+    
+    UFUNCTION(BlueprintCallable)
+    static void CalculateSpiralCoordinate(float lengthIn, float constantDistanceBetweenWindingsIn, float& X, float& Y);
+    
+    UFUNCTION(BlueprintCallable)
+    static void CalculateCircleCoordinate(float Radius, float DistanceTravelled, float& X, float& Y, float& percentage);
     
     UFUNCTION(BlueprintCallable)
     static void BlueprintVerify(bool Result, const FString& FailMessage);

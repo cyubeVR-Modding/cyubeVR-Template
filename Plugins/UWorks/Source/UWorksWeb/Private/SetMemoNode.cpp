@@ -1,6 +1,7 @@
 #include "SetMemoNode.h"
 
-class USetMemoNode;
+USetMemoNode::USetMemoNode() {
+}
 
 USetMemoNode* USetMemoNode::SetMemoNode(const FString& Key, FUWorksSteamID SteamID, const FString& Memo) {
     return NULL;
@@ -9,6 +10,4 @@ USetMemoNode* USetMemoNode::SetMemoNode(const FString& Key, FUWorksSteamID Steam
 void USetMemoNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
 
-USetMemoNode::USetMemoNode() {
-}
 

@@ -1,30 +1,30 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ValidateAuthTicketResponseDelegateDelegate.h"
-#include "UWorksInterfaceCore.h"
-#include "UWorksTicketHandle.h"
-#include "SteamServersConnectedDelegateDelegate.h"
-#include "SteamServerConnectFailureDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "ClientGameServerDenyDelegateDelegate.h"
-#include "SteamServersDisconnectedDelegateDelegate.h"
+#include "EUWorksBeginAuthSessionResult.h"
+#include "EUWorksUserHasLicenseForAppResult.h"
+#include "EUWorksVoiceResult.h"
+#include "GameWebCallbackDelegateDelegate.h"
+#include "GetAuthSessionTicketResponseDelegateDelegate.h"
 #include "IPCFailureDelegateDelegate.h"
 #include "LicensesUpdatedDelegateDelegate.h"
-#include "EUWorksBeginAuthSessionResult.h"
 #include "MicroTxnAuthorizationResponseDelegateDelegate.h"
-#include "GetAuthSessionTicketResponseDelegateDelegate.h"
-#include "GameWebCallbackDelegateDelegate.h"
-#include "EUWorksUserHasLicenseForAppResult.h"
-#include "UWorksSteamID.h"
-#include "RequestStoreAuthURLMinimalDelegateDelegate.h"
 #include "RequestEncryptedAppTicketMinimalDelegateDelegate.h"
-#include "EUWorksVoiceResult.h"
+#include "RequestStoreAuthURLMinimalDelegateDelegate.h"
+#include "SteamServerConnectFailureDelegateDelegate.h"
+#include "SteamServersConnectedDelegateDelegate.h"
+#include "SteamServersDisconnectedDelegateDelegate.h"
+#include "UWorksInterfaceCore.h"
 #include "UWorksSteamUser.h"
+#include "UWorksTicketHandle.h"
+#include "ValidateAuthTicketResponseDelegateDelegate.h"
 #include "UWorksInterfaceCoreUser.generated.h"
 
-class UUWorksRequestCoreRequestStoreAuthURL;
-class UUWorksRequestCoreRequestEncryptedAppTicket;
 class UAudioComponent;
 class UUWorksInterfaceCoreUser;
+class UUWorksRequestCoreRequestEncryptedAppTicket;
+class UUWorksRequestCoreRequestStoreAuthURL;
 
 UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreUser : public UUWorksInterfaceCore {
@@ -61,6 +61,7 @@ public:
     FGameWebCallbackDelegate GameWebCallback;
     
     UUWorksInterfaceCoreUser();
+
     UFUNCTION(BlueprintCallable)
     EUWorksUserHasLicenseForAppResult UserHasLicenseForApp(FUWorksSteamID SteamID, int32 AppID);
     

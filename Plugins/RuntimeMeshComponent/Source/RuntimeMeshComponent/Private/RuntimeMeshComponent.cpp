@@ -1,8 +1,9 @@
 #include "RuntimeMeshComponent.h"
 
-class UMaterialInterface;
-class URuntimeMeshProvider;
-class URuntimeMesh;
+URuntimeMeshComponent::URuntimeMeshComponent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->bNetAddressable = true;
+    this->RuntimeMeshReference = NULL;
+}
 
 void URuntimeMeshComponent::SetupMaterialSlot(int32 MaterialSlot, FName SlotName, UMaterialInterface* InMaterial) {
 }
@@ -40,7 +41,4 @@ FRuntimeMeshCollisionHitInfo URuntimeMeshComponent::GetHitSource(int32 FaceIndex
     return FRuntimeMeshCollisionHitInfo{};
 }
 
-URuntimeMeshComponent::URuntimeMeshComponent() {
-    this->RuntimeMeshReference = NULL;
-}
 

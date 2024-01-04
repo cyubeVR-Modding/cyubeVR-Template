@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksLibrary.h"
 #include "UWorksGameID.h"
+#include "UWorksLibrary.h"
 #include "UWorksLibraryGameID.generated.h"
 
 UCLASS(Blueprintable)
@@ -9,6 +9,7 @@ class UWORKSUTILITIES_API UUWorksLibraryGameID : public UUWorksLibrary {
     GENERATED_BODY()
 public:
     UUWorksLibraryGameID();
+
     UFUNCTION(BlueprintCallable)
     static void SetIdentifier(UPARAM(Ref) FUWorksGameID& GameID, const FString& Identifier);
     

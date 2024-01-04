@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "GetMarketEligibilityDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetMarketEligibilityDelegateDelegate.h"
 #include "GetMarketEligibilityNode.generated.h"
 
 class UGetMarketEligibilityNode;
@@ -15,6 +15,7 @@ public:
     FGetMarketEligibilityDelegate Completed;
     
     UGetMarketEligibilityNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

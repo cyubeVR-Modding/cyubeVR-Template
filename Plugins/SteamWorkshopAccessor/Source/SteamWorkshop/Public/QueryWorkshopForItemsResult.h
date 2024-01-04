@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamResult.h"
 #include "SteamUGCQueryHandle.h"
 #include "UInt32.h"
+#include "SteamResult.h"
 #include "SteamWorkshopItemDetails.h"
 #include "QueryWorkshopForItemsResult.generated.h"
 

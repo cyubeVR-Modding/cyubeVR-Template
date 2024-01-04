@@ -1,38 +1,39 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksUserSession.h"
-#include "UWorksInterfaceWeb.h"
-#include "RefundTxnMinimalDelegateDelegate.h"
-#include "ProcessAgreementMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
-#include "GetUserInfoMinimalDelegateDelegate.h"
-#include "QueryTxnMinimalDelegateDelegate.h"
-#include "AdjustAgreementMinimalDelegateDelegate.h"
 #include "UWorksSteamItemDef.h"
-#include "InitTxnMinimalDelegateDelegate.h"
-#include "GetUserAgreementInfoMinimalDelegateDelegate.h"
-#include "EUWorksReportType.h"
-#include "GetReportMinimalDelegateDelegate.h"
-#include "FinalizeTxnMinimalDelegateDelegate.h"
+#include "AdjustAgreementMinimalDelegateDelegate.h"
 #include "CancelAgreementMinimalDelegateDelegate.h"
+#include "EUWorksReportType.h"
+#include "EUWorksUserSession.h"
+#include "FinalizeTxnMinimalDelegateDelegate.h"
+#include "GetReportMinimalDelegateDelegate.h"
+#include "GetUserAgreementInfoMinimalDelegateDelegate.h"
+#include "GetUserInfoMinimalDelegateDelegate.h"
+#include "InitTxnMinimalDelegateDelegate.h"
+#include "ProcessAgreementMinimalDelegateDelegate.h"
+#include "QueryTxnMinimalDelegateDelegate.h"
+#include "RefundTxnMinimalDelegateDelegate.h"
+#include "UWorksInterfaceWeb.h"
 #include "UWorksInterfaceWebMicroTxn.generated.h"
 
+class UUWorksRequestWebAdjustAgreement;
+class UUWorksRequestWebCancelAgreement;
+class UUWorksRequestWebFinalizeTxn;
+class UUWorksRequestWebGetReport;
+class UUWorksRequestWebGetUserAgreementInfo;
+class UUWorksRequestWebGetUserInfo;
+class UUWorksRequestWebInitTxn;
+class UUWorksRequestWebProcessAgreement;
 class UUWorksRequestWebQueryTxn;
 class UUWorksRequestWebRefundTxn;
-class UUWorksRequestWebProcessAgreement;
-class UUWorksRequestWebInitTxn;
-class UUWorksRequestWebGetUserInfo;
-class UUWorksRequestWebGetUserAgreementInfo;
-class UUWorksRequestWebGetReport;
-class UUWorksRequestWebFinalizeTxn;
-class UUWorksRequestWebCancelAgreement;
-class UUWorksRequestWebAdjustAgreement;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebMicroTxn : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:
     UUWorksInterfaceWebMicroTxn();
+
     UFUNCTION(BlueprintCallable)
     static void RefundTxnMinimal(const FString& Key, const FString& OrderID, int32 AppID, const FRefundTxnMinimalDelegate& Delegate);
     

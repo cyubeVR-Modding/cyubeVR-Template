@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
-#include "IsFollowingDelegateDelegate.h"
-#include "EUWorksResult.h"
 #include "UWorksSteamID.h"
+#include "EUWorksResult.h"
+#include "IsFollowingDelegateDelegate.h"
 #include "IsFollowingMinimalDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "UWorksRequestCoreIsFollowing.generated.h"
 
 UCLASS(Blueprintable)
@@ -18,6 +18,7 @@ public:
     FIsFollowingMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreIsFollowing();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(FUWorksSteamID SteamID);
     

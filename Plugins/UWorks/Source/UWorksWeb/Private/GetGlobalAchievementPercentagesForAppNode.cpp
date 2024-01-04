@@ -1,6 +1,7 @@
 #include "GetGlobalAchievementPercentagesForAppNode.h"
 
-class UGetGlobalAchievementPercentagesForAppNode;
+UGetGlobalAchievementPercentagesForAppNode::UGetGlobalAchievementPercentagesForAppNode() {
+}
 
 void UGetGlobalAchievementPercentagesForAppNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetGlobalAchievementPercentagesForAppNode* UGetGlobalAchievementPercentagesForA
     return NULL;
 }
 
-UGetGlobalAchievementPercentagesForAppNode::UGetGlobalAchievementPercentagesForAppNode() {
-}
 

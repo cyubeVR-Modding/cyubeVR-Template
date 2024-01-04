@@ -1,6 +1,7 @@
 #include "AdjustAgreementNode.h"
 
-class UAdjustAgreementNode;
+UAdjustAgreementNode::UAdjustAgreementNode() {
+}
 
 void UAdjustAgreementNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UAdjustAgreementNode* UAdjustAgreementNode::AdjustAgreementNode(const FString& K
     return NULL;
 }
 
-UAdjustAgreementNode::UAdjustAgreementNode() {
-}
 

@@ -1,6 +1,7 @@
 #include "AddPromoItemNode.h"
 
-class UAddPromoItemNode;
+UAddPromoItemNode::UAddPromoItemNode() {
+}
 
 void UAddPromoItemNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UAddPromoItemNode* UAddPromoItemNode::AddPromoItemNode(const FString& Key, int32
     return NULL;
 }
 
-UAddPromoItemNode::UAddPromoItemNode() {
-}
 

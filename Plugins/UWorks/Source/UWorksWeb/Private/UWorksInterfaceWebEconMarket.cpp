@@ -1,9 +1,7 @@
 #include "UWorksInterfaceWebEconMarket.h"
 
-class UUWorksRequestWebGetPopular;
-class UUWorksRequestWebGetMarketEligibility;
-class UUWorksRequestWebGetAssetID;
-class UUWorksRequestWebCancelAppListingsForUser;
+UUWorksInterfaceWebEconMarket::UUWorksInterfaceWebEconMarket() {
+}
 
 void UUWorksInterfaceWebEconMarket::GetPopularMinimal(const FString& Key, const FString& Language, int32 Rows, int32 Start, int32 FilterAppID, int32 ECurrency, const FGetPopularMinimalDelegate& Delegate) {
 }
@@ -33,6 +31,4 @@ UUWorksRequestWebCancelAppListingsForUser* UUWorksInterfaceWebEconMarket::Cancel
     return NULL;
 }
 
-UUWorksInterfaceWebEconMarket::UUWorksInterfaceWebEconMarket() {
-}
 

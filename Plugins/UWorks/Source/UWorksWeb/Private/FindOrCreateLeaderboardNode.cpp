@@ -1,6 +1,7 @@
 #include "FindOrCreateLeaderboardNode.h"
 
-class UFindOrCreateLeaderboardNode;
+UFindOrCreateLeaderboardNode::UFindOrCreateLeaderboardNode() {
+}
 
 void UFindOrCreateLeaderboardNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UFindOrCreateLeaderboardNode* UFindOrCreateLeaderboardNode::FindOrCreateLeaderbo
     return NULL;
 }
 
-UFindOrCreateLeaderboardNode::UFindOrCreateLeaderboardNode() {
-}
 

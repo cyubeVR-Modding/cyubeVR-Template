@@ -1,6 +1,7 @@
 #include "UpdateSessionNode.h"
 
-class UUpdateSessionNode;
+UUpdateSessionNode::UUpdateSessionNode() {
+}
 
 UUpdateSessionNode* UUpdateSessionNode::UpdateSessionNode(const FString& Key, const FString& SessionId, int32 AppID, FUWorksTitle Title, FUWorksUsers Users, FUWorksSteamID SteamID) {
     return NULL;
@@ -9,6 +10,4 @@ UUpdateSessionNode* UUpdateSessionNode::UpdateSessionNode(const FString& Key, co
 void UUpdateSessionNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
 
-UUpdateSessionNode::UUpdateSessionNode() {
-}
 

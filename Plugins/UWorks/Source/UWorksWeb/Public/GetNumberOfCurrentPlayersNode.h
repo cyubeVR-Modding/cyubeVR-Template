@@ -14,6 +14,7 @@ public:
     FGetNumberOfCurrentPlayersDelegate Completed;
     
     UGetNumberOfCurrentPlayersNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

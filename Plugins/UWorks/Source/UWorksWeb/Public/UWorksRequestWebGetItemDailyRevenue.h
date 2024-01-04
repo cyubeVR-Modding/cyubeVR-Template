@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "GetItemDailyRevenueDelegateDelegate.h"
 #include "GetItemDailyRevenueMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetItemDailyRevenue.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FGetItemDailyRevenueMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetItemDailyRevenue();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, int32 AppID, const FString& ItemId, int32 DateStart, int32 DateEnd);
     

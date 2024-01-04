@@ -1,31 +1,32 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceWeb.h"
 #include "UWorksSteamID.h"
-#include "UnsubscribePublishedFileMinimalDelegateDelegate.h"
-#include "SubscribePublishedFileMinimalDelegateDelegate.h"
-#include "SetUGCUsedByGCMinimalDelegateDelegate.h"
-#include "GetUGCFileDetailsMinimalDelegateDelegate.h"
-#include "GetPublishedFileDetailsMinimalDelegateDelegate.h"
-#include "GetCollectionDetailsMinimalDelegateDelegate.h"
-#include "EnumerateUserSubscribedFilesMinimalDelegateDelegate.h"
 #include "EnumerateUserPublishedFilesMinimalDelegateDelegate.h"
+#include "EnumerateUserSubscribedFilesMinimalDelegateDelegate.h"
+#include "GetCollectionDetailsMinimalDelegateDelegate.h"
+#include "GetPublishedFileDetailsMinimalDelegateDelegate.h"
+#include "GetUGCFileDetailsMinimalDelegateDelegate.h"
+#include "SetUGCUsedByGCMinimalDelegateDelegate.h"
+#include "SubscribePublishedFileMinimalDelegateDelegate.h"
+#include "UWorksInterfaceWeb.h"
+#include "UnsubscribePublishedFileMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebRemoteStorage.generated.h"
 
-class UUWorksRequestWebSetUGCUsedByGC;
-class UUWorksRequestWebUnsubscribePublishedFile;
-class UUWorksRequestWebSubscribePublishedFile;
-class UUWorksRequestWebGetUGCFileDetails;
 class UUWorksRequestWebEnumerateUserPublishedFiles;
-class UUWorksRequestWebGetPublishedFileDetails;
-class UUWorksRequestWebGetCollectionDetails;
 class UUWorksRequestWebEnumerateUserSubscribedFiles;
+class UUWorksRequestWebGetCollectionDetails;
+class UUWorksRequestWebGetPublishedFileDetails;
+class UUWorksRequestWebGetUGCFileDetails;
+class UUWorksRequestWebSetUGCUsedByGC;
+class UUWorksRequestWebSubscribePublishedFile;
+class UUWorksRequestWebUnsubscribePublishedFile;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebRemoteStorage : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:
     UUWorksInterfaceWebRemoteStorage();
+
     UFUNCTION(BlueprintCallable)
     static void UnsubscribePublishedFileMinimal(const FString& Key, FUWorksSteamID SteamID, int32 AppID, int32 PublishedFileID, const FUnsubscribePublishedFileMinimalDelegate& Delegate);
     

@@ -15,6 +15,7 @@ public:
     FRequestVacStatusForUserDelegate Completed;
     
     URequestVacStatusForUserNode();
+
     UFUNCTION(BlueprintCallable)
     static URequestVacStatusForUserNode* RequestVacStatusForUserNode(const FString& Key, FUWorksSteamID SteamID, int32 AppID, const FString& SessionId);
     

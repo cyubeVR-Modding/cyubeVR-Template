@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetAppListDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "GetAppListDelegateDelegate.h"
 #include "GetAppListNode.generated.h"
 
 class UGetAppListNode;
@@ -14,6 +14,7 @@ public:
     FGetAppListDelegate Completed;
     
     UGetAppListNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

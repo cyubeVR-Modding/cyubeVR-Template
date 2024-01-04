@@ -8,6 +8,7 @@ class RUNTIMEMESHCOMPONENT_API URuntimeMeshProviderMemoryCache : public URuntime
     GENERATED_BODY()
 public:
     URuntimeMeshProviderMemoryCache();
+
     UFUNCTION(BlueprintCallable)
     void ClearCache();
     

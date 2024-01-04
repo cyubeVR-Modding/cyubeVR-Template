@@ -1,6 +1,7 @@
 #include "CorePlayersNode.h"
 
-class UCorePlayersNode;
+UCorePlayersNode::UCorePlayersNode() {
+}
 
 UCorePlayersNode* UCorePlayersNode::PlayersNode(const FString& IP, int32 Port, int32 MaxUpdates) {
     return NULL;
@@ -9,6 +10,4 @@ UCorePlayersNode* UCorePlayersNode::PlayersNode(const FString& IP, int32 Port, i
 void UCorePlayersNode::OnRequestUpdated(bool bSuccessful, FUWorksPlayerInfo Player) {
 }
 
-UCorePlayersNode::UCorePlayersNode() {
-}
 

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
 #include "FindLeaderboardDelegateDelegate.h"
 #include "FindLeaderboardMinimalDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "UWorksSteamLeaderboard.h"
 #include "UWorksRequestCoreFindLeaderboard.generated.h"
 
@@ -17,6 +17,7 @@ public:
     FFindLeaderboardMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreFindLeaderboard();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& LeaderboardName);
     

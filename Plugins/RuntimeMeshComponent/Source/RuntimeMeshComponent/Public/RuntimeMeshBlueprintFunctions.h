@@ -1,26 +1,26 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
-#include "RuntimeMeshTriangleStream.h"
-#include "RuntimeMeshVertexTexCoordStream.h"
-#include "RuntimeMeshVertexColorStream.h"
-#include "UObject/NoExportTypes.h"
-#include "RuntimeMeshVertexTangentStream.h"
-#include "RuntimeMeshVertexPositionStream.h"
-#include "RuntimeMeshCollisionTriangleStream.h"
-#include "RuntimeMeshCollisionVertexStream.h"
-#include "RuntimeMeshCollisionTexCoordStream.h"
-#include "RuntimeMeshCollisionData.h"
-#include "RuntimeMeshCollisionMaterialIndexStream.h"
-#include "RuntimeMeshCollisionSphere.h"
-#include "UObject/NoExportTypes.h"
-#include "RuntimeMeshRenderableMeshData.h"
-#include "UObject/NoExportTypes.h"
-#include "RuntimeMeshCollisionSettings.h"
-#include "RuntimeMeshCollisionConvexMesh.h"
 #include "RuntimeMeshCollisionBox.h"
 #include "RuntimeMeshCollisionCapsule.h"
+#include "RuntimeMeshCollisionConvexMesh.h"
+#include "RuntimeMeshCollisionData.h"
+#include "RuntimeMeshCollisionMaterialIndexStream.h"
+#include "RuntimeMeshCollisionSettings.h"
+#include "RuntimeMeshCollisionSphere.h"
+#include "RuntimeMeshCollisionTexCoordStream.h"
+#include "RuntimeMeshCollisionTriangleStream.h"
+#include "RuntimeMeshCollisionVertexStream.h"
+#include "RuntimeMeshRenderableMeshData.h"
+#include "RuntimeMeshTriangleStream.h"
+#include "RuntimeMeshVertexColorStream.h"
+#include "RuntimeMeshVertexPositionStream.h"
+#include "RuntimeMeshVertexTangentStream.h"
+#include "RuntimeMeshVertexTexCoordStream.h"
 #include "RuntimeMeshBlueprintFunctions.generated.h"
 
 UCLASS(Blueprintable)
@@ -28,6 +28,7 @@ class RUNTIMEMESHCOMPONENT_API URuntimeMeshBlueprintFunctions : public UBlueprin
     GENERATED_BODY()
 public:
     URuntimeMeshBlueprintFunctions();
+
     UFUNCTION(BlueprintCallable)
     static void SetVertexIndex(UPARAM(Ref) FRuntimeMeshTriangleStream& Stream, FRuntimeMeshTriangleStream& OutStream, int32 Index, int32 NewIndex);
     

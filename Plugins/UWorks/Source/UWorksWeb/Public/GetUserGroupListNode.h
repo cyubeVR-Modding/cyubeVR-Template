@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "GetUserGroupListDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetUserGroupListDelegateDelegate.h"
 #include "GetUserGroupListNode.generated.h"
 
 class UGetUserGroupListNode;
@@ -15,6 +15,7 @@ public:
     FGetUserGroupListDelegate Completed;
     
     UGetUserGroupListNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

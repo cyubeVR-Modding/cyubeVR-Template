@@ -3,8 +3,8 @@
 #include "GameFramework/Actor.h"
 #include "AttachedRain.generated.h"
 
-class USceneCaptureComponent;
 class UAudioComponent;
+class USceneCaptureComponent;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API AAttachedRain : public AActor {
@@ -31,7 +31,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 RowsY;
     
-    AAttachedRain();
+    AAttachedRain(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void UpdateAudioLocations();
     

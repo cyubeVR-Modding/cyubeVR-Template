@@ -1,6 +1,7 @@
 #include "RuntimeMeshProviderTargetInterface.h"
 
-class UMaterialInterface;
+URuntimeMeshProviderTargetInterface::URuntimeMeshProviderTargetInterface() {
+}
 
 void URuntimeMeshProviderTargetInterface::SetupMaterialSlot(int32 MaterialSlot, FName SlotName, UMaterialInterface* InMaterial) {
 }
@@ -66,6 +67,4 @@ void URuntimeMeshProviderTargetInterface::ConfigureLODs(const TArray<FRuntimeMes
 void URuntimeMeshProviderTargetInterface::ClearSection(int32 LODIndex, int32 SectionId) {
 }
 
-URuntimeMeshProviderTargetInterface::URuntimeMeshProviderTargetInterface() {
-}
 

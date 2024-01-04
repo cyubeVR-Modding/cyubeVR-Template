@@ -1,8 +1,7 @@
 #include "UWorksInterfaceCoreGameServer.h"
 
-class UUWorksInterfaceCoreGameServer;
-class UUWorksRequestCoreComputeNewPlayerCompatibility;
-class UUWorksRequestCoreAssociateWithClan;
+UUWorksInterfaceCoreGameServer::UUWorksInterfaceCoreGameServer() {
+}
 
 bool UUWorksInterfaceCoreGameServer::WasRestartRequested() {
     return false;
@@ -99,6 +98,4 @@ UUWorksRequestCoreAssociateWithClan* UUWorksInterfaceCoreGameServer::AssociateWi
     return NULL;
 }
 
-UUWorksInterfaceCoreGameServer::UUWorksInterfaceCoreGameServer() {
-}
 

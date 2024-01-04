@@ -14,6 +14,7 @@ public:
     FGetServersAtAddressDelegate Completed;
     
     UGetServersAtAddressNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

@@ -1,15 +1,7 @@
 #include "UWorksInterfaceWebMicroTxn.h"
 
-class UUWorksRequestWebQueryTxn;
-class UUWorksRequestWebRefundTxn;
-class UUWorksRequestWebProcessAgreement;
-class UUWorksRequestWebInitTxn;
-class UUWorksRequestWebGetUserInfo;
-class UUWorksRequestWebGetUserAgreementInfo;
-class UUWorksRequestWebGetReport;
-class UUWorksRequestWebFinalizeTxn;
-class UUWorksRequestWebCancelAgreement;
-class UUWorksRequestWebAdjustAgreement;
+UUWorksInterfaceWebMicroTxn::UUWorksInterfaceWebMicroTxn() {
+}
 
 void UUWorksInterfaceWebMicroTxn::RefundTxnMinimal(const FString& Key, const FString& OrderID, int32 AppID, const FRefundTxnMinimalDelegate& Delegate) {
 }
@@ -81,6 +73,4 @@ UUWorksRequestWebAdjustAgreement* UUWorksInterfaceWebMicroTxn::AdjustAgreement()
     return NULL;
 }
 
-UUWorksInterfaceWebMicroTxn::UUWorksInterfaceWebMicroTxn() {
-}
 

@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
-#include "JoinLobbyDelegateDelegate.h"
-#include "JoinLobbyMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "EUWorksChatRoomEnterResponse.h"
+#include "JoinLobbyDelegateDelegate.h"
+#include "JoinLobbyMinimalDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "UWorksRequestCoreJoinLobby.generated.h"
 
 UCLASS(Blueprintable)
@@ -18,6 +18,7 @@ public:
     FJoinLobbyMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreJoinLobby();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(FUWorksSteamID SteamIDLobby);
     

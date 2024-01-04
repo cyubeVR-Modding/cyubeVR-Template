@@ -1,7 +1,13 @@
 #include "DeerCPP.h"
 
-class AChunkManager;
-class UMeshComponent;
+ADeerCPP::ADeerCPP(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->EnableOverlapWhenCloseToPlayer = NULL;
+    this->DebugSkeletalComponent = NULL;
+    this->WasLoaded = false;
+    this->WasVisibleLastFrame = true;
+    this->MinTickDistance = 10000;
+    this->IsDead = false;
+}
 
 void ADeerCPP::UpdateColorsFromLoaded_Implementation() {
 }
@@ -34,10 +40,4 @@ void ADeerCPP::DoWeirdStuff_Implementation() {
 void ADeerCPP::DoTick_Implementation() {
 }
 
-ADeerCPP::ADeerCPP() {
-    this->WasLoaded = false;
-    this->RecentlyRendered = false;
-    this->WasVisibleLastFrame = true;
-    this->IsDead = false;
-}
 

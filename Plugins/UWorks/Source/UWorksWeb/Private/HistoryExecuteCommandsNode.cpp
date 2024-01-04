@@ -1,6 +1,7 @@
 #include "HistoryExecuteCommandsNode.h"
 
-class UHistoryExecuteCommandsNode;
+UHistoryExecuteCommandsNode::UHistoryExecuteCommandsNode() {
+}
 
 void UHistoryExecuteCommandsNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UHistoryExecuteCommandsNode* UHistoryExecuteCommandsNode::HistoryExecuteCommands
     return NULL;
 }
 
-UHistoryExecuteCommandsNode::UHistoryExecuteCommandsNode() {
-}
 

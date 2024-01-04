@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GeneralWorkshopItemResult.h"
 #include "SteamUGCItemId.h"
+#include "GeneralWorkshopItemResult.h"
 #include "AddRemoveItemDependencyResult.generated.h"
 
 USTRUCT(BlueprintType)

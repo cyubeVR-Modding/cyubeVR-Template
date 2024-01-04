@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "FlushAssetAppearanceCacheDelegateDelegate.h"
 #include "FlushAssetAppearanceCacheMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebFlushAssetAppearanceCache.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FFlushAssetAppearanceCacheMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebFlushAssetAppearanceCache();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, int32 AppID);
     

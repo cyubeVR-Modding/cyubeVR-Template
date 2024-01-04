@@ -1,6 +1,7 @@
 #include "RuntimeMeshProviderModifiers.h"
 
-class URuntimeMeshModifier;
+URuntimeMeshProviderModifiers::URuntimeMeshProviderModifiers() {
+}
 
 void URuntimeMeshProviderModifiers::RemoveModifier(URuntimeMeshModifier* ModifierToRemove) {
 }
@@ -8,6 +9,4 @@ void URuntimeMeshProviderModifiers::RemoveModifier(URuntimeMeshModifier* Modifie
 void URuntimeMeshProviderModifiers::AddModifier(URuntimeMeshModifier* NewModifier) {
 }
 
-URuntimeMeshProviderModifiers::URuntimeMeshProviderModifiers() {
-}
 

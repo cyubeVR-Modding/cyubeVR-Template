@@ -18,6 +18,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     UTextureRenderTarget2D* ForegroundMaskedRenderTarget;
     
-    ULivCaptureGlobalClipPlaneNoPostProcess();
+    ULivCaptureGlobalClipPlaneNoPostProcess(const FObjectInitializer& ObjectInitializer);
+
 };
 

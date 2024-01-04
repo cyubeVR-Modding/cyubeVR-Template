@@ -1,6 +1,7 @@
 #include "GetItemDefsNode.h"
 
-class UGetItemDefsNode;
+UGetItemDefsNode::UGetItemDefsNode() {
+}
 
 void UGetItemDefsNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetItemDefsNode* UGetItemDefsNode::GetItemDefsNode(const FString& Key, int32 Ap
     return NULL;
 }
 
-UGetItemDefsNode::UGetItemDefsNode() {
-}
 

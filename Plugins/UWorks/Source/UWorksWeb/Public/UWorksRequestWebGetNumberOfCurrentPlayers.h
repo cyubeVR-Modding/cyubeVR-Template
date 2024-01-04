@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "GetNumberOfCurrentPlayersDelegateDelegate2.h"
 #include "GetNumberOfCurrentPlayersMinimalDelegateDelegate2.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetNumberOfCurrentPlayers.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FGetNumberOfCurrentPlayersMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetNumberOfCurrentPlayers();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(int32 AppID);
     

@@ -14,6 +14,7 @@ public:
     FDeleteSessionBatchDelegate Completed;
     
     UDeleteSessionBatchNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

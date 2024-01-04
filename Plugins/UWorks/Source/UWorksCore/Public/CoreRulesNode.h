@@ -15,6 +15,7 @@ public:
     FRulesUpdateDelegate Updated;
     
     UCoreRulesNode();
+
     UFUNCTION(BlueprintCallable)
     static UCoreRulesNode* RulesNode(const FString& IP, int32 Port, int32 MaxUpdates);
     

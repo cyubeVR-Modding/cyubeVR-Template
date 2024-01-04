@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreGetFollowerCount.h"
 
+UUWorksRequestCoreGetFollowerCount::UUWorksRequestCoreGetFollowerCount() {
+}
+
 void UUWorksRequestCoreGetFollowerCount::SetInput(FUWorksSteamID SteamID) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreGetFollowerCount::Deactivate() {
 void UUWorksRequestCoreGetFollowerCount::Activate() {
 }
 
-UUWorksRequestCoreGetFollowerCount::UUWorksRequestCoreGetFollowerCount() {
-}
 

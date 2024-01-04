@@ -1,6 +1,7 @@
 #include "GetAppBetasNode.h"
 
-class UGetAppBetasNode;
+UGetAppBetasNode::UGetAppBetasNode() {
+}
 
 void UGetAppBetasNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetAppBetasNode* UGetAppBetasNode::GetAppBetasNode(const FString& Key, int32 Ap
     return NULL;
 }
 
-UGetAppBetasNode::UGetAppBetasNode() {
-}
 

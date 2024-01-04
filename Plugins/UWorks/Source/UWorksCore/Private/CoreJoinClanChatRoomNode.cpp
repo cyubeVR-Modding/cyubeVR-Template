@@ -1,6 +1,7 @@
 #include "CoreJoinClanChatRoomNode.h"
 
-class UCoreJoinClanChatRoomNode;
+UCoreJoinClanChatRoomNode::UCoreJoinClanChatRoomNode() {
+}
 
 void UCoreJoinClanChatRoomNode::OnRequestCompleted(bool bSuccessful, FUWorksSteamID SteamIDClanChat, EUWorksChatRoomEnterResponse ChatRoomEnterResponse) {
 }
@@ -9,6 +10,4 @@ UCoreJoinClanChatRoomNode* UCoreJoinClanChatRoomNode::JoinClanChatRoomNode(FUWor
     return NULL;
 }
 
-UCoreJoinClanChatRoomNode::UCoreJoinClanChatRoomNode() {
-}
 

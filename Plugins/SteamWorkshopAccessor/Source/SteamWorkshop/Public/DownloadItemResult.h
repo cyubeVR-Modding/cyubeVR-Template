@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GeneralWorkshopItemResult.h"
 #include "UInt32.h"
+#include "GeneralWorkshopItemResult.h"
 #include "DownloadItemResult.generated.h"
 
 USTRUCT(BlueprintType)

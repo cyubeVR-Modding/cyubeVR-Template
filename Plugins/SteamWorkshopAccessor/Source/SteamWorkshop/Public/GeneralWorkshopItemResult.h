@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamResult.h"
 #include "SteamUGCItemId.h"
+#include "SteamResult.h"
 #include "GeneralWorkshopItemResult.generated.h"
 
 USTRUCT(BlueprintType)

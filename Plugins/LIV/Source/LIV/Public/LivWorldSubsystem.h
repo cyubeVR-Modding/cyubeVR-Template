@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Templates/SubclassOf.h"
-#include "Subsystems/WorldSubsystem.h"
 #include "UObject/NoExportTypes.h"
+#include "Subsystems/WorldSubsystem.h"
+#include "Templates/SubclassOf.h"
 #include "LivWorldSubsystem.generated.h"
 
-class UCameraComponent;
 class ALivCameraController;
-class USceneComponent;
+class UCameraComponent;
 class ULivCaptureBase;
+class USceneComponent;
 
 UCLASS(Blueprintable)
 class LIV_API ULivWorldSubsystem : public UWorldSubsystem {
@@ -29,6 +29,7 @@ private:
     
 public:
     ULivWorldSubsystem();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     FTransform GetTrackingOriginTransform() const;
     

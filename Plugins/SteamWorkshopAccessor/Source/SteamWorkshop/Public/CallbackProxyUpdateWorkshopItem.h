@@ -23,6 +23,7 @@ public:
     FSteamDelegateOnUpdateWorkshopItem OnSteamInitFailure;
     
     UCallbackProxyUpdateWorkshopItem();
+
     UFUNCTION(BlueprintCallable)
     static UCallbackProxyUpdateWorkshopItem* SteamWorkshop_UpdateItem(const FSteamUGCItemId& ItemId, const FSteamWorkshopUpdateDetails& updateDetails, const FSteamDelegateOnUpdateWorkshopItemStarted& onUpdateStarted);
     

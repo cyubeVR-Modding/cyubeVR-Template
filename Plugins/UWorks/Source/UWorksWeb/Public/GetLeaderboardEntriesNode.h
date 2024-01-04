@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "GetLeaderboardEntriesDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetLeaderboardEntriesDelegateDelegate.h"
 #include "GetLeaderboardEntriesNode.generated.h"
 
 class UGetLeaderboardEntriesNode;
@@ -15,6 +15,7 @@ public:
     FGetLeaderboardEntriesDelegate Completed;
     
     UGetLeaderboardEntriesNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

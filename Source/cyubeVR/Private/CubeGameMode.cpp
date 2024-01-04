@@ -1,5 +1,6 @@
 #include "CubeGameMode.h"
 
-ACubeGameMode::ACubeGameMode() {
+ACubeGameMode::ACubeGameMode(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 }
+
 

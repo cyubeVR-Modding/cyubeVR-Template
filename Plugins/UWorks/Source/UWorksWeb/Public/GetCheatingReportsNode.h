@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "GetCheatingReportsDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetCheatingReportsDelegateDelegate.h"
 #include "GetCheatingReportsNode.generated.h"
 
 class UGetCheatingReportsNode;
@@ -15,6 +15,7 @@ public:
     FGetCheatingReportsDelegate Completed;
     
     UGetCheatingReportsNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

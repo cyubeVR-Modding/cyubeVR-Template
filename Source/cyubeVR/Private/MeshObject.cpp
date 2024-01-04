@@ -1,5 +1,13 @@
 #include "MeshObject.h"
 
+AMeshObject::AMeshObject(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->Type = EBlockTypeBP::Stone;
+    this->Life = 100.00f;
+    this->Destroyed = false;
+    this->bDoInstantDestroy = false;
+    this->OverlapBoundingBox = NULL;
+}
+
 void AMeshObject::SetReadyForSaving() {
 }
 
@@ -25,11 +33,4 @@ bool AMeshObject::CanDamageObject() {
     return false;
 }
 
-AMeshObject::AMeshObject() {
-    this->Type = EBlockTypeBP::Stone;
-    this->Life = 100.00f;
-    this->Destroyed = false;
-    this->bDoInstantDestroy = false;
-    this->OverlapBoundingBox = NULL;
-}
 

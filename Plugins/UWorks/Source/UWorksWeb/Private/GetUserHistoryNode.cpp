@@ -1,6 +1,7 @@
 #include "GetUserHistoryNode.h"
 
-class UGetUserHistoryNode;
+UGetUserHistoryNode::UGetUserHistoryNode() {
+}
 
 void UGetUserHistoryNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetUserHistoryNode* UGetUserHistoryNode::GetUserHistoryNode(const FString& Key,
     return NULL;
 }
 
-UGetUserHistoryNode::UGetUserHistoryNode() {
-}
 

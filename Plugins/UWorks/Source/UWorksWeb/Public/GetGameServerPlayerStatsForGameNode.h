@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "GetGameServerPlayerStatsForGameDelegateDelegate.h"
 #include "UWorksGameID.h"
+#include "GetGameServerPlayerStatsForGameDelegateDelegate.h"
 #include "GetGameServerPlayerStatsForGameNode.generated.h"
 
 class UGetGameServerPlayerStatsForGameNode;
@@ -15,6 +15,7 @@ public:
     FGetGameServerPlayerStatsForGameDelegate Completed;
     
     UGetGameServerPlayerStatsForGameNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

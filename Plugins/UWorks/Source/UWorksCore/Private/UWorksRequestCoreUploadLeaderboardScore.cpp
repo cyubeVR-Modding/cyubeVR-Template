@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreUploadLeaderboardScore.h"
 
+UUWorksRequestCoreUploadLeaderboardScore::UUWorksRequestCoreUploadLeaderboardScore() {
+}
+
 void UUWorksRequestCoreUploadLeaderboardScore::SetInput(FUWorksSteamLeaderboard SteamLeaderboard, EUWorksLeaderboardUploadScoreMethod LeaderboardUploadScoreMethod, int32 score, TArray<int32> ScoreDetails) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreUploadLeaderboardScore::Deactivate() {
 void UUWorksRequestCoreUploadLeaderboardScore::Activate() {
 }
 
-UUWorksRequestCoreUploadLeaderboardScore::UUWorksRequestCoreUploadLeaderboardScore() {
-}
 

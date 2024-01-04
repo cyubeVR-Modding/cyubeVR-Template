@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
-#include "RequestEligiblePromoItemDefinitionsIDsMinimalDelegateDelegate.h"
-#include "RequestEligiblePromoItemDefinitionsIDsDelegateDelegate.h"
-#include "EUWorksResult.h"
 #include "UWorksSteamID.h"
+#include "EUWorksResult.h"
+#include "RequestEligiblePromoItemDefinitionsIDsDelegateDelegate.h"
+#include "RequestEligiblePromoItemDefinitionsIDsMinimalDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "UWorksRequestCoreRequestEligiblePromoItemDefinitionsIDs.generated.h"
 
 UCLASS(Blueprintable)
@@ -18,6 +18,7 @@ public:
     FRequestEligiblePromoItemDefinitionsIDsMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreRequestEligiblePromoItemDefinitionsIDs();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(FUWorksSteamID SteamID);
     

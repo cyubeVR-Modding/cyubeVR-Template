@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
-#include "GetAccountPublicInfoMinimalDelegateDelegate.h"
-#include "GetAccountPublicInfoDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetAccountPublicInfoDelegateDelegate.h"
+#include "GetAccountPublicInfoMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetAccountPublicInfo.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FGetAccountPublicInfoMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetAccountPublicInfo();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, FUWorksSteamID SteamID);
     

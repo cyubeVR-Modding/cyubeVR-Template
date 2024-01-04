@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "ResetLoginTokenDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "ResetLoginTokenDelegateDelegate.h"
 #include "ResetLoginTokenNode.generated.h"
 
 class UResetLoginTokenNode;
@@ -15,6 +15,7 @@ public:
     FResetLoginTokenDelegate Completed;
     
     UResetLoginTokenNode();
+
     UFUNCTION(BlueprintCallable)
     static UResetLoginTokenNode* ResetLoginTokenNode(const FString& Key, FUWorksSteamID SteamID);
     

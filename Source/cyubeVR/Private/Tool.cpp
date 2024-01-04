@@ -1,7 +1,7 @@
 #include "Tool.h"
 
-class AChunkManager;
-class ACharacter;
+ATool::ATool(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+}
 
 void ATool::InitTool_Implementation(EBlockTypeBP Type_, AChunkManager* ChunkManager_, ACharacter* Player_) {
 }
@@ -9,6 +9,4 @@ void ATool::InitTool_Implementation(EBlockTypeBP Type_, AChunkManager* ChunkMana
 void ATool::DestroyTool() {
 }
 
-ATool::ATool() {
-}
 

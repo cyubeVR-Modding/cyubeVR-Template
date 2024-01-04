@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "GetItemDefsDelegateDelegate.h"
 #include "UWorksSteamItemDef.h"
+#include "GetItemDefsDelegateDelegate.h"
 #include "GetItemDefsNode.generated.h"
 
 class UGetItemDefsNode;
@@ -15,6 +15,7 @@ public:
     FGetItemDefsDelegate Completed;
     
     UGetItemDefsNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UpToDateCheckDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
+#include "UpToDateCheckDelegateDelegate.h"
 #include "UpToDateCheckMinimalDelegateDelegate.h"
 #include "UWorksRequestWebUpToDateCheck.generated.h"
 
@@ -16,6 +16,7 @@ public:
     FUpToDateCheckMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebUpToDateCheck();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(int32 AppID, int32 VersionToCheck);
     

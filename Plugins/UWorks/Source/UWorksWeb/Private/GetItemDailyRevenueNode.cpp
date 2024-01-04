@@ -1,6 +1,7 @@
 #include "GetItemDailyRevenueNode.h"
 
-class UGetItemDailyRevenueNode;
+UGetItemDailyRevenueNode::UGetItemDailyRevenueNode() {
+}
 
 void UGetItemDailyRevenueNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetItemDailyRevenueNode* UGetItemDailyRevenueNode::GetItemDailyRevenueNode(cons
     return NULL;
 }
 
-UGetItemDailyRevenueNode::UGetItemDailyRevenueNode() {
-}
 

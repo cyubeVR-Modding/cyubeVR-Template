@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreAssociateWithClan.h"
 
+UUWorksRequestCoreAssociateWithClan::UUWorksRequestCoreAssociateWithClan() {
+}
+
 void UUWorksRequestCoreAssociateWithClan::SetInput(FUWorksSteamID SteamIDClan) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreAssociateWithClan::Deactivate() {
 void UUWorksRequestCoreAssociateWithClan::Activate() {
 }
 
-UUWorksRequestCoreAssociateWithClan::UUWorksRequestCoreAssociateWithClan() {
-}
 

@@ -3,10 +3,10 @@
 #include "GameFramework/Actor.h"
 #include "LivThirdPersonShotActor.generated.h"
 
-class ULivSpringArmComponent;
-class ULivShotComponent;
 class ALivCameraController;
 class ULivCaptureBase;
+class ULivShotComponent;
+class ULivSpringArmComponent;
 
 UCLASS(Blueprintable)
 class LIV_API ALivThirdPersonShotActor : public AActor {
@@ -18,7 +18,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     ULivShotComponent* ShotComponent;
     
-    ALivThirdPersonShotActor();
+    ALivThirdPersonShotActor(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void TickSpringArm(ALivCameraController* Controller, ULivCaptureBase* CaptureComponent, float ShotTime, float DeltaTime);
     

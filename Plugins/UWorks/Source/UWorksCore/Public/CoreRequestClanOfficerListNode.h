@@ -15,6 +15,7 @@ public:
     FRequestClanOfficerListDelegate Completed;
     
     UCoreRequestClanOfficerListNode();
+
     UFUNCTION(BlueprintCallable)
     static UCoreRequestClanOfficerListNode* RequestClanOfficerListNode(FUWorksSteamID SteamID);
     

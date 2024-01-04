@@ -1,6 +1,7 @@
 #include "IsPlayingSharedGameNode.h"
 
-class UIsPlayingSharedGameNode;
+UIsPlayingSharedGameNode::UIsPlayingSharedGameNode() {
+}
 
 void UIsPlayingSharedGameNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UIsPlayingSharedGameNode* UIsPlayingSharedGameNode::IsPlayingSharedGameNode(cons
     return NULL;
 }
 
-UIsPlayingSharedGameNode::UIsPlayingSharedGameNode() {
-}
 

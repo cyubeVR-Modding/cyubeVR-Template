@@ -1,11 +1,8 @@
 #include "LivLocalPlayerSubsystem.h"
 #include "Templates/SubclassOf.h"
 
-class UPrimitiveComponent;
-class AActor;
-class ULocalPlayer;
-class ULivCaptureBase;
-class ULivWorldSubsystem;
+ULivLocalPlayerSubsystem::ULivLocalPlayerSubsystem() {
+}
 
 void ULivLocalPlayerSubsystem::ShowComponent(UPrimitiveComponent* InComponent) {
 }
@@ -48,6 +45,4 @@ void ULivLocalPlayerSubsystem::ClearHiddenComponents() {
 void ULivLocalPlayerSubsystem::ClearHiddenActors() {
 }
 
-ULivLocalPlayerSubsystem::ULivLocalPlayerSubsystem() {
-}
 

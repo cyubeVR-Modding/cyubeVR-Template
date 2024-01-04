@@ -23,6 +23,5 @@ enum class EUGCQueryBP : uint8 {
     UQ_RankedByLifetimeAveragePlaytime,
     UQ_RankedByPlaytimeSessionsTrend,
     UQ_RankedByLifetimePlaytimeSessions,
-    UQ_MAX UMETA(Hidden),
 };
 

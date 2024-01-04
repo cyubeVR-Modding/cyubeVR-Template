@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreIsFollowing.h"
 
+UUWorksRequestCoreIsFollowing::UUWorksRequestCoreIsFollowing() {
+}
+
 void UUWorksRequestCoreIsFollowing::SetInput(FUWorksSteamID SteamID) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreIsFollowing::Deactivate() {
 void UUWorksRequestCoreIsFollowing::Activate() {
 }
 
-UUWorksRequestCoreIsFollowing::UUWorksRequestCoreIsFollowing() {
-}
 

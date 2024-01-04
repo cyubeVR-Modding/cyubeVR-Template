@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
+#include "EUWorksResult.h"
 #include "SubmitItemUpdateDelegateDelegate.h"
 #include "SubmitItemUpdateMinimalDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "UWorksUGCUpdateHandle.h"
-#include "EUWorksResult.h"
 #include "UWorksRequestCoreSubmitItemUpdate.generated.h"
 
 UCLASS(Blueprintable)
@@ -18,6 +18,7 @@ public:
     FSubmitItemUpdateMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreSubmitItemUpdate();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(FUWorksUGCUpdateHandle UGCUpdateHandle, const FString& ChangeNote);
     

@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
+#include "EUWorksLeaderboardDisplayType.h"
 #include "EUWorksLeaderboardSortMethod.h"
 #include "FindOrCreateLeaderboardDelegateDelegate.h"
 #include "FindOrCreateLeaderboardMinimalDelegateDelegate.h"
-#include "EUWorksLeaderboardDisplayType.h"
+#include "UWorksRequestCore.h"
 #include "UWorksSteamLeaderboard.h"
 #include "UWorksRequestCoreFindOrCreateLeaderboard.generated.h"
 
@@ -19,6 +19,7 @@ public:
     FFindOrCreateLeaderboardMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreFindOrCreateLeaderboard();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& LeaderboardName, EUWorksLeaderboardSortMethod LeaderboardSortMethod, EUWorksLeaderboardDisplayType LeaderboardDisplayType);
     

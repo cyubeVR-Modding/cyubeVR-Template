@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Engine/TextureRenderTarget2D.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
+#include "Engine/TextureRenderTarget2D.h"
 #include "ELivEye.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
 #include "LivBlueprintFunctionLibrary.generated.h"
 
 class UObject;
@@ -16,6 +16,7 @@ class LIV_API ULivBlueprintFunctionLibrary : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     ULivBlueprintFunctionLibrary();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static void OffsetCameraPoseForEye(ELivEye Eye, const FVector& CameraLocation, const FRotator& CameraRotation, FVector& EyeLocation, FRotator& EyeRotation);
     

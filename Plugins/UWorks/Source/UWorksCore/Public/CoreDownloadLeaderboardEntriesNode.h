@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "UWorksSteamLeaderboard.h"
 #include "DownloadLeaderboardEntriesDelegateDelegate.h"
-#include "UWorksSteamLeaderboardEntries.h"
 #include "EUWorksLeaderboardDataRequest.h"
+#include "UWorksSteamLeaderboard.h"
+#include "UWorksSteamLeaderboardEntries.h"
 #include "CoreDownloadLeaderboardEntriesNode.generated.h"
 
 class UCoreDownloadLeaderboardEntriesNode;
@@ -17,6 +17,7 @@ public:
     FDownloadLeaderboardEntriesDelegate Completed;
     
     UCoreDownloadLeaderboardEntriesNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, FUWorksSteamLeaderboard SteamLeaderboard, FUWorksSteamLeaderboardEntries SteamLeaderboardEntries, int32 EntryCount);
     

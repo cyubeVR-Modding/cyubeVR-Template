@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "DeleteSessionBatchDelegateDelegate.h"
 #include "DeleteSessionBatchMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebDeleteSessionBatch.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FDeleteSessionBatchMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebDeleteSessionBatch();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, const FString& SessionId, int32 AppID);
     

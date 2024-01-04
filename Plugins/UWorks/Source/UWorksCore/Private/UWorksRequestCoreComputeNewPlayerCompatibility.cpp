@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreComputeNewPlayerCompatibility.h"
 
+UUWorksRequestCoreComputeNewPlayerCompatibility::UUWorksRequestCoreComputeNewPlayerCompatibility() {
+}
+
 void UUWorksRequestCoreComputeNewPlayerCompatibility::SetInput(FUWorksSteamID SteamIDNewPlayer) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreComputeNewPlayerCompatibility::Deactivate() {
 void UUWorksRequestCoreComputeNewPlayerCompatibility::Activate() {
 }
 
-UUWorksRequestCoreComputeNewPlayerCompatibility::UUWorksRequestCoreComputeNewPlayerCompatibility() {
-}
 

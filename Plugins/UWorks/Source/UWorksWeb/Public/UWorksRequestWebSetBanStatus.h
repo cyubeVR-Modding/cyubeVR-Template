@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
+#include "UWorksSteamID.h"
 #include "SetBanStatusDelegateDelegate.h"
 #include "SetBanStatusMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebSetBanStatus.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FSetBanStatusMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebSetBanStatus();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, FUWorksSteamID SteamID, bool bBanned, int32 BanSeconds);
     

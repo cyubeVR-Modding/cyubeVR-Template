@@ -13,6 +13,7 @@ private:
     
 public:
     URuntimeMeshProviderPassthrough();
+
     UFUNCTION(BlueprintCallable)
     void SetChildProvider(URuntimeMeshProvider* InProvider);
     

@@ -1,27 +1,28 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceWeb.h"
-#include "GetLeaderboardsForGameMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
-#include "SetLeaderboardScoreMinimalDelegateDelegate.h"
 #include "DeleteLeaderboardMinimalDelegateDelegate.h"
-#include "ResetLeaderboardMinimalDelegateDelegate.h"
-#include "GetLeaderboardEntriesMinimalDelegateDelegate.h"
 #include "FindOrCreateLeaderboardMinimalDelegateDelegate2.h"
+#include "GetLeaderboardEntriesMinimalDelegateDelegate.h"
+#include "GetLeaderboardsForGameMinimalDelegateDelegate.h"
+#include "ResetLeaderboardMinimalDelegateDelegate.h"
+#include "SetLeaderboardScoreMinimalDelegateDelegate.h"
+#include "UWorksInterfaceWeb.h"
 #include "UWorksInterfaceWebLeaderboards.generated.h"
 
-class UUWorksRequestWebGetLeaderboardsForGame;
-class UUWorksRequestWebSetLeaderboardScore;
-class UUWorksRequestWebResetLeaderboard;
-class UUWorksRequestWebGetLeaderboardEntries;
-class UUWorksRequestWebFindOrCreateLeaderboard;
 class UUWorksRequestWebDeleteLeaderboard;
+class UUWorksRequestWebFindOrCreateLeaderboard;
+class UUWorksRequestWebGetLeaderboardEntries;
+class UUWorksRequestWebGetLeaderboardsForGame;
+class UUWorksRequestWebResetLeaderboard;
+class UUWorksRequestWebSetLeaderboardScore;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebLeaderboards : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:
     UUWorksInterfaceWebLeaderboards();
+
     UFUNCTION(BlueprintCallable)
     static void SetLeaderboardScoreMinimal(const FString& Key, int32 AppID, int32 LeaderboardID, FUWorksSteamID SteamID, int32 score, const FString& ScoreMethod, TArray<uint8> Details, const FSetLeaderboardScoreMinimalDelegate& Delegate);
     

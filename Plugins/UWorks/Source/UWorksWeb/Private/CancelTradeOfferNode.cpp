@@ -1,6 +1,7 @@
 #include "CancelTradeOfferNode.h"
 
-class UCancelTradeOfferNode;
+UCancelTradeOfferNode::UCancelTradeOfferNode() {
+}
 
 void UCancelTradeOfferNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UCancelTradeOfferNode* UCancelTradeOfferNode::CancelTradeOfferNode(const FString
     return NULL;
 }
 
-UCancelTradeOfferNode::UCancelTradeOfferNode() {
-}
 

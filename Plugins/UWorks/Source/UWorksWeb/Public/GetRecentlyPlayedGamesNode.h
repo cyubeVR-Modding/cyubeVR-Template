@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "GetRecentlyPlayedGamesDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetRecentlyPlayedGamesDelegateDelegate.h"
 #include "GetRecentlyPlayedGamesNode.generated.h"
 
 class UGetRecentlyPlayedGamesNode;
@@ -15,6 +15,7 @@ public:
     FGetRecentlyPlayedGamesDelegate Completed;
     
     UGetRecentlyPlayedGamesNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

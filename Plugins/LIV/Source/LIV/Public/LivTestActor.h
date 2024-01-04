@@ -7,6 +7,7 @@ UCLASS(Blueprintable)
 class LIV_API ALivTestActor : public AActor {
     GENERATED_BODY()
 public:
-    ALivTestActor();
+    ALivTestActor(const FObjectInitializer& ObjectInitializer);
+
 };
 

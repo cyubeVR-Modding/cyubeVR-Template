@@ -8,5 +8,6 @@ class UWORKSUTILITIES_API UUWorksLibraryTickets : public UUWorksLibrary {
     GENERATED_BODY()
 public:
     UUWorksLibraryTickets();
+
 };
 

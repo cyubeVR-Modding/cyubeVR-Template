@@ -14,6 +14,7 @@ public:
     FGetNewsForAppAuthedDelegate Completed;
     
     UGetNewsForAppAuthedNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

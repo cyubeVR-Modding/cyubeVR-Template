@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
 #include "GameFramework/Actor.h"
 #include "LightReceiveInterface.h"
-#include "UObject/NoExportTypes.h"
 #include "ReceiveLightActor.generated.h"
 
-class UMeshComponent;
 class UMaterialInstanceDynamic;
+class UMeshComponent;
 
 UCLASS(Abstract, Blueprintable)
 class CYUBEVR_API AReceiveLightActor : public AActor, public ILightReceiveInterface {
@@ -21,7 +21,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     TArray<UMeshComponent*> LightReceiveMeshes;
     
-    AReceiveLightActor();
+    AReceiveLightActor(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     bool UseLightAroundValue();
     
@@ -34,9 +35,9 @@ public:
     UFUNCTION(BlueprintCallable)
     TArray<UMeshComponent*> GetMeshComponents();
     
-    
+
     // Fix for true pure virtual functions not being implemented
-    //UFUNCTION()
+	//UFUNCTION()
     bool UseActorCustomLocation() override PURE_VIRTUAL(UseActorCustomLocation, return false;);
     
     UFUNCTION()
@@ -48,7 +49,7 @@ public:
     UFUNCTION()
     void LightInterfaceBeginDestroy(AActor* ThisActor) override PURE_VIRTUAL(LightInterfaceBeginDestroy,);
     
-    //UFUNCTION()
+	//UFUNCTION()
     FVector GetActorCustomLocation() override PURE_VIRTUAL(GetActorCustomLocation, return FVector{};);
     
 };

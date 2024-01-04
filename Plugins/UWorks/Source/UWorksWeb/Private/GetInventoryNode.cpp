@@ -1,6 +1,7 @@
 #include "GetInventoryNode.h"
 
-class UGetInventoryNode;
+UGetInventoryNode::UGetInventoryNode() {
+}
 
 void UGetInventoryNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetInventoryNode* UGetInventoryNode::GetInventoryNode(const FString& Key, int32
     return NULL;
 }
 
-UGetInventoryNode::UGetInventoryNode() {
-}
 

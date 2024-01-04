@@ -10,7 +10,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 AmountFramesWithWrongTime;
     
-    ABenchmarkActor();
+    ABenchmarkActor(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     static bool WereSteamVRSettingsModified();
     

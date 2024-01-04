@@ -1,9 +1,7 @@
 #include "UWorksInterfaceCoreUser.h"
 
-class UUWorksRequestCoreRequestEncryptedAppTicket;
-class UUWorksRequestCoreRequestStoreAuthURL;
-class UAudioComponent;
-class UUWorksInterfaceCoreUser;
+UUWorksInterfaceCoreUser::UUWorksInterfaceCoreUser() {
+}
 
 EUWorksUserHasLicenseForAppResult UUWorksInterfaceCoreUser::UserHasLicenseForApp(FUWorksSteamID SteamID, int32 AppID) {
     return EUWorksUserHasLicenseForAppResult::HasLicense;
@@ -110,6 +108,4 @@ UAudioComponent* UUWorksInterfaceCoreUser::AddBufferToVoiceChannel(TArray<uint8>
     return NULL;
 }
 
-UUWorksInterfaceCoreUser::UUWorksInterfaceCoreUser() {
-}
 

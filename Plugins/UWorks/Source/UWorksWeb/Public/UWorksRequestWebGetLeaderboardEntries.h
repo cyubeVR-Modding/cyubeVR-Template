@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
-#include "GetLeaderboardEntriesDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetLeaderboardEntriesDelegateDelegate.h"
 #include "GetLeaderboardEntriesMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetLeaderboardEntries.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FGetLeaderboardEntriesMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetLeaderboardEntries();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, int32 AppID, int32 RangeStart, int32 RangeEnd, int32 LeaderboardID, int32 DataRequest, FUWorksSteamID SteamID);
     

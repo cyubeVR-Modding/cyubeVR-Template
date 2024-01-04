@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Templates/SubclassOf.h"
 #include "Subsystems/LocalPlayerSubsystem.h"
-#include "LivLocalPlayerActivationDelegateDelegate.h"
 #include "LivCaptureContext.h"
+#include "LivLocalPlayerActivationDelegateDelegate.h"
+#include "Templates/SubclassOf.h"
 #include "LivLocalPlayerSubsystem.generated.h"
 
-class UPrimitiveComponent;
+class AActor;
 class ULivCaptureBase;
 class ULivWorldSubsystem;
 class ULocalPlayer;
-class AActor;
+class UPrimitiveComponent;
 
 UCLASS(Blueprintable)
 class LIV_API ULivLocalPlayerSubsystem : public ULocalPlayerSubsystem {
@@ -26,6 +26,7 @@ public:
     FLivCaptureContext CaptureContext;
     
     ULivLocalPlayerSubsystem();
+
     UFUNCTION(BlueprintCallable)
     void ShowComponent(UPrimitiveComponent* InComponent);
     

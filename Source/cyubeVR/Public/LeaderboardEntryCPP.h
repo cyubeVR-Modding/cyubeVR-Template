@@ -35,5 +35,6 @@ public:
     UBorder* Border_BackgroundColor;
     
     ULeaderboardEntryCPP();
+
 };
 

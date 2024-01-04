@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "GetQuantityDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksSteamItemDef.h"
+#include "GetQuantityDelegateDelegate.h"
 #include "GetQuantityNode.generated.h"
 
 class UGetQuantityNode;
@@ -16,6 +16,7 @@ public:
     FGetQuantityDelegate Completed;
     
     UGetQuantityNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
-#include "SetUserItemVoteDelegateDelegate.h"
-#include "SetUserItemVoteMinimalDelegateDelegate.h"
 #include "UWorksPublishedFileID.h"
 #include "EUWorksResult.h"
+#include "SetUserItemVoteDelegateDelegate.h"
+#include "SetUserItemVoteMinimalDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "UWorksRequestCoreSetUserItemVote.generated.h"
 
 UCLASS(Blueprintable)
@@ -18,6 +18,7 @@ public:
     FSetUserItemVoteMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreSetUserItemVote();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(FUWorksPublishedFileID PublishedFileID, bool bVoteUp);
     

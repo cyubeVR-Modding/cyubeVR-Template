@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UWorksSteamID.h"
+#include "RankedByVoteDelegateDelegate.h"
 #include "RankedByVoteMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
-#include "RankedByVoteDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "UWorksRequestWebRankedByVote.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FRankedByVoteMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebRankedByVote();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, FUWorksSteamID SteamID, int32 AppID, int32 StartIndex, int32 Count, int32 TagCount, int32 UserTagCount, bool bHasAppAdminAccess, int32 fileType, TArray<FString> tags, TArray<FString> UserTags);
     

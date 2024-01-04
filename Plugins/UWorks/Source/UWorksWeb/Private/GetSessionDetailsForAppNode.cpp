@@ -1,6 +1,7 @@
 #include "GetSessionDetailsForAppNode.h"
 
-class UGetSessionDetailsForAppNode;
+UGetSessionDetailsForAppNode::UGetSessionDetailsForAppNode() {
+}
 
 void UGetSessionDetailsForAppNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetSessionDetailsForAppNode* UGetSessionDetailsForAppNode::GetSessionDetailsFor
     return NULL;
 }
 
-UGetSessionDetailsForAppNode::UGetSessionDetailsForAppNode() {
-}
 

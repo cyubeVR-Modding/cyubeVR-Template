@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "GetBadgesDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetBadgesDelegateDelegate.h"
 #include "GetBadgesNode.generated.h"
 
 class UGetBadgesNode;
@@ -15,6 +15,7 @@ public:
     FGetBadgesDelegate Completed;
     
     UGetBadgesNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

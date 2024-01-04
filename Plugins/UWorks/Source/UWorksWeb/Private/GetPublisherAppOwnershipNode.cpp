@@ -1,6 +1,7 @@
 #include "GetPublisherAppOwnershipNode.h"
 
-class UGetPublisherAppOwnershipNode;
+UGetPublisherAppOwnershipNode::UGetPublisherAppOwnershipNode() {
+}
 
 void UGetPublisherAppOwnershipNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetPublisherAppOwnershipNode* UGetPublisherAppOwnershipNode::GetPublisherAppOwn
     return NULL;
 }
 
-UGetPublisherAppOwnershipNode::UGetPublisherAppOwnershipNode() {
-}
 

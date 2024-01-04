@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "FlushInventoryCacheDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "FlushInventoryCacheDelegateDelegate.h"
 #include "FlushInventoryCacheNode.generated.h"
 
 class UFlushInventoryCacheNode;
@@ -15,6 +15,7 @@ public:
     FFlushInventoryCacheDelegate Completed;
     
     UFlushInventoryCacheNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

@@ -1,6 +1,7 @@
 #include "DeleteSessionBatchNode.h"
 
-class UDeleteSessionBatchNode;
+UDeleteSessionBatchNode::UDeleteSessionBatchNode() {
+}
 
 void UDeleteSessionBatchNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UDeleteSessionBatchNode* UDeleteSessionBatchNode::DeleteSessionBatchNode(const F
     return NULL;
 }
 
-UDeleteSessionBatchNode::UDeleteSessionBatchNode() {
-}
 

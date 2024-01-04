@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
+#include "UWorksSteamID.h"
 #include "AssociateWithClanDelegateDelegate.h"
 #include "AssociateWithClanMinimalDelegateDelegate.h"
 #include "EUWorksResult.h"
-#include "UWorksSteamID.h"
+#include "UWorksRequestCore.h"
 #include "UWorksRequestCoreAssociateWithClan.generated.h"
 
 UCLASS(Blueprintable)
@@ -18,6 +18,7 @@ public:
     FAssociateWithClanMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreAssociateWithClan();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(FUWorksSteamID SteamIDClan);
     

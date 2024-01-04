@@ -1,6 +1,7 @@
 #include "GetUGCFileDetailsNode.h"
 
-class UGetUGCFileDetailsNode;
+UGetUGCFileDetailsNode::UGetUGCFileDetailsNode() {
+}
 
 void UGetUGCFileDetailsNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetUGCFileDetailsNode* UGetUGCFileDetailsNode::GetUGCFileDetailsNode(const FStr
     return NULL;
 }
 
-UGetUGCFileDetailsNode::UGetUGCFileDetailsNode() {
-}
 

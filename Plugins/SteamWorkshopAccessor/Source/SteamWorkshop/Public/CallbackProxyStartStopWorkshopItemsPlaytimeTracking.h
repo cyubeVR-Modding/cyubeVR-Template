@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamDelegateOnStartStopWorkshopItemsPlaytimeTrackingDelegate.h"
 #include "Net/OnlineBlueprintCallProxyBase.h"
 #include "SteamUGCItemId.h"
+#include "SteamDelegateOnStartStopWorkshopItemsPlaytimeTrackingDelegate.h"
 #include "CallbackProxyStartStopWorkshopItemsPlaytimeTracking.generated.h"
 
 class UCallbackProxyStartStopWorkshopItemsPlaytimeTracking;
@@ -21,6 +21,7 @@ public:
     FSteamDelegateOnStartStopWorkshopItemsPlaytimeTracking OnSteamInitFailure;
     
     UCallbackProxyStartStopWorkshopItemsPlaytimeTracking();
+
     UFUNCTION(BlueprintCallable)
     static UCallbackProxyStartStopWorkshopItemsPlaytimeTracking* SteamWorkshop_StartStopItemsPlaytimeTracking(const TArray<FSteamUGCItemId>& itemIds, bool bStartPlaytimeTracking);
     

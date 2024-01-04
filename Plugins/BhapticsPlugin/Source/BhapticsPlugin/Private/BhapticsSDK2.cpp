@@ -1,6 +1,7 @@
 #include "BhapticsSDK2.h"
 
-class UPrimitiveComponent;
+UBhapticsSDK2::UBhapticsSDK2() {
+}
 
 void UBhapticsSDK2::SwapPosition(FBhapticsDevice device) {
 }
@@ -69,6 +70,4 @@ FBhapticsRotationOption UBhapticsSDK2::CustomProjectToVest(FVector ContactLocati
     return FBhapticsRotationOption{};
 }
 
-UBhapticsSDK2::UBhapticsSDK2() {
-}
 

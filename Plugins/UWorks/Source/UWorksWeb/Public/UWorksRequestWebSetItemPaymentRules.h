@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "SetItemPaymentRulesDelegateDelegate.h"
 #include "SetItemPaymentRulesMinimalDelegateDelegate.h"
 #include "UWorksAssociatedWorkshopFiles.h"
 #include "UWorksPartnerAccounts.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebSetItemPaymentRules.generated.h"
 
 UCLASS(Blueprintable)
@@ -18,6 +18,7 @@ public:
     FSetItemPaymentRulesMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebSetItemPaymentRules();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, int32 AppID, int32 GameItemID, FUWorksAssociatedWorkshopFiles AssociatedWorkshopFiles, FUWorksPartnerAccounts PartnerAccounts, bool bMakeWorkshopFilesSubscribable, bool bValidateOnly);
     

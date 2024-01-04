@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
+#include "UWorksSteamID.h"
 #include "GetHistoryCommandDetailsDelegateDelegate.h"
 #include "GetHistoryCommandDetailsMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetHistoryCommandDetails.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FGetHistoryCommandDetailsMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetHistoryCommandDetails();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, int32 AppID, FUWorksSteamID SteamID, const FString& Command, const FString& ContextID, const FString& Arguments);
     

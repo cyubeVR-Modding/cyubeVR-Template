@@ -1,6 +1,7 @@
 #include "StartTradeNode.h"
 
-class UStartTradeNode;
+UStartTradeNode::UStartTradeNode() {
+}
 
 UStartTradeNode* UStartTradeNode::StartTradeNode(const FString& Key, int32 AppID, FUWorksSteamID PartyA, FUWorksSteamID PartyB) {
     return NULL;
@@ -9,6 +10,4 @@ UStartTradeNode* UStartTradeNode::StartTradeNode(const FString& Key, int32 AppID
 void UStartTradeNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
 
-UStartTradeNode::UStartTradeNode() {
-}
 

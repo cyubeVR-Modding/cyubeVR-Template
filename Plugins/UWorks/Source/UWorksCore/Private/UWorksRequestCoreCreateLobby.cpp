@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreCreateLobby.h"
 
+UUWorksRequestCoreCreateLobby::UUWorksRequestCoreCreateLobby() {
+}
+
 void UUWorksRequestCoreCreateLobby::SetInput(EUWorksLobbyType LobbyType, int32 MaxMembers) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreCreateLobby::Deactivate() {
 void UUWorksRequestCoreCreateLobby::Activate() {
 }
 
-UUWorksRequestCoreCreateLobby::UUWorksRequestCoreCreateLobby() {
-}
 

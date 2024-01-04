@@ -1,6 +1,7 @@
 #include "GetHistoryCommandDetailsNode.h"
 
-class UGetHistoryCommandDetailsNode;
+UGetHistoryCommandDetailsNode::UGetHistoryCommandDetailsNode() {
+}
 
 void UGetHistoryCommandDetailsNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetHistoryCommandDetailsNode* UGetHistoryCommandDetailsNode::GetHistoryCommandD
     return NULL;
 }
 
-UGetHistoryCommandDetailsNode::UGetHistoryCommandDetailsNode() {
-}
 

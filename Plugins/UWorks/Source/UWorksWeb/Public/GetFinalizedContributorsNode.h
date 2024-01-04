@@ -14,6 +14,7 @@ public:
     FGetFinalizedContributorsDelegate Completed;
     
     UGetFinalizedContributorsNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

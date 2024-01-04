@@ -1,6 +1,7 @@
 #include "GetCommunityBadgeProgressNode.h"
 
-class UGetCommunityBadgeProgressNode;
+UGetCommunityBadgeProgressNode::UGetCommunityBadgeProgressNode() {
+}
 
 void UGetCommunityBadgeProgressNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetCommunityBadgeProgressNode* UGetCommunityBadgeProgressNode::GetCommunityBadg
     return NULL;
 }
 
-UGetCommunityBadgeProgressNode::UGetCommunityBadgeProgressNode() {
-}
 

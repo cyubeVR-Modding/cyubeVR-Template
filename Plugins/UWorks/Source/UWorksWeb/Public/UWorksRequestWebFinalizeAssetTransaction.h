@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
-#include "FinalizeAssetTransactionDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "FinalizeAssetTransactionDelegateDelegate.h"
 #include "FinalizeAssetTransactionMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebFinalizeAssetTransaction.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FFinalizeAssetTransactionMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebFinalizeAssetTransaction();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, int32 AppID, FUWorksSteamID SteamID, const FString& TxnID, const FString& Language);
     

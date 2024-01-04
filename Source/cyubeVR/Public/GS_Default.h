@@ -8,5 +8,6 @@ class UGS_Default : public UVRGripScriptBase {
     GENERATED_BODY()
 public:
     UGS_Default();
+
 };
 

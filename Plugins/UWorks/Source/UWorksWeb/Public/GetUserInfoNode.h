@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "GetUserInfoDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetUserInfoDelegateDelegate.h"
 #include "GetUserInfoNode.generated.h"
 
 class UGetUserInfoNode;
@@ -15,6 +15,7 @@ public:
     FGetUserInfoDelegate Completed;
     
     UGetUserInfoNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

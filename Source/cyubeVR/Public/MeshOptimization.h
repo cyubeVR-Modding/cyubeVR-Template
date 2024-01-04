@@ -8,5 +8,6 @@ class CYUBEVR_API UMeshOptimization : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UMeshOptimization();
+
 };
 

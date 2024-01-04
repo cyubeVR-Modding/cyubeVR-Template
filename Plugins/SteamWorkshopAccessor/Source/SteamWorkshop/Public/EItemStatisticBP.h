@@ -17,6 +17,5 @@ enum EItemStatisticBP {
     IStat_NumComments,
     IStat_NumSecondsPlayedDuringTimePeriod,
     IStat_NumPlaytimeSessionsDuringTimePeriod,
-    IStat_MAX UMETA(Hidden),
 };
 

@@ -1,11 +1,7 @@
 #include "UWorksInterfaceWebLeaderboards.h"
 
-class UUWorksRequestWebSetLeaderboardScore;
-class UUWorksRequestWebResetLeaderboard;
-class UUWorksRequestWebGetLeaderboardsForGame;
-class UUWorksRequestWebGetLeaderboardEntries;
-class UUWorksRequestWebFindOrCreateLeaderboard;
-class UUWorksRequestWebDeleteLeaderboard;
+UUWorksInterfaceWebLeaderboards::UUWorksInterfaceWebLeaderboards() {
+}
 
 void UUWorksInterfaceWebLeaderboards::SetLeaderboardScoreMinimal(const FString& Key, int32 AppID, int32 LeaderboardID, FUWorksSteamID SteamID, int32 score, const FString& ScoreMethod, TArray<uint8> Details, const FSetLeaderboardScoreMinimalDelegate& Delegate) {
 }
@@ -49,6 +45,4 @@ UUWorksRequestWebDeleteLeaderboard* UUWorksInterfaceWebLeaderboards::DeleteLeade
     return NULL;
 }
 
-UUWorksInterfaceWebLeaderboards::UUWorksInterfaceWebLeaderboards() {
-}
 

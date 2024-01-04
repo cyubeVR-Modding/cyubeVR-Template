@@ -3,14 +3,14 @@
 #include "ERuntimeMeshCollisionFaceSourceType.h"
 #include "RuntimeMeshCollisionHitInfo.generated.h"
 
-class URuntimeMeshProvider;
 class UMaterialInterface;
+class URuntimeMeshProvider;
 
 USTRUCT(BlueprintType)
 struct RUNTIMEMESHCOMPONENT_API FRuntimeMeshCollisionHitInfo {
     GENERATED_BODY()
 public:
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<URuntimeMeshProvider> SourceProvider;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -1,23 +1,24 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceWeb.h"
-#include "SupportGetAssetHistoryMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
-#include "HistoryExecuteCommandsMinimalDelegateDelegate.h"
-#include "GetUserHistoryMinimalDelegateDelegate.h"
 #include "GetHistoryCommandDetailsMinimalDelegateDelegate.h"
+#include "GetUserHistoryMinimalDelegateDelegate.h"
+#include "HistoryExecuteCommandsMinimalDelegateDelegate.h"
+#include "SupportGetAssetHistoryMinimalDelegateDelegate.h"
+#include "UWorksInterfaceWeb.h"
 #include "UWorksInterfaceWebGameInventory.generated.h"
 
-class UUWorksRequestWebSupportGetAssetHistory;
-class UUWorksRequestWebHistoryExecuteCommands;
-class UUWorksRequestWebGetUserHistory;
 class UUWorksRequestWebGetHistoryCommandDetails;
+class UUWorksRequestWebGetUserHistory;
+class UUWorksRequestWebHistoryExecuteCommands;
+class UUWorksRequestWebSupportGetAssetHistory;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebGameInventory : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:
     UUWorksInterfaceWebGameInventory();
+
     UFUNCTION(BlueprintCallable)
     static void SupportGetAssetHistoryMinimal(const FString& Key, int32 AppID, const FString& AssetID, const FString& ContextID, const FSupportGetAssetHistoryMinimalDelegate& Delegate);
     

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "CancelAgreementDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "CancelAgreementDelegateDelegate.h"
 #include "CancelAgreementNode.generated.h"
 
 class UCancelAgreementNode;
@@ -15,6 +15,7 @@ public:
     FCancelAgreementDelegate Completed;
     
     UCancelAgreementNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

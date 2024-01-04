@@ -5,7 +5,7 @@
 UENUM(BlueprintType)
 enum class EWorkshopFileTypeBP : uint8 {
     WFT_First,
-    WFT_Community = 0x0,
+    WFT_Community = WFT_First,
     WFT_Microtransaction,
     WFT_Collection,
     WFT_Art,
@@ -21,6 +21,5 @@ enum class EWorkshopFileTypeBP : uint8 {
     WFT_SteamworksAccessInvite,
     WFT_SteamVideo,
     WFT_GameManagedItem,
-    WFT_Max,
 };
 

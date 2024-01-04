@@ -1,6 +1,7 @@
 #include "CoreSetPersonaNameNode.h"
 
-class UCoreSetPersonaNameNode;
+UCoreSetPersonaNameNode::UCoreSetPersonaNameNode() {
+}
 
 UCoreSetPersonaNameNode* UCoreSetPersonaNameNode::SetPersonaNameNode(const FString& Name) {
     return NULL;
@@ -9,6 +10,4 @@ UCoreSetPersonaNameNode* UCoreSetPersonaNameNode::SetPersonaNameNode(const FStri
 void UCoreSetPersonaNameNode::OnRequestCompleted(bool bSuccessful, bool bSuccess, bool bLocalSuccess, EUWorksResult Result) {
 }
 
-UCoreSetPersonaNameNode::UCoreSetPersonaNameNode() {
-}
 

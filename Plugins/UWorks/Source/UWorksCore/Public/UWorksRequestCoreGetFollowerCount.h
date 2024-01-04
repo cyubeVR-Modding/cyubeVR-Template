@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetFollowerCountDelegateDelegate.h"
-#include "UWorksRequestCore.h"
-#include "EUWorksResult.h"
 #include "UWorksSteamID.h"
+#include "EUWorksResult.h"
+#include "GetFollowerCountDelegateDelegate.h"
 #include "GetFollowerCountMinimalDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "UWorksRequestCoreGetFollowerCount.generated.h"
 
 UCLASS(Blueprintable)
@@ -18,6 +18,7 @@ public:
     FGetFollowerCountMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreGetFollowerCount();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(FUWorksSteamID SteamID);
     

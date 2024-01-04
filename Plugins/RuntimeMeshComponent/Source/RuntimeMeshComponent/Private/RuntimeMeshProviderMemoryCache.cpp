@@ -1,8 +1,9 @@
 #include "RuntimeMeshProviderMemoryCache.h"
 
+URuntimeMeshProviderMemoryCache::URuntimeMeshProviderMemoryCache() {
+}
+
 void URuntimeMeshProviderMemoryCache::ClearCache() {
 }
 
-URuntimeMeshProviderMemoryCache::URuntimeMeshProviderMemoryCache() {
-}
 

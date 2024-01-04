@@ -1,22 +1,22 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksLibrary.h"
+#include "UWorksControllerActionSetHandle.h"
+#include "UWorksControllerAnalogActionHandle.h"
+#include "UWorksControllerDigitalActionHandle.h"
+#include "UWorksControllerHandle.h"
+#include "UWorksFriendsGroupID.h"
+#include "UWorksScreenshotHandle.h"
+#include "UWorksSteamInventoryResult.h"
 #include "UWorksSteamLeaderboard.h"
-#include "UWorksUGCUpdateHandle.h"
-#include "UWorksUGCQueryHandle.h"
-#include "UWorksUGCHandle.h"
-#include "UWorksSteamPipe.h"
-#include "UWorksUGCFileWriteStreamHandle.h"
 #include "UWorksSteamLeaderboardEntries.h"
+#include "UWorksSteamPipe.h"
 #include "UWorksSteamUser.h"
 #include "UWorksTicketHandle.h"
-#include "UWorksSteamInventoryResult.h"
-#include "UWorksScreenshotHandle.h"
-#include "UWorksFriendsGroupID.h"
-#include "UWorksControllerHandle.h"
-#include "UWorksControllerDigitalActionHandle.h"
-#include "UWorksControllerAnalogActionHandle.h"
-#include "UWorksControllerActionSetHandle.h"
+#include "UWorksUGCFileWriteStreamHandle.h"
+#include "UWorksUGCHandle.h"
+#include "UWorksUGCQueryHandle.h"
+#include "UWorksUGCUpdateHandle.h"
+#include "UWorksLibrary.h"
 #include "UWorksLibraryLex.generated.h"
 
 UCLASS(Blueprintable)
@@ -24,6 +24,7 @@ class UWORKSUTILITIES_API UUWorksLibraryLex : public UUWorksLibrary {
     GENERATED_BODY()
 public:
     UUWorksLibraryLex();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static FUWorksUGCUpdateHandle WriteUGCUpdateHandle(const FString& Value);
     

@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
+#include "UWorksSteamID.h"
 #include "GetSteamLevelDelegateDelegate.h"
 #include "GetSteamLevelMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetSteamLevel.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FGetSteamLevelMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetSteamLevel();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, FUWorksSteamID SteamID);
     

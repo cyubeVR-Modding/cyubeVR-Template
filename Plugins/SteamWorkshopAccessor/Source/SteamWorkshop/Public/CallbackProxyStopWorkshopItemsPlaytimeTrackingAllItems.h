@@ -20,6 +20,7 @@ public:
     FSteamDelegateOnStopWorkshopPlaytimeTrackingAllItems OnSteamInitFailure;
     
     UCallbackProxyStopWorkshopItemsPlaytimeTrackingAllItems();
+
     UFUNCTION(BlueprintCallable)
     static UCallbackProxyStopWorkshopItemsPlaytimeTrackingAllItems* SteamWorkshop_StopPlaytimeTrackingAllItems();
     

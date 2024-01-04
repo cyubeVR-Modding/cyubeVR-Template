@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
 #include "LoadedPicture.h"
 #include "MeshObject.h"
 #include "PictureFrameProperties.h"
-#include "UObject/NoExportTypes.h"
 #include "PictureFrame.generated.h"
 
 class UTexture2D;
@@ -12,7 +12,11 @@ UCLASS(Blueprintable)
 class CYUBEVR_API APictureFrame : public AMeshObject {
     GENERATED_BODY()
 public:
-    APictureFrame();
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    TArray<UTexture2D*> PicturesPS5;
+    
+    APictureFrame(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     bool UseActorCustomLocation();
     

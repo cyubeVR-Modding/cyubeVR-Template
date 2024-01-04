@@ -1,6 +1,7 @@
 #include "GetServersAtAddressNode.h"
 
-class UGetServersAtAddressNode;
+UGetServersAtAddressNode::UGetServersAtAddressNode() {
+}
 
 void UGetServersAtAddressNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetServersAtAddressNode* UGetServersAtAddressNode::GetServersAtAddressNode(cons
     return NULL;
 }
 
-UGetServersAtAddressNode::UGetServersAtAddressNode() {
-}
 

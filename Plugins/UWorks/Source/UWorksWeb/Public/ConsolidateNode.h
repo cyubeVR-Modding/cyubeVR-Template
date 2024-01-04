@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "UWorksSteamID.h"
 #include "UWorksSteamItemDef.h"
 #include "ConsolidateDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "ConsolidateNode.generated.h"
 
 class UConsolidateNode;
@@ -16,6 +16,7 @@ public:
     FConsolidateDelegate Completed;
     
     UConsolidateNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

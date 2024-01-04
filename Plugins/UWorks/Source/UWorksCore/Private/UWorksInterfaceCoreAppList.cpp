@@ -1,6 +1,7 @@
 #include "UWorksInterfaceCoreAppList.h"
 
-class UUWorksInterfaceCoreAppList;
+UUWorksInterfaceCoreAppList::UUWorksInterfaceCoreAppList() {
+}
 
 int32 UUWorksInterfaceCoreAppList::GetNumInstalledApps() {
     return 0;
@@ -26,6 +27,4 @@ int32 UUWorksInterfaceCoreAppList::GetAppBuildId(int32 AppID) {
     return 0;
 }
 
-UUWorksInterfaceCoreAppList::UUWorksInterfaceCoreAppList() {
-}
 

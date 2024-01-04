@@ -14,6 +14,7 @@ public:
     FGetAppBetasDelegate Completed;
     
     UGetAppBetasNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

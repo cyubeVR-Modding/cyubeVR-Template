@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
 #include "PingDelegateDelegate.h"
 #include "PingMinimalDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "UWorksServerInfo.h"
 #include "UWorksRequestCorePing.generated.h"
 
@@ -17,6 +17,7 @@ public:
     FPingMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCorePing();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& IP, int32 Port);
     

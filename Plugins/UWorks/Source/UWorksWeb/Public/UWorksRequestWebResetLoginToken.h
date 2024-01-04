@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UWorksSteamID.h"
+#include "ResetLoginTokenDelegateDelegate.h"
 #include "ResetLoginTokenMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
-#include "ResetLoginTokenDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "UWorksRequestWebResetLoginToken.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FResetLoginTokenMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebResetLoginToken();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, FUWorksSteamID SteamID);
     

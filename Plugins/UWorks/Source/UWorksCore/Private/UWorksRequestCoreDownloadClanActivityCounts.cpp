@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreDownloadClanActivityCounts.h"
 
+UUWorksRequestCoreDownloadClanActivityCounts::UUWorksRequestCoreDownloadClanActivityCounts() {
+}
+
 void UUWorksRequestCoreDownloadClanActivityCounts::SetInput(TArray<FUWorksSteamID> SteamIDClans) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreDownloadClanActivityCounts::Deactivate() {
 void UUWorksRequestCoreDownloadClanActivityCounts::Activate() {
 }
 
-UUWorksRequestCoreDownloadClanActivityCounts::UUWorksRequestCoreDownloadClanActivityCounts() {
-}
 

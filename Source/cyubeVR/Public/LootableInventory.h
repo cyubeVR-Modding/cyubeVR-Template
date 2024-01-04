@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "MeshObject.h"
 #include "UObject/NoExportTypes.h"
+#include "MeshObject.h"
 #include "LootableInventory.generated.h"
 
 class AInventory;
@@ -16,7 +16,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FLinearColor SphereColor;
     
-    ALootableInventory();
+    ALootableInventory(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void UpdateVisuals();
     

@@ -1,6 +1,7 @@
 #include "FinalizeTxnNode.h"
 
-class UFinalizeTxnNode;
+UFinalizeTxnNode::UFinalizeTxnNode() {
+}
 
 void UFinalizeTxnNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UFinalizeTxnNode* UFinalizeTxnNode::FinalizeTxnNode(const FString& Key, const FS
     return NULL;
 }
 
-UFinalizeTxnNode::UFinalizeTxnNode() {
-}
 

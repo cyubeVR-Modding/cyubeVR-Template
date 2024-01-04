@@ -8,5 +8,6 @@ class UWebCommunicationRequestCompleteObject : public UObject {
     GENERATED_BODY()
 public:
     UWebCommunicationRequestCompleteObject();
+
 };
 

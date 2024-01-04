@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "FlushAssetAppearanceCacheDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "FlushAssetAppearanceCacheDelegateDelegate.h"
 #include "FlushAssetAppearanceCacheNode.generated.h"
 
 class UFlushAssetAppearanceCacheNode;
@@ -14,6 +14,7 @@ public:
     FFlushAssetAppearanceCacheDelegate Completed;
     
     UFlushAssetAppearanceCacheNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

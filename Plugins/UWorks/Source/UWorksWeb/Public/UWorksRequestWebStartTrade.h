@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
+#include "UWorksSteamID.h"
 #include "StartTradeDelegateDelegate.h"
 #include "StartTradeMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebStartTrade.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FStartTradeMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebStartTrade();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, int32 AppID, FUWorksSteamID PartyA, FUWorksSteamID PartyB);
     

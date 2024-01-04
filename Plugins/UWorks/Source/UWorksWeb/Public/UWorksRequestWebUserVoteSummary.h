@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestWeb.h"
 #include "UserVoteSummaryDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "UserVoteSummaryMinimalDelegateDelegate.h"
 #include "UWorksRequestWebUserVoteSummary.generated.h"
 
@@ -17,6 +17,7 @@ public:
     FUserVoteSummaryMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebUserVoteSummary();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, FUWorksSteamID SteamID, int32 AppID, int32 Count, TArray<int32> PublishedFileIDs);
     

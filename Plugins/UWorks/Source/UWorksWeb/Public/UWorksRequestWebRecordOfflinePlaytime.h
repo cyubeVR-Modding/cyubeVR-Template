@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
+#include "UWorksSteamID.h"
 #include "RecordOfflinePlaytimeDelegateDelegate.h"
 #include "RecordOfflinePlaytimeMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "UWorksPlaySessions.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebRecordOfflinePlaytime.generated.h"
 
 UCLASS(Blueprintable)
@@ -18,6 +18,7 @@ public:
     FRecordOfflinePlaytimeMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebRecordOfflinePlaytime();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(FUWorksSteamID SteamID, const FString& Ticket, FUWorksPlaySessions PlaySessions);
     

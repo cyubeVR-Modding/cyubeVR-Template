@@ -14,6 +14,7 @@ public:
     FGetPlayerBansDelegate Completed;
     
     UGetPlayerBansNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

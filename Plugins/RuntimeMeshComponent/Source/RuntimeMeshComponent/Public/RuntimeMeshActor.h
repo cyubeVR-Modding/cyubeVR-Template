@@ -15,7 +15,8 @@ private:
     URuntimeMeshComponent* RuntimeMeshComponent;
     
 public:
-    ARuntimeMeshActor();
+    ARuntimeMeshActor(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void SetRuntimeMeshMobility(ERuntimeMeshMobility NewMobility);
     

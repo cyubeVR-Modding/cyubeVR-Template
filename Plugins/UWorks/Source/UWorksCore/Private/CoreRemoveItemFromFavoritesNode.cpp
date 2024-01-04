@@ -1,6 +1,7 @@
 #include "CoreRemoveItemFromFavoritesNode.h"
 
-class UCoreRemoveItemFromFavoritesNode;
+UCoreRemoveItemFromFavoritesNode::UCoreRemoveItemFromFavoritesNode() {
+}
 
 UCoreRemoveItemFromFavoritesNode* UCoreRemoveItemFromFavoritesNode::RemoveItemFromFavoritesNode(int32 AppID, FUWorksPublishedFileID PublishedFileID) {
     return NULL;
@@ -9,6 +10,4 @@ UCoreRemoveItemFromFavoritesNode* UCoreRemoveItemFromFavoritesNode::RemoveItemFr
 void UCoreRemoveItemFromFavoritesNode::OnRequestCompleted(bool bSuccessful, FUWorksPublishedFileID PublishedFileID, EUWorksResult Result, bool bWasAddRequest) {
 }
 
-UCoreRemoveItemFromFavoritesNode::UCoreRemoveItemFromFavoritesNode() {
-}
 

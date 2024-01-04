@@ -1,23 +1,24 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceWeb.h"
 #include "UWorksSteamID.h"
-#include "ResultSetSummaryMinimalDelegateDelegate.h"
-#include "RankedByVoteMinimalDelegateDelegate.h"
-#include "RankedByTrendMinimalDelegateDelegate.h"
 #include "RankedByPublicationOrderMinimalDelegateDelegate.h"
+#include "RankedByTrendMinimalDelegateDelegate.h"
+#include "RankedByVoteMinimalDelegateDelegate.h"
+#include "ResultSetSummaryMinimalDelegateDelegate.h"
+#include "UWorksInterfaceWeb.h"
 #include "UWorksInterfaceWebPublishedItemSearch.generated.h"
 
+class UUWorksRequestWebRankedByPublicationOrder;
+class UUWorksRequestWebRankedByTrend;
 class UUWorksRequestWebRankedByVote;
 class UUWorksRequestWebResultSetSummary;
-class UUWorksRequestWebRankedByTrend;
-class UUWorksRequestWebRankedByPublicationOrder;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebPublishedItemSearch : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:
     UUWorksInterfaceWebPublishedItemSearch();
+
     UFUNCTION(BlueprintCallable)
     static void ResultSetSummaryMinimal(const FString& Key, FUWorksSteamID SteamID, int32 AppID, int32 TagCount, int32 UserTagCount, bool bHasAppAdminAccess, int32 fileType, TArray<FString> tags, TArray<FString> UserTags, const FResultSetSummaryMinimalDelegate& Delegate);
     

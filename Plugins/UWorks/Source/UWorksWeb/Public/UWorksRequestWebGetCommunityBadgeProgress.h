@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetCommunityBadgeProgressDelegateDelegate.h"
-#include "UWorksRequestWeb.h"
-#include "GetCommunityBadgeProgressMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetCommunityBadgeProgressDelegateDelegate.h"
+#include "GetCommunityBadgeProgressMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetCommunityBadgeProgress.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FGetCommunityBadgeProgressMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetCommunityBadgeProgress();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, FUWorksSteamID SteamID, int32 BadgeID);
     

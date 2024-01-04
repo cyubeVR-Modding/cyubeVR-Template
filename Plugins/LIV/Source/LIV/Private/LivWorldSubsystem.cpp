@@ -1,9 +1,12 @@
 #include "LivWorldSubsystem.h"
 #include "Templates/SubclassOf.h"
 
-class UCameraComponent;
-class USceneComponent;
-class ULivCaptureBase;
+ULivWorldSubsystem::ULivWorldSubsystem() {
+    this->CameraRoot = NULL;
+    this->CaptureComponent = NULL;
+    this->TrackingOriginComponent = NULL;
+    this->CameraController = NULL;
+}
 
 FTransform ULivWorldSubsystem::GetTrackingOriginTransform() const {
     return FTransform{};
@@ -29,10 +32,4 @@ USceneComponent* ULivWorldSubsystem::GetCameraRoot() const {
     return NULL;
 }
 
-ULivWorldSubsystem::ULivWorldSubsystem() {
-    this->CameraRoot = NULL;
-    this->CaptureComponent = NULL;
-    this->TrackingOriginComponent = NULL;
-    this->CameraController = NULL;
-}
 

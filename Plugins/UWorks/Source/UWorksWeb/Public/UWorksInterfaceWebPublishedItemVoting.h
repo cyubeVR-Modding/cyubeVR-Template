@@ -1,19 +1,20 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UWorksSteamID.h"
 #include "ItemVoteSummaryMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWeb.h"
 #include "UserVoteSummaryMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "UWorksInterfaceWebPublishedItemVoting.generated.h"
 
-class UUWorksRequestWebUserVoteSummary;
 class UUWorksRequestWebItemVoteSummary;
+class UUWorksRequestWebUserVoteSummary;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebPublishedItemVoting : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:
     UUWorksInterfaceWebPublishedItemVoting();
+
     UFUNCTION(BlueprintCallable)
     static void UserVoteSummaryMinimal(const FString& Key, FUWorksSteamID SteamID, int32 AppID, int32 Count, TArray<int32> PublishedFileIDs, const FUserVoteSummaryMinimalDelegate& Delegate);
     

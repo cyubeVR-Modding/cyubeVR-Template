@@ -1,6 +1,7 @@
 #include "GetPopularNode.h"
 
-class UGetPopularNode;
+UGetPopularNode::UGetPopularNode() {
+}
 
 void UGetPopularNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetPopularNode* UGetPopularNode::GetPopularNode(const FString& Key, const FStri
     return NULL;
 }
 
-UGetPopularNode::UGetPopularNode() {
-}
 

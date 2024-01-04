@@ -14,6 +14,7 @@ public:
     FAuthenticateUserTicketDelegate Completed;
     
     UAuthenticateUserTicketNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

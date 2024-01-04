@@ -1,6 +1,7 @@
 #include "DeleteAccountNode.h"
 
-class UDeleteAccountNode;
+UDeleteAccountNode::UDeleteAccountNode() {
+}
 
 void UDeleteAccountNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UDeleteAccountNode* UDeleteAccountNode::DeleteAccountNode(const FString& Key, FU
     return NULL;
 }
 
-UDeleteAccountNode::UDeleteAccountNode() {
-}
 

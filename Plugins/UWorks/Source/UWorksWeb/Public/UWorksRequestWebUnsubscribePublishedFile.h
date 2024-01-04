@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestWeb.h"
 #include "UnsubscribePublishedFileDelegateDelegate.h"
 #include "UnsubscribePublishedFileMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "UWorksRequestWebUnsubscribePublishedFile.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FUnsubscribePublishedFileMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebUnsubscribePublishedFile();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, FUWorksSteamID SteamID, int32 AppID, int32 PublishedFileID);
     

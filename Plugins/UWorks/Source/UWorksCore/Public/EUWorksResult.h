@@ -8,7 +8,7 @@ enum class EUWorksResult : uint8 {
     OK,
     Fail,
     NoConnection,
-    InvalidPassword = 0x5,
+    InvalidPassword = 5,
     LoggedInElsewhere,
     InvalidProtocolVer,
     InvalidParam,

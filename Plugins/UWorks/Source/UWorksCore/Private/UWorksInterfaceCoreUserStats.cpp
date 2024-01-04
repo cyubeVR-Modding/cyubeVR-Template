@@ -1,17 +1,7 @@
 #include "UWorksInterfaceCoreUserStats.h"
 
-class UUWorksRequestCoreRequestUserStats;
-class UUWorksRequestCoreUploadLeaderboardScore;
-class UUWorksRequestCoreRequestGlobalStats;
-class UUWorksRequestCoreDownloadLeaderboardEntries;
-class UUWorksRequestCoreRequestGlobalAchievementPercentages;
-class UUWorksInterfaceCoreUserStats;
-class UUWorksRequestCoreGetNumberOfCurrentPlayers;
-class UTexture2D;
-class UUWorksRequestCoreFindOrCreateLeaderboard;
-class UUWorksRequestCoreFindLeaderboard;
-class UUWorksRequestCoreDownloadLeaderboardEntriesForUsers;
-class UUWorksRequestCoreAttachLeaderboardUGC;
+UUWorksInterfaceCoreUserStats::UUWorksInterfaceCoreUserStats() {
+}
 
 void UUWorksInterfaceCoreUserStats::UploadLeaderboardScoreMinimal(const FUploadLeaderboardScoreMinimalDelegate& Completed, FUWorksSteamLeaderboard SteamLeaderboard, EUWorksLeaderboardUploadScoreMethod LeaderboardUploadScoreMethod, int32 score, TArray<int32> ScoreDetails) {
 }
@@ -219,6 +209,4 @@ UUWorksRequestCoreAttachLeaderboardUGC* UUWorksInterfaceCoreUserStats::AttachLea
     return NULL;
 }
 
-UUWorksInterfaceCoreUserStats::UUWorksInterfaceCoreUserStats() {
-}
 

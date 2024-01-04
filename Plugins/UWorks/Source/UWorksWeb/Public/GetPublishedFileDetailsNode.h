@@ -14,6 +14,7 @@ public:
     FGetPublishedFileDetailsDelegate Completed;
     
     UGetPublishedFileDetailsNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

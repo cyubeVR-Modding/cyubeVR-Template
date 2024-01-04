@@ -1,6 +1,7 @@
 #include "CoreFindOrCreateLeaderboardNode.h"
 
-class UCoreFindOrCreateLeaderboardNode;
+UCoreFindOrCreateLeaderboardNode::UCoreFindOrCreateLeaderboardNode() {
+}
 
 void UCoreFindOrCreateLeaderboardNode::OnRequestCompleted(bool bSuccessful, FUWorksSteamLeaderboard SteamLeaderboard, bool bLeaderboardFound) {
 }
@@ -9,6 +10,4 @@ UCoreFindOrCreateLeaderboardNode* UCoreFindOrCreateLeaderboardNode::FindOrCreate
     return NULL;
 }
 
-UCoreFindOrCreateLeaderboardNode::UCoreFindOrCreateLeaderboardNode() {
-}
 

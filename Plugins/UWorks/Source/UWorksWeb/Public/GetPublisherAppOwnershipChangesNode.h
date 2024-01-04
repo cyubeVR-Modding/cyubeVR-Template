@@ -14,6 +14,7 @@ public:
     FGetPublisherAppOwnershipChangesDelegate Completed;
     
     UGetPublisherAppOwnershipChangesNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

@@ -1,6 +1,7 @@
 #include "GetSteamLevelNode.h"
 
-class UGetSteamLevelNode;
+UGetSteamLevelNode::UGetSteamLevelNode() {
+}
 
 void UGetSteamLevelNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetSteamLevelNode* UGetSteamLevelNode::GetSteamLevelNode(const FString& Key, FU
     return NULL;
 }
 
-UGetSteamLevelNode::UGetSteamLevelNode() {
-}
 

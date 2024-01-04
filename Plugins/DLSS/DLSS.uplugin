@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
-	"Version": 12,
-	"VersionName": "2.3.5",
+	"Version": 10,
+	"VersionName": "2.3.3",
 	"FriendlyName": "NVIDIA DLSS",
 	"Description": "NVIDIA Deep Learning Super Sampling",
 	"Category": "Rendering",

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RuntimeMeshCollisionData.h"
 #include "UObject/Object.h"
+#include "RuntimeMeshCollisionData.h"
 #include "RuntimeMeshRenderableMeshData.h"
 #include "RuntimeMeshModifier.generated.h"
 
@@ -10,6 +10,7 @@ class RUNTIMEMESHCOMPONENT_API URuntimeMeshModifier : public UObject {
     GENERATED_BODY()
 public:
     URuntimeMeshModifier();
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void ApplyToMesh(FRuntimeMeshRenderableMeshData& MeshData);
     

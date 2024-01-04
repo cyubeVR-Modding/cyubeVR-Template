@@ -1,6 +1,7 @@
 #include "GetAssetClassInfoNode.h"
 
-class UGetAssetClassInfoNode;
+UGetAssetClassInfoNode::UGetAssetClassInfoNode() {
+}
 
 void UGetAssetClassInfoNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetAssetClassInfoNode* UGetAssetClassInfoNode::GetAssetClassInfoNode(const FStr
     return NULL;
 }
 
-UGetAssetClassInfoNode::UGetAssetClassInfoNode() {
-}
 

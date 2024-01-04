@@ -14,6 +14,7 @@ public:
     FFinalizeTxnDelegate Completed;
     
     UFinalizeTxnNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "RequestLobbyListDelegateDelegate.h"
-#include "UWorksRequestCore.h"
 #include "RequestLobbyListMinimalDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "UWorksRequestCoreRequestLobbyList.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FRequestLobbyListMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreRequestLobbyList();
+
     UFUNCTION(BlueprintCallable)
     bool IsActive();
     

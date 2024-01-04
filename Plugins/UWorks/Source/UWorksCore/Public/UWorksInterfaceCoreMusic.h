@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EUWorksAudioPlaybackStatus.h"
+#include "PlaybackStatusHasChangedDelegateDelegate.h"
 #include "UWorksInterfaceCore.h"
 #include "VolumeHasChangedDelegateDelegate.h"
-#include "PlaybackStatusHasChangedDelegateDelegate.h"
-#include "EUWorksAudioPlaybackStatus.h"
 #include "UWorksInterfaceCoreMusic.generated.h"
 
 class UUWorksInterfaceCoreMusic;
@@ -19,6 +19,7 @@ public:
     FVolumeHasChangedDelegate VolumeHasChanged;
     
     UUWorksInterfaceCoreMusic();
+
     UFUNCTION(BlueprintCallable)
     void SetVolume(float Volume);
     

@@ -15,6 +15,7 @@ public:
     FPlayersUpdateDelegate Updated;
     
     UCorePlayersNode();
+
     UFUNCTION(BlueprintCallable)
     static UCorePlayersNode* PlayersNode(const FString& IP, int32 Port, int32 MaxUpdates);
     

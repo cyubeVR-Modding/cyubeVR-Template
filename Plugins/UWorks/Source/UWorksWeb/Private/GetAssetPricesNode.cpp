@@ -1,6 +1,7 @@
 #include "GetAssetPricesNode.h"
 
-class UGetAssetPricesNode;
+UGetAssetPricesNode::UGetAssetPricesNode() {
+}
 
 void UGetAssetPricesNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetAssetPricesNode* UGetAssetPricesNode::GetAssetPricesNode(const FString& Key,
     return NULL;
 }
 
-UGetAssetPricesNode::UGetAssetPricesNode() {
-}
 

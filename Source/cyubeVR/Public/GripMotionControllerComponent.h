@@ -1,35 +1,35 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Templates/SubclassOf.h"
-#include "MotionControllerComponent.h"
-#include "VROnControllerDropSignatureDelegate.h"
-#include "InputCoreTypes.h"
-#include "VRGripControllerOnTrackingEventSignatureDelegate.h"
-#include "EVRVelocityType.h"
-#include "VRGripControllerOnProfileTransformChangedDelegate.h"
-#include "VRGripControllerOnGripOutOfRangeDelegate.h"
-#include "VROnControllerGripSignatureDelegate.h"
-#include "BPSecondaryGripInfo.h"
 #include "UObject/NoExportTypes.h"
-#include "BPActorGripInformation.h"
-#include "IIdentifiableXRDevice.h"
-#include "BPVRComponentPosRep.h"
-#include "Transform_NetQuantize.h"
-#include "BPAdvancedPhysicsHandleSettings.h"
-#include "EBPVRResultSwitch.h"
-#include "EGripLateUpdateSettings.h"
-#include "EGripCollisionType.h"
+#include "UObject/NoExportTypes.h"
 #include "Engine/NetSerialization.h"
+#include "MotionControllerComponent.h"
+#include "IIdentifiableXRDevice.h"
+#include "InputCoreTypes.h"
+#include "BPActorGripInformation.h"
+#include "BPAdvancedPhysicsHandleSettings.h"
+#include "BPSecondaryGripInfo.h"
+#include "BPVRComponentPosRep.h"
+#include "EBPVRResultSwitch.h"
+#include "EGripCollisionType.h"
+#include "EGripLateUpdateSettings.h"
 #include "EGripMovementReplicationSettings.h"
-#include "UObject/NoExportTypes.h"
+#include "EVRVelocityType.h"
+#include "Templates/SubclassOf.h"
+#include "Transform_NetQuantize.h"
+#include "VRGripControllerOnGripOutOfRangeDelegate.h"
+#include "VRGripControllerOnProfileTransformChangedDelegate.h"
+#include "VRGripControllerOnTrackingEventSignatureDelegate.h"
+#include "VROnControllerDropSignatureDelegate.h"
+#include "VROnControllerGripSignatureDelegate.h"
 #include "GripMotionControllerComponent.generated.h"
 
-class UVRGripScriptBase;
-class APawn;
-class USceneComponent;
-class UPrimitiveComponent;
-class UObject;
 class AActor;
+class APawn;
+class UObject;
+class UPrimitiveComponent;
+class USceneComponent;
+class UVRGripScriptBase;
 
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UGripMotionControllerComponent : public UMotionControllerComponent {
@@ -44,7 +44,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bOffsetByHMD;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<APawn> AttachChar;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
@@ -80,7 +80,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FVROnControllerGripSignature OnSecondaryGripRemoved;
     
-    UPROPERTY(EditAnywhere, Export)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<USceneComponent> CustomPivotComponent;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_GrippedObjects, meta=(AllowPrivateAccess=true))
@@ -116,9 +116,10 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bUseWithoutTracking;
     
-    UGripMotionControllerComponent();
+    UGripMotionControllerComponent(const FObjectInitializer& ObjectInitializer);
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
     UFUNCTION(BlueprintCallable)
     void UpdatePhysicsHandleTransform_BP(const FBPActorGripInformation& GrippedActor, const FTransform& NewTransform);
     

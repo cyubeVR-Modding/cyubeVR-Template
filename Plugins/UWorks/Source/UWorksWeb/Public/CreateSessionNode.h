@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "CreateSessionDelegateDelegate.h"
-#include "UWorksUsers.h"
-#include "UWorksTitle.h"
 #include "UWorksSteamID.h"
+#include "CreateSessionDelegateDelegate.h"
+#include "UWorksTitle.h"
+#include "UWorksUsers.h"
 #include "CreateSessionNode.generated.h"
 
 class UCreateSessionNode;
@@ -17,6 +17,7 @@ public:
     FCreateSessionDelegate Completed;
     
     UCreateSessionNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

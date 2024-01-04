@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "GetAccountListDelegateDelegate.h"
 #include "GetAccountListMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetAccountList.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FGetAccountListMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetAccountList();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key);
     

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "SetDeveloperMetadataDelegateDelegate.h"
 #include "UWorksPublishedFileID.h"
+#include "SetDeveloperMetadataDelegateDelegate.h"
 #include "SetDeveloperMetadataNode.generated.h"
 
 class USetDeveloperMetadataNode;
@@ -15,6 +15,7 @@ public:
     FSetDeveloperMetadataDelegate Completed;
     
     USetDeveloperMetadataNode();
+
     UFUNCTION(BlueprintCallable)
     static USetDeveloperMetadataNode* SetDeveloperMetadataNode(const FString& Key, FUWorksPublishedFileID PublishedFileID, int32 AppID, const FString& MetaData);
     

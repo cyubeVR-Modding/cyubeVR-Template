@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
+#include "UWorksSteamID.h"
 #include "GetInventoryDelegateDelegate.h"
 #include "GetInventoryMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetInventory.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FGetInventoryMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetInventory();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, int32 AppID, FUWorksSteamID SteamID);
     

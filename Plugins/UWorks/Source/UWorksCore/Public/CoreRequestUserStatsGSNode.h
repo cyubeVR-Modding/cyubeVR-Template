@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "EUWorksResult.h"
 #include "UWorksSteamID.h"
+#include "EUWorksResult.h"
 #include "ServerRequestUserStatsDelegateDelegate.h"
 #include "CoreRequestUserStatsGSNode.generated.h"
 
@@ -16,6 +16,7 @@ public:
     FServerRequestUserStatsDelegate Completed;
     
     UCoreRequestUserStatsGSNode();
+
     UFUNCTION(BlueprintCallable)
     static UCoreRequestUserStatsGSNode* RequestUserStatsGSNode(FUWorksSteamID SteamIDUser);
     

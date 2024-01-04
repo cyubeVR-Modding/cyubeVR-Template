@@ -8,6 +8,7 @@ class UWORKSWEB_API UUWorksRequestWeb : public UUWorksRequest {
     GENERATED_BODY()
 public:
     UUWorksRequestWeb();
+
     UFUNCTION(BlueprintCallable)
     bool IsActive();
     

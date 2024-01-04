@@ -1,6 +1,7 @@
 #include "CancelAgreementNode.h"
 
-class UCancelAgreementNode;
+UCancelAgreementNode::UCancelAgreementNode() {
+}
 
 void UCancelAgreementNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UCancelAgreementNode* UCancelAgreementNode::CancelAgreementNode(const FString& K
     return NULL;
 }
 
-UCancelAgreementNode::UCancelAgreementNode() {
-}
 

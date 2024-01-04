@@ -1,6 +1,7 @@
 #include "GetFinalizedContributorsNode.h"
 
-class UGetFinalizedContributorsNode;
+UGetFinalizedContributorsNode::UGetFinalizedContributorsNode() {
+}
 
 void UGetFinalizedContributorsNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetFinalizedContributorsNode* UGetFinalizedContributorsNode::GetFinalizedContri
     return NULL;
 }
 
-UGetFinalizedContributorsNode::UGetFinalizedContributorsNode() {
-}
 

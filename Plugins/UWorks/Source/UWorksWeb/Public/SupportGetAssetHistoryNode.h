@@ -14,6 +14,7 @@ public:
     FSupportGetAssetHistoryDelegate Completed;
     
     USupportGetAssetHistoryNode();
+
     UFUNCTION(BlueprintCallable)
     static USupportGetAssetHistoryNode* SupportGetAssetHistoryNode(const FString& Key, int32 AppID, const FString& AssetID, const FString& ContextID);
     

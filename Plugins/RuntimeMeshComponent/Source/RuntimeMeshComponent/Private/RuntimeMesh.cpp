@@ -1,7 +1,9 @@
 #include "RuntimeMesh.h"
 
-class URuntimeMeshProvider;
-class UBodySetup;
+URuntimeMesh::URuntimeMesh() {
+    this->MeshProviderPtr = NULL;
+    this->BodySetup = NULL;
+}
 
 void URuntimeMesh::Reset() {
 }
@@ -29,8 +31,4 @@ UBodySetup* URuntimeMesh::GetBodySetup() {
     return NULL;
 }
 
-URuntimeMesh::URuntimeMesh() {
-    this->MeshProviderPtr = NULL;
-    this->BodySetup = NULL;
-}
 

@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreJoinLobby.h"
 
+UUWorksRequestCoreJoinLobby::UUWorksRequestCoreJoinLobby() {
+}
+
 void UUWorksRequestCoreJoinLobby::SetInput(FUWorksSteamID SteamIDLobby) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreJoinLobby::Deactivate() {
 void UUWorksRequestCoreJoinLobby::Activate() {
 }
 
-UUWorksRequestCoreJoinLobby::UUWorksRequestCoreJoinLobby() {
-}
 

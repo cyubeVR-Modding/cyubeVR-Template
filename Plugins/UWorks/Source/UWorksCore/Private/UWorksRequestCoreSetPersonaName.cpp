@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreSetPersonaName.h"
 
+UUWorksRequestCoreSetPersonaName::UUWorksRequestCoreSetPersonaName() {
+}
+
 void UUWorksRequestCoreSetPersonaName::SetInput(const FString& Name) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreSetPersonaName::Deactivate() {
 void UUWorksRequestCoreSetPersonaName::Activate() {
 }
 
-UUWorksRequestCoreSetPersonaName::UUWorksRequestCoreSetPersonaName() {
-}
 

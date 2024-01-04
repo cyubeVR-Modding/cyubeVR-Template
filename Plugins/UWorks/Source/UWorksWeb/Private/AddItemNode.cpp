@@ -1,6 +1,7 @@
 #include "AddItemNode.h"
 
-class UAddItemNode;
+UAddItemNode::UAddItemNode() {
+}
 
 void UAddItemNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UAddItemNode* UAddItemNode::AddItemNode(const FString& Key, int32 AppID, TArray<
     return NULL;
 }
 
-UAddItemNode::UAddItemNode() {
-}
 

@@ -1,6 +1,7 @@
 #include "EnumerateUserSubscribedFilesNode.h"
 
-class UEnumerateUserSubscribedFilesNode;
+UEnumerateUserSubscribedFilesNode::UEnumerateUserSubscribedFilesNode() {
+}
 
 void UEnumerateUserSubscribedFilesNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UEnumerateUserSubscribedFilesNode* UEnumerateUserSubscribedFilesNode::EnumerateU
     return NULL;
 }
 
-UEnumerateUserSubscribedFilesNode::UEnumerateUserSubscribedFilesNode() {
-}
 

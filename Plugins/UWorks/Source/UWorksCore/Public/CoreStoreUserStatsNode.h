@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "ServerStoreUserStatsDelegateDelegate.h"
-#include "EUWorksResult.h"
 #include "UWorksSteamID.h"
+#include "EUWorksResult.h"
+#include "ServerStoreUserStatsDelegateDelegate.h"
 #include "CoreStoreUserStatsNode.generated.h"
 
 class UCoreStoreUserStatsNode;
@@ -16,6 +16,7 @@ public:
     FServerStoreUserStatsDelegate Completed;
     
     UCoreStoreUserStatsNode();
+
     UFUNCTION(BlueprintCallable)
     static UCoreStoreUserStatsNode* StoreUserStatsNode(FUWorksSteamID SteamIDUser);
     

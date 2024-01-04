@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Net/OnlineBlueprintCallProxyBase.h"
-#include "SteamDelegateOnSubscribeUnsubscribeWorkshopItemDelegate.h"
 #include "SteamUGCItemId.h"
+#include "SteamDelegateOnSubscribeUnsubscribeWorkshopItemDelegate.h"
 #include "CallbackProxySubscribeUnsubscribeWorkshopItem.generated.h"
 
 class UCallbackProxySubscribeUnsubscribeWorkshopItem;
@@ -21,6 +21,7 @@ public:
     FSteamDelegateOnSubscribeUnsubscribeWorkshopItem OnSteamInitFailure;
     
     UCallbackProxySubscribeUnsubscribeWorkshopItem();
+
     UFUNCTION(BlueprintCallable)
     static UCallbackProxySubscribeUnsubscribeWorkshopItem* SteamWorkshop_SubscribeUnsubscribeItem(const FSteamUGCItemId& ItemId, bool bSubscribe);
     

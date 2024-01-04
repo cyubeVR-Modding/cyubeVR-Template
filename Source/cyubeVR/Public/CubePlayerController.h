@@ -4,6 +4,8 @@
 #include "EBlockTypeBP.h"
 #include "CubePlayerController.generated.h"
 
+class ALeaderboardManagerCPP;
+
 UCLASS(Blueprintable)
 class CYUBEVR_API ACubePlayerController : public APlayerController {
     GENERATED_BODY()
@@ -20,7 +22,11 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bUnrealisticCameraHeight;
     
-    ACubePlayerController();
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    ALeaderboardManagerCPP* LeaderboardManagerActor;
+    
+    ACubePlayerController(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void IncrementBlocksDestroyed(int32 Increment, EBlockTypeBP Type);
     

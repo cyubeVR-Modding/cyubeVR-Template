@@ -1,6 +1,7 @@
 #include "GrantPackageNode.h"
 
-class UGrantPackageNode;
+UGrantPackageNode::UGrantPackageNode() {
+}
 
 void UGrantPackageNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGrantPackageNode* UGrantPackageNode::GrantPackageNode(const FString& Key, FUWor
     return NULL;
 }
 
-UGrantPackageNode::UGrantPackageNode() {
-}
 

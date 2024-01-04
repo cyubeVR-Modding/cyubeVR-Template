@@ -1,6 +1,7 @@
 #include "GetPlayerSummariesNode.h"
 
-class UGetPlayerSummariesNode;
+UGetPlayerSummariesNode::UGetPlayerSummariesNode() {
+}
 
 void UGetPlayerSummariesNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetPlayerSummariesNode* UGetPlayerSummariesNode::GetPlayerSummariesNode(const F
     return NULL;
 }
 
-UGetPlayerSummariesNode::UGetPlayerSummariesNode() {
-}
 

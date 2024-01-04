@@ -7,7 +7,8 @@ UCLASS(Blueprintable)
 class CYUBEVR_API AModLoad : public AActor {
     GENERATED_BODY()
 public:
-    AModLoad();
+    AModLoad(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     static void GetModFilePaths(TArray<FString>& PathsOut, TArray<FString>& ModNamesOut);
     

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "RequestStoreAuthURLDelegateDelegate.h"
 #include "RequestStoreAuthURLMinimalDelegateDelegate.h"
 #include "UWorksRequestCore.h"
-#include "RequestStoreAuthURLDelegateDelegate.h"
 #include "UWorksRequestCoreRequestStoreAuthURL.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FRequestStoreAuthURLMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreRequestStoreAuthURL();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& URL);
     

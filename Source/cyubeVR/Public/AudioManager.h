@@ -40,6 +40,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float GeneralVolumeMultiplier;
     
-    AAudioManager();
+    AAudioManager(const FObjectInitializer& ObjectInitializer);
+
 };
 

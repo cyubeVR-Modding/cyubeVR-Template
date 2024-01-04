@@ -1,6 +1,7 @@
 #include "CoreGetNumberOfCurrentPlayersNode.h"
 
-class UCoreGetNumberOfCurrentPlayersNode;
+UCoreGetNumberOfCurrentPlayersNode::UCoreGetNumberOfCurrentPlayersNode() {
+}
 
 void UCoreGetNumberOfCurrentPlayersNode::OnRequestCompleted(bool bSuccessful, bool bSuccess, int32 Players) {
 }
@@ -9,6 +10,4 @@ UCoreGetNumberOfCurrentPlayersNode* UCoreGetNumberOfCurrentPlayersNode::GetNumbe
     return NULL;
 }
 
-UCoreGetNumberOfCurrentPlayersNode::UCoreGetNumberOfCurrentPlayersNode() {
-}
 

@@ -1,30 +1,30 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "LobbyInviteDelegateDelegate.h"
-#include "UWorksInterfaceCore.h"
-#include "FavoritesListChangedDelegateDelegate.h"
 #include "UWorksSteamID.h"
-#include "LobbyDataUpdateDelegateDelegate.h"
-#include "LobbyEnterDelegateDelegate.h"
-#include "LobbyChatUpdateDelegateDelegate.h"
-#include "LobbyGameCreatedDelegateDelegate.h"
-#include "LobbyChatMsgDelegateDelegate.h"
-#include "LobbyKickedDelegateDelegate.h"
-#include "FavoritesListAccountsUpdatedDelegateDelegate.h"
-#include "EUWorksLobbyType.h"
-#include "RequestLobbyListMinimalDelegateDelegate.h"
-#include "EUWorksFavoriteFlags.h"
-#include "JoinLobbyMinimalDelegateDelegate.h"
-#include "EUWorksChatEntryType.h"
 #include "CreateLobbyMinimalDelegateDelegate.h"
+#include "EUWorksChatEntryType.h"
+#include "EUWorksFavoriteFlags.h"
 #include "EUWorksLobbyComparison.h"
 #include "EUWorksLobbyDistanceFilter.h"
+#include "EUWorksLobbyType.h"
+#include "FavoritesListAccountsUpdatedDelegateDelegate.h"
+#include "FavoritesListChangedDelegateDelegate.h"
+#include "JoinLobbyMinimalDelegateDelegate.h"
+#include "LobbyChatMsgDelegateDelegate.h"
+#include "LobbyChatUpdateDelegateDelegate.h"
+#include "LobbyDataUpdateDelegateDelegate.h"
+#include "LobbyEnterDelegateDelegate.h"
+#include "LobbyGameCreatedDelegateDelegate.h"
+#include "LobbyInviteDelegateDelegate.h"
+#include "LobbyKickedDelegateDelegate.h"
+#include "RequestLobbyListMinimalDelegateDelegate.h"
+#include "UWorksInterfaceCore.h"
 #include "UWorksInterfaceCoreMatchmaking.generated.h"
 
-class UUWorksRequestCoreRequestLobbyList;
-class UUWorksRequestCoreJoinLobby;
 class UUWorksInterfaceCoreMatchmaking;
 class UUWorksRequestCoreCreateLobby;
+class UUWorksRequestCoreJoinLobby;
+class UUWorksRequestCoreRequestLobbyList;
 
 UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreMatchmaking : public UUWorksInterfaceCore {
@@ -58,6 +58,7 @@ public:
     FFavoritesListAccountsUpdatedDelegate FavoritesListAccountsUpdated;
     
     UUWorksInterfaceCoreMatchmaking();
+
     UFUNCTION(BlueprintCallable)
     bool SetLobbyType(FUWorksSteamID SteamIDLobby, EUWorksLobbyType LobbyType);
     

@@ -1,25 +1,26 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksPartnerAccounts.h"
-#include "UWorksInterfaceWeb.h"
-#include "UWorksAssociatedWorkshopFiles.h"
+#include "GetFinalizedContributorsMinimalDelegateDelegate.h"
+#include "GetItemDailyRevenueMinimalDelegateDelegate.h"
 #include "PopulateItemDescriptionsMinimalDelegateDelegate.h"
 #include "SetItemPaymentRulesMinimalDelegateDelegate.h"
-#include "GetFinalizedContributorsMinimalDelegateDelegate.h"
+#include "UWorksAssociatedWorkshopFiles.h"
+#include "UWorksInterfaceWeb.h"
 #include "UWorksLanguages.h"
-#include "GetItemDailyRevenueMinimalDelegateDelegate.h"
+#include "UWorksPartnerAccounts.h"
 #include "UWorksInterfaceWebWorkshop.generated.h"
 
+class UUWorksRequestWebGetFinalizedContributors;
+class UUWorksRequestWebGetItemDailyRevenue;
 class UUWorksRequestWebPopulateItemDescriptions;
 class UUWorksRequestWebSetItemPaymentRules;
-class UUWorksRequestWebGetItemDailyRevenue;
-class UUWorksRequestWebGetFinalizedContributors;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebWorkshop : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:
     UUWorksInterfaceWebWorkshop();
+
     UFUNCTION(BlueprintCallable)
     static void SetItemPaymentRulesMinimal(const FString& Key, int32 AppID, int32 GameItemID, FUWorksAssociatedWorkshopFiles AssociatedWorkshopFiles, FUWorksPartnerAccounts PartnerAccounts, bool bMakeWorkshopFilesSubscribable, bool bValidateOnly, const FSetItemPaymentRulesMinimalDelegate& Delegate);
     

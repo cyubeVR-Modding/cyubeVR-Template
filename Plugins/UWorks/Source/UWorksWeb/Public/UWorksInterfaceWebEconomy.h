@@ -1,31 +1,32 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceWeb.h"
-#include "FinalizeAssetTransactionMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
-#include "StartTradeMinimalDelegateDelegate.h"
-#include "StartAssetTransactionMinimalDelegateDelegate.h"
-#include "GetMarketPricesMinimalDelegateDelegate.h"
-#include "GetExportedAssetsForUserMinimalDelegateDelegate.h"
-#include "GetAssetPricesMinimalDelegateDelegate.h"
-#include "GetAssetClassInfoMinimalDelegateDelegate.h"
 #include "CanTradeMinimalDelegateDelegate.h"
+#include "FinalizeAssetTransactionMinimalDelegateDelegate.h"
+#include "GetAssetClassInfoMinimalDelegateDelegate.h"
+#include "GetAssetPricesMinimalDelegateDelegate.h"
+#include "GetExportedAssetsForUserMinimalDelegateDelegate.h"
+#include "GetMarketPricesMinimalDelegateDelegate.h"
+#include "StartAssetTransactionMinimalDelegateDelegate.h"
+#include "StartTradeMinimalDelegateDelegate.h"
+#include "UWorksInterfaceWeb.h"
 #include "UWorksInterfaceWebEconomy.generated.h"
 
-class UUWorksRequestWebGetAssetClassInfo;
-class UUWorksRequestWebStartTrade;
-class UUWorksRequestWebStartAssetTransaction;
-class UUWorksRequestWebGetMarketPrices;
-class UUWorksRequestWebGetExportedAssetsForUser;
-class UUWorksRequestWebGetAssetPrices;
-class UUWorksRequestWebFinalizeAssetTransaction;
 class UUWorksRequestWebCanTrade;
+class UUWorksRequestWebFinalizeAssetTransaction;
+class UUWorksRequestWebGetAssetClassInfo;
+class UUWorksRequestWebGetAssetPrices;
+class UUWorksRequestWebGetExportedAssetsForUser;
+class UUWorksRequestWebGetMarketPrices;
+class UUWorksRequestWebStartAssetTransaction;
+class UUWorksRequestWebStartTrade;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebEconomy : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:
     UUWorksInterfaceWebEconomy();
+
     UFUNCTION(BlueprintCallable)
     static void StartTradeMinimal(const FString& Key, int32 AppID, FUWorksSteamID PartyA, FUWorksSteamID PartyB, const FStartTradeMinimalDelegate& Delegate);
     

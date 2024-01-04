@@ -1,15 +1,7 @@
 #include "UWorksInterfaceWebApps.h"
 
-class UUWorksRequestWebUpToDateCheck;
-class UUWorksRequestWebSetAppBuildLive;
-class UUWorksRequestWebGetServersAtAddress;
-class UUWorksRequestWebGetServerList;
-class UUWorksRequestWebGetPlayersBanned;
-class UUWorksRequestWebGetCheatingReportsList;
-class UUWorksRequestWebGetAppList;
-class UUWorksRequestWebGetAppDepotVersions;
-class UUWorksRequestWebGetAppBuilds;
-class UUWorksRequestWebGetAppBetas;
+UUWorksInterfaceWebApps::UUWorksInterfaceWebApps() {
+}
 
 void UUWorksInterfaceWebApps::UpToDateCheckMinimal(int32 AppID, int32 Version, const FUpToDateCheckMinimalDelegate& Delegate) {
 }
@@ -81,6 +73,4 @@ UUWorksRequestWebGetAppBetas* UUWorksInterfaceWebApps::GetAppBetas() {
     return NULL;
 }
 
-UUWorksInterfaceWebApps::UUWorksInterfaceWebApps() {
-}
 

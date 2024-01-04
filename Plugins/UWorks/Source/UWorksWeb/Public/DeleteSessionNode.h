@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "DeleteSessionDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "DeleteSessionDelegateDelegate.h"
 #include "DeleteSessionNode.generated.h"
 
 class UDeleteSessionNode;
@@ -15,6 +15,7 @@ public:
     FDeleteSessionDelegate Completed;
     
     UDeleteSessionNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

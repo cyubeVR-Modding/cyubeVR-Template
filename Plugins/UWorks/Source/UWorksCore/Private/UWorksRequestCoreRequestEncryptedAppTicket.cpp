@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreRequestEncryptedAppTicket.h"
 
+UUWorksRequestCoreRequestEncryptedAppTicket::UUWorksRequestCoreRequestEncryptedAppTicket() {
+}
+
 void UUWorksRequestCoreRequestEncryptedAppTicket::SetInput(TArray<uint8> Buffer) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreRequestEncryptedAppTicket::Deactivate() {
 void UUWorksRequestCoreRequestEncryptedAppTicket::Activate() {
 }
 
-UUWorksRequestCoreRequestEncryptedAppTicket::UUWorksRequestCoreRequestEncryptedAppTicket() {
-}
 

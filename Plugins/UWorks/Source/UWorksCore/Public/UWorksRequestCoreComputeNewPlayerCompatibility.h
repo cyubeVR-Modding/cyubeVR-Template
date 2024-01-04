@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
+#include "UWorksSteamID.h"
 #include "ComputeNewPlayerCompatibilityDelegateDelegate.h"
 #include "ComputeNewPlayerCompatibilityMinimalDelegateDelegate.h"
 #include "EUWorksResult.h"
-#include "UWorksSteamID.h"
+#include "UWorksRequestCore.h"
 #include "UWorksRequestCoreComputeNewPlayerCompatibility.generated.h"
 
 UCLASS(Blueprintable)
@@ -18,6 +18,7 @@ public:
     FComputeNewPlayerCompatibilityMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreComputeNewPlayerCompatibility();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(FUWorksSteamID SteamIDNewPlayer);
     

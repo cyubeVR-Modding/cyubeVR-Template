@@ -1,6 +1,7 @@
 #include "CoreDownloadClanActivityCountsNode.h"
 
-class UCoreDownloadClanActivityCountsNode;
+UCoreDownloadClanActivityCountsNode::UCoreDownloadClanActivityCountsNode() {
+}
 
 void UCoreDownloadClanActivityCountsNode::OnRequestCompleted(bool bSuccessful, bool bSuccess) {
 }
@@ -9,6 +10,4 @@ UCoreDownloadClanActivityCountsNode* UCoreDownloadClanActivityCountsNode::Downlo
     return NULL;
 }
 
-UCoreDownloadClanActivityCountsNode::UCoreDownloadClanActivityCountsNode() {
-}
 

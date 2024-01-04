@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreFindOrCreateLeaderboard.h"
 
+UUWorksRequestCoreFindOrCreateLeaderboard::UUWorksRequestCoreFindOrCreateLeaderboard() {
+}
+
 void UUWorksRequestCoreFindOrCreateLeaderboard::SetInput(const FString& LeaderboardName, EUWorksLeaderboardSortMethod LeaderboardSortMethod, EUWorksLeaderboardDisplayType LeaderboardDisplayType) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreFindOrCreateLeaderboard::Deactivate() {
 void UUWorksRequestCoreFindOrCreateLeaderboard::Activate() {
 }
 
-UUWorksRequestCoreFindOrCreateLeaderboard::UUWorksRequestCoreFindOrCreateLeaderboard() {
-}
 

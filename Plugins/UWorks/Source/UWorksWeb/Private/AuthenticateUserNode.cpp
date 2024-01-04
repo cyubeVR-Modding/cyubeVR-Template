@@ -1,6 +1,7 @@
 #include "AuthenticateUserNode.h"
 
-class UAuthenticateUserNode;
+UAuthenticateUserNode::UAuthenticateUserNode() {
+}
 
 void UAuthenticateUserNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UAuthenticateUserNode* UAuthenticateUserNode::AuthenticateUserNode(FUWorksSteamI
     return NULL;
 }
 
-UAuthenticateUserNode::UAuthenticateUserNode() {
-}
 

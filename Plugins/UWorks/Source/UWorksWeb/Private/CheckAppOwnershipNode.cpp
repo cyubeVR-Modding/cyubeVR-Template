@@ -1,6 +1,7 @@
 #include "CheckAppOwnershipNode.h"
 
-class UCheckAppOwnershipNode;
+UCheckAppOwnershipNode::UCheckAppOwnershipNode() {
+}
 
 void UCheckAppOwnershipNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UCheckAppOwnershipNode* UCheckAppOwnershipNode::CheckAppOwnershipNode(const FStr
     return NULL;
 }
 
-UCheckAppOwnershipNode::UCheckAppOwnershipNode() {
-}
 

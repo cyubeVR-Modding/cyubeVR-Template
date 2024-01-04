@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksControllerMotionData.h"
-#include "UWorksControllerActionSetHandle.h"
-#include "UWorksInterfaceCore.h"
-#include "EUWorksSteamControllerPad.h"
-#include "UWorksControllerHandle.h"
-#include "UWorksControllerAnalogActionHandle.h"
-#include "EUWorksSteamControllerLEDFlag.h"
 #include "EUWorksControllerActionOrigin.h"
-#include "UWorksControllerDigitalActionHandle.h"
-#include "UWorksControllerDigitalActionData.h"
+#include "EUWorksSteamControllerLEDFlag.h"
+#include "EUWorksSteamControllerPad.h"
+#include "UWorksControllerActionSetHandle.h"
 #include "UWorksControllerAnalogActionData.h"
+#include "UWorksControllerAnalogActionHandle.h"
+#include "UWorksControllerDigitalActionData.h"
+#include "UWorksControllerDigitalActionHandle.h"
+#include "UWorksControllerHandle.h"
+#include "UWorksControllerMotionData.h"
+#include "UWorksInterfaceCore.h"
 #include "UWorksInterfaceCoreController.generated.h"
 
 class UUWorksInterfaceCoreController;
@@ -20,6 +20,7 @@ class UWORKSCORE_API UUWorksInterfaceCoreController : public UUWorksInterfaceCor
     GENERATED_BODY()
 public:
     UUWorksInterfaceCoreController();
+
     UFUNCTION(BlueprintCallable)
     void TriggerVibration(FUWorksControllerHandle ControllerHandle, int32 LeftSpeed, int32 RightSpeed);
     

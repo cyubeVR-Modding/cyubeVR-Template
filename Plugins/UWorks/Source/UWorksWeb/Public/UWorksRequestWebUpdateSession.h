@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestWeb.h"
+#include "UWorksTitle.h"
+#include "UWorksUsers.h"
 #include "UpdateSessionDelegateDelegate.h"
 #include "UpdateSessionMinimalDelegateDelegate.h"
-#include "UWorksUsers.h"
-#include "UWorksTitle.h"
-#include "UWorksSteamID.h"
 #include "UWorksRequestWebUpdateSession.generated.h"
 
 UCLASS(Blueprintable)
@@ -19,6 +19,7 @@ public:
     FUpdateSessionMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebUpdateSession();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, const FString& SessionId, int32 AppID, FUWorksTitle Title, FUWorksUsers Users, FUWorksSteamID SteamID);
     

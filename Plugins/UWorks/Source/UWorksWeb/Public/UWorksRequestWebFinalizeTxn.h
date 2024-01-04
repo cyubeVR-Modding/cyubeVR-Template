@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "FinalizeTxnDelegateDelegate.h"
 #include "FinalizeTxnMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebFinalizeTxn.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FFinalizeTxnMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebFinalizeTxn();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, const FString& OrderID, int32 AppID);
     

@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
-#include "ConsumeItemMinimalDelegateDelegate.h"
-#include "ConsumeItemDelegateDelegate.h"
-#include "UWorksSteamItemInstanceID.h"
 #include "UWorksSteamID.h"
+#include "UWorksSteamItemInstanceID.h"
+#include "ConsumeItemDelegateDelegate.h"
+#include "ConsumeItemMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebConsumeItem.generated.h"
 
 UCLASS(Blueprintable)
@@ -18,6 +18,7 @@ public:
     FConsumeItemMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebConsumeItem();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, int32 AppID, FUWorksSteamItemInstanceID ItemId, int32 Quantity, FUWorksSteamID SteamID, const FString& requestID);
     

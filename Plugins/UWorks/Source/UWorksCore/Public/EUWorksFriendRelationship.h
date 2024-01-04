@@ -11,6 +11,6 @@ enum class EUWorksFriendRelationship : uint8 {
     RequestInitiator,
     Ignored,
     IgnoredFriend,
-    Max = 0x8,
+    Max = 8,
 };
 

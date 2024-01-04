@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "EUWorksResult.h"
 #include "AttachLeaderboardUGCDelegateDelegate.h"
+#include "EUWorksResult.h"
 #include "UWorksSteamLeaderboard.h"
 #include "UWorksUGCHandle.h"
 #include "CoreAttachLeaderboardUGCNode.generated.h"
@@ -17,6 +17,7 @@ public:
     FAttachLeaderboardUGCDelegate Completed;
     
     UCoreAttachLeaderboardUGCNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, EUWorksResult Result, FUWorksSteamLeaderboard SteamLeaderboard);
     

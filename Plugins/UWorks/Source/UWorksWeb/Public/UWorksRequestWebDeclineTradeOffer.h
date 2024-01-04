@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
-#include "DeclineTradeOfferMinimalDelegateDelegate.h"
 #include "DeclineTradeOfferDelegateDelegate.h"
+#include "DeclineTradeOfferMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebDeclineTradeOffer.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FDeclineTradeOfferMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebDeclineTradeOffer();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, const FString& TradeOfferID);
     

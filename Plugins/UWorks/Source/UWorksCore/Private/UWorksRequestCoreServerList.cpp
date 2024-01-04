@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreServerList.h"
 
+UUWorksRequestCoreServerList::UUWorksRequestCoreServerList() {
+}
+
 void UUWorksRequestCoreServerList::SetInput(int32 AppID, EUWorksServerQueryType queryType) {
 }
 
@@ -70,6 +73,4 @@ void UUWorksRequestCoreServerList::AddFilterAddr(const FString& Value) {
 void UUWorksRequestCoreServerList::Activate() {
 }
 
-UUWorksRequestCoreServerList::UUWorksRequestCoreServerList() {
-}
 

@@ -8,5 +8,6 @@ class UWORKSWEB_API UUWorksInterfaceWeb : public UUWorksInterface {
     GENERATED_BODY()
 public:
     UUWorksInterfaceWeb();
+
 };
 

@@ -1,6 +1,7 @@
 #include "GetUserAgreementInfoNode.h"
 
-class UGetUserAgreementInfoNode;
+UGetUserAgreementInfoNode::UGetUserAgreementInfoNode() {
+}
 
 void UGetUserAgreementInfoNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetUserAgreementInfoNode* UGetUserAgreementInfoNode::GetUserAgreementInfoNode(c
     return NULL;
 }
 
-UGetUserAgreementInfoNode::UGetUserAgreementInfoNode() {
-}
 

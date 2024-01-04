@@ -1,6 +1,7 @@
 #include "GetBadgesNode.h"
 
-class UGetBadgesNode;
+UGetBadgesNode::UGetBadgesNode() {
+}
 
 void UGetBadgesNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetBadgesNode* UGetBadgesNode::GetBadgesNode(const FString& Key, FUWorksSteamID
     return NULL;
 }
 
-UGetBadgesNode::UGetBadgesNode() {
-}
 

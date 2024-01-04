@@ -1,5 +1,8 @@
 #include "SteamWorkshopLibrary.h"
 
+USteamWorkshopLibrary::USteamWorkshopLibrary() {
+}
+
 int32 USteamWorkshopLibrary::SteamWorkshop_UpdateTitleLengthMin_FromConfig() {
     return 0;
 }
@@ -75,6 +78,4 @@ FSteamUGCQueryParameterTagsAllUser USteamWorkshopLibrary::MakeSteamUGCQueryParam
     return FSteamUGCQueryParameterTagsAllUser{};
 }
 
-USteamWorkshopLibrary::USteamWorkshopLibrary() {
-}
 

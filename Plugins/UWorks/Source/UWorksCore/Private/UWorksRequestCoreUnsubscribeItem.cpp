@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreUnsubscribeItem.h"
 
+UUWorksRequestCoreUnsubscribeItem::UUWorksRequestCoreUnsubscribeItem() {
+}
+
 void UUWorksRequestCoreUnsubscribeItem::SetInput(FUWorksPublishedFileID PublishedFileID) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreUnsubscribeItem::Deactivate() {
 void UUWorksRequestCoreUnsubscribeItem::Activate() {
 }
 
-UUWorksRequestCoreUnsubscribeItem::UUWorksRequestCoreUnsubscribeItem() {
-}
 

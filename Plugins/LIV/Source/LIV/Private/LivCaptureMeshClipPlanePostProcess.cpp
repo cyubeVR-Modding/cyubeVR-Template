@@ -1,6 +1,6 @@
 #include "LivCaptureMeshClipPlanePostProcess.h"
 
-ULivCaptureMeshClipPlanePostProcess::ULivCaptureMeshClipPlanePostProcess() {
+ULivCaptureMeshClipPlanePostProcess::ULivCaptureMeshClipPlanePostProcess(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->SceneCaptureComponent = NULL;
     this->CameraClipPlane = NULL;
     this->FloorClipPlane = NULL;
@@ -10,4 +10,5 @@ ULivCaptureMeshClipPlanePostProcess::ULivCaptureMeshClipPlanePostProcess() {
     this->BackgroundOutputRenderTarget = NULL;
     this->ForegroundOutputRenderTarget = NULL;
 }
+
 

@@ -1,6 +1,7 @@
 #include "GetPlayerAchievementsNode.h"
 
-class UGetPlayerAchievementsNode;
+UGetPlayerAchievementsNode::UGetPlayerAchievementsNode() {
+}
 
 void UGetPlayerAchievementsNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetPlayerAchievementsNode* UGetPlayerAchievementsNode::GetPlayerAchievementsNod
     return NULL;
 }
 
-UGetPlayerAchievementsNode::UGetPlayerAchievementsNode() {
-}
 

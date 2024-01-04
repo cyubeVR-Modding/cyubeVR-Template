@@ -12,6 +12,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UMaterialInterface* ClipPlaneMaterial;
     
-    ULivCustomClipPlane();
+    ULivCustomClipPlane(const FObjectInitializer& ObjectInitializer);
+
 };
 

@@ -1,46 +1,46 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameRichPresenceJoinRequestedDelegateDelegate.h"
-#include "FriendRichPresenceUpdateDelegateDelegate.h"
-#include "UWorksInterfaceCore.h"
-#include "PersonaStateChangeDelegateDelegate.h"
-#include "GameOverlayActivatedDelegateDelegate.h"
-#include "GameServerChangeRequestedDelegateDelegate.h"
-#include "GameLobbyJoinRequestedDelegateDelegate.h"
-#include "AvatarImageLoadedDelegateDelegate.h"
-#include "UWorksSteamID.h"
-#include "GameConnectedClanChatMsgDelegateDelegate.h"
-#include "GameConnectedChatJoinDelegateDelegate.h"
-#include "GameConnectedChatLeaveDelegateDelegate.h"
-#include "GameConnectedFriendChatMsgDelegateDelegate.h"
-#include "SetPersonaNameMinimalDelegateDelegate.h"
-#include "RequestClanOfficerListMinimalDelegateDelegate.h"
-#include "JoinClanChatRoomMinimalDelegateDelegate.h"
-#include "IsFollowingMinimalDelegateDelegate.h"
-#include "EUWorksChatEntryType.h"
-#include "EUWorksFriendRelationship.h"
-#include "EUWorksFriendFlags.h"
-#include "EUWorksUserRestriction.h"
 #include "UWorksGameID.h"
-#include "EUWorksPersonaState.h"
-#include "UWorksFriendsGroupID.h"
-#include "GetFollowerCountMinimalDelegateDelegate.h"
-#include "EUWorksOverlayGeneric.h"
-#include "EnumerateFollowingListMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
+#include "AvatarImageLoadedDelegateDelegate.h"
 #include "DownloadClanActivityCountsMinimalDelegateDelegate.h"
+#include "EUWorksChatEntryType.h"
+#include "EUWorksFriendFlags.h"
+#include "EUWorksFriendRelationship.h"
+#include "EUWorksOverlayGeneric.h"
 #include "EUWorksOverlaySpecific.h"
 #include "EUWorksOverlayToStoreFlag.h"
+#include "EUWorksPersonaState.h"
+#include "EUWorksUserRestriction.h"
+#include "EnumerateFollowingListMinimalDelegateDelegate.h"
+#include "FriendRichPresenceUpdateDelegateDelegate.h"
+#include "GameConnectedChatJoinDelegateDelegate.h"
+#include "GameConnectedChatLeaveDelegateDelegate.h"
+#include "GameConnectedClanChatMsgDelegateDelegate.h"
+#include "GameConnectedFriendChatMsgDelegateDelegate.h"
+#include "GameLobbyJoinRequestedDelegateDelegate.h"
+#include "GameOverlayActivatedDelegateDelegate.h"
+#include "GameRichPresenceJoinRequestedDelegateDelegate.h"
+#include "GameServerChangeRequestedDelegateDelegate.h"
+#include "GetFollowerCountMinimalDelegateDelegate.h"
+#include "IsFollowingMinimalDelegateDelegate.h"
+#include "JoinClanChatRoomMinimalDelegateDelegate.h"
+#include "PersonaStateChangeDelegateDelegate.h"
+#include "RequestClanOfficerListMinimalDelegateDelegate.h"
+#include "SetPersonaNameMinimalDelegateDelegate.h"
+#include "UWorksFriendsGroupID.h"
+#include "UWorksInterfaceCore.h"
 #include "UWorksInterfaceCoreFriends.generated.h"
 
-class UUWorksRequestCoreIsFollowing;
-class UUWorksRequestCoreRequestClanOfficerList;
-class UUWorksRequestCoreSetPersonaName;
-class UUWorksRequestCoreJoinClanChatRoom;
 class UTexture2D;
 class UUWorksInterfaceCoreFriends;
-class UUWorksRequestCoreGetFollowerCount;
-class UUWorksRequestCoreEnumerateFollowingList;
 class UUWorksRequestCoreDownloadClanActivityCounts;
+class UUWorksRequestCoreEnumerateFollowingList;
+class UUWorksRequestCoreGetFollowerCount;
+class UUWorksRequestCoreIsFollowing;
+class UUWorksRequestCoreJoinClanChatRoom;
+class UUWorksRequestCoreRequestClanOfficerList;
+class UUWorksRequestCoreSetPersonaName;
 
 UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreFriends : public UUWorksInterfaceCore {
@@ -80,6 +80,7 @@ public:
     FGameConnectedFriendChatMsgDelegate GameConnectedFriendChatMsg;
     
     UUWorksInterfaceCoreFriends();
+
     UFUNCTION(BlueprintCallable)
     bool SetRichPresence(const FString& Key, const FString& Value);
     

@@ -11,6 +11,5 @@ enum class EPersonaStateBP : uint8 {
     PS_Snooze,
     PS_LookingToTrade,
     PS_LookingToPlay,
-    PS_Max,
 };
 

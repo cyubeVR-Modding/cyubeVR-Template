@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RuntimeMeshRenderableMeshData.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
-#include "RuntimeMeshCollisionSettings.h"
 #include "RuntimeMeshCollisionData.h"
+#include "RuntimeMeshCollisionSettings.h"
+#include "RuntimeMeshRenderableMeshData.h"
 #include "RuntimeMeshStaticMeshConverter.generated.h"
 
-class UStaticMesh;
 class URuntimeMeshComponent;
+class UStaticMesh;
 class UStaticMeshComponent;
 
 UCLASS(Blueprintable)
@@ -15,6 +15,7 @@ class RUNTIMEMESHCOMPONENT_API URuntimeMeshStaticMeshConverter : public UBluepri
     GENERATED_BODY()
 public:
     URuntimeMeshStaticMeshConverter();
+
     UFUNCTION(BlueprintCallable)
     static bool CopyStaticMeshToRuntimeMesh(UStaticMesh* StaticMesh, URuntimeMeshComponent* RuntimeMeshComponent, int32 CollisionLODIndex, int32 MaxLODToCopy);
     

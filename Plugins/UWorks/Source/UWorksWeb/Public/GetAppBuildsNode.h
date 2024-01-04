@@ -14,6 +14,7 @@ public:
     FGetAppBuildsDelegate Completed;
     
     UGetAppBuildsNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

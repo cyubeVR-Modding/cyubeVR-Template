@@ -15,7 +15,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float MaxShotLength;
     
-    ALivDirector();
+    ALivDirector(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void FindShots();
     

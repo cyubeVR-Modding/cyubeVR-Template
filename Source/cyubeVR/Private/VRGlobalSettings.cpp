@@ -1,5 +1,12 @@
 #include "VRGlobalSettings.h"
 
+UVRGlobalSettings::UVRGlobalSettings() {
+    this->MaxCCDPasses = 1;
+    this->OneEuroMinCutoff = 2.00f;
+    this->OneEuroCutoffSlope = 0.01f;
+    this->OneEuroDeltaCutoff = 1.00f;
+}
+
 void UVRGlobalSettings::SaveControllerProfiles() {
 }
 
@@ -44,10 +51,4 @@ FTransform UVRGlobalSettings::AdjustTransformByControllerProfile(FName OptionalC
 void UVRGlobalSettings::AddControllerProfile(FBPVRControllerProfile& NewProfile, bool bSaveOutToConfig) {
 }
 
-UVRGlobalSettings::UVRGlobalSettings() {
-    this->MaxCCDPasses = 1;
-    this->OneEuroMinCutoff = 2.00f;
-    this->OneEuroCutoffSlope = 0.01f;
-    this->OneEuroDeltaCutoff = 1.00f;
-}
 

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "GetAppDepotVersionsDelegateDelegate.h"
 #include "GetAppDepotVersionsMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetAppDepotVersions.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FGetAppDepotVersionsMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetAppDepotVersions();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, int32 AppID);
     

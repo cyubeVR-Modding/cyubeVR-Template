@@ -1,20 +1,21 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RuntimeMeshRenderableMeshData.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "ERuntimeMeshSliceCapOption.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
+#include "RuntimeMeshRenderableMeshData.h"
 #include "RuntimeMeshSlicer.generated.h"
 
-class URuntimeMeshComponent;
 class UMaterialInterface;
+class URuntimeMeshComponent;
 
 UCLASS(Blueprintable)
 class RUNTIMEMESHCOMPONENT_API URuntimeMeshSlicer : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     URuntimeMeshSlicer();
+
     UFUNCTION(BlueprintCallable)
     static bool SliceRuntimeMeshData(FRuntimeMeshRenderableMeshData& SourceSection, const FPlane& SlicePlane, ERuntimeMeshSliceCapOption CapOption, FRuntimeMeshRenderableMeshData& NewSourceSection, FRuntimeMeshRenderableMeshData& NewSourceSectionCap, bool bCreateDestination, FRuntimeMeshRenderableMeshData& DestinationSection, FRuntimeMeshRenderableMeshData& NewDestinationSectionCap);
     

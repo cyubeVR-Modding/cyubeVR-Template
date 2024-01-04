@@ -1,5 +1,6 @@
 #include "LivTestActor.h"
 
-ALivTestActor::ALivTestActor() {
+ALivTestActor::ALivTestActor(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 }
+
 

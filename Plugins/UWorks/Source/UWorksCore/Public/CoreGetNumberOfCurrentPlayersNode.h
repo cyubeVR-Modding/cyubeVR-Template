@@ -14,6 +14,7 @@ public:
     FGetNumberOfCurrentPlayersDelegate Completed;
     
     UCoreGetNumberOfCurrentPlayersNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, bool bSuccess, int32 Players);
     

@@ -1,6 +1,7 @@
 #include "GetUserGroupListNode.h"
 
-class UGetUserGroupListNode;
+UGetUserGroupListNode::UGetUserGroupListNode() {
+}
 
 void UGetUserGroupListNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetUserGroupListNode* UGetUserGroupListNode::GetUserGroupListNode(const FString
     return NULL;
 }
 
-UGetUserGroupListNode::UGetUserGroupListNode() {
-}
 

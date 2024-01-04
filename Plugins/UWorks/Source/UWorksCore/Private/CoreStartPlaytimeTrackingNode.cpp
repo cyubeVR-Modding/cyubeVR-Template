@@ -1,6 +1,7 @@
 #include "CoreStartPlaytimeTrackingNode.h"
 
-class UCoreStartPlaytimeTrackingNode;
+UCoreStartPlaytimeTrackingNode::UCoreStartPlaytimeTrackingNode() {
+}
 
 UCoreStartPlaytimeTrackingNode* UCoreStartPlaytimeTrackingNode::StartPlaytimeTrackingNode(TArray<FUWorksPublishedFileID> PublishedFileID) {
     return NULL;
@@ -9,6 +10,4 @@ UCoreStartPlaytimeTrackingNode* UCoreStartPlaytimeTrackingNode::StartPlaytimeTra
 void UCoreStartPlaytimeTrackingNode::OnRequestCompleted(bool bSuccessful, EUWorksResult Result) {
 }
 
-UCoreStartPlaytimeTrackingNode::UCoreStartPlaytimeTrackingNode() {
-}
 

@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RuntimeMeshSectionData.h"
+#include "UObject/NoExportTypes.h"
+#include "RuntimeMeshCollisionData.h"
+#include "RuntimeMeshCollisionSettings.h"
 #include "RuntimeMeshProviderTargetInterface.h"
 #include "RuntimeMeshRenderableMeshData.h"
-#include "RuntimeMeshCollisionSettings.h"
-#include "RuntimeMeshCollisionData.h"
-#include "UObject/NoExportTypes.h"
+#include "RuntimeMeshSectionData.h"
 #include "RuntimeMeshProvider.generated.h"
 
 UCLASS(Blueprintable)
@@ -13,6 +13,7 @@ class RUNTIMEMESHCOMPONENT_API URuntimeMeshProvider : public URuntimeMeshProvide
     GENERATED_BODY()
 public:
     URuntimeMeshProvider();
+
     UFUNCTION(BlueprintCallable)
     void Shutdown();
     

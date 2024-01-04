@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "PostGameDataFrameDelegateDelegate.h"
-#include "UWorksRequestWeb.h"
-#include "PostGameDataFrameMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "PostGameDataFrameDelegateDelegate.h"
+#include "PostGameDataFrameMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebPostGameDataFrame.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FPostGameDataFrameMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebPostGameDataFrame();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, int32 AppID, FUWorksSteamID SteamID, const FString& BroadcastID, const FString& FrameData);
     

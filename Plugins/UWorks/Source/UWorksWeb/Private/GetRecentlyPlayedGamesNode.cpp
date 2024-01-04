@@ -1,6 +1,7 @@
 #include "GetRecentlyPlayedGamesNode.h"
 
-class UGetRecentlyPlayedGamesNode;
+UGetRecentlyPlayedGamesNode::UGetRecentlyPlayedGamesNode() {
+}
 
 void UGetRecentlyPlayedGamesNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetRecentlyPlayedGamesNode* UGetRecentlyPlayedGamesNode::GetRecentlyPlayedGames
     return NULL;
 }
 
-UGetRecentlyPlayedGamesNode::UGetRecentlyPlayedGamesNode() {
-}
 

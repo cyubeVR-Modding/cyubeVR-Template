@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ReceiveLightActor.h"
 #include "EBlockTypeBP.h"
+#include "ReceiveLightActor.h"
 #include "EasterEgg.generated.h"
 
 UCLASS(Blueprintable)
@@ -14,6 +14,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bChristmasGift;
     
-    AEasterEgg();
+    AEasterEgg(const FObjectInitializer& ObjectInitializer);
+
 };
 

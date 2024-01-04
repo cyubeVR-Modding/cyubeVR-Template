@@ -1,5 +1,9 @@
 #include "RuntimeMeshProviderCollision.h"
 
+URuntimeMeshProviderCollision::URuntimeMeshProviderCollision() {
+    this->LODForMeshCollision = 0;
+}
+
 void URuntimeMeshProviderCollision::SetRenderableSectionAffectsCollision(int32 SectionId, bool bCollisionEnabled) {
 }
 
@@ -12,7 +16,4 @@ void URuntimeMeshProviderCollision::SetCollisionSettings(const FRuntimeMeshColli
 void URuntimeMeshProviderCollision::SetCollisionMesh(const FRuntimeMeshCollisionData& NewCollisionMesh) {
 }
 
-URuntimeMeshProviderCollision::URuntimeMeshProviderCollision() {
-    this->LODForMeshCollision = 0;
-}
 

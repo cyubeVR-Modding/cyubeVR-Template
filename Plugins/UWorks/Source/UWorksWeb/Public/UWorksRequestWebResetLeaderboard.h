@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "ResetLeaderboardDelegateDelegate.h"
 #include "ResetLeaderboardMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebResetLeaderboard.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FResetLeaderboardMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebResetLeaderboard();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, int32 AppID, int32 LeaderboardID);
     

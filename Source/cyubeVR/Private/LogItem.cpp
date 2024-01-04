@@ -1,5 +1,10 @@
 #include "LogItem.h"
 
+ALogItem::ALogItem(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->Type = ETreeType::Sycamore;
+    this->Mesh = NULL;
+}
+
 bool ALogItem::UseActorCustomLocation() {
     return false;
 }
@@ -14,8 +19,4 @@ FVector ALogItem::GetActorCustomLocation() {
     return FVector{};
 }
 
-ALogItem::ALogItem() {
-    this->Type = ETreeType::Sycamore;
-    this->Mesh = NULL;
-}
 

@@ -7,6 +7,5 @@ enum class EVRVelocityType : uint8 {
     VRLOCITY_Default,
     VRLOCITY_RunningAverage,
     VRLOCITY_SamplePeak,
-    VRLOCITY_MAX UMETA(Hidden),
 };
 

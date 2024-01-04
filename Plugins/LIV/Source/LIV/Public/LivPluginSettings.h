@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Templates/SubclassOf.h"
 #include "UObject/Object.h"
-#include "Engine/Scene.h"
+#include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "Engine/EngineTypes.h"
-#include "UObject/NoExportTypes.h"
+#include "Engine/Scene.h"
 #include "ELivSceneViewExtensionCaptureStage.h"
+#include "Templates/SubclassOf.h"
 #include "LivPluginSettings.generated.h"
 
-class ULivCaptureBase;
 class ALivCameraController;
+class ULivCaptureBase;
 
-UCLASS(Blueprintable, DefaultConfig, config = Engine)
+UCLASS(Blueprintable, DefaultConfig, Config=Engine)
 class LIV_API ULivPluginSettings : public UObject {
     GENERATED_BODY()
 public:
@@ -69,5 +69,6 @@ public:
     FString TrackingId;
     
     ULivPluginSettings();
+
 };
 

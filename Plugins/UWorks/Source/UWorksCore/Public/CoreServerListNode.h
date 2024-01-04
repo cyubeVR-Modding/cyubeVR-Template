@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksServerInfo.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "EUWorksServerQueryType.h"
 #include "ServerListUpdateDelegateDelegate.h"
+#include "UWorksServerInfo.h"
 #include "CoreServerListNode.generated.h"
 
 class UCoreServerListNode;
@@ -16,6 +16,7 @@ public:
     FServerListUpdateDelegate Updated;
     
     UCoreServerListNode();
+
     UFUNCTION(BlueprintCallable)
     static UCoreServerListNode* ServerListNode(int32 AppID, EUWorksServerQueryType queryType, int32 MaxUpdates);
     

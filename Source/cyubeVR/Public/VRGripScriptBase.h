@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Templates/SubclassOf.h"
 #include "UObject/Object.h"
-#include "EBPVRResultSwitch.h"
-#include "EGSTransformOverrideType.h"
-#include "BPActorGripInformation.h"
 #include "UObject/NoExportTypes.h"
 #include "Engine/EngineTypes.h"
+#include "BPActorGripInformation.h"
+#include "EBPVRResultSwitch.h"
+#include "EGSTransformOverrideType.h"
+#include "Templates/SubclassOf.h"
 #include "VRGripScriptBase.generated.h"
 
-class UGripMotionControllerComponent;
-class USceneComponent;
 class AActor;
+class UGripMotionControllerComponent;
 class UPrimitiveComponent;
+class USceneComponent;
 class UVRGripScriptBase;
 
 UCLASS(Abstract, Blueprintable, DefaultToInstanced, EditInlineNew)
@@ -47,6 +47,7 @@ public:
     bool bAllowTicking;
     
     UVRGripScriptBase();
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     bool Wants_DenyTeleport(UGripMotionControllerComponent* Controller);
     
@@ -66,7 +67,7 @@ public:
     void OnGrip(UGripMotionControllerComponent* GrippingController, const FBPActorGripInformation& GripInformation);
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
-    void OnEndPlay(const EEndPlayReason::Type EndPlayReason);
+	void OnEndPlay(const EEndPlayReason::Type EndPlayReason);
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void OnBeginPlay(UObject* CallingOwner);

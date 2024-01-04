@@ -1,6 +1,9 @@
 #include "Storage.h"
 
-class AChestInternals;
+AStorage::AStorage(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->SlotLimit = 28;
+    this->bAllowShrinkOnLoad = true;
+}
 
 bool AStorage::TryToShrink() {
     return false;
@@ -45,8 +48,4 @@ bool AStorage::AddItem(int32& Index, EBlockTypeBP ToAdd, int32 UniqueId, FColor 
     return false;
 }
 
-AStorage::AStorage() {
-    this->SlotLimit = 28;
-    this->bAllowShrinkOnLoad = true;
-}
 

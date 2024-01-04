@@ -7,6 +7,7 @@ UCLASS(Blueprintable, NonTransient)
 class CYUBEVR_API ACubeGameMode : public AGameModeBase {
     GENERATED_BODY()
 public:
-    ACubeGameMode();
+    ACubeGameMode(const FObjectInitializer& ObjectInitializer);
+
 };
 

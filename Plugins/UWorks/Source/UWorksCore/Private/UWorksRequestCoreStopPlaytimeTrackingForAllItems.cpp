@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreStopPlaytimeTrackingForAllItems.h"
 
+UUWorksRequestCoreStopPlaytimeTrackingForAllItems::UUWorksRequestCoreStopPlaytimeTrackingForAllItems() {
+}
+
 bool UUWorksRequestCoreStopPlaytimeTrackingForAllItems::IsActive() {
     return false;
 }
@@ -13,6 +16,4 @@ void UUWorksRequestCoreStopPlaytimeTrackingForAllItems::Deactivate() {
 void UUWorksRequestCoreStopPlaytimeTrackingForAllItems::Activate() {
 }
 
-UUWorksRequestCoreStopPlaytimeTrackingForAllItems::UUWorksRequestCoreStopPlaytimeTrackingForAllItems() {
-}
 

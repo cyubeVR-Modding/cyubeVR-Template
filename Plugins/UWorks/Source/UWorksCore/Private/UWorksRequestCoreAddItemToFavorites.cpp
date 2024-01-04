@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreAddItemToFavorites.h"
 
+UUWorksRequestCoreAddItemToFavorites::UUWorksRequestCoreAddItemToFavorites() {
+}
+
 void UUWorksRequestCoreAddItemToFavorites::SetInput(int32 AppID, FUWorksPublishedFileID PublishedFileID) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreAddItemToFavorites::Deactivate() {
 void UUWorksRequestCoreAddItemToFavorites::Activate() {
 }
 
-UUWorksRequestCoreAddItemToFavorites::UUWorksRequestCoreAddItemToFavorites() {
-}
 

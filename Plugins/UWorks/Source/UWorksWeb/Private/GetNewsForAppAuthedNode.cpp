@@ -1,6 +1,7 @@
 #include "GetNewsForAppAuthedNode.h"
 
-class UGetNewsForAppAuthedNode;
+UGetNewsForAppAuthedNode::UGetNewsForAppAuthedNode() {
+}
 
 void UGetNewsForAppAuthedNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetNewsForAppAuthedNode* UGetNewsForAppAuthedNode::GetNewsForAppAuthedNode(cons
     return NULL;
 }
 
-UGetNewsForAppAuthedNode::UGetNewsForAppAuthedNode() {
-}
 

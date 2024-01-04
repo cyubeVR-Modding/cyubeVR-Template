@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
+#include "UWorksSteamID.h"
 #include "IsPlayingSharedGameDelegateDelegate.h"
 #include "IsPlayingSharedGameMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebIsPlayingSharedGame.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FIsPlayingSharedGameMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebIsPlayingSharedGame();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, FUWorksSteamID SteamID, int32 AppIDPlaying);
     

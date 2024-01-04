@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "GetLeaderboardsForGameDelegateDelegate.h"
-#include "UWorksRequestWeb.h"
 #include "GetLeaderboardsForGameMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetLeaderboardsForGame.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FGetLeaderboardsForGameMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetLeaderboardsForGame();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, int32 AppID);
     

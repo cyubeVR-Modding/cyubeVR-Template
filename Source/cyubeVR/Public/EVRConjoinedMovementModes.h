@@ -10,7 +10,7 @@ enum class EVRConjoinedMovementModes : uint8 {
     C_MOVE_Falling,
     C_MOVE_Swimming,
     C_MOVE_Flying,
-    C_MOVE_MAX = 0x7,
+    C_MOVE_MAX = 7 UMETA(Hidden),
     C_VRMOVE_Climbing,
     C_VRMOVE_LowGrav,
     C_VRMOVE_Seated,
@@ -19,6 +19,5 @@ enum class EVRConjoinedMovementModes : uint8 {
     C_VRMOVE_Custom3,
     C_VRMOVE_Custom4,
     C_VRMOVE_Custom5,
-    C_MAX UMETA(Hidden),
 };
 

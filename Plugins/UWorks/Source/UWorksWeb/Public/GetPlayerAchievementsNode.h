@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "GetPlayerAchievementsDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetPlayerAchievementsDelegateDelegate.h"
 #include "GetPlayerAchievementsNode.generated.h"
 
 class UGetPlayerAchievementsNode;
@@ -15,6 +15,7 @@ public:
     FGetPlayerAchievementsDelegate Completed;
     
     UGetPlayerAchievementsNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

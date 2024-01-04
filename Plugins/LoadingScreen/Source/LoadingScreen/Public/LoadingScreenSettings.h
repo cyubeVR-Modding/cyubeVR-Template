@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Fonts/SlateFontInfo.h"
 #include "Engine/DeveloperSettings.h"
+#include "Fonts/SlateFontInfo.h"
 #include "LoadingScreenDescription.h"
 #include "LoadingScreenSettings.generated.h"
 
@@ -25,5 +25,6 @@ public:
     TArray<FText> Tips;
     
     ULoadingScreenSettings();
+
 };
 

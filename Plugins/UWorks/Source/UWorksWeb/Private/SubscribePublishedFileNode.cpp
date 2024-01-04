@@ -1,6 +1,7 @@
 #include "SubscribePublishedFileNode.h"
 
-class USubscribePublishedFileNode;
+USubscribePublishedFileNode::USubscribePublishedFileNode() {
+}
 
 USubscribePublishedFileNode* USubscribePublishedFileNode::SubscribePublishedFileNode(const FString& Key, FUWorksSteamID SteamID, int32 AppID, int32 PublishedFileID) {
     return NULL;
@@ -9,6 +10,4 @@ USubscribePublishedFileNode* USubscribePublishedFileNode::SubscribePublishedFile
 void USubscribePublishedFileNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
 
-USubscribePublishedFileNode::USubscribePublishedFileNode() {
-}
 

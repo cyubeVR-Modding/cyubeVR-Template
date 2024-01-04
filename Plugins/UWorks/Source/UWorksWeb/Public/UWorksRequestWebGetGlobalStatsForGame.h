@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "GetGlobalStatsForGameDelegateDelegate.h"
-#include "UWorksRequestWeb.h"
 #include "GetGlobalStatsForGameMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetGlobalStatsForGame.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FGetGlobalStatsForGameMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetGlobalStatsForGame();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(int32 AppID, int32 Count, TArray<FString> Name, int32 StartDate, int32 EndDate);
     

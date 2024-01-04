@@ -2,9 +2,9 @@
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksGameID.h"
-#include "RequestUserStatsDelegateDelegate.h"
-#include "EUWorksResult.h"
 #include "UWorksSteamID.h"
+#include "EUWorksResult.h"
+#include "RequestUserStatsDelegateDelegate.h"
 #include "CoreRequestUserStatsNode.generated.h"
 
 class UCoreRequestUserStatsNode;
@@ -17,6 +17,7 @@ public:
     FRequestUserStatsDelegate Completed;
     
     UCoreRequestUserStatsNode();
+
     UFUNCTION(BlueprintCallable)
     static UCoreRequestUserStatsNode* RequestUserStatsNode(FUWorksSteamID SteamID);
     

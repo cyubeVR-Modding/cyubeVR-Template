@@ -9,6 +9,6 @@ enum class EUWorksItemPreviewType : uint8 {
     Sketchfab,
     EnvironmentMap_HorizontalCross,
     EnvironmentMap_LatLong,
-    ReservedMax = 0xFE,
+    ReservedMax = 254,
 };
 

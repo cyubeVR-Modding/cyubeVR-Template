@@ -1,9 +1,7 @@
 #include "UWorksInterfaceWebWorkshop.h"
 
-class UUWorksRequestWebPopulateItemDescriptions;
-class UUWorksRequestWebSetItemPaymentRules;
-class UUWorksRequestWebGetItemDailyRevenue;
-class UUWorksRequestWebGetFinalizedContributors;
+UUWorksInterfaceWebWorkshop::UUWorksInterfaceWebWorkshop() {
+}
 
 void UUWorksInterfaceWebWorkshop::SetItemPaymentRulesMinimal(const FString& Key, int32 AppID, int32 GameItemID, FUWorksAssociatedWorkshopFiles AssociatedWorkshopFiles, FUWorksPartnerAccounts PartnerAccounts, bool bMakeWorkshopFilesSubscribable, bool bValidateOnly, const FSetItemPaymentRulesMinimalDelegate& Delegate) {
 }
@@ -33,6 +31,4 @@ UUWorksRequestWebGetFinalizedContributors* UUWorksInterfaceWebWorkshop::GetFinal
     return NULL;
 }
 
-UUWorksInterfaceWebWorkshop::UUWorksInterfaceWebWorkshop() {
-}
 

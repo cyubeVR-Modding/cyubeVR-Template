@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "GetGlobalAchievementPercentagesForAppDelegateDelegate.h"
 #include "UWorksGameID.h"
+#include "GetGlobalAchievementPercentagesForAppDelegateDelegate.h"
 #include "GetGlobalAchievementPercentagesForAppNode.generated.h"
 
 class UGetGlobalAchievementPercentagesForAppNode;
@@ -15,6 +15,7 @@ public:
     FGetGlobalAchievementPercentagesForAppDelegate Completed;
     
     UGetGlobalAchievementPercentagesForAppNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

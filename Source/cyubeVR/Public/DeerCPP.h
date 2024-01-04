@@ -1,15 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "GameFramework/Character.h"
 #include "Engine/EngineTypes.h"
 #include "LightReceiveInterface.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
 #include "DeerCPP.generated.h"
 
-class UMeshComponent;
-class AChunkManager;
 class AActor;
+class AChunkManager;
+class UMeshComponent;
+class UPrimitiveComponent;
+class USkeletalMeshComponent;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API ADeerCPP : public ACharacter, public ILightReceiveInterface {
@@ -17,6 +19,12 @@ class CYUBEVR_API ADeerCPP : public ACharacter, public ILightReceiveInterface {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     TArray<UMeshComponent*> Meshes;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    UPrimitiveComponent* EnableOverlapWhenCloseToPlayer;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    USkeletalMeshComponent* DebugSkeletalComponent;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FColor Color1;
@@ -34,15 +42,16 @@ public:
     bool WasLoaded;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    bool RecentlyRendered;
+    bool WasVisibleLastFrame;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    bool WasVisibleLastFrame;
+    int32 MinTickDistance;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool IsDead;
     
-    ADeerCPP();
+    ADeerCPP(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void UpdateColorsFromLoaded();
     
@@ -73,7 +82,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void DoTick();
     
-    
+
     // Fix for true pure virtual functions not being implemented
     UFUNCTION()
     bool UseLightAroundValue() override PURE_VIRTUAL(UseLightAroundValue, return false;);

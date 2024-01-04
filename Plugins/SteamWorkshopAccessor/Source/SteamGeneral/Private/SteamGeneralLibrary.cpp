@@ -1,5 +1,8 @@
 #include "SteamGeneralLibrary.h"
 
+USteamGeneralLibrary::USteamGeneralLibrary() {
+}
+
 int32 USteamGeneralLibrary::Uint64Array_Remove(TArray<FUInt64>& Values, FUInt64 Value) {
     return 0;
 }
@@ -208,6 +211,4 @@ bool USteamGeneralLibrary::BreakUInt32(const FUInt32& InVal, int32& OutVal) {
     return false;
 }
 
-USteamGeneralLibrary::USteamGeneralLibrary() {
-}
 

@@ -12,6 +12,7 @@ class CYUBEVR_API UModdingFunctionLibrary : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UModdingFunctionLibrary();
+
 private:
     UFUNCTION(BlueprintCallable)
     static bool WriteStringToFileInModFolder(const FString& ModName, const FString& Filename, const FString& StringToWrite);

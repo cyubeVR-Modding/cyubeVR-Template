@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreRules.h"
 
+UUWorksRequestCoreRules::UUWorksRequestCoreRules() {
+}
+
 void UUWorksRequestCoreRules::SetInput(const FString& IP, int32 Port) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreRules::Deactivate() {
 void UUWorksRequestCoreRules::Activate() {
 }
 
-UUWorksRequestCoreRules::UUWorksRequestCoreRules() {
-}
 

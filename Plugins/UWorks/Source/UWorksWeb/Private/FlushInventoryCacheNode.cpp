@@ -1,6 +1,7 @@
 #include "FlushInventoryCacheNode.h"
 
-class UFlushInventoryCacheNode;
+UFlushInventoryCacheNode::UFlushInventoryCacheNode() {
+}
 
 void UFlushInventoryCacheNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UFlushInventoryCacheNode* UFlushInventoryCacheNode::FlushInventoryCacheNode(cons
     return NULL;
 }
 
-UFlushInventoryCacheNode::UFlushInventoryCacheNode() {
-}
 

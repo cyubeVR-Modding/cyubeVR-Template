@@ -1,6 +1,7 @@
 #include "GetAppDepotVersionsNode.h"
 
-class UGetAppDepotVersionsNode;
+UGetAppDepotVersionsNode::UGetAppDepotVersionsNode() {
+}
 
 void UGetAppDepotVersionsNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetAppDepotVersionsNode* UGetAppDepotVersionsNode::GetAppDepotVersionsNode(cons
     return NULL;
 }
 
-UGetAppDepotVersionsNode::UGetAppDepotVersionsNode() {
-}
 

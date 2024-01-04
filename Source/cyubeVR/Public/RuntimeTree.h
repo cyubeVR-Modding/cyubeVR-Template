@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ETreeType.h"
-#include "GameFramework/Actor.h"
 #include "UObject/NoExportTypes.h"
+#include "GameFramework/Actor.h"
+#include "ETreeType.h"
 #include "RuntimeTree.generated.h"
 
-class UStaticMesh;
 class AChunkManager;
 class UProceduralMeshComponent;
+class UStaticMesh;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API ARuntimeTree : public AActor {
@@ -20,9 +20,6 @@ public:
     AChunkManager* ChunkManager;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    bool damaged;
-    
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool IsFalling;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
@@ -31,7 +28,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UStaticMesh* StaticMeshReference;
     
-    ARuntimeTree();
+    ARuntimeTree(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void SpawnLogs(UProceduralMeshComponent* CutNew);
     

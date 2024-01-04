@@ -1,6 +1,6 @@
 #include "AudioManager.h"
 
-AAudioManager::AAudioManager() {
+AAudioManager::AAudioManager(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->BirdCue = NULL;
     this->SoundClassDay = NULL;
     this->SoundClassNight = NULL;
@@ -8,4 +8,5 @@ AAudioManager::AAudioManager() {
     this->SnowVolumeMultiplier = 1.00f;
     this->GeneralVolumeMultiplier = 1.00f;
 }
+
 

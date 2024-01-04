@@ -1,6 +1,7 @@
 #include "CoreSubscribeItemNode.h"
 
-class UCoreSubscribeItemNode;
+UCoreSubscribeItemNode::UCoreSubscribeItemNode() {
+}
 
 UCoreSubscribeItemNode* UCoreSubscribeItemNode::SubscribeItemNode(FUWorksPublishedFileID PublishedFileID) {
     return NULL;
@@ -9,6 +10,4 @@ UCoreSubscribeItemNode* UCoreSubscribeItemNode::SubscribeItemNode(FUWorksPublish
 void UCoreSubscribeItemNode::OnRequestCompleted(bool bSuccessful, EUWorksResult Result, FUWorksPublishedFileID PublishedFileID) {
 }
 
-UCoreSubscribeItemNode::UCoreSubscribeItemNode() {
-}
 

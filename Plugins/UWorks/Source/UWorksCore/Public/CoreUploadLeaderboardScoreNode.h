@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "UploadLeaderboardScoreDelegateDelegate.h"
-#include "UWorksSteamLeaderboard.h"
 #include "EUWorksLeaderboardUploadScoreMethod.h"
+#include "UWorksSteamLeaderboard.h"
+#include "UploadLeaderboardScoreDelegateDelegate.h"
 #include "CoreUploadLeaderboardScoreNode.generated.h"
 
 class UCoreUploadLeaderboardScoreNode;
@@ -16,6 +16,7 @@ public:
     FUploadLeaderboardScoreDelegate Completed;
     
     UCoreUploadLeaderboardScoreNode();
+
     UFUNCTION(BlueprintCallable)
     static UCoreUploadLeaderboardScoreNode* UploadLeaderboardScoreNode(FUWorksSteamLeaderboard SteamLeaderboard, EUWorksLeaderboardUploadScoreMethod LeaderboardUploadScoreMethod, int32 score, TArray<int32> ScoreDetails);
     

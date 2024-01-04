@@ -1,6 +1,7 @@
 #include "ConsolidateNode.h"
 
-class UConsolidateNode;
+UConsolidateNode::UConsolidateNode() {
+}
 
 void UConsolidateNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UConsolidateNode* UConsolidateNode::ConsolidateNode(const FString& Key, int32 Ap
     return NULL;
 }
 
-UConsolidateNode::UConsolidateNode() {
-}
 

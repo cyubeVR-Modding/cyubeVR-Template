@@ -1,6 +1,7 @@
 #include "CoreRequestStoreAuthURLNode.h"
 
-class UCoreRequestStoreAuthURLNode;
+UCoreRequestStoreAuthURLNode::UCoreRequestStoreAuthURLNode() {
+}
 
 UCoreRequestStoreAuthURLNode* UCoreRequestStoreAuthURLNode::RequestStoreAuthURLNode(const FString& URL) {
     return NULL;
@@ -9,6 +10,4 @@ UCoreRequestStoreAuthURLNode* UCoreRequestStoreAuthURLNode::RequestStoreAuthURLN
 void UCoreRequestStoreAuthURLNode::OnRequestCompleted(bool bSuccessful, const FString& URL) {
 }
 
-UCoreRequestStoreAuthURLNode::UCoreRequestStoreAuthURLNode() {
-}
 

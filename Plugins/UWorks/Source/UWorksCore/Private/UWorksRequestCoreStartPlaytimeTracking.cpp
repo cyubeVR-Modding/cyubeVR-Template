@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreStartPlaytimeTracking.h"
 
+UUWorksRequestCoreStartPlaytimeTracking::UUWorksRequestCoreStartPlaytimeTracking() {
+}
+
 void UUWorksRequestCoreStartPlaytimeTracking::SetInput(TArray<FUWorksPublishedFileID> PublishedFileID) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreStartPlaytimeTracking::Deactivate() {
 void UUWorksRequestCoreStartPlaytimeTracking::Activate() {
 }
 
-UUWorksRequestCoreStartPlaytimeTracking::UUWorksRequestCoreStartPlaytimeTracking() {
-}
 

@@ -1,20 +1,20 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GSValidateAuthTicketResponseDelegateDelegate.h"
-#include "GSPolicyResponseDelegateDelegate.h"
-#include "UWorksInterfaceCore.h"
 #include "UWorksSteamID.h"
-#include "GSClientGroupStatusDelegateDelegate.h"
-#include "UWorksTicketHandle.h"
-#include "EUWorksUserHasLicenseForAppResult.h"
+#include "AssociateWithClanMinimalDelegateDelegate.h"
 #include "ComputeNewPlayerCompatibilityMinimalDelegateDelegate.h"
 #include "EUWorksBeginAuthSessionResult.h"
-#include "AssociateWithClanMinimalDelegateDelegate.h"
+#include "EUWorksUserHasLicenseForAppResult.h"
+#include "GSClientGroupStatusDelegateDelegate.h"
+#include "GSPolicyResponseDelegateDelegate.h"
+#include "GSValidateAuthTicketResponseDelegateDelegate.h"
+#include "UWorksInterfaceCore.h"
+#include "UWorksTicketHandle.h"
 #include "UWorksInterfaceCoreGameServer.generated.h"
 
 class UUWorksInterfaceCoreGameServer;
-class UUWorksRequestCoreComputeNewPlayerCompatibility;
 class UUWorksRequestCoreAssociateWithClan;
+class UUWorksRequestCoreComputeNewPlayerCompatibility;
 
 UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreGameServer : public UUWorksInterfaceCore {
@@ -30,6 +30,7 @@ public:
     FGSValidateAuthTicketResponseDelegate GSValidateAuthTicketResponse;
     
     UUWorksInterfaceCoreGameServer();
+
     UFUNCTION(BlueprintCallable)
     bool WasRestartRequested();
     

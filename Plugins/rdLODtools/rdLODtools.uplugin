@@ -1,0 +1,18 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.4.0",
+	"FriendlyName": "rdLODtools",
+	"Description": "Create High Performace, LowPoly LODs for your meshes.",
+	"Category": "Editor",
+	"CreatedBy": "Recourse Design ltd.",
+	"CreatedByURL": "https://recourse.nz",
+	"DocsURL": "https://recourse.nz/index.php/rdlodtools/",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/d16c741cfabf451b96ab77092e198870",
+	"SupportURL": "https://forums.unrealengine.com/unreal-engine/marketplace/1645583-rdlodtools",
+	"EngineVersion": "4.27.0",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": true
+}

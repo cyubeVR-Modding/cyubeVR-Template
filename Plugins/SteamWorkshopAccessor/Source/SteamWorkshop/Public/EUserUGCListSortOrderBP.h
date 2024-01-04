@@ -11,6 +11,5 @@ enum class EUserUGCListSortOrderBP : uint8 {
     SO_SubscriptionDateDesc,
     SO_VoteScoreDesc,
     SO_ForModeration,
-    SO_MAX UMETA(Hidden),
 };
 

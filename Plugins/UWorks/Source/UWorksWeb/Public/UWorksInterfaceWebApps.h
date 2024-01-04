@@ -1,34 +1,35 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "GetAppBetasMinimalDelegateDelegate.h"
+#include "GetAppBuildsMinimalDelegateDelegate.h"
+#include "GetAppDepotVersionsMinimalDelegateDelegate.h"
+#include "GetAppListMinimalDelegateDelegate.h"
+#include "GetCheatingReportsListMinimalDelegateDelegate.h"
+#include "GetPlayersBannedMinimalDelegateDelegate.h"
 #include "GetServerListMinimalDelegateDelegate.h"
+#include "GetServersAtAddressMinimalDelegateDelegate.h"
+#include "SetAppBuildLiveMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWeb.h"
 #include "UpToDateCheckMinimalDelegateDelegate.h"
-#include "SetAppBuildLiveMinimalDelegateDelegate.h"
-#include "GetServersAtAddressMinimalDelegateDelegate.h"
-#include "GetAppListMinimalDelegateDelegate.h"
-#include "GetPlayersBannedMinimalDelegateDelegate.h"
-#include "GetCheatingReportsListMinimalDelegateDelegate.h"
-#include "GetAppDepotVersionsMinimalDelegateDelegate.h"
-#include "GetAppBuildsMinimalDelegateDelegate.h"
-#include "GetAppBetasMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebApps.generated.h"
 
-class UUWorksRequestWebUpToDateCheck;
-class UUWorksRequestWebSetAppBuildLive;
-class UUWorksRequestWebGetServersAtAddress;
-class UUWorksRequestWebGetServerList;
-class UUWorksRequestWebGetPlayersBanned;
-class UUWorksRequestWebGetCheatingReportsList;
-class UUWorksRequestWebGetAppList;
-class UUWorksRequestWebGetAppDepotVersions;
-class UUWorksRequestWebGetAppBuilds;
 class UUWorksRequestWebGetAppBetas;
+class UUWorksRequestWebGetAppBuilds;
+class UUWorksRequestWebGetAppDepotVersions;
+class UUWorksRequestWebGetAppList;
+class UUWorksRequestWebGetCheatingReportsList;
+class UUWorksRequestWebGetPlayersBanned;
+class UUWorksRequestWebGetServerList;
+class UUWorksRequestWebGetServersAtAddress;
+class UUWorksRequestWebSetAppBuildLive;
+class UUWorksRequestWebUpToDateCheck;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebApps : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:
     UUWorksInterfaceWebApps();
+
     UFUNCTION(BlueprintCallable)
     static void UpToDateCheckMinimal(int32 AppID, int32 Version, const FUpToDateCheckMinimalDelegate& Delegate);
     

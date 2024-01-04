@@ -8,7 +8,7 @@ enum class EResultBP : uint8 {
     RR_OK,
     R_Fail,
     R_NoConnection,
-    R_InvalidPassword = 0x5,
+    R_InvalidPassword = 5,
     R_LoggedInElsewhere,
     R_InvalidProtocolVer,
     R_InvalidParam,

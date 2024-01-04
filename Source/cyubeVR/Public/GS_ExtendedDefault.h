@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GS_Default.h"
 #include "Engine/NetSerialization.h"
+#include "GS_Default.h"
 #include "GS_ExtendedDefault.generated.h"
 
 UCLASS(Blueprintable, EditInlineNew)
@@ -18,5 +18,6 @@ public:
     FVector_NetQuantize100 MaximumGripScaling;
     
     UGS_ExtendedDefault();
+
 };
 

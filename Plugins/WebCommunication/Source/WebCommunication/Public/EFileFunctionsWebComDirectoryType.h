@@ -6,6 +6,5 @@ UENUM(BlueprintType)
 enum class EFileFunctionsWebComDirectoryType : uint8 {
     E_gd,
     E_ad,
-    E_MAX UMETA(Hidden),
 };
 

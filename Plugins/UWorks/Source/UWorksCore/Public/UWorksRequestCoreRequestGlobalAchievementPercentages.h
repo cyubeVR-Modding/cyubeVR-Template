@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RequestGlobalAchievementPercentagesMinimalDelegateDelegate.h"
-#include "UWorksRequestCore.h"
-#include "RequestGlobalAchievementPercentagesDelegateDelegate.h"
 #include "UWorksGameID.h"
 #include "EUWorksResult.h"
+#include "RequestGlobalAchievementPercentagesDelegateDelegate.h"
+#include "RequestGlobalAchievementPercentagesMinimalDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "UWorksRequestCoreRequestGlobalAchievementPercentages.generated.h"
 
 UCLASS(Blueprintable)
@@ -18,6 +18,7 @@ public:
     FRequestGlobalAchievementPercentagesMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreRequestGlobalAchievementPercentages();
+
     UFUNCTION(BlueprintCallable)
     bool IsActive();
     

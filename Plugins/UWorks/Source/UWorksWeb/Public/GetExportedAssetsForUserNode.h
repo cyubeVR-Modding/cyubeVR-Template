@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "GetExportedAssetsForUserDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetExportedAssetsForUserDelegateDelegate.h"
 #include "GetExportedAssetsForUserNode.generated.h"
 
 class UGetExportedAssetsForUserNode;
@@ -15,6 +15,7 @@ public:
     FGetExportedAssetsForUserDelegate Completed;
     
     UGetExportedAssetsForUserNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

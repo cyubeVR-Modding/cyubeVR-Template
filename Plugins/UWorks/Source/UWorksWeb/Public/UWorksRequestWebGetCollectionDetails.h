@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "GetCollectionDetailsDelegateDelegate.h"
 #include "GetCollectionDetailsMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetCollectionDetails.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FGetCollectionDetailsMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetCollectionDetails();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(int32 CollectionCount, TArray<int32> PublishedFileIDs);
     

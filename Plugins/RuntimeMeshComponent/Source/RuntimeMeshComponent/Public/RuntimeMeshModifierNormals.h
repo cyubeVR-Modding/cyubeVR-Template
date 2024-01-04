@@ -12,6 +12,7 @@ public:
     bool bComputeSmoothNormals;
     
     URuntimeMeshModifierNormals();
+
     UFUNCTION(BlueprintCallable)
     static void CalculateNormalsTangents(FRuntimeMeshRenderableMeshData& MeshData, bool bInComputeSmoothNormals);
     

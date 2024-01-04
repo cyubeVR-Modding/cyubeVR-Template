@@ -1,6 +1,7 @@
 #include "ItemVoteSummaryNode.h"
 
-class UItemVoteSummaryNode;
+UItemVoteSummaryNode::UItemVoteSummaryNode() {
+}
 
 void UItemVoteSummaryNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UItemVoteSummaryNode* UItemVoteSummaryNode::ItemVoteSummaryNode(const FString& K
     return NULL;
 }
 
-UItemVoteSummaryNode::UItemVoteSummaryNode() {
-}
 

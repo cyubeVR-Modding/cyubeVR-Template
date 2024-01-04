@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "CancelAppListingsForUserMinimalDelegateDelegate.h"
-#include "UWorksRequestWeb.h"
 #include "UWorksSteamID.h"
 #include "CancelAppListingsForUserDelegateDelegate.h"
+#include "CancelAppListingsForUserMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebCancelAppListingsForUser.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FCancelAppListingsForUserMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebCancelAppListingsForUser();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, int32 AppID, FUWorksSteamID SteamID, bool bSynchronous);
     

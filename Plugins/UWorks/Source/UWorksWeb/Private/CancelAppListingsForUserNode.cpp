@@ -1,6 +1,7 @@
 #include "CancelAppListingsForUserNode.h"
 
-class UCancelAppListingsForUserNode;
+UCancelAppListingsForUserNode::UCancelAppListingsForUserNode() {
+}
 
 void UCancelAppListingsForUserNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UCancelAppListingsForUserNode* UCancelAppListingsForUserNode::CancelAppListingsF
     return NULL;
 }
 
-UCancelAppListingsForUserNode::UCancelAppListingsForUserNode() {
-}
 

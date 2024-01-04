@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "GetAccountPublicInfoDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetAccountPublicInfoDelegateDelegate.h"
 #include "GetAccountPublicInfoNode.generated.h"
 
 class UGetAccountPublicInfoNode;
@@ -15,6 +15,7 @@ public:
     FGetAccountPublicInfoDelegate Completed;
     
     UGetAccountPublicInfoNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

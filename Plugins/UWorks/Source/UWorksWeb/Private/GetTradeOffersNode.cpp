@@ -1,6 +1,7 @@
 #include "GetTradeOffersNode.h"
 
-class UGetTradeOffersNode;
+UGetTradeOffersNode::UGetTradeOffersNode() {
+}
 
 void UGetTradeOffersNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetTradeOffersNode* UGetTradeOffersNode::GetTradeOffersNode(const FString& Key,
     return NULL;
 }
 
-UGetTradeOffersNode::UGetTradeOffersNode() {
-}
 

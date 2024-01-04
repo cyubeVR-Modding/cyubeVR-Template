@@ -1,6 +1,7 @@
 #include "UWorksInterfaceCoreController.h"
 
-class UUWorksInterfaceCoreController;
+UUWorksInterfaceCoreController::UUWorksInterfaceCoreController() {
+}
 
 void UUWorksInterfaceCoreController::TriggerVibration(FUWorksControllerHandle ControllerHandle, int32 LeftSpeed, int32 RightSpeed) {
 }
@@ -95,6 +96,4 @@ FUWorksControllerActionSetHandle UUWorksInterfaceCoreController::GetActionSetHan
 void UUWorksInterfaceCoreController::ActivateActionSet(FUWorksControllerHandle ControllerHandle, FUWorksControllerActionSetHandle ActionSetHandle) {
 }
 
-UUWorksInterfaceCoreController::UUWorksInterfaceCoreController() {
-}
 

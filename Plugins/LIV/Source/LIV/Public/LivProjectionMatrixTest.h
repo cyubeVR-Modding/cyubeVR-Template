@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "GameFramework/Actor.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
 #include "LivProjectionMatrixTest.generated.h"
 
 class ASceneCapture2D;
@@ -57,6 +57,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FVector4 ManualProjectionMatrixRow3;
     
-    ALivProjectionMatrixTest();
+    ALivProjectionMatrixTest(const FObjectInitializer& ObjectInitializer);
+
 };
 

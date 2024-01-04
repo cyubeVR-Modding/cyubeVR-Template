@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreAttachLeaderboardUGC.h"
 
+UUWorksRequestCoreAttachLeaderboardUGC::UUWorksRequestCoreAttachLeaderboardUGC() {
+}
+
 void UUWorksRequestCoreAttachLeaderboardUGC::SetInput(FUWorksSteamLeaderboard SteamLeaderboard, FUWorksUGCHandle UGCHandle) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreAttachLeaderboardUGC::Deactivate() {
 void UUWorksRequestCoreAttachLeaderboardUGC::Activate() {
 }
 
-UUWorksRequestCoreAttachLeaderboardUGC::UUWorksRequestCoreAttachLeaderboardUGC() {
-}
 

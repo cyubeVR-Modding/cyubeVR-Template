@@ -1,44 +1,44 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceCore.h"
-#include "UserStatsReceivedDelegateDelegate.h"
-#include "UserStatsStoredDelegateDelegate.h"
-#include "UWorksUGCHandle.h"
-#include "UserAchievementStoredDelegateDelegate.h"
-#include "UWorksSteamLeaderboard.h"
-#include "UserStatsUnloadedDelegateDelegate.h"
-#include "UploadLeaderboardScoreMinimalDelegateDelegate.h"
-#include "UserAchievementIconFetchedDelegateDelegate.h"
-#include "EUWorksLeaderboardUploadScoreMethod.h"
-#include "RequestUserStatsMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
-#include "RequestGlobalStatsMinimalDelegateDelegate.h"
-#include "RequestGlobalAchievementPercentagesMinimalDelegateDelegate.h"
-#include "GetNumberOfCurrentPlayersMinimalDelegateDelegate.h"
-#include "FindLeaderboardMinimalDelegateDelegate.h"
-#include "EUWorksLeaderboardSortMethod.h"
-#include "EUWorksLeaderboardDisplayType.h"
-#include "UWorksSteamLeaderboardEntries.h"
-#include "UWorksLeaderboardEntry.h"
-#include "FindOrCreateLeaderboardMinimalDelegateDelegate.h"
+#include "AttachLeaderboardUGCMinimalDelegateDelegate.h"
+#include "DownloadLeaderboardEntriesForUsersMinimalDelegateDelegate.h"
 #include "DownloadLeaderboardEntriesMinimalDelegateDelegate.h"
 #include "EUWorksLeaderboardDataRequest.h"
-#include "DownloadLeaderboardEntriesForUsersMinimalDelegateDelegate.h"
-#include "AttachLeaderboardUGCMinimalDelegateDelegate.h"
+#include "EUWorksLeaderboardDisplayType.h"
+#include "EUWorksLeaderboardSortMethod.h"
+#include "EUWorksLeaderboardUploadScoreMethod.h"
+#include "FindLeaderboardMinimalDelegateDelegate.h"
+#include "FindOrCreateLeaderboardMinimalDelegateDelegate.h"
+#include "GetNumberOfCurrentPlayersMinimalDelegateDelegate.h"
+#include "RequestGlobalAchievementPercentagesMinimalDelegateDelegate.h"
+#include "RequestGlobalStatsMinimalDelegateDelegate.h"
+#include "RequestUserStatsMinimalDelegateDelegate.h"
+#include "UWorksInterfaceCore.h"
+#include "UWorksLeaderboardEntry.h"
+#include "UWorksSteamLeaderboard.h"
+#include "UWorksSteamLeaderboardEntries.h"
+#include "UWorksUGCHandle.h"
+#include "UploadLeaderboardScoreMinimalDelegateDelegate.h"
+#include "UserAchievementIconFetchedDelegateDelegate.h"
+#include "UserAchievementStoredDelegateDelegate.h"
+#include "UserStatsReceivedDelegateDelegate.h"
+#include "UserStatsStoredDelegateDelegate.h"
+#include "UserStatsUnloadedDelegateDelegate.h"
 #include "UWorksInterfaceCoreUserStats.generated.h"
 
+class UTexture2D;
+class UUWorksInterfaceCoreUserStats;
+class UUWorksRequestCoreAttachLeaderboardUGC;
+class UUWorksRequestCoreDownloadLeaderboardEntries;
+class UUWorksRequestCoreDownloadLeaderboardEntriesForUsers;
+class UUWorksRequestCoreFindLeaderboard;
+class UUWorksRequestCoreFindOrCreateLeaderboard;
+class UUWorksRequestCoreGetNumberOfCurrentPlayers;
+class UUWorksRequestCoreRequestGlobalAchievementPercentages;
+class UUWorksRequestCoreRequestGlobalStats;
 class UUWorksRequestCoreRequestUserStats;
 class UUWorksRequestCoreUploadLeaderboardScore;
-class UUWorksRequestCoreRequestGlobalStats;
-class UUWorksRequestCoreDownloadLeaderboardEntries;
-class UUWorksRequestCoreRequestGlobalAchievementPercentages;
-class UUWorksInterfaceCoreUserStats;
-class UUWorksRequestCoreGetNumberOfCurrentPlayers;
-class UTexture2D;
-class UUWorksRequestCoreFindOrCreateLeaderboard;
-class UUWorksRequestCoreFindLeaderboard;
-class UUWorksRequestCoreDownloadLeaderboardEntriesForUsers;
-class UUWorksRequestCoreAttachLeaderboardUGC;
 
 UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreUserStats : public UUWorksInterfaceCore {
@@ -60,6 +60,7 @@ public:
     FUserAchievementIconFetchedDelegate UserAchievementIconFetched;
     
     UUWorksInterfaceCoreUserStats();
+
     UFUNCTION(BlueprintCallable)
     void UploadLeaderboardScoreMinimal(const FUploadLeaderboardScoreMinimalDelegate& Completed, FUWorksSteamLeaderboard SteamLeaderboard, EUWorksLeaderboardUploadScoreMethod LeaderboardUploadScoreMethod, int32 score, TArray<int32> ScoreDetails);
     

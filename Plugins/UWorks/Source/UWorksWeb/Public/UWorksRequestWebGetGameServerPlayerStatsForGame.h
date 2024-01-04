@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksGameID.h"
-#include "UWorksRequestWeb.h"
 #include "GetGameServerPlayerStatsForGameDelegateDelegate.h"
 #include "GetGameServerPlayerStatsForGameMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetGameServerPlayerStatsForGame.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FGetGameServerPlayerStatsForGameMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetGameServerPlayerStatsForGame();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, FUWorksGameID GameID, int32 AppID, const FString& RangeStart, const FString& RangeEnd, int32 MaxResults);
     

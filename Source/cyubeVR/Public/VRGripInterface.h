@@ -2,18 +2,18 @@
 #include "CoreMinimal.h"
 #include "UObject/Interface.h"
 #include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "Engine/EngineBaseTypes.h"
+#include "InputCoreTypes.h"
 #include "BPActorGripInformation.h"
+#include "BPAdvGripSettings.h"
+#include "BPGripPair.h"
+#include "EGripCollisionType.h"
 #include "EGripInterfaceTeleportBehavior.h"
+#include "EGripLateUpdateSettings.h"
+#include "EGripMovementReplicationSettings.h"
 #include "ESecondaryGripType.h"
 #include "Transform_NetQuantize.h"
-#include "InputCoreTypes.h"
-#include "Engine/EngineBaseTypes.h"
-#include "BPGripPair.h"
-#include "EGripMovementReplicationSettings.h"
-#include "EGripLateUpdateSettings.h"
-#include "EGripCollisionType.h"
-#include "UObject/NoExportTypes.h"
-#include "BPAdvGripSettings.h"
 #include "VRGripInterface.generated.h"
 
 class UGripMotionControllerComponent;
@@ -59,7 +59,7 @@ public:
     void OnSecondaryGrip(UGripMotionControllerComponent* GripOwningController, USceneComponent* SecondaryGripComponent, const FBPActorGripInformation& GripInformation);
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
-    void OnInput(FKey Key, EInputEvent KeyEvent);
+	void OnInput(FKey Key, EInputEvent KeyEvent);
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void OnGripRelease(UGripMotionControllerComponent* ReleasingController, const FBPActorGripInformation& GripInformation, bool bWasSocketed);

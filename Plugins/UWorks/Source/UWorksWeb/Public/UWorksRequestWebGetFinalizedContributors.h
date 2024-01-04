@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "GetFinalizedContributorsDelegateDelegate.h"
 #include "GetFinalizedContributorsMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetFinalizedContributors.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FGetFinalizedContributorsMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetFinalizedContributors();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, int32 AppID, int32 GameItemID);
     

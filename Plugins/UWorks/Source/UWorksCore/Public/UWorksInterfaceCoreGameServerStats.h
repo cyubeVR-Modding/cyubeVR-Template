@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceCore.h"
-#include "GSStatsUnloadedDelegateDelegate.h"
 #include "UWorksSteamID.h"
-#include "ServerStoreUserStatsMinimalDelegateDelegate.h"
+#include "GSStatsUnloadedDelegateDelegate.h"
 #include "ServerRequestUserStatsMinimalDelegateDelegate.h"
+#include "ServerStoreUserStatsMinimalDelegateDelegate.h"
+#include "UWorksInterfaceCore.h"
 #include "UWorksInterfaceCoreGameServerStats.generated.h"
 
 class UUWorksInterfaceCoreGameServerStats;
-class UUWorksRequestCoreStoreUserStats;
 class UUWorksRequestCoreRequestUserStatsGS;
+class UUWorksRequestCoreStoreUserStats;
 
 UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreGameServerStats : public UUWorksInterfaceCore {
@@ -19,6 +19,7 @@ public:
     FGSStatsUnloadedDelegate GSStatsUnloaded;
     
     UUWorksInterfaceCoreGameServerStats();
+
     UFUNCTION(BlueprintCallable)
     bool UpdateUserAvgRateStat(FUWorksSteamID SteamIDUser, const FString& Name, float CountThisSession, float SessionLength);
     

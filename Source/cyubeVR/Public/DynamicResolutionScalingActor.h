@@ -16,7 +16,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 DynamicResolutionScalingActiveInt;
     
-    ADynamicResolutionScalingActor();
+    ADynamicResolutionScalingActor(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     static bool IsVeryHighEndGPU();
     

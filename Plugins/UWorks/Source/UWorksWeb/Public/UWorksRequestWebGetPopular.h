@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "GetPopularDelegateDelegate.h"
 #include "GetPopularMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetPopular.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FGetPopularMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetPopular();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, const FString& Language, int32 Rows, int32 Start, int32 FilterAppID, int32 ECurrency);
     

@@ -1,35 +1,36 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceWeb.h"
 #include "UWorksSteamID.h"
-#include "SetMemoMinimalDelegateDelegate.h"
-#include "SetBanStatusMinimalDelegateDelegate.h"
-#include "ResetLoginTokenMinimalDelegateDelegate.h"
-#include "QueryLoginTokenMinimalDelegateDelegate.h"
-#include "GetServerSteamIDsByIPMinimalDelegateDelegate.h"
-#include "GetServerIPsBySteamIDMinimalDelegateDelegate.h"
-#include "GetAccountPublicInfoMinimalDelegateDelegate.h"
-#include "GetAccountListMinimalDelegateDelegate.h"
-#include "DeleteAccountMinimalDelegateDelegate.h"
 #include "CreateAccountMinimalDelegateDelegate.h"
+#include "DeleteAccountMinimalDelegateDelegate.h"
+#include "GetAccountListMinimalDelegateDelegate.h"
+#include "GetAccountPublicInfoMinimalDelegateDelegate.h"
+#include "GetServerIPsBySteamIDMinimalDelegateDelegate.h"
+#include "GetServerSteamIDsByIPMinimalDelegateDelegate.h"
+#include "QueryLoginTokenMinimalDelegateDelegate.h"
+#include "ResetLoginTokenMinimalDelegateDelegate.h"
+#include "SetBanStatusMinimalDelegateDelegate.h"
+#include "SetMemoMinimalDelegateDelegate.h"
+#include "UWorksInterfaceWeb.h"
 #include "UWorksInterfaceWebGameServers.generated.h"
 
+class UUWorksRequestWebCreateAccount;
+class UUWorksRequestWebDeleteAccount;
+class UUWorksRequestWebGetAccountList;
+class UUWorksRequestWebGetAccountPublicInfo;
+class UUWorksRequestWebGetServerIPsBySteamID;
+class UUWorksRequestWebGetServerSteamIDsByIP;
+class UUWorksRequestWebQueryLoginToken;
 class UUWorksRequestWebResetLoginToken;
 class UUWorksRequestWebSetBanStatus;
 class UUWorksRequestWebSetMemo;
-class UUWorksRequestWebQueryLoginToken;
-class UUWorksRequestWebGetServerSteamIDsByIP;
-class UUWorksRequestWebGetServerIPsBySteamID;
-class UUWorksRequestWebGetAccountPublicInfo;
-class UUWorksRequestWebGetAccountList;
-class UUWorksRequestWebDeleteAccount;
-class UUWorksRequestWebCreateAccount;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebGameServers : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:
     UUWorksInterfaceWebGameServers();
+
     UFUNCTION(BlueprintCallable)
     static void SetMemoMinimal(const FString& Key, FUWorksSteamID SteamID, const FString& Memo, const FSetMemoMinimalDelegate& Delegate);
     

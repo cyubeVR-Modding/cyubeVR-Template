@@ -8,6 +8,7 @@ class UWORKSUTILITIES_API UUWorksLibraryConversions : public UUWorksLibrary {
     GENERATED_BODY()
 public:
     UUWorksLibraryConversions();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static FString GetCurrentProcessId();
     

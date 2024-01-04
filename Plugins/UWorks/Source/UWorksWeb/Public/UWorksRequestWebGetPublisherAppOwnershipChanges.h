@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "GetPublisherAppOwnershipChangesDelegateDelegate.h"
 #include "GetPublisherAppOwnershipChangesMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
-#include "GetPublisherAppOwnershipChangesDelegateDelegate.h"
 #include "UWorksRequestWebGetPublisherAppOwnershipChanges.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FGetPublisherAppOwnershipChangesMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetPublisherAppOwnershipChanges();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, const FString& PackageRowVersion, const FString& CDKeyRowVersion);
     

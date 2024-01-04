@@ -8,6 +8,5 @@ enum class EBPVRWaistTrackingMode : uint8 {
     VRWaist_Tracked_Rear,
     VRWaist_Tracked_Left,
     VRWaist_Tracked_Right,
-    VRWaist_Tracked_MAX UMETA(Hidden),
 };
 

@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "AddItemDelegateDelegate.h"
-#include "UWorksSteamItemDef.h"
 #include "UWorksSteamID.h"
+#include "UWorksSteamItemDef.h"
+#include "AddItemDelegateDelegate.h"
 #include "AddItemNode.generated.h"
 
 class UAddItemNode;
@@ -16,6 +16,7 @@ public:
     FAddItemDelegate Completed;
     
     UAddItemNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

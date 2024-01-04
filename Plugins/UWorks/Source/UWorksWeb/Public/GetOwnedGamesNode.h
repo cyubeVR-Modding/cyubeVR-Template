@@ -15,6 +15,7 @@ public:
     FGetOwnedGamesDelegate Completed;
     
     UGetOwnedGamesNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

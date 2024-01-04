@@ -1,6 +1,7 @@
 #include "EndSecureMultiplayerSessionNode.h"
 
-class UEndSecureMultiplayerSessionNode;
+UEndSecureMultiplayerSessionNode::UEndSecureMultiplayerSessionNode() {
+}
 
 void UEndSecureMultiplayerSessionNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UEndSecureMultiplayerSessionNode* UEndSecureMultiplayerSessionNode::EndSecureMul
     return NULL;
 }
 
-UEndSecureMultiplayerSessionNode::UEndSecureMultiplayerSessionNode() {
-}
 

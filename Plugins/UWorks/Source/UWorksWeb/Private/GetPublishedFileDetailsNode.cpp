@@ -1,6 +1,7 @@
 #include "GetPublishedFileDetailsNode.h"
 
-class UGetPublishedFileDetailsNode;
+UGetPublishedFileDetailsNode::UGetPublishedFileDetailsNode() {
+}
 
 void UGetPublishedFileDetailsNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetPublishedFileDetailsNode* UGetPublishedFileDetailsNode::GetPublishedFileDeta
     return NULL;
 }
 
-UGetPublishedFileDetailsNode::UGetPublishedFileDetailsNode() {
-}
 

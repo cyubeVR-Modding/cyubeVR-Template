@@ -17,6 +17,6 @@ enum class EUWorksUGCMatchingUGCType : uint8 {
     UsableInGame,
     ControllerBindings,
     GameManagedItems,
-    All = 0xFE,
+    All = 254,
 };
 

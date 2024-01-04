@@ -14,6 +14,7 @@ public:
     FGetCollectionDetailsDelegate Completed;
     
     UGetCollectionDetailsNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

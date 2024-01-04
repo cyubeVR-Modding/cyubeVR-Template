@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "StartPlaytimeTrackingDelegateDelegate.h"
 #include "UWorksPublishedFileID.h"
 #include "EUWorksResult.h"
+#include "StartPlaytimeTrackingDelegateDelegate.h"
 #include "CoreStartPlaytimeTrackingNode.generated.h"
 
 class UCoreStartPlaytimeTrackingNode;
@@ -16,6 +16,7 @@ public:
     FStartPlaytimeTrackingDelegate Completed;
     
     UCoreStartPlaytimeTrackingNode();
+
     UFUNCTION(BlueprintCallable)
     static UCoreStartPlaytimeTrackingNode* StartPlaytimeTrackingNode(TArray<FUWorksPublishedFileID> PublishedFileID);
     

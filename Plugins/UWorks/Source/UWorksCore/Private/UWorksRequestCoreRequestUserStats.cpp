@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreRequestUserStats.h"
 
+UUWorksRequestCoreRequestUserStats::UUWorksRequestCoreRequestUserStats() {
+}
+
 void UUWorksRequestCoreRequestUserStats::SetInput(FUWorksSteamID SteamID) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreRequestUserStats::Deactivate() {
 void UUWorksRequestCoreRequestUserStats::Activate() {
 }
 
-UUWorksRequestCoreRequestUserStats::UUWorksRequestCoreRequestUserStats() {
-}
 

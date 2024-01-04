@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreRequestStoreAuthURL.h"
 
+UUWorksRequestCoreRequestStoreAuthURL::UUWorksRequestCoreRequestStoreAuthURL() {
+}
+
 void UUWorksRequestCoreRequestStoreAuthURL::SetInput(const FString& URL) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreRequestStoreAuthURL::Deactivate() {
 void UUWorksRequestCoreRequestStoreAuthURL::Activate() {
 }
 
-UUWorksRequestCoreRequestStoreAuthURL::UUWorksRequestCoreRequestStoreAuthURL() {
-}
 

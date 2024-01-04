@@ -21,6 +21,7 @@ public:
     FSteamDelegateOnQueryWorkshopForUserItems OnSteamInitFailure;
     
     UCallbackProxyQueryWorkshopForUserItems();
+
     UFUNCTION(BlueprintCallable)
     static UCallbackProxyQueryWorkshopForUserItems* SteamWorkshop_QueryForUserItems(const FSteamUGCQueryParameterUser& Parameter);
     

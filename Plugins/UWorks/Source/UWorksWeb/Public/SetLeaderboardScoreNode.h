@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "SetLeaderboardScoreDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "SetLeaderboardScoreDelegateDelegate.h"
 #include "SetLeaderboardScoreNode.generated.h"
 
 class USetLeaderboardScoreNode;
@@ -15,6 +15,7 @@ public:
     FSetLeaderboardScoreDelegate Completed;
     
     USetLeaderboardScoreNode();
+
     UFUNCTION(BlueprintCallable)
     static USetLeaderboardScoreNode* SetLeaderboardScoreNode(const FString& Key, int32 AppID, int32 LeaderboardID, FUWorksSteamID SteamID, int32 score, const FString& ScoreMethod, TArray<uint8> Details);
     

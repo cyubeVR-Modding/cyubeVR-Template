@@ -1,6 +1,7 @@
 #include "UWorksInterfaceCoreMusic.h"
 
-class UUWorksInterfaceCoreMusic;
+UUWorksInterfaceCoreMusic::UUWorksInterfaceCoreMusic() {
+}
 
 void UUWorksInterfaceCoreMusic::SetVolume(float Volume) {
 }
@@ -37,6 +38,4 @@ bool UUWorksInterfaceCoreMusic::BIsEnabled() {
     return false;
 }
 
-UUWorksInterfaceCoreMusic::UUWorksInterfaceCoreMusic() {
-}
 

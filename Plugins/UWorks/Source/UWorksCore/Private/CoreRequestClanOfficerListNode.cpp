@@ -1,6 +1,7 @@
 #include "CoreRequestClanOfficerListNode.h"
 
-class UCoreRequestClanOfficerListNode;
+UCoreRequestClanOfficerListNode::UCoreRequestClanOfficerListNode() {
+}
 
 UCoreRequestClanOfficerListNode* UCoreRequestClanOfficerListNode::RequestClanOfficerListNode(FUWorksSteamID SteamID) {
     return NULL;
@@ -9,6 +10,4 @@ UCoreRequestClanOfficerListNode* UCoreRequestClanOfficerListNode::RequestClanOff
 void UCoreRequestClanOfficerListNode::OnRequestCompleted(bool bSuccessful, FUWorksSteamID SteamIDClan, int32 Officers, bool bSuccess) {
 }
 
-UCoreRequestClanOfficerListNode::UCoreRequestClanOfficerListNode() {
-}
 

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "StartTradeDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksSteamID.h"
+#include "StartTradeDelegateDelegate.h"
 #include "StartTradeNode.generated.h"
 
 class UStartTradeNode;
@@ -15,6 +15,7 @@ public:
     FStartTradeDelegate Completed;
     
     UStartTradeNode();
+
     UFUNCTION(BlueprintCallable)
     static UStartTradeNode* StartTradeNode(const FString& Key, int32 AppID, FUWorksSteamID PartyA, FUWorksSteamID PartyB);
     

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "IsPlayingSharedGameDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "IsPlayingSharedGameDelegateDelegate.h"
 #include "IsPlayingSharedGameNode.generated.h"
 
 class UIsPlayingSharedGameNode;
@@ -15,6 +15,7 @@ public:
     FIsPlayingSharedGameDelegate Completed;
     
     UIsPlayingSharedGameNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

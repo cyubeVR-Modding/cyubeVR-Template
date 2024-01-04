@@ -1,26 +1,26 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
-#include "SteamUGCItemId.h"
-#include "ESteamSupportedLanguages.h"
-#include "EResultBP.h"
-#include "UInt64.h"
-#include "SteamDepotId.h"
-#include "WorkshopItemUpdateInfo.h"
-#include "SteamUGCUpdateHandle.h"
-#include "EItemStateBP.h"
-#include "SteamUGCQueryHandle.h"
-#include "SteamWorkshopUpdateDetails.h"
-#include "EItemStatisticBP.h"
-#include "SteamWorkshopItemInstallInfo.h"
-#include "WorkshopItemDownloadInfo.h"
-#include "SteamDelegateOnWorkshopItemDownloadedDynDelegate.h"
-#include "SteamWorkshopItemDetails.h"
 #include "UObject/NoExportTypes.h"
+#include "Kismet/BlueprintFunctionLibrary.h"
+#include "EResultBP.h"
+#include "ESteamSupportedLanguages.h"
+#include "SteamDepotId.h"
 #include "SteamKeyValuePair.h"
+#include "SteamUGCItemId.h"
+#include "SteamUGCQueryHandle.h"
+#include "SteamUGCUpdateHandle.h"
+#include "UInt64.h"
+#include "EItemStateBP.h"
+#include "EItemStatisticBP.h"
 #include "ESteamItemVisibility.h"
-#include "SteamUGCQueryParameterTagsAllUserDetails.h"
+#include "SteamDelegateOnWorkshopItemDownloadedDynDelegate.h"
 #include "SteamUGCQueryParameterTagsAllUser.h"
+#include "SteamUGCQueryParameterTagsAllUserDetails.h"
+#include "SteamWorkshopItemDetails.h"
+#include "SteamWorkshopItemInstallInfo.h"
+#include "SteamWorkshopUpdateDetails.h"
+#include "WorkshopItemDownloadInfo.h"
+#include "WorkshopItemUpdateInfo.h"
 #include "SteamWorkshopLibrary.generated.h"
 
 UCLASS(Blueprintable)
@@ -28,6 +28,7 @@ class STEAMWORKSHOP_API USteamWorkshopLibrary : public UBlueprintFunctionLibrary
     GENERATED_BODY()
 public:
     USteamWorkshopLibrary();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static int32 SteamWorkshop_UpdateTitleLengthMin_FromConfig();
     

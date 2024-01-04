@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
-#include "EUWorksResult.h"
 #include "UWorksSteamID.h"
+#include "EUWorksResult.h"
 #include "ServerRequestUserStatsDelegateDelegate.h"
 #include "ServerRequestUserStatsMinimalDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "UWorksRequestCoreRequestUserStatsGS.generated.h"
 
 UCLASS(Blueprintable)
@@ -18,6 +18,7 @@ public:
     FServerRequestUserStatsMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreRequestUserStatsGS();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(FUWorksSteamID SteamIDUser);
     

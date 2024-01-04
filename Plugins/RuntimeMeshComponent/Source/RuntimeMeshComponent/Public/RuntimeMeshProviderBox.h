@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RuntimeMeshProvider.h"
 #include "UObject/NoExportTypes.h"
+#include "RuntimeMeshProvider.h"
 #include "RuntimeMeshProviderBox.generated.h"
 
 class UMaterialInterface;
@@ -19,6 +19,7 @@ private:
     
 public:
     URuntimeMeshProviderBox();
+
     UFUNCTION(BlueprintCallable)
     void SetBoxRadius(const FVector& InRadius);
     

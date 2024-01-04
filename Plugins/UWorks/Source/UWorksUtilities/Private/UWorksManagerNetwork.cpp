@@ -1,6 +1,7 @@
 #include "UWorksManagerNetwork.h"
 
-class UUWorksManagerNetwork;
+UUWorksManagerNetwork::UUWorksManagerNetwork() {
+}
 
 void UUWorksManagerNetwork::Refresh() {
 }
@@ -16,6 +17,4 @@ UUWorksManagerNetwork* UUWorksManagerNetwork::GetManagerNetwork() {
 void UUWorksManagerNetwork::CreateSessionUWorks(FName SessionName, int32 NumPublicConnections, bool bIsLANMatch) {
 }
 
-UUWorksManagerNetwork::UUWorksManagerNetwork() {
-}
 

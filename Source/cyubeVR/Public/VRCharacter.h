@@ -1,13 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "GameFramework/Pawn.h"
 #include "LightReceiveInterface.h"
 #include "VRCharacter.generated.h"
 
-class UMeshComponent;
-class UCameraComponent;
 class AActor;
+class UCameraComponent;
+class UMeshComponent;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API AVRCharacter : public APawn, public ILightReceiveInterface {
@@ -25,7 +26,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     TArray<UMeshComponent*> Meshes;
     
-    AVRCharacter();
+    AVRCharacter(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void WasRotated();
     
@@ -44,7 +46,10 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     FVector GetActorLocationForCameraLocationCPP(FVector NewCameraLocation);
     
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+    void FadeViewColor(float Seconds, FLinearColor Color);
     
+
     // Fix for true pure virtual functions not being implemented
     UFUNCTION()
     bool UseActorCustomLocation() override PURE_VIRTUAL(UseActorCustomLocation, return false;);

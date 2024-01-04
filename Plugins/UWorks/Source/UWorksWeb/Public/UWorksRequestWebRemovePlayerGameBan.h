@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
+#include "UWorksSteamID.h"
 #include "RemovePlayerGameBanDelegateDelegate.h"
 #include "RemovePlayerGameBanMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebRemovePlayerGameBan.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FRemovePlayerGameBanMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebRemovePlayerGameBan();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, FUWorksSteamID SteamID, int32 AppID);
     

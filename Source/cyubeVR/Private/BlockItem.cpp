@@ -1,12 +1,32 @@
 #include "BlockItem.h"
 
-class ABlockItem;
-class AChunkManager;
+ABlockItem::ABlockItem(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->BlockType = EBlockTypeBP::Stone;
+    this->UniqueId = 0;
+    this->ChargeState = 0.00f;
+    this->LastRechargeTime = 0.00f;
+    this->bOnFire = false;
+    this->Health = 100.00f;
+    this->MeltAmount = 0.00f;
+    this->bLoadedScale = false;
+    this->CurrentResult = EBlockTypeBP::Stone;
+    this->BoxCollision = NULL;
+    this->IsChestItem = false;
+    this->bSpecialCosmeticItem = false;
+    this->CrystalMaterial = NULL;
+    this->ChargingParticleSystem = NULL;
+    this->Debug_LastPhysicsEnableFromTime = 0.00f;
+    this->SphereOverlapComponent = NULL;
+    this->SphereNiagaraSystem = NULL;
+}
 
 void ABlockItem::WriteLastRecipeToDisk() {
 }
 
 void ABlockItem::UpdateItemType_Implementation(EBlockTypeBP NewType, int32 NewUniqueID, AChunkManager* ChunkManager) {
+}
+
+void ABlockItem::SetSpheresEnabled(bool Enabled) {
 }
 
 void ABlockItem::SetDebugLastPhysicsEnable(const FString& Reason) {
@@ -47,21 +67,4 @@ bool ABlockItem::CanBeLitOnFire() {
 void ABlockItem::AllowRelease(bool& Allow) {
 }
 
-ABlockItem::ABlockItem() {
-    this->BlockType = EBlockTypeBP::Stone;
-    this->UniqueId = 0;
-    this->ChargeState = 0.00f;
-    this->LastRechargeTime = 0.00f;
-    this->bOnFire = false;
-    this->Health = 100.00f;
-    this->MeltAmount = 0.00f;
-    this->bLoadedScale = false;
-    this->CurrentResult = EBlockTypeBP::Stone;
-    this->BoxCollision = NULL;
-    this->IsChestItem = false;
-    this->bSpecialCosmeticItem = false;
-    this->CrystalMaterial = NULL;
-    this->ChargingParticleSystem = NULL;
-    this->Debug_LastPhysicsEnableFromTime = 0.00f;
-}
 

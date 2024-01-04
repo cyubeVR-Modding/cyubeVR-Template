@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "CreateAccountDelegateDelegate.h"
 #include "CreateAccountMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebCreateAccount.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FCreateAccountMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebCreateAccount();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, int32 AppID, const FString& Memo);
     

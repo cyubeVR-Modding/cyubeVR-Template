@@ -1,6 +1,7 @@
 #include "GetServerListNode.h"
 
-class UGetServerListNode;
+UGetServerListNode::UGetServerListNode() {
+}
 
 void UGetServerListNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetServerListNode* UGetServerListNode::GetServerListNode(const FString& Key, co
     return NULL;
 }
 
-UGetServerListNode::UGetServerListNode() {
-}
 

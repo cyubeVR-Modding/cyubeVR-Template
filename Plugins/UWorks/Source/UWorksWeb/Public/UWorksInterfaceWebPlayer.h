@@ -1,30 +1,31 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetSteamLevelMinimalDelegateDelegate.h"
-#include "UWorksPlaySessions.h"
-#include "UWorksInterfaceWeb.h"
 #include "UWorksSteamID.h"
-#include "RecordOfflinePlaytimeMinimalDelegateDelegate.h"
-#include "IsPlayingSharedGameMinimalDelegateDelegate.h"
-#include "GetRecentlyPlayedGamesMinimalDelegateDelegate.h"
-#include "GetOwnedGamesMinimalDelegateDelegate.h"
-#include "GetCommunityBadgeProgressMinimalDelegateDelegate.h"
 #include "GetBadgesMinimalDelegateDelegate.h"
+#include "GetCommunityBadgeProgressMinimalDelegateDelegate.h"
+#include "GetOwnedGamesMinimalDelegateDelegate.h"
+#include "GetRecentlyPlayedGamesMinimalDelegateDelegate.h"
+#include "GetSteamLevelMinimalDelegateDelegate.h"
+#include "IsPlayingSharedGameMinimalDelegateDelegate.h"
+#include "RecordOfflinePlaytimeMinimalDelegateDelegate.h"
+#include "UWorksInterfaceWeb.h"
+#include "UWorksPlaySessions.h"
 #include "UWorksInterfaceWebPlayer.generated.h"
 
+class UUWorksRequestWebGetBadges;
+class UUWorksRequestWebGetCommunityBadgeProgress;
+class UUWorksRequestWebGetOwnedGames;
+class UUWorksRequestWebGetRecentlyPlayedGames;
+class UUWorksRequestWebGetSteamLevel;
 class UUWorksRequestWebIsPlayingSharedGame;
 class UUWorksRequestWebRecordOfflinePlaytime;
-class UUWorksRequestWebGetSteamLevel;
-class UUWorksRequestWebGetRecentlyPlayedGames;
-class UUWorksRequestWebGetOwnedGames;
-class UUWorksRequestWebGetCommunityBadgeProgress;
-class UUWorksRequestWebGetBadges;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebPlayer : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:
     UUWorksInterfaceWebPlayer();
+
     UFUNCTION(BlueprintCallable)
     static void RecordOfflinePlaytimeMinimal(FUWorksSteamID SteamID, const FString& Ticket, FUWorksPlaySessions PlaySessions, const FRecordOfflinePlaytimeMinimalDelegate& Delegate);
     

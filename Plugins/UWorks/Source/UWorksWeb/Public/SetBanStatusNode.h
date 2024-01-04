@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "SetBanStatusDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "SetBanStatusDelegateDelegate.h"
 #include "SetBanStatusNode.generated.h"
 
 class USetBanStatusNode;
@@ -15,6 +15,7 @@ public:
     FSetBanStatusDelegate Completed;
     
     USetBanStatusNode();
+
     UFUNCTION(BlueprintCallable)
     static USetBanStatusNode* SetBanStatusNode(const FString& Key, FUWorksSteamID SteamID, bool bBanned, int32 BanSeconds);
     

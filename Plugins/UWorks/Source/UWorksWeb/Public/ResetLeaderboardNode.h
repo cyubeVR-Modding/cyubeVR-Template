@@ -14,6 +14,7 @@ public:
     FResetLeaderboardDelegate Completed;
     
     UResetLeaderboardNode();
+
     UFUNCTION(BlueprintCallable)
     static UResetLeaderboardNode* ResetLeaderboardNode(const FString& Key, int32 AppID, int32 LeaderboardID);
     

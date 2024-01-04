@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
 #include "GameFramework/Actor.h"
 #include "ELivEye.h"
-#include "UObject/NoExportTypes.h"
 #include "LivImagePlaneTest.generated.h"
 
 UCLASS(Blueprintable)
@@ -21,6 +21,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FVector RayEnd;
     
-    ALivImagePlaneTest();
+    ALivImagePlaneTest(const FObjectInitializer& ObjectInitializer);
+
 };
 

@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "UWorksPublishedFileID.h"
 #include "EUWorksResult.h"
 #include "UnsubscribeItemDelegateDelegate.h"
-#include "UWorksPublishedFileID.h"
 #include "CoreUnsubscribeItemNode.generated.h"
 
 class UCoreUnsubscribeItemNode;
@@ -16,6 +16,7 @@ public:
     FUnsubscribeItemDelegate Completed;
     
     UCoreUnsubscribeItemNode();
+
     UFUNCTION(BlueprintCallable)
     static UCoreUnsubscribeItemNode* UnsubscribeItemNode(FUWorksPublishedFileID PublishedFileID);
     

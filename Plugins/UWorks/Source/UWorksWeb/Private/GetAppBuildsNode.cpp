@@ -1,6 +1,7 @@
 #include "GetAppBuildsNode.h"
 
-class UGetAppBuildsNode;
+UGetAppBuildsNode::UGetAppBuildsNode() {
+}
 
 void UGetAppBuildsNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetAppBuildsNode* UGetAppBuildsNode::GetAppBuildsNode(const FString& Key, int32
     return NULL;
 }
 
-UGetAppBuildsNode::UGetAppBuildsNode() {
-}
 

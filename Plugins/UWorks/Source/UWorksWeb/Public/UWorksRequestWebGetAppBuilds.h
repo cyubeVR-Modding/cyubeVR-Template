@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "GetAppBuildsDelegateDelegate.h"
 #include "GetAppBuildsMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetAppBuilds.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FGetAppBuildsMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetAppBuilds();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, int32 AppID, int32 Count);
     

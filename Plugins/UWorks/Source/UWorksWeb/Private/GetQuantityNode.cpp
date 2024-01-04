@@ -1,6 +1,7 @@
 #include "GetQuantityNode.h"
 
-class UGetQuantityNode;
+UGetQuantityNode::UGetQuantityNode() {
+}
 
 void UGetQuantityNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetQuantityNode* UGetQuantityNode::GetQuantityNode(const FString& Key, int32 Ap
     return NULL;
 }
 
-UGetQuantityNode::UGetQuantityNode() {
-}
 

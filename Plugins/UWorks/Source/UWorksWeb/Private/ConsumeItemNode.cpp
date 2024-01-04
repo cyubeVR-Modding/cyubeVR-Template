@@ -1,6 +1,7 @@
 #include "ConsumeItemNode.h"
 
-class UConsumeItemNode;
+UConsumeItemNode::UConsumeItemNode() {
+}
 
 void UConsumeItemNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UConsumeItemNode* UConsumeItemNode::ConsumeItemNode(const FString& Key, int32 Ap
     return NULL;
 }
 
-UConsumeItemNode::UConsumeItemNode() {
-}
 

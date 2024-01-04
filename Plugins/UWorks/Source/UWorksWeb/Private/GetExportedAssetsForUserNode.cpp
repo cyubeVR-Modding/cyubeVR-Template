@@ -1,6 +1,7 @@
 #include "GetExportedAssetsForUserNode.h"
 
-class UGetExportedAssetsForUserNode;
+UGetExportedAssetsForUserNode::UGetExportedAssetsForUserNode() {
+}
 
 void UGetExportedAssetsForUserNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetExportedAssetsForUserNode* UGetExportedAssetsForUserNode::GetExportedAssetsF
     return NULL;
 }
 
-UGetExportedAssetsForUserNode::UGetExportedAssetsForUserNode() {
-}
 

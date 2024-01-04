@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
-#include "RequestEncryptedAppTicketDelegateDelegate.h"
 #include "EUWorksResult.h"
+#include "RequestEncryptedAppTicketDelegateDelegate.h"
 #include "RequestEncryptedAppTicketMinimalDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "UWorksRequestCoreRequestEncryptedAppTicket.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FRequestEncryptedAppTicketMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreRequestEncryptedAppTicket();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(TArray<uint8> Buffer);
     

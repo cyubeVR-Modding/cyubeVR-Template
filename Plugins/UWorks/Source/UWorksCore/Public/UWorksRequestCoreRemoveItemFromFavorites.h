@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
-#include "RemoveItemFromFavoritesMinimalDelegateDelegate.h"
-#include "RemoveItemFromFavoritesDelegateDelegate.h"
 #include "UWorksPublishedFileID.h"
 #include "EUWorksResult.h"
+#include "RemoveItemFromFavoritesDelegateDelegate.h"
+#include "RemoveItemFromFavoritesMinimalDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "UWorksRequestCoreRemoveItemFromFavorites.generated.h"
 
 UCLASS(Blueprintable)
@@ -18,6 +18,7 @@ public:
     FRemoveItemFromFavoritesMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreRemoveItemFromFavorites();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(int32 AppID, FUWorksPublishedFileID PublishedFileID);
     

@@ -1,6 +1,7 @@
 #include "AuthenticateUserTicketNode.h"
 
-class UAuthenticateUserTicketNode;
+UAuthenticateUserTicketNode::UAuthenticateUserTicketNode() {
+}
 
 void UAuthenticateUserTicketNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UAuthenticateUserTicketNode* UAuthenticateUserTicketNode::AuthenticateUserTicket
     return NULL;
 }
 
-UAuthenticateUserTicketNode::UAuthenticateUserTicketNode() {
-}
 

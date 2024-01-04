@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreRequestEligiblePromoItemDefinitionsIDs.h"
 
+UUWorksRequestCoreRequestEligiblePromoItemDefinitionsIDs::UUWorksRequestCoreRequestEligiblePromoItemDefinitionsIDs() {
+}
+
 void UUWorksRequestCoreRequestEligiblePromoItemDefinitionsIDs::SetInput(FUWorksSteamID SteamID) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreRequestEligiblePromoItemDefinitionsIDs::Deactivate() {
 void UUWorksRequestCoreRequestEligiblePromoItemDefinitionsIDs::Activate() {
 }
 
-UUWorksRequestCoreRequestEligiblePromoItemDefinitionsIDs::UUWorksRequestCoreRequestEligiblePromoItemDefinitionsIDs() {
-}
 

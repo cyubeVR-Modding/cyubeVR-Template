@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "RefundTxnDelegateDelegate.h"
-#include "UWorksRequestWeb.h"
 #include "RefundTxnMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebRefundTxn.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FRefundTxnMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebRefundTxn();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, const FString& OrderID, int32 AppID);
     

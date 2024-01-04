@@ -1,7 +1,7 @@
 #include "UWorksInterfaceCoreApps.h"
 
-class UUWorksRequestCoreGetFileDetails;
-class UUWorksInterfaceCoreApps;
+UUWorksInterfaceCoreApps::UUWorksInterfaceCoreApps() {
+}
 
 void UUWorksInterfaceCoreApps::UninstallDLC(int32 AppID) {
 }
@@ -104,6 +104,4 @@ bool UUWorksInterfaceCoreApps::BGetDLCDataByIndex(int32 DLC, int32& AppID, bool&
     return false;
 }
 
-UUWorksInterfaceCoreApps::UUWorksInterfaceCoreApps() {
-}
 

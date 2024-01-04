@@ -14,6 +14,7 @@ public:
     FGetItemDailyRevenueDelegate Completed;
     
     UGetItemDailyRevenueNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

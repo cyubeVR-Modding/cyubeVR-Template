@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GrantPackageDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksSteamID.h"
+#include "GrantPackageDelegateDelegate.h"
 #include "GrantPackageNode.generated.h"
 
 class UGrantPackageNode;
@@ -15,6 +15,7 @@ public:
     FGrantPackageDelegate Completed;
     
     UGrantPackageNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

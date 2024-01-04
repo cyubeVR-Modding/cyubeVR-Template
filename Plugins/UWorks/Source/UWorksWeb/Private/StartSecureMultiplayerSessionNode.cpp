@@ -1,6 +1,7 @@
 #include "StartSecureMultiplayerSessionNode.h"
 
-class UStartSecureMultiplayerSessionNode;
+UStartSecureMultiplayerSessionNode::UStartSecureMultiplayerSessionNode() {
+}
 
 UStartSecureMultiplayerSessionNode* UStartSecureMultiplayerSessionNode::StartSecureMultiplayerSessionNode(const FString& Key, FUWorksSteamID SteamID, int32 AppID) {
     return NULL;
@@ -9,6 +10,4 @@ UStartSecureMultiplayerSessionNode* UStartSecureMultiplayerSessionNode::StartSec
 void UStartSecureMultiplayerSessionNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
 
-UStartSecureMultiplayerSessionNode::UStartSecureMultiplayerSessionNode() {
-}
 

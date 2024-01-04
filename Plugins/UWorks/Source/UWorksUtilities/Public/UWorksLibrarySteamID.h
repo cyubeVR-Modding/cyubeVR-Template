@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UWorksSteamID.h"
 #include "EUWorksAccountType.h"
 #include "EUWorksUniverse.h"
-#include "UWorksSteamID.h"
 #include "UWorksLibrary.h"
 #include "UWorksLibrarySteamID.generated.h"
 
@@ -11,6 +11,7 @@ class UWORKSUTILITIES_API UUWorksLibrarySteamID : public UUWorksLibrary {
     GENERATED_BODY()
 public:
     UUWorksLibrarySteamID();
+
     UFUNCTION(BlueprintCallable)
     static void SetUniverse(UPARAM(Ref) FUWorksSteamID& SteamID, EUWorksUniverse Universe);
     

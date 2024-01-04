@@ -1,22 +1,22 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RuntimeMeshComponent.h"
-#include "UObject/NoExportTypes.h"
-#include "RuntimeMeshRenderableMeshData.h"
 #include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
-#include "RuntimeMeshTangent.h"
-#include "RuntimeMeshCollisionSettings.h"
-#include "RuntimeMeshCollisionData.h"
-#include "RuntimeMeshSectionProperties.h"
+#include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "ERuntimeMeshUpdateFrequency.h"
+#include "RuntimeMeshCollisionData.h"
+#include "RuntimeMeshCollisionSettings.h"
+#include "RuntimeMeshComponent.h"
+#include "RuntimeMeshRenderableMeshData.h"
+#include "RuntimeMeshSectionProperties.h"
+#include "RuntimeMeshTangent.h"
 #include "RuntimeMeshComponentStatic.generated.h"
 
-class URuntimeMeshModifierAdjacency;
-class URuntimeMeshProviderStatic;
 class URuntimeMesh;
+class URuntimeMeshModifierAdjacency;
 class URuntimeMeshModifierNormals;
+class URuntimeMeshProviderStatic;
 
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class RUNTIMEMESHCOMPONENT_API URuntimeMeshComponentStatic : public URuntimeMeshComponent {
@@ -36,7 +36,8 @@ private:
     URuntimeMeshModifierAdjacency* AdjacencyModifier;
     
 public:
-    URuntimeMeshComponentStatic();
+    URuntimeMeshComponentStatic(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void UpdateSectionFromComponents(int32 LODIndex, int32 SectionIndex, const TArray<FVector>& Vertices, const TArray<int32>& Triangles, const TArray<FVector>& Normals, const TArray<FVector2D>& UV0, const TArray<FVector2D>& UV1, const TArray<FVector2D>& UV2, const TArray<FVector2D>& UV3, const TArray<FLinearColor>& VertexColors, const TArray<FRuntimeMeshTangent>& Tangents);
     

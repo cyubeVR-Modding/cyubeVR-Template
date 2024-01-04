@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
+#include "EUWorksResult.h"
 #include "SetPersonaNameDelegateDelegate.h"
 #include "SetPersonaNameMinimalDelegateDelegate.h"
-#include "EUWorksResult.h"
+#include "UWorksRequestCore.h"
 #include "UWorksRequestCoreSetPersonaName.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FSetPersonaNameMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreSetPersonaName();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Name);
     

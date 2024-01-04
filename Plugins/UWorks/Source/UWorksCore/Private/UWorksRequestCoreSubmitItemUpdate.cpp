@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreSubmitItemUpdate.h"
 
+UUWorksRequestCoreSubmitItemUpdate::UUWorksRequestCoreSubmitItemUpdate() {
+}
+
 void UUWorksRequestCoreSubmitItemUpdate::SetInput(FUWorksUGCUpdateHandle UGCUpdateHandle, const FString& ChangeNote) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreSubmitItemUpdate::Deactivate() {
 void UUWorksRequestCoreSubmitItemUpdate::Activate() {
 }
 
-UUWorksRequestCoreSubmitItemUpdate::UUWorksRequestCoreSubmitItemUpdate() {
-}
 

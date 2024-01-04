@@ -1,10 +1,7 @@
 #include "UWorksInterfaceCoreMatchmakingServers.h"
 
-class UUWorksRequestCoreServerList;
-class UUWorksInterfaceCoreMatchmakingServers;
-class UUWorksRequestCoreRules;
-class UUWorksRequestCorePlayers;
-class UUWorksRequestCorePing;
+UUWorksInterfaceCoreMatchmakingServers::UUWorksInterfaceCoreMatchmakingServers() {
+}
 
 void UUWorksInterfaceCoreMatchmakingServers::ServerListMinimal(const FServerListMinimalDelegate& Completed, const FServerListUpdateMinimalDelegate& Updated, int32 AppID, EUWorksServerQueryType queryType) {
 }
@@ -38,6 +35,4 @@ UUWorksInterfaceCoreMatchmakingServers* UUWorksInterfaceCoreMatchmakingServers::
     return NULL;
 }
 
-UUWorksInterfaceCoreMatchmakingServers::UUWorksInterfaceCoreMatchmakingServers() {
-}
 

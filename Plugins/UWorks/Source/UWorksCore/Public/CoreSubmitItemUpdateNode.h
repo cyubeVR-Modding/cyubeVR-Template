@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "SubmitItemUpdateDelegateDelegate.h"
 #include "EUWorksResult.h"
+#include "SubmitItemUpdateDelegateDelegate.h"
 #include "UWorksUGCUpdateHandle.h"
 #include "CoreSubmitItemUpdateNode.generated.h"
 
@@ -16,6 +16,7 @@ public:
     FSubmitItemUpdateDelegate Completed;
     
     UCoreSubmitItemUpdateNode();
+
     UFUNCTION(BlueprintCallable)
     static UCoreSubmitItemUpdateNode* SubmitItemUpdateNode(FUWorksUGCUpdateHandle UGCUpdateHandle, const FString& ChangeNote);
     

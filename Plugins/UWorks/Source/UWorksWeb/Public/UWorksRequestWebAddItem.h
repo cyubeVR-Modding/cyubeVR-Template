@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AddItemDelegateDelegate.h"
-#include "UWorksRequestWeb.h"
-#include "AddItemMinimalDelegateDelegate.h"
-#include "UWorksSteamItemDef.h"
 #include "UWorksSteamID.h"
+#include "UWorksSteamItemDef.h"
+#include "AddItemDelegateDelegate.h"
+#include "AddItemMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebAddItem.generated.h"
 
 UCLASS(Blueprintable)
@@ -18,6 +18,7 @@ public:
     FAddItemMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebAddItem();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, int32 AppID, TArray<FUWorksSteamItemDef> ItemDefID, const FString& ItemPropsJSON, FUWorksSteamID SteamID, bool bNotify, const FString& requestID);
     

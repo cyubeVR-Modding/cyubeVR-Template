@@ -8,5 +8,6 @@ class URuntimeMeshProviderChunks : public URuntimeMeshProvider {
     GENERATED_BODY()
 public:
     URuntimeMeshProviderChunks();
+
 };
 

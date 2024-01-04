@@ -1,6 +1,7 @@
 #include "DeleteLeaderboardNode.h"
 
-class UDeleteLeaderboardNode;
+UDeleteLeaderboardNode::UDeleteLeaderboardNode() {
+}
 
 void UDeleteLeaderboardNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UDeleteLeaderboardNode* UDeleteLeaderboardNode::DeleteLeaderboardNode(const FStr
     return NULL;
 }
 
-UDeleteLeaderboardNode::UDeleteLeaderboardNode() {
-}
 

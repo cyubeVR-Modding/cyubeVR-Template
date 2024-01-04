@@ -1,23 +1,24 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceWeb.h"
-#include "GetPopularMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
-#include "GetMarketEligibilityMinimalDelegateDelegate.h"
 #include "CancelAppListingsForUserMinimalDelegateDelegate.h"
 #include "GetAssetIDMinimalDelegateDelegate.h"
+#include "GetMarketEligibilityMinimalDelegateDelegate.h"
+#include "GetPopularMinimalDelegateDelegate.h"
+#include "UWorksInterfaceWeb.h"
 #include "UWorksInterfaceWebEconMarket.generated.h"
 
-class UUWorksRequestWebGetAssetID;
-class UUWorksRequestWebGetPopular;
-class UUWorksRequestWebGetMarketEligibility;
 class UUWorksRequestWebCancelAppListingsForUser;
+class UUWorksRequestWebGetAssetID;
+class UUWorksRequestWebGetMarketEligibility;
+class UUWorksRequestWebGetPopular;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebEconMarket : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:
     UUWorksInterfaceWebEconMarket();
+
     UFUNCTION(BlueprintCallable)
     static void GetPopularMinimal(const FString& Key, const FString& Language, int32 Rows, int32 Start, int32 FilterAppID, int32 ECurrency, const FGetPopularMinimalDelegate& Delegate);
     

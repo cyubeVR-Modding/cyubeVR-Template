@@ -1,31 +1,32 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RequestVacStatusForUserMinimalDelegateDelegate.h"
-#include "UWorksInterfaceWeb.h"
-#include "StartSecureMultiplayerSessionMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
-#include "RequestPlayerGameBanMinimalDelegateDelegate.h"
-#include "ReportPlayerCheatingMinimalDelegateDelegate.h"
-#include "ReportCheatDataMinimalDelegateDelegate.h"
-#include "RemovePlayerGameBanMinimalDelegateDelegate.h"
-#include "GetCheatingReportsMinimalDelegateDelegate.h"
 #include "EndSecureMultiplayerSessionMinimalDelegateDelegate.h"
+#include "GetCheatingReportsMinimalDelegateDelegate.h"
+#include "RemovePlayerGameBanMinimalDelegateDelegate.h"
+#include "ReportCheatDataMinimalDelegateDelegate.h"
+#include "ReportPlayerCheatingMinimalDelegateDelegate.h"
+#include "RequestPlayerGameBanMinimalDelegateDelegate.h"
+#include "RequestVacStatusForUserMinimalDelegateDelegate.h"
+#include "StartSecureMultiplayerSessionMinimalDelegateDelegate.h"
+#include "UWorksInterfaceWeb.h"
 #include "UWorksInterfaceWebCheatReporting.generated.h"
 
-class UUWorksRequestWebStartSecureMultiplayerSession;
-class UUWorksRequestWebRequestVacStatusForUser;
-class UUWorksRequestWebRequestPlayerGameBan;
-class UUWorksRequestWebReportPlayerCheating;
-class UUWorksRequestWebReportCheatData;
-class UUWorksRequestWebRemovePlayerGameBan;
-class UUWorksRequestWebGetCheatingReports;
 class UUWorksRequestWebEndSecureMultiplayerSession;
+class UUWorksRequestWebGetCheatingReports;
+class UUWorksRequestWebRemovePlayerGameBan;
+class UUWorksRequestWebReportCheatData;
+class UUWorksRequestWebReportPlayerCheating;
+class UUWorksRequestWebRequestPlayerGameBan;
+class UUWorksRequestWebRequestVacStatusForUser;
+class UUWorksRequestWebStartSecureMultiplayerSession;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebCheatReporting : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:
     UUWorksInterfaceWebCheatReporting();
+
     UFUNCTION(BlueprintCallable)
     static void StartSecureMultiplayerSessionMinimal(const FString& Key, FUWorksSteamID SteamID, int32 AppID, const FStartSecureMultiplayerSessionMinimalDelegate& Delegate);
     

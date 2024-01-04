@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "DownloadClanActivityCountsDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "DownloadClanActivityCountsDelegateDelegate.h"
 #include "CoreDownloadClanActivityCountsNode.generated.h"
 
 class UCoreDownloadClanActivityCountsNode;
@@ -15,6 +15,7 @@ public:
     FDownloadClanActivityCountsDelegate Completed;
     
     UCoreDownloadClanActivityCountsNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, bool bSuccess);
     

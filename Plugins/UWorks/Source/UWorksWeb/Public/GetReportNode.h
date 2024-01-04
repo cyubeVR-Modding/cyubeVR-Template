@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetReportDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "EUWorksReportType.h"
+#include "GetReportDelegateDelegate.h"
 #include "GetReportNode.generated.h"
 
 class UGetReportNode;
@@ -15,6 +15,7 @@ public:
     FGetReportDelegate Completed;
     
     UGetReportNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

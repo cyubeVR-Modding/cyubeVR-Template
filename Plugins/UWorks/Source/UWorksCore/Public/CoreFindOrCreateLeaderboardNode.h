@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksLeaderboardDisplayType.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "EUWorksLeaderboardDisplayType.h"
 #include "EUWorksLeaderboardSortMethod.h"
 #include "FindOrCreateLeaderboardDelegateDelegate.h"
 #include "UWorksSteamLeaderboard.h"
@@ -17,6 +17,7 @@ public:
     FFindOrCreateLeaderboardDelegate Completed;
     
     UCoreFindOrCreateLeaderboardNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, FUWorksSteamLeaderboard SteamLeaderboard, bool bLeaderboardFound);
     

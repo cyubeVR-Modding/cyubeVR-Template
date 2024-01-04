@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
 #include "UObject/NoExportTypes.h"
+#include "GameFramework/Actor.h"
 #include "EBlockTypeBP.h"
 #include "PreGenTestActor.generated.h"
 
@@ -11,7 +11,8 @@ UCLASS(Blueprintable)
 class CYUBEVR_API APreGenTestActor : public AActor {
     GENERATED_BODY()
 public:
-    APreGenTestActor();
+    APreGenTestActor(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void SubmitMesh(UProceduralMeshComponent* PMC, const TArray<EBlockTypeBP>& StructureArray, FIntVector StructureSize);
     

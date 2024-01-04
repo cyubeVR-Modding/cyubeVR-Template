@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ResolveVanityURLDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "ResolveVanityURLDelegateDelegate.h"
 #include "ResolveVanityURLNode.generated.h"
 
 class UResolveVanityURLNode;
@@ -14,6 +14,7 @@ public:
     FResolveVanityURLDelegate Completed;
     
     UResolveVanityURLNode();
+
     UFUNCTION(BlueprintCallable)
     static UResolveVanityURLNode* ResolveVanityURLNode(const FString& Key, const FString& VanityURL, uint8 URLType);
     

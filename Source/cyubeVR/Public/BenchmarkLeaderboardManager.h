@@ -7,6 +7,7 @@ UCLASS(Blueprintable)
 class CYUBEVR_API ABenchmarkLeaderboardManager : public AActor {
     GENERATED_BODY()
 public:
-    ABenchmarkLeaderboardManager();
+    ABenchmarkLeaderboardManager(const FObjectInitializer& ObjectInitializer);
+
 };
 

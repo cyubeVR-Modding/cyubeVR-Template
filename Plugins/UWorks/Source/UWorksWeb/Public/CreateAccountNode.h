@@ -14,6 +14,7 @@ public:
     FCreateAccountDelegate Completed;
     
     UCreateAccountNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

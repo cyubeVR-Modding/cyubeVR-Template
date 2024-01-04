@@ -3,9 +3,9 @@
 #include "LivCaptureBase.h"
 #include "LivCaptureMulti.generated.h"
 
-class UTextureRenderTarget2D;
-class USceneCaptureComponent2D;
 class ULivCustomClipPlane;
+class USceneCaptureComponent2D;
+class UTextureRenderTarget2D;
 
 UCLASS(Blueprintable, EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class LIV_API ULivCaptureMulti : public ULivCaptureBase {
@@ -35,6 +35,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     ULivCustomClipPlane* CameraClipPlane;
     
-    ULivCaptureMulti();
+    ULivCaptureMulti(const FObjectInitializer& ObjectInitializer);
+
 };
 

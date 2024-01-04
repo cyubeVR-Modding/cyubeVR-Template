@@ -1,5 +1,9 @@
 #include "Furnace.h"
 
+AFurnace::AFurnace(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->Initialized = false;
+}
+
 bool AFurnace::UseActorCustomLocation() {
     return false;
 }
@@ -17,7 +21,4 @@ FVector AFurnace::GetActorCustomLocation() {
 void AFurnace::CanDamageObjectBP_Implementation(bool& CanDamage) {
 }
 
-AFurnace::AFurnace() {
-    this->Initialized = false;
-}
 

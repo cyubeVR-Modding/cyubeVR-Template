@@ -1,27 +1,28 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "PlayersUpdateMinimalDelegateDelegate.h"
-#include "UWorksInterfaceCore.h"
-#include "ServerListMinimalDelegateDelegate.h"
 #include "EUWorksServerQueryType.h"
-#include "ServerListUpdateMinimalDelegateDelegate.h"
+#include "PingMinimalDelegateDelegate.h"
+#include "PlayersMinimalDelegateDelegate.h"
+#include "PlayersUpdateMinimalDelegateDelegate.h"
 #include "RulesMinimalDelegateDelegate.h"
 #include "RulesUpdateMinimalDelegateDelegate.h"
-#include "PlayersMinimalDelegateDelegate.h"
-#include "PingMinimalDelegateDelegate.h"
+#include "ServerListMinimalDelegateDelegate.h"
+#include "ServerListUpdateMinimalDelegateDelegate.h"
+#include "UWorksInterfaceCore.h"
 #include "UWorksInterfaceCoreMatchmakingServers.generated.h"
 
-class UUWorksRequestCoreServerList;
 class UUWorksInterfaceCoreMatchmakingServers;
-class UUWorksRequestCoreRules;
-class UUWorksRequestCorePlayers;
 class UUWorksRequestCorePing;
+class UUWorksRequestCorePlayers;
+class UUWorksRequestCoreRules;
+class UUWorksRequestCoreServerList;
 
 UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreMatchmakingServers : public UUWorksInterfaceCore {
     GENERATED_BODY()
 public:
     UUWorksInterfaceCoreMatchmakingServers();
+
     UFUNCTION(BlueprintCallable)
     void ServerListMinimal(const FServerListMinimalDelegate& Completed, const FServerListUpdateMinimalDelegate& Updated, int32 AppID, EUWorksServerQueryType queryType);
     

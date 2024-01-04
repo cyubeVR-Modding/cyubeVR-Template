@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
 #include "GameFramework/Actor.h"
-#include "StorageItem.h"
 #include "EBlockTypeBP.h"
 #include "EItemClass.h"
-#include "UObject/NoExportTypes.h"
+#include "StorageItem.h"
 #include "Storage.generated.h"
 
 class AChestInternals;
@@ -25,7 +25,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bAllowShrinkOnLoad;
     
-    AStorage();
+    AStorage(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     bool TryToShrink();
     

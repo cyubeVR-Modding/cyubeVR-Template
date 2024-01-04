@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AdjustAgreementDelegateDelegate.h"
-#include "UWorksRequestWeb.h"
-#include "AdjustAgreementMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "AdjustAgreementDelegateDelegate.h"
+#include "AdjustAgreementMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebAdjustAgreement.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FAdjustAgreementMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebAdjustAgreement();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, FUWorksSteamID SteamID, const FString& AgreementID, int32 AppID, const FString& NextProcessDate);
     

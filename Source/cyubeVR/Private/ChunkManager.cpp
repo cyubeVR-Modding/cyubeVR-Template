@@ -1,13 +1,83 @@
 #include "ChunkManager.h"
+#include "Components/SceneComponent.h"
 
-class ADraftUnlockingPaper;
-class AActor;
-class UParticleSystem;
-class AModifiedBlockActor;
-class ADeathBeacon;
-class AMeshObject;
-class ABlockItem;
-class USoundBase;
+AChunkManager::AChunkManager(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
+    this->ForceKnucklesControls = false;
+    this->WalkingSpeedOverdrive = false;
+    this->SucceededAllObjectives = false;
+    this->SucceededAllEasyObjectives = false;
+    this->InitialLoadFinished = false;
+    this->ViewDistanceByINI = 20;
+    this->DoAnything = true;
+    this->DevMode = false;
+    this->DevModeLoadWorld = false;
+    this->DevModePregenerate = false;
+    this->BenchmarkDevMode = false;
+    this->N_Type = 5;
+    this->N_Octaves = 6;
+    this->N_Frequency = 0.02f;
+    this->N_Lacunarity = 2.00f;
+    this->N_Gain = 0.50f;
+    this->N_Scale = 1.00f;
+    this->N_Interp = 2;
+    this->N_FracType = 0;
+    this->N_Seed = 1337;
+    this->DeerClass = NULL;
+    this->RabbitClass = NULL;
+    this->MonitorLizardClass = NULL;
+    this->GeckoClass = NULL;
+    this->TorchClass = NULL;
+    this->TorchStandingClass = NULL;
+    this->TorchRespawnClass = NULL;
+    this->DeathBeaconClass = NULL;
+    this->BlockItemBPClass = NULL;
+    this->TreeBPClass = NULL;
+    this->CactusBPClass = NULL;
+    this->DesertGrassBPClass = NULL;
+    this->LogBPClass = NULL;
+    this->ModifiedBlockActorBPClass = NULL;
+    this->FogParameters = NULL;
+    this->TreeEmitter = NULL;
+    this->CustomAudioComponentClass = NULL;
+    this->EasterEggClass = NULL;
+    this->SphereActor = NULL;
+    this->TreeManager = NULL;
+    this->WorldTrackingActor = NULL;
+    this->NavMeshBoundsVolume = NULL;
+    this->SkyTime = 0.00f;
+    this->SkyIsDay = true;
+    this->DayCounter = 0;
+    this->RecordingDevMode = false;
+    this->FogParameter = NULL;
+    this->PlayerNeedsPositionUpdateAfterLoad = true;
+    this->Inventory = NULL;
+    this->Sun = NULL;
+    this->AudioManager = NULL;
+    this->WeatherManager = NULL;
+    this->ViewDistanceLUT = NULL;
+    this->TableMiningDamage = NULL;
+    this->TableMiningAmount = NULL;
+    this->TableMiningParticle = NULL;
+    this->TableMiningParticleHold = NULL;
+    this->TableMiningSound = NULL;
+    this->TableHitSoundHard = NULL;
+    this->TableHitSoundLight = NULL;
+    this->FoliageGrassMesh = NULL;
+    this->FoliageLeavesMesh = NULL;
+    this->BirdMesh = NULL;
+    this->ChunkMatRegular = NULL;
+    this->ChunkMatRegularPS5 = NULL;
+    this->ChunkMatGlass = NULL;
+    this->ChunkMatWaterRegular = NULL;
+    this->GrassMaterial = NULL;
+    this->MeshObjectPreviewMaterial = NULL;
+    this->ChunkMatLODRegular = NULL;
+    this->ChunkMatLODFade = NULL;
+    this->ChunkMatLODWRegular = NULL;
+    this->ChunkMatLODWRegularFar = NULL;
+    this->ChunkMatLODWFade = NULL;
+}
 
 void AChunkManager::UpdateSkyEvent_Implementation(float NewTimeOfDay) {
 }
@@ -61,7 +131,7 @@ bool AChunkManager::ShouldCharacterFall(FVector FloorLocation) {
 void AChunkManager::SetDevRecordingMode_Implementation() {
 }
 
-void AChunkManager::SetBlockItemsNeedToOverlapHand(bool bNeedToOverlap) {
+void AChunkManager::SetBlockItemsNeedToOverlapHand(bool bNeedToOverlap, bool bBucketActive) {
 }
 
 void AChunkManager::RemoveTreeAtLocation(const FVector WorldLocation, ETreeType Type, AActor* Tree, bool& Valid) {
@@ -92,6 +162,13 @@ FIntVector AChunkManager::RealWorldToAbsoluteWorldInt(FVector RealWorld) {
 void AChunkManager::PrintToLogBP(const FString& Text) {
 }
 
+bool AChunkManager::ObjectiveSucceededEvent_Implementation(const FString& ObjectiveUniqueName) {
+    return false;
+}
+
+void AChunkManager::ObjectiveSucceeded(const FString& ObjectiveUniqueName) {
+}
+
 bool AChunkManager::MovePlayerToStartLocation_Implementation(FVector Location) {
     return false;
 }
@@ -118,6 +195,10 @@ bool AChunkManager::IsRecipeUnlocked(EBlockTypeBP Type) {
     return false;
 }
 
+bool AChunkManager::IsObjectiveSucceeded(const FString& ObjectiveUniqueName) {
+    return false;
+}
+
 bool AChunkManager::IsFoliageType(EBlockTypeBP Type) {
     return false;
 }
@@ -133,7 +214,14 @@ bool AChunkManager::IsCloakedTorchType(EBlockTypeBP Type) {
     return false;
 }
 
+bool AChunkManager::IsAreaFullyLoaded(FVector Location) {
+    return false;
+}
+
 void AChunkManager::InitializeVoxelAPI() {
+}
+
+void AChunkManager::IncrementDay() {
 }
 
 void AChunkManager::HitBlockWithArrow(const FVector Location, EBlockTypeBP& HitType, bool& Valid) {
@@ -167,6 +255,10 @@ void AChunkManager::GetTextureIndex(const EBlockTypeBP Type, int32 UniqueId, Sid
 
 FVector AChunkManager::GetPlayerCameraDirection() {
     return FVector{};
+}
+
+int32 AChunkManager::GetNumTotalLoadedChunks(int32& Regular, int32& LOD) {
+    return 0;
 }
 
 void AChunkManager::GetNewBlockItem(FTransform NewTransform, ABlockItem*& NewBlockItem, bool ActivatePhysics) {
@@ -231,10 +323,10 @@ FIntVector AChunkManager::GetAbsolutePlayerCameraLocation() {
     return FIntVector{};
 }
 
-void AChunkManager::FindExistingWorldData(TArray<FString>& Names, TArray<int32>& Seeds, bool& success) {
+void AChunkManager::FindExistingWorldData(TArray<FString>& Names, TArray<int32>& Seeds, TArray<int32>& PregeneratedOut, bool& success) {
 }
 
-float AChunkManager::FindDistanceToClosestBlock(FVector Location) {
+float AChunkManager::FindDistanceToClosestBlock(FVector Location, bool& IsValid) {
     return 0.0f;
 }
 
@@ -252,7 +344,7 @@ bool AChunkManager::DidAlreadyCollectEasterEggAtLocation(FVector Location) {
 void AChunkManager::DestroyBlockItem(ABlockItem* BlockItem, const FString& FunctionName) {
 }
 
-bool AChunkManager::DeleteWorld(const FString& WorldName) {
+bool AChunkManager::DeleteWorld(const FString& WorldName, int32 PregeneratedID) {
     return false;
 }
 
@@ -284,10 +376,6 @@ void AChunkManager::CanSmoothLocoToLocation(FVector Location, bool& CanStand) {
 void AChunkManager::CanMoveBlockAtLocation(FVector Location, bool& CanMove) {
 }
 
-bool AChunkManager::CanModifyChunkAt(FVector Location) {
-    return false;
-}
-
 void AChunkManager::CanBuildAtLocation(FVector Location, bool NoSolidIsFine, bool& CanBuild) {
 }
 
@@ -306,6 +394,9 @@ void AChunkManager::AreaDamageAtLocation(const FVector Location, const float Dam
 void AChunkManager::AddWorldOrigin(FIntVector Location) {
 }
 
+void AChunkManager::AddWaitForTransferBackMBA(AModifiedBlockActor* MBA, FBlockInfoBP BlockInfo) {
+}
+
 AMeshObject* AChunkManager::AddMeshObjectAtLocation(EBlockTypeBP Type, UClass* Class, FTransform WorldTransform, bool& success) {
     return NULL;
 }
@@ -320,75 +411,4 @@ FVector AChunkManager::AbsoluteWorldToRealWorld(FIntVector AbsoluteWorld) {
     return FVector{};
 }
 
-AChunkManager::AChunkManager() {
-    this->ForceKnucklesControls = false;
-    this->WalkingSpeedOverdrive = false;
-    this->InitialLoadFinished = false;
-    this->ViewDistanceByINI = 20;
-    this->DoAnything = true;
-    this->DevMode = false;
-    this->DevModeLoadWorld = false;
-    this->BenchmarkDevMode = false;
-    this->N_Type = 5;
-    this->N_Octaves = 6;
-    this->N_Frequency = 0.02f;
-    this->N_Lacunarity = 2.00f;
-    this->N_Gain = 0.50f;
-    this->N_Scale = 1.00f;
-    this->N_Interp = 2;
-    this->N_FracType = 0;
-    this->N_Seed = 1337;
-    this->DeerClass = NULL;
-    this->RabbitClass = NULL;
-    this->MonitorLizardClass = NULL;
-    this->GeckoClass = NULL;
-    this->TorchClass = NULL;
-    this->TorchStandingClass = NULL;
-    this->TorchRespawnClass = NULL;
-    this->DeathBeaconClass = NULL;
-    this->BlockItemBPClass = NULL;
-    this->TreeBPClass = NULL;
-    this->CactusBPClass = NULL;
-    this->DesertGrassBPClass = NULL;
-    this->LogBPClass = NULL;
-    this->ModifiedBlockActorBPClass = NULL;
-    this->FogParameters = NULL;
-    this->TreeEmitter = NULL;
-    this->CustomAudioComponentClass = NULL;
-    this->EasterEggClass = NULL;
-    this->SphereActor = NULL;
-    this->TreeManager = NULL;
-    this->WorldTrackingActor = NULL;
-    this->NavMeshBoundsVolume = NULL;
-    this->SkyTime = 0.00f;
-    this->SkyIsDay = true;
-    this->RecordingDevMode = false;
-    this->FogParameter = NULL;
-    this->PlayerNeedsPositionUpdateAfterLoad = true;
-    this->Inventory = NULL;
-    this->Sun = NULL;
-    this->AudioManager = NULL;
-    this->WeatherManager = NULL;
-    this->ViewDistanceLUT = NULL;
-    this->TableMiningDamage = NULL;
-    this->TableMiningAmount = NULL;
-    this->TableMiningParticle = NULL;
-    this->TableMiningParticleHold = NULL;
-    this->TableMiningSound = NULL;
-    this->TableHitSoundHard = NULL;
-    this->TableHitSoundLight = NULL;
-    this->FoliageGrassMesh = NULL;
-    this->FoliageLeavesMesh = NULL;
-    this->BirdMesh = NULL;
-    this->ChunkMatRegular = NULL;
-    this->ChunkMatGlass = NULL;
-    this->ChunkMatWaterRegular = NULL;
-    this->GrassMaterial = NULL;
-    this->MeshObjectPreviewMaterial = NULL;
-    this->ChunkMatLODRegular = NULL;
-    this->ChunkMatLODFade = NULL;
-    this->ChunkMatLODWRegular = NULL;
-    this->ChunkMatLODWRegularFar = NULL;
-    this->ChunkMatLODWFade = NULL;
-}
 

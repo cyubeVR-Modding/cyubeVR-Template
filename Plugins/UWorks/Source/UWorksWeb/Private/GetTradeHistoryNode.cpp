@@ -1,6 +1,7 @@
 #include "GetTradeHistoryNode.h"
 
-class UGetTradeHistoryNode;
+UGetTradeHistoryNode::UGetTradeHistoryNode() {
+}
 
 void UGetTradeHistoryNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetTradeHistoryNode* UGetTradeHistoryNode::GetTradeHistoryNode(const FString& K
     return NULL;
 }
 
-UGetTradeHistoryNode::UGetTradeHistoryNode() {
-}
 

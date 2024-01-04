@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RuntimeMeshAsyncBodySetupData.h"
-#include "RuntimeMeshProviderTargetInterface.h"
-#include "Interfaces/Interface_CollisionDataProvider.h"
-#include "RuntimeMeshCollisionUpdatedDelegateDelegate.h"
-#include "RuntimeMeshCollisionSourceSectionInfo.h"
-#include "RuntimeMeshMaterialSlot.h"
 #include "UObject/NoExportTypes.h"
+#include "Interfaces/Interface_CollisionDataProvider.h"
+#include "RuntimeMeshAsyncBodySetupData.h"
 #include "RuntimeMeshCollisionHitInfo.h"
+#include "RuntimeMeshCollisionSourceSectionInfo.h"
+#include "RuntimeMeshCollisionUpdatedDelegateDelegate.h"
+#include "RuntimeMeshMaterialSlot.h"
+#include "RuntimeMeshProviderTargetInterface.h"
 #include "RuntimeMesh.generated.h"
 
 class UBodySetup;
@@ -41,6 +41,7 @@ public:
     FRuntimeMeshCollisionUpdatedDelegate CollisionUpdated;
     
     URuntimeMesh();
+
     UFUNCTION(BlueprintCallable)
     void Reset();
     
@@ -62,7 +63,7 @@ public:
     UFUNCTION(BlueprintCallable)
     UBodySetup* GetBodySetup();
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 

@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UWorksPublishedFileID.h"
 #include "UWorksRequestWeb.h"
 #include "UpdateTagsDelegateDelegate.h"
 #include "UpdateTagsMinimalDelegateDelegate.h"
-#include "UWorksPublishedFileID.h"
 #include "UWorksRequestWebUpdateTags.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FUpdateTagsMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebUpdateTags();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, FUWorksPublishedFileID PublishedFileID, int32 AppID, TArray<FString> AddTags, TArray<FString> RemoveTags);
     

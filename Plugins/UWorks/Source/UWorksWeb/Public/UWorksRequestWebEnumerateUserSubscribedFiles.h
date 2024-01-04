@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
-#include "EnumerateUserSubscribedFilesDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "EnumerateUserSubscribedFilesDelegateDelegate.h"
 #include "EnumerateUserSubscribedFilesMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebEnumerateUserSubscribedFiles.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FEnumerateUserSubscribedFilesMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebEnumerateUserSubscribedFiles();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, FUWorksSteamID SteamID, int32 AppID, int32 ListType);
     

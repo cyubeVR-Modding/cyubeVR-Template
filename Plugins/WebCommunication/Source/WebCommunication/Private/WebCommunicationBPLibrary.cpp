@@ -1,6 +1,7 @@
 #include "WebCommunicationBPLibrary.h"
 
-class UWebCommunicationBPLibrary;
+UWebCommunicationBPLibrary::UWebCommunicationBPLibrary() {
+}
 
 FString UWebCommunicationBPLibrary::urlEncodePure(const FString& urlParameter) {
     return TEXT("");
@@ -106,6 +107,4 @@ void UWebCommunicationBPLibrary::byteDataToFile(EHTTPWebComFileBytesToFileAction
 void UWebCommunicationBPLibrary::addHTTPRequestHeader(const FString& ID, const FString& Value, bool removeAfterHTTPRequest) {
 }
 
-UWebCommunicationBPLibrary::UWebCommunicationBPLibrary() {
-}
 

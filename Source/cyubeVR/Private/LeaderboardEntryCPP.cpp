@@ -11,3 +11,4 @@ ULeaderboardEntryCPP::ULeaderboardEntryCPP() : UUserWidget(FObjectInitializer::G
     this->Border_BackgroundColor = NULL;
 }
 
+

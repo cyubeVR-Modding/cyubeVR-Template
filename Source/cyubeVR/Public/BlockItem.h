@@ -1,16 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ReceiveLightActor.h"
-#include "EBlockTypeBP.h"
 #include "UObject/NoExportTypes.h"
+#include "EBlockTypeBP.h"
+#include "ReceiveLightActor.h"
 #include "BlockItem.generated.h"
 
-class UMaterialInstanceDynamic;
 class ABlockItem;
-class UTextRenderComponent;
-class UBoxComponent;
-class UParticleSystemComponent;
 class AChunkManager;
+class UBoxComponent;
+class UMaterialInstanceDynamic;
+class UNiagaraComponent;
+class UParticleSystemComponent;
+class UStaticMeshComponent;
+class UTextRenderComponent;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API ABlockItem : public AReceiveLightActor {
@@ -73,12 +75,22 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float Debug_LastPhysicsEnableFromTime;
     
-    ABlockItem();
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    UStaticMeshComponent* SphereOverlapComponent;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    UNiagaraComponent* SphereNiagaraSystem;
+    
+    ABlockItem(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     static void WriteLastRecipeToDisk();
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void UpdateItemType(EBlockTypeBP NewType, int32 NewUniqueID, AChunkManager* ChunkManager);
+    
+    UFUNCTION(BlueprintCallable)
+    void SetSpheresEnabled(bool Enabled);
     
     UFUNCTION(BlueprintCallable)
     void SetDebugLastPhysicsEnable(const FString& Reason);

@@ -1,6 +1,7 @@
 #include "GetLeaderboardEntriesNode.h"
 
-class UGetLeaderboardEntriesNode;
+UGetLeaderboardEntriesNode::UGetLeaderboardEntriesNode() {
+}
 
 void UGetLeaderboardEntriesNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetLeaderboardEntriesNode* UGetLeaderboardEntriesNode::GetLeaderboardEntriesNod
     return NULL;
 }
 
-UGetLeaderboardEntriesNode::UGetLeaderboardEntriesNode() {
-}
 

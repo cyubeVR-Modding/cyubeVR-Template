@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UnsubscribeItemMinimalDelegateDelegate.h"
-#include "UWorksRequestCore.h"
-#include "EUWorksResult.h"
-#include "UnsubscribeItemDelegateDelegate.h"
 #include "UWorksPublishedFileID.h"
+#include "EUWorksResult.h"
+#include "UWorksRequestCore.h"
+#include "UnsubscribeItemDelegateDelegate.h"
+#include "UnsubscribeItemMinimalDelegateDelegate.h"
 #include "UWorksRequestCoreUnsubscribeItem.generated.h"
 
 UCLASS(Blueprintable)
@@ -18,6 +18,7 @@ public:
     FUnsubscribeItemMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreUnsubscribeItem();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(FUWorksPublishedFileID PublishedFileID);
     

@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
-#include "EUWorksResult.h"
 #include "AttachLeaderboardUGCDelegateDelegate.h"
 #include "AttachLeaderboardUGCMinimalDelegateDelegate.h"
+#include "EUWorksResult.h"
+#include "UWorksRequestCore.h"
 #include "UWorksSteamLeaderboard.h"
 #include "UWorksUGCHandle.h"
 #include "UWorksRequestCoreAttachLeaderboardUGC.generated.h"
@@ -19,6 +19,7 @@ public:
     FAttachLeaderboardUGCMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreAttachLeaderboardUGC();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(FUWorksSteamLeaderboard SteamLeaderboard, FUWorksUGCHandle UGCHandle);
     

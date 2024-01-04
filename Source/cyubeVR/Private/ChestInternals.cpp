@@ -1,7 +1,8 @@
 #include "ChestInternals.h"
 
-class AInventory;
-class AChest;
+AChestInternals::AChestInternals(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->Initialized = false;
+}
 
 void AChestInternals::UpdateVisualsEvent_Implementation(bool MarkForSave) {
 }
@@ -15,7 +16,4 @@ void AChestInternals::InitializeChestInternals(AInventory* Inventory_, AChest* P
 void AChestInternals::AddItemToSlot(EBlockTypeBP ToAdd, int32 ToAddID, float ToAddChargeState, FColor ToAddCrystalColor, int32 Amount, int32 ToIndex, int32 FromInventoryIndex, bool& success) {
 }
 
-AChestInternals::AChestInternals() {
-    this->Initialized = false;
-}
 

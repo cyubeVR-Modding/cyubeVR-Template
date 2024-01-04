@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreCreateItem.h"
 
+UUWorksRequestCoreCreateItem::UUWorksRequestCoreCreateItem() {
+}
+
 void UUWorksRequestCoreCreateItem::SetInput(int32 ConsumerAppID, EUWorksWorkshopFileType fileType) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreCreateItem::Deactivate() {
 void UUWorksRequestCoreCreateItem::Activate() {
 }
 
-UUWorksRequestCoreCreateItem::UUWorksRequestCoreCreateItem() {
-}
 

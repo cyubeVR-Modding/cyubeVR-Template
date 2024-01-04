@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
+#include "UWorksSteamID.h"
 #include "EndSecureMultiplayerSessionDelegateDelegate.h"
 #include "EndSecureMultiplayerSessionMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebEndSecureMultiplayerSession.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FEndSecureMultiplayerSessionMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebEndSecureMultiplayerSession();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, FUWorksSteamID SteamID, int32 AppID, const FString& SessionId);
     

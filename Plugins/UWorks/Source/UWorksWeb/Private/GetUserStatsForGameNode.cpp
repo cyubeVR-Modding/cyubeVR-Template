@@ -1,6 +1,7 @@
 #include "GetUserStatsForGameNode.h"
 
-class UGetUserStatsForGameNode;
+UGetUserStatsForGameNode::UGetUserStatsForGameNode() {
+}
 
 void UGetUserStatsForGameNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetUserStatsForGameNode* UGetUserStatsForGameNode::GetUserStatsForGameNode(cons
     return NULL;
 }
 
-UGetUserStatsForGameNode::UGetUserStatsForGameNode() {
-}
 

@@ -1,14 +1,7 @@
 #include "UWorksInterfaceWebEcon.h"
 
-class UUWorksRequestWebGetTradeOffersSummary;
-class UUWorksRequestWebGetTradeOffers;
-class UUWorksRequestWebGetTradeOffer;
-class UUWorksRequestWebGetTradeHistory;
-class UUWorksRequestWebFlushInventoryCache;
-class UUWorksRequestWebFlushContextCache;
-class UUWorksRequestWebFlushAssetAppearanceCache;
-class UUWorksRequestWebDeclineTradeOffer;
-class UUWorksRequestWebCancelTradeOffer;
+UUWorksInterfaceWebEcon::UUWorksInterfaceWebEcon() {
+}
 
 void UUWorksInterfaceWebEcon::GetTradeOffersSummaryMinimal(const FString& Key, int32 TimeLastVisit, const FGetTradeOffersSummaryMinimalDelegate& Delegate) {
 }
@@ -73,6 +66,4 @@ UUWorksRequestWebCancelTradeOffer* UUWorksInterfaceWebEcon::CancelTradeOffer() {
     return NULL;
 }
 
-UUWorksInterfaceWebEcon::UUWorksInterfaceWebEcon() {
-}
 

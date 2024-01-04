@@ -1,12 +1,17 @@
 #include "VRGripScriptBase.h"
 #include "Templates/SubclassOf.h"
 
-class UGripMotionControllerComponent;
-class USceneComponent;
-class UObject;
-class AActor;
-class UPrimitiveComponent;
-class UVRGripScriptBase;
+UVRGripScriptBase::UVRGripScriptBase() {
+    this->bIsActive = false;
+    this->WorldTransformOverrideType = EGSTransformOverrideType::None;
+    this->bDenyAutoDrop = false;
+    this->bForceDrop = false;
+    this->bDenyLateUpdates = false;
+    this->bInjectPrePhysicsHandle = false;
+    this->bInjectPostPhysicsHandle = false;
+    this->bCanEverTick = false;
+    this->bAllowTicking = false;
+}
 
 bool UVRGripScriptBase::Wants_DenyTeleport_Implementation(UGripMotionControllerComponent* Controller) {
     return false;
@@ -72,15 +77,4 @@ UVRGripScriptBase* UVRGripScriptBase::GetGripScriptByClass(UObject* WorldContext
 void UVRGripScriptBase::ForceGripToDrop() {
 }
 
-UVRGripScriptBase::UVRGripScriptBase() {
-    this->bIsActive = false;
-    this->WorldTransformOverrideType = EGSTransformOverrideType::None;
-    this->bDenyAutoDrop = false;
-    this->bForceDrop = false;
-    this->bDenyLateUpdates = false;
-    this->bInjectPrePhysicsHandle = false;
-    this->bInjectPostPhysicsHandle = false;
-    this->bCanEverTick = false;
-    this->bAllowTicking = false;
-}
 

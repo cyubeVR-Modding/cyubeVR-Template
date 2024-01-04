@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreFileReadAsync.h"
 
+UUWorksRequestCoreFileReadAsync::UUWorksRequestCoreFileReadAsync() {
+}
+
 void UUWorksRequestCoreFileReadAsync::SetInput(const FString& File, int32 Offset, int32 BytesToRead) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreFileReadAsync::Deactivate() {
 void UUWorksRequestCoreFileReadAsync::Activate() {
 }
 
-UUWorksRequestCoreFileReadAsync::UUWorksRequestCoreFileReadAsync() {
-}
 

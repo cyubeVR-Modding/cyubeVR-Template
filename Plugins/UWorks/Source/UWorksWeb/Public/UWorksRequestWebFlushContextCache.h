@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "FlushContextCacheDelegateDelegate.h"
 #include "FlushContextCacheMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebFlushContextCache.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FFlushContextCacheMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebFlushContextCache();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, int32 AppID);
     

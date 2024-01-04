@@ -1,22 +1,23 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UpdateTagsMinimalDelegateDelegate.h"
-#include "UWorksInterfaceWeb.h"
 #include "UWorksPublishedFileID.h"
-#include "SetDeveloperMetadataMinimalDelegateDelegate.h"
-#include "UWorksRequiredKVTags.h"
 #include "QueryFilesMinimalDelegateDelegate.h"
+#include "SetDeveloperMetadataMinimalDelegateDelegate.h"
+#include "UWorksInterfaceWeb.h"
+#include "UWorksRequiredKVTags.h"
+#include "UpdateTagsMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebPublishedFile.generated.h"
 
-class UUWorksRequestWebUpdateTags;
-class UUWorksRequestWebSetDeveloperMetadata;
 class UUWorksRequestWebQueryFiles;
+class UUWorksRequestWebSetDeveloperMetadata;
+class UUWorksRequestWebUpdateTags;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebPublishedFile : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:
     UUWorksInterfaceWebPublishedFile();
+
     UFUNCTION(BlueprintCallable)
     static void UpdateTagsMinimal(const FString& Key, FUWorksPublishedFileID PublishedFileID, int32 AppID, TArray<FString> AddTags, TArray<FString> RemoveTags, const FUpdateTagsMinimalDelegate& Delegate);
     

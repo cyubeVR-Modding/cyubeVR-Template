@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreGetNumberOfCurrentPlayers.h"
 
+UUWorksRequestCoreGetNumberOfCurrentPlayers::UUWorksRequestCoreGetNumberOfCurrentPlayers() {
+}
+
 bool UUWorksRequestCoreGetNumberOfCurrentPlayers::IsActive() {
     return false;
 }
@@ -13,6 +16,4 @@ void UUWorksRequestCoreGetNumberOfCurrentPlayers::Deactivate() {
 void UUWorksRequestCoreGetNumberOfCurrentPlayers::Activate() {
 }
 
-UUWorksRequestCoreGetNumberOfCurrentPlayers::UUWorksRequestCoreGetNumberOfCurrentPlayers() {
-}
 

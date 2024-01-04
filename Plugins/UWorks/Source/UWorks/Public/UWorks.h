@@ -8,5 +8,6 @@ class UWORKS_API UUWorks : public UObject {
     GENERATED_BODY()
 public:
     UUWorks();
+
 };
 

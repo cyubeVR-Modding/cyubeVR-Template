@@ -1,13 +1,7 @@
 #include "UWorksInterfaceWebEconomy.h"
 
-class UUWorksRequestWebGetAssetClassInfo;
-class UUWorksRequestWebStartTrade;
-class UUWorksRequestWebStartAssetTransaction;
-class UUWorksRequestWebGetMarketPrices;
-class UUWorksRequestWebGetExportedAssetsForUser;
-class UUWorksRequestWebGetAssetPrices;
-class UUWorksRequestWebFinalizeAssetTransaction;
-class UUWorksRequestWebCanTrade;
+UUWorksInterfaceWebEconomy::UUWorksInterfaceWebEconomy() {
+}
 
 void UUWorksInterfaceWebEconomy::StartTradeMinimal(const FString& Key, int32 AppID, FUWorksSteamID PartyA, FUWorksSteamID PartyB, const FStartTradeMinimalDelegate& Delegate) {
 }
@@ -65,6 +59,4 @@ UUWorksRequestWebCanTrade* UUWorksInterfaceWebEconomy::CanTrade() {
     return NULL;
 }
 
-UUWorksInterfaceWebEconomy::UUWorksInterfaceWebEconomy() {
-}
 

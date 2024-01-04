@@ -1,6 +1,7 @@
 #include "CoreRequestGlobalAchievementPercentagesNode.h"
 
-class UCoreRequestGlobalAchievementPercentagesNode;
+UCoreRequestGlobalAchievementPercentagesNode::UCoreRequestGlobalAchievementPercentagesNode() {
+}
 
 UCoreRequestGlobalAchievementPercentagesNode* UCoreRequestGlobalAchievementPercentagesNode::RequestGlobalAchievementPercentagesNode() {
     return NULL;
@@ -9,6 +10,4 @@ UCoreRequestGlobalAchievementPercentagesNode* UCoreRequestGlobalAchievementPerce
 void UCoreRequestGlobalAchievementPercentagesNode::OnRequestCompleted(bool bSuccessful, FUWorksGameID GameID, EUWorksResult Result) {
 }
 
-UCoreRequestGlobalAchievementPercentagesNode::UCoreRequestGlobalAchievementPercentagesNode() {
-}
 

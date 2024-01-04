@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "GetServersAtAddressDelegateDelegate.h"
 #include "GetServersAtAddressMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetServersAtAddress.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FGetServersAtAddressMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetServersAtAddress();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Addr);
     

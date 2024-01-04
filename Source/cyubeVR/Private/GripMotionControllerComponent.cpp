@@ -1,11 +1,21 @@
 #include "GripMotionControllerComponent.h"
-#include "Net/UnrealNetwork.h"
 #include "GS_Default.h"
+#include "Net/UnrealNetwork.h"
 
-class UPrimitiveComponent;
-class AActor;
-class UObject;
-class USceneComponent;
+UGripMotionControllerComponent::UGripMotionControllerComponent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->DefaultGripScriptClass = UGS_Default::StaticClass();
+    this->DefaultGripScript = NULL;
+    this->bOffsetByHMD = false;
+    this->VelocityCalculationType = EVRVelocityType::VRLOCITY_Default;
+    this->bSampleVelocityInWorldSpace = false;
+    this->VelocitySamples = 30;
+    this->bOffsetByControllerProfile = true;
+    this->bAlwaysSendTickGrip = false;
+    this->ControllerNetUpdateRate = 100.00f;
+    this->bSmoothReplicatedMotion = false;
+    this->bReplicateWithoutTracking = false;
+    this->bUseWithoutTracking = false;
+}
 
 void UGripMotionControllerComponent::UpdatePhysicsHandleTransform_BP(const FBPActorGripInformation& GrippedActor, const FTransform& NewTransform) {
 }
@@ -320,18 +330,4 @@ void UGripMotionControllerComponent::GetLifetimeReplicatedProps(TArray<FLifetime
     DOREPLIFETIME(UGripMotionControllerComponent, bReplicateWithoutTracking);
 }
 
-UGripMotionControllerComponent::UGripMotionControllerComponent() {
-    this->DefaultGripScriptClass = UGS_Default::StaticClass();
-    this->DefaultGripScript = NULL;
-    this->bOffsetByHMD = false;
-    this->VelocityCalculationType = EVRVelocityType::VRLOCITY_Default;
-    this->bSampleVelocityInWorldSpace = false;
-    this->VelocitySamples = 30;
-    this->bOffsetByControllerProfile = true;
-    this->bAlwaysSendTickGrip = false;
-    this->ControllerNetUpdateRate = 100.00f;
-    this->bSmoothReplicatedMotion = false;
-    this->bReplicateWithoutTracking = false;
-    this->bUseWithoutTracking = false;
-}
 

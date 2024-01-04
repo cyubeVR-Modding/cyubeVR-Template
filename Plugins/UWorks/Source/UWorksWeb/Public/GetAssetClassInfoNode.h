@@ -14,6 +14,7 @@ public:
     FGetAssetClassInfoDelegate Completed;
     
     UGetAssetClassInfoNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

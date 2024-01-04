@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreDownloadLeaderboardEntries.h"
 
+UUWorksRequestCoreDownloadLeaderboardEntries::UUWorksRequestCoreDownloadLeaderboardEntries() {
+}
+
 void UUWorksRequestCoreDownloadLeaderboardEntries::SetInput(FUWorksSteamLeaderboard SteamLeaderboard, EUWorksLeaderboardDataRequest LeaderboardDataRequest, int32 RangeStart, int32 RangeEnd) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreDownloadLeaderboardEntries::Deactivate() {
 void UUWorksRequestCoreDownloadLeaderboardEntries::Activate() {
 }
 
-UUWorksRequestCoreDownloadLeaderboardEntries::UUWorksRequestCoreDownloadLeaderboardEntries() {
-}
 

@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "CreateLobbyDelegateDelegate.h"
 #include "UWorksSteamID.h"
-#include "EUWorksResult.h"
+#include "CreateLobbyDelegateDelegate.h"
 #include "EUWorksLobbyType.h"
+#include "EUWorksResult.h"
 #include "CoreCreateLobbyNode.generated.h"
 
 class UCoreCreateLobbyNode;
@@ -17,6 +17,7 @@ public:
     FCreateLobbyDelegate Completed;
     
     UCoreCreateLobbyNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, EUWorksResult Result, FUWorksSteamID SteamIDLobby);
     

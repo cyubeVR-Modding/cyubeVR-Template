@@ -1,6 +1,7 @@
 #include "CanTradeNode.h"
 
-class UCanTradeNode;
+UCanTradeNode::UCanTradeNode() {
+}
 
 void UCanTradeNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UCanTradeNode* UCanTradeNode::CanTradeNode(const FString& Key, int32 AppID, FUWo
     return NULL;
 }
 
-UCanTradeNode::UCanTradeNode() {
-}
 

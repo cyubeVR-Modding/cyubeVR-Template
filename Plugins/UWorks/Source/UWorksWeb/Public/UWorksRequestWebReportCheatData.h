@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ReportCheatDataDelegateDelegate.h"
-#include "UWorksRequestWeb.h"
-#include "ReportCheatDataMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "ReportCheatDataDelegateDelegate.h"
+#include "ReportCheatDataMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebReportCheatData.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FReportCheatDataMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebReportCheatData();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, FUWorksSteamID SteamID, int32 AppID, const FString& PathAndFileName, const FString& WebCheatURL, const FString& TimeNow, const FString& TimeStarted, const FString& TimeStopped, const FString& CheatName, int32 GameProcessID, int32 CheatProcessID, const FString& CheatParamA, const FString& CheatParamB);
     

@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
-#include "ERotation.h"
 #include "UObject/NoExportTypes.h"
+#include "GameFramework/Actor.h"
 #include "EBlockTypeBP.h"
-#include "torch.generated.h"
+#include "ERotation.h"
+#include "Torch.generated.h"
 
 class UParticleSystemComponent;
 
 UCLASS(Blueprintable)
-class CYUBEVR_API Atorch : public AActor {
+class CYUBEVR_API ATorch : public AActor {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
@@ -30,7 +30,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     ERotation Rotation;
     
-    Atorch();
+    ATorch(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void SetColor(FColor Color_, EBlockTypeBP Type);
     

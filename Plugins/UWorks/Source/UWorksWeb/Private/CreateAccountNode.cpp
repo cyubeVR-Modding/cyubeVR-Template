@@ -1,6 +1,7 @@
 #include "CreateAccountNode.h"
 
-class UCreateAccountNode;
+UCreateAccountNode::UCreateAccountNode() {
+}
 
 void UCreateAccountNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UCreateAccountNode* UCreateAccountNode::CreateAccountNode(const FString& Key, in
     return NULL;
 }
 
-UCreateAccountNode::UCreateAccountNode() {
-}
 

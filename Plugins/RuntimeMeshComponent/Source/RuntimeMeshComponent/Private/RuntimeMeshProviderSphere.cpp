@@ -1,6 +1,15 @@
 #include "RuntimeMeshProviderSphere.h"
 
-class UMaterialInterface;
+URuntimeMeshProviderSphere::URuntimeMeshProviderSphere() {
+    this->MaxLOD = 5;
+    this->SphereRadius = 100.00f;
+    this->MaxLatitudeSegments = 32;
+    this->MinLatitudeSegments = 8;
+    this->MaxLongitudeSegments = 16;
+    this->MinLongitudeSegments = 5;
+    this->LODMultiplier = 0.75f;
+    this->SphereMaterial = NULL;
+}
 
 void URuntimeMeshProviderSphere::SetSphereRadius(float InSphereRadius) {
 }
@@ -51,14 +60,4 @@ float URuntimeMeshProviderSphere::GetLODMultiplier() const {
     return 0.0f;
 }
 
-URuntimeMeshProviderSphere::URuntimeMeshProviderSphere() {
-    this->MaxLOD = 5;
-    this->SphereRadius = 100.00f;
-    this->MaxLatitudeSegments = 32;
-    this->MinLatitudeSegments = 8;
-    this->MaxLongitudeSegments = 16;
-    this->MinLongitudeSegments = 5;
-    this->LODMultiplier = 0.75f;
-    this->SphereMaterial = NULL;
-}
 

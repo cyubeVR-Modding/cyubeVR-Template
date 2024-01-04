@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
 #include "UWorksPublishedFileID.h"
-#include "EUWorksWorkshopFileType.h"
 #include "CreateItemDelegateDelegate.h"
 #include "CreateItemMinimalDelegateDelegate.h"
 #include "EUWorksResult.h"
+#include "EUWorksWorkshopFileType.h"
+#include "UWorksRequestCore.h"
 #include "UWorksRequestCoreCreateItem.generated.h"
 
 UCLASS(Blueprintable)
@@ -19,6 +19,7 @@ public:
     FCreateItemMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreCreateItem();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(int32 ConsumerAppID, EUWorksWorkshopFileType fileType);
     

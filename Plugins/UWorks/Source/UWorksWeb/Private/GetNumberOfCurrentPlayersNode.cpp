@@ -1,6 +1,7 @@
 #include "GetNumberOfCurrentPlayersNode.h"
 
-class UGetNumberOfCurrentPlayersNode;
+UGetNumberOfCurrentPlayersNode::UGetNumberOfCurrentPlayersNode() {
+}
 
 void UGetNumberOfCurrentPlayersNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetNumberOfCurrentPlayersNode* UGetNumberOfCurrentPlayersNode::GetNumberOfCurre
     return NULL;
 }
 
-UGetNumberOfCurrentPlayersNode::UGetNumberOfCurrentPlayersNode() {
-}
 

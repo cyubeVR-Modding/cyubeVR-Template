@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreFileWriteAsync.h"
 
+UUWorksRequestCoreFileWriteAsync::UUWorksRequestCoreFileWriteAsync() {
+}
+
 void UUWorksRequestCoreFileWriteAsync::SetInput(const FString& File, TArray<uint8> Buffer) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreFileWriteAsync::Deactivate() {
 void UUWorksRequestCoreFileWriteAsync::Activate() {
 }
 
-UUWorksRequestCoreFileWriteAsync::UUWorksRequestCoreFileWriteAsync() {
-}
 

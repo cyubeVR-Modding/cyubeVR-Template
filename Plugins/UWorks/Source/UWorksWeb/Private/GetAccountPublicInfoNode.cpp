@@ -1,6 +1,7 @@
 #include "GetAccountPublicInfoNode.h"
 
-class UGetAccountPublicInfoNode;
+UGetAccountPublicInfoNode::UGetAccountPublicInfoNode() {
+}
 
 void UGetAccountPublicInfoNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetAccountPublicInfoNode* UGetAccountPublicInfoNode::GetAccountPublicInfoNode(c
     return NULL;
 }
 
-UGetAccountPublicInfoNode::UGetAccountPublicInfoNode() {
-}
 

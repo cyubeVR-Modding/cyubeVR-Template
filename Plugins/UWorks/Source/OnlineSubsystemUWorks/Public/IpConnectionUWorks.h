@@ -8,5 +8,6 @@ class ONLINESUBSYSTEMUWORKS_API UIpConnectionUWorks : public UIpConnection {
     GENERATED_BODY()
 public:
     UIpConnectionUWorks();
+
 };
 

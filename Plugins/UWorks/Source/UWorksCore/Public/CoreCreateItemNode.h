@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "EUWorksWorkshopFileType.h"
 #include "UWorksPublishedFileID.h"
 #include "CreateItemDelegateDelegate.h"
 #include "EUWorksResult.h"
+#include "EUWorksWorkshopFileType.h"
 #include "CoreCreateItemNode.generated.h"
 
 class UCoreCreateItemNode;
@@ -17,6 +17,7 @@ public:
     FCreateItemDelegate Completed;
     
     UCoreCreateItemNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, EUWorksResult Result, FUWorksPublishedFileID PublishedFileID, bool bUserNeedsToAcceptWorkshopLegalAgreement);
     

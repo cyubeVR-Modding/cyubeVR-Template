@@ -4,13 +4,13 @@
 #include "BenchmarkResults.h"
 #include "CubeGameInstance.generated.h"
 
-class UTexture2DArray;
-class USoundBase;
-class UCustomBlockManager;
-class UTexture2D;
 class UAudioComponent;
-class UTextureRenderTarget2D;
+class UCustomBlockManager;
 class UMaterialParameterCollection;
+class USoundBase;
+class UTexture2D;
+class UTexture2DArray;
+class UTextureRenderTarget2D;
 
 UCLASS(Blueprintable, NonTransient)
 class CYUBEVR_API UCubeGameInstance : public UGameInstance {
@@ -73,7 +73,11 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<FString> DefaultRecommendedWorkshopItems;
     
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    int32 CustomBlockVRAMUsageMB;
+    
     UCubeGameInstance();
+
     UFUNCTION(BlueprintCallable)
     void UpdateTextureArrays();
     
@@ -82,9 +86,6 @@ public:
     
     UFUNCTION(BlueprintCallable)
     void UpdateArraySize(UTexture2DArray* ArrayToResize, int32 NumSlices);
-    
-    UFUNCTION(BlueprintCallable)
-    void TestCopyTextureArray(UTexture2DArray* TextureArray);
     
     UFUNCTION(BlueprintCallable)
     void TestCopyTexture2(UTexture2D* Texture, UTexture2D* TextureNew);
@@ -102,7 +103,7 @@ public:
     void StartLoadingScreenMusic();
     
     UFUNCTION(BlueprintCallable)
-    void SetupWorldLoad(bool LoadExistingWorld_, const FString& WorldName_, const FString& NewSeed_, TArray<FString> WorldNames, TArray<int32> WorldSeeds);
+    void SetupWorldLoad(bool LoadExistingWorld_, const FString& WorldName_, const FString& NewSeed_, int32 PregeneratedWorldID_, TArray<FString> WorldNames, TArray<int32> WorldSeeds, TArray<int32> WorldPregeneratedIDs_);
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void RenderCustomBlockLUT();
@@ -115,6 +116,9 @@ public:
     
     UFUNCTION(BlueprintCallable)
     void KillPIDs();
+    
+    UFUNCTION(BlueprintCallable)
+    UTexture2D* GetFirstLoadedRecipeTexture();
     
     UFUNCTION(BlueprintCallable)
     void GetBenchmarkResults(FBenchmarkResults& Results, bool& Valid);

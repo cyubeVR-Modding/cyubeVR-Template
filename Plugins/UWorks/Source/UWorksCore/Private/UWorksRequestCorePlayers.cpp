@@ -1,5 +1,8 @@
 #include "UWorksRequestCorePlayers.h"
 
+UUWorksRequestCorePlayers::UUWorksRequestCorePlayers() {
+}
+
 void UUWorksRequestCorePlayers::SetInput(const FString& IP, int32 Port) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCorePlayers::Deactivate() {
 void UUWorksRequestCorePlayers::Activate() {
 }
 
-UUWorksRequestCorePlayers::UUWorksRequestCorePlayers() {
-}
 

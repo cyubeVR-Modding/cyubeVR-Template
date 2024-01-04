@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
-#include "FlushInventoryCacheDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "FlushInventoryCacheDelegateDelegate.h"
 #include "FlushInventoryCacheMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebFlushInventoryCache.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FFlushInventoryCacheMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebFlushInventoryCache();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, FUWorksSteamID SteamID, int32 AppID, const FString& ContextID);
     

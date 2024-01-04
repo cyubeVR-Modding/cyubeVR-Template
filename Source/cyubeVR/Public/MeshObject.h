@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ReceiveLightActor.h"
 #include "EBlockTypeBP.h"
+#include "ReceiveLightActor.h"
 #include "MeshObject.generated.h"
 
-class UStaticMeshComponent;
 class UBoxComponent;
+class UStaticMeshComponent;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API AMeshObject : public AReceiveLightActor {
@@ -29,7 +29,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     TArray<UStaticMeshComponent*> PreviewMaterialIgnoreComponents;
     
-    AMeshObject();
+    AMeshObject(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void SetReadyForSaving();
     

@@ -1,6 +1,7 @@
 #include "FlushContextCacheNode.h"
 
-class UFlushContextCacheNode;
+UFlushContextCacheNode::UFlushContextCacheNode() {
+}
 
 void UFlushContextCacheNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UFlushContextCacheNode* UFlushContextCacheNode::FlushContextCacheNode(const FStr
     return NULL;
 }
 
-UFlushContextCacheNode::UFlushContextCacheNode() {
-}
 

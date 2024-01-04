@@ -1,14 +1,7 @@
 #include "UWorksInterfaceWebInventory.h"
 
-class UUWorksRequestWebGetPriceSheet;
-class UUWorksRequestWebGetQuantity;
-class UUWorksRequestWebGetItemDefs;
-class UUWorksRequestWebGetInventory;
-class UUWorksRequestWebAddItem;
-class UUWorksRequestWebExchangeItem;
-class UUWorksRequestWebConsumeItem;
-class UUWorksRequestWebConsolidate;
-class UUWorksRequestWebAddPromoItem;
+UUWorksInterfaceWebInventory::UUWorksInterfaceWebInventory() {
+}
 
 void UUWorksInterfaceWebInventory::GetQuantityMinimal(const FString& Key, int32 AppID, FUWorksSteamID SteamID, FUWorksSteamItemDef ItemDefID, bool bForce, const FGetQuantityMinimalDelegate& Delegate) {
 }
@@ -73,6 +66,4 @@ UUWorksRequestWebAddItem* UUWorksInterfaceWebInventory::AddItem() {
     return NULL;
 }
 
-UUWorksInterfaceWebInventory::UUWorksInterfaceWebInventory() {
-}
 

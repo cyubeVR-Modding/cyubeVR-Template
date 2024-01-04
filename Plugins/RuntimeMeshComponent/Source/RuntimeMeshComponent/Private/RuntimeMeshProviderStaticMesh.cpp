@@ -1,6 +1,10 @@
 #include "RuntimeMeshProviderStaticMesh.h"
 
-class UStaticMesh;
+URuntimeMeshProviderStaticMesh::URuntimeMeshProviderStaticMesh() {
+    this->StaticMesh = NULL;
+    this->MaxLOD = 8;
+    this->ComplexCollisionLOD = 0;
+}
 
 void URuntimeMeshProviderStaticMesh::SetStaticMesh(UStaticMesh* InStaticMesh) {
 }
@@ -23,9 +27,4 @@ int32 URuntimeMeshProviderStaticMesh::GetComplexCollisionLOD() const {
     return 0;
 }
 
-URuntimeMeshProviderStaticMesh::URuntimeMeshProviderStaticMesh() {
-    this->StaticMesh = NULL;
-    this->MaxLOD = 8;
-    this->ComplexCollisionLOD = 0;
-}
 

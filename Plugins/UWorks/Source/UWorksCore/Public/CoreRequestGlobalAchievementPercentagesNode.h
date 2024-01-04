@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "RequestGlobalAchievementPercentagesDelegateDelegate.h"
 #include "UWorksGameID.h"
 #include "EUWorksResult.h"
+#include "RequestGlobalAchievementPercentagesDelegateDelegate.h"
 #include "CoreRequestGlobalAchievementPercentagesNode.generated.h"
 
 class UCoreRequestGlobalAchievementPercentagesNode;
@@ -16,6 +16,7 @@ public:
     FRequestGlobalAchievementPercentagesDelegate Completed;
     
     UCoreRequestGlobalAchievementPercentagesNode();
+
     UFUNCTION(BlueprintCallable)
     static UCoreRequestGlobalAchievementPercentagesNode* RequestGlobalAchievementPercentagesNode();
     

@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "ERuntimeMeshCollisionCookingMode.h"
+#include "RuntimeMeshCollisionBox.h"
+#include "RuntimeMeshCollisionCapsule.h"
 #include "RuntimeMeshCollisionConvexMesh.h"
 #include "RuntimeMeshCollisionSphere.h"
-#include "RuntimeMeshCollisionCapsule.h"
-#include "RuntimeMeshCollisionBox.h"
 #include "RuntimeMeshCollisionSettings.generated.h"
 
 USTRUCT(BlueprintType)

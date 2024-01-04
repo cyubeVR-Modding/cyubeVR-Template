@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SetDeveloperMetadataDelegateDelegate.h"
-#include "UWorksRequestWeb.h"
-#include "SetDeveloperMetadataMinimalDelegateDelegate.h"
 #include "UWorksPublishedFileID.h"
+#include "SetDeveloperMetadataDelegateDelegate.h"
+#include "SetDeveloperMetadataMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebSetDeveloperMetadata.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FSetDeveloperMetadataMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebSetDeveloperMetadata();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, FUWorksPublishedFileID PublishedFileID, int32 AppID, const FString& MetaData);
     

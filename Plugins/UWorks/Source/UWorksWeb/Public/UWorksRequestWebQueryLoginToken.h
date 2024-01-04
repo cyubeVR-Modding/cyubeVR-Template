@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
-#include "QueryLoginTokenMinimalDelegateDelegate.h"
 #include "QueryLoginTokenDelegateDelegate.h"
+#include "QueryLoginTokenMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebQueryLoginToken.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FQueryLoginTokenMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebQueryLoginToken();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, const FString& LoginToken);
     

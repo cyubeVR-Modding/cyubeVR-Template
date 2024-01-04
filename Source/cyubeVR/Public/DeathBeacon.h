@@ -10,6 +10,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float RemainingLife;
     
-    ADeathBeacon();
+    ADeathBeacon(const FObjectInitializer& ObjectInitializer);
+
 };
 

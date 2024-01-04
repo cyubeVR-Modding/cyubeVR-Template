@@ -14,6 +14,7 @@ public:
     FDeleteLeaderboardDelegate Completed;
     
     UDeleteLeaderboardNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

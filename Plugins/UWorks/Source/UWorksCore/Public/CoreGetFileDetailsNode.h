@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "GetFileDetailsDelegateDelegate.h"
 #include "EUWorksResult.h"
+#include "GetFileDetailsDelegateDelegate.h"
 #include "CoreGetFileDetailsNode.generated.h"
 
 class UCoreGetFileDetailsNode;
@@ -15,6 +15,7 @@ public:
     FGetFileDetailsDelegate Completed;
     
     UCoreGetFileDetailsNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, EUWorksResult Result, int32 fileSize, const FString& FileSHA, const TArray<int32>& FileFlags);
     

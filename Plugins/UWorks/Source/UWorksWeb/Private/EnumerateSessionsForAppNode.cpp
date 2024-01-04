@@ -1,6 +1,7 @@
 #include "EnumerateSessionsForAppNode.h"
 
-class UEnumerateSessionsForAppNode;
+UEnumerateSessionsForAppNode::UEnumerateSessionsForAppNode() {
+}
 
 void UEnumerateSessionsForAppNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UEnumerateSessionsForAppNode* UEnumerateSessionsForAppNode::EnumerateSessionsFor
     return NULL;
 }
 
-UEnumerateSessionsForAppNode::UEnumerateSessionsForAppNode() {
-}
 

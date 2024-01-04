@@ -1,6 +1,7 @@
 #include "CoreCreateLobbyNode.h"
 
-class UCoreCreateLobbyNode;
+UCoreCreateLobbyNode::UCoreCreateLobbyNode() {
+}
 
 void UCoreCreateLobbyNode::OnRequestCompleted(bool bSuccessful, EUWorksResult Result, FUWorksSteamID SteamIDLobby) {
 }
@@ -9,6 +10,4 @@ UCoreCreateLobbyNode* UCoreCreateLobbyNode::CreateLobbyNode(EUWorksLobbyType Lob
     return NULL;
 }
 
-UCoreCreateLobbyNode::UCoreCreateLobbyNode() {
-}
 

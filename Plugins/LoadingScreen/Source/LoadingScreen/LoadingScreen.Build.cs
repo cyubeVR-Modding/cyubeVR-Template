@@ -11,7 +11,6 @@ public class LoadingScreen : ModuleRules {
             "CoreUObject",
             "DeveloperSettings",
             "Engine",
-            "InputCore",
             "MoviePlayer",
             "Slate",
             "SlateCore",

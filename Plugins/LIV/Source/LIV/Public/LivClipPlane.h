@@ -15,7 +15,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UMaterialInterface* ClipPlaneDebugMaterial;
     
-    ULivClipPlane();
+    ULivClipPlane(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void SetDebugEnabled(bool bDebugEnabled);
     

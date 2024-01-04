@@ -1,6 +1,7 @@
 #include "CoreStoreUserStatsNode.h"
 
-class UCoreStoreUserStatsNode;
+UCoreStoreUserStatsNode::UCoreStoreUserStatsNode() {
+}
 
 UCoreStoreUserStatsNode* UCoreStoreUserStatsNode::StoreUserStatsNode(FUWorksSteamID SteamIDUser) {
     return NULL;
@@ -9,6 +10,4 @@ UCoreStoreUserStatsNode* UCoreStoreUserStatsNode::StoreUserStatsNode(FUWorksStea
 void UCoreStoreUserStatsNode::OnRequestCompleted(bool bSuccessful, EUWorksResult Result, FUWorksSteamID SteamIDUser) {
 }
 
-UCoreStoreUserStatsNode::UCoreStoreUserStatsNode() {
-}
 

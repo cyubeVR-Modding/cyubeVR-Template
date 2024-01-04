@@ -27,7 +27,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
     int32 Priority;
     
-    UVRStereoWidgetComponent();
+    UVRStereoWidgetComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void SetPriority(int32 InPriority);
     

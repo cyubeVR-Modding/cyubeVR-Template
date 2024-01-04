@@ -1,7 +1,7 @@
 #include "UWorksInterfaceCoreInventory.h"
 
-class UUWorksRequestCoreRequestEligiblePromoItemDefinitionsIDs;
-class UUWorksInterfaceCoreInventory;
+UUWorksInterfaceCoreInventory::UUWorksInterfaceCoreInventory() {
+}
 
 bool UUWorksInterfaceCoreInventory::TriggerItemDrop(FUWorksSteamInventoryResult& Handle, FUWorksSteamItemDef ItemDefinition) {
     return false;
@@ -105,6 +105,4 @@ bool UUWorksInterfaceCoreInventory::AddPromoItem(FUWorksSteamInventoryResult& Ha
     return false;
 }
 
-UUWorksInterfaceCoreInventory::UUWorksInterfaceCoreInventory() {
-}
 

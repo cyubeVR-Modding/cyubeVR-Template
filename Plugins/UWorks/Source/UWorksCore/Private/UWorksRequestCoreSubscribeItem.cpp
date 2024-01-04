@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreSubscribeItem.h"
 
+UUWorksRequestCoreSubscribeItem::UUWorksRequestCoreSubscribeItem() {
+}
+
 void UUWorksRequestCoreSubscribeItem::SetInput(FUWorksPublishedFileID PublishedFileID) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreSubscribeItem::Deactivate() {
 void UUWorksRequestCoreSubscribeItem::Activate() {
 }
 
-UUWorksRequestCoreSubscribeItem::UUWorksRequestCoreSubscribeItem() {
-}
 

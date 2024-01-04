@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "RequestPlayerGameBanDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "RequestPlayerGameBanDelegateDelegate.h"
 #include "RequestPlayerGameBanNode.generated.h"
 
 class URequestPlayerGameBanNode;
@@ -15,6 +15,7 @@ public:
     FRequestPlayerGameBanDelegate Completed;
     
     URequestPlayerGameBanNode();
+
     UFUNCTION(BlueprintCallable)
     static URequestPlayerGameBanNode* RequestPlayerGameBanNode(const FString& Key, FUWorksSteamID SteamID, int32 AppID, FUWorksSteamID ReportID, const FString& CheatDescription, int32 Duration, bool bDelayBan);
     

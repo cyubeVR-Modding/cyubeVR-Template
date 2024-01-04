@@ -1,5 +1,6 @@
 #include "CustomAudioComponent.h"
 
-UCustomAudioComponent::UCustomAudioComponent() {
+UCustomAudioComponent::UCustomAudioComponent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 }
+
 

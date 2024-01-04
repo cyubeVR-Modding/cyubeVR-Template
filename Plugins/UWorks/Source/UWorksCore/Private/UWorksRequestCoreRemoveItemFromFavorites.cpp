@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreRemoveItemFromFavorites.h"
 
+UUWorksRequestCoreRemoveItemFromFavorites::UUWorksRequestCoreRemoveItemFromFavorites() {
+}
+
 void UUWorksRequestCoreRemoveItemFromFavorites::SetInput(int32 AppID, FUWorksPublishedFileID PublishedFileID) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreRemoveItemFromFavorites::Deactivate() {
 void UUWorksRequestCoreRemoveItemFromFavorites::Activate() {
 }
 
-UUWorksRequestCoreRemoveItemFromFavorites::UUWorksRequestCoreRemoveItemFromFavorites() {
-}
 

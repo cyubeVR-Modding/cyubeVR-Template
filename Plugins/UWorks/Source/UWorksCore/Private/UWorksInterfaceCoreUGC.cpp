@@ -1,18 +1,7 @@
 #include "UWorksInterfaceCoreUGC.h"
 
-class UUWorksRequestCoreUnsubscribeItem;
-class UUWorksRequestCoreSubmitItemUpdate;
-class UUWorksRequestCoreSubscribeItem;
-class UUWorksRequestCoreGetUserItemVote;
-class UUWorksRequestCoreStopPlaytimeTrackingForAllItems;
-class UUWorksRequestCoreStopPlaytimeTracking;
-class UUWorksRequestCoreStartPlaytimeTracking;
-class UUWorksRequestCoreSendQueryUGCRequest;
-class UUWorksRequestCoreSetUserItemVote;
-class UUWorksRequestCoreRemoveItemFromFavorites;
-class UUWorksInterfaceCoreUGC;
-class UUWorksRequestCoreCreateItem;
-class UUWorksRequestCoreAddItemToFavorites;
+UUWorksInterfaceCoreUGC::UUWorksInterfaceCoreUGC() {
+}
 
 bool UUWorksInterfaceCoreUGC::UpdateItemPreviewVideo(FUWorksUGCUpdateHandle Handle, int32 Index, const FString& PreviewVideo) {
     return false;
@@ -317,6 +306,4 @@ bool UUWorksInterfaceCoreUGC::AddExcludedTag(FUWorksUGCQueryHandle Handle, const
     return false;
 }
 
-UUWorksInterfaceCoreUGC::UUWorksInterfaceCoreUGC() {
-}
 

@@ -16,6 +16,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     URuntimeMeshProviderStatic* RuntimeMeshProvider;
     
-    AProceduralRavenCrowds();
+    AProceduralRavenCrowds(const FObjectInitializer& ObjectInitializer);
+
 };
 

@@ -1,5 +1,8 @@
 #include "FileFunctionsWebCom.h"
 
+UFileFunctionsWebCom::UFileFunctionsWebCom() {
+}
+
 void UFileFunctionsWebCom::writeStringToFile(EFileFunctionsWebComDirectoryType DirectoryType, const FString& Data, const FString& FilePath, bool& success) {
 }
 
@@ -80,6 +83,4 @@ TArray<uint8> UFileFunctionsWebCom::base64StringToBytes(EFileFunctionsWebComDire
 void UFileFunctionsWebCom::addBytesToFile(EFileFunctionsWebComDirectoryType DirectoryType, const FString& FilePath, TArray<uint8> Bytes, bool& success) {
 }
 
-UFileFunctionsWebCom::UFileFunctionsWebCom() {
-}
 

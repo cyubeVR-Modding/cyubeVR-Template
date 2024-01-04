@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "StopPlaytimeTrackingForAllItemsDelegateDelegate.h"
 #include "EUWorksResult.h"
+#include "StopPlaytimeTrackingForAllItemsDelegateDelegate.h"
 #include "CoreStopPlaytimeTrackingForAllItemsNode.generated.h"
 
 class UCoreStopPlaytimeTrackingForAllItemsNode;
@@ -15,6 +15,7 @@ public:
     FStopPlaytimeTrackingForAllItemsDelegate Completed;
     
     UCoreStopPlaytimeTrackingForAllItemsNode();
+
     UFUNCTION(BlueprintCallable)
     static UCoreStopPlaytimeTrackingForAllItemsNode* StopPlaytimeTrackingForAllItemsNode();
     

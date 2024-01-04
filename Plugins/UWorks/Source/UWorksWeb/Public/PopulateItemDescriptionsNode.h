@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksLanguages.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "PopulateItemDescriptionsDelegateDelegate.h"
+#include "UWorksLanguages.h"
 #include "PopulateItemDescriptionsNode.generated.h"
 
 class UPopulateItemDescriptionsNode;
@@ -15,6 +15,7 @@ public:
     FPopulateItemDescriptionsDelegate Completed;
     
     UPopulateItemDescriptionsNode();
+
     UFUNCTION(BlueprintCallable)
     static UPopulateItemDescriptionsNode* PopulateItemDescriptionsNode(const FString& Key, int32 AppID, FUWorksLanguages Languages);
     

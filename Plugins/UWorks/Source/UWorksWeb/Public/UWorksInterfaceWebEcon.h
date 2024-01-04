@@ -1,33 +1,34 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetTradeHistoryMinimalDelegateDelegate.h"
-#include "UWorksInterfaceWeb.h"
-#include "GetTradeOffersSummaryMinimalDelegateDelegate.h"
-#include "GetTradeOffersMinimalDelegateDelegate.h"
-#include "GetTradeOfferMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
-#include "FlushInventoryCacheMinimalDelegateDelegate.h"
-#include "FlushContextCacheMinimalDelegateDelegate.h"
-#include "FlushAssetAppearanceCacheMinimalDelegateDelegate.h"
-#include "DeclineTradeOfferMinimalDelegateDelegate.h"
 #include "CancelTradeOfferMinimalDelegateDelegate.h"
+#include "DeclineTradeOfferMinimalDelegateDelegate.h"
+#include "FlushAssetAppearanceCacheMinimalDelegateDelegate.h"
+#include "FlushContextCacheMinimalDelegateDelegate.h"
+#include "FlushInventoryCacheMinimalDelegateDelegate.h"
+#include "GetTradeHistoryMinimalDelegateDelegate.h"
+#include "GetTradeOfferMinimalDelegateDelegate.h"
+#include "GetTradeOffersMinimalDelegateDelegate.h"
+#include "GetTradeOffersSummaryMinimalDelegateDelegate.h"
+#include "UWorksInterfaceWeb.h"
 #include "UWorksInterfaceWebEcon.generated.h"
 
+class UUWorksRequestWebCancelTradeOffer;
+class UUWorksRequestWebDeclineTradeOffer;
+class UUWorksRequestWebFlushAssetAppearanceCache;
+class UUWorksRequestWebFlushContextCache;
+class UUWorksRequestWebFlushInventoryCache;
+class UUWorksRequestWebGetTradeHistory;
+class UUWorksRequestWebGetTradeOffer;
 class UUWorksRequestWebGetTradeOffers;
 class UUWorksRequestWebGetTradeOffersSummary;
-class UUWorksRequestWebGetTradeOffer;
-class UUWorksRequestWebGetTradeHistory;
-class UUWorksRequestWebFlushInventoryCache;
-class UUWorksRequestWebFlushContextCache;
-class UUWorksRequestWebFlushAssetAppearanceCache;
-class UUWorksRequestWebDeclineTradeOffer;
-class UUWorksRequestWebCancelTradeOffer;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebEcon : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:
     UUWorksInterfaceWebEcon();
+
     UFUNCTION(BlueprintCallable)
     static void GetTradeOffersSummaryMinimal(const FString& Key, int32 TimeLastVisit, const FGetTradeOffersSummaryMinimalDelegate& Delegate);
     

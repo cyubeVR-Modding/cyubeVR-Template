@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksPublishedFileID.h"
-#include "StopPlaytimeTrackingDelegateDelegate.h"
 #include "EUWorksResult.h"
+#include "StopPlaytimeTrackingDelegateDelegate.h"
 #include "CoreStopPlaytimeTrackingNode.generated.h"
 
 class UCoreStopPlaytimeTrackingNode;
@@ -16,6 +16,7 @@ public:
     FStopPlaytimeTrackingDelegate Completed;
     
     UCoreStopPlaytimeTrackingNode();
+
     UFUNCTION(BlueprintCallable)
     static UCoreStopPlaytimeTrackingNode* StopPlaytimeTrackingNode(TArray<FUWorksPublishedFileID> PublishedFileID);
     

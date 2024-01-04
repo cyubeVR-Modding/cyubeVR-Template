@@ -15,6 +15,7 @@ public:
     FHistoryExecuteCommandsDelegate Completed;
     
     UHistoryExecuteCommandsNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

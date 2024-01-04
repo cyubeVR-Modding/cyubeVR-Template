@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UserVoteSummaryDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksSteamID.h"
+#include "UserVoteSummaryDelegateDelegate.h"
 #include "UserVoteSummaryNode.generated.h"
 
 class UUserVoteSummaryNode;
@@ -15,6 +15,7 @@ public:
     FUserVoteSummaryDelegate Completed;
     
     UUserVoteSummaryNode();
+
     UFUNCTION(BlueprintCallable)
     static UUserVoteSummaryNode* UserVoteSummaryNode(const FString& Key, FUWorksSteamID SteamID, int32 AppID, int32 Count, TArray<int32> PublishedFileIDs);
     

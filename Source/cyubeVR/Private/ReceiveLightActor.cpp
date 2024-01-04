@@ -1,7 +1,9 @@
 #include "ReceiveLightActor.h"
 
-class UMeshComponent;
-class UMaterialInstanceDynamic;
+AReceiveLightActor::AReceiveLightActor(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->InitLightImmediate = false;
+    this->bUseLightAroundValue = false;
+}
 
 bool AReceiveLightActor::UseLightAroundValue() {
     return false;
@@ -18,8 +20,4 @@ TArray<UMeshComponent*> AReceiveLightActor::GetMeshComponents() {
     return TArray<UMeshComponent*>();
 }
 
-AReceiveLightActor::AReceiveLightActor() {
-    this->InitLightImmediate = false;
-    this->bUseLightAroundValue = false;
-}
 

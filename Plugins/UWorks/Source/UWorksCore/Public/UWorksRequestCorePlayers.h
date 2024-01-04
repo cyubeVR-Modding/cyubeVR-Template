@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "PlayersDelegateDelegate.h"
+#include "PlayersMinimalDelegateDelegate.h"
+#include "PlayersUpdateDelegateDelegate.h"
+#include "PlayersUpdateMinimalDelegateDelegate.h"
 #include "UWorksPlayerInfo.h"
 #include "UWorksRequestCore.h"
-#include "PlayersDelegateDelegate.h"
-#include "PlayersUpdateDelegateDelegate.h"
-#include "PlayersMinimalDelegateDelegate.h"
-#include "PlayersUpdateMinimalDelegateDelegate.h"
 #include "UWorksRequestCorePlayers.generated.h"
 
 UCLASS(Blueprintable)
@@ -25,6 +25,7 @@ public:
     FPlayersUpdateMinimalDelegate OnRequestUpdatedMinimal;
     
     UUWorksRequestCorePlayers();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& IP, int32 Port);
     

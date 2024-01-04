@@ -1,6 +1,7 @@
 #include "GetOwnedGamesNode.h"
 
-class UGetOwnedGamesNode;
+UGetOwnedGamesNode::UGetOwnedGamesNode() {
+}
 
 void UGetOwnedGamesNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetOwnedGamesNode* UGetOwnedGamesNode::GetOwnedGamesNode(const FString& Key, FU
     return NULL;
 }
 
-UGetOwnedGamesNode::UGetOwnedGamesNode() {
-}
 

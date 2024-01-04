@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SendQueryUGCRequestDelegateDelegate.h"
-#include "UWorksRequestCore.h"
-#include "SendQueryUGCRequestMinimalDelegateDelegate.h"
-#include "UWorksUGCQueryHandle.h"
 #include "EUWorksResult.h"
+#include "SendQueryUGCRequestDelegateDelegate.h"
+#include "SendQueryUGCRequestMinimalDelegateDelegate.h"
+#include "UWorksRequestCore.h"
+#include "UWorksUGCQueryHandle.h"
 #include "UWorksRequestCoreSendQueryUGCRequest.generated.h"
 
 UCLASS(Blueprintable)
@@ -18,6 +18,7 @@ public:
     FSendQueryUGCRequestMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreSendQueryUGCRequest();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(FUWorksUGCQueryHandle UGCQueryHandle);
     

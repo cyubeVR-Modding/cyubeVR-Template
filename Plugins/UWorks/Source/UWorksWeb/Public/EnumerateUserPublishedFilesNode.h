@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "EnumerateUserPublishedFilesDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "EnumerateUserPublishedFilesDelegateDelegate.h"
 #include "EnumerateUserPublishedFilesNode.generated.h"
 
 class UEnumerateUserPublishedFilesNode;
@@ -15,6 +15,7 @@ public:
     FEnumerateUserPublishedFilesDelegate Completed;
     
     UEnumerateUserPublishedFilesNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

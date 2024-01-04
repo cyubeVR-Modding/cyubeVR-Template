@@ -9,6 +9,7 @@ class CYUBEVR_API UManageModsWidgetParent : public UUserWidget {
     GENERATED_BODY()
 public:
     UManageModsWidgetParent();
+
     UFUNCTION(BlueprintCallable)
     void GetDraftsMod(bool bFromWorkshop, bool OnlyPureCustomBlocks, TArray<FCustomBlockInfoForModsBP>& DraftsInfoArray);
     

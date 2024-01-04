@@ -21,6 +21,7 @@ public:
     FSteamDelegateOnQueryWorkshopForAllItems OnSteamInitFailure;
     
     UCallbackProxyQueryWorkshopForAllItems();
+
     UFUNCTION(BlueprintCallable)
     static UCallbackProxyQueryWorkshopForAllItems* SteamWorkshop_QueryForAllItems(const FSteamUGCQueryParameterAll& Parameter);
     

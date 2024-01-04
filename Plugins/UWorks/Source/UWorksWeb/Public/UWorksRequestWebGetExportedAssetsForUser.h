@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
+#include "UWorksSteamID.h"
 #include "GetExportedAssetsForUserDelegateDelegate.h"
 #include "GetExportedAssetsForUserMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetExportedAssetsForUser.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FGetExportedAssetsForUserMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetExportedAssetsForUser();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, FUWorksSteamID SteamID, int32 AppID, const FString& ContextID);
     

@@ -1,5 +1,8 @@
 #include "UWorksLibrarySteamID.h"
 
+UUWorksLibrarySteamID::UUWorksLibrarySteamID() {
+}
+
 void UUWorksLibrarySteamID::SetUniverse(FUWorksSteamID& SteamID, EUWorksUniverse Universe) {
 }
 
@@ -129,6 +132,4 @@ void UUWorksLibrarySteamID::ClearIndividualInstance(FUWorksSteamID& SteamID) {
 void UUWorksLibrarySteamID::Clear(FUWorksSteamID& SteamID) {
 }
 
-UUWorksLibrarySteamID::UUWorksLibrarySteamID() {
-}
 

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetHistoryCommandDetailsDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksSteamID.h"
+#include "GetHistoryCommandDetailsDelegateDelegate.h"
 #include "GetHistoryCommandDetailsNode.generated.h"
 
 class UGetHistoryCommandDetailsNode;
@@ -15,6 +15,7 @@ public:
     FGetHistoryCommandDetailsDelegate Completed;
     
     UGetHistoryCommandDetailsNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

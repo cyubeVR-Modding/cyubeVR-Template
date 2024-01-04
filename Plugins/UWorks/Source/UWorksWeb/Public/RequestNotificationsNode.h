@@ -15,6 +15,7 @@ public:
     FRequestNotificationsDelegate Completed;
     
     URequestNotificationsNode();
+
     UFUNCTION(BlueprintCallable)
     static URequestNotificationsNode* RequestNotificationsNode(const FString& Key, FUWorksSteamID SteamID, int32 AppID);
     

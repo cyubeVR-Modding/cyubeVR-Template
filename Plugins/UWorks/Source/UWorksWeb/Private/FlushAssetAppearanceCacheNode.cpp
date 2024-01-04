@@ -1,6 +1,7 @@
 #include "FlushAssetAppearanceCacheNode.h"
 
-class UFlushAssetAppearanceCacheNode;
+UFlushAssetAppearanceCacheNode::UFlushAssetAppearanceCacheNode() {
+}
 
 void UFlushAssetAppearanceCacheNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UFlushAssetAppearanceCacheNode* UFlushAssetAppearanceCacheNode::FlushAssetAppear
     return NULL;
 }
 
-UFlushAssetAppearanceCacheNode::UFlushAssetAppearanceCacheNode() {
-}
 

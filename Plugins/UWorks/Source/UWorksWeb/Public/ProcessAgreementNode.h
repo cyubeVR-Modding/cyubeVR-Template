@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "ProcessAgreementDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "ProcessAgreementDelegateDelegate.h"
 #include "ProcessAgreementNode.generated.h"
 
 class UProcessAgreementNode;
@@ -15,6 +15,7 @@ public:
     FProcessAgreementDelegate Completed;
     
     UProcessAgreementNode();
+
     UFUNCTION(BlueprintCallable)
     static UProcessAgreementNode* ProcessAgreementNode(const FString& Key, const FString& OrderID, FUWorksSteamID SteamID, const FString& AgreementID, int32 AppID, int32 Amount, const FString& Currency);
     

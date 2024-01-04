@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EHTTPWebComFileBytesToFileActionType.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
+#include "EHTTPWebComFileBytesToFileActionType.h"
+#include "EHTTPWebComFileDownloadResumeType.h"
 #include "EHTTPWebComFileUpload.h"
 #include "EHTTPWebComFileUploadType.h"
 #include "httpRequest.h"
-#include "EHTTPWebComFileDownloadResumeType.h"
 #include "WebCommunicationBPLibrary.generated.h"
 
 class UWebCommunicationBPLibrary;
@@ -36,6 +36,7 @@ public:
     FhttpFileUploadDelegate onhttpFileUploadDelegate;
     
     UWebCommunicationBPLibrary();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static FString urlEncodePure(const FString& urlParameter);
     

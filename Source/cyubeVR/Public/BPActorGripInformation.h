@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EGripTargetType.h"
-#include "Transform_NetQuantize.h"
+#include "UObject/NoExportTypes.h"
+#include "BPAdvGripSettings.h"
+#include "BPSecondaryGripInfo.h"
 #include "EGripCollisionType.h"
 #include "EGripLateUpdateSettings.h"
 #include "EGripMovementReplicationSettings.h"
-#include "BPAdvGripSettings.h"
-#include "UObject/NoExportTypes.h"
-#include "BPSecondaryGripInfo.h"
+#include "EGripTargetType.h"
+#include "Transform_NetQuantize.h"
 #include "BPActorGripInformation.generated.h"
 
 class UObject;

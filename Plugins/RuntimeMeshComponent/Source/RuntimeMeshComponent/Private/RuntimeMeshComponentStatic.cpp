@@ -1,6 +1,13 @@
 #include "RuntimeMeshComponentStatic.h"
 #include "RuntimeMeshProviderStatic.h"
 
+URuntimeMeshComponentStatic::URuntimeMeshComponentStatic(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->RuntimeMesh = NULL;
+    this->StaticProvider = CreateDefaultSubobject<URuntimeMeshProviderStatic>(TEXT("StaticProvider"));
+    this->NormalsModifier = NULL;
+    this->AdjacencyModifier = NULL;
+}
+
 void URuntimeMeshComponentStatic::UpdateSectionFromComponents(int32 LODIndex, int32 SectionIndex, const TArray<FVector>& Vertices, const TArray<int32>& Triangles, const TArray<FVector>& Normals, const TArray<FVector2D>& UV0, const TArray<FVector2D>& UV1, const TArray<FVector2D>& UV2, const TArray<FVector2D>& UV3, const TArray<FLinearColor>& VertexColors, const TArray<FRuntimeMeshTangent>& Tangents) {
 }
 
@@ -99,10 +106,4 @@ void URuntimeMeshComponentStatic::CreateSection_Blueprint(int32 LODIndex, int32 
 void URuntimeMeshComponentStatic::ClearSection(int32 LODIndex, int32 SectionId) {
 }
 
-URuntimeMeshComponentStatic::URuntimeMeshComponentStatic() {
-    this->RuntimeMesh = NULL;
-    this->StaticProvider = CreateDefaultSubobject<URuntimeMeshProviderStatic>(TEXT("StaticProvider"));
-    this->NormalsModifier = NULL;
-    this->AdjacencyModifier = NULL;
-}
 

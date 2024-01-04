@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "JoinClanChatRoomDelegateDelegate.h"
-#include "UWorksRequestCore.h"
-#include "JoinClanChatRoomMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "EUWorksChatRoomEnterResponse.h"
+#include "JoinClanChatRoomDelegateDelegate.h"
+#include "JoinClanChatRoomMinimalDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "UWorksRequestCoreJoinClanChatRoom.generated.h"
 
 UCLASS(Blueprintable)
@@ -18,6 +18,7 @@ public:
     FJoinClanChatRoomMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreJoinClanChatRoom();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(FUWorksSteamID SteamIDClan);
     

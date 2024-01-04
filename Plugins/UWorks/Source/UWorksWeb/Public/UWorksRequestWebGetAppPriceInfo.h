@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
+#include "UWorksSteamID.h"
 #include "GetAppPriceInfoDelegateDelegate.h"
 #include "GetAppPriceInfoMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetAppPriceInfo.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FGetAppPriceInfoMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetAppPriceInfo();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, FUWorksSteamID SteamID, const FString& AppIDs);
     

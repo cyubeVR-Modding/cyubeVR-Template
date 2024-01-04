@@ -1,6 +1,8 @@
 #include "RuntimeMeshProviderBox.h"
 
-class UMaterialInterface;
+URuntimeMeshProviderBox::URuntimeMeshProviderBox() {
+    this->Material = NULL;
+}
 
 void URuntimeMeshProviderBox::SetBoxRadius(const FVector& InRadius) {
 }
@@ -16,7 +18,4 @@ UMaterialInterface* URuntimeMeshProviderBox::GetBoxMaterial() const {
     return NULL;
 }
 
-URuntimeMeshProviderBox::URuntimeMeshProviderBox() {
-    this->Material = NULL;
-}
 

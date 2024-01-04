@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreSendQueryUGCRequest.h"
 
+UUWorksRequestCoreSendQueryUGCRequest::UUWorksRequestCoreSendQueryUGCRequest() {
+}
+
 void UUWorksRequestCoreSendQueryUGCRequest::SetInput(FUWorksUGCQueryHandle UGCQueryHandle) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreSendQueryUGCRequest::Deactivate() {
 void UUWorksRequestCoreSendQueryUGCRequest::Activate() {
 }
 
-UUWorksRequestCoreSendQueryUGCRequest::UUWorksRequestCoreSendQueryUGCRequest() {
-}
 

@@ -15,6 +15,7 @@ public:
     FCancelAppListingsForUserDelegate Completed;
     
     UCancelAppListingsForUserNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreDownloadLeaderboardEntriesForUsers.h"
 
+UUWorksRequestCoreDownloadLeaderboardEntriesForUsers::UUWorksRequestCoreDownloadLeaderboardEntriesForUsers() {
+}
+
 void UUWorksRequestCoreDownloadLeaderboardEntriesForUsers::SetInput(FUWorksSteamLeaderboard SteamLeaderboard, TArray<FUWorksSteamID> Users) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreDownloadLeaderboardEntriesForUsers::Deactivate() {
 void UUWorksRequestCoreDownloadLeaderboardEntriesForUsers::Activate() {
 }
 
-UUWorksRequestCoreDownloadLeaderboardEntriesForUsers::UUWorksRequestCoreDownloadLeaderboardEntriesForUsers() {
-}
 

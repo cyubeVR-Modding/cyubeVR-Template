@@ -15,6 +15,7 @@ private:
     
 public:
     URuntimeMeshProviderModifiers();
+
     UFUNCTION(BlueprintCallable)
     void RemoveModifier(URuntimeMeshModifier* ModifierToRemove);
     

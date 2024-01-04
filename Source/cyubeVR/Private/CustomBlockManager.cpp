@@ -1,10 +1,8 @@
 #include "CustomBlockManager.h"
 
-class UTexture2D;
-class UTexture2DArray;
-
-UTexture2D* UCustomBlockManager::LoadDDS(const FString& Filename, TEnumAsByte<EPixelFormat> PixelFormat, bool ConvertDXT5toDXT1) {
-    return NULL;
+UCustomBlockManager::UCustomBlockManager() {
+    this->EmptyNormalTexture = NULL;
+    this->EmptyEmissiveTexture = NULL;
 }
 
 int32 UCustomBlockManager::GetTextureIndexForCustomBlock(int32 UniqueId, uint8 Side) {
@@ -37,8 +35,4 @@ bool UCustomBlockManager::GetCustomBlockAllowCrystalPlacement(int32 UniqueId) {
 void UCustomBlockManager::CopyTextureToArraySlice(UTexture2DArray* DestArray, int32 DestSlice, UTexture2D* SourceTexture) {
 }
 
-UCustomBlockManager::UCustomBlockManager() {
-    this->EmptyNormalTexture = NULL;
-    this->EmptyEmissiveTexture = NULL;
-}
 

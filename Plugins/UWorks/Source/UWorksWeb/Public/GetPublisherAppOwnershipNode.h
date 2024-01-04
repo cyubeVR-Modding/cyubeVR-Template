@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "GetPublisherAppOwnershipDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetPublisherAppOwnershipDelegateDelegate.h"
 #include "GetPublisherAppOwnershipNode.generated.h"
 
 class UGetPublisherAppOwnershipNode;
@@ -15,6 +15,7 @@ public:
     FGetPublisherAppOwnershipDelegate Completed;
     
     UGetPublisherAppOwnershipNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

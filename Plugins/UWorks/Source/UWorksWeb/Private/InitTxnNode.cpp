@@ -1,6 +1,7 @@
 #include "InitTxnNode.h"
 
-class UInitTxnNode;
+UInitTxnNode::UInitTxnNode() {
+}
 
 void UInitTxnNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UInitTxnNode* UInitTxnNode::InitTxnNode(const FString& Key, const FString& Order
     return NULL;
 }
 
-UInitTxnNode::UInitTxnNode() {
-}
 

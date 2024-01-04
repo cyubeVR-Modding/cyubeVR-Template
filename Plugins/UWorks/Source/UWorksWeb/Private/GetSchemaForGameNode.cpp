@@ -1,6 +1,7 @@
 #include "GetSchemaForGameNode.h"
 
-class UGetSchemaForGameNode;
+UGetSchemaForGameNode::UGetSchemaForGameNode() {
+}
 
 void UGetSchemaForGameNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetSchemaForGameNode* UGetSchemaForGameNode::GetSchemaForGameNode(const FString
     return NULL;
 }
 
-UGetSchemaForGameNode::UGetSchemaForGameNode() {
-}
 

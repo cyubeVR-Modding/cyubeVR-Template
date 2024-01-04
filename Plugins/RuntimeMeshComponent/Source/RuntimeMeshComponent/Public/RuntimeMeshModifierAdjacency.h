@@ -9,6 +9,7 @@ class RUNTIMEMESHCOMPONENT_API URuntimeMeshModifierAdjacency : public URuntimeMe
     GENERATED_BODY()
 public:
     URuntimeMeshModifierAdjacency();
+
     UFUNCTION(BlueprintCallable)
     static void CalculateTessellationIndices(FRuntimeMeshRenderableMeshData& MeshData);
     

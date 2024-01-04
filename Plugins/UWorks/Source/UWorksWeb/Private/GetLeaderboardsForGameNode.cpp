@@ -1,6 +1,7 @@
 #include "GetLeaderboardsForGameNode.h"
 
-class UGetLeaderboardsForGameNode;
+UGetLeaderboardsForGameNode::UGetLeaderboardsForGameNode() {
+}
 
 void UGetLeaderboardsForGameNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetLeaderboardsForGameNode* UGetLeaderboardsForGameNode::GetLeaderboardsForGame
     return NULL;
 }
 
-UGetLeaderboardsForGameNode::UGetLeaderboardsForGameNode() {
-}
 

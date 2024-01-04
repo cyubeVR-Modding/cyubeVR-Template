@@ -3,8 +3,8 @@
 #include "GameFramework/Actor.h"
 #include "LivShotActor.generated.h"
 
-class USceneComponent;
 class ULivShotComponent;
+class USceneComponent;
 
 UCLASS(Blueprintable)
 class LIV_API ALivShotActor : public AActor {
@@ -16,6 +16,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     ULivShotComponent* ShotComponent;
     
-    ALivShotActor();
+    ALivShotActor(const FObjectInitializer& ObjectInitializer);
+
 };
 

@@ -8,5 +8,6 @@ class RUNTIMEMESHCOMPONENT_API URuntimeMeshComponentEngineSubsystem : public UEn
     GENERATED_BODY()
 public:
     URuntimeMeshComponentEngineSubsystem();
+
 };
 

@@ -1,6 +1,7 @@
 #include "DeleteSessionNode.h"
 
-class UDeleteSessionNode;
+UDeleteSessionNode::UDeleteSessionNode() {
+}
 
 void UDeleteSessionNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UDeleteSessionNode* UDeleteSessionNode::DeleteSessionNode(const FString& Key, co
     return NULL;
 }
 
-UDeleteSessionNode::UDeleteSessionNode() {
-}
 

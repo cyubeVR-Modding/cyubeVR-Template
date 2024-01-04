@@ -1,6 +1,9 @@
 #include "LivCameraController.h"
 
-class ULivShotComponent;
+ALivCameraController::ALivCameraController(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->CurrentShot = NULL;
+    this->CurrentShotTime = 0.00f;
+}
 
 void ALivCameraController::TickCurrentShot(float DeltaTime) {
 }
@@ -12,8 +15,4 @@ ULivShotComponent* ALivCameraController::GetCurrentShot() const {
     return NULL;
 }
 
-ALivCameraController::ALivCameraController() {
-    this->CurrentShot = NULL;
-    this->CurrentShotTime = 0.00f;
-}
 

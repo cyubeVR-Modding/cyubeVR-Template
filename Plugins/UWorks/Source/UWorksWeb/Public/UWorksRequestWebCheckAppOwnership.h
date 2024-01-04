@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
+#include "UWorksSteamID.h"
 #include "CheckAppOwnershipDelegateDelegate.h"
 #include "CheckAppOwnershipMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebCheckAppOwnership.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FCheckAppOwnershipMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebCheckAppOwnership();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, FUWorksSteamID SteamID, int32 AppID);
     

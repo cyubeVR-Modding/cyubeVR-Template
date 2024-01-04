@@ -1,6 +1,7 @@
 #include "SetDeveloperMetadataNode.h"
 
-class USetDeveloperMetadataNode;
+USetDeveloperMetadataNode::USetDeveloperMetadataNode() {
+}
 
 USetDeveloperMetadataNode* USetDeveloperMetadataNode::SetDeveloperMetadataNode(const FString& Key, FUWorksPublishedFileID PublishedFileID, int32 AppID, const FString& MetaData) {
     return NULL;
@@ -9,6 +10,4 @@ USetDeveloperMetadataNode* USetDeveloperMetadataNode::SetDeveloperMetadataNode(c
 void USetDeveloperMetadataNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
 
-USetDeveloperMetadataNode::USetDeveloperMetadataNode() {
-}
 

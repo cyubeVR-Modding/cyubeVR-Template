@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "IPCountryDelegateDelegate.h"
-#include "UWorksInterfaceCore.h"
-#include "EUWorksUniverse.h"
-#include "SteamShutdownDelegateDelegate.h"
-#include "LowBatteryPowerDelegateDelegate.h"
-#include "GamepadTextInputDismissedDelegateDelegate.h"
 #include "EUWorksGamepadTextInputLineMode.h"
 #include "EUWorksGamepadTextInputMode.h"
 #include "EUWorksNotificationPosition.h"
+#include "EUWorksUniverse.h"
+#include "GamepadTextInputDismissedDelegateDelegate.h"
+#include "IPCountryDelegateDelegate.h"
+#include "LowBatteryPowerDelegateDelegate.h"
+#include "SteamShutdownDelegateDelegate.h"
+#include "UWorksInterfaceCore.h"
 #include "UWorksInterfaceCoreUtils.generated.h"
 
 class UUWorksInterfaceCoreUtils;
@@ -30,6 +30,7 @@ public:
     FGamepadTextInputDismissedDelegate GamepadTextInputDismissed;
     
     UUWorksInterfaceCoreUtils();
+
     UFUNCTION(BlueprintCallable)
     void StartVRDashboard();
     

@@ -1,6 +1,7 @@
 #include "PictureFrame.h"
 
-class UTexture2D;
+APictureFrame::APictureFrame(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+}
 
 bool APictureFrame::UseActorCustomLocation() {
     return false;
@@ -28,6 +29,4 @@ bool APictureFrame::ApplyNewImage(const FLoadedPicture& NewLoadedPicture) {
 void APictureFrame::ApplyLoadedTexture_Implementation(UTexture2D* LoadedTexture) {
 }
 
-APictureFrame::APictureFrame() {
-}
 

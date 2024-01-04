@@ -1,6 +1,7 @@
 #include "EnumerateUserPublishedFilesNode.h"
 
-class UEnumerateUserPublishedFilesNode;
+UEnumerateUserPublishedFilesNode::UEnumerateUserPublishedFilesNode() {
+}
 
 void UEnumerateUserPublishedFilesNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UEnumerateUserPublishedFilesNode* UEnumerateUserPublishedFilesNode::EnumerateUse
     return NULL;
 }
 
-UEnumerateUserPublishedFilesNode::UEnumerateUserPublishedFilesNode() {
-}
 

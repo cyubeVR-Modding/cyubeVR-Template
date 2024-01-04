@@ -1,6 +1,7 @@
 #include "RemovePlayerGameBanNode.h"
 
-class URemovePlayerGameBanNode;
+URemovePlayerGameBanNode::URemovePlayerGameBanNode() {
+}
 
 URemovePlayerGameBanNode* URemovePlayerGameBanNode::RemovePlayerGameBanNode(const FString& Key, FUWorksSteamID SteamID, int32 AppID) {
     return NULL;
@@ -9,6 +10,4 @@ URemovePlayerGameBanNode* URemovePlayerGameBanNode::RemovePlayerGameBanNode(cons
 void URemovePlayerGameBanNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
 
-URemovePlayerGameBanNode::URemovePlayerGameBanNode() {
-}
 

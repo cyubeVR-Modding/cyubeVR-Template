@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RemovePlayerGameBanDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksSteamID.h"
+#include "RemovePlayerGameBanDelegateDelegate.h"
 #include "RemovePlayerGameBanNode.generated.h"
 
 class URemovePlayerGameBanNode;
@@ -15,6 +15,7 @@ public:
     FRemovePlayerGameBanDelegate Completed;
     
     URemovePlayerGameBanNode();
+
     UFUNCTION(BlueprintCallable)
     static URemovePlayerGameBanNode* RemovePlayerGameBanNode(const FString& Key, FUWorksSteamID SteamID, int32 AppID);
     

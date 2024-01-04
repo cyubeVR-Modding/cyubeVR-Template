@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "RankedByTrendDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "RankedByTrendDelegateDelegate.h"
 #include "RankedByTrendNode.generated.h"
 
 class URankedByTrendNode;
@@ -15,6 +15,7 @@ public:
     FRankedByTrendDelegate Completed;
     
     URankedByTrendNode();
+
     UFUNCTION(BlueprintCallable)
     static URankedByTrendNode* RankedByTrendNode(const FString& Key, FUWorksSteamID SteamID, int32 AppID, int32 StartIndex, int32 Count, int32 TagCount, int32 UserTagCount, bool bHasAppAdminAccess, int32 fileType, int32 Days, TArray<FString> tags, TArray<FString> UserTags);
     

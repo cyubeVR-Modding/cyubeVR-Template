@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "GetAssetClassInfoDelegateDelegate.h"
 #include "GetAssetClassInfoMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetAssetClassInfo.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FGetAssetClassInfoMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetAssetClassInfo();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, int32 AppID, int32 ClassCount, const FString& ClassID, const FString& Language, const FString& InstanceID);
     

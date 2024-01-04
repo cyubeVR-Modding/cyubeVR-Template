@@ -3,6 +3,7 @@
 #include "GameFramework/GameStateBase.h"
 #include "CubeGameState.generated.h"
 
+class ABlockItem;
 class AChunkManager;
 class UTexture2D;
 
@@ -14,8 +15,30 @@ public:
     AChunkManager* ChunkManager;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    int32 MaxBlockitemsWithParticles;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    ABlockItem* OtherHandBlockItem;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TMap<FString, UTexture2D*> AlreadyLoadedTextures;
     
-    ACubeGameState();
+    ACubeGameState(const FObjectInitializer& ObjectInitializer);
+
+    UFUNCTION(BlueprintCallable)
+    void RemoveAllActivelyHeldBlockItems();
+    
+    UFUNCTION(BlueprintCallable)
+    void RemoveActivelyHeldBlockItem(ABlockItem* BlockItem);
+    
+    UFUNCTION(BlueprintCallable)
+    void ManageHeldBlockItems();
+    
+    UFUNCTION(BlueprintCallable)
+    void AddActivelyHeldBlockItems(TArray<ABlockItem*> BlockItems);
+    
+    UFUNCTION(BlueprintCallable)
+    void AddActivelyHeldBlockItem(ABlockItem* BlockItem);
+    
 };
 

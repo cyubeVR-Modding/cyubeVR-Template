@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "GetSteamLevelDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetSteamLevelDelegateDelegate.h"
 #include "GetSteamLevelNode.generated.h"
 
 class UGetSteamLevelNode;
@@ -15,6 +15,7 @@ public:
     FGetSteamLevelDelegate Completed;
     
     UGetSteamLevelNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

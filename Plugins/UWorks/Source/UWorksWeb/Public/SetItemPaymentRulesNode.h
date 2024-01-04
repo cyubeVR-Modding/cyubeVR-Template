@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SetItemPaymentRulesDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "SetItemPaymentRulesDelegateDelegate.h"
 #include "UWorksAssociatedWorkshopFiles.h"
 #include "UWorksPartnerAccounts.h"
 #include "SetItemPaymentRulesNode.generated.h"
@@ -16,6 +16,7 @@ public:
     FSetItemPaymentRulesDelegate Completed;
     
     USetItemPaymentRulesNode();
+
     UFUNCTION(BlueprintCallable)
     static USetItemPaymentRulesNode* SetItemPaymentRulesNode(const FString& Key, int32 AppID, int32 GameItemID, FUWorksAssociatedWorkshopFiles AssociatedWorkshopFiles, FUWorksPartnerAccounts PartnerAccounts, bool bMakeWorkshopFilesSubscribable, bool bValidateOnly);
     

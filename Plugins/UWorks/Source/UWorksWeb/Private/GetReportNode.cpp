@@ -1,6 +1,7 @@
 #include "GetReportNode.h"
 
-class UGetReportNode;
+UGetReportNode::UGetReportNode() {
+}
 
 void UGetReportNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetReportNode* UGetReportNode::GetReportNode(const FString& Key, int32 AppID, c
     return NULL;
 }
 
-UGetReportNode::UGetReportNode() {
-}
 

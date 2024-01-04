@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "DeleteAccountDelegateDelegate.h"
-#include "UWorksRequestWeb.h"
-#include "DeleteAccountMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "DeleteAccountDelegateDelegate.h"
+#include "DeleteAccountMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebDeleteAccount.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FDeleteAccountMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebDeleteAccount();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, FUWorksSteamID SteamID);
     

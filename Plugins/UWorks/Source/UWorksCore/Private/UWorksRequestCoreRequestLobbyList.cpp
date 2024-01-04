@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreRequestLobbyList.h"
 
+UUWorksRequestCoreRequestLobbyList::UUWorksRequestCoreRequestLobbyList() {
+}
+
 bool UUWorksRequestCoreRequestLobbyList::IsActive() {
     return false;
 }
@@ -13,6 +16,4 @@ void UUWorksRequestCoreRequestLobbyList::Deactivate() {
 void UUWorksRequestCoreRequestLobbyList::Activate() {
 }
 
-UUWorksRequestCoreRequestLobbyList::UUWorksRequestCoreRequestLobbyList() {
-}
 

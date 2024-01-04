@@ -1,12 +1,7 @@
 #include "UWorksInterfaceWebUserStats.h"
 
-class UUWorksRequestWebGetUserStatsForGame;
-class UUWorksRequestWebSetUserStatsForGame;
-class UUWorksRequestWebGetSchemaForGame;
-class UUWorksRequestWebGetPlayerAchievements;
-class UUWorksRequestWebGetNumberOfCurrentPlayers;
-class UUWorksRequestWebGetGlobalAchievementPercentagesForApp;
-class UUWorksRequestWebGetGlobalStatsForGame;
+UUWorksInterfaceWebUserStats::UUWorksInterfaceWebUserStats() {
+}
 
 void UUWorksInterfaceWebUserStats::SetUserStatsForGameMinimal(const FString& Key, FUWorksSteamID SteamID, int32 AppID, int32 Count, TArray<FString> Name, TArray<int32> Value, const FSetUserStatsForGameMinimalDelegate& Delegate) {
 }
@@ -57,6 +52,4 @@ UUWorksRequestWebGetGlobalAchievementPercentagesForApp* UUWorksInterfaceWebUserS
     return NULL;
 }
 
-UUWorksInterfaceWebUserStats::UUWorksInterfaceWebUserStats() {
-}
 

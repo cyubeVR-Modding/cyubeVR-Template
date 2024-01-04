@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
-#include "UWorksSteamLeaderboard.h"
 #include "DownloadLeaderboardEntriesDelegateDelegate.h"
 #include "DownloadLeaderboardEntriesMinimalDelegateDelegate.h"
 #include "EUWorksLeaderboardDataRequest.h"
+#include "UWorksRequestCore.h"
+#include "UWorksSteamLeaderboard.h"
 #include "UWorksSteamLeaderboardEntries.h"
 #include "UWorksRequestCoreDownloadLeaderboardEntries.generated.h"
 
@@ -19,6 +19,7 @@ public:
     FDownloadLeaderboardEntriesMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreDownloadLeaderboardEntries();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(FUWorksSteamLeaderboard SteamLeaderboard, EUWorksLeaderboardDataRequest LeaderboardDataRequest, int32 RangeStart, int32 RangeEnd);
     

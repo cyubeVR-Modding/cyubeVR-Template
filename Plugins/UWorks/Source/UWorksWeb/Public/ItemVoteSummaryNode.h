@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "ItemVoteSummaryDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "ItemVoteSummaryDelegateDelegate.h"
 #include "ItemVoteSummaryNode.generated.h"
 
 class UItemVoteSummaryNode;
@@ -15,6 +15,7 @@ public:
     FItemVoteSummaryDelegate Completed;
     
     UItemVoteSummaryNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

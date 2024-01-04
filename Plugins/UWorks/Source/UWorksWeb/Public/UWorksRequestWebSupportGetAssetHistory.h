@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "SupportGetAssetHistoryDelegateDelegate.h"
 #include "SupportGetAssetHistoryMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebSupportGetAssetHistory.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FSupportGetAssetHistoryMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebSupportGetAssetHistory();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, int32 AppID, const FString& AssetID, const FString& ContextID);
     

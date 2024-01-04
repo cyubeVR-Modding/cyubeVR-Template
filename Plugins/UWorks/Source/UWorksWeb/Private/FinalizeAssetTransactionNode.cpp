@@ -1,6 +1,7 @@
 #include "FinalizeAssetTransactionNode.h"
 
-class UFinalizeAssetTransactionNode;
+UFinalizeAssetTransactionNode::UFinalizeAssetTransactionNode() {
+}
 
 void UFinalizeAssetTransactionNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UFinalizeAssetTransactionNode* UFinalizeAssetTransactionNode::FinalizeAssetTrans
     return NULL;
 }
 
-UFinalizeAssetTransactionNode::UFinalizeAssetTransactionNode() {
-}
 

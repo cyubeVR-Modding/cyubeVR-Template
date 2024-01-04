@@ -30,7 +30,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float MaxInterpolationSpeed;
     
-    ULivSpringArmComponent();
+    ULivSpringArmComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void UpdatePoseForCamera(UCameraComponent* Camera, float DeltaTime);
     

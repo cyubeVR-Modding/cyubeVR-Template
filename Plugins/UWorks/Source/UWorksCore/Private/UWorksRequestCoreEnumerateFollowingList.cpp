@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreEnumerateFollowingList.h"
 
+UUWorksRequestCoreEnumerateFollowingList::UUWorksRequestCoreEnumerateFollowingList() {
+}
+
 void UUWorksRequestCoreEnumerateFollowingList::SetInput(int32 StartIndex) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreEnumerateFollowingList::Deactivate() {
 void UUWorksRequestCoreEnumerateFollowingList::Activate() {
 }
 
-UUWorksRequestCoreEnumerateFollowingList::UUWorksRequestCoreEnumerateFollowingList() {
-}
 

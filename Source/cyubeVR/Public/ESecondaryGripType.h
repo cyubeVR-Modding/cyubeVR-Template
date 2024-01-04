@@ -13,6 +13,5 @@ enum class ESecondaryGripType : uint8 {
     SG_SlotOnlyWithScaling_Retain,
     SG_Custom,
     SG_ScalingOnly,
-    SG_MAX UMETA(Hidden),
 };
 

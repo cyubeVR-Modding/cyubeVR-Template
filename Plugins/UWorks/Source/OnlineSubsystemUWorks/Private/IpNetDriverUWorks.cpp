@@ -1,5 +1,7 @@
 #include "IpNetDriverUWorks.h"
 
-/*UIpNetDriverUWorks::UIpNetDriverUWorks() {
-}*/
+UIpNetDriverUWorks::UIpNetDriverUWorks() : UIpNetDriver(FObjectInitializer::Get()) {
+    this->ChannelDefinitions.AddDefaulted(3);
+}
+
 

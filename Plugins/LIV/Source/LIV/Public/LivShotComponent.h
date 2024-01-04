@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Components/SceneComponent.h"
-#include "LivShotTickDelegateDelegate.h"
 #include "LivShotCutDelegateDelegate.h"
+#include "LivShotTickDelegateDelegate.h"
 #include "LivShotComponent.generated.h"
 
 class ALivCameraController;
@@ -30,7 +30,8 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FLivShotCutDelegate CutFromEvent;
     
-    ULivShotComponent();
+    ULivShotComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void TickShot(ALivCameraController* Controller, ULivCaptureBase* CaptureComponent, float ShotTime, float DeltaTime);
     

@@ -1,6 +1,7 @@
 #include "CorePingNode.h"
 
-class UCorePingNode;
+UCorePingNode::UCorePingNode() {
+}
 
 UCorePingNode* UCorePingNode::PingNode(const FString& IP, int32 Port) {
     return NULL;
@@ -9,6 +10,4 @@ UCorePingNode* UCorePingNode::PingNode(const FString& IP, int32 Port) {
 void UCorePingNode::OnRequestCompleted(bool bSuccessful, FUWorksServerInfo Server) {
 }
 
-UCorePingNode::UCorePingNode() {
-}
 

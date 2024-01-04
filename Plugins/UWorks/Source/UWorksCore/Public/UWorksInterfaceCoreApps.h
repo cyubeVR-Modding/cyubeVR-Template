@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceCore.h"
+#include "UWorksSteamID.h"
 #include "DlcInstalledDelegateDelegate.h"
 #include "GetFileDetailsMinimalDelegateDelegate.h"
 #include "NewUrlLaunchParametersDelegateDelegate.h"
-#include "UWorksSteamID.h"
+#include "UWorksInterfaceCore.h"
 #include "UWorksInterfaceCoreApps.generated.h"
 
-class UUWorksRequestCoreGetFileDetails;
 class UUWorksInterfaceCoreApps;
+class UUWorksRequestCoreGetFileDetails;
 
 UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreApps : public UUWorksInterfaceCore {
@@ -21,6 +21,7 @@ public:
     FNewUrlLaunchParametersDelegate NewUrlLaunchParameters;
     
     UUWorksInterfaceCoreApps();
+
     UFUNCTION(BlueprintCallable)
     void UninstallDLC(int32 AppID);
     

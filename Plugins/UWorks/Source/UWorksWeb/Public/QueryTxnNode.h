@@ -14,6 +14,7 @@ public:
     FQueryTxnDelegate Completed;
     
     UQueryTxnNode();
+
     UFUNCTION(BlueprintCallable)
     static UQueryTxnNode* QueryTxnNode(const FString& Key, int32 AppID, const FString& OrderID, const FString& TransID);
     

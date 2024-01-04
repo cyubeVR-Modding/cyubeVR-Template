@@ -1,6 +1,6 @@
 #include "LivCaptureMeshClipPlaneNoPostProcess.h"
 
-ULivCaptureMeshClipPlaneNoPostProcess::ULivCaptureMeshClipPlaneNoPostProcess() {
+ULivCaptureMeshClipPlaneNoPostProcess::ULivCaptureMeshClipPlaneNoPostProcess(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->CameraClipPlane = NULL;
     this->FloorClipPlane = NULL;
     this->BackgroundRenderTarget = NULL;
@@ -8,4 +8,5 @@ ULivCaptureMeshClipPlaneNoPostProcess::ULivCaptureMeshClipPlaneNoPostProcess() {
     this->BackgroundOutputRenderTarget = NULL;
     this->ForegroundOutputRenderTarget = NULL;
 }
+
 

@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "EnumerateFollowingListDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "EUWorksResult.h"
+#include "EnumerateFollowingListDelegateDelegate.h"
 #include "CoreEnumerateFollowingListNode.generated.h"
 
 class UCoreEnumerateFollowingListNode;
@@ -16,6 +16,7 @@ public:
     FEnumerateFollowingListDelegate Completed;
     
     UCoreEnumerateFollowingListNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, EUWorksResult Result, const TArray<FUWorksSteamID>& SteamIDs, int32 ResultsReturned, int32 TotalResultCount);
     

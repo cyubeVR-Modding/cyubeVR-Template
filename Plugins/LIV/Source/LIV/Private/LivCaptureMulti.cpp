@@ -1,6 +1,6 @@
 #include "LivCaptureMulti.h"
 
-ULivCaptureMulti::ULivCaptureMulti() {
+ULivCaptureMulti::ULivCaptureMulti(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->SceneCaptureComponent = NULL;
     this->BackgroundRenderTarget = NULL;
     this->BackgroundOutputRenderTarget = NULL;
@@ -10,4 +10,5 @@ ULivCaptureMulti::ULivCaptureMulti() {
     this->BloomRenderTarget = NULL;
     this->CameraClipPlane = NULL;
 }
+
 

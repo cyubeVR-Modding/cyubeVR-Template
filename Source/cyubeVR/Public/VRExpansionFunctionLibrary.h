@@ -1,36 +1,37 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Templates/SubclassOf.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
-#include "BPLowPassPeakFilter.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "BPGripPair.h"
-#include "BPEuroLowPassFilter.h"
 #include "Engine/NetSerialization.h"
 #include "Engine/NetSerialization.h"
 #include "Engine/NetSerialization.h"
-#include "Transform_NetQuantize.h"
-#include "EBPHMDWornState.h"
-#include "EBPHMDDeviceType.h"
 #include "InputCoreTypes.h"
 #include "BPActorGripInformation.h"
-#include "UObject/NoExportTypes.h"
+#include "BPEuroLowPassFilter.h"
+#include "BPGripPair.h"
+#include "BPLowPassPeakFilter.h"
+#include "EBPHMDDeviceType.h"
+#include "EBPHMDWornState.h"
+#include "Templates/SubclassOf.h"
+#include "Transform_NetQuantize.h"
 #include "VRExpansionFunctionLibrary.generated.h"
 
-class USplineComponent;
-class UPrimitiveComponent;
-class USplineMeshComponent;
-class UObject;
 class AActor;
 class UGripMotionControllerComponent;
+class UObject;
+class UPrimitiveComponent;
 class USceneComponent;
+class USplineComponent;
+class USplineMeshComponent;
 
 UCLASS(Blueprintable)
 class UVRExpansionFunctionLibrary : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UVRExpansionFunctionLibrary();
+
     UFUNCTION(BlueprintCallable)
     static void UpdatePeakLowPassFilter(UPARAM(Ref) FBPLowPassPeakFilter& TargetPeakFilter, FVector newSample);
     

@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "EUWorksResult.h"
 #include "SendQueryUGCRequestDelegateDelegate.h"
 #include "UWorksUGCQueryHandle.h"
-#include "EUWorksResult.h"
 #include "CoreSendQueryUGCRequestNode.generated.h"
 
 class UCoreSendQueryUGCRequestNode;
@@ -16,6 +16,7 @@ public:
     FSendQueryUGCRequestDelegate Completed;
     
     UCoreSendQueryUGCRequestNode();
+
     UFUNCTION(BlueprintCallable)
     static UCoreSendQueryUGCRequestNode* SendQueryUGCRequestNode(FUWorksUGCQueryHandle UGCQueryHandle);
     

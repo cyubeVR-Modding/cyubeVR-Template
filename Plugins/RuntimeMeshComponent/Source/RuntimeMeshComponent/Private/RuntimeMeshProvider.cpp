@@ -1,5 +1,8 @@
 #include "RuntimeMeshProvider.h"
 
+URuntimeMeshProvider::URuntimeMeshProvider() {
+}
+
 void URuntimeMeshProvider::Shutdown() {
 }
 
@@ -41,6 +44,4 @@ bool URuntimeMeshProvider::GetAllSectionsMeshForLOD(int32 LODIndex, TMap<int32, 
 void URuntimeMeshProvider::CollisionUpdateCompleted() {
 }
 
-URuntimeMeshProvider::URuntimeMeshProvider() {
-}
 

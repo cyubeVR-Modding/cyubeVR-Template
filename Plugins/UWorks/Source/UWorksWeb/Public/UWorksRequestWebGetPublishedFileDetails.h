@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "GetPublishedFileDetailsDelegateDelegate.h"
-#include "UWorksRequestWeb.h"
 #include "GetPublishedFileDetailsMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetPublishedFileDetails.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FGetPublishedFileDetailsMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetPublishedFileDetails();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(int32 ItemCount, TArray<int32> PublishedFileIDs);
     

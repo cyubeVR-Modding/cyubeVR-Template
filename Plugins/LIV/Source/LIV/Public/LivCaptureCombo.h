@@ -3,8 +3,8 @@
 #include "LivCaptureBase.h"
 #include "LivCaptureCombo.generated.h"
 
-class UTextureRenderTarget2D;
 class USceneCaptureComponent2D;
+class UTextureRenderTarget2D;
 
 UCLASS(Blueprintable, EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class LIV_API ULivCaptureCombo : public ULivCaptureBase {
@@ -22,6 +22,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     UTextureRenderTarget2D* ForegroundOutputRenderTarget;
     
-    ULivCaptureCombo();
+    ULivCaptureCombo(const FObjectInitializer& ObjectInitializer);
+
 };
 

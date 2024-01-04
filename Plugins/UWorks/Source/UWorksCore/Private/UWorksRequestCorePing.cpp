@@ -1,5 +1,8 @@
 #include "UWorksRequestCorePing.h"
 
+UUWorksRequestCorePing::UUWorksRequestCorePing() {
+}
+
 void UUWorksRequestCorePing::SetInput(const FString& IP, int32 Port) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCorePing::Deactivate() {
 void UUWorksRequestCorePing::Activate() {
 }
 
-UUWorksRequestCorePing::UUWorksRequestCorePing() {
-}
 

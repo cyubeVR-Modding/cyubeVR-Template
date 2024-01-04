@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EnumerateFollowingListMinimalDelegateDelegate.h"
-#include "UWorksRequestCore.h"
-#include "EnumerateFollowingListDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "EUWorksResult.h"
+#include "EnumerateFollowingListDelegateDelegate.h"
+#include "EnumerateFollowingListMinimalDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "UWorksRequestCoreEnumerateFollowingList.generated.h"
 
 UCLASS(Blueprintable)
@@ -18,6 +18,7 @@ public:
     FEnumerateFollowingListMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreEnumerateFollowingList();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(int32 StartIndex);
     

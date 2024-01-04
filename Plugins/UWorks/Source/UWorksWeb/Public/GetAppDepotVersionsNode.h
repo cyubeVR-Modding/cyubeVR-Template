@@ -14,6 +14,7 @@ public:
     FGetAppDepotVersionsDelegate Completed;
     
     UGetAppDepotVersionsNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

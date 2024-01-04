@@ -1,6 +1,7 @@
 #include "CreateSessionNode.h"
 
-class UCreateSessionNode;
+UCreateSessionNode::UCreateSessionNode() {
+}
 
 void UCreateSessionNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UCreateSessionNode* UCreateSessionNode::CreateSessionNode(const FString& Key, in
     return NULL;
 }
 
-UCreateSessionNode::UCreateSessionNode() {
-}
 

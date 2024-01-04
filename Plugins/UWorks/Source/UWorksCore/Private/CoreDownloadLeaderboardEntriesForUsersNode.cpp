@@ -1,6 +1,7 @@
 #include "CoreDownloadLeaderboardEntriesForUsersNode.h"
 
-class UCoreDownloadLeaderboardEntriesForUsersNode;
+UCoreDownloadLeaderboardEntriesForUsersNode::UCoreDownloadLeaderboardEntriesForUsersNode() {
+}
 
 void UCoreDownloadLeaderboardEntriesForUsersNode::OnRequestCompleted(bool bSuccessful, FUWorksSteamLeaderboard SteamLeaderboard, FUWorksSteamLeaderboardEntries SteamLeaderboardEntries, int32 EntryCount) {
 }
@@ -9,6 +10,4 @@ UCoreDownloadLeaderboardEntriesForUsersNode* UCoreDownloadLeaderboardEntriesForU
     return NULL;
 }
 
-UCoreDownloadLeaderboardEntriesForUsersNode::UCoreDownloadLeaderboardEntriesForUsersNode() {
-}
 

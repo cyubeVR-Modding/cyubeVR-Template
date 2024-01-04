@@ -1,5 +1,9 @@
 #include "BenchmarkActor.h"
 
+ABenchmarkActor::ABenchmarkActor(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->AmountFramesWithWrongTime = 0;
+}
+
 bool ABenchmarkActor::WereSteamVRSettingsModified() {
     return false;
 }
@@ -93,7 +97,4 @@ void ABenchmarkActor::BenchmarkFinishedEvent_Implementation() {
 void ABenchmarkActor::ApplyAudioSetting() {
 }
 
-ABenchmarkActor::ABenchmarkActor() {
-    this->AmountFramesWithWrongTime = 0;
-}
 

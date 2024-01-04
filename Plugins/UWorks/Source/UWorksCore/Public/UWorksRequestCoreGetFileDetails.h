@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
+#include "EUWorksResult.h"
 #include "GetFileDetailsDelegateDelegate.h"
 #include "GetFileDetailsMinimalDelegateDelegate.h"
-#include "EUWorksResult.h"
+#include "UWorksRequestCore.h"
 #include "UWorksRequestCoreGetFileDetails.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FGetFileDetailsMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreGetFileDetails();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Filename);
     

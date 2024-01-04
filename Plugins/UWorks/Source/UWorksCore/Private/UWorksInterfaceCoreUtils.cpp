@@ -1,6 +1,7 @@
 #include "UWorksInterfaceCoreUtils.h"
 
-class UUWorksInterfaceCoreUtils;
+UUWorksInterfaceCoreUtils::UUWorksInterfaceCoreUtils() {
+}
 
 void UUWorksInterfaceCoreUtils::StartVRDashboard() {
 }
@@ -79,6 +80,4 @@ bool UUWorksInterfaceCoreUtils::BOverlayNeedsPresent() {
     return false;
 }
 
-UUWorksInterfaceCoreUtils::UUWorksInterfaceCoreUtils() {
-}
 

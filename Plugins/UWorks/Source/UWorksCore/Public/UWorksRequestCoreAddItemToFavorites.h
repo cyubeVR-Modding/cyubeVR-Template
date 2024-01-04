@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
-#include "AddItemToFavoritesMinimalDelegateDelegate.h"
-#include "AddItemToFavoritesDelegateDelegate.h"
 #include "UWorksPublishedFileID.h"
+#include "AddItemToFavoritesDelegateDelegate.h"
+#include "AddItemToFavoritesMinimalDelegateDelegate.h"
 #include "EUWorksResult.h"
+#include "UWorksRequestCore.h"
 #include "UWorksRequestCoreAddItemToFavorites.generated.h"
 
 UCLASS(Blueprintable)
@@ -18,6 +18,7 @@ public:
     FAddItemToFavoritesMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreAddItemToFavorites();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(int32 AppID, FUWorksPublishedFileID PublishedFileID);
     

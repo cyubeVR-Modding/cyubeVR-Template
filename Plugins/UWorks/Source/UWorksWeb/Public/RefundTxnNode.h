@@ -14,6 +14,7 @@ public:
     FRefundTxnDelegate Completed;
     
     URefundTxnNode();
+
     UFUNCTION(BlueprintCallable)
     static URefundTxnNode* RefundTxnNode(const FString& Key, const FString& OrderID, int32 AppID);
     

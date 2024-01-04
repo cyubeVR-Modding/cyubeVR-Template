@@ -1,6 +1,7 @@
 #include "CoreFileWriteAsyncNode.h"
 
-class UCoreFileWriteAsyncNode;
+UCoreFileWriteAsyncNode::UCoreFileWriteAsyncNode() {
+}
 
 void UCoreFileWriteAsyncNode::OnRequestCompleted(bool bSuccessful, EUWorksResult Result) {
 }
@@ -9,6 +10,4 @@ UCoreFileWriteAsyncNode* UCoreFileWriteAsyncNode::FileWriteAsyncNode(const FStri
     return NULL;
 }
 
-UCoreFileWriteAsyncNode::UCoreFileWriteAsyncNode() {
-}
 

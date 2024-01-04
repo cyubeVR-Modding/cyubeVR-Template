@@ -1,6 +1,7 @@
 #include "SetBanStatusNode.h"
 
-class USetBanStatusNode;
+USetBanStatusNode::USetBanStatusNode() {
+}
 
 USetBanStatusNode* USetBanStatusNode::SetBanStatusNode(const FString& Key, FUWorksSteamID SteamID, bool bBanned, int32 BanSeconds) {
     return NULL;
@@ -9,6 +10,4 @@ USetBanStatusNode* USetBanStatusNode::SetBanStatusNode(const FString& Key, FUWor
 void USetBanStatusNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
 
-USetBanStatusNode::USetBanStatusNode() {
-}
 

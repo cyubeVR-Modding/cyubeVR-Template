@@ -21,6 +21,7 @@ public:
     FSteamDelegateOnCreateWorkshopItem OnSteamInitFailure;
     
     UCallbackProxyCreateWorkshopItem();
+
     UFUNCTION(BlueprintCallable)
     static UCallbackProxyCreateWorkshopItem* SteamWorkshop_CreateItem(const FSteamWorkshopUpdateDetails& itemDetails);
     

@@ -1,5 +1,6 @@
 #include "WallMount.h"
 
-AWallMount::AWallMount() {
+AWallMount::AWallMount(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 }
+
 

@@ -14,6 +14,7 @@ public:
     FGetTradeHistoryDelegate Completed;
     
     UGetTradeHistoryNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

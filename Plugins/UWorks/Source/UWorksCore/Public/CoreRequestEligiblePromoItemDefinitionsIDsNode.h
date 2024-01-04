@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "RequestEligiblePromoItemDefinitionsIDsDelegateDelegate.h"
-#include "EUWorksResult.h"
 #include "UWorksSteamID.h"
+#include "EUWorksResult.h"
+#include "RequestEligiblePromoItemDefinitionsIDsDelegateDelegate.h"
 #include "CoreRequestEligiblePromoItemDefinitionsIDsNode.generated.h"
 
 class UCoreRequestEligiblePromoItemDefinitionsIDsNode;
@@ -16,6 +16,7 @@ public:
     FRequestEligiblePromoItemDefinitionsIDsDelegate Completed;
     
     UCoreRequestEligiblePromoItemDefinitionsIDsNode();
+
     UFUNCTION(BlueprintCallable)
     static UCoreRequestEligiblePromoItemDefinitionsIDsNode* RequestEligiblePromoItemDefinitionsIDsNode(FUWorksSteamID SteamID);
     

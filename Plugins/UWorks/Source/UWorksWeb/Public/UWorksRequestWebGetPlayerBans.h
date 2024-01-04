@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "GetPlayerBansDelegateDelegate.h"
 #include "GetPlayerBansMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetPlayerBans.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FGetPlayerBansMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetPlayerBans();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, const FString& SteamIDs);
     

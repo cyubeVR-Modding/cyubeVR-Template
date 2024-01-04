@@ -1,6 +1,7 @@
 #include "ResetLoginTokenNode.h"
 
-class UResetLoginTokenNode;
+UResetLoginTokenNode::UResetLoginTokenNode() {
+}
 
 UResetLoginTokenNode* UResetLoginTokenNode::ResetLoginTokenNode(const FString& Key, FUWorksSteamID SteamID) {
     return NULL;
@@ -9,6 +10,4 @@ UResetLoginTokenNode* UResetLoginTokenNode::ResetLoginTokenNode(const FString& K
 void UResetLoginTokenNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
 
-UResetLoginTokenNode::UResetLoginTokenNode() {
-}
 

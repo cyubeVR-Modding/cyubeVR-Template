@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "ResolveVanityURLDelegateDelegate.h"
 #include "ResolveVanityURLMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebResolveVanityURL.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FResolveVanityURLMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebResolveVanityURL();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, const FString& VanityURL, uint8 URLType);
     

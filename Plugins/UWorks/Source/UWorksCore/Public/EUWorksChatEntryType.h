@@ -9,12 +9,12 @@ enum class EUWorksChatEntryType : uint8 {
     Typing,
     InviteGame,
     Emote,
-    LeftConversation = 0x6,
+    LeftConversation = 6,
     Entered,
     WasKicked,
     WasBanned,
     Disconnected,
     HistoricalChat,
-    LinkBlocked = 0xE,
+    LinkBlocked = 14,
 };
 

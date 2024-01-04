@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "SetMemoDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "SetMemoDelegateDelegate.h"
 #include "SetMemoNode.generated.h"
 
 class USetMemoNode;
@@ -15,6 +15,7 @@ public:
     FSetMemoDelegate Completed;
     
     USetMemoNode();
+
     UFUNCTION(BlueprintCallable)
     static USetMemoNode* SetMemoNode(const FString& Key, FUWorksSteamID SteamID, const FString& Memo);
     

@@ -1,6 +1,7 @@
 #include "GetServerIPsBySteamIDNode.h"
 
-class UGetServerIPsBySteamIDNode;
+UGetServerIPsBySteamIDNode::UGetServerIPsBySteamIDNode() {
+}
 
 void UGetServerIPsBySteamIDNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetServerIPsBySteamIDNode* UGetServerIPsBySteamIDNode::GetServerIPsBySteamIDNod
     return NULL;
 }
 
-UGetServerIPsBySteamIDNode::UGetServerIPsBySteamIDNode() {
-}
 

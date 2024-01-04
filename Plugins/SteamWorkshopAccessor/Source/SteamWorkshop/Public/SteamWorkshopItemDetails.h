@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ItemPreviewDetails.h"
-#include "ESteamItemVisibility.h"
-#include "SteamUGCHandle.h"
 #include "UObject/NoExportTypes.h"
 #include "EResultBP.h"
 #include "SteamAppId.h"
-#include "SteamUGCItemId.h"
-#include "EWorkshopFileTypeBP.h"
-#include "UInt64.h"
-#include "UInt32.h"
 #include "SteamKeyValuePair.h"
+#include "SteamUGCHandle.h"
+#include "SteamUGCItemId.h"
+#include "UInt32.h"
+#include "UInt64.h"
+#include "ESteamItemVisibility.h"
+#include "EWorkshopFileTypeBP.h"
+#include "ItemPreviewDetails.h"
 #include "SteamWorkshopItemDetails.generated.h"
 
 USTRUCT(BlueprintType)

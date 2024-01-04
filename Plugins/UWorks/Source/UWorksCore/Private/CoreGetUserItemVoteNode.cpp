@@ -1,6 +1,7 @@
 #include "CoreGetUserItemVoteNode.h"
 
-class UCoreGetUserItemVoteNode;
+UCoreGetUserItemVoteNode::UCoreGetUserItemVoteNode() {
+}
 
 void UCoreGetUserItemVoteNode::OnRequestCompleted(bool bSuccessful, FUWorksPublishedFileID PublishedFileID, EUWorksResult Result, bool bVotedUp, bool bVotedDown, bool bVoteSkipped) {
 }
@@ -9,6 +10,4 @@ UCoreGetUserItemVoteNode* UCoreGetUserItemVoteNode::GetUserItemVoteNode(FUWorksP
     return NULL;
 }
 
-UCoreGetUserItemVoteNode::UCoreGetUserItemVoteNode() {
-}
 

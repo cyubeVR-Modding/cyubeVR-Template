@@ -1,11 +1,6 @@
 #include "LivSpringArmComponent.h"
 
-class UCameraComponent;
-
-void ULivSpringArmComponent::UpdatePoseForCamera(UCameraComponent* Camera, float DeltaTime) {
-}
-
-ULivSpringArmComponent::ULivSpringArmComponent() {
+ULivSpringArmComponent::ULivSpringArmComponent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->bClampPitch = true;
     this->MinPitch = -10.00f;
     this->MaxPitch = 10.00f;
@@ -14,4 +9,8 @@ ULivSpringArmComponent::ULivSpringArmComponent() {
     this->MinInterpolationSpeed = 0.50f;
     this->MaxInterpolationSpeed = 12.00f;
 }
+
+void ULivSpringArmComponent::UpdatePoseForCamera(UCameraComponent* Camera, float DeltaTime) {
+}
+
 

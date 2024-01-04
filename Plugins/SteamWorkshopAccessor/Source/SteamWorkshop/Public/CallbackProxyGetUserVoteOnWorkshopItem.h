@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Net/OnlineBlueprintCallProxyBase.h"
-#include "SteamDelegateOnGetUserVoteOnWorkshopItemDelegate.h"
 #include "SteamUGCItemId.h"
+#include "SteamDelegateOnGetUserVoteOnWorkshopItemDelegate.h"
 #include "CallbackProxyGetUserVoteOnWorkshopItem.generated.h"
 
 class UCallbackProxyGetUserVoteOnWorkshopItem;
@@ -21,6 +21,7 @@ public:
     FSteamDelegateOnGetUserVoteOnWorkshopItem OnSteamInitFailure;
     
     UCallbackProxyGetUserVoteOnWorkshopItem();
+
     UFUNCTION(BlueprintCallable)
     static UCallbackProxyGetUserVoteOnWorkshopItem* SteamWorkshop_GetUserVoteOnItem(const FSteamUGCItemId& ItemId);
     

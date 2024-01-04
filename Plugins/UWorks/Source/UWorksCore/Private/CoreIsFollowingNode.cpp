@@ -1,6 +1,7 @@
 #include "CoreIsFollowingNode.h"
 
-class UCoreIsFollowingNode;
+UCoreIsFollowingNode::UCoreIsFollowingNode() {
+}
 
 void UCoreIsFollowingNode::OnRequestCompleted(bool bSuccessful, EUWorksResult Result, FUWorksSteamID SteamID, bool bIsFollowing) {
 }
@@ -9,6 +10,4 @@ UCoreIsFollowingNode* UCoreIsFollowingNode::IsFollowingNode(FUWorksSteamID Steam
     return NULL;
 }
 
-UCoreIsFollowingNode::UCoreIsFollowingNode() {
-}
 

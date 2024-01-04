@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "EBlockTypeBP.h"
 #include "BlockInfoBP.h"
+#include "EBlockTypeBP.h"
 #include "ModifiedBlockActor.generated.h"
 
-class UMaterialInstance;
-class UStaticMeshComponent;
-class UMaterialInstanceDynamic;
 class AChunkManager;
+class UMaterialInstance;
+class UMaterialInstanceDynamic;
+class UStaticMeshComponent;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API AModifiedBlockActor : public AActor {
@@ -50,7 +50,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bIsForMove;
     
-    AModifiedBlockActor();
+    AModifiedBlockActor(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void UpdateMaterialInstanceValuesDefaultLighting();
     
@@ -59,6 +60,9 @@ public:
     
     UFUNCTION(BlueprintCallable)
     void UpdateDestructionAmount();
+    
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+    void TransferBackBP();
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void ResetToPoolBP();

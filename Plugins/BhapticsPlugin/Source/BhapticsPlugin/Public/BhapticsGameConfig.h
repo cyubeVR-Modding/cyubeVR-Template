@@ -12,5 +12,6 @@ public:
     FSoftObjectPath Configuration;
     
     UBhapticsGameConfig();
+
 };
 

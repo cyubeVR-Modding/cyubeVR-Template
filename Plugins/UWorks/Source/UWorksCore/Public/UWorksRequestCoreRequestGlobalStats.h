@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RequestGlobalStatsMinimalDelegateDelegate.h"
-#include "RequestGlobalStatsDelegateDelegate.h"
-#include "UWorksRequestCore.h"
 #include "UWorksGameID.h"
 #include "EUWorksResult.h"
+#include "RequestGlobalStatsDelegateDelegate.h"
+#include "RequestGlobalStatsMinimalDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "UWorksRequestCoreRequestGlobalStats.generated.h"
 
 UCLASS(Blueprintable)
@@ -18,6 +18,7 @@ public:
     FRequestGlobalStatsMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreRequestGlobalStats();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(int32 HistoryDays);
     

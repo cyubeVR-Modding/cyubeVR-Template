@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AddItemToFavoritesDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksPublishedFileID.h"
+#include "AddItemToFavoritesDelegateDelegate.h"
 #include "EUWorksResult.h"
 #include "CoreAddItemToFavoritesNode.generated.h"
 
@@ -16,6 +16,7 @@ public:
     FAddItemToFavoritesDelegate Completed;
     
     UCoreAddItemToFavoritesNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, FUWorksPublishedFileID PublishedFileID, EUWorksResult Result, bool bWasAddRequest);
     

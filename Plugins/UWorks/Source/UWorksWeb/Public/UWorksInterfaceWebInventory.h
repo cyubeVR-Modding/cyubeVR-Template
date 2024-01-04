@@ -1,35 +1,36 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceWeb.h"
-#include "GetQuantityMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksSteamItemDef.h"
-#include "GetPriceSheetMinimalDelegateDelegate.h"
-#include "GetItemDefsMinimalDelegateDelegate.h"
-#include "GetInventoryMinimalDelegateDelegate.h"
 #include "UWorksSteamItemInstanceID.h"
-#include "ExchangeItemMinimalDelegateDelegate.h"
-#include "ConsumeItemMinimalDelegateDelegate.h"
-#include "ConsolidateMinimalDelegateDelegate.h"
-#include "AddPromoItemMinimalDelegateDelegate.h"
 #include "AddItemMinimalDelegateDelegate.h"
+#include "AddPromoItemMinimalDelegateDelegate.h"
+#include "ConsolidateMinimalDelegateDelegate.h"
+#include "ConsumeItemMinimalDelegateDelegate.h"
+#include "ExchangeItemMinimalDelegateDelegate.h"
+#include "GetInventoryMinimalDelegateDelegate.h"
+#include "GetItemDefsMinimalDelegateDelegate.h"
+#include "GetPriceSheetMinimalDelegateDelegate.h"
+#include "GetQuantityMinimalDelegateDelegate.h"
+#include "UWorksInterfaceWeb.h"
 #include "UWorksInterfaceWebInventory.generated.h"
 
+class UUWorksRequestWebAddItem;
+class UUWorksRequestWebAddPromoItem;
+class UUWorksRequestWebConsolidate;
+class UUWorksRequestWebConsumeItem;
+class UUWorksRequestWebExchangeItem;
+class UUWorksRequestWebGetInventory;
+class UUWorksRequestWebGetItemDefs;
 class UUWorksRequestWebGetPriceSheet;
 class UUWorksRequestWebGetQuantity;
-class UUWorksRequestWebGetItemDefs;
-class UUWorksRequestWebGetInventory;
-class UUWorksRequestWebAddItem;
-class UUWorksRequestWebExchangeItem;
-class UUWorksRequestWebConsumeItem;
-class UUWorksRequestWebConsolidate;
-class UUWorksRequestWebAddPromoItem;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebInventory : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:
     UUWorksInterfaceWebInventory();
+
     UFUNCTION(BlueprintCallable)
     static void GetQuantityMinimal(const FString& Key, int32 AppID, FUWorksSteamID SteamID, FUWorksSteamItemDef ItemDefID, bool bForce, const FGetQuantityMinimalDelegate& Delegate);
     

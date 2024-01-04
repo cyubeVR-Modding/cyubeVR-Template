@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
+#include "EUWorksResult.h"
 #include "FileReadAsyncDelegateDelegate.h"
 #include "FileReadAsyncMinimalDelegateDelegate.h"
-#include "EUWorksResult.h"
+#include "UWorksRequestCore.h"
 #include "UWorksRequestCoreFileReadAsync.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FFileReadAsyncMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreFileReadAsync();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& File, int32 Offset, int32 BytesToRead);
     

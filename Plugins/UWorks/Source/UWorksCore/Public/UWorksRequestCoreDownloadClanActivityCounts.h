@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
+#include "UWorksSteamID.h"
 #include "DownloadClanActivityCountsDelegateDelegate.h"
 #include "DownloadClanActivityCountsMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
+#include "UWorksRequestCore.h"
 #include "UWorksRequestCoreDownloadClanActivityCounts.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FDownloadClanActivityCountsMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreDownloadClanActivityCounts();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(TArray<FUWorksSteamID> SteamIDClans);
     

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "WorkshopItemDownloadInfo.h"
 #include "EItemUpdateStatusBP.h"
+#include "WorkshopItemDownloadInfo.h"
 #include "WorkshopItemUpdateInfo.generated.h"
 
 USTRUCT(BlueprintType)

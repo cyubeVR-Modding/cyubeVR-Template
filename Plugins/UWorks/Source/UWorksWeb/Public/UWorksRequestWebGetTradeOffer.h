@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetTradeOfferMinimalDelegateDelegate.h"
 #include "GetTradeOfferDelegateDelegate.h"
+#include "GetTradeOfferMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetTradeOffer.generated.h"
 
@@ -16,6 +16,7 @@ public:
     FGetTradeOfferMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetTradeOffer();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, const FString& TradeOfferID, const FString& Language);
     

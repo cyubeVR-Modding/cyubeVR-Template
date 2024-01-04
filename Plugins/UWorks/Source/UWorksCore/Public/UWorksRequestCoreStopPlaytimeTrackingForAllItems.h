@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
+#include "EUWorksResult.h"
 #include "StopPlaytimeTrackingForAllItemsDelegateDelegate.h"
 #include "StopPlaytimeTrackingForAllItemsMinimalDelegateDelegate.h"
-#include "EUWorksResult.h"
+#include "UWorksRequestCore.h"
 #include "UWorksRequestCoreStopPlaytimeTrackingForAllItems.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FStopPlaytimeTrackingForAllItemsMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreStopPlaytimeTrackingForAllItems();
+
     UFUNCTION(BlueprintCallable)
     bool IsActive();
     

@@ -1,11 +1,10 @@
 #include "CallbackProxyStopWorkshopItemsPlaytimeTrackingAllItems.h"
 
-class UCallbackProxyStopWorkshopItemsPlaytimeTrackingAllItems;
+UCallbackProxyStopWorkshopItemsPlaytimeTrackingAllItems::UCallbackProxyStopWorkshopItemsPlaytimeTrackingAllItems() {
+}
 
 UCallbackProxyStopWorkshopItemsPlaytimeTrackingAllItems* UCallbackProxyStopWorkshopItemsPlaytimeTrackingAllItems::SteamWorkshop_StopPlaytimeTrackingAllItems() {
     return NULL;
 }
 
-UCallbackProxyStopWorkshopItemsPlaytimeTrackingAllItems::UCallbackProxyStopWorkshopItemsPlaytimeTrackingAllItems() {
-}
 

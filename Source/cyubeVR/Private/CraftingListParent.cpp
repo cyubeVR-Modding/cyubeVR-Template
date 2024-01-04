@@ -1,5 +1,8 @@
 #include "CraftingListParent.h"
 
+UCraftingListParent::UCraftingListParent() : UUserWidget(FObjectInitializer::Get()) {
+}
+
 void UCraftingListParent::GetDraftsMod(TArray<FCustomBlockInfoForBP>& DraftsInfoArray) {
 }
 
@@ -10,6 +13,4 @@ TMap<EBlockTypeBP, int32> UCraftingListParent::GetDraftAmounts(EBlockTypeBP Type
     return TMap<EBlockTypeBP, int32>();
 }
 
-UCraftingListParent::UCraftingListParent() : UUserWidget(FObjectInitializer::Get()) {
-}
 

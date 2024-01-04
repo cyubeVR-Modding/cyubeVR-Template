@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
-#include "UObject/NoExportTypes.h"
-#include "BhapticsRotationOption.h"
 #include "BhapticsDevice.h"
-#include "UObject/NoExportTypes.h"
+#include "BhapticsRotationOption.h"
 #include "BhapticsSDK2.generated.h"
 
 class UPrimitiveComponent;
@@ -14,6 +14,7 @@ class BHAPTICSPLUGIN_API UBhapticsSDK2 : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UBhapticsSDK2();
+
     UFUNCTION(BlueprintCallable)
     static void SwapPosition(FBhapticsDevice device);
     

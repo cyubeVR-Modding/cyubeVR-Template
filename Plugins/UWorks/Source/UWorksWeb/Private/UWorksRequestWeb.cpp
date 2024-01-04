@@ -1,5 +1,8 @@
 #include "UWorksRequestWeb.h"
 
+UUWorksRequestWeb::UUWorksRequestWeb() {
+}
+
 bool UUWorksRequestWeb::IsActive() {
     return false;
 }
@@ -14,6 +17,4 @@ void UUWorksRequestWeb::Deactivate() {
 void UUWorksRequestWeb::Activate() {
 }
 
-UUWorksRequestWeb::UUWorksRequestWeb() {
-}
 

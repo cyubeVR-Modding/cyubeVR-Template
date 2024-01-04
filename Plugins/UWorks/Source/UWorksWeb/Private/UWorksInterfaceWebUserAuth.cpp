@@ -1,7 +1,7 @@
 #include "UWorksInterfaceWebUserAuth.h"
 
-class UUWorksRequestWebAuthenticateUserTicket;
-class UUWorksRequestWebAuthenticateUser;
+UUWorksInterfaceWebUserAuth::UUWorksInterfaceWebUserAuth() {
+}
 
 void UUWorksInterfaceWebUserAuth::AuthenticateUserTicketMinimal(const FString& Key, int32 AppID, const FString& Ticket, const FAuthenticateUserTicketMinimalDelegate& Delegate) {
 }
@@ -17,6 +17,4 @@ UUWorksRequestWebAuthenticateUser* UUWorksInterfaceWebUserAuth::AuthenticateUser
     return NULL;
 }
 
-UUWorksInterfaceWebUserAuth::UUWorksInterfaceWebUserAuth() {
-}
 

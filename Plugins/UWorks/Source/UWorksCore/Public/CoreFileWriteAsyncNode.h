@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "FileWriteAsyncDelegateDelegate.h"
 #include "EUWorksResult.h"
+#include "FileWriteAsyncDelegateDelegate.h"
 #include "CoreFileWriteAsyncNode.generated.h"
 
 class UCoreFileWriteAsyncNode;
@@ -15,6 +15,7 @@ public:
     FFileWriteAsyncDelegate Completed;
     
     UCoreFileWriteAsyncNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, EUWorksResult Result);
     

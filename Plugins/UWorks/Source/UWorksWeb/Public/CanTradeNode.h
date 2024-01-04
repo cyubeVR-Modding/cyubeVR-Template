@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "CanTradeDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksSteamID.h"
+#include "CanTradeDelegateDelegate.h"
 #include "CanTradeNode.generated.h"
 
 class UCanTradeNode;
@@ -15,6 +15,7 @@ public:
     FCanTradeDelegate Completed;
     
     UCanTradeNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

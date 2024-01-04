@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "DeleteLeaderboardDelegateDelegate.h"
 #include "DeleteLeaderboardMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebDeleteLeaderboard.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FDeleteLeaderboardMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebDeleteLeaderboard();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, int32 AppID, const FString& Name);
     

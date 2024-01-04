@@ -21,6 +21,7 @@ private:
     
 public:
     URuntimeMeshProviderStaticMesh();
+
     UFUNCTION(BlueprintCallable)
     void SetStaticMesh(UStaticMesh* InStaticMesh);
     

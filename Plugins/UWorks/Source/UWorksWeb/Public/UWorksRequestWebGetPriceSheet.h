@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "GetPriceSheetDelegateDelegate.h"
 #include "GetPriceSheetMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetPriceSheet.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FGetPriceSheetMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetPriceSheet();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, int32 ECurrency);
     

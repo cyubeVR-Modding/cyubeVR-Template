@@ -1,7 +1,7 @@
 #include "UWorksInterfaceWebPublishedItemVoting.h"
 
-class UUWorksRequestWebUserVoteSummary;
-class UUWorksRequestWebItemVoteSummary;
+UUWorksInterfaceWebPublishedItemVoting::UUWorksInterfaceWebPublishedItemVoting() {
+}
 
 void UUWorksInterfaceWebPublishedItemVoting::UserVoteSummaryMinimal(const FString& Key, FUWorksSteamID SteamID, int32 AppID, int32 Count, TArray<int32> PublishedFileIDs, const FUserVoteSummaryMinimalDelegate& Delegate) {
 }
@@ -17,6 +17,4 @@ UUWorksRequestWebItemVoteSummary* UUWorksInterfaceWebPublishedItemVoting::ItemVo
     return NULL;
 }
 
-UUWorksInterfaceWebPublishedItemVoting::UUWorksInterfaceWebPublishedItemVoting() {
-}
 

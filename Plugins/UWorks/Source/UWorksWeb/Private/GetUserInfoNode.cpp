@@ -1,6 +1,7 @@
 #include "GetUserInfoNode.h"
 
-class UGetUserInfoNode;
+UGetUserInfoNode::UGetUserInfoNode() {
+}
 
 void UGetUserInfoNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetUserInfoNode* UGetUserInfoNode::GetUserInfoNode(const FString& Key, FUWorksS
     return NULL;
 }
 
-UGetUserInfoNode::UGetUserInfoNode() {
-}
 

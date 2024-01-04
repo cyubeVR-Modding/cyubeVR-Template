@@ -1,6 +1,7 @@
 #include "CoreRequestUserStatsGSNode.h"
 
-class UCoreRequestUserStatsGSNode;
+UCoreRequestUserStatsGSNode::UCoreRequestUserStatsGSNode() {
+}
 
 UCoreRequestUserStatsGSNode* UCoreRequestUserStatsGSNode::RequestUserStatsGSNode(FUWorksSteamID SteamIDUser) {
     return NULL;
@@ -9,6 +10,4 @@ UCoreRequestUserStatsGSNode* UCoreRequestUserStatsGSNode::RequestUserStatsGSNode
 void UCoreRequestUserStatsGSNode::OnRequestCompleted(bool bSuccessful, EUWorksResult Result, FUWorksSteamID SteamIDUser) {
 }
 
-UCoreRequestUserStatsGSNode::UCoreRequestUserStatsGSNode() {
-}
 

@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "RemoveItemFromFavoritesDelegateDelegate.h"
 #include "UWorksPublishedFileID.h"
 #include "EUWorksResult.h"
+#include "RemoveItemFromFavoritesDelegateDelegate.h"
 #include "CoreRemoveItemFromFavoritesNode.generated.h"
 
 class UCoreRemoveItemFromFavoritesNode;
@@ -16,6 +16,7 @@ public:
     FRemoveItemFromFavoritesDelegate Completed;
     
     UCoreRemoveItemFromFavoritesNode();
+
     UFUNCTION(BlueprintCallable)
     static UCoreRemoveItemFromFavoritesNode* RemoveItemFromFavoritesNode(int32 AppID, FUWorksPublishedFileID PublishedFileID);
     

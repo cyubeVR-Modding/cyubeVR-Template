@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ESteamItemVisibility.h"
 #include "ESteamSupportedLanguages.h"
 #include "SteamKeyValuePair.h"
+#include "ESteamItemVisibility.h"
 #include "SteamWorkshopUpdateDetails.generated.h"
 
 USTRUCT(BlueprintType)

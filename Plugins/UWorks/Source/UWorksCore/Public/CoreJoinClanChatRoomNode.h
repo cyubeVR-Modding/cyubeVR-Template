@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "JoinClanChatRoomDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "EUWorksChatRoomEnterResponse.h"
+#include "JoinClanChatRoomDelegateDelegate.h"
 #include "CoreJoinClanChatRoomNode.generated.h"
 
 class UCoreJoinClanChatRoomNode;
@@ -16,6 +16,7 @@ public:
     FJoinClanChatRoomDelegate Completed;
     
     UCoreJoinClanChatRoomNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, FUWorksSteamID SteamIDClanChat, EUWorksChatRoomEnterResponse ChatRoomEnterResponse);
     

@@ -13,6 +13,5 @@ enum class EBPHMDDeviceType : uint8 {
     DT_AppleARKit,
     DT_GoogleARCore,
     DT_Unknown,
-    DT_MAX UMETA(Hidden),
 };
 

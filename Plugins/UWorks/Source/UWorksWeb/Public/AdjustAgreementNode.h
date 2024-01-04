@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "AdjustAgreementDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "AdjustAgreementDelegateDelegate.h"
 #include "AdjustAgreementNode.generated.h"
 
 class UAdjustAgreementNode;
@@ -15,6 +15,7 @@ public:
     FAdjustAgreementDelegate Completed;
     
     UAdjustAgreementNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

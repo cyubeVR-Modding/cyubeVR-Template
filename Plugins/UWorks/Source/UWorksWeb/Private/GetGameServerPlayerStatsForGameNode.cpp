@@ -1,6 +1,7 @@
 #include "GetGameServerPlayerStatsForGameNode.h"
 
-class UGetGameServerPlayerStatsForGameNode;
+UGetGameServerPlayerStatsForGameNode::UGetGameServerPlayerStatsForGameNode() {
+}
 
 void UGetGameServerPlayerStatsForGameNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetGameServerPlayerStatsForGameNode* UGetGameServerPlayerStatsForGameNode::GetG
     return NULL;
 }
 
-UGetGameServerPlayerStatsForGameNode::UGetGameServerPlayerStatsForGameNode() {
-}
 

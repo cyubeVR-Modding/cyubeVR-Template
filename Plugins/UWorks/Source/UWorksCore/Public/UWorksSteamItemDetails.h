@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksSteamItemInstanceID.h"
 #include "UWorksSteamItemDef.h"
+#include "UWorksSteamItemInstanceID.h"
 #include "EUWorksSteamItemFlags.h"
 #include "UWorksSteamItemDetails.generated.h"
 

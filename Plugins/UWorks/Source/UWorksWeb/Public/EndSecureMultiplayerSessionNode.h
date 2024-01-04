@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "EndSecureMultiplayerSessionDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "EndSecureMultiplayerSessionDelegateDelegate.h"
 #include "EndSecureMultiplayerSessionNode.generated.h"
 
 class UEndSecureMultiplayerSessionNode;
@@ -15,6 +15,7 @@ public:
     FEndSecureMultiplayerSessionDelegate Completed;
     
     UEndSecureMultiplayerSessionNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

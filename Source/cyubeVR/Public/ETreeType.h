@@ -12,6 +12,13 @@ enum class ETreeType : uint8 {
     Cactus4,
     DesertGrass1,
     DesertGrass2,
+    GrassBasic,
+    GrassGood1,
+    FlowerRed,
+    FlowerWhite,
+    FlowerBlue,
+    FlowerGreen,
+    FlowerRainbow,
     TREE_END_NUMBER,
 };
 

@@ -1,6 +1,7 @@
 #include "CoreSetUserItemVoteNode.h"
 
-class UCoreSetUserItemVoteNode;
+UCoreSetUserItemVoteNode::UCoreSetUserItemVoteNode() {
+}
 
 UCoreSetUserItemVoteNode* UCoreSetUserItemVoteNode::SetUserItemVoteNode(FUWorksPublishedFileID PublishedFileID, bool bVoteUp) {
     return NULL;
@@ -9,6 +10,4 @@ UCoreSetUserItemVoteNode* UCoreSetUserItemVoteNode::SetUserItemVoteNode(FUWorksP
 void UCoreSetUserItemVoteNode::OnRequestCompleted(bool bSuccessful, FUWorksPublishedFileID PublishedFileID, EUWorksResult Result, bool bVoteUp) {
 }
 
-UCoreSetUserItemVoteNode::UCoreSetUserItemVoteNode() {
-}
 

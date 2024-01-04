@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Engine/DeveloperSettings.h"
-#include "ERuntimeMeshUpdateFrequency.h"
-#include "ERuntimeMeshThreadingPriority.h"
-#include "ERuntimeMeshCollisionCookingMode.h"
 #include "UObject/NoExportTypes.h"
+#include "Engine/DeveloperSettings.h"
+#include "ERuntimeMeshCollisionCookingMode.h"
+#include "ERuntimeMeshThreadingPriority.h"
+#include "ERuntimeMeshUpdateFrequency.h"
 #include "RuntimeMeshComponentSettings.generated.h"
 
 UCLASS(Blueprintable, DefaultConfig, Config=RuntimeMeshComponent)
@@ -45,5 +45,6 @@ public:
     float MaxAllowedTimePerTick;
     
     URuntimeMeshComponentSettings();
+
 };
 

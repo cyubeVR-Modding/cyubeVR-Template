@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "ExchangeItemDelegateDelegate.h"
 #include "UWorksSteamID.h"
-#include "UWorksSteamItemInstanceID.h"
 #include "UWorksSteamItemDef.h"
+#include "UWorksSteamItemInstanceID.h"
+#include "ExchangeItemDelegateDelegate.h"
 #include "ExchangeItemNode.generated.h"
 
 class UExchangeItemNode;
@@ -17,6 +17,7 @@ public:
     FExchangeItemDelegate Completed;
     
     UExchangeItemNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

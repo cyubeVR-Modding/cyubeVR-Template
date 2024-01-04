@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreJoinClanChatRoom.h"
 
+UUWorksRequestCoreJoinClanChatRoom::UUWorksRequestCoreJoinClanChatRoom() {
+}
+
 void UUWorksRequestCoreJoinClanChatRoom::SetInput(FUWorksSteamID SteamIDClan) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreJoinClanChatRoom::Deactivate() {
 void UUWorksRequestCoreJoinClanChatRoom::Activate() {
 }
 
-UUWorksRequestCoreJoinClanChatRoom::UUWorksRequestCoreJoinClanChatRoom() {
-}
 

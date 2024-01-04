@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "RequestGlobalStatsDelegateDelegate.h"
 #include "UWorksGameID.h"
 #include "EUWorksResult.h"
+#include "RequestGlobalStatsDelegateDelegate.h"
 #include "CoreRequestGlobalStatsNode.generated.h"
 
 class UCoreRequestGlobalStatsNode;
@@ -16,6 +16,7 @@ public:
     FRequestGlobalStatsDelegate Completed;
     
     UCoreRequestGlobalStatsNode();
+
     UFUNCTION(BlueprintCallable)
     static UCoreRequestGlobalStatsNode* RequestGlobalStatsNode(int32 HistoryDays);
     

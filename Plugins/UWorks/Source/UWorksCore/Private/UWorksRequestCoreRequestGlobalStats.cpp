@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreRequestGlobalStats.h"
 
+UUWorksRequestCoreRequestGlobalStats::UUWorksRequestCoreRequestGlobalStats() {
+}
+
 void UUWorksRequestCoreRequestGlobalStats::SetInput(int32 HistoryDays) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreRequestGlobalStats::Deactivate() {
 void UUWorksRequestCoreRequestGlobalStats::Activate() {
 }
 
-UUWorksRequestCoreRequestGlobalStats::UUWorksRequestCoreRequestGlobalStats() {
-}
 

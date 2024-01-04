@@ -1,9 +1,6 @@
 #include "AttachedRain.h"
 
-void AAttachedRain::UpdateAudioLocations() {
-}
-
-AAttachedRain::AAttachedRain() {
+AAttachedRain::AAttachedRain(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->bTemporary = false;
     this->SceneCapture = NULL;
     this->bHasAudio = false;
@@ -11,4 +8,8 @@ AAttachedRain::AAttachedRain() {
     this->RowsX = 5;
     this->RowsY = 5;
 }
+
+void AAttachedRain::UpdateAudioLocations() {
+}
+
 

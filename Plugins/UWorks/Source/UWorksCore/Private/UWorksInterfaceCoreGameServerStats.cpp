@@ -1,8 +1,7 @@
 #include "UWorksInterfaceCoreGameServerStats.h"
 
-class UUWorksRequestCoreStoreUserStats;
-class UUWorksRequestCoreRequestUserStatsGS;
-class UUWorksInterfaceCoreGameServerStats;
+UUWorksInterfaceCoreGameServerStats::UUWorksInterfaceCoreGameServerStats() {
+}
 
 bool UUWorksInterfaceCoreGameServerStats::UpdateUserAvgRateStat(FUWorksSteamID SteamIDUser, const FString& Name, float CountThisSession, float SessionLength) {
     return false;
@@ -54,6 +53,4 @@ bool UUWorksInterfaceCoreGameServerStats::ClearUserAchievement(FUWorksSteamID St
     return false;
 }
 
-UUWorksInterfaceCoreGameServerStats::UUWorksInterfaceCoreGameServerStats() {
-}
 

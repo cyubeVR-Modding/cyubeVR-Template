@@ -3,7 +3,7 @@
 #include "UObject/Object.h"
 #include "DLSSSettings.generated.h"
 
-UCLASS(Blueprintable, DefaultConfig, config = Engine)
+UCLASS(Blueprintable, DefaultConfig, Config=Engine)
 class DLSS_API UDLSSSettings : public UObject {
     GENERATED_BODY()
 public:
@@ -34,7 +34,7 @@ public:
     UPROPERTY(BlueprintReadWrite, Config, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bGenericDLSSBinaryExists;
     
-    UPROPERTY(AdvancedDisplay, Config, EditAnywhere)
+    UPROPERTY(AdvancedDisplay, Config, EditAnywhere, meta=(AllowPrivateAccess=true))
     uint32 NVIDIANGXApplicationId;
     
     UPROPERTY(AdvancedDisplay, BlueprintReadWrite, Config, EditAnywhere, meta=(AllowPrivateAccess=true))
@@ -44,5 +44,6 @@ public:
     bool bCustomDLSSBinaryExists;
     
     UDLSSSettings();
+
 };
 

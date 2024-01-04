@@ -1,5 +1,8 @@
 #include "UWorksLibraryGameID.h"
 
+UUWorksLibraryGameID::UUWorksLibraryGameID() {
+}
+
 void UUWorksLibraryGameID::SetIdentifier(FUWorksGameID& GameID, const FString& Identifier) {
 }
 
@@ -54,6 +57,4 @@ FUWorksGameID UUWorksLibraryGameID::ConstructFromParametersA(const FString& Iden
     return FUWorksGameID{};
 }
 
-UUWorksLibraryGameID::UUWorksLibraryGameID() {
-}
 

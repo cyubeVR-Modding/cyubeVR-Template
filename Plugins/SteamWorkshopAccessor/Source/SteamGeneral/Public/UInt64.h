@@ -6,7 +6,7 @@ USTRUCT(BlueprintType)
 struct FUInt64 {
     GENERATED_BODY()
 public:
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, meta=(AllowPrivateAccess=true))
     uint64 Value;
     
     STEAMGENERAL_API FUInt64();

@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
-#include "GetServerIPsBySteamIDDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetServerIPsBySteamIDDelegateDelegate.h"
 #include "GetServerIPsBySteamIDMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetServerIPsBySteamID.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FGetServerIPsBySteamIDMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetServerIPsBySteamID();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, FUWorksSteamID ServerSteamID);
     

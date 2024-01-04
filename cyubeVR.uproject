@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.27",
+	"EngineAssociation": "{863757FB-4DB9-34CF-3FC3-4696A509E1A9}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -21,11 +21,6 @@
 			"Enabled": true
 		},
 		{
-			"Name": "GoogleAnalytics",
-			"Enabled": true,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/1b3f6c0fc07648b18758f7b883358b3e"
-		},
-		{
 			"Name": "OnlineSubsystemIOS",
 			"Enabled": false
 		},
@@ -39,11 +34,11 @@
 		},
 		{
 			"Name": "SteamVR",
-			"Enabled": true,
+			"Enabled": false,
 			"SupportedTargetPlatforms": [
 				"Win32",
 				"Win64",
-				"Linux"
+				"Linux",
 			]
 		},
 		{
@@ -83,15 +78,6 @@
 			"Name": "UWorks",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/382ff2e7db2f483c82bf7246530d100a"
-		},
-		{
-			"Name": "MegascansPlugin",
-			"Enabled": true,
-			"SupportedTargetPlatforms": [
-				"Win64",
-				"Mac",
-				"Linux"
-			]
 		},
 		{
 			"Name": "SteamAudio",
@@ -137,9 +123,25 @@
 			"Enabled": false
 		},
 		{
+			"Name": "PimaxPlatform",
+			"Enabled": true
+		},
+		{
 			"Name": "BhapticsPlugin",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/c61885cc9ce54aacbb0230a1a79581cd"
+		},
+		{
+			"Name": "ImpostorBaker",
+			"Enabled": true
+		},
+		{
+			"Name": "XRVisualization",
+			"Enabled": false
+		},
+		{
+			"Name": "rdLODtools",
+			"Enabled": true
 		},
 		{
 			"Name": "ChaosEditor",
@@ -148,6 +150,7 @@
 	],
 	"TargetPlatforms": [
 		"WindowsNoEditor",
-		"LinuxNoEditor"
+		"LinuxNoEditor",
+		"PS5"
 	]
 }

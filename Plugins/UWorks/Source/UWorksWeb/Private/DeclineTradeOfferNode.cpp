@@ -1,6 +1,7 @@
 #include "DeclineTradeOfferNode.h"
 
-class UDeclineTradeOfferNode;
+UDeclineTradeOfferNode::UDeclineTradeOfferNode() {
+}
 
 void UDeclineTradeOfferNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UDeclineTradeOfferNode* UDeclineTradeOfferNode::DeclineTradeOfferNode(const FStr
     return NULL;
 }
 
-UDeclineTradeOfferNode::UDeclineTradeOfferNode() {
-}
 

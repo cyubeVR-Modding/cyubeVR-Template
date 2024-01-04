@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksServerInfo.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "PingDelegateDelegate.h"
+#include "UWorksServerInfo.h"
 #include "CorePingNode.generated.h"
 
 class UCorePingNode;
@@ -15,6 +15,7 @@ public:
     FPingDelegate Completed;
     
     UCorePingNode();
+
     UFUNCTION(BlueprintCallable)
     static UCorePingNode* PingNode(const FString& IP, int32 Port);
     

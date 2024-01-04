@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "RuntimeMeshCollisionData.h"
+#include "RuntimeMeshCollisionSettings.h"
 #include "RuntimeMeshProviderPassthrough.h"
 #include "RuntimeMeshRenderableCollisionData.h"
-#include "RuntimeMeshCollisionSettings.h"
-#include "RuntimeMeshCollisionData.h"
 #include "RuntimeMeshProviderCollision.generated.h"
 
 UCLASS(Blueprintable)
@@ -28,6 +28,7 @@ private:
     
 public:
     URuntimeMeshProviderCollision();
+
     UFUNCTION(BlueprintCallable)
     void SetRenderableSectionAffectsCollision(int32 SectionId, bool bCollisionEnabled);
     

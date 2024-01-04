@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "GetSessionDetailsForAppDelegateDelegate.h"
 #include "GetSessionDetailsForAppMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksSessions.h"
 #include "UWorksRequestWebGetSessionDetailsForApp.generated.h"
 
@@ -17,6 +17,7 @@ public:
     FGetSessionDetailsForAppMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetSessionDetailsForApp();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, FUWorksSessions Sessions, int32 AppID, const FString& Language);
     

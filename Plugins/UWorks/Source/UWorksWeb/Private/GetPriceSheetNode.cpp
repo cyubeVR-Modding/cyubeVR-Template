@@ -1,6 +1,7 @@
 #include "GetPriceSheetNode.h"
 
-class UGetPriceSheetNode;
+UGetPriceSheetNode::UGetPriceSheetNode() {
+}
 
 void UGetPriceSheetNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetPriceSheetNode* UGetPriceSheetNode::GetPriceSheetNode(const FString& Key, in
     return NULL;
 }
 
-UGetPriceSheetNode::UGetPriceSheetNode() {
-}
 

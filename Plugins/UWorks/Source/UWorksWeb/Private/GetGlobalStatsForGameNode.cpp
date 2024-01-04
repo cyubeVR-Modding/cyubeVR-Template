@@ -1,6 +1,7 @@
 #include "GetGlobalStatsForGameNode.h"
 
-class UGetGlobalStatsForGameNode;
+UGetGlobalStatsForGameNode::UGetGlobalStatsForGameNode() {
+}
 
 void UGetGlobalStatsForGameNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetGlobalStatsForGameNode* UGetGlobalStatsForGameNode::GetGlobalStatsForGameNod
     return NULL;
 }
 
-UGetGlobalStatsForGameNode::UGetGlobalStatsForGameNode() {
-}
 

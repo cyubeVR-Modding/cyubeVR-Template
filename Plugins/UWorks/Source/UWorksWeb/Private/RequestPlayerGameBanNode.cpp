@@ -1,6 +1,7 @@
 #include "RequestPlayerGameBanNode.h"
 
-class URequestPlayerGameBanNode;
+URequestPlayerGameBanNode::URequestPlayerGameBanNode() {
+}
 
 URequestPlayerGameBanNode* URequestPlayerGameBanNode::RequestPlayerGameBanNode(const FString& Key, FUWorksSteamID SteamID, int32 AppID, FUWorksSteamID ReportID, const FString& CheatDescription, int32 Duration, bool bDelayBan) {
     return NULL;
@@ -9,6 +10,4 @@ URequestPlayerGameBanNode* URequestPlayerGameBanNode::RequestPlayerGameBanNode(c
 void URequestPlayerGameBanNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
 
-URequestPlayerGameBanNode::URequestPlayerGameBanNode() {
-}
 

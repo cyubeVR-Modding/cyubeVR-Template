@@ -14,6 +14,7 @@ public:
     FGetPopularDelegate Completed;
     
     UGetPopularNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

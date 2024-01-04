@@ -1,0 +1,25 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.2.1",
+	"FriendlyName": "Dynamic Surface Navigation",
+	"Description": "Adds navigation for all surfaces (ground/walls/ceilings) to UE which dynamically updates as your world changes. Works with many of UE's navigation features such as nav modifiers, nav filters, nav links and more. Also works with Voxel Plugin.",
+	"Category": "Navigation",
+	"CreatedBy": "BMK Games LLC",
+	"CreatedByURL": "https://www.bmkgames.com",
+	"DocsURL": "https://bit.ly/3YYVCUL",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/458a95c0ac214266b50f8bd925af1450",
+	"SupportURL": "https://discord.gg/ERwjy5UjAF",
+	"EngineVersion": "4.27.0",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "SurfaceNavPlugin",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

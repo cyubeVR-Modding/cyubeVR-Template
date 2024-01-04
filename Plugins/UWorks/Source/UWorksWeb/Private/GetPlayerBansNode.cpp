@@ -1,6 +1,7 @@
 #include "GetPlayerBansNode.h"
 
-class UGetPlayerBansNode;
+UGetPlayerBansNode::UGetPlayerBansNode() {
+}
 
 void UGetPlayerBansNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetPlayerBansNode* UGetPlayerBansNode::GetPlayerBansNode(const FString& Key, co
     return NULL;
 }
 
-UGetPlayerBansNode::UGetPlayerBansNode() {
-}
 

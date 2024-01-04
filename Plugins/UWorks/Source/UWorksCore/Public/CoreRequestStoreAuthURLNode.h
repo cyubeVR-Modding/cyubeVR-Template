@@ -14,6 +14,7 @@ public:
     FRequestStoreAuthURLDelegate Completed;
     
     UCoreRequestStoreAuthURLNode();
+
     UFUNCTION(BlueprintCallable)
     static UCoreRequestStoreAuthURLNode* RequestStoreAuthURLNode(const FString& URL);
     

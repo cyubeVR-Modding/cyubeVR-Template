@@ -1,6 +1,7 @@
 #include "GetMarketEligibilityNode.h"
 
-class UGetMarketEligibilityNode;
+UGetMarketEligibilityNode::UGetMarketEligibilityNode() {
+}
 
 void UGetMarketEligibilityNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetMarketEligibilityNode* UGetMarketEligibilityNode::GetMarketEligibilityNode(c
     return NULL;
 }
 
-UGetMarketEligibilityNode::UGetMarketEligibilityNode() {
-}
 

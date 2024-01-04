@@ -7,6 +7,7 @@ UCLASS(Blueprintable)
 class CYUBEVR_API AWallMount : public AMeshObject {
     GENERATED_BODY()
 public:
-    AWallMount();
+    AWallMount(const FObjectInitializer& ObjectInitializer);
+
 };
 

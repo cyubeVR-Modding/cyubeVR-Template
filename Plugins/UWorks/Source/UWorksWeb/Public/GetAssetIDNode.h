@@ -14,6 +14,7 @@ public:
     FGetAssetIDDelegate Completed;
     
     UGetAssetIDNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

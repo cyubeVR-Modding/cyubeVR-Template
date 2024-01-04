@@ -1,9 +1,7 @@
 #include "UWorksInterfaceWebGameInventory.h"
 
-class UUWorksRequestWebSupportGetAssetHistory;
-class UUWorksRequestWebHistoryExecuteCommands;
-class UUWorksRequestWebGetUserHistory;
-class UUWorksRequestWebGetHistoryCommandDetails;
+UUWorksInterfaceWebGameInventory::UUWorksInterfaceWebGameInventory() {
+}
 
 void UUWorksInterfaceWebGameInventory::SupportGetAssetHistoryMinimal(const FString& Key, int32 AppID, const FString& AssetID, const FString& ContextID, const FSupportGetAssetHistoryMinimalDelegate& Delegate) {
 }
@@ -33,6 +31,4 @@ UUWorksRequestWebGetHistoryCommandDetails* UUWorksInterfaceWebGameInventory::Get
     return NULL;
 }
 
-UUWorksInterfaceWebGameInventory::UUWorksInterfaceWebGameInventory() {
-}
 

@@ -12,6 +12,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneCaptureComponent2D* PrimaryCaptureComponent;
     
-    ALivCaptureActor();
+    ALivCaptureActor(const FObjectInitializer& ObjectInitializer);
+
 };
 

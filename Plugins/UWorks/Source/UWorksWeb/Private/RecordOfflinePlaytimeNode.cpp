@@ -1,6 +1,7 @@
 #include "RecordOfflinePlaytimeNode.h"
 
-class URecordOfflinePlaytimeNode;
+URecordOfflinePlaytimeNode::URecordOfflinePlaytimeNode() {
+}
 
 URecordOfflinePlaytimeNode* URecordOfflinePlaytimeNode::RecordOfflinePlaytimeNode(FUWorksSteamID SteamID, const FString& Ticket, FUWorksPlaySessions PlaySessions) {
     return NULL;
@@ -9,6 +10,4 @@ URecordOfflinePlaytimeNode* URecordOfflinePlaytimeNode::RecordOfflinePlaytimeNod
 void URecordOfflinePlaytimeNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
 
-URecordOfflinePlaytimeNode::URecordOfflinePlaytimeNode() {
-}
 

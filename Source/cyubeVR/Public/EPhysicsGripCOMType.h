@@ -9,6 +9,5 @@ enum class EPhysicsGripCOMType : uint8 {
     COM_SetAndGripAt,
     COM_GripAt,
     COM_GripAtControllerLoc,
-    COM_MAX UMETA(Hidden),
 };
 

@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EUWorksLeaderboardUploadScoreMethod.h"
 #include "UWorksRequestCore.h"
+#include "UWorksSteamLeaderboard.h"
 #include "UploadLeaderboardScoreDelegateDelegate.h"
 #include "UploadLeaderboardScoreMinimalDelegateDelegate.h"
-#include "UWorksSteamLeaderboard.h"
-#include "EUWorksLeaderboardUploadScoreMethod.h"
 #include "UWorksRequestCoreUploadLeaderboardScore.generated.h"
 
 UCLASS(Blueprintable)
@@ -18,6 +18,7 @@ public:
     FUploadLeaderboardScoreMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreUploadLeaderboardScore();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(FUWorksSteamLeaderboard SteamLeaderboard, EUWorksLeaderboardUploadScoreMethod LeaderboardUploadScoreMethod, int32 score, TArray<int32> ScoreDetails);
     

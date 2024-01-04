@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Storage.h"
-#include "EBlockTypeBP.h"
 #include "UObject/NoExportTypes.h"
+#include "EBlockTypeBP.h"
+#include "Storage.h"
 #include "Inventory.generated.h"
 
-class AInventory;
 class AChestInternals;
+class AInventory;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API AInventory : public AStorage {
@@ -42,7 +42,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bIsLootableInventory;
     
-    AInventory();
+    AInventory(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void UpdateUIEvent();
     
@@ -66,6 +67,9 @@ public:
     
     UFUNCTION(BlueprintCallable)
     void MoveInside(int32 From, EBlockTypeBP Type, int32 UniqueId, bool FromToolSlot);
+    
+    UFUNCTION(BlueprintCallable)
+    int32 GetAmountIncludingTools(EBlockTypeBP Item, int32 UniqueId);
     
     UFUNCTION(BlueprintCallable)
     void DropOnToolsQuickBar(bool FromToolBar, int32 From, int32 To, AInventory* FromInventory, EBlockTypeBP Type, bool& UpdateNeeded);

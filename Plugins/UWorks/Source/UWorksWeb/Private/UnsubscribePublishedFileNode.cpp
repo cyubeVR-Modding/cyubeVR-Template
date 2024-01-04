@@ -1,6 +1,7 @@
 #include "UnsubscribePublishedFileNode.h"
 
-class UUnsubscribePublishedFileNode;
+UUnsubscribePublishedFileNode::UUnsubscribePublishedFileNode() {
+}
 
 UUnsubscribePublishedFileNode* UUnsubscribePublishedFileNode::UnsubscribePublishedFileNode(const FString& Key, FUWorksSteamID SteamID, int32 AppID, int32 PublishedFileID) {
     return NULL;
@@ -9,6 +10,4 @@ UUnsubscribePublishedFileNode* UUnsubscribePublishedFileNode::UnsubscribePublish
 void UUnsubscribePublishedFileNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
 
-UUnsubscribePublishedFileNode::UUnsubscribePublishedFileNode() {
-}
 

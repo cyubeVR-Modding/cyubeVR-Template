@@ -1,6 +1,7 @@
 #include "PreGenTestActor.h"
 
-class UProceduralMeshComponent;
+APreGenTestActor::APreGenTestActor(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+}
 
 void APreGenTestActor::SubmitMesh(UProceduralMeshComponent* PMC, const TArray<EBlockTypeBP>& StructureArray, FIntVector StructureSize) {
 }
@@ -8,6 +9,4 @@ void APreGenTestActor::SubmitMesh(UProceduralMeshComponent* PMC, const TArray<EB
 void APreGenTestActor::GeneratePyramid(TArray<EBlockTypeBP>& StructureArray, FIntVector& StructureSize) {
 }
 
-APreGenTestActor::APreGenTestActor() {
-}
 

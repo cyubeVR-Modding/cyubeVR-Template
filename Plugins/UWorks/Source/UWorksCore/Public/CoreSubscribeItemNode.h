@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "SubscribeItemDelegateDelegate.h"
 #include "UWorksPublishedFileID.h"
 #include "EUWorksResult.h"
+#include "SubscribeItemDelegateDelegate.h"
 #include "CoreSubscribeItemNode.generated.h"
 
 class UCoreSubscribeItemNode;
@@ -16,6 +16,7 @@ public:
     FSubscribeItemDelegate Completed;
     
     UCoreSubscribeItemNode();
+
     UFUNCTION(BlueprintCallable)
     static UCoreSubscribeItemNode* SubscribeItemNode(FUWorksPublishedFileID PublishedFileID);
     

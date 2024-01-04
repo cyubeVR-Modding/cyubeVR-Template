@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "DeleteAccountDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "DeleteAccountDelegateDelegate.h"
 #include "DeleteAccountNode.generated.h"
 
 class UDeleteAccountNode;
@@ -15,6 +15,7 @@ public:
     FDeleteAccountDelegate Completed;
     
     UDeleteAccountNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

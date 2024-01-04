@@ -1,32 +1,33 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UWorksSteamID.h"
+#include "CreateSessionMinimalDelegateDelegate.h"
+#include "DeleteSessionBatchMinimalDelegateDelegate.h"
 #include "DeleteSessionMinimalDelegateDelegate.h"
+#include "EnumerateSessionsForAppMinimalDelegateDelegate.h"
+#include "GetSessionDetailsForAppMinimalDelegateDelegate.h"
+#include "RequestNotificationsMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWeb.h"
+#include "UWorksSessions.h"
 #include "UWorksTitle.h"
 #include "UWorksUsers.h"
-#include "UWorksSteamID.h"
 #include "UpdateSessionMinimalDelegateDelegate.h"
-#include "RequestNotificationsMinimalDelegateDelegate.h"
-#include "UWorksSessions.h"
-#include "GetSessionDetailsForAppMinimalDelegateDelegate.h"
-#include "EnumerateSessionsForAppMinimalDelegateDelegate.h"
-#include "DeleteSessionBatchMinimalDelegateDelegate.h"
-#include "CreateSessionMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebGameNotifications.generated.h"
 
-class UUWorksRequestWebGetSessionDetailsForApp;
-class UUWorksRequestWebUpdateSession;
-class UUWorksRequestWebRequestNotifications;
-class UUWorksRequestWebEnumerateSessionsForApp;
-class UUWorksRequestWebDeleteSessionBatch;
-class UUWorksRequestWebDeleteSession;
 class UUWorksRequestWebCreateSession;
+class UUWorksRequestWebDeleteSession;
+class UUWorksRequestWebDeleteSessionBatch;
+class UUWorksRequestWebEnumerateSessionsForApp;
+class UUWorksRequestWebGetSessionDetailsForApp;
+class UUWorksRequestWebRequestNotifications;
+class UUWorksRequestWebUpdateSession;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebGameNotifications : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:
     UUWorksInterfaceWebGameNotifications();
+
     UFUNCTION(BlueprintCallable)
     static void UpdateSessionMinimal(const FString& Key, const FString& SessionId, int32 AppID, FUWorksTitle Title, FUWorksUsers Users, FUWorksSteamID SteamID, const FUpdateSessionMinimalDelegate& Delegate);
     

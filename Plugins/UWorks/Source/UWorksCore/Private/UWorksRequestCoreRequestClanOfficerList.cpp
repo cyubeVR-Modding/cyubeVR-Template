@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreRequestClanOfficerList.h"
 
+UUWorksRequestCoreRequestClanOfficerList::UUWorksRequestCoreRequestClanOfficerList() {
+}
+
 void UUWorksRequestCoreRequestClanOfficerList::SetInput(FUWorksSteamID SteamID) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreRequestClanOfficerList::Deactivate() {
 void UUWorksRequestCoreRequestClanOfficerList::Activate() {
 }
 
-UUWorksRequestCoreRequestClanOfficerList::UUWorksRequestCoreRequestClanOfficerList() {
-}
 

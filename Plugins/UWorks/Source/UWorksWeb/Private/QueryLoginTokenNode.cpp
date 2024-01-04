@@ -1,6 +1,7 @@
 #include "QueryLoginTokenNode.h"
 
-class UQueryLoginTokenNode;
+UQueryLoginTokenNode::UQueryLoginTokenNode() {
+}
 
 UQueryLoginTokenNode* UQueryLoginTokenNode::QueryLoginTokenNode(const FString& Key, const FString& LoginToken) {
     return NULL;
@@ -9,6 +10,4 @@ UQueryLoginTokenNode* UQueryLoginTokenNode::QueryLoginTokenNode(const FString& K
 void UQueryLoginTokenNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
 
-UQueryLoginTokenNode::UQueryLoginTokenNode() {
-}
 

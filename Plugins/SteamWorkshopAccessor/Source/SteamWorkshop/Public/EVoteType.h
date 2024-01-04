@@ -7,6 +7,5 @@ enum class EVoteType : uint8 {
     VT_Skipped,
     VT_Up,
     VT_Down,
-    VT_MAX UMETA(Hidden),
 };
 

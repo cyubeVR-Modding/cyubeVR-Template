@@ -7,6 +7,7 @@ UCLASS(Blueprintable)
 class CYUBEVR_API AChunkRenderManager : public AActor {
     GENERATED_BODY()
 public:
-    AChunkRenderManager();
+    AChunkRenderManager(const FObjectInitializer& ObjectInitializer);
+
 };
 

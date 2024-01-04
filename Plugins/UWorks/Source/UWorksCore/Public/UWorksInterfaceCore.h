@@ -8,5 +8,6 @@ class UWORKSCORE_API UUWorksInterfaceCore : public UUWorksInterface {
     GENERATED_BODY()
 public:
     UUWorksInterfaceCore();
+
 };
 

@@ -1,6 +1,7 @@
 #include "GetFriendListNode.h"
 
-class UGetFriendListNode;
+UGetFriendListNode::UGetFriendListNode() {
+}
 
 void UGetFriendListNode::OnRequestCompleted(bool bSuccessful, const FString& Content) {
 }
@@ -9,6 +10,4 @@ UGetFriendListNode* UGetFriendListNode::GetFriendListNode(const FString& Key, FU
     return NULL;
 }
 
-UGetFriendListNode::UGetFriendListNode() {
-}
 

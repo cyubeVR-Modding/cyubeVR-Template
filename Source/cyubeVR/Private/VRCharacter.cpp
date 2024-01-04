@@ -1,6 +1,10 @@
 #include "VRCharacter.h"
 
-class UMeshComponent;
+AVRCharacter::AVRCharacter(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->CameraRef = NULL;
+    this->LocationLoaded = false;
+    this->Health = 1.00f;
+}
 
 void AVRCharacter::WasRotated_Implementation() {
 }
@@ -23,9 +27,7 @@ FVector AVRCharacter::GetActorLocationForCameraLocationCPP_Implementation(FVecto
     return FVector{};
 }
 
-AVRCharacter::AVRCharacter() {
-    this->CameraRef = NULL;
-    this->LocationLoaded = false;
-    this->Health = 1.00f;
+void AVRCharacter::FadeViewColor_Implementation(float Seconds, FLinearColor Color) {
 }
+
 

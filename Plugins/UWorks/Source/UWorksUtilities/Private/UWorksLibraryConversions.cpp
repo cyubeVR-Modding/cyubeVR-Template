@@ -1,5 +1,8 @@
 #include "UWorksLibraryConversions.h"
 
+UUWorksLibraryConversions::UUWorksLibraryConversions() {
+}
+
 FString UUWorksLibraryConversions::GetCurrentProcessId() {
     return TEXT("");
 }
@@ -12,6 +15,4 @@ FString UUWorksLibraryConversions::ConvertBytesToString(TArray<uint8> Data) {
     return TEXT("");
 }
 
-UUWorksLibraryConversions::UUWorksLibraryConversions() {
-}
 

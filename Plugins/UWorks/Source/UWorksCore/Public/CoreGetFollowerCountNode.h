@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "GetFollowerCountDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "EUWorksResult.h"
+#include "GetFollowerCountDelegateDelegate.h"
 #include "CoreGetFollowerCountNode.generated.h"
 
 class UCoreGetFollowerCountNode;
@@ -16,6 +16,7 @@ public:
     FGetFollowerCountDelegate Completed;
     
     UCoreGetFollowerCountNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, EUWorksResult Result, FUWorksSteamID SteamID, int32 Count);
     

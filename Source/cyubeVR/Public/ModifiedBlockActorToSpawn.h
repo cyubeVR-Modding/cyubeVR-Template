@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "EBlockTypeBP.h"
 #include "BlockInfoBP.h"
+#include "EBlockTypeBP.h"
 #include "ModifiedBlockActorToSpawn.generated.h"
 
 USTRUCT(BlueprintType)

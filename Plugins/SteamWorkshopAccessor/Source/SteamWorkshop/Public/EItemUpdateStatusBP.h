@@ -10,6 +10,5 @@ enum class EItemUpdateStatusBP : uint8 {
     US_UploadingContent,
     US_UploadingPreviewFile,
     US_CommittingChanges,
-    US_MAX UMETA(Hidden),
 };
 

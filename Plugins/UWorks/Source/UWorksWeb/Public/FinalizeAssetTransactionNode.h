@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "FinalizeAssetTransactionDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "FinalizeAssetTransactionDelegateDelegate.h"
 #include "FinalizeAssetTransactionNode.generated.h"
 
 class UFinalizeAssetTransactionNode;
@@ -15,6 +15,7 @@ public:
     FFinalizeAssetTransactionDelegate Completed;
     
     UFinalizeAssetTransactionNode();
+
     UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, const FString& Content);
     

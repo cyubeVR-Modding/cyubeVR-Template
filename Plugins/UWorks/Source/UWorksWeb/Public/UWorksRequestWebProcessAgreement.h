@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
-#include "ProcessAgreementDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "ProcessAgreementDelegateDelegate.h"
 #include "ProcessAgreementMinimalDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebProcessAgreement.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FProcessAgreementMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebProcessAgreement();
+
     UFUNCTION(BlueprintCallable)
     void SetInput(const FString& Key, const FString& OrderID, FUWorksSteamID SteamID, const FString& AgreementID, int32 AppID, int32 Amount, const FString& Currency);
     

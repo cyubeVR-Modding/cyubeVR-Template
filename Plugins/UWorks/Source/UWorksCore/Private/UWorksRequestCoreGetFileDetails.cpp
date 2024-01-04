@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreGetFileDetails.h"
 
+UUWorksRequestCoreGetFileDetails::UUWorksRequestCoreGetFileDetails() {
+}
+
 void UUWorksRequestCoreGetFileDetails::SetInput(const FString& Filename) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreGetFileDetails::Deactivate() {
 void UUWorksRequestCoreGetFileDetails::Activate() {
 }
 
-UUWorksRequestCoreGetFileDetails::UUWorksRequestCoreGetFileDetails() {
-}
 

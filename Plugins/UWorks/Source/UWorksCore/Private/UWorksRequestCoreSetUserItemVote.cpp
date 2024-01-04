@@ -1,5 +1,8 @@
 #include "UWorksRequestCoreSetUserItemVote.h"
 
+UUWorksRequestCoreSetUserItemVote::UUWorksRequestCoreSetUserItemVote() {
+}
+
 void UUWorksRequestCoreSetUserItemVote::SetInput(FUWorksPublishedFileID PublishedFileID, bool bVoteUp) {
 }
 
@@ -16,6 +19,4 @@ void UUWorksRequestCoreSetUserItemVote::Deactivate() {
 void UUWorksRequestCoreSetUserItemVote::Activate() {
 }
 
-UUWorksRequestCoreSetUserItemVote::UUWorksRequestCoreSetUserItemVote() {
-}
 

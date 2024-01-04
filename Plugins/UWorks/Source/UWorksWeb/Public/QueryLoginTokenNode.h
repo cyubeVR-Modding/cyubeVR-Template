@@ -14,6 +14,7 @@ public:
     FQueryLoginTokenDelegate Completed;
     
     UQueryLoginTokenNode();
+
     UFUNCTION(BlueprintCallable)
     static UQueryLoginTokenNode* QueryLoginTokenNode(const FString& Key, const FString& LoginToken);
     

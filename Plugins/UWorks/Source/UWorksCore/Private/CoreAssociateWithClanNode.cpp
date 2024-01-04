@@ -1,6 +1,7 @@
 #include "CoreAssociateWithClanNode.h"
 
-class UCoreAssociateWithClanNode;
+UCoreAssociateWithClanNode::UCoreAssociateWithClanNode() {
+}
 
 void UCoreAssociateWithClanNode::OnRequestCompleted(bool bSuccessful, EUWorksResult Result) {
 }
@@ -9,6 +10,4 @@ UCoreAssociateWithClanNode* UCoreAssociateWithClanNode::AssociateWithClanNode(FU
     return NULL;
 }
 
-UCoreAssociateWithClanNode::UCoreAssociateWithClanNode() {
-}
 

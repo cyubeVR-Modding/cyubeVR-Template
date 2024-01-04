@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceCore.h"
-#include "P2PSessionRequestDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "EUWorksP2PSend.h"
 #include "P2PSessionConnectFailDelegateDelegate.h"
+#include "P2PSessionRequestDelegateDelegate.h"
+#include "UWorksInterfaceCore.h"
 #include "UWorksP2PSessionState.h"
-#include "UWorksSteamID.h"
 #include "UWorksInterfaceCoreNetworking.generated.h"
 
 class UUWorksInterfaceCoreNetworking;
@@ -21,6 +21,7 @@ public:
     FP2PSessionConnectFailDelegate P2PSessionConnectFail;
     
     UUWorksInterfaceCoreNetworking();
+
     UFUNCTION(BlueprintCallable)
     bool SendP2PPacket(FUWorksSteamID SteamIDRemote, TArray<uint8> Data, EUWorksP2PSend P2PSendType, int32 Channel);
     

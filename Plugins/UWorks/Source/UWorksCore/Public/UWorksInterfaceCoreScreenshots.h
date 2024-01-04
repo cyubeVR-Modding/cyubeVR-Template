@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceCore.h"
-#include "ScreenshotReadyDelegateDelegate.h"
-#include "UWorksSteamID.h"
-#include "ScreenshotRequestedDelegateDelegate.h"
-#include "UWorksScreenshotHandle.h"
 #include "UWorksPublishedFileID.h"
+#include "UWorksSteamID.h"
 #include "EUWorksVRScreenshotType.h"
+#include "ScreenshotReadyDelegateDelegate.h"
+#include "ScreenshotRequestedDelegateDelegate.h"
+#include "UWorksInterfaceCore.h"
+#include "UWorksScreenshotHandle.h"
 #include "UWorksInterfaceCoreScreenshots.generated.h"
 
 class UTexture2D;
@@ -23,6 +23,7 @@ public:
     FScreenshotRequestedDelegate ScreenshotRequested;
     
     UUWorksInterfaceCoreScreenshots();
+
     UFUNCTION(BlueprintCallable)
     FUWorksScreenshotHandle WriteScreenshot(UTexture2D* Image);
     
